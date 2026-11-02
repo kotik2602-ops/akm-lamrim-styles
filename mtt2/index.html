@@ -8,7 +8,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="АКМ МТТ-2 — курс подготовки тренеров медитации">
 <meta property="og:description" content="Помогайте другим пересобрать реальность с помощью медитации на пустоту Кедрупа Чже. 7–12 декабря.">
-<meta property="og:image" content="img/pair-lotus.webp">
+<meta property="og:image" content="img/pair.webp">
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#1a1012">
 <link rel="icon" type="image/png" href="img/logo-mark.png">
@@ -414,6 +414,35 @@ b,strong{font-weight:800}
   .strip figure{opacity:1;transform:none}
   #rain{display:none}
 }
+/* matrix frames (вместо ИИ-иллюстраций) */
+.mx{position:relative;aspect-ratio:1/1;width:100%;border-radius:var(--r-card);overflow:hidden;display:grid;place-items:center;background:linear-gradient(180deg,rgba(26,16,18,.25) 0%,rgba(26,16,18,.55) 60%,rgba(26,16,18,.9) 100%),url("img/matrix-bg.webp") center 40%/cover;border:1px solid rgba(243,217,145,.3);box-shadow:0 40px 80px -40px rgba(0,0,0,.8),inset 0 0 80px rgba(221,174,53,.12)}
+.mx::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 110%,rgba(221,174,53,.28),transparent 60%);pointer-events:none}
+.mx-rain{position:absolute;inset:0;pointer-events:none;-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 25%,#000 70%,transparent 100%);mask-image:linear-gradient(180deg,transparent 0,#000 25%,#000 70%,transparent 100%)}
+.mx-rain span{position:absolute;top:0;width:1em;font-family:var(--tib);font-size:15px;line-height:1.25;color:var(--gold);opacity:.45;word-break:break-all;text-shadow:0 0 8px rgba(221,174,53,.6);animation:mxFall linear infinite}
+.mx-rain span::first-letter{color:#fff6d6}
+@keyframes mxFall{from{transform:translateY(-110%)}to{transform:translateY(110%)}}
+.mx-svg{position:relative;z-index:1;width:84%;height:auto;overflow:visible}
+.art .mx img{animation:none}
+.mx-pair img{position:relative;z-index:1;width:88%;align-self:end;filter:drop-shadow(0 20px 40px rgba(0,0,0,.6))}
+.pill{animation:pillFloat 5s ease-in-out infinite alternate}
+.pill-b{animation-delay:-2.5s}
+.pill-r{filter:drop-shadow(0 0 16px rgba(255,70,70,.55))}
+.pill-b{filter:drop-shadow(0 0 16px rgba(80,140,255,.55))}
+@keyframes pillFloat{from{transform:translateY(6px)}to{transform:translateY(-8px)}}
+.pulse{animation:pulseO 3.6s ease-in-out infinite alternate}
+@keyframes pulseO{from{opacity:.55}to{opacity:1}}
+.rise text{opacity:0;animation:riseUp 3.2s ease-out infinite}
+@keyframes riseUp{0%{opacity:0;transform:translateY(20px)}30%{opacity:.9}100%{opacity:0;transform:translateY(-40px)}}
+.pts circle{animation:ptBlink 3s ease-in-out infinite;filter:drop-shadow(0 0 6px #f3d991)}
+@keyframes ptBlink{0%,100%{opacity:.3}50%{opacity:1}}
+.art::before{display:none}
+.lotus{width:clamp(140px,16vw,210px);height:auto;filter:drop-shadow(0 0 22px rgba(221,174,53,.45));animation:float 5s ease-in-out infinite alternate}
+.ck{flex-shrink:0;width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--gold-l),var(--gold));box-shadow:0 0 18px rgba(221,174,53,.45);position:relative;margin-left:4px}
+.ck::after{content:"";position:absolute;left:14px;top:9px;width:10px;height:18px;border:solid var(--ink);border-width:0 3px 3px 0;transform:rotate(45deg)}
+.inc li .ic{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--ink);color:var(--gold-l);font-family:var(--display);font-size:13px;font-weight:700}
+.tc .off{font-family:var(--display);font-weight:800;font-size:clamp(40px,4vw,56px);line-height:1;color:var(--burg);letter-spacing:-.03em}
+.tc.base img{width:120px}
+@media (prefers-reduced-motion:reduce){.mx-rain{display:none}}
 </style>
 </head>
 <body id="top">
@@ -504,7 +533,7 @@ b,strong{font-weight:800}
           <p>Это знание меняет всё. <b>Мы не&nbsp;жертвы обстоятельств. Мы те, кто творит свою реальность.</b></p>
         </div>
       </div>
-      <div class="art"><img src="img/pair-lotus.webp" width="900" height="600" alt="" loading="lazy"></div>
+      <div class="art"><div class="mx mx-pair"><div class="mx-rain" aria-hidden="true"></div><img src="img/pair.webp" width="1000" height="945" alt="" loading="lazy"></div></div>
     </div>
   </div>
 </section>
@@ -513,7 +542,26 @@ b,strong{font-weight:800}
 <div class="mega-wrap"><section class="mega sec burgm">
   <div class="wrap">
     <div class="two rev">
-      <div class="art"><img src="img/pills.webp" width="800" height="849" alt="" loading="lazy"></div>
+      <div class="art"><div class="mx"><div class="mx-rain" aria-hidden="true"></div>
+        <svg class="mx-svg pills-svg" viewBox="0 0 400 300" role="img" aria-label="Красная и синяя таблетки">
+          <defs>
+            <linearGradient id="pR" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff7a7a"/><stop offset=".45" stop-color="#c3172f"/><stop offset="1" stop-color="#4f0812"/></linearGradient>
+            <linearGradient id="pB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8ab8ff"/><stop offset=".45" stop-color="#2353cf"/><stop offset="1" stop-color="#0a1a52"/></linearGradient>
+            <radialGradient id="pS"><stop offset="0" stop-color="#000" stop-opacity=".55"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+          </defs>
+          <ellipse cx="200" cy="248" rx="150" ry="16" fill="url(#pS)"/>
+          <g class="pill pill-r"><g transform="translate(128 150) rotate(-24)">
+            <rect x="-72" y="-27" width="144" height="54" rx="27" fill="url(#pR)"/>
+            <rect x="-60" y="-20" width="104" height="11" rx="5.5" fill="#fff" opacity=".42"/>
+            <rect x="-72" y="-27" width="144" height="54" rx="27" fill="none" stroke="rgba(255,255,255,.18)"/>
+          </g></g>
+          <g class="pill pill-b"><g transform="translate(276 158) rotate(20)">
+            <rect x="-72" y="-27" width="144" height="54" rx="27" fill="url(#pB)"/>
+            <rect x="-60" y="-20" width="104" height="11" rx="5.5" fill="#fff" opacity=".42"/>
+            <rect x="-72" y="-27" width="144" height="54" rx="27" fill="none" stroke="rgba(255,255,255,.18)"/>
+          </g></g>
+        </svg>
+      </div></div>
       <div>
         <h2>И даже в&nbsp;самые неопределённые времена у&nbsp;нас всегда <span class="grad">есть выбор:</span></h2>
         <ul class="choice" style="margin-top:26px">
@@ -555,7 +603,15 @@ b,strong{font-weight:800}
         <div class="be"><span class="grad">Станьте таким человеком!</span></div>
         <div class="ctas" style="margin-top:22px"><a class="btn btn-gold" href="#apply">Хочу стать тренером медитации! <span class="ar">→</span></a></div>
       </div>
-      <img src="img/lotus.webp" width="700" height="467" alt="" loading="lazy">
+      <svg class="lotus" viewBox="0 0 200 160" aria-hidden="true">
+        <defs><linearGradient id="lG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3d991"/><stop offset="1" stop-color="#ddae35"/></linearGradient></defs>
+        <g fill="rgba(221,174,53,.08)" stroke="url(#lG)" stroke-width="2.2" stroke-linejoin="round">
+          <path d="M100 128 C70 118 40 96 22 70 C52 70 82 88 100 128Z"/><path d="M100 128 C130 118 160 96 178 70 C148 70 118 88 100 128Z"/>
+          <path d="M100 128 C78 108 62 76 64 42 C86 60 100 92 100 128Z"/><path d="M100 128 C122 108 138 76 136 42 C114 60 100 92 100 128Z"/>
+          <path d="M100 128 C86 100 84 58 100 20 C116 58 114 100 100 128Z"/>
+        </g>
+        <path d="M40 140 Q100 128 160 140" fill="none" stroke="#ddae35" stroke-width="2" opacity=".6"/>
+      </svg>
     </div>
   </div>
 </section></div>
@@ -612,7 +668,20 @@ b,strong{font-weight:800}
           <p class="big" style="color:var(--white)">Вы получаете не&nbsp;только навык, но&nbsp;и&nbsp;место, где его применить.</p>
         </div>
       </div>
-      <div class="art"><img src="img/earth.webp" width="800" height="707" alt="" loading="lazy"></div>
+      <div class="art"><div class="mx"><div class="mx-rain" aria-hidden="true"></div>
+        <svg class="mx-svg" viewBox="-160 -150 320 300" role="img" aria-label="Глобус с локациями курсов">
+          <defs><radialGradient id="gL"><stop offset="0" stop-color="#ddae35" stop-opacity=".35"/><stop offset="1" stop-color="#ddae35" stop-opacity="0"/></radialGradient></defs>
+          <circle r="150" fill="url(#gL)" class="pulse"/>
+          <g fill="none" stroke="#ddae35" stroke-width="1.4" opacity=".75">
+            <circle r="110" stroke-width="2.2" fill="rgba(26,16,18,.45)"/>
+            <ellipse cx="0" cy="0" rx="110" ry="110"><animate attributeName="rx" values="110;0;110" dur="12s" begin="-0s" repeatCount="indefinite"/></ellipse><ellipse cx="0" cy="0" rx="110" ry="110"><animate attributeName="rx" values="110;0;110" dur="12s" begin="-2s" repeatCount="indefinite"/></ellipse><ellipse cx="0" cy="0" rx="110" ry="110"><animate attributeName="rx" values="110;0;110" dur="12s" begin="-4s" repeatCount="indefinite"/></ellipse><ellipse cx="0" cy="0" rx="110" ry="110"><animate attributeName="rx" values="110;0;110" dur="12s" begin="-6s" repeatCount="indefinite"/></ellipse><ellipse cx="0" cy="0" rx="110" ry="110"><animate attributeName="rx" values="110;0;110" dur="12s" begin="-8s" repeatCount="indefinite"/></ellipse><ellipse cx="0" cy="0" rx="110" ry="110"><animate attributeName="rx" values="110;0;110" dur="12s" begin="-10s" repeatCount="indefinite"/></ellipse>
+            <ellipse rx="110" ry="14"/><ellipse cy="-55" rx="95" ry="12"/><ellipse cy="55" rx="95" ry="12"/><ellipse cy="-92" rx="58" ry="7"/><ellipse cy="92" rx="58" ry="7"/>
+          </g>
+          <g class="pts" fill="#f3d991">
+            <circle cx="-34" cy="-48" r="4"/><circle cx="8" cy="-60" r="4" style="animation-delay:.5s"/><circle cx="40" cy="-30" r="4" style="animation-delay:1s"/><circle cx="-60" cy="-10" r="4" style="animation-delay:1.5s"/><circle cx="70" cy="-62" r="4" style="animation-delay:2s"/><circle cx="-12" cy="-22" r="4" style="animation-delay:2.5s"/>
+          </g>
+        </svg>
+      </div></div>
     </div>
     <div class="loc-card">
       <figure><img src="img/locations.webp" alt="Курс ACI в одной из локаций АКМ" loading="lazy"></figure>
@@ -716,12 +785,12 @@ b,strong{font-weight:800}
   <div class="wrap">
     <div class="sec-head"><div><span class="eyebrow">Результат</span><h2>Что вы сможете <span class="grad">после курса</span></h2></div></div>
     <ul class="out">
-      <li><img src="img/check.webp" width="160" height="143" alt="" loading="lazy">Провести живой курс М2 и&nbsp;закрыть все вопросы, которые студенты встретят в&nbsp;домашних заданиях на&nbsp;платформе</li>
-      <li><img src="img/check.webp" width="160" height="143" alt="" loading="lazy">Объяснить медитацию так, чтобы её поняли и&nbsp;захотели практиковать</li>
-      <li><img src="img/check.webp" width="160" height="143" alt="" loading="lazy">Провести медитацию на&nbsp;простые объекты, на&nbsp;трудные ситуации и&nbsp;людей, на&nbsp;пустоту себя</li>
-      <li><img src="img/check.webp" width="160" height="143" alt="" loading="lazy">Отвечать на&nbsp;трудные вопросы и&nbsp;замечать ошибки понимания</li>
-      <li><img src="img/check.webp" width="160" height="143" alt="" loading="lazy">Собрать программу под нужный формат: день, ретрит или блоки внутри курса ACI</li>
-      <li><img src="img/check.webp" width="160" height="143" alt="" loading="lazy">Углубить интеллектуальное понимание пустоты и&nbsp;научиться ясно объяснять её другим</li>
+      <li><span class="ck" aria-hidden="true"></span>Провести живой курс М2 и&nbsp;закрыть все вопросы, которые студенты встретят в&nbsp;домашних заданиях на&nbsp;платформе</li>
+      <li><span class="ck" aria-hidden="true"></span>Объяснить медитацию так, чтобы её поняли и&nbsp;захотели практиковать</li>
+      <li><span class="ck" aria-hidden="true"></span>Провести медитацию на&nbsp;простые объекты, на&nbsp;трудные ситуации и&nbsp;людей, на&nbsp;пустоту себя</li>
+      <li><span class="ck" aria-hidden="true"></span>Отвечать на&nbsp;трудные вопросы и&nbsp;замечать ошибки понимания</li>
+      <li><span class="ck" aria-hidden="true"></span>Собрать программу под нужный формат: день, ретрит или блоки внутри курса ACI</li>
+      <li><span class="ck" aria-hidden="true"></span>Углубить интеллектуальное понимание пустоты и&nbsp;научиться ясно объяснять её другим</li>
     </ul>
   </div>
 </section>
@@ -731,12 +800,12 @@ b,strong{font-weight:800}
   <div class="wrap">
     <div class="sec-head"><div><span class="eyebrow">Что вас ждёт</span><h2>АКМ МТТ&nbsp;2 <span class="grad">включает:</span></h2></div></div>
     <ul class="inc">
-      <li><img src="img/star.webp" width="240" height="223" alt="" loading="lazy">📚 Общие знания, как преподавать и&nbsp;вести медитацию</li>
-      <li><img src="img/star.webp" width="240" height="223" alt="" loading="lazy">📚 Лекции с&nbsp;преподавателями, как обучать медитации на&nbsp;пустоту Кедрупа Чже</li>
-      <li><img src="img/star.webp" width="240" height="223" alt="" loading="lazy">👥 Практические занятия в&nbsp;группах: тренировка преподавания и&nbsp;ведения медитаций</li>
-      <li><img src="img/star.webp" width="240" height="223" alt="" loading="lazy">📑 Домашние, контрольные работы и&nbsp;экзамен</li>
-      <li><img src="img/star.webp" width="240" height="223" alt="" loading="lazy">📚 Мануал тренера медитации — всё, что нужно для преподавания, — в&nbsp;одном месте!</li>
-      <li><img src="img/star.webp" width="240" height="223" alt="" loading="lazy">👥 Поддержка, ответы на&nbsp;вопросы и&nbsp;сопровождение опытных кураторов</li>
+      <li><span class="ic">01</span>Общие знания, как преподавать и&nbsp;вести медитацию</li>
+      <li><span class="ic">02</span>Лекции с&nbsp;преподавателями, как обучать медитации на&nbsp;пустоту Кедрупа Чже</li>
+      <li><span class="ic">03</span>Практические занятия в&nbsp;группах: тренировка преподавания и&nbsp;ведения медитаций</li>
+      <li><span class="ic">04</span>Домашние, контрольные работы и&nbsp;экзамен</li>
+      <li><span class="ic">05</span>Мануал тренера медитации — всё, что нужно для преподавания, — в&nbsp;одном месте!</li>
+      <li><span class="ic">06</span>Поддержка, ответы на&nbsp;вопросы и&nbsp;сопровождение опытных кураторов</li>
     </ul>
     <div class="tracks one">
       <div class="card card-k">
@@ -785,8 +854,7 @@ b,strong{font-weight:800}
         <div class="price">300 <small>EUR</small></div>
       </div>
       <div class="tc disc">
-        <span class="flag tag t-burg">−50%</span>
-        <img src="img/pair-lotus.webp" width="900" height="600" alt="" loading="lazy">
+        <div class="off">−50%</div>
         <h3>Если вы участвовали в&nbsp;курсе АКМ ТТ&nbsp;2, для вас АКМ МТТ&nbsp;2 доступен со&nbsp;скидкой 50%</h3>
         <div class="price">150 <small>EUR</small></div>
       </div>
@@ -836,7 +904,26 @@ b,strong{font-weight:800}
           <p>Пройдут месяцы, вас пригласят провести курс или ретрит, вы откроете мануал, и&nbsp;вся картина восстановится за&nbsp;несколько минут.</p>
         </div>
       </div>
-      <div class="art"><img src="img/book.webp" width="800" height="595" alt="" loading="lazy"></div>
+      <div class="art"><div class="mx"><div class="mx-rain" aria-hidden="true"></div>
+        <svg class="mx-svg" viewBox="0 0 400 300" role="img" aria-label="Мануал тренера медитации">
+          <defs><linearGradient id="bG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3d991"/><stop offset="1" stop-color="#ddae35"/></linearGradient>
+          <radialGradient id="bL" cx=".5" cy=".6"><stop offset="0" stop-color="#f3d991" stop-opacity=".55"/><stop offset="1" stop-color="#f3d991" stop-opacity="0"/></radialGradient></defs>
+          <ellipse cx="200" cy="150" rx="150" ry="90" fill="url(#bL)" class="pulse"/>
+          <g fill="none" stroke="url(#bG)" stroke-width="2.5" stroke-linejoin="round">
+            <path d="M200 92 C168 76 118 74 70 86 V222 C118 210 168 212 200 228 Z" fill="rgba(26,16,18,.55)"/>
+            <path d="M200 92 C232 76 282 74 330 86 V222 C282 210 232 212 200 228 Z" fill="rgba(26,16,18,.55)"/>
+            <path d="M60 96 V232 C112 220 166 222 200 238 C234 222 288 220 340 232 V96" opacity=".55"/>
+            <line x1="200" y1="92" x2="200" y2="228"/>
+          </g>
+          <g stroke="#f3d991" stroke-width="2" stroke-linecap="round" opacity=".55">
+            <line x1="88" y1="112" x2="178" y2="114"/><line x1="88" y1="132" x2="170" y2="133"/><line x1="88" y1="152" x2="178" y2="154"/><line x1="88" y1="172" x2="160" y2="173"/><line x1="88" y1="192" x2="176" y2="195"/>
+            <line x1="222" y1="114" x2="312" y2="112"/><line x1="222" y1="133" x2="300" y2="132"/><line x1="222" y1="154" x2="312" y2="152"/><line x1="222" y1="173" x2="290" y2="172"/><line x1="222" y1="195" x2="308" y2="192"/>
+          </g>
+          <g class="rise" font-family="Noto Serif Tibetan, serif" font-size="20" fill="#f3d991">
+            <text x="168" y="80">ཀ</text><text x="198" y="70" style="animation-delay:.8s">ཨ</text><text x="228" y="82" style="animation-delay:1.6s">ཧ</text><text x="184" y="60" style="animation-delay:2.4s">ས</text>
+          </g>
+        </svg>
+      </div></div>
     </div>
     <div class="callout-box"><p class="callout">С&nbsp;ним вы всегда готовы передать эту медитацию дальше.</p></div>
   </div>
@@ -912,7 +999,7 @@ b,strong{font-weight:800}
 <!-- FINAL -->
 <div class="mega-wrap"><section class="mega sec burgm final">
   <div class="wrap">
-    <img src="img/pair-lotus.webp" width="900" height="600" alt="" loading="lazy">
+    <img src="img/pair.webp" width="1000" height="945" alt="" loading="lazy">
     <h2>Помогайте другим <span class="grad">пересобрать реальность</span></h2>
     <p>7–12&nbsp;декабря. Остались вопросы? Свяжитесь с&nbsp;нами.</p>
     <div class="ctas center">
@@ -964,6 +1051,19 @@ b,strong{font-weight:800}
   lb.addEventListener('click',function(){lb.hidden=true;});
   var gb=document.getElementById('gallery-more');
   gb.addEventListener('click',function(){g.querySelectorAll('button[hidden]').forEach(function(x){x.hidden=false;});gb.parentNode.remove();});
+
+  /* glyph columns inside matrix frames */
+  var GL='ཀཁགངཅཆཇཉཏཐདནཔཕབམཙཚཛཝཞཟའཡརལཤསཧཨ';
+  document.querySelectorAll('.mx-rain').forEach(function(r){
+    for(var k=0;k<11;k++){
+      var sp=document.createElement('span'),t='';
+      for(var j=0;j<14;j++)t+=GL[Math.floor(Math.random()*GL.length)];
+      sp.textContent=t;sp.style.left=(k*9+Math.random()*4)+'%';
+      sp.style.animationDuration=(7+Math.random()*7)+'s';sp.style.animationDelay=(-Math.random()*12)+'s';
+      sp.style.opacity=(.2+Math.random()*.4).toFixed(2);
+      r.appendChild(sp);
+    }
+  });
 
   /* matrix rain of Tibetan letters */
   var cv=document.getElementById('rain');
