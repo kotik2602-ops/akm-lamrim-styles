@@ -1,0 +1,1239 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>АКМ МТТ-2 — курс підготовки тренерів медитації</title>
+<meta name="description" content="Допомагайте іншим перезібрати реальність за допомогою медитації на пустоту Кхедрупа Дже. Курс підготовки тренерів медитації АКМ МТТ-2, 7–12 грудня.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="АКМ МТТ-2 — курс підготовки тренерів медитації">
+<meta property="og:description" content="Допомагайте іншим перезібрати реальність за допомогою медитації на пустоту Кхедрупа Дже. 7–12 грудня.">
+<meta property="og:image" content="img/pair.webp">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1a1012">
+<link rel="icon" type="image/png" href="../img/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+Tibetan:wght@500&family=Caveat:wght@600;700&display=swap">
+<style>
+:root{
+  color-scheme: dark;
+  --ink:#1a1012;--ink-2:#24161a;--ink-3:#2f1d22;
+  --burg:#69232d;--burg-2:#8a3340;
+  --gold:#ddae35;--gold-d:#a8780f;--gold-l:#f3d991;
+  --rose:#e8b9a8;--rose-l:#f6dcd2;
+  --cream:#f5efe6;--cream-2:#ece3d5;--white:#fffdf9;
+  --text-d:#1f1416;--text-dm:#5a4649;--text-l:#f7efe6;--text-lm:#cdbdb7;
+  --line-l:rgba(247,239,230,.14);--line-d:rgba(31,20,22,.13);
+  --r-mega:40px;--r-card:28px;
+  --pad:clamp(16px,4vw,56px);
+  --display:'Unbounded',system-ui,sans-serif;
+  --sans:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --tib:'Noto Serif Tibetan',serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--ink);isolation:isolate;color:var(--text-l);font-family:var(--sans);font-size:17px;font-weight:500;line-height:1.62;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:76rem;margin:0 auto;padding:0 var(--pad)}
+.grad{background:linear-gradient(100deg,var(--gold-l) 0%,var(--gold) 40%,var(--rose) 100%);-webkit-background-clip:text;background-clip:text;color:transparent!important}
+.cream .grad{background-image:linear-gradient(100deg,var(--burg) 0%,var(--burg-2) 50%,var(--gold-d) 100%)}
+.eyebrow{font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.cream .eyebrow{color:var(--gold-d)}
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-.02em;line-height:1.1;text-wrap:balance}
+h2{font-size:clamp(28px,3.4vw,52px)}
+h3{font-size:clamp(18px,1.6vw,22px);line-height:1.2}
+p,li{min-width:0}
+b,strong{font-weight:800}
+.dark b,.burgm b{color:var(--gold-l)}
+.cream b{color:var(--burg)}
+.prose{display:grid;gap:14px;max-width:46rem}
+.note{font-size:14.5px;opacity:.85;font-style:italic}
+
+/* buttons */
+.btn{position:relative;overflow:hidden;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:10px 26px;border-radius:999px;font-family:var(--sans);font-weight:800;font-size:15px;line-height:1.25;text-align:center;cursor:pointer;border:0;transition:transform .25s ease,box-shadow .3s ease,color .3s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn .ar{font-family:var(--display);font-weight:500}
+.btn-gold{background:linear-gradient(120deg,var(--gold-l),var(--gold));color:var(--ink);animation:btnPulse 2.8s ease-in-out infinite}
+.btn-gold::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:38%;background:linear-gradient(100deg,rgba(255,250,230,0),rgba(255,250,230,.75),rgba(255,250,230,0));transform:skewX(-20deg);animation:btnShine 3.8s ease-in-out infinite;pointer-events:none;z-index:1}
+.btn-gold:hover{animation:none;box-shadow:0 14px 34px -8px rgba(221,174,53,.8),0 0 0 4px rgba(243,217,145,.35)}
+@keyframes btnPulse{0%,100%{box-shadow:0 10px 28px -10px rgba(221,174,53,.7),0 0 0 0 rgba(221,174,53,0)}50%{box-shadow:0 12px 34px -8px rgba(221,174,53,.85),0 0 0 7px rgba(221,174,53,.18)}}
+@keyframes btnShine{0%,62%{left:-60%}100%{left:130%}}
+.btn-ghost{border:1.5px solid rgba(247,239,230,.5);color:var(--text-l);background:rgba(26,16,18,.25);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.btn-ghost::before{content:"";position:absolute;inset:0;background:var(--gold);transform:scaleX(0);transform-origin:left center;transition:transform .35s ease;z-index:-1}
+.btn-ghost:hover{color:var(--ink);border-color:var(--gold)}
+.btn-ghost:hover::before{transform:scaleX(1)}
+.btn-dark{background:var(--ink);color:var(--gold-l)}
+.btn-dark::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:38%;background:linear-gradient(100deg,rgba(243,217,145,0),rgba(243,217,145,.35),rgba(243,217,145,0));transform:skewX(-20deg);animation:btnShine 3.8s ease-in-out infinite;pointer-events:none}
+.btn-line-d{border:1.5px solid var(--text-d);color:var(--text-d);background:transparent}
+.btn-line-d::before{content:"";position:absolute;inset:0;background:var(--text-d);transform:scaleX(0);transform-origin:left center;transition:transform .35s ease;z-index:-1}
+.btn-line-d:hover{color:var(--cream)}
+.btn-line-d:hover::before{transform:scaleX(1)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas.center{justify-content:center}
+
+/* header */
+.hdr{position:fixed;top:0;left:0;right:0;z-index:50;padding:calc(12px + env(safe-area-inset-top,0px)) var(--pad) 0;pointer-events:none}
+.hdr-in{pointer-events:auto;max-width:80rem;margin:0 auto;display:flex;align-items:center;gap:14px;background:rgba(26,16,18,.84);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(247,239,230,.1);border-radius:999px;padding:7px 7px 7px 14px;box-shadow:0 14px 40px -20px rgba(0,0,0,.6)}
+.brand{display:flex;align-items:center;gap:10px;min-width:0;flex-shrink:0}
+.brand img{width:44px;height:33px}
+.brand-txt{display:grid;line-height:1.2}
+.brand-txt b{font-family:var(--display);font-weight:600;font-size:12.5px;color:var(--white);white-space:nowrap}
+.brand-txt span{font-size:11.5px;color:var(--text-lm);white-space:nowrap}
+.dnav{display:flex;gap:20px;font-size:14px;font-weight:700;color:var(--text-lm);margin-left:auto;white-space:nowrap}
+.dnav a:hover{color:var(--gold-l)}
+.menu-btn{display:none;align-items:center;gap:8px;min-height:42px;padding:0 15px;border-radius:999px;border:1px solid rgba(247,239,230,.22);background:transparent;color:var(--text-l);font-family:var(--sans);font-weight:700;font-size:14px;cursor:pointer;margin-left:auto}
+.burger{position:relative;width:16px;height:2px;background:currentColor;border-radius:2px}
+.burger::before,.burger::after{content:"";position:absolute;left:0;width:16px;height:2px;background:currentColor;border-radius:2px;transition:transform .25s ease}
+.burger::before{top:-5px}.burger::after{top:5px}
+.menu-btn[aria-expanded="true"] .burger{background:transparent}
+.menu-btn[aria-expanded="true"] .burger::before{transform:translateY(5px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] .burger::after{transform:translateY(-5px) rotate(-45deg)}
+.hdr .btn{min-height:42px;padding:0 20px;font-size:14px;flex-shrink:0;animation:none;box-shadow:0 6px 18px -8px rgba(221,174,53,.7)}
+.mnav{position:fixed;left:var(--pad);right:var(--pad);top:80px;z-index:60;max-width:26rem;margin-left:auto;display:grid;gap:2px;padding:10px;background:rgba(36,22,26,.97);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line-l);border-radius:24px;box-shadow:0 24px 60px -20px rgba(0,0,0,.7)}
+.mnav[hidden]{display:none}
+.mnav a{padding:12px 16px;border-radius:16px;font-weight:700;font-size:16px;color:var(--text-l)}
+.mnav a:hover,.mnav a:focus-visible{background:rgba(221,174,53,.14);color:var(--gold-l)}
+@media (max-width:1420px){.dnav{display:none}.menu-btn{display:inline-flex}}
+@media (max-width:640px){.brand-txt{display:none}}
+@media (max-width:380px){.menu-txt{display:none}.menu-btn{padding:0 13px}.hdr .btn{padding:0 15px;font-size:13px}}
+
+/* matrix background */
+.matrix-bg{position:fixed;inset:0;z-index:-2;pointer-events:none;background:linear-gradient(180deg,rgba(58,18,25,.72) 0%,rgba(26,16,18,.7) 55%,rgba(26,16,18,.82) 100%),url("../img/matrix-bg.webp") center 30%/cover no-repeat}
+.matrix-bg::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 70% 10%,rgba(232,185,168,.22),transparent 55%);mix-blend-mode:screen}
+#rain{position:fixed;inset:0;z-index:-1;pointer-events:none;width:100%;height:100%;opacity:.55}
+
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;overflow:hidden}
+.hero-in{position:relative;z-index:2;max-width:80rem;width:100%;margin:0 auto;padding:128px var(--pad) 40px;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(20px,3vw,48px);align-items:center}
+.hero-text{display:grid;gap:18px;justify-items:start}
+.pill{display:inline-flex;align-items:center;gap:10px;padding:8px 18px;border-radius:999px;background:rgba(26,16,18,.5);border:1px solid rgba(243,217,145,.4);font-size:14px;font-weight:700;color:var(--gold-l);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.pill i{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px var(--gold)}
+.hero h1{font-size:clamp(34px,4.6vw,70px);font-weight:800;line-height:1.04;letter-spacing:-.03em;text-shadow:0 6px 40px rgba(26,16,18,.45);max-width:12em}
+.hero h1 span{display:block}
+.hand{font-family:'Caveat',cursive;font-weight:700;font-size:clamp(30px,3.2vw,48px);line-height:1.05;color:var(--rose-l);transform:rotate(-2deg);text-shadow:0 2px 14px rgba(26,16,18,.6);clip-path:inset(-20% 100% -40% 0);animation:handWrite 2.4s steps(30,end) .9s forwards}
+@keyframes handWrite{to{clip-path:inset(-20% -10% -40% 0)}}
+.facts{display:flex;flex-wrap:wrap;gap:10px}
+.facts .one{display:flex;align-items:center;gap:10px;padding:11px 22px;border-radius:999px;border:1px solid var(--line-l);background:rgba(26,16,18,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.facts .one i{color:var(--gold);font-style:normal;font-weight:800}
+.facts .one b{font-size:16px;color:var(--gold-l)}
+.hero .ctas{margin-top:8px}
+.hero-pair{position:relative;align-self:end;justify-self:center;width:100%;max-width:560px}
+.hero-pair img{width:100%;filter:drop-shadow(0 30px 60px rgba(0,0,0,.6));animation:float 6s ease-in-out infinite alternate}
+.hero-pair::before{content:"";position:absolute;left:8%;right:8%;bottom:4%;height:30%;border-radius:50%;background:radial-gradient(ellipse,rgba(221,174,53,.45),transparent 70%);filter:blur(10px)}
+@keyframes float{from{transform:translateY(0)}to{transform:translateY(-10px)}}
+.hero-cards{position:relative;z-index:2;max-width:80rem;margin:0 auto;padding:0 var(--pad) 56px;display:grid;grid-template-columns:1fr 1.5fr 1fr;gap:12px}
+.hc{border-radius:24px;padding:20px 22px;background:rgba(36,22,26,.66);border:1px solid var(--line-l);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);font-size:15px;line-height:1.5;color:var(--text-lm)}
+.hc h3{font-family:var(--sans);font-weight:800;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.hc .v{font-family:var(--display);font-weight:600;font-size:clamp(17px,1.5vw,20px);color:var(--white);line-height:1.3}
+.hc ul{list-style:none;display:grid;gap:6px}
+.hc li{display:flex;gap:10px}
+.hc li::before{content:"";flex-shrink:0;margin-top:8px;width:7px;height:7px;border-radius:50%;background:var(--gold)}
+.hc.gold{background:linear-gradient(150deg,#f8e7b8 0%,var(--gold) 70%,#c98d4f 100%);color:#3a2225;border:0}
+.hc.gold h3{color:var(--burg)}
+.hc.gold .v{color:var(--text-d)}
+
+/* sections */
+.mega-wrap{padding:0 clamp(8px,1.4vw,20px)}
+.mega{border-radius:var(--r-mega);margin:0 auto;max-width:1440px;position:relative}
+.cream{background:var(--cream);color:var(--text-d)}
+.burgm{background:linear-gradient(170deg,rgba(58,18,25,.74) 0%,rgba(36,22,26,.66) 55%,rgba(26,16,18,.62) 100%);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);color:var(--text-l)}
+.dark{color:var(--text-l)}
+.sec{padding:clamp(60px,8vw,112px) 0;scroll-margin-top:84px;position:relative}
+.mega.sec{margin-top:clamp(10px,1.4vw,20px);margin-bottom:clamp(10px,1.4vw,20px)}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:18px 40px;flex-wrap:wrap;margin-bottom:clamp(30px,4vw,48px)}
+.sec-head > div{max-width:48rem;min-width:0}
+.sec-head h2{margin-top:14px}
+.sec-head > p{max-width:24rem;font-size:16px}
+.cream p,.cream li{color:var(--text-dm)}
+.cream h3,.cream .big{color:var(--text-d)}
+.dark p,.dark li,.burgm p,.burgm li{color:var(--text-lm)}
+.dark h3,.burgm h3{color:var(--text-l)}
+
+/* cards */
+.card{border-radius:var(--r-card);padding:clamp(24px,3vw,42px);min-width:0;position:relative}
+.card-w{background:var(--white);box-shadow:0 30px 60px -40px rgba(105,35,45,.35)}
+.card-k{background:linear-gradient(160deg,var(--ink-3) 0%,var(--ink) 75%);color:var(--text-l);overflow:hidden}
+.dark .card-k,.burgm .card-k{background:linear-gradient(160deg,rgba(47,29,34,.76) 0%,rgba(26,16,18,.66) 75%);border:1px solid var(--line-l)}
+.card-k::before{content:"";position:absolute;width:320px;height:320px;right:-120px;top:-120px;border-radius:50%;background:radial-gradient(circle,rgba(221,174,53,.32),transparent 65%);pointer-events:none}
+.card-k > *{position:relative}
+.cream .card-k p,.cream .card-k li{color:var(--text-lm)}
+.cream .card-k b{color:var(--gold-l)}
+.cream .card-k h3{color:var(--text-l)}
+.card-d{background:rgba(40,24,28,.62);border:1px solid var(--line-l);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.tag{display:inline-flex;align-items:center;padding:8px 16px;border-radius:999px;font-weight:800;font-size:13px;line-height:1.2;letter-spacing:.02em}
+.t-gold{background:linear-gradient(120deg,#f8e6b4,#f3cfc0);color:var(--burg)}
+.t-burg{background:var(--burg);color:var(--gold-l)}
+.callout{font-family:var(--display);font-weight:600;font-size:clamp(19px,2vw,26px);line-height:1.32;letter-spacing:-.015em;max-width:54rem}
+.callout-box{margin-top:clamp(24px,3vw,36px);border-radius:var(--r-card);padding:clamp(24px,3.4vw,44px);position:relative;overflow:hidden}
+.cream .callout-box{background:linear-gradient(120deg,#f8e6b4 0%,#f3cfc0 100%);color:var(--burg)}
+.dark .callout-box,.burgm .callout-box{background:linear-gradient(120deg,rgba(221,174,53,.16),rgba(232,185,168,.08));border:1px solid rgba(221,174,53,.35);color:var(--text-l)}
+.callout-box::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:linear-gradient(180deg,var(--gold),var(--burg))}
+.callout-box p.callout{color:inherit!important}
+.big{font-family:var(--display);font-weight:600;font-size:clamp(19px,1.9vw,25px);line-height:1.3;letter-spacing:-.015em}
+.dots{list-style:none;display:flex;flex-direction:column}
+.dots li{display:flex;align-items:flex-start;gap:14px;padding:12px 0;border-bottom:1px solid var(--line-d);font-weight:600}
+.dark .dots li,.card-k .dots li,.burgm .dots li{border-bottom-color:var(--line-l)}
+.dots li:last-child{border-bottom:0}
+.dots li::before{content:"";flex-shrink:0;margin-top:8px;width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--burg))}
+.card-k .dots li::before,.dark .dots li::before,.burgm .dots li::before{background:linear-gradient(135deg,var(--gold-l),var(--gold))}
+.two{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(20px,4vw,52px);align-items:center}
+.two.rev{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}
+.art{position:relative;justify-self:center;width:100%;max-width:440px}
+.art img{width:100%;filter:drop-shadow(0 24px 50px rgba(0,0,0,.45));animation:float 6s ease-in-out infinite alternate}
+.cream .art img{filter:drop-shadow(0 24px 40px rgba(105,35,45,.25))}
+.art::before{content:"";position:absolute;inset:12%;border-radius:50%;background:radial-gradient(circle,rgba(221,174,53,.35),transparent 70%);filter:blur(20px)}
+.art img{position:relative}
+
+/* for whom */
+.who-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.who-grid li{list-style:none;border-radius:22px;padding:24px 22px 26px;background:var(--white);box-shadow:0 24px 50px -40px rgba(105,35,45,.4);font-weight:600;font-size:16px;line-height:1.45;color:var(--text-d)!important;min-width:0}
+.who-grid li .n{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--ink);color:var(--gold-l);font-family:var(--display);font-size:13px;font-weight:700;margin-bottom:14px}
+.who-grid li:nth-child(1){background:linear-gradient(120deg,#f8e6b4,#f3cfc0)}
+.who-grid li:nth-child(1) .n{background:var(--burg)}
+
+/* choice */
+.choice{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.choice li{border-radius:22px;padding:20px 22px;background:rgba(40,24,28,.62);border:1px solid var(--line-l);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:var(--text-l)!important;font-weight:600;font-size:16px;line-height:1.4}
+.choice li b{display:block;font-family:var(--display);font-weight:700;font-size:clamp(17px,1.5vw,20px);margin-bottom:4px}
+.choice li span{color:var(--text-lm)}
+
+/* role */
+.strip{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin-bottom:clamp(28px,4vw,44px)}
+.strip figure{border-radius:20px;overflow:hidden;aspect-ratio:3/4;box-shadow:0 20px 40px -30px rgba(105,35,45,.6);opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s ease}
+.strip.in figure{opacity:1;transform:none}
+.strip figure:nth-child(2){transition-delay:.08s}.strip figure:nth-child(3){transition-delay:.16s}.strip figure:nth-child(4){transition-delay:.24s}.strip figure:nth-child(5){transition-delay:.32s}.strip figure:nth-child(6){transition-delay:.4s}
+.strip img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s ease}
+.strip figure:hover img{transform:scale(1.05)}
+.chain{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;counter-reset:c}
+.chain li{position:relative;border-radius:22px;padding:24px 24px 26px;background:var(--white);box-shadow:0 24px 50px -40px rgba(105,35,45,.4);font-weight:700;font-size:16.5px;line-height:1.45;color:var(--text-d)!important}
+.chain li::before{counter-increment:c;content:"0" counter(c);display:block;font-family:var(--display);font-size:13px;font-weight:700;color:var(--gold-d);margin-bottom:10px}
+.chain li:not(:nth-child(3n)):not(:last-child)::after{content:"→";position:absolute;right:-13px;top:50%;transform:translateY(-50%);width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--burg);color:var(--gold-l);font-family:var(--display);font-size:12px;z-index:1}
+.chain li:last-child{background:linear-gradient(165deg,var(--burg-2) 0%,var(--burg) 60%,#3a1219 100%);color:var(--gold-l)!important}
+.chain li:last-child::before{color:var(--gold-l)}
+.become{margin-top:clamp(32px,4vw,52px);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px 40px;align-items:center;border-radius:var(--r-card);padding:clamp(24px,3.4vw,44px);background:linear-gradient(160deg,var(--ink-3) 0%,var(--ink) 75%);color:var(--text-l);position:relative;overflow:hidden}
+.become p{color:var(--text-lm)!important;font-size:18px}
+.become .quote{font-family:var(--display);font-weight:600;font-size:clamp(20px,2.2vw,28px);line-height:1.3;color:var(--white)!important;margin-top:10px}
+.become .be{display:flex;align-items:center;gap:14px;margin-top:20px;font-family:var(--display);font-weight:700;font-size:clamp(20px,2vw,26px)}
+.become .grad{background-image:linear-gradient(100deg,var(--gold-l) 0%,var(--gold) 40%,var(--rose) 100%)}
+.become img{width:clamp(140px,16vw,220px);animation:float 5s ease-in-out infinite alternate;filter:drop-shadow(0 0 30px rgba(221,174,53,.45))}
+
+/* need trainers */
+.need{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:16px;align-items:stretch}
+.need figure{border-radius:var(--r-card);overflow:hidden;position:relative;min-height:460px}
+.need figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%}
+.need-intro{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px 40px;align-items:center;margin-bottom:16px}
+.need-intro img{width:clamp(160px,18vw,240px);filter:drop-shadow(0 20px 40px rgba(0,0,0,.5))}
+
+/* lineage */
+.line4{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;position:relative}
+.line4::before{content:"";position:absolute;left:4%;right:4%;top:40px;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--burg),var(--gold),var(--gold-l))}
+.line4 li{position:relative;border-radius:22px;padding:22px 22px 24px;background:var(--white);box-shadow:0 24px 50px -40px rgba(105,35,45,.4);font-size:15.5px;line-height:1.5;color:var(--text-dm)!important;min-width:0}
+.line4 li .n{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--ink);color:var(--gold-l);font-family:var(--display);font-size:13px;font-weight:700;margin-bottom:14px}
+.line4 li b{color:var(--text-d)}
+.line4 li:last-child{background:linear-gradient(120deg,#f8e6b4,#f3cfc0)}
+.line4 li:last-child .n{background:var(--burg);box-shadow:0 0 0 6px rgba(221,174,53,.3);animation:youGlow 2.4s ease-in-out infinite alternate}
+.line4 li:last-child b{color:var(--burg);font-family:var(--display);font-size:18px}
+@keyframes youGlow{from{box-shadow:0 0 0 3px rgba(221,174,53,.25)}to{box-shadow:0 0 0 9px rgba(221,174,53,.45)}}
+
+/* locations */
+.loc-row{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 0 14px;margin-top:16px;scrollbar-width:thin;scrollbar-color:var(--gold) transparent}
+.loc-row figure{flex:0 0 clamp(220px,26vw,300px);scroll-snap-align:start;border-radius:20px;overflow:hidden;position:relative;aspect-ratio:4/3;border:1px solid rgba(243,217,145,.28)}
+.loc-row img{width:100%;height:100%;object-fit:cover}
+.loc-row figcaption{position:absolute;left:10px;bottom:10px;padding:6px 13px;border-radius:999px;background:rgba(26,16,18,.78);color:var(--cream);font-size:13px;font-weight:700;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.loc-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;margin-top:16px;align-items:stretch}
+.loc-card figure{border-radius:var(--r-card);overflow:hidden;position:relative;min-height:300px}
+.loc-card figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hint{font-size:13.5px;color:var(--text-lm);margin-top:2px}
+
+/* teachers */
+.t4{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.tch{display:grid;grid-template-columns:150px minmax(0,1fr);gap:22px;align-items:start}
+.tch img{width:150px;height:150px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 4px var(--white),0 0 0 6px rgba(221,174,53,.6)}
+.tch h3{font-size:clamp(19px,1.7vw,23px)}
+.tch .tag{margin-top:10px}
+.tch ul{list-style:none;margin-top:14px;display:grid;gap:6px}
+.tch li{display:flex;gap:10px;font-size:15px;line-height:1.45}
+.tch li::before{content:"";flex-shrink:0;margin-top:8px;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+
+/* outcomes */
+.out{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.out li{display:flex;align-items:center;gap:16px;border-radius:22px;padding:16px 22px 16px 14px;background:rgba(40,24,28,.62);border:1px solid var(--line-l);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:var(--text-l)!important;font-weight:600;font-size:16px;line-height:1.45}
+.out li img{flex-shrink:0;width:54px;height:auto;filter:drop-shadow(0 0 10px rgba(221,174,53,.4))}
+
+/* includes */
+.inc{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.inc li{display:flex;flex-direction:column;gap:12px;border-radius:22px;padding:22px;background:var(--white);box-shadow:0 24px 50px -40px rgba(105,35,45,.4);font-weight:700;font-size:16px;line-height:1.4;color:var(--text-d)!important}
+.inc li img{width:46px;animation:spinSlow 14s linear infinite}
+@keyframes spinSlow{to{transform:rotate(360deg)}}
+.langs-box{margin-top:16px;display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;border-radius:999px;border:1.5px dashed rgba(105,35,45,.35);padding:16px 28px;font-weight:700;color:var(--text-d)}
+.tracks{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.tracks .card{display:flex;flex-direction:column;gap:14px}
+.tracks .card .btn{margin-top:auto;align-self:flex-start}
+.tracks.one{grid-template-columns:1fr;max-width:46rem;margin-left:auto;margin-right:auto}
+.tracks h3{font-size:clamp(17px,1.5vw,20px)}
+
+/* conditions */
+.steps7{list-style:none;display:grid;gap:10px;counter-reset:s;max-width:56rem}
+.steps7 li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;align-items:center;border-radius:22px;padding:14px 20px 14px 14px;background:rgba(40,24,28,.62);border:1px solid var(--line-l);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:var(--text-l)!important;font-weight:600}
+.steps7 li::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--gold-l),var(--gold));color:var(--ink);font-family:var(--display);font-weight:700;font-size:15px}
+.steps7 li b{color:var(--gold-l)}
+.all{display:flex;align-items:center;gap:16px;border-radius:999px;padding:18px 30px;background:linear-gradient(120deg,rgba(221,174,53,.2),rgba(232,185,168,.08));border:1px solid rgba(221,174,53,.4);font-family:var(--display);font-weight:600;font-size:clamp(17px,1.7vw,22px);margin-bottom:clamp(36px,5vw,56px);color:var(--white)}
+.all i{flex-shrink:0;width:12px;height:12px;border-radius:50%;background:var(--gold);box-shadow:0 0 14px var(--gold)}
+
+/* price */
+.deadlines{display:grid;grid-template-columns:auto 1fr 1fr;gap:14px;align-items:stretch;margin-bottom:clamp(36px,5vw,56px)}
+.deadlines .lim{display:flex;align-items:center;border-radius:22px;padding:18px 26px;background:var(--burg);color:var(--gold-l);font-family:var(--display);font-weight:700;font-size:16px;line-height:1.3}
+.dl{border-radius:22px;padding:18px 24px;background:var(--white);box-shadow:0 24px 50px -40px rgba(105,35,45,.4);display:grid;gap:2px}
+.dl span{font-size:14px;color:var(--text-dm)}
+.dl b{font-family:var(--display);font-size:clamp(20px,2vw,26px);color:var(--text-d)!important}
+.tar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:stretch}
+.tc{position:relative;border-radius:var(--r-card);padding:30px 30px 32px;display:flex;flex-direction:column;align-items:flex-start;gap:12px;min-width:0;overflow:hidden}
+.tc img{width:150px;margin:-6px 0 4px}
+.tc.base{background:linear-gradient(160deg,var(--ink-3) 0%,var(--ink) 75%);color:var(--text-l)}
+.tc.disc{background:linear-gradient(165deg,#f8e7b8 0%,var(--gold) 58%,#c98d4f 100%);color:var(--text-d);box-shadow:0 40px 80px -40px rgba(221,174,53,.6)}
+.tc h3{font-size:clamp(18px,1.6vw,21px);font-weight:600;line-height:1.3;color:inherit!important}
+.tc .price{font-family:var(--display);font-weight:800;font-size:clamp(46px,4.6vw,64px);line-height:1;letter-spacing:-.04em;margin-top:auto}
+.tc.base .price{color:var(--gold-l)}
+.tc .price small{font-size:.38em;letter-spacing:0;font-weight:600;opacity:.75}
+.tc .flag{position:absolute;top:24px;right:24px}
+.instal{margin-top:16px;display:flex;align-items:center;justify-content:center;gap:12px;border-radius:999px;background:var(--ink);color:var(--gold-l);padding:16px 28px;font-family:var(--display);font-weight:600;font-size:clamp(16px,1.6vw,20px);text-align:center}
+
+/* schedule */
+.tl{list-style:none;display:grid;gap:12px;max-width:62rem}
+.tl > li{display:grid;grid-template-columns:200px minmax(0,1fr);gap:18px 28px;border-radius:24px;padding:22px 26px;background:rgba(40,24,28,.62);border:1px solid var(--line-l);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.tl > li.hl{background:linear-gradient(120deg,rgba(138,51,64,.85),rgba(105,35,45,.8));border:0}
+.tl .when{font-family:var(--display);font-weight:700;font-size:17px;color:var(--gold-l);line-height:1.3}
+.tl .when small{display:block;margin-top:6px;font-family:var(--sans);font-size:13px;font-weight:600;color:var(--text-lm);font-style:italic}
+.tl .what{color:var(--text-l)}
+.tl .what > b{display:block;font-family:var(--display);font-weight:600;font-size:17px;color:var(--white);line-height:1.35}
+.tl .what ul{list-style:none;margin-top:10px;display:grid;gap:5px}
+.tl .what li{display:flex;gap:10px;font-size:15.5px}
+.tl .what li::before{content:"";flex-shrink:0;margin-top:9px;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.tl .what .note{margin-top:10px;color:var(--text-lm)}
+
+/* lessons */
+.lessons{list-style:none;display:grid;gap:12px}
+.lessons li{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:14px 32px;border-radius:24px;padding:24px 28px;background:var(--white);box-shadow:0 24px 50px -40px rgba(105,35,45,.4)}
+.lessons .lt{display:grid;gap:8px;align-content:start}
+.lessons .lt .tag{justify-self:start}
+.lessons h3{font-size:clamp(17px,1.5vw,20px);color:var(--text-d)!important}
+.lessons p{color:var(--text-dm)!important}
+.lessons .by{margin-top:10px;font-size:14px;font-weight:800;color:var(--burg)!important}
+
+/* reviews */
+.gallery{column-count:4;column-gap:12px}
+.gallery button{display:block;width:100%;margin-bottom:12px;break-inside:avoid;padding:0;border:0;border-radius:16px;overflow:hidden;cursor:zoom-in;background:var(--cream-2);box-shadow:0 18px 40px -30px rgba(105,35,45,.5)}
+.gallery button[hidden]{display:none}
+.gallery img{width:100%}
+.more-row{margin-top:16px;display:flex;justify-content:center}
+.lb{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:24px;background:rgba(26,16,18,.92);cursor:zoom-out}
+.lb[hidden]{display:none}
+.lb img{max-width:min(100%,900px);max-height:90vh;border-radius:14px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+
+/* faq */
+.faq{display:grid;gap:10px;max-width:56rem}
+.faq details{border-radius:24px;background:rgba(40,24,28,.62);border:1px solid var(--line-l);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transition:border-color .3s ease}
+.faq details[open]{background:linear-gradient(160deg,rgba(58,31,37,.85),rgba(47,29,34,.75));border-color:rgba(221,174,53,.4)}
+.faq summary{cursor:pointer;list-style:none;padding:20px 64px 20px 26px;position:relative;font-weight:800;font-size:17px;line-height:1.4;color:var(--text-l)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:rgba(247,239,230,.08);color:var(--gold);font-family:var(--display);font-size:18px;font-weight:500}
+.faq details[open] summary::after{content:"−";background:var(--gold);color:var(--ink)}
+.faq .ans{padding:0 26px 22px;display:grid;gap:12px;max-width:48rem}
+.faq .ans ul{list-style:none;display:grid;gap:6px}
+.faq .ans li{display:flex;gap:10px}
+.faq .ans li::before{content:"";flex-shrink:0;margin-top:9px;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.refund{margin-top:clamp(32px,4vw,48px);border-radius:24px;border:1.5px dashed rgba(221,174,53,.5);padding:18px 26px;display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline}
+.refund b{font-family:var(--display);font-size:15px}
+
+/* final */
+.final{position:relative;overflow:hidden;text-align:center}
+.final::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(221,174,53,.22),transparent 60%),radial-gradient(ellipse at 50% 100%,rgba(105,35,45,.5),transparent 60%);pointer-events:none}
+.final .wrap{position:relative;max-width:56rem;display:grid;justify-items:center;gap:18px}
+.final img{width:min(420px,80%);filter:drop-shadow(0 20px 50px rgba(0,0,0,.5))}
+.final p{font-size:18px;color:var(--text-l)!important}
+
+/* footer */
+.ftr{padding:48px var(--pad) calc(44px + env(safe-area-inset-bottom,0px));text-align:center;color:var(--text-lm);font-size:14px;display:grid;gap:8px;justify-items:center;border-top:1px solid var(--line-l);background:rgba(26,16,18,.7)}
+.ftr img{width:112px;height:112px;margin-bottom:8px;padding:8px;border-radius:28px;background:var(--cream)}
+.ftr a{color:var(--gold-l);text-decoration:underline;text-underline-offset:3px}
+
+/* responsive */
+@media (max-width:1100px){
+  .hero-in{grid-template-columns:1fr;padding-top:104px;text-align:left}
+  .hero-pair{max-width:440px;margin-top:-10px}
+  .hero-cards{grid-template-columns:1fr 1fr}
+  .gallery{column-count:3}
+  .strip{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .line4{grid-template-columns:1fr 1fr}
+  .line4::before{display:none}
+}
+@media (max-width:960px){
+  .two,.two.rev,.need,.loc-card,.t4,.tracks,.tar{grid-template-columns:1fr}
+  .two.rev .art{order:-1}
+  .art{max-width:340px}
+  .who-grid,.chain,.inc{grid-template-columns:1fr 1fr}
+  .chain li::after{display:none}
+  .out,.choice{grid-template-columns:1fr}
+  .deadlines{grid-template-columns:1fr 1fr}
+  .deadlines .lim{grid-column:1/-1}
+  .lessons li{grid-template-columns:1fr}
+  .tl > li{grid-template-columns:1fr;gap:8px}
+  .need figure{min-height:0;aspect-ratio:4/5;max-height:560px}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  :root{--r-mega:28px;--r-card:24px}
+  .hero-in{padding-top:92px;gap:18px}
+  .hero h1{font-size:clamp(30px,9vw,44px)}
+  .hero .ctas,.hero .ctas .btn{width:100%}
+  .hero-cards{grid-template-columns:1fr}
+  .who-grid,.chain,.inc,.line4,.deadlines{grid-template-columns:1fr}
+  .strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .become,.need-intro{grid-template-columns:1fr}
+  .become img,.need-intro img{justify-self:center}
+  .tch{grid-template-columns:1fr;justify-items:start}
+  .tch img{width:120px;height:120px}
+  .gallery{column-count:2;column-gap:8px}
+  .gallery button{margin-bottom:8px;border-radius:12px}
+  .all,.langs-box,.instal{border-radius:22px;padding:16px 20px}
+  .faq summary{padding:18px 58px 18px 20px;font-size:16px}
+  .faq summary::after{right:12px}
+  .faq .ans{padding:0 20px 20px}
+  .ctas .btn,.tracks .card .btn,.more-row .btn{width:100%}
+  .sec-head{margin-bottom:28px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .hand{clip-path:none}
+  .strip figure{opacity:1;transform:none}
+  #rain{display:none}
+}
+/* matrix frames (вместо ИИ-иллюстраций) */
+.mx{position:relative;aspect-ratio:1/1;width:100%;border-radius:var(--r-card);overflow:hidden;display:grid;place-items:center;background:linear-gradient(180deg,rgba(26,16,18,.25) 0%,rgba(26,16,18,.55) 60%,rgba(26,16,18,.9) 100%),url("../img/matrix-bg.webp") center 40%/cover;border:1px solid rgba(243,217,145,.3);box-shadow:0 40px 80px -40px rgba(0,0,0,.8),inset 0 0 80px rgba(221,174,53,.12)}
+.mx::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 110%,rgba(221,174,53,.28),transparent 60%);pointer-events:none}
+.mx-rain{position:absolute;inset:0;pointer-events:none;-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 25%,#000 70%,transparent 100%);mask-image:linear-gradient(180deg,transparent 0,#000 25%,#000 70%,transparent 100%)}
+.mx-rain span{position:absolute;top:0;width:1em;font-family:var(--tib);font-size:15px;line-height:1.25;color:var(--gold);opacity:.45;word-break:break-all;text-shadow:0 0 8px rgba(221,174,53,.6);animation:mxFall linear infinite}
+.mx-rain span::first-letter{color:#fff6d6}
+@keyframes mxFall{from{transform:translateY(-110%)}to{transform:translateY(110%)}}
+.mx-svg{position:relative;z-index:1;width:84%;height:auto;overflow:visible}
+.art .mx img{animation:none}
+.mx-pair img{position:relative;z-index:1;width:88%;align-self:end;filter:drop-shadow(0 20px 40px rgba(0,0,0,.6))}
+.pill{animation:pillFloat 5s ease-in-out infinite alternate}
+.pill-b{animation-delay:-2.5s}
+.pill-r{filter:drop-shadow(0 0 16px rgba(255,70,70,.55))}
+.pill-b{filter:drop-shadow(0 0 16px rgba(80,140,255,.55))}
+@keyframes pillFloat{from{transform:translateY(6px)}to{transform:translateY(-8px)}}
+.pulse{animation:pulseO 3.6s ease-in-out infinite alternate}
+@keyframes pulseO{from{opacity:.55}to{opacity:1}}
+.rise text{opacity:0;animation:riseUp 3.2s ease-out infinite}
+@keyframes riseUp{0%{opacity:0;transform:translateY(20px)}30%{opacity:.9}100%{opacity:0;transform:translateY(-40px)}}
+.pts circle{animation:ptBlink 3s ease-in-out infinite;filter:drop-shadow(0 0 6px #f3d991)}
+@keyframes ptBlink{0%,100%{opacity:.3}50%{opacity:1}}
+.art::before{display:none}
+.lotus{width:clamp(140px,16vw,210px);height:auto;filter:drop-shadow(0 0 22px rgba(221,174,53,.45));animation:float 5s ease-in-out infinite alternate}
+.ck{flex-shrink:0;width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--gold-l),var(--gold));box-shadow:0 0 18px rgba(221,174,53,.45);position:relative;margin-left:4px}
+.ck::after{content:"";position:absolute;left:14px;top:9px;width:10px;height:18px;border:solid var(--ink);border-width:0 3px 3px 0;transform:rotate(45deg)}
+.inc li .ic{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--ink);color:var(--gold-l);font-family:var(--display);font-size:13px;font-weight:700}
+.tc .off{font-family:var(--display);font-weight:800;font-size:clamp(40px,4vw,56px);line-height:1;color:var(--burg);letter-spacing:-.03em}
+.tc.base img{width:120px}
+@media (prefers-reduced-motion:reduce){.mx-rain{display:none}}
+.solo .prose{max-width:52rem}
+.morph{max-width:400px}
+.morph svg{width:100%;height:auto;overflow:visible}
+.morph .pill{animation:pillFloat 3.6s ease-in-out infinite alternate}
+.morph .pill-b{animation-delay:-1.8s}
+.morph .glint{animation:ptBlink 4s ease-in-out infinite}
+.neo{position:relative;margin:0;width:clamp(190px,22vw,290px);justify-self:center;text-align:center}
+.neo img{width:100%;height:auto;display:block;-webkit-mask-image:radial-gradient(ellipse 58% 54% at 54% 44%,#000 58%,transparent 100%);mask-image:radial-gradient(ellipse 58% 54% at 54% 44%,#000 58%,transparent 100%)}
+.neo .next{margin-top:-40px;position:relative}
+.become .neo img{animation:none;filter:none}
+.neo .tip{transform-box:fill-box;transform-origin:center;animation:tipPulse 2s ease-in-out infinite}
+@keyframes tipPulse{0%,100%{opacity:.55;transform:scale(.8)}50%{opacity:1;transform:scale(1.25)}}
+.neo .glint{animation:ptBlink 4s ease-in-out infinite}
+.next{font-family:'Caveat',cursive;font-weight:700;font-size:clamp(28px,2.6vw,38px);line-height:1;color:var(--gold-l);transform:rotate(-4deg);margin-top:-6px;text-shadow:0 2px 12px rgba(26,16,18,.6)}
+.hero-cards{grid-template-columns:1fr 1.6fr!important}
+.hero-cards .hc{display:flex;flex-direction:column;justify-content:center}
+.hc.disc50{flex-direction:row;align-items:center;gap:clamp(16px,2.4vw,32px);padding:24px 30px}
+.big50{font-family:var(--display);font-weight:800;font-size:clamp(52px,6vw,92px);line-height:.9;letter-spacing:-.04em;color:var(--burg)}
+.hc.disc50 .v{font-size:clamp(20px,2vw,28px)}
+.hero-cards .hc:first-child .v{font-size:clamp(22px,2.2vw,30px)}
+@media (max-width:640px){.hero-cards{grid-template-columns:1fr!important}.hc.disc50{flex-direction:column;align-items:flex-start;gap:10px;padding:22px 24px}.big50{font-size:64px}}
+/* route */
+@keyframes spark{0%,100%{opacity:0;transform:scale(.3)}45%{opacity:1;transform:scale(1.15)}}
+.route{position:relative}
+.route-svg{display:block;width:100%;height:auto;overflow:visible;margin:8px 0}
+.rbase{fill:none;stroke:var(--cream-2);stroke-width:18;stroke-linecap:round}
+.rdash{fill:none;stroke:#fffdf9;stroke-width:2;stroke-dasharray:8 10}
+.rlit{fill:none;stroke:url(#rGold);stroke-width:7;stroke-linecap:round;filter:drop-shadow(0 0 5px rgba(221,174,53,.7))}
+.rp .c{fill:#fffdf9;stroke:var(--cream-2);stroke-width:4;transition:fill .5s,stroke .5s}
+.rp .h{fill:rgba(221,174,53,.35);opacity:0;transform-box:fill-box;transform-origin:center;transition:opacity .5s}
+.rp.on .c{fill:var(--gold);stroke:#fffdf9}
+.rp.on .h{opacity:1;animation:ptPulse 2.2s ease-in-out infinite}
+@keyframes ptPulse{0%,100%{transform:scale(1);opacity:.9}50%{transform:scale(1.7);opacity:.15}}
+.rworld .core{fill:#d9cfc2;stroke:#fffdf9;stroke-width:3;transition:fill 1s}
+.rworld .mer{stroke:#fffdf9;stroke-width:1.5;opacity:.8}
+.rworld .rays{stroke:var(--gold);stroke-width:3;stroke-linecap:round;opacity:0;transform-box:fill-box;transform-origin:center;transition:opacity 1s}
+.rworld .spk path{fill:var(--gold);opacity:0;transform-box:fill-box;transform-origin:center}
+.route.done .rworld .core{fill:url(#rSun);filter:drop-shadow(0 0 18px rgba(221,174,53,.95))}
+.route.done .rworld .mer{stroke:#fff6d6}
+.route.done .rworld .rays{opacity:1;animation:rays 18s linear infinite}
+@keyframes rays{to{transform:rotate(360deg)}}
+.route.done .rworld .spk path{animation:spark 2.6s ease-in-out infinite}
+.route.done .rworld .spk path:nth-child(2){animation-delay:.8s}.route.done .rworld .spk path:nth-child(3){animation-delay:1.6s}
+.walker circle{fill:var(--burg)}
+.walker{filter:drop-shadow(0 0 4px rgba(221,174,53,.8))}
+.walker .wk{fill:none;stroke:var(--burg);stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round}
+.walker{transition:opacity .6s}
+.route.done .walker{opacity:0}
+.route-steps{list-style:none;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0 12px}
+.route-steps li{position:relative;opacity:.35;transform:translateY(8px);transition:opacity .6s ease,transform .6s ease;text-align:center}
+.route-steps li.on{opacity:1;transform:none}
+.route-steps li:nth-child(odd){grid-row:1;padding:0 4px 4px;align-self:end}
+.route-steps li:nth-child(even){grid-row:3;padding:4px 4px 0}
+.route-steps li:nth-child(n){grid-column:var(--c);text-align:center;margin:0}
+.route-steps li:nth-child(1){--c:1}.route-steps li:nth-child(2){--c:2}.route-steps li:nth-child(3){--c:3}.route-steps li:nth-child(4){--c:4}.route-steps li:nth-child(5){--c:5}.route-steps li:nth-child(6){--c:6}
+.route-steps li p{font-weight:700;font-size:15px;line-height:1.4;color:var(--text-d)!important;width:185%;margin:0 0 0 -42.5%}
+.route-steps li:nth-child(1) p{width:150%;margin-left:-10%}
+.route-steps li:nth-child(6) p{width:170%;margin-left:-70%;text-align:right}
+.route-steps li:nth-child(6){text-align:right}
+.rn{display:block;font-family:var(--display);font-size:13px;font-weight:700;color:var(--gold-d);margin-bottom:6px}
+.route-steps .fin p{font-family:var(--display);font-weight:700;font-size:clamp(16px,1.5vw,20px);color:var(--burg)!important}
+.rd{display:none}
+.route-desk{display:contents}
+@media (min-width:861px){
+  .route{display:grid;grid-template-rows:auto auto auto}
+  .route-steps{display:contents}
+  .route-svg{grid-row:2;grid-column:1/-1}
+  .route{grid-template-columns:repeat(6,minmax(0,1fr));column-gap:12px}
+}
+@media (max-width:860px){
+  .route-svg{display:none}
+  .route-steps{grid-template-columns:1fr;gap:0;padding-left:44px;position:relative}
+  .route-steps::before{content:"";position:absolute;left:15px;top:8px;bottom:8px;width:10px;border-radius:10px;background:var(--cream-2)}
+  .route-steps::after{content:"";position:absolute;left:17px;top:8px;width:6px;height:calc(var(--p,0) * (100% - 16px));border-radius:6px;background:linear-gradient(180deg,var(--burg),var(--gold),var(--gold-l));box-shadow:0 0 8px rgba(221,174,53,.6)}
+  .route-steps li,.route-steps li:nth-child(n){grid-row:auto;grid-column:auto;text-align:left;padding:10px 0 22px;align-self:auto;margin:0}
+  .route-steps li p,.route-steps li:nth-child(n) p{margin:0;max-width:none;width:auto;text-align:left}
+  .rd{display:block;position:absolute;left:-36px;top:12px;width:20px;height:20px;border-radius:50%;background:#fffdf9;border:4px solid var(--cream-2);z-index:1;transition:background .5s,border-color .5s,box-shadow .5s}
+  .route-steps li.on .rd{background:var(--gold);border-color:#fffdf9;box-shadow:0 0 0 6px rgba(221,174,53,.3)}
+  .route-steps .fin .rd{left:-44px;top:4px;width:36px;height:36px;border:3px solid #fffdf9;background:#d9cfc2}
+  .route.done .fin .rd{background:radial-gradient(circle,#fffbe9,#f3d991 55%,#ddae35);box-shadow:0 0 0 8px rgba(221,174,53,.25),0 0 30px rgba(221,174,53,.9)}
+}
+@media (prefers-reduced-motion:reduce){.route-steps li{opacity:1;transform:none}}
+
+.globe-solo{display:grid;place-items:center}
+.globe-solo .mx-svg{width:100%;filter:drop-shadow(0 0 24px rgba(221,174,53,.35))}
+.langs{display:flex;gap:2px;font-size:12px;font-weight:800;flex-shrink:0}
+.hdr-in>.langs{margin-left:auto}
+.dnav+.langs{margin-left:8px}
+.langs+.menu-btn{margin-left:6px}
+.langs a{padding:6px 9px;border-radius:999px;color:var(--text-lm)}
+.langs a:hover{color:var(--gold-l)}
+.langs a.on{background:var(--gold);color:var(--ink)}
+.mnav .langs{display:none;margin:8px 6px 4px;padding-top:10px;border-top:1px solid var(--line-l)}
+@media (max-width:640px){.hdr-in>.langs{display:none}.mnav .langs{display:flex}.mnav .langs a{padding:8px 14px;font-size:13px}}
+/* faces constellation */
+.stars-faces{position:relative;aspect-ratio:2/1;width:100%;margin:clamp(36px,5vw,64px) 0 0}
+.stars-faces::before{content:"";position:absolute;inset:0 10%;border-radius:50%;background:radial-gradient(ellipse,rgba(221,174,53,.16),transparent 70%);pointer-events:none}
+.sf-lines{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.sf-lines.lm{display:none}
+.sf-lines line{stroke:#f3d991;stroke-width:1.3;vector-effect:non-scaling-stroke;stroke-dasharray:120;stroke-dashoffset:120;opacity:.5;transition:stroke-dashoffset 1.8s ease var(--d)}
+.stars-faces.in .sf-lines line{stroke-dashoffset:0}
+.fc{position:absolute;left:var(--x);top:var(--y);width:15.5%;aspect-ratio:1/1;transform:translate(-50%,-50%) scale(.4);border-radius:50%;opacity:0;transition:opacity 1s ease var(--d),transform 1.2s cubic-bezier(.2,1.25,.4,1) var(--d)}
+.fc img{width:100%;height:100%;border-radius:50%;object-fit:cover;filter:grayscale(1) brightness(.5);border:2px solid rgba(243,217,145,.85);transition:filter 1.5s ease calc(var(--d) + .5s),box-shadow 1.5s ease calc(var(--d) + .5s)}
+.fc i{position:absolute;left:50%;top:50%;width:30%;height:30%;margin:-15% 0 0 -15%;background:#fff6d6;clip-path:polygon(50% 0,58% 42%,100% 50%,58% 58%,50% 100%,42% 58%,0 50%,42% 42%);opacity:0;pointer-events:none}
+.stars-faces.in .fc{opacity:1;transform:translate(-50%,-50%) scale(1)}
+.stars-faces.in .fc img{filter:none;box-shadow:0 0 0 4px rgba(221,174,53,.18),0 0 30px 6px rgba(221,174,53,.5);animation:faceGlow 3.6s ease-in-out calc(var(--d) + 2.2s) infinite alternate}
+.stars-faces.in .fc i{animation:starFlash 1.2s ease-out calc(var(--d) + .35s) 1 both}
+@keyframes starFlash{0%{opacity:0;transform:scale(.2) rotate(0)}40%{opacity:.9;transform:scale(1.3) rotate(45deg)}100%{opacity:0;transform:scale(1.7) rotate(90deg)}}
+@keyframes faceGlow{from{box-shadow:0 0 0 3px rgba(221,174,53,.15),0 0 18px 3px rgba(221,174,53,.4)}to{box-shadow:0 0 0 5px rgba(221,174,53,.25),0 0 40px 10px rgba(243,217,145,.6)}}
+@media (max-width:760px){
+  .stars-faces{aspect-ratio:1/1.45}
+  .sf-lines.ld{display:none}.sf-lines.lm{display:block}
+  .fc{left:var(--mx);top:var(--my);width:31%}
+}
+@media (prefers-reduced-motion:reduce){.fc{opacity:1;transform:translate(-50%,-50%)}.fc img{filter:none}.sf-lines line{stroke-dashoffset:0}}
+</style>
+</head>
+<body id="top">
+<div class="matrix-bg" aria-hidden="true"></div>
+<canvas id="rain" aria-hidden="true"></canvas>
+
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="#top"><img src="../img/logo-mark.png" width="160" height="120" alt="Академія Класичної Мудрості"><span class="brand-txt"><b>АКМ МТТ-2 · тренери медитації</b><span>7–12 грудня · онлайн</span></span></a>
+    <nav class="dnav" aria-label="Розділи">
+      <a href="#for">Для&nbsp;кого</a>
+      <a href="#need">Нам потрібні тренери</a>
+      <a href="#teachers">Викладачі</a>
+      <a href="#cert">Сертифікат</a>
+      <a href="#price">Вартість</a>
+      <a href="#program">Як влаштований курс</a>
+      <a href="#faq">Питання</a>
+    </nav>
+    <div class="langs" aria-label="Мова сторінки"><a href="/mtt2/" hreflang="ru">RU</a><a class="on" aria-current="page" href="/mtt2/ua/" hreflang="uk">UA</a></div>
+    <button class="menu-btn" type="button" id="menu-btn" aria-expanded="false" aria-controls="mnav"><span class="burger" aria-hidden="true"></span><span class="menu-txt">Меню</span></button>
+    <a class="btn btn-gold" href="#apply">Подати заявку</a>
+  </div>
+</header>
+<nav class="mnav" id="mnav" aria-label="Меню" hidden>
+  <a href="#for">Для&nbsp;кого</a>
+  <a href="#need">Нам потрібні тренери</a>
+  <a href="#teachers">Викладачі</a>
+  <a href="#cert">Сертифікат за&nbsp;курсом</a>
+  <a href="#price">Вартість участі та&nbsp;бонуси</a>
+  <a href="#program">Як влаштований курс</a>
+  <a href="#faq">Часті питання</a>
+  <div class="langs" aria-label="Мова сторінки"><a href="/mtt2/" hreflang="ru">RU</a><a class="on" aria-current="page" href="/mtt2/ua/" hreflang="uk">UA</a></div>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero dark" aria-label="Курс підготовки тренерів медитації АКМ МТТ-2">
+  <div class="hero-in">
+    <div class="hero-text">
+      <span class="pill"><i></i>Курс підготовки тренерів медитації АКМ&nbsp;МТТ-2</span>
+      <h1><span class="grad">Допомагайте іншим</span> <span>перезібрати реальність</span></h1>
+      <p class="hand">за&nbsp;допомогою медитації<br>на&nbsp;пустоту Кхедрупа Дже</p>
+      <div class="ctas">
+        <a class="btn btn-gold" href="#apply">Подати заявку на&nbsp;участь <span class="ar">→</span></a>
+        <a class="btn btn-ghost" href="#program">Як влаштований курс</a>
+      </div>
+      <div class="facts"><div class="one"><i>✦</i><b>7–12&nbsp;грудня</b></div></div>
+    </div>
+    <figure class="hero-pair"><img src="../img/pair.webp" width="1000" height="945" alt="Двоє учнів медитують у чорних окулярах — у стилі «Матриці»" fetchpriority="high"></figure>
+  </div>
+</section>
+<div class="hero-cards">
+  <div class="hc"><h3>Хто може взяти участь</h3><p class="v">усі охочі</p></div>
+  <div class="hc gold disc50"><span class="big50">−50%</span><div><h3>Знижка</h3><p class="v">для тих, хто проходив курс АКМ&nbsp;ТТ&nbsp;2</p></div></div>
+</div>
+
+<!-- FOR WHOM -->
+<div class="mega-wrap"><section class="mega sec cream" id="for">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Для кого</span><h2>Для кого цей <span class="grad">курс?</span></h2></div></div>
+    <ul class="who-grid">
+      <li><span class="n">01</span>Для тренерів АКМ, які хочуть викладати та&nbsp;вести медитацію Кхедрупа Дже на&nbsp;курсах ACI-2</li>
+      <li><span class="n">02</span>Для тих, хто хоче проводити курс з&nbsp;медитації М2 для студентів ACI, наприклад між курсами ACI</li>
+      <li><span class="n">03</span>Для тих, хто хоче викладати та&nbsp;вести медитації в&nbsp;межах звичайних або медитаційних ретритів</li>
+      <li><span class="n">04</span>Для тих, хто хоче посилити свої освітні / наставницькі продукти за&nbsp;допомогою медитацій</li>
+      <li><span class="n">05</span>Для тих, хто вже навчає медитації або хоче почати це робити</li>
+      <li><span class="n">06</span>Для тих, хто хоче глибше розібратися в&nbsp;медитації Кхедрупа Дже для особистої практики</li>
+    </ul>
+  </div>
+</section></div>
+
+<!-- UNCERTAINTY -->
+<section class="sec dark">
+  <div class="wrap">
+    <div class="solo">
+      <div>
+        <span class="eyebrow">У світі невизначеності</span>
+        <h2 style="margin-top:14px">Коли світ здається нестабільним, особливо важливі ті, <span class="grad">хто знає, як він влаштований</span></h2>
+        <div class="prose" style="margin-top:26px">
+          <p>Ми живемо в&nbsp;часи, коли звична опора зникає з-під ніг. Новини тривожать, плани руйнуються, майбутнє здається туманним. Багато хто почувається трісочкою в&nbsp;потоці обставин.</p>
+          <p class="big" style="color:var(--white)">Але ви знаєте те, чого не&nbsp;знають інші.</p>
+          <p>Ви знаєте, що світ не&nbsp;відбувається з&nbsp;нами: він виникає з&nbsp;наших власних ментальних зерен. Що речі не&nbsp;мають своєї природи, окремої від&nbsp;того, як ми їх бачимо. Що реальність, яка здається такою твердою й&nbsp;незмінною, насправді відкрита для змін.</p>
+          <p>Це знання змінює все. <b>Ми не&nbsp;жертви обставин. Ми ті, хто творить свою реальність.</b></p>
+        </div>
+      </div>
+
+    </div>
+    <figure class="stars-faces" id="stars-faces" aria-label="Майбутні тренери медитації">
+      <svg class="sf-lines ld" viewBox="0 0 100 50" preserveAspectRatio="none" aria-hidden="true"><line x1="17" y1="12.5" x2="34" y2="15.5" style="--d:0.48s"/><line x1="34" y1="15.5" x2="50.5" y2="11.5" style="--d:0.66s"/><line x1="50.5" y1="11.5" x2="67" y2="15.0" style="--d:0.84s"/><line x1="67" y1="15.0" x2="83.5" y2="12.0" style="--d:1.02s"/><line x1="8.5" y1="36.0" x2="17" y2="12.5" style="--d:1.20s"/><line x1="17" y1="12.5" x2="25" y2="38.5" style="--d:1.38s"/><line x1="25" y1="38.5" x2="34" y2="15.5" style="--d:1.38s"/><line x1="34" y1="15.5" x2="41.5" y2="35.0" style="--d:1.56s"/><line x1="41.5" y1="35.0" x2="50.5" y2="11.5" style="--d:1.56s"/><line x1="50.5" y1="11.5" x2="58" y2="38.5" style="--d:1.74s"/><line x1="58" y1="38.5" x2="67" y2="15.0" style="--d:1.74s"/><line x1="67" y1="15.0" x2="74.5" y2="35.0" style="--d:1.92s"/><line x1="74.5" y1="35.0" x2="83.5" y2="12.0" style="--d:1.92s"/><line x1="83.5" y1="12.0" x2="91" y2="38.0" style="--d:2.10s"/><line x1="8.5" y1="36.0" x2="25" y2="38.5" style="--d:1.38s"/><line x1="25" y1="38.5" x2="41.5" y2="35.0" style="--d:1.56s"/><line x1="41.5" y1="35.0" x2="58" y2="38.5" style="--d:1.74s"/><line x1="58" y1="38.5" x2="74.5" y2="35.0" style="--d:1.92s"/><line x1="74.5" y1="35.0" x2="91" y2="38.0" style="--d:2.10s"/></svg><svg class="sf-lines lm" viewBox="0 0 100 145" preserveAspectRatio="none" aria-hidden="true"><line x1="17" y1="14.5" x2="50" y2="18.9" style="--d:0.48s"/><line x1="50" y1="18.9" x2="83" y2="14.5" style="--d:0.66s"/><line x1="17" y1="14.5" x2="33.5" y2="50.8" style="--d:0.84s"/><line x1="50" y1="18.9" x2="33.5" y2="50.8" style="--d:0.84s"/><line x1="50" y1="18.9" x2="66.5" y2="50.8" style="--d:1.02s"/><line x1="83" y1="14.5" x2="66.5" y2="50.8" style="--d:1.02s"/><line x1="33.5" y1="50.8" x2="66.5" y2="50.8" style="--d:1.02s"/><line x1="33.5" y1="50.8" x2="17" y2="87.0" style="--d:1.20s"/><line x1="33.5" y1="50.8" x2="50" y2="89.9" style="--d:1.38s"/><line x1="66.5" y1="50.8" x2="50" y2="89.9" style="--d:1.38s"/><line x1="66.5" y1="50.8" x2="83" y2="87.0" style="--d:1.56s"/><line x1="17" y1="87.0" x2="50" y2="89.9" style="--d:1.38s"/><line x1="50" y1="89.9" x2="83" y2="87.0" style="--d:1.56s"/><line x1="17" y1="87.0" x2="17" y2="126.2" style="--d:1.74s"/><line x1="50" y1="89.9" x2="50" y2="129.1" style="--d:1.92s"/><line x1="83" y1="87.0" x2="83" y2="126.2" style="--d:2.10s"/><line x1="17" y1="126.2" x2="50" y2="129.1" style="--d:1.92s"/><line x1="50" y1="129.1" x2="83" y2="126.2" style="--d:2.10s"/></svg>
+      <span class="fc" style="--x:17%;--y:25%;--mx:17%;--my:10%;--d:0.00s"><img src="../img/faces/b01.webp" alt="" loading="lazy" width="520" height="520"><i></i></span><span class="fc" style="--x:34%;--y:31%;--mx:50%;--my:13%;--d:0.18s"><img src="../img/faces/b02.webp" alt="" loading="lazy" width="520" height="520"><i></i></span><span class="fc" style="--x:50.5%;--y:23%;--mx:83%;--my:10%;--d:0.36s"><img src="../img/faces/b03.webp" alt="" loading="lazy" width="520" height="520"><i></i></span><span class="fc" style="--x:67%;--y:30%;--mx:33.5%;--my:35%;--d:0.54s"><img src="../img/faces/b04.webp" alt="" loading="lazy" width="520" height="520"><i></i></span><span class="fc" style="--x:83.5%;--y:24%;--mx:66.5%;--my:35%;--d:0.72s"><img src="../img/faces/b05.webp" alt="" loading="lazy" width="520" height="520"><i></i></span><span class="fc" style="--x:8.5%;--y:72%;--mx:17%;--my:60%;--d:0.90s"><img src="../img/faces/b06.webp" alt="" loading="lazy" width="520" height="520"><i></i></span><span class="fc" style="--x:25%;--y:77%;--mx:50%;--my:62%;--d:1.08s"><img src="../img/faces/b07.webp" alt="" loading="lazy" width="520" height="520"><i></i></span><span class="fc" style="--x:41.5%;--y:70%;--mx:83%;--my:60%;--d:1.26s"><img src="../img/faces/b08.webp" alt="" loading="lazy" width="520" height="520"><i></i></span><span class="fc" style="--x:58%;--y:77%;--mx:17%;--my:87%;--d:1.44s"><img src="../img/faces/b09.webp" alt="" loading="lazy" width="520" height="520"><i></i></span><span class="fc" style="--x:74.5%;--y:70%;--mx:50%;--my:89%;--d:1.62s"><img src="../img/faces/b10.webp" alt="" loading="lazy" width="520" height="520"><i></i></span><span class="fc" style="--x:91%;--y:76%;--mx:83%;--my:87%;--d:1.80s"><img src="../img/faces/b11.webp" alt="" loading="lazy" width="520" height="520"><i></i></span>
+    </figure>
+  </div>
+</section>
+
+<!-- CHOICE -->
+<div class="mega-wrap"><section class="mega sec burgm">
+  <div class="wrap">
+    <div class="two rev">
+      <div class="art morph"><svg viewBox="0 0 400 440" role="img" aria-label="Силует Морфеуса, який простягає червону й синю пігулки">
+        <defs>
+          <radialGradient id="mGlow" cx=".5" cy=".38" r=".6"><stop offset="0" stop-color="#f3d991" stop-opacity=".55"/><stop offset=".45" stop-color="#ddae35" stop-opacity=".22"/><stop offset="1" stop-color="#ddae35" stop-opacity="0"/></radialGradient>
+          <linearGradient id="pR" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a8a"/><stop offset=".45" stop-color="#d0182f"/><stop offset="1" stop-color="#4f0812"/></linearGradient>
+          <linearGradient id="pB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9cc3ff"/><stop offset=".45" stop-color="#2353cf"/><stop offset="1" stop-color="#0a1a52"/></linearGradient>
+          <linearGradient id="mFade" x1="0" y1="0" x2="0" y2="1"><stop offset=".78" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+          <mask id="mMask"><rect width="400" height="440" fill="url(#mFade)"/></mask>
+        </defs>
+        <ellipse cx="200" cy="190" rx="200" ry="210" fill="url(#mGlow)" class="pulse"/>
+        <g mask="url(#mMask)" fill="#0d0809" stroke="rgba(243,217,145,.75)" stroke-width="1.6" stroke-linejoin="round">
+          <path d="M200 146 C150 146 112 158 96 186 C80 214 78 262 80 302 L70 440 H330 L320 302 C322 262 320 214 304 186 C288 158 250 146 200 146Z"/>
+          <path d="M184 120 L182 150 Q200 160 218 150 L216 120Z"/>
+          <ellipse cx="164" cy="92" rx="6" ry="11"/><ellipse cx="236" cy="92" rx="6" ry="11"/>
+          <path d="M200 42 C224 42 238 62 238 90 C238 116 222 134 200 134 C178 134 162 116 162 90 C162 62 176 42 200 42Z"/>
+          <path d="M96 236 C92 270 96 296 112 306 L150 318 L150 300 L118 284 C112 268 110 250 112 236Z"/>
+          <path d="M304 236 C308 270 304 296 288 306 L250 318 L250 300 L282 284 C288 268 290 250 288 236Z"/>
+        </g>
+        <path d="M184 154 L166 248 M216 154 L234 248" stroke="rgba(243,217,145,.3)" stroke-width="1.2" fill="none"/>
+        <g class="shades">
+          <line x1="166" y1="86" x2="234" y2="86" stroke="rgba(243,217,145,.6)" stroke-width="1.4"/>
+          <ellipse cx="185" cy="88" rx="12" ry="9" fill="#030202" stroke="#f3d991" stroke-width="1.3"/>
+          <ellipse cx="215" cy="88" rx="12" ry="9" fill="#030202" stroke="#f3d991" stroke-width="1.3"/>
+          <path d="M178 85 q3 -3 7 -3 M208 85 q3 -3 7 -3" stroke="#fff6d6" stroke-width="1.6" fill="none" class="glint"/>
+        </g>
+        <path d="M118 316 Q146 334 176 316 Q170 330 147 332 Q124 330 118 316Z" fill="#241612" stroke="rgba(243,217,145,.7)" stroke-width="1.3"/>
+        <path d="M224 316 Q254 334 282 316 Q276 330 253 332 Q230 330 224 316Z" fill="#241612" stroke="rgba(243,217,145,.7)" stroke-width="1.3"/>
+        <g class="pill pill-r"><g transform="translate(147 312) rotate(-10)"><rect x="-22" y="-8.5" width="44" height="17" rx="8.5" fill="url(#pR)"/><rect x="-16" y="-6" width="30" height="3.5" rx="1.7" fill="#fff" opacity=".5"/></g></g>
+        <g class="pill pill-b"><g transform="translate(253 312) rotate(10)"><rect x="-22" y="-8.5" width="44" height="17" rx="8.5" fill="url(#pB)"/><rect x="-16" y="-6" width="30" height="3.5" rx="1.7" fill="#fff" opacity=".5"/></g></g>
+      </svg></div>
+      <div>
+        <h2>І навіть у&nbsp;найневизначеніші часи в&nbsp;нас завжди <span class="grad">є вибір:</span></h2>
+        <ul class="choice" style="margin-top:26px">
+          <li><b>обрати творення,</b><span>а&nbsp;не&nbsp;страх;</span></li>
+          <li><b>обрати роботу з&nbsp;розумом,</b><span>а&nbsp;не&nbsp;боротьбу з&nbsp;наслідками;</span></li>
+          <li><b>обрати духовну практику,</b><span>а&nbsp;не&nbsp;втечу від&nbsp;того, що відбувається;</span></li>
+          <li><b>обрати допомогу іншим,</b><span>а&nbsp;не&nbsp;замикатися в&nbsp;собі.</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout-box"><p class="callout">Кожен такий вибір — зерно. З&nbsp;цих зерен виростає наш майбутній світ, той самий ідеальний світ, про&nbsp;який ми мріємо.</p></div>
+  </div>
+</section></div>
+
+<!-- ROLE -->
+<div class="mega-wrap"><section class="mega sec cream" id="role">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Ваша роль</span><h2>І тут починається <span class="grad">ваша роль!</span></h2></div></div>
+    <div class="strip" id="strip">
+      <figure><img src="../img/role-1.webp" alt="Тренер веде медитацію" loading="lazy"></figure>
+      <figure><img src="../img/role-2.webp" alt="Медитація в групі" loading="lazy"></figure>
+      <figure><img src="../img/role-3.webp" alt="Заняття курсу ACI" loading="lazy"></figure>
+      <figure><img src="../img/role-4.webp" alt="Спільна медитація" loading="lazy"></figure>
+      <figure><img src="../img/role-5.webp" alt="Практика медитації" loading="lazy"></figure>
+      <figure><img src="../img/role-6.webp" alt="Учитель і учні" loading="lazy"></figure>
+    </div>
+    <div class="route" id="route">
+      <svg class="route-svg" viewBox="0 0 1200 160" aria-hidden="true">
+        <defs><linearGradient id="rGold" x1="0" x2="1"><stop offset="0" stop-color="#69232d"/><stop offset=".35" stop-color="#ddae35"/><stop offset="1" stop-color="#f3d991"/></linearGradient>
+        <radialGradient id="rSun"><stop offset="0" stop-color="#fffbe9"/><stop offset=".5" stop-color="#f3d991"/><stop offset="1" stop-color="#ddae35"/></radialGradient></defs>
+        <path class="rbase" d="M100 50 C200 50 200 112 300 112 C400 112 400 50 500 50 C600 50 600 112 700 112 C800 112 800 50 900 50 C1000 50 1000 82 1100 82"/><path class="rdash" d="M100 50 C200 50 200 112 300 112 C400 112 400 50 500 50 C600 50 600 112 700 112 C800 112 800 50 900 50 C1000 50 1000 82 1100 82"/><path class="rlit" id="rlit" d="M100 50 C200 50 200 112 300 112 C400 112 400 50 500 50 C600 50 600 112 700 112 C800 112 800 50 900 50 C1000 50 1000 82 1100 82"/>
+        <g class="rp" transform="translate(100 50)"><circle class="h" r="16"/><circle class="c" r="9"/></g><g class="rp" transform="translate(300 112)"><circle class="h" r="16"/><circle class="c" r="9"/></g><g class="rp" transform="translate(500 50)"><circle class="h" r="16"/><circle class="c" r="9"/></g><g class="rp" transform="translate(700 112)"><circle class="h" r="16"/><circle class="c" r="9"/></g><g class="rp" transform="translate(900 50)"><circle class="h" r="16"/><circle class="c" r="9"/></g><g class="rworld" transform="translate(1100 82)"><g class="rays"><line x1="0" y1="-40" x2="0" y2="-58" transform="rotate(0)"/><line x1="0" y1="-40" x2="0" y2="-52" transform="rotate(30)"/><line x1="0" y1="-40" x2="0" y2="-58" transform="rotate(60)"/><line x1="0" y1="-40" x2="0" y2="-52" transform="rotate(90)"/><line x1="0" y1="-40" x2="0" y2="-58" transform="rotate(120)"/><line x1="0" y1="-40" x2="0" y2="-52" transform="rotate(150)"/><line x1="0" y1="-40" x2="0" y2="-58" transform="rotate(180)"/><line x1="0" y1="-40" x2="0" y2="-52" transform="rotate(210)"/><line x1="0" y1="-40" x2="0" y2="-58" transform="rotate(240)"/><line x1="0" y1="-40" x2="0" y2="-52" transform="rotate(270)"/><line x1="0" y1="-40" x2="0" y2="-58" transform="rotate(300)"/><line x1="0" y1="-40" x2="0" y2="-52" transform="rotate(330)"/></g><circle class="core" r="32"/><g class="mer" fill="none"><ellipse rx="32" ry="10"/><ellipse rx="12" ry="32"/><line x1="-32" y1="0" x2="32" y2="0"/><line x1="0" y1="-32" x2="0" y2="32"/></g><g class="spk"><path d="M-46 -30l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"/><path d="M44 -36l2.4 5.6 5.6 2.4-5.6 2.4-2.4 5.6-2.4-5.6-5.6-2.4 5.6-2.4z"/><path d="M48 30l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/></g></g><g id="walker" class="walker"><circle cx="0" cy="-30" r="6"/><path d="M0 -23 L0 -8 M0 -19 L-7 -12 M0 -19 L7 -14 M0 -8 L-6 2 M0 -8 L6 2" class="wk"/></g>
+      </svg>
+      <ol class="route-steps"><li><span class="rd"></span><span class="rn">01</span><p>Коли ви практикуєте самі, ви змінюєте свій світ</p></li><li><span class="rd"></span><span class="rn">02</span><p>Коли ви допомагаєте практикувати іншим, ви садите найсильніші зерна з&nbsp;можливих</p></li><li><span class="rd"></span><span class="rn">03</span><p>Ви допомагаєте людям знайти опору там, де її ніщо не&nbsp;відбере: у&nbsp;розумінні того, звідки приходить реальність</p></li><li><span class="rd"></span><span class="rn">04</span><p>Один тренер — це десятки людей, які почали медитувати</p></li><li><span class="rd"></span><span class="rn">05</span><p>Десятки людей — це сотні змінених життів, родин і&nbsp;стосунків</p></li><li class="fin"><span class="rd"></span><span class="rn">06</span><p>Так, через медитацію, ми разом змінюємо цей світ!</p></li></ol>
+    </div>
+    <div class="become">
+      <div>
+        <p>Саме зараз, у&nbsp;неспокійний час, людям особливо потрібні ті, хто може спокійно сісти поруч і&nbsp;сказати:</p>
+        <p class="quote">«Давай я&nbsp;покажу тобі, як на&nbsp;це подивитися».</p>
+        <div class="be"><span class="grad">Станьте такою людиною!</span></div>
+        <div class="ctas" style="margin-top:22px"><a class="btn btn-gold" href="#apply">Хочу стати тренером медитації! <span class="ar">→</span></a></div>
+      </div>
+      <figure class="neo"><img src="../img/neo.webp" width="560" height="1090" alt="Нео указывает пальцем прямо на зрителя" loading="lazy"><figcaption class="next">Ти&nbsp;— наступний!</figcaption></figure>
+    </div>
+  </div>
+</section></div>
+
+<!-- NEED TRAINERS -->
+<section class="sec dark" id="need">
+  <div class="wrap">
+    <div class="need-intro">
+      <div>
+        <span class="eyebrow">Медитаційний трек АКМ</span>
+        <h2 style="margin-top:14px">Нам дуже потрібні <span class="grad">тренери з&nbsp;медитації</span></h2>
+        <div class="prose" style="margin-top:22px">
+          <p>У&nbsp;2026 році АКМ запустила Медитаційний трек для студентів, які вивчають курси ACI.</p>
+          <p class="big" style="color:var(--white)">Нам потрібні підготовлені тренери, які зможуть вести ці курси та&nbsp;скеровувати практикуючих</p>
+        </div>
+      </div>
+      <img src="../img/pair.webp" width="1000" height="945" alt="" loading="lazy">
+    </div>
+    <div class="need">
+      <figure><img src="../img/tradition.webp" alt="Медитація на ретриті" loading="lazy"></figure>
+      <div class="card card-k prose" style="max-width:none">
+        <p><b>Медитація в&nbsp;тибетській традиції</b> — не&nbsp;факультатив і&nbsp;не&nbsp;додаткова опція. Це рівноцінна частина шляху. Без неї навчання залишається на&nbsp;рівні інтелекту. Тому Пітер і&nbsp;Марія Мьортл створили медитаційний трек АКМ: у&nbsp;кожного курсу ACI є своя медитація, яка дає змогу прожити його ідеї.</p>
+        <p>Ми будуємо майбутнє, у&nbsp;якому в&nbsp;студента навіть не&nbsp;виникає думки пройти курс ACI без медитації, що до&nbsp;нього належить. Пройшов курс — отже, пройшов і&nbsp;медитацію, і&nbsp;практикуєш її. Так само природно, як дихати.</p>
+        <p>Але це майбутнє не&nbsp;настане саме. Щоразу його створює жива людина, яка сідає перед групою, пояснює, відповідає на&nbsp;питання й&nbsp;веде медитацію. <b>Цією людиною можете стати ви.</b></p>
+        <p>Ефект від&nbsp;медитації на&nbsp;пустоту величезний. Але це непроста медитація, і&nbsp;пояснити її нелегко. <b>Тому нам так потрібні люди, які вміють передати її точно, дбайливо й&nbsp;з&nbsp;любов’ю.</b></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LINEAGE -->
+<div class="mega-wrap"><section class="mega sec cream">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Лінія передачі</span><h2>Понад 600&nbsp;років від&nbsp;учителя до&nbsp;учня <span class="grad">і&nbsp;далі через вас</span></h2></div></div>
+    <ol class="line4">
+      <li><span class="n">1</span><b>Кхедруп Дже</b>, найближчий учень <b>Дже Цонкапи</b> і&nbsp;один із&nbsp;найвидатніших майстрів школи Гелуг. Він створив цю медитацію понад 600&nbsp;років тому</li>
+      <li><span class="n">2</span><b>Геше Майкл Роуч та&nbsp;Інститут Азійської Класики (ACI)</b> продовжують цю лінію сьогодні</li>
+      <li><span class="n">3</span><b>Пітер і&nbsp;Марія Мьортл</b> передають її в&nbsp;Академії Класичної Мудрості</li>
+      <li><span class="n">4</span><b>Ви.</b> Наступна ланка, через яку медитація прийде до&nbsp;ваших студентів</li>
+    </ol>
+  </div>
+</section></div>
+
+<!-- CLUB -->
+<section class="sec dark" id="club">
+  <div class="wrap">
+    <div class="two">
+      <div>
+        <span class="eyebrow">Де застосувати навичку</span>
+        <h2 style="margin-top:14px">Клуб тренерів <span class="grad">з&nbsp;медитації</span></h2>
+        <div class="prose" style="margin-top:22px">
+          <p>В&nbsp;АКМ ми створили <b>Клуб тренерів з&nbsp;медитації</b>.</p>
+          <p>Координатори клубу шукають у&nbsp;нашій спільноті проєкти, де потрібні тренери: провести курс, медитацію всередині курсу ACI або ретрит.</p>
+          <p class="big" style="color:var(--white)">Ви отримуєте не&nbsp;лише навичку, а&nbsp;й&nbsp;місце, де її застосувати.</p>
+        </div>
+      </div>
+      <div class="art"><div class="globe-solo">
+        <svg class="mx-svg" viewBox="-160 -150 320 300" role="img" aria-label="Глобус із локаціями курсів">
+          <defs><radialGradient id="gL"><stop offset="0" stop-color="#ddae35" stop-opacity=".35"/><stop offset="1" stop-color="#ddae35" stop-opacity="0"/></radialGradient></defs>
+          <circle r="150" fill="url(#gL)" class="pulse"/>
+          <g fill="none" stroke="#ddae35" stroke-width="1.4" opacity=".75">
+            <circle r="110" stroke-width="2.2" fill="rgba(26,16,18,.25)"/>
+            <ellipse cx="0" cy="0" rx="110" ry="110"><animate attributeName="rx" values="110;0;110" dur="12s" begin="-0s" repeatCount="indefinite"/></ellipse><ellipse cx="0" cy="0" rx="110" ry="110"><animate attributeName="rx" values="110;0;110" dur="12s" begin="-2s" repeatCount="indefinite"/></ellipse><ellipse cx="0" cy="0" rx="110" ry="110"><animate attributeName="rx" values="110;0;110" dur="12s" begin="-4s" repeatCount="indefinite"/></ellipse><ellipse cx="0" cy="0" rx="110" ry="110"><animate attributeName="rx" values="110;0;110" dur="12s" begin="-6s" repeatCount="indefinite"/></ellipse><ellipse cx="0" cy="0" rx="110" ry="110"><animate attributeName="rx" values="110;0;110" dur="12s" begin="-8s" repeatCount="indefinite"/></ellipse><ellipse cx="0" cy="0" rx="110" ry="110"><animate attributeName="rx" values="110;0;110" dur="12s" begin="-10s" repeatCount="indefinite"/></ellipse>
+            <ellipse rx="110" ry="14"/><ellipse cy="-55" rx="95" ry="12"/><ellipse cy="55" rx="95" ry="12"/><ellipse cy="-92" rx="58" ry="7"/><ellipse cy="92" rx="58" ry="7"/>
+          </g>
+          <g class="pts" fill="#f3d991">
+            <circle cx="-34" cy="-48" r="4"/><circle cx="8" cy="-60" r="4" style="animation-delay:.5s"/><circle cx="40" cy="-30" r="4" style="animation-delay:1s"/><circle cx="-60" cy="-10" r="4" style="animation-delay:1.5s"/><circle cx="70" cy="-62" r="4" style="animation-delay:2s"/><circle cx="-12" cy="-22" r="4" style="animation-delay:2.5s"/>
+          </g>
+        </svg>
+      </div></div>
+    </div>
+    <div class="loc-card">
+      <figure><img src="../img/locations.webp" alt="Курс ACI в одній із локацій АКМ" loading="lazy"></figure>
+      <div class="card card-k prose" style="max-width:none;align-content:center">
+        <p>Щороку ми в&nbsp;межах АКМ запускаємо нові локації, де стартують нові цикли курсів ACI.</p>
+        <p>На&nbsp;цих курсах ми зокрема викладаємо медитацію і&nbsp;хочемо робити це ще професійніше та&nbsp;якісніше.</p>
+        <p class="big" style="color:var(--white)">І це означає, що нам дуже потрібні викладачі медитації!</p>
+      </div>
+    </div>
+    <div class="loc-row" tabindex="0" aria-label="Фото курсів ACI в різних містах">
+      <figure><img src="../img/loc-1.webp" alt="" loading="lazy"><figcaption>ACI 1, Прага</figcaption></figure>
+      <figure><img src="../img/loc-2.webp" alt="" loading="lazy"><figcaption>ACI 5, Київ</figcaption></figure>
+      <figure><img src="../img/loc-3.webp" alt="" loading="lazy"><figcaption>ACI 4, Нижній Новгород</figcaption></figure>
+      <figure><img src="../img/loc-4.webp" alt="" loading="lazy"><figcaption>ACI 4, Санкт-Петербург</figcaption></figure>
+      <figure><img src="../img/loc-5.webp" alt="" loading="lazy"><figcaption>ACI 3, Нижній Новгород</figcaption></figure>
+      <figure><img src="../img/loc-6.webp" alt="" loading="lazy"><figcaption>ACI 5, Алмати</figcaption></figure>
+      <figure><img src="../img/loc-7.webp" alt="" loading="lazy"><figcaption>ACI 6, Алмати</figcaption></figure>
+      <figure><img src="../img/loc-8.webp" alt="" loading="lazy"><figcaption>ACI 1, Дюссельдорф</figcaption></figure>
+      <figure><img src="../img/loc-9.webp" alt="" loading="lazy"><figcaption>ACI 1, Нюрнберг</figcaption></figure>
+      <figure><img src="../img/loc-10.webp" alt="" loading="lazy"><figcaption>ACI 4, Москва</figcaption></figure>
+    </div>
+    <p class="hint">← гортайте →</p>
+  </div>
+</section>
+
+<!-- TEACHERS -->
+<div class="mega-wrap"><section class="mega sec cream" id="teachers">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Команда курсу</span><h2>Викладачі <span class="grad">курсу</span></h2></div></div>
+    <div class="t4">
+      <article class="card card-w tch">
+        <img src="../img/t-mila.webp" width="600" height="600" alt="Людмила Мішаніна" loading="lazy">
+        <div><h3>Людмила Мішаніна</h3><span class="tag t-gold">Заняття 1</span>
+          <ul>
+            <li>З 2018 року почала вивчати систему зерен і&nbsp;регулярно медитувати</li>
+            <li>У 2022 році закінчила 18 курсів ACI</li>
+            <li>Завершила 5 тренінгів для викладачів ACI</li>
+            <li>Старший тренер АКМ</li>
+            <li>Юридична освіта</li>
+            <li>Мама двох дітей</li>
+            <li>Наразі — виконавча директорка та&nbsp;директорка з&nbsp;маркетингу в&nbsp;Академії Класичної Мудрості</li>
+            <li>Завершила 4 мовчазні медитаційні ретрити тривалістю в&nbsp;місяць</li>
+          </ul>
+        </div>
+      </article>
+      <article class="card card-w tch">
+        <img src="../img/t-alexandra.webp" width="600" height="579" alt="Олександра Пунько" loading="lazy">
+        <div><h3>Олександра Пунько</h3><span class="tag t-gold">Заняття 2</span>
+          <ul>
+            <li>Програмістка за&nbsp;освітою</li>
+            <li>20 років вивчення китайської метафізики та&nbsp;фен-шуй</li>
+            <li>З 2018 року вивчаю систему зерен і&nbsp;веду щоденник</li>
+            <li>У 2023 році закінчила 18 курсів ACI</li>
+            <li>Склала іспит «Марок»</li>
+            <li>Завершила 6 тренінгів для викладачів ACI як учасниця і&nbsp;як кураторка</li>
+            <li>Старший тренер АКМ</li>
+            <li>Сертифікована тренерка від&nbsp;головного офісу ACI</li>
+            <li>Кураторка груп спільного проходження курсів ACI</li>
+            <li>Тренерка в&nbsp;Клубі медитації АКМ</li>
+            <li>28 років у&nbsp;шлюбі, двоє дорослих дітей</li>
+            <li>Пройшла 2 мовчазні місячні ретрити</li>
+          </ul>
+        </div>
+      </article>
+      <article class="card card-w tch">
+        <img src="../img/t-maria.webp" width="600" height="600" alt="Марія Старушкевич" loading="lazy">
+        <div><h3>Марія Старушкевич</h3><span class="tag t-gold">Заняття 3</span>
+          <ul>
+            <li>Старший тренер АКМ</li>
+            <li>Викладає ACI-курси на&nbsp;4 локаціях: Україна — Київ, Львів; Німеччина — Нюрнберг, Дюссельдорф</li>
+            <li>Закінчила 18 ACI-курсів</li>
+            <li>Перекладачка дхарма-курсів, матеріалів і&nbsp;книжок</li>
+            <li>Кураторка курсів ACI різними мовами</li>
+            <li>Юристка. До&nbsp;недавнього часу — керівниця комплаєнс-напряму у&nbsp;фінансовому секторі</li>
+            <li>Мама двох підлітків</li>
+          </ul>
+        </div>
+      </article>
+      <article class="card card-w tch">
+        <img src="../img/t-marina.webp" width="600" height="900" alt="Марина Щепаняк" loading="lazy" style="object-position:50% 25%">
+        <div><h3>Марина Щепаняк</h3><span class="tag t-gold">Заняття 4</span>
+          <ul>
+            <li>Старший тренер АКМ</li>
+            <li>Організаторка АКМ у&nbsp;Варшаві, Польща</li>
+            <li>Кураторка груп спільного проходження курсів ACI від&nbsp;АКМ</li>
+            <li>Кураторка курсів з&nbsp;карми грошей і&nbsp;карми стосунків</li>
+            <li>Завершила 10 тренінгів ACI та&nbsp;АКМ ТТ</li>
+            <li>Завершила 18 відкритих курсів ACI у&nbsp;2024&nbsp;р.</li>
+            <li>Вивчаю систему ментальних зерен з&nbsp;2014&nbsp;р.</li>
+            <li>Практикую медитацію з&nbsp;2017 року</li>
+            <li>Авторка духовної поезії та&nbsp;прози</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section></div>
+
+<!-- OUTCOMES -->
+<section class="sec dark">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Результат</span><h2>Що ви зможете <span class="grad">після курсу</span></h2></div></div>
+    <ul class="out">
+      <li><span class="ck" aria-hidden="true"></span>Провести живий курс М2 і&nbsp;закрити всі питання, які студенти зустрінуть у&nbsp;домашніх завданнях на&nbsp;платформі</li>
+      <li><span class="ck" aria-hidden="true"></span>Пояснити медитацію так, щоб її зрозуміли й&nbsp;захотіли практикувати</li>
+      <li><span class="ck" aria-hidden="true"></span>Провести медитацію на&nbsp;прості об’єкти, на&nbsp;складні ситуації та&nbsp;людей, на&nbsp;пустоту себе</li>
+      <li><span class="ck" aria-hidden="true"></span>Відповідати на&nbsp;складні питання й&nbsp;помічати помилки розуміння</li>
+      <li><span class="ck" aria-hidden="true"></span>Зібрати програму під потрібний формат: день, ретрит або блоки всередині курсу ACI</li>
+      <li><span class="ck" aria-hidden="true"></span>Поглибити інтелектуальне розуміння пустоти й&nbsp;навчитися ясно пояснювати її іншим</li>
+    </ul>
+  </div>
+</section>
+
+<!-- INCLUDES + APPLY -->
+<div class="mega-wrap"><section class="mega sec cream" id="apply">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Що на вас чекає</span><h2>АКМ МТТ&nbsp;2 <span class="grad">включає:</span></h2></div></div>
+    <ul class="inc">
+      <li><span class="ic">01</span>Загальні знання, як викладати й&nbsp;вести медитацію</li>
+      <li><span class="ic">02</span>Лекції з&nbsp;викладачами, як навчати медитації на&nbsp;пустоту Кхедрупа Дже</li>
+      <li><span class="ic">03</span>Практичні заняття в&nbsp;групах: тренування викладання та&nbsp;ведення медитацій</li>
+      <li><span class="ic">04</span>Домашні, контрольні роботи та&nbsp;іспит</li>
+      <li><span class="ic">05</span>Мануал тренера медитації — усе, що потрібно для викладання, — в&nbsp;одному місці!</li>
+      <li><span class="ic">06</span>Підтримка, відповіді на&nbsp;питання та&nbsp;супровід досвідчених кураторів</li>
+    </ul>
+    <div class="tracks one">
+      <div class="card card-k">
+        <h3>Заповнюючи анкету учасника україномовного треку, ви проходите курс МТТ&nbsp;2:</h3>
+        <ul class="dots">
+          <li>в україномовному чаті учасників курсу</li>
+          <li>на україномовній платформі</li>
+          <li>отримуючи матеріали курсу двома мовами: українською та&nbsp;російською (мануал тренера, презентації викладачів)</li>
+        </ul>
+        <a class="btn btn-gold" href="https://docs.google.com/forms/d/e/1FAIpQLSfeZa588_EFDRjiZ-ERwVQl164phO6dhpAyTp4WdDZgz28GqA/viewform" target="_blank" rel="noopener">Подати заявку на&nbsp;участь <span class="ar">→</span></a>
+      </div>
+    </div>
+  </div>
+</section></div>
+
+<!-- CONDITIONS -->
+<section class="sec dark" id="cert">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Умови участі</span><h2>Умови участі</h2></div></div>
+    <div class="all"><i></i><span>Брати участь у&nbsp;курсі АКМ МТТ&nbsp;2 можуть усі охочі</span></div>
+    <div class="sec-head"><div><span class="eyebrow">Сертифікат за курсом</span><h2>Умови отримання <span class="grad">сертифіката</span></h2></div></div>
+    <ol class="steps7">
+      <li><span>Наявність сертифіката про&nbsp;закінчення курсу ACI&nbsp;3 «Прикладна медитація» від&nbsp;АКМ <b>(до&nbsp;9&nbsp;травня 2027)</b></span></li>
+      <li><span>Наявність сертифіката про&nbsp;закінчення курсу М2 «Медитація на&nbsp;пустоту Кхедрупа Дже» від&nbsp;АКМ <b>(до&nbsp;9&nbsp;травня 2027)</b></span></li>
+      <li><span>Переглянути всі лекції курсу (онлайн або в&nbsp;записі)</span></li>
+      <li><span>Виконати завдання й&nbsp;відвідати всі практичні зустрічі в&nbsp;малих групах</span></li>
+      <li><span>Дати зворотний зв’язок своїм колегам у&nbsp;групі на&nbsp;їхні виступи</span></li>
+      <li><span>Виконати домашні завдання та&nbsp;контрольні роботи на&nbsp;платформі</span></li>
+      <li><span>Написати фінальний іспит і&nbsp;перевірити роботу іншого студента</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- DEADLINES + PRICE -->
+<div class="mega-wrap"><section class="mega sec cream" id="price">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Прийом заявок</span><h2>Прийом заявок</h2></div></div>
+    <div class="deadlines" style="grid-template-columns:1fr">
+      <div class="lim">Кількість місць обмежена</div>
+    </div>
+    <div class="sec-head"><div><span class="eyebrow">Вартість участі та бонуси</span><h2>Вартість <span class="grad">участі</span></h2></div></div>
+    <div class="tar">
+      <div class="tc base">
+        <img src="../img/pair.webp" width="1000" height="945" alt="" loading="lazy">
+        <h3>АКМ МТТ&nbsp;2<br>«Як викладати медитацію на&nbsp;пустоту Кхедрупа Дже»</h3>
+        <div class="price">300 <small>EUR</small></div>
+      </div>
+      <div class="tc disc">
+        <div class="off">−50%</div>
+        <h3>Якщо ви брали участь у&nbsp;курсі АКМ ТТ&nbsp;2, для вас АКМ МТТ&nbsp;2 доступний зі&nbsp;знижкою 50%</h3>
+        <div class="price">150 <small>EUR</small></div>
+      </div>
+    </div>
+    <div class="instal">✦ Можлива розстрочка до&nbsp;10&nbsp;місяців!</div>
+    <div class="ctas center" style="margin-top:22px">
+      <a class="btn btn-dark" href="https://docs.google.com/forms/d/e/1FAIpQLSfeZa588_EFDRjiZ-ERwVQl164phO6dhpAyTp4WdDZgz28GqA/viewform" target="_blank" rel="noopener">Подати заявку на&nbsp;участь <span class="ar">→</span></a>
+    </div>
+  </div>
+</section></div>
+
+<!-- PROGRAM -->
+<section class="sec dark" id="program">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Розклад</span><h2>Як влаштований <span class="grad">курс</span></h2></div></div>
+    <ol class="tl">
+      <li><div class="when">9&nbsp;листопада</div><div class="what"><b>Організаційна зустріч</b></div></li>
+      <li><div class="when">З&nbsp;9&nbsp;листопада</div><div class="what"><b>Записи занять «Основи викладання та&nbsp;ведення медитації»:</b>
+        <ul><li>4 типи учнів,</li><li>як підготувати заняття,</li><li>як давати зворотний зв’язок,</li><li>як вести медитацію,</li><li>як навчати пози для медитації.</li></ul></div></li>
+      <li class="hl"><div class="when">14–15&nbsp;листопада</div><div class="what"><b>Вікенд основних занять:</b>
+        <ul><li>Заняття 1. Навіщо медитувати на&nbsp;пустоту і&nbsp;чому саме ця медитація.</li><li>Заняття 2. Об’єкт медитації, 4 раунди та&nbsp;види об’єктів.</li><li>Заняття 3. Різні види об’єктів, детально.</li><li>Заняття 4. Як побудувати практику й&nbsp;практикувати поза подушкою.</li></ul></div></li>
+      <li><div class="when">23&nbsp;листопада – 13&nbsp;грудня<small>(графік зустрічей формується індивідуально в&nbsp;кожній групі)</small></div><div class="what"><b>6 практичних зустрічей у&nbsp;малих групах:</b> ви самі ведете медитацію й&nbsp;пояснюєте її **
+        <p class="note">**обов’язково бути присутніми на&nbsp;всіх практичних зустрічах, допускається один пропуск з&nbsp;поважної причини, при цьому завдання все одно потрібно виконати.</p></div></li>
+      <li><div class="when">Грудень</div><div class="what"><b>Заняття 5 «Як зібрати свій курс під різні формати та&nbsp;аудиторії»</b></div></li>
+      <li><div class="when">До&nbsp;кінця грудня</div><div class="what"><b>Іспит</b></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- MANUAL -->
+<div class="mega-wrap"><section class="mega sec cream">
+  <div class="wrap">
+    <div class="two">
+      <div>
+        <span class="eyebrow">Ваш путівник</span>
+        <h2 style="margin-top:14px">Мануал тренера <span class="grad">медитації</span></h2>
+        <div class="prose" style="margin-top:22px">
+          <p>Наприкінці курсу ви отримаєте <b>Мануал тренера медитації на&nbsp;пустоту Кхедрупа Дже</b>. Це ваш особистий путівник із&nbsp;викладання.</p>
+          <p><b>У нього зібрано:</b></p>
+          <ul class="dots">
+            <li>що обов’язково потрібно сказати на&nbsp;кожній темі курсу М2</li>
+            <li>як пояснити кожну тему <b>для різних типів учнів</b></li>
+            <li>часті помилки розуміння та&nbsp;складні місця</li>
+            <li>питання й&nbsp;заперечення студентів із&nbsp;відповідями на&nbsp;них</li>
+            <li>досвід тренерів, які вже вели цей курс, і&nbsp;реальні питання учасників М2</li>
+          </ul>
+          <p>Минуть місяці, вас запросять провести курс або ретрит, ви відкриєте мануал, і&nbsp;вся картина відновиться за&nbsp;кілька хвилин.</p>
+        </div>
+      </div>
+      <div class="art"><div class="mx"><div class="mx-rain" aria-hidden="true"></div>
+        <svg class="mx-svg" viewBox="0 0 400 300" role="img" aria-label="Мануал тренера медитації">
+          <defs><linearGradient id="bG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3d991"/><stop offset="1" stop-color="#ddae35"/></linearGradient>
+          <radialGradient id="bL" cx=".5" cy=".6"><stop offset="0" stop-color="#f3d991" stop-opacity=".55"/><stop offset="1" stop-color="#f3d991" stop-opacity="0"/></radialGradient></defs>
+          <ellipse cx="200" cy="150" rx="150" ry="90" fill="url(#bL)" class="pulse"/>
+          <g fill="none" stroke="url(#bG)" stroke-width="2.5" stroke-linejoin="round">
+            <path d="M200 92 C168 76 118 74 70 86 V222 C118 210 168 212 200 228 Z" fill="rgba(26,16,18,.55)"/>
+            <path d="M200 92 C232 76 282 74 330 86 V222 C282 210 232 212 200 228 Z" fill="rgba(26,16,18,.55)"/>
+            <path d="M60 96 V232 C112 220 166 222 200 238 C234 222 288 220 340 232 V96" opacity=".55"/>
+            <line x1="200" y1="92" x2="200" y2="228"/>
+          </g>
+          <g stroke="#f3d991" stroke-width="2" stroke-linecap="round" opacity=".55">
+            <line x1="88" y1="112" x2="178" y2="114"/><line x1="88" y1="132" x2="170" y2="133"/><line x1="88" y1="152" x2="178" y2="154"/><line x1="88" y1="172" x2="160" y2="173"/><line x1="88" y1="192" x2="176" y2="195"/>
+            <line x1="222" y1="114" x2="312" y2="112"/><line x1="222" y1="133" x2="300" y2="132"/><line x1="222" y1="154" x2="312" y2="152"/><line x1="222" y1="173" x2="290" y2="172"/><line x1="222" y1="195" x2="308" y2="192"/>
+          </g>
+          <g class="rise" font-family="Noto Serif Tibetan, serif" font-size="20" fill="#f3d991">
+            <text x="168" y="80">ཀ</text><text x="198" y="70" style="animation-delay:.8s">ཨ</text><text x="228" y="82" style="animation-delay:1.6s">ཧ</text><text x="184" y="60" style="animation-delay:2.4s">ས</text>
+          </g>
+        </svg>
+      </div></div>
+    </div>
+    <div class="callout-box"><p class="callout">З&nbsp;ним ви завжди готові передати цю медитацію далі.</p></div>
+  </div>
+</section></div>
+
+<!-- LESSONS -->
+<section class="sec dark">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Програма</span><h2>Основні заняття <span class="grad">курсу</span></h2></div></div>
+    <ol class="lessons" style="--x:0">
+      <li><div class="lt"><span class="tag t-burg">Заняття 1</span><h3>Навіщо медитувати на&nbsp;пустоту і&nbsp;чому саме Кхедруп Дже</h3></div><div><p>Як розповісти про&nbsp;пустоту різній аудиторії: через ручку, через прихисток, через досвід людини. Чому саме ця медитація.</p><p class="by">Веде Людмила Мішаніна</p></div></li>
+      <li><div class="lt"><span class="tag t-burg">Заняття 2</span><h3>Як пояснити медитацію</h3></div><div><p>Загальна логіка та&nbsp;структура медитації, потім кожен раунд. Чому варто починати проводити медитацію одразу.</p><p class="by">Веде Олександра Пунько</p></div></li>
+      <li><div class="lt"><span class="tag t-burg">Заняття 3</span><h3>Об’єкти медитації</h3></div><div><p>Які бувають об’єкти, чим вони відрізняються, як допомогти студенту обрати свій. Пустота себе.</p><p class="by">Веде Марія Старушкевич</p></div></li>
+      <li><div class="lt"><span class="tag t-burg">Заняття 4</span><h3>Як побудувати практику й&nbsp;практикувати поза подушкою</h3></div><div><p>Як допомогти кожному студенту скласти свій план практики. Як застосовувати пустоту до&nbsp;складних людей, поганого настрою та&nbsp;складних ситуацій.</p><p class="by">Веде Марина Щепаняк</p></div></li>
+      <li><div class="lt"><span class="tag t-burg">Заняття 5</span><h3>Як зібрати свій курс</h3></div><div><p>Один день, ретрит на&nbsp;кілька днів або короткі блоки всередині курсу ACI: як зібрати програму під будь-який формат і&nbsp;будь-яку аудиторію.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<div class="mega-wrap"><section class="mega sec cream" id="reviews">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Відгуки</span><h2>Відгуки про&nbsp;минулі <span class="grad">курси</span></h2></div><p>Натисніть на&nbsp;відгук, щоб відкрити його великим.</p></div>
+    <div class="gallery" id="gallery"></div>
+    <div class="more-row"><button class="btn btn-line-d" type="button" id="gallery-more">Показати всі відгуки</button></div>
+    <div class="ctas center" style="margin-top:28px"><a class="btn btn-dark" href="#apply">Хочу стати тренером медитації! <span class="ar">→</span></a></div>
+  </div>
+</section></div>
+
+<!-- FAQ -->
+<section class="sec dark" id="faq">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Часті питання</span><h2>Часті <span class="grad">питання</span></h2></div></div>
+    <div class="faq">
+      <details><summary>Навіщо МТТ-2, якщо я вже пройшов курс М2?</summary><div class="ans">
+        <p>На курсі М2 ви дивилися на&nbsp;курс очима студента. На&nbsp;МТТ-2 ви побачите його згори, очима викладача: його логіку, структуру й&nbsp;результат, який отримує ваш студент на&nbsp;кожному уроці.</p>
+        <p>Щоб навчати інших, у&nbsp;цій медитації потрібно розібратися дуже точно:</p>
+        <ul><li>в її нюансах і&nbsp;тонких місцях;</li><li>у частих помилках розуміння;</li><li>у словах, від&nbsp;яких залежить, чи зрозуміє вас людина, чи заплутається.</li></ul>
+        <p>На курсі ви дізнаєтеся:</p>
+        <ul><li>як зрозуміти, що людина не&nbsp;готова, і&nbsp;що робити в&nbsp;такому разі;</li><li>кому й&nbsp;коли давати останній, четвертий раунд, а&nbsp;коли достатньо просто посіяти сумнів у&nbsp;«твердості» реальності;</li><li>як підлаштуватися під різну аудиторію: випускників курсів ACI, змішану групу на&nbsp;ретриті, тих, хто тільки починає.</li></ul>
+        <p>У результаті ви зможете навчати цієї медитації інших, проводити курс М2, скеровувати студентів і&nbsp;відповідати на&nbsp;їхні питання.</p>
+      </div></details>
+      <details><summary>Чи є розстрочка на&nbsp;оплату участі в&nbsp;курсі?</summary><div class="ans">
+        <p>Так, ви можете оформити оплату в&nbsp;розстрочку терміном до&nbsp;10&nbsp;місяців.</p>
+        <p>Щоб оформити оплату в&nbsp;розстрочку, вкажіть це під час подання заявки на&nbsp;участь у&nbsp;відповідному пункті анкети.</p>
+      </div></details>
+      <details><summary>Чи є бонуси на&nbsp;участь у&nbsp;курсі?</summary><div class="ans">
+        <p>Так, якщо ви раніше проходили курс для викладачів АКМ ТТ&nbsp;2, для вас особливі умови участі: ви можете взяти участь у&nbsp;курсі АКМ МТТ&nbsp;2 зі&nbsp;знижкою 50%.</p>
+      </div></details>
+      <details><summary>Які вимоги для участі в&nbsp;курсі МТТ&nbsp;2?</summary><div class="ans">
+        <p>Брати участь у&nbsp;курсі можуть усі охочі. Але для отримання сертифіката за&nbsp;курсом є умови.</p>
+        <p>Умова для отримання сертифіката:</p>
+        <ul><li>сертифікат за&nbsp;курсом ACI&nbsp;3 «Прикладна медитація»</li><li>сертифікат за&nbsp;курсом М2 «Медитація на&nbsp;пустоту Кхедрупа Дже»</li><li>виконання всіх завдань курсу МТТ&nbsp;2</li></ul>
+        <p>Сертифікати за&nbsp;курсами М2 та&nbsp;ACI-3 потрібно отримати протягом 6&nbsp;місяців від&nbsp;початку курсу, тобто до&nbsp;9&nbsp;травня. У&nbsp;вас буде достатньо часу, щоб пройти ці курси, навіть якщо ви їх ще не&nbsp;починали проходити.</p>
+      </div></details>
+      <details><summary>Чи потрібно бути присутніми онлайн на&nbsp;всіх заняттях з&nbsp;увімкненою камерою?</summary><div class="ans">
+        <p>Такої обов’язкової вимоги немає. Ви можете переглянути лекції з&nbsp;викладачами в&nbsp;записі. Але ви маєте обов’язково бути присутніми на&nbsp;всіх практичних заняттях курсу й&nbsp;виконати всі завдання (допускається пропустити лише одне практичне заняття, при цьому завдання до&nbsp;нього ви все одно маєте виконати).</p>
+      </div></details>
+      <details><summary>Які вимоги, щоб потрапити до&nbsp;клубу тренерів медитації й&nbsp;почати вести медитації для інших?</summary><div class="ans">
+        <p>Успішно завершити курс АКМ МТТ&nbsp;2 та&nbsp;отримати сертифікат.</p>
+      </div></details>
+      <details><summary>Скільки курсів АКМ МТТ заплановано на&nbsp;рік?</summary><div class="ans">
+        <p>Ми плануємо проводити курси підготовки тренерів медитації 2–3 рази на&nbsp;рік.</p>
+      </div></details>
+      <details><summary>Чи вийде поєднати цей курс з&nbsp;АКМ ТТ-5?</summary><div class="ans">
+        <p>Так, навантаження на&nbsp;МТТ менше, ніж на&nbsp;АКМ ТТ: лекції зібрані в&nbsp;один вікенд.</p>
+      </div></details>
+    </div>
+    <div class="refund"><b>Політика повернення коштів</b><span>Повернення коштів після дати початку курсу (починаючи з&nbsp;7&nbsp;грудня) не&nbsp;здійснюється.</span></div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<div class="mega-wrap"><section class="mega sec burgm final">
+  <div class="wrap">
+    <img src="../img/pair.webp" width="1000" height="945" alt="" loading="lazy">
+    <h2>Допомагайте іншим <span class="grad">перезібрати реальність</span></h2>
+    <p>7–12&nbsp;грудня. Залишилися питання? Зв’яжіться з&nbsp;нами.</p>
+    <div class="ctas center">
+      <a class="btn btn-gold" href="#apply">Подати заявку на&nbsp;участь <span class="ar">→</span></a>
+      <a class="btn btn-ghost" href="https://t.me/Mila_Mish" target="_blank" rel="noopener">Поставити питання в&nbsp;Telegram</a>
+    </div>
+  </div>
+</section></div>
+</main>
+
+<footer class="ftr">
+  <img src="../img/logo-full.png" width="360" height="360" alt="Академія Класичної Мудрості" loading="lazy">
+  <span>Відділ турботи: <a href="https://t.me/Mila_Mish" target="_blank" rel="noopener">Telegram</a> · <a href="mailto:info@classicwisdomacademy.com">info@classicwisdomacademy.com</a></span>
+  <span>ФОП Беліцька Олеся Олександрівна | ЄДРПОУ 2991816226 · <a href="https://lp.classicwisdomacademy.com/ofertakk" target="_blank" rel="noopener">Оферта</a></span>
+</footer>
+
+<div class="lb" id="lb" hidden><img alt="Відгук"></div>
+
+<script>
+(function(){
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hasIO='IntersectionObserver' in window;
+
+  /* burger */
+  var b=document.getElementById('menu-btn'),m=document.getElementById('mnav'),h=document.querySelector('.hdr-in');
+  function place(){m.style.top=(h.getBoundingClientRect().bottom+10)+'px';}
+  function close(){m.hidden=true;b.setAttribute('aria-expanded','false');}
+  b.addEventListener('click',function(){var open=m.hidden;if(open)place();m.hidden=!open;b.setAttribute('aria-expanded',open?'true':'false');});
+  m.addEventListener('click',function(e){if(e.target.tagName==='A')close();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){close();lb.hidden=true;}});
+  document.addEventListener('click',function(e){if(!m.hidden&&!m.contains(e.target)&&!b.contains(e.target))close();});
+  window.addEventListener('resize',function(){if(!m.hidden)place();});
+
+  /* photo strip */
+  var st=document.getElementById('strip');
+  if(reduce||!hasIO)st.classList.add('in');
+  else new IntersectionObserver(function(es,o){es.forEach(function(e){if(e.isIntersecting){st.classList.add('in');o.disconnect();}});},{threshold:.2}).observe(st);
+
+  /* reviews */
+  var N=62,FIRST=16,g=document.getElementById('gallery'),lb=document.getElementById('lb'),lbi=lb.querySelector('img');
+  for(var i=1;i<=N;i++){
+    var bt=document.createElement('button');bt.type='button';if(i>FIRST)bt.hidden=true;
+    var src='../img/rev/r'+(i<10?'0':'')+i+'.webp';
+    bt.setAttribute('aria-label','Відкрити відгук '+i);
+    bt.innerHTML='<img src="'+src+'" alt="Відгук учасника" loading="lazy">';
+    bt.addEventListener('click',(function(s){return function(){lbi.src=s;lb.hidden=false;};})(src));
+    g.appendChild(bt);
+  }
+  lb.addEventListener('click',function(){lb.hidden=true;});
+  var gb=document.getElementById('gallery-more');
+  gb.addEventListener('click',function(){g.querySelectorAll('button[hidden]').forEach(function(x){x.hidden=false;});gb.parentNode.remove();});
+
+  /* route: walker goes along the path, world becomes perfect */
+  (function(){
+    var r=document.getElementById('route');if(!r)return;
+    var lit=document.getElementById('rlit'),wk=document.getElementById('walker'),L=lit.getTotalLength();
+    var pts=r.querySelectorAll('.rp'),lis=r.querySelectorAll('.route-steps li'),ol=r.querySelector('.route-steps');
+    var fr=[100,300,500,700,900,1100].map(function(x){var lo=0,hi=L;for(var k=0;k<30;k++){var m=(lo+hi)/2;if(lit.getPointAtLength(m).x<x)lo=m;else hi=m;}return lo/L;});
+    lit.style.strokeDasharray=L;
+    function upd(){
+      var vh=innerHeight,b=r.getBoundingClientRect();
+      var p=reduce?1:Math.max(0,Math.min(1,(vh*.78-b.top)/(b.height*.95)));
+      lit.style.strokeDashoffset=L*(1-p);
+      var q=lit.getPointAtLength(L*Math.min(p,.999));wk.setAttribute('transform','translate('+q.x+' '+q.y+')');
+      ol.style.setProperty('--p',p);
+      for(var i=0;i<6;i++){var on=p>=fr[i]-.01;if(pts[i])pts[i].classList.toggle('on',on);lis[i].classList.toggle('on',on);}
+      r.classList.toggle('done',p>=.985);
+    }
+    upd();addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);
+  })();
+
+  /* faces constellation lights up on scroll */
+  var sf=document.getElementById('stars-faces');
+  if(reduce||!hasIO)sf.classList.add('in');
+  else new IntersectionObserver(function(es,o){es.forEach(function(e){if(e.isIntersecting){sf.classList.add('in');o.disconnect();}});},{threshold:.35}).observe(sf);
+
+  /* glyph columns inside matrix frames */
+  var GL='ཀཁགངཅཆཇཉཏཐདནཔཕབམཙཚཛཝཞཟའཡརལཤསཧཨ';
+  document.querySelectorAll('.mx-rain').forEach(function(r){
+    for(var k=0;k<11;k++){
+      var sp=document.createElement('span'),t='';
+      for(var j=0;j<14;j++)t+=GL[Math.floor(Math.random()*GL.length)];
+      sp.textContent=t;sp.style.left=(k*9+Math.random()*4)+'%';
+      sp.style.animationDuration=(7+Math.random()*7)+'s';sp.style.animationDelay=(-Math.random()*12)+'s';
+      sp.style.opacity=(.2+Math.random()*.4).toFixed(2);
+      r.appendChild(sp);
+    }
+  });
+
+  /* matrix rain of Tibetan letters */
+  var cv=document.getElementById('rain');
+  if(reduce||!cv.getContext)return;
+  var ctx=cv.getContext('2d'),G='ཀཁགངཅཆཇཉཏཐདནཔཕབམཙཚཛཝཞཟའཡརལཤསཧཨ༠༡༢༣༤༥༦༧༨༩',fs,cols,drops,W,H,dpr;
+  function size(){
+    dpr=Math.min(window.devicePixelRatio||1,2);W=innerWidth;H=innerHeight;
+    cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
+    fs=W<640?16:20;cols=Math.ceil(W/(fs*1.6));drops=[];
+    for(var c=0;c<cols;c++)drops.push(Math.random()*-H/fs);
+    ctx.font='500 '+fs+'px "Noto Serif Tibetan",serif';
+  }
+  size();window.addEventListener('resize',size);
+  var last=0;
+  function tick(t){
+    requestAnimationFrame(tick);
+    if(t-last<70)return;last=t;
+    ctx.globalCompositeOperation='destination-out';
+    ctx.fillStyle='rgba(0,0,0,.12)';ctx.fillRect(0,0,W,H);
+    ctx.globalCompositeOperation='source-over';
+    for(var c=0;c<cols;c++){
+      var y=drops[c]*fs,x=c*fs*1.6;
+      if(y>0){
+        ctx.fillStyle=Math.random()<.08?'rgba(255,246,214,.95)':(c%3?'rgba(221,174,53,.75)':'rgba(232,185,168,.7)');
+        ctx.fillText(G[Math.floor(Math.random()*G.length)],x,y);
+      }
+      if(y>H&&Math.random()>.975)drops[c]=0;
+      drops[c]+=.5;
+    }
+  }
+  requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>
