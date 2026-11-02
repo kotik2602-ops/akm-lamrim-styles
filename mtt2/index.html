@@ -447,7 +447,7 @@ b,strong{font-weight:800}
 .morph .pill{animation:pillFloat 3.6s ease-in-out infinite alternate}
 .morph .pill-b{animation-delay:-1.8s}
 .morph .glint{animation:ptBlink 4s ease-in-out infinite}
-.neo{position:relative;margin:0;width:clamp(170px,19vw,250px);justify-self:center;text-align:center}
+.neo{position:relative;margin:0;width:clamp(190px,22vw,290px);justify-self:center;text-align:center}
 .neo svg{width:100%;height:auto;overflow:visible}
 .neo .tip{transform-box:fill-box;transform-origin:center;animation:tipPulse 2s ease-in-out infinite}
 @keyframes tipPulse{0%,100%{opacity:.55;transform:scale(.8)}50%{opacity:1;transform:scale(1.25)}}
@@ -710,34 +710,45 @@ b,strong{font-weight:800}
         <div class="be"><span class="grad">Станьте таким человеком!</span></div>
         <div class="ctas" style="margin-top:22px"><a class="btn btn-gold" href="#apply">Хочу стать тренером медитации! <span class="ar">→</span></a></div>
       </div>
-      <figure class="neo"><svg viewBox="0 0 300 340" role="img" aria-label="Силуэт Нео указывает пальцем на зрителя">
+      <figure class="neo"><svg viewBox="0 0 300 340" role="img" aria-label="Силуэт Нео указывает пальцем прямо на зрителя">
         <defs>
-          <radialGradient id="nGlow" cx=".5" cy=".4" r=".6"><stop offset="0" stop-color="#f3d991" stop-opacity=".5"/><stop offset=".5" stop-color="#ddae35" stop-opacity=".18"/><stop offset="1" stop-color="#ddae35" stop-opacity="0"/></radialGradient>
-          <radialGradient id="nTip"><stop offset="0" stop-color="#fff6d6"/><stop offset=".4" stop-color="#f3d991" stop-opacity=".8"/><stop offset="1" stop-color="#ddae35" stop-opacity="0"/></radialGradient>
-          <linearGradient id="nFade" x1="0" y1="0" x2="0" y2="1"><stop offset=".8" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+          <radialGradient id="nGlow" cx=".55" cy=".35" r=".65"><stop offset="0" stop-color="#f3d991" stop-opacity=".45"/><stop offset=".5" stop-color="#ddae35" stop-opacity=".16"/><stop offset="1" stop-color="#ddae35" stop-opacity="0"/></radialGradient>
+          <radialGradient id="nTip"><stop offset="0" stop-color="#fff6d6" stop-opacity=".95"/><stop offset=".45" stop-color="#f3d991" stop-opacity=".55"/><stop offset="1" stop-color="#ddae35" stop-opacity="0"/></radialGradient>
+          <linearGradient id="nSkin" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4a3128"/><stop offset="1" stop-color="#22140f"/></linearGradient>
+          <linearGradient id="nFade" x1="0" y1="0" x2="0" y2="1"><stop offset=".82" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
           <mask id="nMask"><rect width="300" height="340" fill="url(#nFade)"/></mask>
         </defs>
-        <ellipse cx="150" cy="150" rx="150" ry="170" fill="url(#nGlow)" class="pulse"/>
-        <g mask="url(#nMask)" fill="#0d0809" stroke="rgba(243,217,145,.75)" stroke-width="1.5" stroke-linejoin="round">
-          <path d="M150 118 C110 118 82 128 70 150 C58 174 58 214 60 250 L48 340 H252 L240 250 C242 214 242 174 230 150 C218 128 190 118 150 118Z"/>
-          <path d="M120 122 L112 98 L136 112Z M180 122 L188 98 L164 112Z"/>
-          <path d="M138 96 L136 120 Q150 128 164 120 L162 96Z"/>
-          <path d="M150 24 C172 24 184 40 184 64 C184 88 170 104 150 104 C130 104 116 88 116 64 C116 40 128 24 150 24Z"/>
-          <path d="M118 52 C120 30 136 20 152 20 C170 20 184 32 184 52 C176 40 162 36 150 38 C136 36 124 42 118 52Z" fill="#050303"/>
-          <path d="M214 150 C238 168 240 196 222 214 L196 236 L178 218 L200 198 C208 188 206 172 198 160Z"/>
+        <ellipse cx="160" cy="150" rx="150" ry="175" fill="url(#nGlow)" class="pulse"/>
+        <g mask="url(#nMask)" stroke="rgba(243,217,145,.75)" stroke-width="1.4" stroke-linejoin="round">
+          <path d="M172 150 C122 150 84 164 64 196 C44 228 30 280 24 340 H292 C290 280 280 226 262 196 C246 168 214 150 172 150Z" fill="#0d0809"/>
+          <path d="M142 146 L136 186 L172 172 L208 186 L202 146 Q172 158 142 146Z" fill="#0a0607"/>
+          <path d="M172 172 L160 250 M172 172 L196 260" fill="none" stroke="rgba(243,217,145,.35)" stroke-width="1.1"/>
+          <path d="M158 132 L156 158 Q172 166 188 158 L186 132Z" fill="url(#nSkin)"/>
+          <path d="M172 40 C198 40 212 60 212 88 C212 118 196 138 172 138 C148 138 132 118 132 88 C132 60 146 40 172 40Z" fill="url(#nSkin)"/>
+          <path d="M130 84 C128 52 146 32 174 32 C200 32 216 50 214 84 C208 66 198 58 186 56 C170 54 150 58 140 70 C136 74 132 80 130 84Z" fill="#070404"/>
+          <ellipse cx="130" cy="96" rx="5" ry="10" fill="url(#nSkin)"/><ellipse cx="214" cy="96" rx="5" ry="10" fill="url(#nSkin)"/>
+          <path d="M164 121 L180 121" fill="none" stroke="rgba(243,217,145,.35)" stroke-width="1"/>
         </g>
-        <path d="M128 60 L146 60 Q148 70 138 70 Q128 70 128 60Z M154 60 L172 60 Q172 70 162 70 Q152 70 154 60Z" fill="#030202" stroke="#f3d991" stroke-width="1.2"/>
-        <line x1="146" y1="61" x2="154" y2="61" stroke="#f3d991" stroke-width="1.2"/>
-        <path d="M132 62 l6 -1 M158 62 l6 -1" stroke="#fff6d6" stroke-width="1.4" class="glint"/>
-        <path d="M128 132 L118 220 M172 132 L182 200" stroke="rgba(243,217,145,.3)" stroke-width="1.1" fill="none"/>
-        <g class="hand-pt" fill="#2a1914" stroke="rgba(243,217,145,.85)" stroke-width="1.4" stroke-linejoin="round">
-          <path d="M150 214 C150 204 160 198 172 198 L196 198 C208 198 214 208 212 222 L208 250 C206 262 196 268 184 268 L164 268 C152 268 146 260 147 248Z"/>
-          <path d="M152 232 Q166 226 180 232 M150 246 Q166 240 182 246 M154 259 Q166 254 178 259" fill="none" stroke="rgba(243,217,145,.55)" stroke-width="1.1"/>
-          <path d="M188 230 C196 236 204 236 210 230" fill="none" stroke="rgba(243,217,145,.55)" stroke-width="1.1"/>
-          <path d="M160 204 C152 186 150 170 156 160 C162 152 174 152 180 160 C184 168 182 186 178 202Z"/>
-          <ellipse cx="168" cy="164" rx="8.5" ry="6.5" fill="#4a3027" stroke="rgba(243,217,145,.7)" stroke-width="1"/>
+        <g class="shades">
+          <path d="M133 92 L142 92 M202 92 L211 92" stroke="#f3d991" stroke-width="1.1"/>
+          <ellipse cx="156" cy="94" rx="15" ry="7" fill="#030202" stroke="#f3d991" stroke-width="1.2"/>
+          <ellipse cx="189" cy="94" rx="15" ry="7" fill="#030202" stroke="#f3d991" stroke-width="1.2"/>
+          <path d="M171 93 Q172.5 91 174 93" fill="none" stroke="#f3d991" stroke-width="1.1"/>
+          <path d="M148 92 l7 -2 M181 92 l7 -2" stroke="#fff6d6" stroke-width="1.3" class="glint"/>
         </g>
-        <circle cx="168" cy="164" r="30" fill="url(#nTip)" class="tip"/>
+        <g class="hand-pt" stroke="rgba(243,217,145,.85)" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round">
+          <path d="M0 316 C14 286 48 266 90 264 L156 280 C146 304 120 324 88 340 H0Z" fill="#0f0a0b"/>
+          <rect x="86" y="214" width="76" height="80" rx="26" fill="url(#nSkin)"/>
+          <rect x="92" y="244" width="66" height="16" rx="8" fill="#3d281f" stroke="rgba(243,217,145,.55)" stroke-width="1"/>
+          <rect x="94" y="261" width="62" height="15" rx="7.5" fill="#36231c" stroke="rgba(243,217,145,.5)" stroke-width="1"/>
+          <rect x="98" y="277" width="54" height="13" rx="6.5" fill="#2f1e18" stroke="rgba(243,217,145,.45)" stroke-width="1"/>
+          <path d="M162 250 C160 232 148 222 132 224 L112 228 C106 230 106 238 112 240 L138 242 C148 244 154 248 156 254Z" fill="#4e342a" stroke="rgba(243,217,145,.8)" stroke-width="1.2"/>
+          <path d="M96 236 C88 226 82 214 80 204 C78 192 86 182 98 180 C110 178 120 186 122 198 C124 210 122 222 118 232Z" fill="url(#nSkin)"/>
+          <circle cx="99" cy="196" r="17" fill="#4e342a" stroke="rgba(243,217,145,.85)" stroke-width="1.3"/>
+          <ellipse cx="99" cy="190" rx="9" ry="6.5" fill="#6a4a3c" stroke="rgba(243,217,145,.75)" stroke-width="1"/>
+          <path d="M90 216 Q100 220 112 216" fill="none" stroke="rgba(243,217,145,.45)" stroke-width="1"/>
+        </g>
+        <circle cx="99" cy="194" r="34" fill="url(#nTip)" class="tip"/>
       </svg><figcaption class="next">Ты&nbsp;— следующий!</figcaption></figure>
     </div>
   </div>
