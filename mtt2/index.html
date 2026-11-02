@@ -443,21 +443,32 @@ b,strong{font-weight:800}
 .tc .off{font-family:var(--display);font-weight:800;font-size:clamp(40px,4vw,56px);line-height:1;color:var(--burg);letter-spacing:-.03em}
 .tc.base img{width:120px}
 @media (prefers-reduced-motion:reduce){.mx-rain{display:none}}
+.solo .prose{max-width:52rem}
+.morph{max-width:400px}
+.morph svg{width:100%;height:auto;overflow:visible}
+.morph .pill{animation:pillFloat 3.6s ease-in-out infinite alternate}
+.morph .pill-b{animation-delay:-1.8s}
+.morph .glint{animation:ptBlink 4s ease-in-out infinite}
 /* faces constellation */
-.stars-faces{position:relative;aspect-ratio:1/1;width:100%;margin:0}
-.stars-faces::before{content:"";position:absolute;inset:8%;border-radius:50%;background:radial-gradient(circle,rgba(221,174,53,.18),transparent 70%);pointer-events:none}
+.stars-faces{position:relative;aspect-ratio:2/1;width:100%;margin:clamp(36px,5vw,64px) 0 0}
+.stars-faces::before{content:"";position:absolute;inset:0 10%;border-radius:50%;background:radial-gradient(ellipse,rgba(221,174,53,.16),transparent 70%);pointer-events:none}
 .sf-lines{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
-.sf-lines line{stroke:#f3d991;stroke-width:.25;stroke-dasharray:60;stroke-dashoffset:60;opacity:.55;vector-effect:non-scaling-stroke;stroke-width:1.2;transition:stroke-dashoffset 1.6s ease var(--d)}
+.sf-lines.lm{display:none}
+.sf-lines line{stroke:#f3d991;stroke-width:1.3;vector-effect:non-scaling-stroke;stroke-dasharray:120;stroke-dashoffset:120;opacity:.5;transition:stroke-dashoffset 1.8s ease var(--d)}
 .stars-faces.in .sf-lines line{stroke-dashoffset:0}
-.fc{position:absolute;width:var(--s);aspect-ratio:1/1;transform:translate(-50%,-50%) scale(.35);border-radius:50%;opacity:0;transition:opacity .9s ease var(--d),transform 1.1s cubic-bezier(.2,1.3,.4,1) var(--d)}
-.fc img{width:100%;height:100%;border-radius:50%;object-fit:cover;filter:grayscale(1) brightness(.55);border:2px solid rgba(243,217,145,.85);transition:filter 1.4s ease calc(var(--d) + .5s),box-shadow 1.4s ease calc(var(--d) + .5s)}
-.fc i{position:absolute;left:50%;top:50%;width:46%;height:46%;margin:-23% 0 0 -23%;background:#fff6d6;clip-path:polygon(50% 0,58% 42%,100% 50%,58% 58%,50% 100%,42% 58%,0 50%,42% 42%);opacity:0;pointer-events:none}
+.fc{position:absolute;left:var(--x);top:var(--y);width:15.5%;aspect-ratio:1/1;transform:translate(-50%,-50%) scale(.4);border-radius:50%;opacity:0;transition:opacity 1s ease var(--d),transform 1.2s cubic-bezier(.2,1.25,.4,1) var(--d)}
+.fc img{width:100%;height:100%;border-radius:50%;object-fit:cover;filter:grayscale(1) brightness(.5);border:2px solid rgba(243,217,145,.85);transition:filter 1.5s ease calc(var(--d) + .5s),box-shadow 1.5s ease calc(var(--d) + .5s)}
+.fc i{position:absolute;left:50%;top:50%;width:30%;height:30%;margin:-15% 0 0 -15%;background:#fff6d6;clip-path:polygon(50% 0,58% 42%,100% 50%,58% 58%,50% 100%,42% 58%,0 50%,42% 42%);opacity:0;pointer-events:none}
 .stars-faces.in .fc{opacity:1;transform:translate(-50%,-50%) scale(1)}
-.stars-faces.in .fc img{filter:none;box-shadow:0 0 0 4px rgba(221,174,53,.18),0 0 28px 6px rgba(221,174,53,.55);animation:faceGlow 3.6s ease-in-out calc(var(--d) + 2s) infinite alternate}
+.stars-faces.in .fc img{filter:none;box-shadow:0 0 0 4px rgba(221,174,53,.18),0 0 30px 6px rgba(221,174,53,.5);animation:faceGlow 3.6s ease-in-out calc(var(--d) + 2.2s) infinite alternate}
 .stars-faces.in .fc i{animation:starFlash 1.2s ease-out calc(var(--d) + .35s) 1 both}
 @keyframes starFlash{0%{opacity:0;transform:scale(.2) rotate(0)}40%{opacity:.9;transform:scale(1.3) rotate(45deg)}100%{opacity:0;transform:scale(1.7) rotate(90deg)}}
-.art:has(.stars-faces){max-width:520px}
-@keyframes faceGlow{from{box-shadow:0 0 0 3px rgba(221,174,53,.15),0 0 18px 3px rgba(221,174,53,.4)}to{box-shadow:0 0 0 5px rgba(221,174,53,.25),0 0 36px 10px rgba(243,217,145,.65)}}
+@keyframes faceGlow{from{box-shadow:0 0 0 3px rgba(221,174,53,.15),0 0 18px 3px rgba(221,174,53,.4)}to{box-shadow:0 0 0 5px rgba(221,174,53,.25),0 0 40px 10px rgba(243,217,145,.6)}}
+@media (max-width:760px){
+  .stars-faces{aspect-ratio:1/1.45}
+  .sf-lines.ld{display:none}.sf-lines.lm{display:block}
+  .fc{left:var(--mx);top:var(--my);width:31%}
+}
 @media (prefers-reduced-motion:reduce){.fc{opacity:1;transform:translate(-50%,-50%)}.fc img{filter:none}.sf-lines line{stroke-dashoffset:0}}
 </style>
 </head>
@@ -538,7 +549,7 @@ b,strong{font-weight:800}
 <!-- UNCERTAINTY -->
 <section class="sec dark">
   <div class="wrap">
-    <div class="two">
+    <div class="solo">
       <div>
         <span class="eyebrow">В мире неопределённости</span>
         <h2 style="margin-top:14px">Когда мир кажется нестабильным, особенно важны те, <span class="grad">кто знает, как он устроен</span></h2>
@@ -549,11 +560,12 @@ b,strong{font-weight:800}
           <p>Это знание меняет всё. <b>Мы не&nbsp;жертвы обстоятельств. Мы те, кто творит свою реальность.</b></p>
         </div>
       </div>
-      <div class="art"><figure class="stars-faces" id="stars-faces" aria-label="Лица будущих тренеров медитации">
-        <svg class="sf-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><line x1="18" y1="14" x2="50" y2="9" style="--d:0.45s"/><line x1="50" y1="9" x2="80" y2="17" style="--d:0.60s"/><line x1="18" y1="14" x2="37" y2="34" style="--d:0.90s"/><line x1="50" y1="9" x2="37" y2="34" style="--d:0.90s"/><line x1="80" y1="17" x2="68" y2="40" style="--d:1.05s"/><line x1="10" y1="42" x2="37" y2="34" style="--d:0.90s"/><line x1="37" y1="34" x2="68" y2="40" style="--d:1.05s"/><line x1="68" y1="40" x2="91" y2="46" style="--d:1.20s"/><line x1="10" y1="42" x2="22" y2="68" style="--d:1.35s"/><line x1="37" y1="34" x2="52" y2="63" style="--d:1.50s"/><line x1="68" y1="40" x2="52" y2="63" style="--d:1.50s"/><line x1="68" y1="40" x2="80" y2="70" style="--d:1.65s"/><line x1="91" y1="46" x2="80" y2="70" style="--d:1.65s"/><line x1="22" y1="68" x2="52" y2="63" style="--d:1.50s"/><line x1="52" y1="63" x2="80" y2="70" style="--d:1.65s"/><line x1="22" y1="68" x2="38" y2="90" style="--d:1.80s"/><line x1="52" y1="63" x2="38" y2="90" style="--d:1.80s"/><line x1="52" y1="63" x2="66" y2="91" style="--d:1.95s"/><line x1="80" y1="70" x2="66" y2="91" style="--d:1.95s"/><line x1="38" y1="90" x2="66" y2="91" style="--d:1.95s"/></svg>
-        <span class="fc" style="left:18%;top:14%;--s:22%;--d:0.00s"><img src="img/faces/f01.webp" alt="" loading="lazy" width="300" height="300"><i></i></span><span class="fc" style="left:50%;top:9%;--s:19%;--d:0.15s"><img src="img/faces/f02.webp" alt="" loading="lazy" width="300" height="300"><i></i></span><span class="fc" style="left:80%;top:17%;--s:23%;--d:0.30s"><img src="img/faces/f03.webp" alt="" loading="lazy" width="300" height="300"><i></i></span><span class="fc" style="left:10%;top:42%;--s:18%;--d:0.45s"><img src="img/faces/f04.webp" alt="" loading="lazy" width="300" height="300"><i></i></span><span class="fc" style="left:37%;top:34%;--s:25%;--d:0.60s"><img src="img/faces/f05.webp" alt="" loading="lazy" width="300" height="300"><i></i></span><span class="fc" style="left:68%;top:40%;--s:21%;--d:0.75s"><img src="img/faces/f06.webp" alt="" loading="lazy" width="300" height="300"><i></i></span><span class="fc" style="left:91%;top:46%;--s:16%;--d:0.90s"><img src="img/faces/f07.webp" alt="" loading="lazy" width="300" height="300"><i></i></span><span class="fc" style="left:22%;top:68%;--s:21%;--d:1.05s"><img src="img/faces/f08.webp" alt="" loading="lazy" width="300" height="300"><i></i></span><span class="fc" style="left:52%;top:63%;--s:19%;--d:1.20s"><img src="img/faces/f09.webp" alt="" loading="lazy" width="300" height="300"><i></i></span><span class="fc" style="left:80%;top:70%;--s:22%;--d:1.35s"><img src="img/faces/f10.webp" alt="" loading="lazy" width="300" height="300"><i></i></span><span class="fc" style="left:38%;top:90%;--s:18%;--d:1.50s"><img src="img/faces/f11.webp" alt="" loading="lazy" width="300" height="300"><i></i></span><span class="fc" style="left:66%;top:91%;--s:17%;--d:1.65s"><img src="img/faces/f12.webp" alt="" loading="lazy" width="300" height="300"><i></i></span>
-      </figure></div>
+
     </div>
+    <figure class="stars-faces" id="stars-faces" aria-label="Будущие тренеры медитации">
+      <svg class="sf-lines ld" viewBox="0 0 100 50" preserveAspectRatio="none" aria-hidden="true"><line x1="17" y1="12.5" x2="34" y2="15.5" style="--d:0.48s"/><line x1="34" y1="15.5" x2="50.5" y2="11.5" style="--d:0.66s"/><line x1="50.5" y1="11.5" x2="67" y2="15.0" style="--d:0.84s"/><line x1="67" y1="15.0" x2="83.5" y2="12.0" style="--d:1.02s"/><line x1="8.5" y1="36.0" x2="17" y2="12.5" style="--d:1.20s"/><line x1="17" y1="12.5" x2="25" y2="38.5" style="--d:1.38s"/><line x1="25" y1="38.5" x2="34" y2="15.5" style="--d:1.38s"/><line x1="34" y1="15.5" x2="41.5" y2="35.0" style="--d:1.56s"/><line x1="41.5" y1="35.0" x2="50.5" y2="11.5" style="--d:1.56s"/><line x1="50.5" y1="11.5" x2="58" y2="38.5" style="--d:1.74s"/><line x1="58" y1="38.5" x2="67" y2="15.0" style="--d:1.74s"/><line x1="67" y1="15.0" x2="74.5" y2="35.0" style="--d:1.92s"/><line x1="74.5" y1="35.0" x2="83.5" y2="12.0" style="--d:1.92s"/><line x1="83.5" y1="12.0" x2="91" y2="38.0" style="--d:2.10s"/><line x1="8.5" y1="36.0" x2="25" y2="38.5" style="--d:1.38s"/><line x1="25" y1="38.5" x2="41.5" y2="35.0" style="--d:1.56s"/><line x1="41.5" y1="35.0" x2="58" y2="38.5" style="--d:1.74s"/><line x1="58" y1="38.5" x2="74.5" y2="35.0" style="--d:1.92s"/><line x1="74.5" y1="35.0" x2="91" y2="38.0" style="--d:2.10s"/></svg><svg class="sf-lines lm" viewBox="0 0 100 145" preserveAspectRatio="none" aria-hidden="true"><line x1="17" y1="14.5" x2="50" y2="18.9" style="--d:0.48s"/><line x1="50" y1="18.9" x2="83" y2="14.5" style="--d:0.66s"/><line x1="17" y1="14.5" x2="33.5" y2="50.8" style="--d:0.84s"/><line x1="50" y1="18.9" x2="33.5" y2="50.8" style="--d:0.84s"/><line x1="50" y1="18.9" x2="66.5" y2="50.8" style="--d:1.02s"/><line x1="83" y1="14.5" x2="66.5" y2="50.8" style="--d:1.02s"/><line x1="33.5" y1="50.8" x2="66.5" y2="50.8" style="--d:1.02s"/><line x1="33.5" y1="50.8" x2="17" y2="87.0" style="--d:1.20s"/><line x1="33.5" y1="50.8" x2="50" y2="89.9" style="--d:1.38s"/><line x1="66.5" y1="50.8" x2="50" y2="89.9" style="--d:1.38s"/><line x1="66.5" y1="50.8" x2="83" y2="87.0" style="--d:1.56s"/><line x1="17" y1="87.0" x2="50" y2="89.9" style="--d:1.38s"/><line x1="50" y1="89.9" x2="83" y2="87.0" style="--d:1.56s"/><line x1="17" y1="87.0" x2="17" y2="126.2" style="--d:1.74s"/><line x1="50" y1="89.9" x2="50" y2="129.1" style="--d:1.92s"/><line x1="83" y1="87.0" x2="83" y2="126.2" style="--d:2.10s"/><line x1="17" y1="126.2" x2="50" y2="129.1" style="--d:1.92s"/><line x1="50" y1="129.1" x2="83" y2="126.2" style="--d:2.10s"/></svg>
+      <span class="fc" style="--x:17%;--y:25%;--mx:17%;--my:10%;--d:0.00s"><img src="img/faces/b01.webp" alt="" loading="lazy" width="520" height="520"><i></i></span><span class="fc" style="--x:34%;--y:31%;--mx:50%;--my:13%;--d:0.18s"><img src="img/faces/b02.webp" alt="" loading="lazy" width="520" height="520"><i></i></span><span class="fc" style="--x:50.5%;--y:23%;--mx:83%;--my:10%;--d:0.36s"><img src="img/faces/b03.webp" alt="" loading="lazy" width="520" height="520"><i></i></span><span class="fc" style="--x:67%;--y:30%;--mx:33.5%;--my:35%;--d:0.54s"><img src="img/faces/b04.webp" alt="" loading="lazy" width="520" height="520"><i></i></span><span class="fc" style="--x:83.5%;--y:24%;--mx:66.5%;--my:35%;--d:0.72s"><img src="img/faces/b05.webp" alt="" loading="lazy" width="520" height="520"><i></i></span><span class="fc" style="--x:8.5%;--y:72%;--mx:17%;--my:60%;--d:0.90s"><img src="img/faces/b06.webp" alt="" loading="lazy" width="520" height="520"><i></i></span><span class="fc" style="--x:25%;--y:77%;--mx:50%;--my:62%;--d:1.08s"><img src="img/faces/b07.webp" alt="" loading="lazy" width="520" height="520"><i></i></span><span class="fc" style="--x:41.5%;--y:70%;--mx:83%;--my:60%;--d:1.26s"><img src="img/faces/b08.webp" alt="" loading="lazy" width="520" height="520"><i></i></span><span class="fc" style="--x:58%;--y:77%;--mx:17%;--my:87%;--d:1.44s"><img src="img/faces/b09.webp" alt="" loading="lazy" width="520" height="520"><i></i></span><span class="fc" style="--x:74.5%;--y:70%;--mx:50%;--my:89%;--d:1.62s"><img src="img/faces/b10.webp" alt="" loading="lazy" width="520" height="520"><i></i></span><span class="fc" style="--x:91%;--y:76%;--mx:83%;--my:87%;--d:1.80s"><img src="img/faces/b11.webp" alt="" loading="lazy" width="520" height="520"><i></i></span>
+    </figure>
   </div>
 </section>
 
@@ -561,26 +573,35 @@ b,strong{font-weight:800}
 <div class="mega-wrap"><section class="mega sec burgm">
   <div class="wrap">
     <div class="two rev">
-      <div class="art"><div class="mx"><div class="mx-rain" aria-hidden="true"></div>
-        <svg class="mx-svg pills-svg" viewBox="0 0 400 300" role="img" aria-label="Красная и синяя таблетки">
-          <defs>
-            <linearGradient id="pR" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff7a7a"/><stop offset=".45" stop-color="#c3172f"/><stop offset="1" stop-color="#4f0812"/></linearGradient>
-            <linearGradient id="pB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8ab8ff"/><stop offset=".45" stop-color="#2353cf"/><stop offset="1" stop-color="#0a1a52"/></linearGradient>
-            <radialGradient id="pS"><stop offset="0" stop-color="#000" stop-opacity=".55"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
-          </defs>
-          <ellipse cx="200" cy="248" rx="150" ry="16" fill="url(#pS)"/>
-          <g class="pill pill-r"><g transform="translate(128 150) rotate(-24)">
-            <rect x="-72" y="-27" width="144" height="54" rx="27" fill="url(#pR)"/>
-            <rect x="-60" y="-20" width="104" height="11" rx="5.5" fill="#fff" opacity=".42"/>
-            <rect x="-72" y="-27" width="144" height="54" rx="27" fill="none" stroke="rgba(255,255,255,.18)"/>
-          </g></g>
-          <g class="pill pill-b"><g transform="translate(276 158) rotate(20)">
-            <rect x="-72" y="-27" width="144" height="54" rx="27" fill="url(#pB)"/>
-            <rect x="-60" y="-20" width="104" height="11" rx="5.5" fill="#fff" opacity=".42"/>
-            <rect x="-72" y="-27" width="144" height="54" rx="27" fill="none" stroke="rgba(255,255,255,.18)"/>
-          </g></g>
-        </svg>
-      </div></div>
+      <div class="art morph"><svg viewBox="0 0 400 440" role="img" aria-label="Силуэт Морфиуса, который протягивает красную и синюю таблетки">
+        <defs>
+          <radialGradient id="mGlow" cx=".5" cy=".38" r=".6"><stop offset="0" stop-color="#f3d991" stop-opacity=".55"/><stop offset=".45" stop-color="#ddae35" stop-opacity=".22"/><stop offset="1" stop-color="#ddae35" stop-opacity="0"/></radialGradient>
+          <linearGradient id="pR" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a8a"/><stop offset=".45" stop-color="#d0182f"/><stop offset="1" stop-color="#4f0812"/></linearGradient>
+          <linearGradient id="pB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9cc3ff"/><stop offset=".45" stop-color="#2353cf"/><stop offset="1" stop-color="#0a1a52"/></linearGradient>
+          <linearGradient id="mFade" x1="0" y1="0" x2="0" y2="1"><stop offset=".78" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+          <mask id="mMask"><rect width="400" height="440" fill="url(#mFade)"/></mask>
+        </defs>
+        <ellipse cx="200" cy="190" rx="200" ry="210" fill="url(#mGlow)" class="pulse"/>
+        <g mask="url(#mMask)" fill="#0d0809" stroke="rgba(243,217,145,.75)" stroke-width="1.6" stroke-linejoin="round">
+          <path d="M200 146 C150 146 112 158 96 186 C80 214 78 262 80 302 L70 440 H330 L320 302 C322 262 320 214 304 186 C288 158 250 146 200 146Z"/>
+          <path d="M184 120 L182 150 Q200 160 218 150 L216 120Z"/>
+          <ellipse cx="164" cy="92" rx="6" ry="11"/><ellipse cx="236" cy="92" rx="6" ry="11"/>
+          <path d="M200 42 C224 42 238 62 238 90 C238 116 222 134 200 134 C178 134 162 116 162 90 C162 62 176 42 200 42Z"/>
+          <path d="M96 236 C92 270 96 296 112 306 L150 318 L150 300 L118 284 C112 268 110 250 112 236Z"/>
+          <path d="M304 236 C308 270 304 296 288 306 L250 318 L250 300 L282 284 C288 268 290 250 288 236Z"/>
+        </g>
+        <path d="M184 154 L166 248 M216 154 L234 248" stroke="rgba(243,217,145,.3)" stroke-width="1.2" fill="none"/>
+        <g class="shades">
+          <line x1="166" y1="86" x2="234" y2="86" stroke="rgba(243,217,145,.6)" stroke-width="1.4"/>
+          <ellipse cx="185" cy="88" rx="12" ry="9" fill="#030202" stroke="#f3d991" stroke-width="1.3"/>
+          <ellipse cx="215" cy="88" rx="12" ry="9" fill="#030202" stroke="#f3d991" stroke-width="1.3"/>
+          <path d="M178 85 q3 -3 7 -3 M208 85 q3 -3 7 -3" stroke="#fff6d6" stroke-width="1.6" fill="none" class="glint"/>
+        </g>
+        <path d="M118 316 Q146 334 176 316 Q170 330 147 332 Q124 330 118 316Z" fill="#241612" stroke="rgba(243,217,145,.7)" stroke-width="1.3"/>
+        <path d="M224 316 Q254 334 282 316 Q276 330 253 332 Q230 330 224 316Z" fill="#241612" stroke="rgba(243,217,145,.7)" stroke-width="1.3"/>
+        <g class="pill pill-r"><g transform="translate(147 312) rotate(-10)"><rect x="-22" y="-8.5" width="44" height="17" rx="8.5" fill="url(#pR)"/><rect x="-16" y="-6" width="30" height="3.5" rx="1.7" fill="#fff" opacity=".5"/></g></g>
+        <g class="pill pill-b"><g transform="translate(253 312) rotate(10)"><rect x="-22" y="-8.5" width="44" height="17" rx="8.5" fill="url(#pB)"/><rect x="-16" y="-6" width="30" height="3.5" rx="1.7" fill="#fff" opacity=".5"/></g></g>
+      </svg></div>
       <div>
         <h2>И даже в&nbsp;самые неопределённые времена у&nbsp;нас всегда <span class="grad">есть выбор:</span></h2>
         <ul class="choice" style="margin-top:26px">
