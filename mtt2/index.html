@@ -1,0 +1,1001 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>АКМ МТТ-2 — курс подготовки тренеров медитации</title>
+<meta name="description" content="Помогайте другим пересобрать реальность с помощью медитации на пустоту Кедрупа Чже. Курс подготовки тренеров медитации АКМ МТТ-2, 7–12 декабря.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="АКМ МТТ-2 — курс подготовки тренеров медитации">
+<meta property="og:description" content="Помогайте другим пересобрать реальность с помощью медитации на пустоту Кедрупа Чже. 7–12 декабря.">
+<meta property="og:image" content="img/pair-lotus.webp">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1a1012">
+<link rel="icon" type="image/png" href="img/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+Tibetan:wght@500&family=Caveat:wght@600;700&display=swap">
+<style>
+:root{
+  color-scheme: dark;
+  --ink:#1a1012;--ink-2:#24161a;--ink-3:#2f1d22;
+  --burg:#69232d;--burg-2:#8a3340;
+  --gold:#ddae35;--gold-d:#a8780f;--gold-l:#f3d991;
+  --rose:#e8b9a8;--rose-l:#f6dcd2;
+  --cream:#f5efe6;--cream-2:#ece3d5;--white:#fffdf9;
+  --text-d:#1f1416;--text-dm:#5a4649;--text-l:#f7efe6;--text-lm:#cdbdb7;
+  --line-l:rgba(247,239,230,.14);--line-d:rgba(31,20,22,.13);
+  --r-mega:40px;--r-card:28px;
+  --pad:clamp(16px,4vw,56px);
+  --display:'Unbounded',system-ui,sans-serif;
+  --sans:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --tib:'Noto Serif Tibetan',serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--ink);isolation:isolate;color:var(--text-l);font-family:var(--sans);font-size:17px;font-weight:500;line-height:1.62;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:76rem;margin:0 auto;padding:0 var(--pad)}
+.grad{background:linear-gradient(100deg,var(--gold-l) 0%,var(--gold) 40%,var(--rose) 100%);-webkit-background-clip:text;background-clip:text;color:transparent!important}
+.cream .grad{background-image:linear-gradient(100deg,var(--burg) 0%,var(--burg-2) 50%,var(--gold-d) 100%)}
+.eyebrow{font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.cream .eyebrow{color:var(--gold-d)}
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-.02em;line-height:1.1;text-wrap:balance}
+h2{font-size:clamp(28px,3.4vw,52px)}
+h3{font-size:clamp(18px,1.6vw,22px);line-height:1.2}
+p,li{min-width:0}
+b,strong{font-weight:800}
+.dark b,.burgm b{color:var(--gold-l)}
+.cream b{color:var(--burg)}
+.prose{display:grid;gap:14px;max-width:46rem}
+.note{font-size:14.5px;opacity:.85;font-style:italic}
+
+/* buttons */
+.btn{position:relative;overflow:hidden;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:10px 26px;border-radius:999px;font-family:var(--sans);font-weight:800;font-size:15px;line-height:1.25;text-align:center;cursor:pointer;border:0;transition:transform .25s ease,box-shadow .3s ease,color .3s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn .ar{font-family:var(--display);font-weight:500}
+.btn-gold{background:linear-gradient(120deg,var(--gold-l),var(--gold));color:var(--ink);animation:btnPulse 2.8s ease-in-out infinite}
+.btn-gold::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:38%;background:linear-gradient(100deg,rgba(255,250,230,0),rgba(255,250,230,.75),rgba(255,250,230,0));transform:skewX(-20deg);animation:btnShine 3.8s ease-in-out infinite;pointer-events:none;z-index:1}
+.btn-gold:hover{animation:none;box-shadow:0 14px 34px -8px rgba(221,174,53,.8),0 0 0 4px rgba(243,217,145,.35)}
+@keyframes btnPulse{0%,100%{box-shadow:0 10px 28px -10px rgba(221,174,53,.7),0 0 0 0 rgba(221,174,53,0)}50%{box-shadow:0 12px 34px -8px rgba(221,174,53,.85),0 0 0 7px rgba(221,174,53,.18)}}
+@keyframes btnShine{0%,62%{left:-60%}100%{left:130%}}
+.btn-ghost{border:1.5px solid rgba(247,239,230,.5);color:var(--text-l);background:rgba(26,16,18,.25);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.btn-ghost::before{content:"";position:absolute;inset:0;background:var(--gold);transform:scaleX(0);transform-origin:left center;transition:transform .35s ease;z-index:-1}
+.btn-ghost:hover{color:var(--ink);border-color:var(--gold)}
+.btn-ghost:hover::before{transform:scaleX(1)}
+.btn-dark{background:var(--ink);color:var(--gold-l)}
+.btn-dark::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:38%;background:linear-gradient(100deg,rgba(243,217,145,0),rgba(243,217,145,.35),rgba(243,217,145,0));transform:skewX(-20deg);animation:btnShine 3.8s ease-in-out infinite;pointer-events:none}
+.btn-line-d{border:1.5px solid var(--text-d);color:var(--text-d);background:transparent}
+.btn-line-d::before{content:"";position:absolute;inset:0;background:var(--text-d);transform:scaleX(0);transform-origin:left center;transition:transform .35s ease;z-index:-1}
+.btn-line-d:hover{color:var(--cream)}
+.btn-line-d:hover::before{transform:scaleX(1)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.ctas.center{justify-content:center}
+
+/* header */
+.hdr{position:fixed;top:0;left:0;right:0;z-index:50;padding:calc(12px + env(safe-area-inset-top,0px)) var(--pad) 0;pointer-events:none}
+.hdr-in{pointer-events:auto;max-width:80rem;margin:0 auto;display:flex;align-items:center;gap:14px;background:rgba(26,16,18,.84);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(247,239,230,.1);border-radius:999px;padding:7px 7px 7px 14px;box-shadow:0 14px 40px -20px rgba(0,0,0,.6)}
+.brand{display:flex;align-items:center;gap:10px;min-width:0;flex-shrink:0}
+.brand img{width:44px;height:33px}
+.brand-txt{display:grid;line-height:1.2}
+.brand-txt b{font-family:var(--display);font-weight:600;font-size:12.5px;color:var(--white);white-space:nowrap}
+.brand-txt span{font-size:11.5px;color:var(--text-lm);white-space:nowrap}
+.dnav{display:flex;gap:20px;font-size:14px;font-weight:700;color:var(--text-lm);margin-left:auto;white-space:nowrap}
+.dnav a:hover{color:var(--gold-l)}
+.menu-btn{display:none;align-items:center;gap:8px;min-height:42px;padding:0 15px;border-radius:999px;border:1px solid rgba(247,239,230,.22);background:transparent;color:var(--text-l);font-family:var(--sans);font-weight:700;font-size:14px;cursor:pointer;margin-left:auto}
+.burger{position:relative;width:16px;height:2px;background:currentColor;border-radius:2px}
+.burger::before,.burger::after{content:"";position:absolute;left:0;width:16px;height:2px;background:currentColor;border-radius:2px;transition:transform .25s ease}
+.burger::before{top:-5px}.burger::after{top:5px}
+.menu-btn[aria-expanded="true"] .burger{background:transparent}
+.menu-btn[aria-expanded="true"] .burger::before{transform:translateY(5px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] .burger::after{transform:translateY(-5px) rotate(-45deg)}
+.hdr .btn{min-height:42px;padding:0 20px;font-size:14px;flex-shrink:0;animation:none;box-shadow:0 6px 18px -8px rgba(221,174,53,.7)}
+.mnav{position:fixed;left:var(--pad);right:var(--pad);top:80px;z-index:60;max-width:26rem;margin-left:auto;display:grid;gap:2px;padding:10px;background:rgba(36,22,26,.97);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line-l);border-radius:24px;box-shadow:0 24px 60px -20px rgba(0,0,0,.7)}
+.mnav[hidden]{display:none}
+.mnav a{padding:12px 16px;border-radius:16px;font-weight:700;font-size:16px;color:var(--text-l)}
+.mnav a:hover,.mnav a:focus-visible{background:rgba(221,174,53,.14);color:var(--gold-l)}
+@media (max-width:1420px){.dnav{display:none}.menu-btn{display:inline-flex}}
+@media (max-width:640px){.brand-txt{display:none}}
+@media (max-width:380px){.menu-txt{display:none}.menu-btn{padding:0 13px}.hdr .btn{padding:0 15px;font-size:13px}}
+
+/* matrix background */
+.matrix-bg{position:fixed;inset:0;z-index:-2;pointer-events:none;background:linear-gradient(180deg,rgba(58,18,25,.72) 0%,rgba(26,16,18,.7) 55%,rgba(26,16,18,.82) 100%),url("img/matrix-bg.webp") center 30%/cover no-repeat}
+.matrix-bg::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 70% 10%,rgba(232,185,168,.22),transparent 55%);mix-blend-mode:screen}
+#rain{position:fixed;inset:0;z-index:-1;pointer-events:none;width:100%;height:100%;opacity:.55}
+
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;overflow:hidden}
+.hero-in{position:relative;z-index:2;max-width:80rem;width:100%;margin:0 auto;padding:128px var(--pad) 40px;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(20px,3vw,48px);align-items:center}
+.hero-text{display:grid;gap:18px;justify-items:start}
+.pill{display:inline-flex;align-items:center;gap:10px;padding:8px 18px;border-radius:999px;background:rgba(26,16,18,.5);border:1px solid rgba(243,217,145,.4);font-size:14px;font-weight:700;color:var(--gold-l);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.pill i{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px var(--gold)}
+.hero h1{font-size:clamp(34px,4.6vw,70px);font-weight:800;line-height:1.04;letter-spacing:-.03em;text-shadow:0 6px 40px rgba(26,16,18,.45);max-width:12em}
+.hero h1 span{display:block}
+.hand{font-family:'Caveat',cursive;font-weight:700;font-size:clamp(30px,3.2vw,48px);line-height:1.05;color:var(--rose-l);transform:rotate(-2deg);text-shadow:0 2px 14px rgba(26,16,18,.6);clip-path:inset(-20% 100% -40% 0);animation:handWrite 2.4s steps(30,end) .9s forwards}
+@keyframes handWrite{to{clip-path:inset(-20% -10% -40% 0)}}
+.facts{display:flex;flex-wrap:wrap;gap:10px}
+.facts .one{display:flex;align-items:center;gap:10px;padding:11px 22px;border-radius:999px;border:1px solid var(--line-l);background:rgba(26,16,18,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.facts .one i{color:var(--gold);font-style:normal;font-weight:800}
+.facts .one b{font-size:16px;color:var(--gold-l)}
+.hero .ctas{margin-top:8px}
+.hero-pair{position:relative;align-self:end;justify-self:center;width:100%;max-width:560px}
+.hero-pair img{width:100%;filter:drop-shadow(0 30px 60px rgba(0,0,0,.6));animation:float 6s ease-in-out infinite alternate}
+.hero-pair::before{content:"";position:absolute;left:8%;right:8%;bottom:4%;height:30%;border-radius:50%;background:radial-gradient(ellipse,rgba(221,174,53,.45),transparent 70%);filter:blur(10px)}
+@keyframes float{from{transform:translateY(0)}to{transform:translateY(-10px)}}
+.hero-cards{position:relative;z-index:2;max-width:80rem;margin:0 auto;padding:0 var(--pad) 56px;display:grid;grid-template-columns:1fr 1.5fr 1fr;gap:12px}
+.hc{border-radius:24px;padding:20px 22px;background:rgba(36,22,26,.66);border:1px solid var(--line-l);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);font-size:15px;line-height:1.5;color:var(--text-lm)}
+.hc h3{font-family:var(--sans);font-weight:800;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.hc .v{font-family:var(--display);font-weight:600;font-size:clamp(17px,1.5vw,20px);color:var(--white);line-height:1.3}
+.hc ul{list-style:none;display:grid;gap:6px}
+.hc li{display:flex;gap:10px}
+.hc li::before{content:"";flex-shrink:0;margin-top:8px;width:7px;height:7px;border-radius:50%;background:var(--gold)}
+.hc.gold{background:linear-gradient(150deg,#f8e7b8 0%,var(--gold) 70%,#c98d4f 100%);color:#3a2225;border:0}
+.hc.gold h3{color:var(--burg)}
+.hc.gold .v{color:var(--text-d)}
+
+/* sections */
+.mega-wrap{padding:0 clamp(8px,1.4vw,20px)}
+.mega{border-radius:var(--r-mega);margin:0 auto;max-width:1440px;position:relative}
+.cream{background:var(--cream);color:var(--text-d)}
+.burgm{background:linear-gradient(170deg,rgba(58,18,25,.74) 0%,rgba(36,22,26,.66) 55%,rgba(26,16,18,.62) 100%);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);color:var(--text-l)}
+.dark{color:var(--text-l)}
+.sec{padding:clamp(60px,8vw,112px) 0;scroll-margin-top:84px;position:relative}
+.mega.sec{margin-top:clamp(10px,1.4vw,20px);margin-bottom:clamp(10px,1.4vw,20px)}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:18px 40px;flex-wrap:wrap;margin-bottom:clamp(30px,4vw,48px)}
+.sec-head > div{max-width:48rem;min-width:0}
+.sec-head h2{margin-top:14px}
+.sec-head > p{max-width:24rem;font-size:16px}
+.cream p,.cream li{color:var(--text-dm)}
+.cream h3,.cream .big{color:var(--text-d)}
+.dark p,.dark li,.burgm p,.burgm li{color:var(--text-lm)}
+.dark h3,.burgm h3{color:var(--text-l)}
+
+/* cards */
+.card{border-radius:var(--r-card);padding:clamp(24px,3vw,42px);min-width:0;position:relative}
+.card-w{background:var(--white);box-shadow:0 30px 60px -40px rgba(105,35,45,.35)}
+.card-k{background:linear-gradient(160deg,var(--ink-3) 0%,var(--ink) 75%);color:var(--text-l);overflow:hidden}
+.dark .card-k,.burgm .card-k{background:linear-gradient(160deg,rgba(47,29,34,.76) 0%,rgba(26,16,18,.66) 75%);border:1px solid var(--line-l)}
+.card-k::before{content:"";position:absolute;width:320px;height:320px;right:-120px;top:-120px;border-radius:50%;background:radial-gradient(circle,rgba(221,174,53,.32),transparent 65%);pointer-events:none}
+.card-k > *{position:relative}
+.cream .card-k p,.cream .card-k li{color:var(--text-lm)}
+.cream .card-k b{color:var(--gold-l)}
+.cream .card-k h3{color:var(--text-l)}
+.card-d{background:rgba(40,24,28,.62);border:1px solid var(--line-l);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.tag{display:inline-flex;align-items:center;padding:8px 16px;border-radius:999px;font-weight:800;font-size:13px;line-height:1.2;letter-spacing:.02em}
+.t-gold{background:linear-gradient(120deg,#f8e6b4,#f3cfc0);color:var(--burg)}
+.t-burg{background:var(--burg);color:var(--gold-l)}
+.callout{font-family:var(--display);font-weight:600;font-size:clamp(19px,2vw,26px);line-height:1.32;letter-spacing:-.015em;max-width:54rem}
+.callout-box{margin-top:clamp(24px,3vw,36px);border-radius:var(--r-card);padding:clamp(24px,3.4vw,44px);position:relative;overflow:hidden}
+.cream .callout-box{background:linear-gradient(120deg,#f8e6b4 0%,#f3cfc0 100%);color:var(--burg)}
+.dark .callout-box,.burgm .callout-box{background:linear-gradient(120deg,rgba(221,174,53,.16),rgba(232,185,168,.08));border:1px solid rgba(221,174,53,.35);color:var(--text-l)}
+.callout-box::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:linear-gradient(180deg,var(--gold),var(--burg))}
+.callout-box p.callout{color:inherit!important}
+.big{font-family:var(--display);font-weight:600;font-size:clamp(19px,1.9vw,25px);line-height:1.3;letter-spacing:-.015em}
+.dots{list-style:none;display:flex;flex-direction:column}
+.dots li{display:flex;align-items:flex-start;gap:14px;padding:12px 0;border-bottom:1px solid var(--line-d);font-weight:600}
+.dark .dots li,.card-k .dots li,.burgm .dots li{border-bottom-color:var(--line-l)}
+.dots li:last-child{border-bottom:0}
+.dots li::before{content:"";flex-shrink:0;margin-top:8px;width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--burg))}
+.card-k .dots li::before,.dark .dots li::before,.burgm .dots li::before{background:linear-gradient(135deg,var(--gold-l),var(--gold))}
+.two{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(20px,4vw,52px);align-items:center}
+.two.rev{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}
+.art{position:relative;justify-self:center;width:100%;max-width:440px}
+.art img{width:100%;filter:drop-shadow(0 24px 50px rgba(0,0,0,.45));animation:float 6s ease-in-out infinite alternate}
+.cream .art img{filter:drop-shadow(0 24px 40px rgba(105,35,45,.25))}
+.art::before{content:"";position:absolute;inset:12%;border-radius:50%;background:radial-gradient(circle,rgba(221,174,53,.35),transparent 70%);filter:blur(20px)}
+.art img{position:relative}
+
+/* for whom */
+.who-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.who-grid li{list-style:none;border-radius:22px;padding:24px 22px 26px;background:var(--white);box-shadow:0 24px 50px -40px rgba(105,35,45,.4);font-weight:600;font-size:16px;line-height:1.45;color:var(--text-d)!important;min-width:0}
+.who-grid li .n{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--ink);color:var(--gold-l);font-family:var(--display);font-size:13px;font-weight:700;margin-bottom:14px}
+.who-grid li:nth-child(1){background:linear-gradient(120deg,#f8e6b4,#f3cfc0)}
+.who-grid li:nth-child(1) .n{background:var(--burg)}
+
+/* choice */
+.choice{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.choice li{border-radius:22px;padding:20px 22px;background:rgba(40,24,28,.62);border:1px solid var(--line-l);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:var(--text-l)!important;font-weight:600;font-size:16px;line-height:1.4}
+.choice li b{display:block;font-family:var(--display);font-weight:700;font-size:clamp(17px,1.5vw,20px);margin-bottom:4px}
+.choice li span{color:var(--text-lm)}
+
+/* role */
+.strip{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin-bottom:clamp(28px,4vw,44px)}
+.strip figure{border-radius:20px;overflow:hidden;aspect-ratio:3/4;box-shadow:0 20px 40px -30px rgba(105,35,45,.6);opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s ease}
+.strip.in figure{opacity:1;transform:none}
+.strip figure:nth-child(2){transition-delay:.08s}.strip figure:nth-child(3){transition-delay:.16s}.strip figure:nth-child(4){transition-delay:.24s}.strip figure:nth-child(5){transition-delay:.32s}.strip figure:nth-child(6){transition-delay:.4s}
+.strip img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s ease}
+.strip figure:hover img{transform:scale(1.05)}
+.chain{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;counter-reset:c}
+.chain li{position:relative;border-radius:22px;padding:24px 24px 26px;background:var(--white);box-shadow:0 24px 50px -40px rgba(105,35,45,.4);font-weight:700;font-size:16.5px;line-height:1.45;color:var(--text-d)!important}
+.chain li::before{counter-increment:c;content:"0" counter(c);display:block;font-family:var(--display);font-size:13px;font-weight:700;color:var(--gold-d);margin-bottom:10px}
+.chain li:not(:nth-child(3n)):not(:last-child)::after{content:"→";position:absolute;right:-13px;top:50%;transform:translateY(-50%);width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--burg);color:var(--gold-l);font-family:var(--display);font-size:12px;z-index:1}
+.chain li:last-child{background:linear-gradient(165deg,var(--burg-2) 0%,var(--burg) 60%,#3a1219 100%);color:var(--gold-l)!important}
+.chain li:last-child::before{color:var(--gold-l)}
+.become{margin-top:clamp(32px,4vw,52px);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px 40px;align-items:center;border-radius:var(--r-card);padding:clamp(24px,3.4vw,44px);background:linear-gradient(160deg,var(--ink-3) 0%,var(--ink) 75%);color:var(--text-l);position:relative;overflow:hidden}
+.become p{color:var(--text-lm)!important;font-size:18px}
+.become .quote{font-family:var(--display);font-weight:600;font-size:clamp(20px,2.2vw,28px);line-height:1.3;color:var(--white)!important;margin-top:10px}
+.become .be{display:flex;align-items:center;gap:14px;margin-top:20px;font-family:var(--display);font-weight:700;font-size:clamp(20px,2vw,26px)}
+.become .grad{background-image:linear-gradient(100deg,var(--gold-l) 0%,var(--gold) 40%,var(--rose) 100%)}
+.become img{width:clamp(140px,16vw,220px);animation:float 5s ease-in-out infinite alternate;filter:drop-shadow(0 0 30px rgba(221,174,53,.45))}
+
+/* need trainers */
+.need{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:16px;align-items:stretch}
+.need figure{border-radius:var(--r-card);overflow:hidden;position:relative;min-height:460px}
+.need figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%}
+.need-intro{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px 40px;align-items:center;margin-bottom:16px}
+.need-intro img{width:clamp(160px,18vw,240px);filter:drop-shadow(0 20px 40px rgba(0,0,0,.5))}
+
+/* lineage */
+.line4{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;position:relative}
+.line4::before{content:"";position:absolute;left:4%;right:4%;top:40px;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--burg),var(--gold),var(--gold-l))}
+.line4 li{position:relative;border-radius:22px;padding:22px 22px 24px;background:var(--white);box-shadow:0 24px 50px -40px rgba(105,35,45,.4);font-size:15.5px;line-height:1.5;color:var(--text-dm)!important;min-width:0}
+.line4 li .n{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--ink);color:var(--gold-l);font-family:var(--display);font-size:13px;font-weight:700;margin-bottom:14px}
+.line4 li b{color:var(--text-d)}
+.line4 li:last-child{background:linear-gradient(120deg,#f8e6b4,#f3cfc0)}
+.line4 li:last-child .n{background:var(--burg);box-shadow:0 0 0 6px rgba(221,174,53,.3);animation:youGlow 2.4s ease-in-out infinite alternate}
+.line4 li:last-child b{color:var(--burg);font-family:var(--display);font-size:18px}
+@keyframes youGlow{from{box-shadow:0 0 0 3px rgba(221,174,53,.25)}to{box-shadow:0 0 0 9px rgba(221,174,53,.45)}}
+
+/* locations */
+.loc-row{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 0 14px;margin-top:16px;scrollbar-width:thin;scrollbar-color:var(--gold) transparent}
+.loc-row figure{flex:0 0 clamp(220px,26vw,300px);scroll-snap-align:start;border-radius:20px;overflow:hidden;position:relative;aspect-ratio:4/3;border:1px solid rgba(243,217,145,.28)}
+.loc-row img{width:100%;height:100%;object-fit:cover}
+.loc-row figcaption{position:absolute;left:10px;bottom:10px;padding:6px 13px;border-radius:999px;background:rgba(26,16,18,.78);color:var(--cream);font-size:13px;font-weight:700;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.loc-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;margin-top:16px;align-items:stretch}
+.loc-card figure{border-radius:var(--r-card);overflow:hidden;position:relative;min-height:300px}
+.loc-card figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hint{font-size:13.5px;color:var(--text-lm);margin-top:2px}
+
+/* teachers */
+.t4{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.tch{display:grid;grid-template-columns:150px minmax(0,1fr);gap:22px;align-items:start}
+.tch img{width:150px;height:150px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 4px var(--white),0 0 0 6px rgba(221,174,53,.6)}
+.tch h3{font-size:clamp(19px,1.7vw,23px)}
+.tch .tag{margin-top:10px}
+.tch ul{list-style:none;margin-top:14px;display:grid;gap:6px}
+.tch li{display:flex;gap:10px;font-size:15px;line-height:1.45}
+.tch li::before{content:"";flex-shrink:0;margin-top:8px;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+
+/* outcomes */
+.out{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.out li{display:flex;align-items:center;gap:16px;border-radius:22px;padding:16px 22px 16px 14px;background:rgba(40,24,28,.62);border:1px solid var(--line-l);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:var(--text-l)!important;font-weight:600;font-size:16px;line-height:1.45}
+.out li img{flex-shrink:0;width:54px;height:auto;filter:drop-shadow(0 0 10px rgba(221,174,53,.4))}
+
+/* includes */
+.inc{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.inc li{display:flex;flex-direction:column;gap:12px;border-radius:22px;padding:22px;background:var(--white);box-shadow:0 24px 50px -40px rgba(105,35,45,.4);font-weight:700;font-size:16px;line-height:1.4;color:var(--text-d)!important}
+.inc li img{width:46px;animation:spinSlow 14s linear infinite}
+@keyframes spinSlow{to{transform:rotate(360deg)}}
+.langs-box{margin-top:16px;display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;border-radius:999px;border:1.5px dashed rgba(105,35,45,.35);padding:16px 28px;font-weight:700;color:var(--text-d)}
+.tracks{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.tracks .card{display:flex;flex-direction:column;gap:14px}
+.tracks .card .btn{margin-top:auto;align-self:flex-start}
+.tracks.one{grid-template-columns:1fr;max-width:46rem;margin-left:auto;margin-right:auto}
+.tracks h3{font-size:clamp(17px,1.5vw,20px)}
+
+/* conditions */
+.steps7{list-style:none;display:grid;gap:10px;counter-reset:s;max-width:56rem}
+.steps7 li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;align-items:center;border-radius:22px;padding:14px 20px 14px 14px;background:rgba(40,24,28,.62);border:1px solid var(--line-l);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:var(--text-l)!important;font-weight:600}
+.steps7 li::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--gold-l),var(--gold));color:var(--ink);font-family:var(--display);font-weight:700;font-size:15px}
+.steps7 li b{color:var(--gold-l)}
+.all{display:flex;align-items:center;gap:16px;border-radius:999px;padding:18px 30px;background:linear-gradient(120deg,rgba(221,174,53,.2),rgba(232,185,168,.08));border:1px solid rgba(221,174,53,.4);font-family:var(--display);font-weight:600;font-size:clamp(17px,1.7vw,22px);margin-bottom:clamp(36px,5vw,56px);color:var(--white)}
+.all i{flex-shrink:0;width:12px;height:12px;border-radius:50%;background:var(--gold);box-shadow:0 0 14px var(--gold)}
+
+/* price */
+.deadlines{display:grid;grid-template-columns:auto 1fr 1fr;gap:14px;align-items:stretch;margin-bottom:clamp(36px,5vw,56px)}
+.deadlines .lim{display:flex;align-items:center;border-radius:22px;padding:18px 26px;background:var(--burg);color:var(--gold-l);font-family:var(--display);font-weight:700;font-size:16px;line-height:1.3}
+.dl{border-radius:22px;padding:18px 24px;background:var(--white);box-shadow:0 24px 50px -40px rgba(105,35,45,.4);display:grid;gap:2px}
+.dl span{font-size:14px;color:var(--text-dm)}
+.dl b{font-family:var(--display);font-size:clamp(20px,2vw,26px);color:var(--text-d)!important}
+.tar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:stretch}
+.tc{position:relative;border-radius:var(--r-card);padding:30px 30px 32px;display:flex;flex-direction:column;align-items:flex-start;gap:12px;min-width:0;overflow:hidden}
+.tc img{width:150px;margin:-6px 0 4px}
+.tc.base{background:linear-gradient(160deg,var(--ink-3) 0%,var(--ink) 75%);color:var(--text-l)}
+.tc.disc{background:linear-gradient(165deg,#f8e7b8 0%,var(--gold) 58%,#c98d4f 100%);color:var(--text-d);box-shadow:0 40px 80px -40px rgba(221,174,53,.6)}
+.tc h3{font-size:clamp(18px,1.6vw,21px);font-weight:600;line-height:1.3;color:inherit!important}
+.tc .price{font-family:var(--display);font-weight:800;font-size:clamp(46px,4.6vw,64px);line-height:1;letter-spacing:-.04em;margin-top:auto}
+.tc.base .price{color:var(--gold-l)}
+.tc .price small{font-size:.38em;letter-spacing:0;font-weight:600;opacity:.75}
+.tc .flag{position:absolute;top:24px;right:24px}
+.instal{margin-top:16px;display:flex;align-items:center;justify-content:center;gap:12px;border-radius:999px;background:var(--ink);color:var(--gold-l);padding:16px 28px;font-family:var(--display);font-weight:600;font-size:clamp(16px,1.6vw,20px);text-align:center}
+
+/* schedule */
+.tl{list-style:none;display:grid;gap:12px;max-width:62rem}
+.tl > li{display:grid;grid-template-columns:200px minmax(0,1fr);gap:18px 28px;border-radius:24px;padding:22px 26px;background:rgba(40,24,28,.62);border:1px solid var(--line-l);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.tl > li.hl{background:linear-gradient(120deg,rgba(138,51,64,.85),rgba(105,35,45,.8));border:0}
+.tl .when{font-family:var(--display);font-weight:700;font-size:17px;color:var(--gold-l);line-height:1.3}
+.tl .when small{display:block;margin-top:6px;font-family:var(--sans);font-size:13px;font-weight:600;color:var(--text-lm);font-style:italic}
+.tl .what{color:var(--text-l)}
+.tl .what > b{display:block;font-family:var(--display);font-weight:600;font-size:17px;color:var(--white);line-height:1.35}
+.tl .what ul{list-style:none;margin-top:10px;display:grid;gap:5px}
+.tl .what li{display:flex;gap:10px;font-size:15.5px}
+.tl .what li::before{content:"";flex-shrink:0;margin-top:9px;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.tl .what .note{margin-top:10px;color:var(--text-lm)}
+
+/* lessons */
+.lessons{list-style:none;display:grid;gap:12px}
+.lessons li{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:14px 32px;border-radius:24px;padding:24px 28px;background:var(--white);box-shadow:0 24px 50px -40px rgba(105,35,45,.4)}
+.lessons .lt{display:grid;gap:8px;align-content:start}
+.lessons .lt .tag{justify-self:start}
+.lessons h3{font-size:clamp(17px,1.5vw,20px);color:var(--text-d)!important}
+.lessons p{color:var(--text-dm)!important}
+.lessons .by{margin-top:10px;font-size:14px;font-weight:800;color:var(--burg)!important}
+
+/* reviews */
+.gallery{column-count:4;column-gap:12px}
+.gallery button{display:block;width:100%;margin-bottom:12px;break-inside:avoid;padding:0;border:0;border-radius:16px;overflow:hidden;cursor:zoom-in;background:var(--cream-2);box-shadow:0 18px 40px -30px rgba(105,35,45,.5)}
+.gallery button[hidden]{display:none}
+.gallery img{width:100%}
+.more-row{margin-top:16px;display:flex;justify-content:center}
+.lb{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:24px;background:rgba(26,16,18,.92);cursor:zoom-out}
+.lb[hidden]{display:none}
+.lb img{max-width:min(100%,900px);max-height:90vh;border-radius:14px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+
+/* faq */
+.faq{display:grid;gap:10px;max-width:56rem}
+.faq details{border-radius:24px;background:rgba(40,24,28,.62);border:1px solid var(--line-l);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transition:border-color .3s ease}
+.faq details[open]{background:linear-gradient(160deg,rgba(58,31,37,.85),rgba(47,29,34,.75));border-color:rgba(221,174,53,.4)}
+.faq summary{cursor:pointer;list-style:none;padding:20px 64px 20px 26px;position:relative;font-weight:800;font-size:17px;line-height:1.4;color:var(--text-l)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:rgba(247,239,230,.08);color:var(--gold);font-family:var(--display);font-size:18px;font-weight:500}
+.faq details[open] summary::after{content:"−";background:var(--gold);color:var(--ink)}
+.faq .ans{padding:0 26px 22px;display:grid;gap:12px;max-width:48rem}
+.faq .ans ul{list-style:none;display:grid;gap:6px}
+.faq .ans li{display:flex;gap:10px}
+.faq .ans li::before{content:"";flex-shrink:0;margin-top:9px;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.refund{margin-top:clamp(32px,4vw,48px);border-radius:24px;border:1.5px dashed rgba(221,174,53,.5);padding:18px 26px;display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline}
+.refund b{font-family:var(--display);font-size:15px}
+
+/* final */
+.final{position:relative;overflow:hidden;text-align:center}
+.final::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(221,174,53,.22),transparent 60%),radial-gradient(ellipse at 50% 100%,rgba(105,35,45,.5),transparent 60%);pointer-events:none}
+.final .wrap{position:relative;max-width:56rem;display:grid;justify-items:center;gap:18px}
+.final img{width:min(420px,80%);filter:drop-shadow(0 20px 50px rgba(0,0,0,.5))}
+.final p{font-size:18px;color:var(--text-l)!important}
+
+/* footer */
+.ftr{padding:48px var(--pad) calc(44px + env(safe-area-inset-bottom,0px));text-align:center;color:var(--text-lm);font-size:14px;display:grid;gap:8px;justify-items:center;border-top:1px solid var(--line-l);background:rgba(26,16,18,.7)}
+.ftr img{width:112px;height:112px;margin-bottom:8px;padding:8px;border-radius:28px;background:var(--cream)}
+.ftr a{color:var(--gold-l);text-decoration:underline;text-underline-offset:3px}
+
+/* responsive */
+@media (max-width:1100px){
+  .hero-in{grid-template-columns:1fr;padding-top:104px;text-align:left}
+  .hero-pair{max-width:440px;margin-top:-10px}
+  .hero-cards{grid-template-columns:1fr 1fr}
+  .hero-cards .hc:nth-child(2){grid-column:1/-1;order:3}
+  .gallery{column-count:3}
+  .strip{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .line4{grid-template-columns:1fr 1fr}
+  .line4::before{display:none}
+}
+@media (max-width:960px){
+  .two,.two.rev,.need,.loc-card,.t4,.tracks,.tar{grid-template-columns:1fr}
+  .two.rev .art{order:-1}
+  .art{max-width:340px}
+  .who-grid,.chain,.inc{grid-template-columns:1fr 1fr}
+  .chain li::after{display:none}
+  .out,.choice{grid-template-columns:1fr}
+  .deadlines{grid-template-columns:1fr 1fr}
+  .deadlines .lim{grid-column:1/-1}
+  .lessons li{grid-template-columns:1fr}
+  .tl > li{grid-template-columns:1fr;gap:8px}
+  .need figure{min-height:0;aspect-ratio:4/5;max-height:560px}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  :root{--r-mega:28px;--r-card:24px}
+  .hero-in{padding-top:92px;gap:18px}
+  .hero h1{font-size:clamp(30px,9vw,44px)}
+  .hero .ctas,.hero .ctas .btn{width:100%}
+  .hero-cards{grid-template-columns:1fr}
+  .hero-cards .hc:nth-child(2){grid-column:auto;order:0}
+  .who-grid,.chain,.inc,.line4,.deadlines{grid-template-columns:1fr}
+  .strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .become,.need-intro{grid-template-columns:1fr}
+  .become img,.need-intro img{justify-self:center}
+  .tch{grid-template-columns:1fr;justify-items:start}
+  .tch img{width:120px;height:120px}
+  .gallery{column-count:2;column-gap:8px}
+  .gallery button{margin-bottom:8px;border-radius:12px}
+  .all,.langs-box,.instal{border-radius:22px;padding:16px 20px}
+  .faq summary{padding:18px 58px 18px 20px;font-size:16px}
+  .faq summary::after{right:12px}
+  .faq .ans{padding:0 20px 20px}
+  .ctas .btn,.tracks .card .btn,.more-row .btn{width:100%}
+  .sec-head{margin-bottom:28px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .hand{clip-path:none}
+  .strip figure{opacity:1;transform:none}
+  #rain{display:none}
+}
+</style>
+</head>
+<body id="top">
+<div class="matrix-bg" aria-hidden="true"></div>
+<canvas id="rain" aria-hidden="true"></canvas>
+
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="#top"><img src="img/logo-mark.png" width="160" height="120" alt="Академия Классической Мудрости"><span class="brand-txt"><b>АКМ МТТ-2 · тренеры медитации</b><span>7–12 декабря · онлайн</span></span></a>
+    <nav class="dnav" aria-label="Разделы">
+      <a href="#for">Для&nbsp;кого</a>
+      <a href="#need">Нам нужны тренеры</a>
+      <a href="#teachers">Преподаватели</a>
+      <a href="#cert">Сертификат</a>
+      <a href="#price">Стоимость</a>
+      <a href="#program">Как устроен курс</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <button class="menu-btn" type="button" id="menu-btn" aria-expanded="false" aria-controls="mnav"><span class="burger" aria-hidden="true"></span><span class="menu-txt">Меню</span></button>
+    <a class="btn btn-gold" href="#apply">Подать заявку</a>
+  </div>
+</header>
+<nav class="mnav" id="mnav" aria-label="Меню" hidden>
+  <a href="#for">Для&nbsp;кого</a>
+  <a href="#need">Нам нужны тренеры</a>
+  <a href="#teachers">Преподаватели</a>
+  <a href="#cert">Сертификат по&nbsp;курсу</a>
+  <a href="#price">Стоимость участия и&nbsp;бонусы</a>
+  <a href="#program">Как устроен курс</a>
+  <a href="#faq">Частые вопросы</a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero dark" aria-label="Курс подготовки тренеров медитации АКМ МТТ-2">
+  <div class="hero-in">
+    <div class="hero-text">
+      <span class="pill"><i></i>Курс подготовки тренеров медитации АКМ&nbsp;МТТ-2</span>
+      <h1><span class="grad">Помогайте другим</span> <span>пересобрать реальность</span></h1>
+      <p class="hand">с&nbsp;помощью медитации<br>на&nbsp;пустоту Кедрупа Чже</p>
+      <div class="ctas">
+        <a class="btn btn-gold" href="#apply">Подать заявку на&nbsp;участие <span class="ar">→</span></a>
+        <a class="btn btn-ghost" href="#program">Как устроен курс</a>
+      </div>
+      <div class="facts"><div class="one"><i>✦</i><b>7–12&nbsp;декабря</b></div></div>
+    </div>
+    <figure class="hero-pair"><img src="img/pair.webp" width="1000" height="945" alt="Двое учеников медитируют в чёрных очках — в стиле «Матрицы»" fetchpriority="high"></figure>
+  </div>
+</section>
+<div class="hero-cards">
+  <div class="hc"><h3>Кто может участвовать</h3><p class="v">все желающие</p></div>
+  <div class="hc"><h3>Условие для получения сертификата</h3>
+    <ul>
+      <li>сертификат по&nbsp;курсу ACI&nbsp;3 «Прикладная медитация» до&nbsp;9&nbsp;мая 2027</li>
+      <li>сертификат по&nbsp;курсу М2 «Медитация на&nbsp;пустоту Кедрупа Чже» до&nbsp;9&nbsp;мая 2027</li>
+      <li>выполнение всех заданий курса МТТ&nbsp;2</li>
+    </ul>
+  </div>
+  <div class="hc gold"><h3>Скидка 50%</h3><p class="v">для тех, кто проходил курс АКМ&nbsp;ТТ&nbsp;2</p></div>
+</div>
+
+<!-- FOR WHOM -->
+<div class="mega-wrap"><section class="mega sec cream" id="for">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Для кого</span><h2>Для кого этот <span class="grad">курс?</span></h2></div></div>
+    <ul class="who-grid">
+      <li><span class="n">01</span>Для тренеров АКМ, которые хотят преподавать и&nbsp;вести медитацию Кедрупа Чже на&nbsp;курсах ACI-2</li>
+      <li><span class="n">02</span>Для тех, кто хочет проводить курс по&nbsp;медитации М2 для студентов ACI, например между курсами ACI</li>
+      <li><span class="n">03</span>Для тех, кто хочет преподавать и&nbsp;вести медитации в&nbsp;рамках обычных или медитационных ретритов</li>
+      <li><span class="n">04</span>Для тех, кто хочет усилить свои образовательные / наставнические продукты с&nbsp;помощью медитаций</li>
+      <li><span class="n">05</span>Для тех, кто уже обучает медитации или хочет начать это делать</li>
+      <li><span class="n">06</span>Для тех, кто хочет глубже разобраться в&nbsp;медитации Кедрупа Чже для личной практики</li>
+    </ul>
+  </div>
+</section></div>
+
+<!-- UNCERTAINTY -->
+<section class="sec dark">
+  <div class="wrap">
+    <div class="two">
+      <div>
+        <span class="eyebrow">В мире неопределённости</span>
+        <h2 style="margin-top:14px">Когда мир кажется нестабильным, особенно важны те, <span class="grad">кто знает, как он устроен</span></h2>
+        <div class="prose" style="margin-top:26px">
+          <p>Мы живём во&nbsp;времена, когда привычная опора уходит из-под ног. Новости тревожат, планы рушатся, будущее кажется туманным. Многие чувствуют себя щепкой в&nbsp;потоке обстоятельств.</p>
+          <p class="big" style="color:var(--white)">Но вы знаете то, чего не&nbsp;знают другие.</p>
+          <p>Вы знаете, что мир не&nbsp;происходит с&nbsp;нами: он возникает из&nbsp;наших собственных ментальных семян. Что у&nbsp;вещей нет своей природы, отдельной от&nbsp;того, как мы их видим. Что реальность, которая кажется такой твёрдой и&nbsp;неизменной, на&nbsp;самом деле открыта для перемен.</p>
+          <p>Это знание меняет всё. <b>Мы не&nbsp;жертвы обстоятельств. Мы те, кто творит свою реальность.</b></p>
+        </div>
+      </div>
+      <div class="art"><img src="img/pair-lotus.webp" width="900" height="600" alt="" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CHOICE -->
+<div class="mega-wrap"><section class="mega sec burgm">
+  <div class="wrap">
+    <div class="two rev">
+      <div class="art"><img src="img/pills.webp" width="800" height="849" alt="" loading="lazy"></div>
+      <div>
+        <h2>И даже в&nbsp;самые неопределённые времена у&nbsp;нас всегда <span class="grad">есть выбор:</span></h2>
+        <ul class="choice" style="margin-top:26px">
+          <li><b>выбрать созидание,</b><span>а&nbsp;не&nbsp;страх;</span></li>
+          <li><b>выбрать работу с&nbsp;умом,</b><span>а&nbsp;не&nbsp;борьбу с&nbsp;последствиями;</span></li>
+          <li><b>выбрать духовную практику,</b><span>а&nbsp;не&nbsp;бегство от&nbsp;происходящего;</span></li>
+          <li><b>выбрать помощь другим,</b><span>а&nbsp;не&nbsp;замыкаться в&nbsp;себе.</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout-box"><p class="callout">Каждый такой выбор — семя. Из&nbsp;этих семян вырастает наш будущий мир, тот самый идеальный мир, о&nbsp;котором мы мечтаем.</p></div>
+  </div>
+</section></div>
+
+<!-- ROLE -->
+<div class="mega-wrap"><section class="mega sec cream" id="role">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Ваша роль</span><h2>И здесь начинается <span class="grad">ваша роль!</span></h2></div></div>
+    <div class="strip" id="strip">
+      <figure><img src="img/role-1.webp" alt="Тренер ведёт медитацию" loading="lazy"></figure>
+      <figure><img src="img/role-2.webp" alt="Медитация в группе" loading="lazy"></figure>
+      <figure><img src="img/role-3.webp" alt="Занятие курса ACI" loading="lazy"></figure>
+      <figure><img src="img/role-4.webp" alt="Совместная медитация" loading="lazy"></figure>
+      <figure><img src="img/role-5.webp" alt="Практика медитации" loading="lazy"></figure>
+      <figure><img src="img/role-6.webp" alt="Учитель и ученики" loading="lazy"></figure>
+    </div>
+    <ol class="chain">
+      <li>Когда вы практикуете сами, вы меняете свой мир</li>
+      <li>Когда вы помогаете практиковать другим, вы сажаете самые сильные семена из&nbsp;возможных</li>
+      <li>Вы помогаете людям найти опору там, где её ничто не&nbsp;отнимет: в&nbsp;понимании того, откуда приходит реальность</li>
+      <li>Один тренер — это десятки людей, которые начали медитировать</li>
+      <li>Десятки людей — это сотни изменившихся жизней, семей и&nbsp;отношений</li>
+      <li>Так, через медитацию, мы вместе меняем этот мир!</li>
+    </ol>
+    <div class="become">
+      <div>
+        <p>Именно сейчас, в&nbsp;неспокойное время, людям особенно нужны те, кто может спокойно сесть рядом и&nbsp;сказать:</p>
+        <p class="quote">«Давай я&nbsp;покажу тебе, как на&nbsp;это посмотреть».</p>
+        <div class="be"><span class="grad">Станьте таким человеком!</span></div>
+        <div class="ctas" style="margin-top:22px"><a class="btn btn-gold" href="#apply">Хочу стать тренером медитации! <span class="ar">→</span></a></div>
+      </div>
+      <img src="img/lotus.webp" width="700" height="467" alt="" loading="lazy">
+    </div>
+  </div>
+</section></div>
+
+<!-- NEED TRAINERS -->
+<section class="sec dark" id="need">
+  <div class="wrap">
+    <div class="need-intro">
+      <div>
+        <span class="eyebrow">Медитационный трек АКМ</span>
+        <h2 style="margin-top:14px">Нам очень нужны <span class="grad">тренеры по&nbsp;медитации</span></h2>
+        <div class="prose" style="margin-top:22px">
+          <p>В&nbsp;2026 году АКМ запустил Медитационный трек для студентов, изучающих курсы ACI.</p>
+          <p class="big" style="color:var(--white)">Нам нужны подготовленные тренеры, которые смогут вести эти курсы и&nbsp;направлять практикующих</p>
+        </div>
+      </div>
+      <img src="img/pair.webp" width="1000" height="945" alt="" loading="lazy">
+    </div>
+    <div class="need">
+      <figure><img src="img/tradition.webp" alt="Медитация на ретрите" loading="lazy"></figure>
+      <div class="card card-k prose" style="max-width:none">
+        <p><b>Медитация в&nbsp;тибетской традиции</b> — не&nbsp;факультатив и&nbsp;не&nbsp;дополнительная опция. Это равноценная часть пути. Без неё обучение остаётся на&nbsp;уровне интеллекта. Поэтому Питер и&nbsp;Мария Мёртл создали медитационный трек АКМ: у&nbsp;каждого курса ACI есть своя медитация, которая позволяет прожить его идеи.</p>
+        <p>Мы строим будущее, в&nbsp;котором у&nbsp;студента даже не&nbsp;возникает мысли пройти курс ACI без медитации, которая к&nbsp;нему относится. Прошёл курс — значит, прошёл и&nbsp;медитацию, и&nbsp;практикуешь её. Так же естественно, как дышать.</p>
+        <p>Но это будущее не&nbsp;наступит само. Каждый раз его создаёт живой человек, который садится перед группой, объясняет, отвечает на&nbsp;вопросы и&nbsp;ведёт медитацию. <b>Этим человеком можете стать вы.</b></p>
+        <p>Эффект от&nbsp;медитации на&nbsp;пустоту огромный. Но это непростая медитация, и&nbsp;объяснить её нелегко. <b>Поэтому нам так нужны люди, которые умеют передать её точно, бережно и&nbsp;с&nbsp;любовью.</b></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LINEAGE -->
+<div class="mega-wrap"><section class="mega sec cream">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Линия передачи</span><h2>Больше 600&nbsp;лет от&nbsp;учителя к&nbsp;ученику <span class="grad">и&nbsp;дальше через вас</span></h2></div></div>
+    <ol class="line4">
+      <li><span class="n">1</span><b>Кедруп Чже</b>, ближайший ученик <b>Чже Цонгкапы</b> и&nbsp;один из&nbsp;величайших мастеров школы Гелуг. Он создал эту медитацию больше 600&nbsp;лет назад</li>
+      <li><span class="n">2</span><b>Геше Майкл Роуч и&nbsp;Институт Азиатской Классики (ACI)</b> продолжают эту линию сегодня</li>
+      <li><span class="n">3</span><b>Питер и&nbsp;Мария Мёртл</b> передают её в&nbsp;Академии Классической Мудрости</li>
+      <li><span class="n">4</span><b>Вы.</b> Следующее звено, через которое медитация придёт к&nbsp;вашим студентам</li>
+    </ol>
+  </div>
+</section></div>
+
+<!-- CLUB -->
+<section class="sec dark" id="club">
+  <div class="wrap">
+    <div class="two">
+      <div>
+        <span class="eyebrow">Где применить навык</span>
+        <h2 style="margin-top:14px">Клуб тренеров <span class="grad">по&nbsp;медитации</span></h2>
+        <div class="prose" style="margin-top:22px">
+          <p>В&nbsp;АКМ мы создали <b>Клуб тренеров по&nbsp;медитации</b>.</p>
+          <p>Координаторы клуба ищут в&nbsp;нашем сообществе проекты, где нужны тренеры: провести курс, медитацию внутри курса ACI или ретрит.</p>
+          <p class="big" style="color:var(--white)">Вы получаете не&nbsp;только навык, но&nbsp;и&nbsp;место, где его применить.</p>
+        </div>
+      </div>
+      <div class="art"><img src="img/earth.webp" width="800" height="707" alt="" loading="lazy"></div>
+    </div>
+    <div class="loc-card">
+      <figure><img src="img/locations.webp" alt="Курс ACI в одной из локаций АКМ" loading="lazy"></figure>
+      <div class="card card-k prose" style="max-width:none;align-content:center">
+        <p>Каждый год мы в&nbsp;рамках АКМ запускаем новые локации, где стартуют новые циклы курсов ACI.</p>
+        <p>На&nbsp;этих курсах мы в&nbsp;том числе преподаём медитацию и&nbsp;хотим делать это ещё более профессионально и&nbsp;качественно.</p>
+        <p class="big" style="color:var(--white)">И это значит, что нам очень нужны преподаватели медитации!</p>
+      </div>
+    </div>
+    <div class="loc-row" tabindex="0" aria-label="Фото курсов ACI в разных городах">
+      <figure><img src="img/loc-1.webp" alt="" loading="lazy"><figcaption>ACI 1, Прага</figcaption></figure>
+      <figure><img src="img/loc-2.webp" alt="" loading="lazy"><figcaption>ACI 5, Киев</figcaption></figure>
+      <figure><img src="img/loc-3.webp" alt="" loading="lazy"><figcaption>ACI 4, Нижний Новгород</figcaption></figure>
+      <figure><img src="img/loc-4.webp" alt="" loading="lazy"><figcaption>ACI 4, Санкт-Петербург</figcaption></figure>
+      <figure><img src="img/loc-5.webp" alt="" loading="lazy"><figcaption>ACI 3, Нижний Новгород</figcaption></figure>
+      <figure><img src="img/loc-6.webp" alt="" loading="lazy"><figcaption>ACI 5, Алматы</figcaption></figure>
+      <figure><img src="img/loc-7.webp" alt="" loading="lazy"><figcaption>ACI 6, Алматы</figcaption></figure>
+      <figure><img src="img/loc-8.webp" alt="" loading="lazy"><figcaption>ACI 1, Дюссельдорф</figcaption></figure>
+      <figure><img src="img/loc-9.webp" alt="" loading="lazy"><figcaption>ACI 1, Нюрнберг</figcaption></figure>
+      <figure><img src="img/loc-10.webp" alt="" loading="lazy"><figcaption>ACI 4, Москва</figcaption></figure>
+    </div>
+    <p class="hint">← листайте →</p>
+  </div>
+</section>
+
+<!-- TEACHERS -->
+<div class="mega-wrap"><section class="mega sec cream" id="teachers">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Команда курса</span><h2>Преподаватели <span class="grad">курса</span></h2></div></div>
+    <div class="t4">
+      <article class="card card-w tch">
+        <img src="img/t-mila.webp" width="600" height="600" alt="Людмила Мишанина" loading="lazy">
+        <div><h3>Людмила Мишанина</h3><span class="tag t-gold">Занятие 1</span>
+          <ul>
+            <li>С 2018 года начала изучать систему семян и&nbsp;регулярно медитировать</li>
+            <li>В 2022 году закончила 18 курсов ACI</li>
+            <li>Завершила 5 тренингов для преподавателей ACI</li>
+            <li>Старший тренер АКМ</li>
+            <li>Юридическое образование</li>
+            <li>Мама двоих детей</li>
+            <li>На данный момент являюсь исполнительным директором и&nbsp;директором по&nbsp;маркетингу в&nbsp;Академии Классической Мудрости</li>
+            <li>Завершила 4 молчаливых медитационных ретрита длиной в&nbsp;месяц</li>
+          </ul>
+        </div>
+      </article>
+      <article class="card card-w tch">
+        <img src="img/t-alexandra.webp" width="600" height="579" alt="Александра Пунько" loading="lazy">
+        <div><h3>Александра Пунько</h3><span class="tag t-gold">Занятие 2</span>
+          <ul>
+            <li>Программист по&nbsp;образованию</li>
+            <li>20 лет изучения китайской метафизики и&nbsp;феншуй</li>
+            <li>С 2018 года изучаю систему семян и&nbsp;веду дневник</li>
+            <li>В 2023 году закончила 18 курсов ACI</li>
+            <li>Сдала экзамен «Марок»</li>
+            <li>Завершила 6 тренингов для преподавателей ACI как участник и&nbsp;как куратор</li>
+            <li>Старший тренер АКМ</li>
+            <li>Сертифицированный тренер от&nbsp;хэдофиса ACI</li>
+            <li>Куратор групп совместного прохождения курсов ACI</li>
+            <li>Тренер в&nbsp;Клубе медитации АКМ</li>
+            <li>28 лет в&nbsp;браке, двое взрослых детей</li>
+            <li>Прошла 2 молчаливых месячных ретрита</li>
+          </ul>
+        </div>
+      </article>
+      <article class="card card-w tch">
+        <img src="img/t-maria.webp" width="600" height="600" alt="Мария Старушкевич" loading="lazy">
+        <div><h3>Мария Старушкевич</h3><span class="tag t-gold">Занятие 3</span>
+          <ul>
+            <li>Старший тренер АКМ</li>
+            <li>Преподаёт ACI-курсы на&nbsp;4 локациях: Украина — Киев, Львов; Германия — Нюрнберг, Дюссельдорф</li>
+            <li>Закончила 18 ACI-курсов</li>
+            <li>Переводчик дхарма-курсов, материалов и&nbsp;книг</li>
+            <li>Куратор курсов ACI на&nbsp;разных языках</li>
+            <li>Юрист. До&nbsp;недавнего времени — руководитель комплаенс-направления в&nbsp;финансовом секторе</li>
+            <li>Мама двух подростков</li>
+          </ul>
+        </div>
+      </article>
+      <article class="card card-w tch">
+        <img src="img/t-marina.webp" width="600" height="900" alt="Марина Щепаняк" loading="lazy" style="object-position:50% 25%">
+        <div><h3>Марина Щепаняк</h3><span class="tag t-gold">Занятие 4</span>
+          <ul>
+            <li>Старший тренер АКМ</li>
+            <li>Организатор АКМ в&nbsp;Варшаве, Польша</li>
+            <li>Куратор групп совместного прохождения курсов ACI от&nbsp;АКМ</li>
+            <li>Куратор курсов по&nbsp;карме денег и&nbsp;карме отношений</li>
+            <li>Завершила 10 тренингов ACI и&nbsp;АКМ ТТ</li>
+            <li>Завершила 18 открытых курсов ACI в&nbsp;2024&nbsp;г.</li>
+            <li>Изучаю систему ментальных семян с&nbsp;2014&nbsp;г.</li>
+            <li>Практикую медитацию с&nbsp;2017 года</li>
+            <li>Автор духовной поэзии и&nbsp;прозы</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section></div>
+
+<!-- OUTCOMES -->
+<section class="sec dark">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Результат</span><h2>Что вы сможете <span class="grad">после курса</span></h2></div></div>
+    <ul class="out">
+      <li><img src="img/check.webp" width="160" height="143" alt="" loading="lazy">Провести живой курс М2 и&nbsp;закрыть все вопросы, которые студенты встретят в&nbsp;домашних заданиях на&nbsp;платформе</li>
+      <li><img src="img/check.webp" width="160" height="143" alt="" loading="lazy">Объяснить медитацию так, чтобы её поняли и&nbsp;захотели практиковать</li>
+      <li><img src="img/check.webp" width="160" height="143" alt="" loading="lazy">Провести медитацию на&nbsp;простые объекты, на&nbsp;трудные ситуации и&nbsp;людей, на&nbsp;пустоту себя</li>
+      <li><img src="img/check.webp" width="160" height="143" alt="" loading="lazy">Отвечать на&nbsp;трудные вопросы и&nbsp;замечать ошибки понимания</li>
+      <li><img src="img/check.webp" width="160" height="143" alt="" loading="lazy">Собрать программу под нужный формат: день, ретрит или блоки внутри курса ACI</li>
+      <li><img src="img/check.webp" width="160" height="143" alt="" loading="lazy">Углубить интеллектуальное понимание пустоты и&nbsp;научиться ясно объяснять её другим</li>
+    </ul>
+  </div>
+</section>
+
+<!-- INCLUDES + APPLY -->
+<div class="mega-wrap"><section class="mega sec cream" id="apply">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Что вас ждёт</span><h2>АКМ МТТ&nbsp;2 <span class="grad">включает:</span></h2></div></div>
+    <ul class="inc">
+      <li><img src="img/star.webp" width="240" height="223" alt="" loading="lazy">📚 Общие знания, как преподавать и&nbsp;вести медитацию</li>
+      <li><img src="img/star.webp" width="240" height="223" alt="" loading="lazy">📚 Лекции с&nbsp;преподавателями, как обучать медитации на&nbsp;пустоту Кедрупа Чже</li>
+      <li><img src="img/star.webp" width="240" height="223" alt="" loading="lazy">👥 Практические занятия в&nbsp;группах: тренировка преподавания и&nbsp;ведения медитаций</li>
+      <li><img src="img/star.webp" width="240" height="223" alt="" loading="lazy">📑 Домашние, контрольные работы и&nbsp;экзамен</li>
+      <li><img src="img/star.webp" width="240" height="223" alt="" loading="lazy">📚 Мануал тренера медитации — всё, что нужно для преподавания, — в&nbsp;одном месте!</li>
+      <li><img src="img/star.webp" width="240" height="223" alt="" loading="lazy">👥 Поддержка, ответы на&nbsp;вопросы и&nbsp;сопровождение опытных кураторов</li>
+    </ul>
+    <div class="tracks one">
+      <div class="card card-k">
+        <h3>Заполняя анкету участника, вы проходите курс МТТ&nbsp;2:</h3>
+        <ul class="dots">
+          <li>в русскоязычном чате участников курса</li>
+          <li>на русскоязычной платформе</li>
+          <li>получая материалы курса на&nbsp;русском языке (мануал тренера, презентации преподавателей)</li>
+        </ul>
+        <a class="btn btn-gold" href="https://forms.gle/dbc1aGKsMaRK6Jk48" target="_blank" rel="noopener">Подать заявку на&nbsp;участие <span class="ar">→</span></a>
+      </div>
+    </div>
+  </div>
+</section></div>
+
+<!-- CONDITIONS -->
+<section class="sec dark" id="cert">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Условия участия</span><h2>Условия участия</h2></div></div>
+    <div class="all"><i></i><span>Участвовать в&nbsp;курсе АКМ МТТ&nbsp;2 могут все желающие</span></div>
+    <div class="sec-head"><div><span class="eyebrow">Сертификат по курсу</span><h2>Условия получения <span class="grad">сертификата</span></h2></div></div>
+    <ol class="steps7">
+      <li><span>Наличие сертификата об&nbsp;окончании курса ACI&nbsp;3 «Прикладная медитация» от&nbsp;АКМ <b>(до&nbsp;9&nbsp;мая 2027)</b></span></li>
+      <li><span>Наличие сертификата об&nbsp;окончании курса М2 «Медитация на&nbsp;пустоту Кедрупа Чже» от&nbsp;АКМ <b>(до&nbsp;9&nbsp;мая 2027)</b></span></li>
+      <li><span>Просмотреть все лекции курса (онлайн или в&nbsp;записи)</span></li>
+      <li><span>Выполнить задания и&nbsp;посетить все практические встречи в&nbsp;малых группах</span></li>
+      <li><span>Дать обратную связь своим коллегам в&nbsp;группе на&nbsp;их выступления</span></li>
+      <li><span>Выполнить домашние задания и&nbsp;контрольные работы на&nbsp;платформе</span></li>
+      <li><span>Написать финальный экзамен и&nbsp;проверить работу другого студента</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- DEADLINES + PRICE -->
+<div class="mega-wrap"><section class="mega sec cream" id="price">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Приём заявок</span><h2>Приём заявок</h2></div></div>
+    <div class="deadlines" style="grid-template-columns:1fr">
+      <div class="lim">Количество мест ограничено</div>
+    </div>
+    <div class="sec-head"><div><span class="eyebrow">Стоимость участия и бонусы</span><h2>Стоимость <span class="grad">участия</span></h2></div></div>
+    <div class="tar">
+      <div class="tc base">
+        <img src="img/pair.webp" width="1000" height="945" alt="" loading="lazy">
+        <h3>АКМ МТТ&nbsp;2<br>«Как преподавать медитацию на&nbsp;пустоту Кедрупа Чже»</h3>
+        <div class="price">300 <small>EUR</small></div>
+      </div>
+      <div class="tc disc">
+        <span class="flag tag t-burg">−50%</span>
+        <img src="img/pair-lotus.webp" width="900" height="600" alt="" loading="lazy">
+        <h3>Если вы участвовали в&nbsp;курсе АКМ ТТ&nbsp;2, для вас АКМ МТТ&nbsp;2 доступен со&nbsp;скидкой 50%</h3>
+        <div class="price">150 <small>EUR</small></div>
+      </div>
+    </div>
+    <div class="instal">✦ Возможна рассрочка до&nbsp;10&nbsp;месяцев!</div>
+    <div class="ctas center" style="margin-top:22px">
+      <a class="btn btn-dark" href="https://forms.gle/dbc1aGKsMaRK6Jk48" target="_blank" rel="noopener">Подать заявку на&nbsp;участие <span class="ar">→</span></a>
+    </div>
+  </div>
+</section></div>
+
+<!-- PROGRAM -->
+<section class="sec dark" id="program">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Расписание</span><h2>Как устроен <span class="grad">курс</span></h2></div></div>
+    <ol class="tl">
+      <li><div class="when">9&nbsp;ноября</div><div class="what"><b>Организационная встреча</b></div></li>
+      <li><div class="when">С&nbsp;9&nbsp;ноября</div><div class="what"><b>Записи занятий «Основы преподавания и&nbsp;ведения медитации»:</b>
+        <ul><li>4 типа учеников,</li><li>как подготовить занятие,</li><li>как давать обратную связь,</li><li>как вести медитацию,</li><li>как обучать позе для медитации.</li></ul></div></li>
+      <li class="hl"><div class="when">14–15&nbsp;ноября</div><div class="what"><b>Уикенд основных занятий:</b>
+        <ul><li>Занятие 1. Зачем медитировать на&nbsp;пустоту и&nbsp;почему именно эта медитация.</li><li>Занятие 2. Объект медитации, 4 раунда и&nbsp;виды объектов.</li><li>Занятие 3. Разные виды объектов, подробно.</li><li>Занятие 4. Как выстроить практику и&nbsp;практиковать вне подушки.</li></ul></div></li>
+      <li><div class="when">23&nbsp;ноября – 13&nbsp;декабря<small>(график встреч формируется индивидуально в&nbsp;каждой группе)</small></div><div class="what"><b>6 практических встреч в&nbsp;малых группах:</b> вы сами ведёте медитацию и&nbsp;объясняете её **
+        <p class="note">**обязательно присутствовать на&nbsp;всех практических встречах, допускается один пропуск по&nbsp;уважительной причине, при этом задание всё равно нужно выполнить.</p></div></li>
+      <li><div class="when">Декабрь</div><div class="what"><b>Занятие 5 «Как собрать свой курс под разные форматы и&nbsp;аудитории»</b></div></li>
+      <li><div class="when">До&nbsp;конца декабря</div><div class="what"><b>Экзамен</b></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- MANUAL -->
+<div class="mega-wrap"><section class="mega sec cream">
+  <div class="wrap">
+    <div class="two">
+      <div>
+        <span class="eyebrow">Ваш путеводитель</span>
+        <h2 style="margin-top:14px">Мануал тренера <span class="grad">медитации</span></h2>
+        <div class="prose" style="margin-top:22px">
+          <p>В&nbsp;конце курса вы получите <b>Мануал тренера медитации на&nbsp;пустоту Кедрупа Чже</b>. Это ваш личный путеводитель по&nbsp;преподаванию.</p>
+          <p><b>В него собрано:</b></p>
+          <ul class="dots">
+            <li>что обязательно нужно сказать на&nbsp;каждой теме курса М2</li>
+            <li>как объяснить каждую тему <b>для разных типов учеников</b></li>
+            <li>частые ошибки понимания и&nbsp;трудные места</li>
+            <li>вопросы и&nbsp;возражения студентов с&nbsp;ответами на&nbsp;них</li>
+            <li>опыт тренеров, которые уже вели этот курс, и&nbsp;реальные вопросы участников М2</li>
+          </ul>
+          <p>Пройдут месяцы, вас пригласят провести курс или ретрит, вы откроете мануал, и&nbsp;вся картина восстановится за&nbsp;несколько минут.</p>
+        </div>
+      </div>
+      <div class="art"><img src="img/book.webp" width="800" height="595" alt="" loading="lazy"></div>
+    </div>
+    <div class="callout-box"><p class="callout">С&nbsp;ним вы всегда готовы передать эту медитацию дальше.</p></div>
+  </div>
+</section></div>
+
+<!-- LESSONS -->
+<section class="sec dark">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Программа</span><h2>Основные занятия <span class="grad">курса</span></h2></div></div>
+    <ol class="lessons" style="--x:0">
+      <li><div class="lt"><span class="tag t-burg">Занятие 1</span><h3>Зачем медитировать на&nbsp;пустоту и&nbsp;почему именно Кедруп Чже</h3></div><div><p>Как рассказать о&nbsp;пустоте разной аудитории: через ручку, через прибежище, через опыт человека. Почему именно эта медитация.</p><p class="by">Ведёт Людмила Мишанина</p></div></li>
+      <li><div class="lt"><span class="tag t-burg">Занятие 2</span><h3>Как объяснить медитацию</h3></div><div><p>Общая логика и&nbsp;структура медитации, затем каждый раунд. Почему стоит начинать проводить медитацию сразу.</p><p class="by">Ведёт Александра Пунько</p></div></li>
+      <li><div class="lt"><span class="tag t-burg">Занятие 3</span><h3>Объекты медитации</h3></div><div><p>Какие бывают объекты, чем они различаются, как помочь студенту выбрать свой. Пустота себя.</p><p class="by">Ведёт Мария Старушкевич</p></div></li>
+      <li><div class="lt"><span class="tag t-burg">Занятие 4</span><h3>Как выстроить практику и&nbsp;практиковать вне подушки</h3></div><div><p>Как помочь каждому студенту составить свой план практики. Как применять пустоту к&nbsp;трудным людям, плохому настроению и&nbsp;сложным ситуациям.</p><p class="by">Ведёт Марина Щепаняк</p></div></li>
+      <li><div class="lt"><span class="tag t-burg">Занятие 5</span><h3>Как собрать свой курс</h3></div><div><p>Один день, ретрит на&nbsp;несколько дней или короткие блоки внутри курса ACI: как собрать программу под любой формат и&nbsp;любую аудиторию.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<div class="mega-wrap"><section class="mega sec cream" id="reviews">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Отзывы</span><h2>Отзывы о&nbsp;прошлых <span class="grad">курсах</span></h2></div><p>Нажмите на&nbsp;отзыв, чтобы открыть его крупно.</p></div>
+    <div class="gallery" id="gallery"></div>
+    <div class="more-row"><button class="btn btn-line-d" type="button" id="gallery-more">Показать все отзывы</button></div>
+    <div class="ctas center" style="margin-top:28px"><a class="btn btn-dark" href="#apply">Хочу стать тренером медитации! <span class="ar">→</span></a></div>
+  </div>
+</section></div>
+
+<!-- FAQ -->
+<section class="sec dark" id="faq">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Частые вопросы</span><h2>Частые <span class="grad">вопросы</span></h2></div></div>
+    <div class="faq">
+      <details><summary>Зачем МТТ-2, если я уже прошёл курс М2?</summary><div class="ans">
+        <p>На курсе М2 вы смотрели на&nbsp;курс глазами студента. На&nbsp;МТТ-2 вы увидите его сверху, глазами преподавателя: его логику, структуру и&nbsp;результат, который получает ваш студент на&nbsp;каждом уроке.</p>
+        <p>Чтобы учить других, в&nbsp;этой медитации нужно разобраться очень точно:</p>
+        <ul><li>в её нюансах и&nbsp;тонких местах;</li><li>в частых ошибках понимания;</li><li>в словах, от&nbsp;которых зависит, поймёт вас человек или запутается.</li></ul>
+        <p>На курсе вы узнаете:</p>
+        <ul><li>как понять, что человек не&nbsp;готов, и&nbsp;что делать в&nbsp;этом случае;</li><li>кому и&nbsp;когда давать последний, четвёртый раунд, а&nbsp;когда достаточно просто посеять сомнение в&nbsp;«твёрдости» реальности;</li><li>как подстроиться под разную аудиторию: выпускников курсов ACI, смешанную группу на&nbsp;ретрите, тех, кто только начинает.</li></ul>
+        <p>В результате вы сможете обучать этой медитации других, проводить курс М2, направлять студентов и&nbsp;отвечать на&nbsp;их вопросы.</p>
+      </div></details>
+      <details><summary>Есть ли рассрочка на&nbsp;оплату участия в&nbsp;курсе?</summary><div class="ans">
+        <p>Да, вы можете оформить оплату в&nbsp;рассрочку сроком до&nbsp;10&nbsp;месяцев.</p>
+        <p>Для того чтобы оформить оплату в&nbsp;рассрочку, укажите это при подаче заявки на&nbsp;участие в&nbsp;соответствующем пункте анкеты.</p>
+      </div></details>
+      <details><summary>Есть ли бонусы на&nbsp;участие в&nbsp;курсе?</summary><div class="ans">
+        <p>Да, если вы проходили ранее курс для преподавателей АКМ ТТ&nbsp;2, для вас особые условия участия: вы можете участвовать в&nbsp;курсе АКМ МТТ&nbsp;2 со&nbsp;скидкой 50%.</p>
+      </div></details>
+      <details><summary>Какие требования для участия в&nbsp;курсе МТТ&nbsp;2?</summary><div class="ans">
+        <p>Участвовать в&nbsp;курсе могут все желающие. Но для получения сертификата по&nbsp;курсу есть условия.</p>
+        <p>Условие для получения сертификата:</p>
+        <ul><li>сертификат по&nbsp;курсу ACI&nbsp;3 «Прикладная медитация»</li><li>сертификат по&nbsp;курсу М2 «Медитация на&nbsp;пустоту Кедрупа Чже»</li><li>выполнение всех заданий курса МТТ&nbsp;2</li></ul>
+        <p>Сертификаты по&nbsp;курсам М2 и&nbsp;ACI-3 нужно получить в&nbsp;течение 6&nbsp;месяцев от&nbsp;начала курса, то&nbsp;есть до&nbsp;9&nbsp;мая. У&nbsp;вас будет достаточно времени, чтобы пройти эти курсы, даже если вы их ещё не&nbsp;начинали проходить.</p>
+      </div></details>
+      <details><summary>Нужно ли присутствовать онлайн на&nbsp;всех занятиях с&nbsp;включённой камерой?</summary><div class="ans">
+        <p>Такого обязательного требования нет. Вы можете посмотреть лекции с&nbsp;преподавателями в&nbsp;записи. Но вы должны обязательно присутствовать на&nbsp;всех практических занятиях курса и&nbsp;выполнить все задания (допускается пропустить только одно практическое занятие, при этом задание по&nbsp;нему вы всё равно должны выполнить).</p>
+      </div></details>
+      <details><summary>Какие требования, чтобы попасть в&nbsp;клуб тренеров медитации и&nbsp;начать вести медитации для других?</summary><div class="ans">
+        <p>Успешно завершить курс АКМ МТТ&nbsp;2 и&nbsp;получить сертификат.</p>
+      </div></details>
+      <details><summary>Сколько курсов АКМ МТТ запланировано в&nbsp;год?</summary><div class="ans">
+        <p>Мы планируем проводить курсы для подготовки тренеров медитации 2–3 раза в&nbsp;год.</p>
+      </div></details>
+      <details><summary>Получится ли совместить этот курс с&nbsp;АКМ ТТ-5?</summary><div class="ans">
+        <p>Да, нагрузка на&nbsp;МТТ меньше, чем на&nbsp;АКМ ТТ: лекции собраны в&nbsp;один уикенд.</p>
+      </div></details>
+    </div>
+    <div class="refund"><b>Политика возврата средств</b><span>Возврат средств после даты начала курса (начиная с&nbsp;7&nbsp;декабря) не&nbsp;осуществляется.</span></div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<div class="mega-wrap"><section class="mega sec burgm final">
+  <div class="wrap">
+    <img src="img/pair-lotus.webp" width="900" height="600" alt="" loading="lazy">
+    <h2>Помогайте другим <span class="grad">пересобрать реальность</span></h2>
+    <p>7–12&nbsp;декабря. Остались вопросы? Свяжитесь с&nbsp;нами.</p>
+    <div class="ctas center">
+      <a class="btn btn-gold" href="#apply">Подать заявку на&nbsp;участие <span class="ar">→</span></a>
+      <a class="btn btn-ghost" href="https://t.me/Mila_Mish" target="_blank" rel="noopener">Задать вопрос в&nbsp;Telegram</a>
+    </div>
+  </div>
+</section></div>
+</main>
+
+<footer class="ftr">
+  <img src="img/logo-full.png" width="360" height="360" alt="Академия Классической Мудрости" loading="lazy">
+  <span>Отдел заботы: <a href="https://t.me/Mila_Mish" target="_blank" rel="noopener">Telegram</a> · <a href="mailto:info@classicwisdomacademy.com">info@classicwisdomacademy.com</a></span>
+  <span>ФОП Беліцька Олеся Олександрівна | ЄДРПОУ 2991816226 · <a href="https://lp.classicwisdomacademy.com/ofertakk" target="_blank" rel="noopener">Оферта</a></span>
+</footer>
+
+<div class="lb" id="lb" hidden><img alt="Отзыв"></div>
+
+<script>
+(function(){
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hasIO='IntersectionObserver' in window;
+
+  /* burger */
+  var b=document.getElementById('menu-btn'),m=document.getElementById('mnav'),h=document.querySelector('.hdr-in');
+  function place(){m.style.top=(h.getBoundingClientRect().bottom+10)+'px';}
+  function close(){m.hidden=true;b.setAttribute('aria-expanded','false');}
+  b.addEventListener('click',function(){var open=m.hidden;if(open)place();m.hidden=!open;b.setAttribute('aria-expanded',open?'true':'false');});
+  m.addEventListener('click',function(e){if(e.target.tagName==='A')close();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){close();lb.hidden=true;}});
+  document.addEventListener('click',function(e){if(!m.hidden&&!m.contains(e.target)&&!b.contains(e.target))close();});
+  window.addEventListener('resize',function(){if(!m.hidden)place();});
+
+  /* photo strip */
+  var st=document.getElementById('strip');
+  if(reduce||!hasIO)st.classList.add('in');
+  else new IntersectionObserver(function(es,o){es.forEach(function(e){if(e.isIntersecting){st.classList.add('in');o.disconnect();}});},{threshold:.2}).observe(st);
+
+  /* reviews */
+  var N=62,FIRST=16,g=document.getElementById('gallery'),lb=document.getElementById('lb'),lbi=lb.querySelector('img');
+  for(var i=1;i<=N;i++){
+    var bt=document.createElement('button');bt.type='button';if(i>FIRST)bt.hidden=true;
+    var src='img/rev/r'+(i<10?'0':'')+i+'.webp';
+    bt.setAttribute('aria-label','Открыть отзыв '+i);
+    bt.innerHTML='<img src="'+src+'" alt="Отзыв участника" loading="lazy">';
+    bt.addEventListener('click',(function(s){return function(){lbi.src=s;lb.hidden=false;};})(src));
+    g.appendChild(bt);
+  }
+  lb.addEventListener('click',function(){lb.hidden=true;});
+  var gb=document.getElementById('gallery-more');
+  gb.addEventListener('click',function(){g.querySelectorAll('button[hidden]').forEach(function(x){x.hidden=false;});gb.parentNode.remove();});
+
+  /* matrix rain of Tibetan letters */
+  var cv=document.getElementById('rain');
+  if(reduce||!cv.getContext)return;
+  var ctx=cv.getContext('2d'),G='ཀཁགངཅཆཇཉཏཐདནཔཕབམཙཚཛཝཞཟའཡརལཤསཧཨ༠༡༢༣༤༥༦༧༨༩',fs,cols,drops,W,H,dpr;
+  function size(){
+    dpr=Math.min(window.devicePixelRatio||1,2);W=innerWidth;H=innerHeight;
+    cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
+    fs=W<640?16:20;cols=Math.ceil(W/(fs*1.6));drops=[];
+    for(var c=0;c<cols;c++)drops.push(Math.random()*-H/fs);
+    ctx.font='500 '+fs+'px "Noto Serif Tibetan",serif';
+  }
+  size();window.addEventListener('resize',size);
+  var last=0;
+  function tick(t){
+    requestAnimationFrame(tick);
+    if(t-last<70)return;last=t;
+    ctx.globalCompositeOperation='destination-out';
+    ctx.fillStyle='rgba(0,0,0,.12)';ctx.fillRect(0,0,W,H);
+    ctx.globalCompositeOperation='source-over';
+    for(var c=0;c<cols;c++){
+      var y=drops[c]*fs,x=c*fs*1.6;
+      if(y>0){
+        ctx.fillStyle=Math.random()<.08?'rgba(255,246,214,.95)':(c%3?'rgba(221,174,53,.75)':'rgba(232,185,168,.7)');
+        ctx.fillText(G[Math.floor(Math.random()*G.length)],x,y);
+      }
+      if(y>H&&Math.random()>.975)drops[c]=0;
+      drops[c]+=.5;
+    }
+  }
+  requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>
