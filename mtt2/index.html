@@ -285,6 +285,10 @@ b,strong{font-weight:800}
 
 /* price */
 .deadlines{display:grid;grid-template-columns:auto 1fr 1fr;gap:14px;align-items:stretch;margin-bottom:clamp(36px,5vw,56px)}
+.deadlines .dl{display:flex;flex-direction:column;justify-content:center;border-radius:22px;padding:18px 26px;background:#fffdf9;border:1px solid var(--cream-2)}
+.deadlines .dl span{font-size:14px;color:var(--text-d);opacity:.75}
+.deadlines .dl b{font-family:var(--display);font-size:clamp(18px,2vw,22px);color:var(--burg);line-height:1.25;margin-top:4px}
+.apply-dl{margin-top:14px;font-size:14px;font-weight:700;color:var(--burg)}
 .deadlines .lim{display:flex;align-items:center;border-radius:22px;padding:18px 26px;background:var(--burg);color:var(--gold-l);font-family:var(--display);font-weight:700;font-size:16px;line-height:1.3}
 .dl{border-radius:22px;padding:18px 24px;background:var(--white);box-shadow:0 24px 50px -40px rgba(105,35,45,.4);display:grid;gap:2px}
 .dl span{font-size:14px;color:var(--text-dm)}
@@ -602,7 +606,7 @@ b,strong{font-weight:800}
         <a class="btn btn-gold" href="#apply">Подать заявку на&nbsp;участие <span class="ar">→</span></a>
         <a class="btn btn-ghost" href="#program">Как устроен курс</a>
       </div>
-      <div class="facts"><div class="one"><i>✦</i><b>Старт 1&nbsp;декабря</b></div><div class="one"><i>✦</i><b>Лекции 8–11&nbsp;декабря</b></div></div>
+      <div class="facts"><div class="one"><i>✦</i><b>Заявки до&nbsp;26&nbsp;ноября</b></div><div class="one"><i>✦</i><b>Старт 1&nbsp;декабря</b></div><div class="one"><i>✦</i><b>Лекции 8–11&nbsp;декабря</b></div></div>
     </div>
     <figure class="hero-pair"><img src="img/pair.webp" width="1000" height="945" alt="Двое учеников медитируют в чёрных очках — в стиле «Матрицы»" fetchpriority="high"></figure>
   </div>
@@ -930,6 +934,7 @@ b,strong{font-weight:800}
           <li>получая материалы курса на&nbsp;русском языке (мануал тренера, презентации преподавателей)</li>
         </ul>
         <a class="btn btn-gold" href="https://forms.gle/dbc1aGKsMaRK6Jk48" target="_blank" rel="noopener">Подать заявку на&nbsp;участие <span class="ar">→</span></a>
+        <p class="apply-dl">Приём заявок до&nbsp;26&nbsp;ноября включительно</p>
       </div>
     </div>
   </div>
@@ -957,7 +962,8 @@ b,strong{font-weight:800}
 <div class="mega-wrap"><section class="mega sec cream" id="price">
   <div class="wrap">
     <div class="sec-head"><div><span class="eyebrow">Приём заявок</span><h2>Приём заявок</h2></div></div>
-    <div class="deadlines" style="grid-template-columns:1fr">
+    <div class="deadlines" style="grid-template-columns:1fr 1fr">
+      <div class="dl"><span>Приём заявок</span><b>до&nbsp;26&nbsp;ноября включительно</b></div>
       <div class="lim">Количество мест ограничено</div>
     </div>
     <div class="sec-head"><div><span class="eyebrow">Стоимость участия и бонусы</span><h2>Стоимость <span class="grad">участия</span></h2></div></div>
