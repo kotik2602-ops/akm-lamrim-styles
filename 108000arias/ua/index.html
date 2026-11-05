@@ -35,6 +35,10 @@ html.geo-ru .pay-grid{grid-template-columns:1fr}
 <link rel="alternate" hreflang="ru" href="../">
 <link rel="alternate" hreflang="uk" href="./">
 <link rel="alternate" hreflang="en" href="../en/">
+<script>
+/* remember explicit language choice from the switcher */
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('.langs a');if(a){try{localStorage.setItem('akm-lang',a.textContent.trim().toLowerCase())}catch(x){}}});
+</script>
 <link rel="icon" type="image/png" href="../img/logo-108-sm.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

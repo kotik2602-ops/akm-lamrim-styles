@@ -34,6 +34,22 @@ html.geo-ru .only-intl{display:none!important}
 html.geo-wait .only-intl{visibility:hidden}
 html.geo-ru .pay-grid{grid-template-columns:1fr}
 </style>
+<script>
+/* remember explicit language choice from the switcher */
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('.langs a');if(a){try{localStorage.setItem('akm-lang',a.textContent.trim().toLowerCase())}catch(x){}}});
+</script>
+<script>
+/* visitors from Ukraine go to the Ukrainian version unless they chose a language */
+(function(){var to='../ua/pay/';try{if(localStorage.getItem('akm-lang'))return}catch(e){}
+if(/[?&](region|lang)=/.test(location.search))return;
+function go(){location.replace(to+location.hash)}
+var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}
+if(/^Europe\/(Kyiv|Kiev|Uzhgorod|Zaporozhye)$/.test(tz)){go();return;}
+if(/^(Europe\/(Moscow|Kaliningrad|Samara|Volgograd|Saratov|Ulyanovsk|Astrakhan|Kirov|Minsk)|Asia\/)/.test(tz))return;
+try{var c=sessionStorage.getItem('akm-cc');if(c){if(c==='UA')go();return;}}catch(e){}
+fetch('https://get.geojs.io/v1/ip/country.json').then(function(r){return r.json()}).then(function(j){try{sessionStorage.setItem('akm-cc',j.country)}catch(e){}if(j.country==='UA')go();}).catch(function(){});
+})();
+</script>
 <link rel="icon" type="image/png" href="../img/logo-108-sm.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
