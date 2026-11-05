@@ -14,7 +14,7 @@
 <script>
 /* geo: RU/BY visitors see Boosty only and no Ukrainian FOP requisites */
 (function(){var d=document.documentElement,K='akm-geo';
-function set(r){d.classList.remove('geo-wait');d.classList.toggle('geo-ru',r==='ru');try{sessionStorage.setItem(K,r)}catch(e){}}
+function set(r){if(r==='ru'){location.replace('../'+location.search);return;}d.classList.remove('geo-wait');d.classList.toggle('geo-ru',r==='ru');try{sessionStorage.setItem(K,r)}catch(e){}}
 var q=(location.search.match(/[?&]region=(ru|intl)/)||[])[1];if(q){set(q);return;}
 try{var s=sessionStorage.getItem(K);if(s){set(s);return;}}catch(e){}
 var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}
@@ -498,7 +498,7 @@ b,strong{font-weight:800}
         <p class="sub">Допоможіть 108 000 людей побачити пустоту безпосередньо</p>
         <p class="lead">Ваша пожертва перетворюється на реальні можливості для тисяч людей вивчати давню мудрість, яка змінює життя.</p>
         <div class="facts">
-          <div><b>147 840 €</b><span>зібрано разом з листопада 2022</span></div>
+          <div><b>147 840 $</b><span>зібрано разом з листопада 2022</span></div>
           <div><b>623</b><span>активні благодійники</span></div>
           <div><b>≈ 180 000 €</b><span>мета на 2027 рік</span></div>
         </div>
@@ -568,7 +568,7 @@ b,strong{font-weight:800}
       </div>
       <div class="stats">
         <div class="stat card glass hl reveal">
-          <span class="num" data-count="147840">147 840<small>€</small></span>
+          <span class="num" data-count="147840">147 840<small>$</small></span>
           <span class="lbl">зібрано від запуску</span>
           <span class="sm">усі пожертви в проєкт з листопада 2022 року</span>
         </div>
@@ -580,7 +580,7 @@ b,strong{font-weight:800}
         <div class="stat card glass reveal">
           <span class="num">+43<small>%</small></span>
           <span class="lbl">зростання надходжень у 2025 році</span>
-          <span class="sm">51 625 € у 2025 році проти 36 187 € у 2024-му</span>
+          <span class="sm">51 625 $ у 2025 році проти 36 187 $ у 2024-му</span>
         </div>
       </div>
 
@@ -590,9 +590,9 @@ b,strong{font-weight:800}
           <span class="growth-note">2026 — дані за 9 місяців</span>
         </div>
         <div class="bars">
-          <div class="bar"><span class="val">36 187 €</span><span class="col" data-h="70"></span></div>
-          <div class="bar"><span class="val">51 625 €</span><span class="col" data-h="100"></span></div>
-          <div class="bar"><span class="val">31 234 €</span><span class="col part" data-h="60.5"></span></div>
+          <div class="bar"><span class="val">36 187 $</span><span class="col" data-h="70"></span></div>
+          <div class="bar"><span class="val">51 625 $</span><span class="col" data-h="100"></span></div>
+          <div class="bar"><span class="val">31 234 $</span><span class="col part" data-h="60.5"></span></div>
         </div>
         <div class="bar-lbls">
           <div><b>2024</b><span>увесь рік</span></div>

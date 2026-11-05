@@ -14,7 +14,7 @@
 <script>
 /* geo: RU/BY visitors see Boosty only and no Ukrainian FOP requisites */
 (function(){var d=document.documentElement,K='akm-geo';
-function set(r){d.classList.remove('geo-wait');d.classList.toggle('geo-ru',r==='ru');try{sessionStorage.setItem(K,r)}catch(e){}}
+function set(r){if(r==='ru'){location.replace('../../pay/'+location.search);return;}d.classList.remove('geo-wait');d.classList.toggle('geo-ru',r==='ru');try{sessionStorage.setItem(K,r)}catch(e){}}
 var q=(location.search.match(/[?&]region=(ru|intl)/)||[])[1];if(q){set(q);return;}
 try{var s=sessionStorage.getItem(K);if(s){set(s);return;}}catch(e){}
 var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}
