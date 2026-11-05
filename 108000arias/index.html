@@ -13,6 +13,27 @@
 <meta name="theme-color" content="#1a1012">
 <link rel="alternate" hreflang="ru" href="./">
 <link rel="alternate" hreflang="en" href="en/">
+<script>
+/* geo: RU/BY visitors see Boosty only and no Ukrainian FOP requisites */
+(function(){var d=document.documentElement,K='akm-geo';
+function set(r){d.classList.remove('geo-wait');d.classList.toggle('geo-ru',r==='ru');try{sessionStorage.setItem(K,r)}catch(e){}}
+var q=(location.search.match(/[?&]region=(ru|intl)/)||[])[1];if(q){set(q);return;}
+try{var s=sessionStorage.getItem(K);if(s){set(s);return;}}catch(e){}
+var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}
+var RTZ=/^(Europe\/(Moscow|Kaliningrad|Samara|Volgograd|Saratov|Ulyanovsk|Astrakhan|Kirov|Minsk)|Asia\/(Yekaterinburg|Omsk|Novosibirsk|Barnaul|Tomsk|Novokuznetsk|Krasnoyarsk|Irkutsk|Chita|Yakutsk|Khandyga|Vladivostok|Ust-Nera|Magadan|Sakhalin|Srednekolymsk|Kamchatka|Anadyr))$/;
+if(RTZ.test(tz)){set('ru');return;}
+d.classList.add('geo-wait');
+var done=false;function fin(r){if(!done){done=true;set(r)}}
+setTimeout(function(){fin('intl')},2500);
+fetch('https://get.geojs.io/v1/ip/country.json').then(function(r){return r.json()}).then(function(j){fin(/^(RU|BY)$/.test(j.country)?'ru':'intl')}).catch(function(){fin('intl')});
+})();
+</script>
+<style>
+html:not(.geo-ru) .only-ru{display:none!important}
+html.geo-ru .only-intl{display:none!important}
+html.geo-wait .only-intl{visibility:hidden}
+html.geo-ru .pay-grid{grid-template-columns:1fr}
+</style>
 <link rel="icon" type="image/png" href="img/logo-108-sm.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -741,9 +762,11 @@ b,strong{font-weight:800}
           </div>
           <div class="card card-w pay-card reveal">
             <span class="eyebrow">Как оплатить</span>
-            <p>Карты Visa/MasterCard любой страны или Boosty. Оформите подписку на любую сумму.</p>
-            <a class="btn btn-dark" href="pay/">Создаю чудо <span class="ar">→</span></a>
-            <a class="btn btn-line-d" href="https://boosty.to/100000arias">Через Boosty</a>
+            <p class="only-intl">Карты Visa/MasterCard любой страны или Boosty. Оформите подписку на любую сумму.</p>
+            <p class="only-ru">Оформите подписку на любую сумму через Boosty.</p>
+            <a class="btn btn-dark only-intl" href="pay/">Создаю чудо <span class="ar">→</span></a>
+            <a class="btn btn-line-d only-intl" href="https://boosty.to/100000arias">Через Boosty</a>
+            <a class="btn btn-dark only-ru" href="https://boosty.to/100000arias">Поддержать через Boosty <span class="ar">→</span></a>
           </div>
         </div>
       </div>
@@ -943,7 +966,7 @@ b,strong{font-weight:800}
 <footer class="ftr">
   <div class="ftr-in">
     <a class="brand" href="#top"><img src="img/logo-108-sm.png" width="52" height="52" alt=""><span class="brand-txt" style="display:grid"><b>108 000 Арий</b><span>Академия Классической Мудрости</span></span></a>
-    <div>ФОП Гащук Олена Валеріївна | ЄДРПОУ 3098605909<br><a href="mailto:info@classicwisdomacademy.com">info@classicwisdomacademy.com</a> · <a href="oferta/">Оферта</a></div>
+    <div><span class="only-intl">ФОП Гащук Олена Валеріївна | ЄДРПОУ 3098605909<br></span><a href="mailto:info@classicwisdomacademy.com">info@classicwisdomacademy.com</a><span class="only-intl"> · <a href="oferta/">Оферта</a></span></div>
   </div>
 </footer>
 

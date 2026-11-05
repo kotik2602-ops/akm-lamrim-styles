@@ -13,6 +13,27 @@
 <meta name="theme-color" content="#1a1012">
 <link rel="alternate" hreflang="ru" href="../../pay/">
 <link rel="alternate" hreflang="en" href="./">
+<script>
+/* geo: RU/BY visitors see Boosty only and no Ukrainian FOP requisites */
+(function(){var d=document.documentElement,K='akm-geo';
+function set(r){d.classList.remove('geo-wait');d.classList.toggle('geo-ru',r==='ru');try{sessionStorage.setItem(K,r)}catch(e){}}
+var q=(location.search.match(/[?&]region=(ru|intl)/)||[])[1];if(q){set(q);return;}
+try{var s=sessionStorage.getItem(K);if(s){set(s);return;}}catch(e){}
+var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}
+var RTZ=/^(Europe\/(Moscow|Kaliningrad|Samara|Volgograd|Saratov|Ulyanovsk|Astrakhan|Kirov|Minsk)|Asia\/(Yekaterinburg|Omsk|Novosibirsk|Barnaul|Tomsk|Novokuznetsk|Krasnoyarsk|Irkutsk|Chita|Yakutsk|Khandyga|Vladivostok|Ust-Nera|Magadan|Sakhalin|Srednekolymsk|Kamchatka|Anadyr))$/;
+if(RTZ.test(tz)){set('ru');return;}
+d.classList.add('geo-wait');
+var done=false;function fin(r){if(!done){done=true;set(r)}}
+setTimeout(function(){fin('intl')},2500);
+fetch('https://get.geojs.io/v1/ip/country.json').then(function(r){return r.json()}).then(function(j){fin(/^(RU|BY)$/.test(j.country)?'ru':'intl')}).catch(function(){fin('intl')});
+})();
+</script>
+<style>
+html:not(.geo-ru) .only-ru{display:none!important}
+html.geo-ru .only-intl{display:none!important}
+html.geo-wait .only-intl{visibility:hidden}
+html.geo-ru .pay-grid{grid-template-columns:1fr}
+</style>
 <link rel="icon" type="image/png" href="../../img/logo-108-sm.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -473,7 +494,7 @@ b,strong{font-weight:800}
     <section class="mega cream sec" style="padding-top:clamp(40px,5vw,72px)">
       <div class="wrap">
         <div class="pay-grid">
-          <div class="card card-w pay-opt reveal">
+          <div class="card card-w pay-opt reveal only-intl">
             <span class="eyebrow">Visa/Mastercard from any country</span>
             <h2>Pay by <span class="grad">card</span></h2>
             <p>You choose the amount yourself on the WayForPay page.</p>
@@ -483,7 +504,13 @@ b,strong{font-weight:800}
               <a class="btn btn-line-d" href="https://secure.wayforpay.com/button/b590a0dfa80dc">One-time payment</a>
             </div>
           </div>
-          <div class="card card-k pay-opt reveal">
+          <div class="card card-k pay-opt reveal only-ru">
+            <span class="eyebrow">Paying from Russia or Belarus</span>
+            <h2 style="color:var(--white)">Via <span class="grad">Boosty</span></h2>
+            <p>Set up a subscription for any amount on Boosty. A subscription from €5 also gives access to the Academy's Meditation Club.</p>
+            <div class="btns"><a class="btn btn-gold" href="https://boosty.to/100000arias">Go to Boosty <span class="ar">→</span></a></div>
+          </div>
+          <div class="card card-k pay-opt reveal only-intl">
             <span class="eyebrow">Manage your subscription</span>
             <h2 style="color:var(--white)">Make your seeds <span class="grad">truly strong</span></h2>
             <p>Sign up for a recurring payment. You can change its settings or cancel it at any time yourself in your WayForPay personal account.</p>
@@ -526,7 +553,7 @@ b,strong{font-weight:800}
 <footer class="ftr">
   <div class="ftr-in">
     <a class="brand" href="../"><img src="../../img/logo-108-sm.png" width="52" height="52" alt=""><span class="brand-txt" style="display:grid"><b>108,000 Arias</b><span>Classical Wisdom Academy</span></span></a>
-    <div>ФОП Гащук Олена Валеріївна | ЄДРПОУ 3098605909<br><a href="mailto:info@classicwisdomacademy.com">info@classicwisdomacademy.com</a> · <a href="../../oferta/#en">Public offer</a></div>
+    <div><span class="only-intl">ФОП Гащук Олена Валеріївна | ЄДРПОУ 3098605909<br></span><a href="mailto:info@classicwisdomacademy.com">info@classicwisdomacademy.com</a><span class="only-intl"> · <a href="../../oferta/#en">Public offer</a></span></div>
   </div>
 </footer>
 <div class="sup">
