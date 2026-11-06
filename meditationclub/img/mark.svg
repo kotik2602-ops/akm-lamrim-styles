@@ -1,14 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="80 34 240 262" width="240" height="262">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="80 40 240 252" width="240" height="252">
   <defs>
-    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3d991"/><stop offset=".5" stop-color="#ddae35"/><stop offset="1" stop-color="#a8780f"/></linearGradient>
-    <linearGradient id="ink" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a3340"/><stop offset="1" stop-color="#5a1c25"/></linearGradient>
-    <radialGradient id="glow"><stop offset="0" stop-color="#fff6d8"/><stop offset=".25" stop-color="#f3d991" stop-opacity=".9"/><stop offset="1" stop-color="#ddae35" stop-opacity="0"/></radialGradient>
+    <radialGradient id="spark"><stop offset="0" stop-color="#fffbe8"/><stop offset=".2" stop-color="#ffe9a8" stop-opacity=".95"/><stop offset="1" stop-color="#ffcf6b" stop-opacity="0"/></radialGradient>
+    <linearGradient id="dome" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3d07a"/><stop offset="1" stop-color="#c9952e"/></linearGradient>
   </defs>
-  <g transform="translate(200 62)"><circle r="20" fill="url(#rim)"/><path d="M-16 8 L-6 -3 L0 3 L7 -6 L16 8 Z" fill="#fffaf0"/><path d="M-16 8 L-6 -3 L0 3 L7 -6 L16 8" fill="none" stroke="#69232d" stroke-width="2" stroke-linejoin="round"/></g>
-  <circle cx="200" cy="176" r="50" fill="url(#glow)"/>
-  <g fill="none" stroke="url(#ink)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M200 250 C160 220 122 190 124 150 C126 116 160 104 184 120 C192 126 198 134 200 142 C202 134 208 126 216 120 C240 104 274 116 276 150 C278 190 240 220 200 250 C236 272 300 286 306 266 C312 246 262 240 200 250 C138 260 88 246 94 266 C100 286 164 272 200 250"/>
-    <path d="M200 196 C186 186 176 176 177 164 C178 152 192 150 200 162 C208 150 222 152 223 164 C224 176 214 186 200 196" stroke-width="7"/>
+  <g transform="translate(200 66)"><circle r="22" fill="#5a1f2a"/><path d="M-16 4 C-16 -12 16 -12 16 4 Z" fill="url(#dome)"/><path d="M-15 12 L-5 1 L1 7 L8 -1 L15 12" fill="none" stroke="#f6e7c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/></g>
+  <circle cx="200" cy="168" r="48" fill="url(#spark)"/>
+  <g fill="none" stroke="#6b2330" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="7" d="M200 246 C162 218 126 190 127 150 C128 118 160 104 184 118 C193 124 198 133 200 141 C203 132 209 123 218 117 C243 103 273 117 274 150 C275 189 239 217 200 246 C232 266 300 284 307 266 C314 247 262 238 200 246 C140 254 86 246 92 265 C98 284 168 268 200 246"/>
+    <path stroke-width="6" d="M201 190 C188 181 179 172 180 161 C181 150 193 147 201 158 C206 149 214 145 220 149 C226 154 222 161 216 160"/>
+    <path stroke-width="6" d="M220 149 C226 160 223 173 201 190"/>
   </g>
-  <circle cx="200" cy="174" r="4.5" fill="#fff8e0"/>
+  <circle cx="200" cy="168" r="4" fill="#fffdf2"/>
 </svg>

@@ -10,12 +10,12 @@
 <meta property="og:title" content="Клуб медитации Академии Классической Мудрости">
 <meta property="og:description" content="Медитации с сопровождением преподавателей, курсы в записи и в прямом эфире, поддержка единомышленников. От 5 € в месяц.">
 <meta property="og:image" content="img/logo-512.png">
-<meta name="theme-color" content="#1a1012">
+<meta name="theme-color" content="#1d1533">
 <link rel="icon" type="image/svg+xml" href="img/logo.svg">
 <link rel="icon" type="image/png" href="img/logo-sm.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Unbounded:wght@700;800&family=Manrope:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap">
 <style>
 :root{
   color-scheme: dark;
@@ -549,6 +549,69 @@ b,strong{font-weight:800}
 
 .p-mark{width:auto;height:64px}
 @media (max-width:960px){.news{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;padding:4px 2px 14px;scrollbar-width:thin;scrollbar-color:var(--gold) transparent}.news .nw{flex:0 0 min(80vw,340px);scroll-snap-align:start}}
+
+:root{color-scheme:dark;
+  --ink:#1d1533;--ink-2:#251b40;--ink-3:#33265a;
+  --burg:#6b2a5e;--burg-2:#8b3d78;
+  --rose:#f2b6cf;--rose-l:#fadbe8;--lav:#c9a7e8;
+  --cream:#f8f1f8;--cream-2:#efe3f1;--white:#fffbfe;
+  --text-d:#2a1a33;--text-dm:#5f4b69;--text-l:#f7eff8;--text-lm:#dacce6;
+  --line-l:rgba(247,239,248,.16);--line-d:rgba(42,26,51,.12);
+  --display:'Cormorant Garamond',Georgia,serif;
+}
+body{background:var(--ink)}
+.sky-bg{background:linear-gradient(180deg,rgba(29,21,51,.35) 0%,rgba(29,21,51,.5) 60%,rgba(29,21,51,.72) 100%),url("img/bg.svg") center 60%/cover no-repeat}
+h1,h2{font-family:var(--display);font-weight:700;letter-spacing:-.01em;line-height:1.02}
+h2{font-size:clamp(36px,4.2vw,62px)}
+h3{font-family:var(--sans);font-weight:800;letter-spacing:-.01em}
+.hero h1{font-size:clamp(58px,8vw,124px);font-weight:700;letter-spacing:-.015em;line-height:.92}
+.hero h1 .grad{font-style:italic;font-weight:600}
+.hero .sub{font-family:var(--display);font-weight:600;font-size:clamp(24px,2.4vw,34px);font-style:italic}
+.grad{background:linear-gradient(100deg,#ffe7a8 0%,var(--gold) 40%,var(--rose) 100%);-webkit-background-clip:text;background-clip:text}
+.cream .grad{background-image:linear-gradient(100deg,var(--burg) 0%,#9a4f8e 50%,var(--gold-d) 100%)}
+.hero::before{background:radial-gradient(ellipse at 74% 42%,rgba(255,226,160,.38),transparent 52%),linear-gradient(90deg,rgba(29,21,51,.62) 0%,rgba(29,21,51,.15) 60%,rgba(29,21,51,0) 100%),linear-gradient(180deg,rgba(29,21,51,0) 70%,rgba(29,21,51,.6) 100%)}
+.hdr-in{background:rgba(37,27,64,.78);border-color:rgba(247,239,248,.14)}
+.mnav,.sup-card{background:rgba(37,27,64,.97)}
+.cream{background:radial-gradient(ellipse at 88% 0%,rgba(243,217,145,.35),transparent 45%),radial-gradient(ellipse at 0% 100%,rgba(242,182,207,.3),transparent 50%),var(--cream)}
+.card-k,.use.main{background:linear-gradient(160deg,#3b2b63 0%,#241a40 80%)}
+.card-k::before{background:radial-gradient(circle,rgba(243,217,145,.35),transparent 65%)}
+.glass,.faq details,.uq,.tc,.plan li,.steps li{background:rgba(45,32,78,.55)!important}
+.faq details[open],.uq[open]{background:linear-gradient(160deg,rgba(70,48,110,.85),rgba(45,32,78,.75))!important}
+.callout-box::before{background:linear-gradient(180deg,var(--gold),var(--lav))}
+.use .ic,.ag .ic{background:linear-gradient(135deg,#fbe8bf,#f1cfe6)}
+.t-burg{background:var(--burg)}
+.facts div{background:rgba(37,27,64,.55)}
+.chip,.hero .lead{background:rgba(37,27,64,.5)}
+.ftr{background:rgba(29,21,51,.9)}
+.dots li::before{background:linear-gradient(135deg,var(--gold),var(--lav))}
+.res .n{font-family:var(--display);font-size:44px;font-style:italic}
+.hand{color:var(--burg)}
+/* posters keep a bold sans */
+.p-pill,.p-kick,.p-title,.p-box{font-family:var(--sans)!important;font-weight:800!important}
+.p-title{font-size:clamp(18px,1.8vw,24px)}
+/* breathing logo — signature */
+.hero-logo{display:grid;justify-items:center;gap:18px;aspect-ratio:auto}
+.hero-logo .orb{position:relative;width:min(100%,430px);aspect-ratio:1}
+.hero-logo .orb img{position:relative;width:100%;height:100%;animation:breathe 10s ease-in-out infinite}
+.hero-logo .aura{position:absolute;inset:-6%;border-radius:50%;background:radial-gradient(circle,rgba(255,214,140,.55) 0%,rgba(242,170,200,.35) 45%,rgba(201,167,232,0) 70%);filter:blur(6px);animation:aura 10s ease-in-out infinite}
+.hero-logo .ring{inset:-5%}
+@keyframes breathe{0%{transform:scale(.94)}40%{transform:scale(1.03)}100%{transform:scale(.94)}}
+@keyframes aura{0%{transform:scale(.85);opacity:.55}40%{transform:scale(1.12);opacity:1}100%{transform:scale(.85);opacity:.55}}
+.breath{display:inline-flex;align-items:center;gap:12px;padding:9px 20px;border-radius:999px;background:rgba(37,27,64,.55);border:1px solid rgba(243,217,145,.35);color:var(--gold-l);font-weight:700;font-size:14px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.breath b{font-family:var(--display);font-style:italic;font-size:22px;font-weight:600;color:#fff3d6;min-width:3.6em;text-align:center;transition:opacity .6s}
+.breath i{width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold);animation:aura 10s ease-in-out infinite}
+/* restored banner from the old page */
+.banner{position:relative;text-align:center;overflow:hidden}
+.banner .wrap{max-width:62rem;display:grid;gap:20px;justify-items:center}
+.banner h2{font-size:clamp(32px,3.8vw,54px)}
+.banner .q{font-family:var(--display);font-style:italic;font-weight:500;font-size:clamp(20px,2vw,27px);line-height:1.45;color:var(--text-l);max-width:46rem}
+.banner .by{font-size:14px;font-weight:700;color:var(--gold-l)}
+.banner .lotus-big{width:64px;height:32px;color:var(--gold)}
+
+.facts b{font-size:23px;font-weight:700}
+.breath{white-space:nowrap}
+@media (max-width:640px){.breath .bl{display:none}.hero-logo .orb{width:min(72vw,300px)}}
+@media (prefers-reduced-motion:reduce){.hero-logo .orb img,.hero-logo .aura{animation:none}}
 </style>
 </head>
 <body>
@@ -602,9 +665,9 @@ b,strong{font-weight:800}
           <a class="btn btn-ghost" href="#club">Что внутри</a>
         </div>
       </div>
-      <div class="hero-logo" aria-hidden="true">
-        <span class="ring"></span>
-        <img src="img/logo.svg" width="400" height="400" alt="">
+      <div class="hero-logo">
+        <div class="orb" aria-hidden="true"><span class="aura"></span><span class="ring"></span><img src="img/logo.svg" width="400" height="400" alt=""></div>
+        <p class="breath" aria-live="off"><i></i><span>Сделайте паузу<span class="bl"> вместе с нами</span>:</span> <b id="breathTxt">вдох</b></p>
       </div>
     </div>
   </section>
@@ -731,7 +794,6 @@ b,strong{font-weight:800}
           <span class="eyebrow">Уникальность Клуба</span>
           <h2>В чём уникальность нашего <span class="grad">Клуба медитаций?</span></h2>
         </div>
-        <p>Это медитационная традиция, которая передавалась от Учителя к ученику на протяжении 44-х поколений: если бы она не приводила к результатам, она бы не сохранилась!</p>
       </div>
       <div class="uqs reveal"><details class="uq" open><summary><span class="n">01</span>Аутентичность</summary><div class="ans"><p>Все медитации Клуба основаны на аутентичных знаниях тибетской линии буддизма, которые передаются от Учителя к ученику на протяжении 2,5 тысяч лет. А значит вы получите детальные инструкции для своей практики, проверенные опытом 44 поколений, чтобы минимизировать ошибки и достичь истинной цели медитации - абсолютного счастья.</p></div></details>
 <details class="uq"><summary><span class="n">02</span>Экспертность</summary><div class="ans"><p>“Медитация – это искусство, которым можно овладеть только самостоятельно, путем долгих часов, проведенных на подушке. Но, как и во всех других духовных практиках, очень полезно, если в процессе медитации нас направляет хорошо обученный медитатор &lt;...&gt;Потратьте время; проверьте несколько учителей медитации; найдите того, кто действительно квалифицирован в подлинной линии и сам является хорошим медитатором” - сказал великий учитель древней традиции медитации Мастер Чже Цонгкапа (1357-1419) и мы придерживаемся его рекомендаций.</p><p>Чтобы успешно продвигаться в медитации вам нужен квалифицированный Учитель. В противном случае, вы можете не только затормозить свой прогресс в медитации, но даже - принести вред своему уму, последствия которого могут быть трудно непоправимыми.</p></div></details>
@@ -742,13 +804,12 @@ b,strong{font-weight:800}
       <div class="lineage">
         <div class="card glass">
           <span class="eyebrow">Важность непрерывной линии передачи знаний</span>
-          <p class="quote" style="margin-top:14px">«Медитация – это искусство, которым можно овладеть только самостоятельно, путем долгих часов, проведенных на подушке. Но, как и во всех других духовных практиках, очень полезно, если в процессе медитации нас направляет хорошо обученный медитатор. Потратьте время; проверьте несколько учителей медитации; найдите того, кто действительно квалифицирован в подлинной линии и сам является хорошим медитатором»</p>
-          <p class="quote-by">Великий учитель древней традиции медитации Мастер Чже Цонгкапа (1357-1419)</p>
+          <h3 style="margin-top:14px;font-size:clamp(20px,1.9vw,26px)">Медитационная традиция, которой 2,5 тысячи лет: в чем ее суть и чем она уникальна?</h3>
+          <p style="margin-top:12px">Это медитационная традиция, которая передавалась от Учителя к ученику на протяжении 44-х поколений: если бы она не приводила к результатам, она бы не сохранилась!</p>
         </div>
         <div class="story">
           <div class="video"><button class="yt" data-id="10PS26bwnGY" aria-label="Питер Мёртл: медитационная традиция, которой 2,5 тысячи лет">
             <img src="https://i.ytimg.com/vi/10PS26bwnGY/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span><span class="cap">Питер Мёртл</span></button></div>
-          <h3>Медитационная традиция, которой 2,5 тысячи лет: в чем ее суть и чем она уникальна?</h3>
         </div>
       </div>
     </div>
@@ -762,7 +823,6 @@ b,strong{font-weight:800}
             <span class="eyebrow">Что в результате</span>
             <h2>В результате <span class="grad">участия в Клубе</span></h2>
           </div>
-          <p>Вы не научитесь медитировать по приложениям, статьям или мини-курсам из Сети!</p>
         </div>
         <div class="ress"><div class="res reveal"><span class="n">1</span><h3>Получите знания прямой линии передачи</h3><p>аутентичных учений по медитации от опытных преподавателей - специальные программы и инструкции для постепенного и уверенного роста в практике от новичка до мастера</p></div>
 <div class="res reveal"><span class="n">2</span><h3>Сможете задавать волнующие вопросы</h3><p>и получить на них ответы от продвинутых практиков медитации</p></div>
@@ -786,6 +846,15 @@ b,strong{font-weight:800}
       </div>
     </section>
   </div>
+
+  <section class="sec dark banner">
+    <div class="wrap">
+      <svg class="lotus-big" viewBox="0 0 40 20" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"><path d="M20 18C16 14 16 7 20 2c4 5 4 12 0 16z"/><path d="M20 18c-4-1-9-4-10-10 5 0 9 4 10 10z"/><path d="M20 18c4-1 9-4 10-10-5 0-9 4-10 10z"/><path d="M20 18c-5 1-12 0-16-4 5-2 11 0 16 4z"/><path d="M20 18c5 1 12 0 16-4-5-2-11 0-16 4z"/></svg>
+      <h2>Вы не научитесь медитировать по приложениям, статьям или мини-курсам из Сети!</h2>
+      <p class="q">«Медитация – это искусство, которым можно овладеть только самостоятельно, путем долгих часов, проведенных на подушке. Но, как и во всех других духовных практиках, очень полезно, если в процессе медитации нас направляет хорошо обученный медитатор. Потратьте время; проверьте несколько учителей медитации; найдите того, кто действительно квалифицирован в подлинной линии и сам является хорошим медитатором»</p>
+      <p class="by">Великий учитель древней традиции медитации Мастер Чже Цонгкапа (1357-1419)</p>
+    </div>
+  </section>
 
   <section class="sec dark" id="why">
     <div class="wrap">
@@ -1005,6 +1074,8 @@ b,strong{font-weight:800}
   document.getElementById('supX').addEventListener('click',function(){supSet(false);});
   document.addEventListener('keydown',function(e){if(e.key==='Escape')supSet(false);});
   var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var bt=document.getElementById('breathTxt');
+  if(bt&&!reduce){var ph=0;function tick(){bt.style.opacity=0;setTimeout(function(){bt.textContent=ph?'выдох':'вдох';bt.style.opacity=1;},300);var d=ph?6000:4000;ph=1-ph;setTimeout(tick,d);}tick();}
   var s=document.getElementById('seeds');
   if(s&&!reduce){for(var i=0;i<26;i++){var x=document.createElement('i');x.style.left=(Math.random()*100)+'%';x.style.setProperty('--s',(4+Math.random()*7)+'px');x.style.setProperty('--d',(9+Math.random()*10)+'s');x.style.setProperty('--dl',(-Math.random()*18)+'s');x.style.setProperty('--dx',(Math.random()*120-60)+'px');s.appendChild(x);}}
   document.querySelectorAll('.yt').forEach(function(b){
