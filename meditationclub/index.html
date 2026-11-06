@@ -10,7 +10,7 @@
 <meta property="og:title" content="Клуб медитации Академии Классической Мудрости">
 <meta property="og:description" content="Медитации с сопровождением преподавателей, курсы в записи и в прямом эфире, поддержка единомышленников. От 5 € в месяц.">
 <meta property="og:image" content="img/logo-512.png">
-<meta name="theme-color" content="#8b8cd4">
+<meta name="theme-color" content="#b99ad0">
 <link rel="icon" type="image/svg+xml" href="img/logo.svg">
 <link rel="icon" type="image/png" href="img/logo-sm.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -740,6 +740,92 @@ h2{font-size:clamp(32px,3.6vw,52px)}
 .quote-by{color:#fff!important}
 @media (max-width:960px){.hero2-in{padding-top:44vh}}
 @media (max-width:640px){.hero2-in{padding-top:50vh}.hero2 h1{font-size:clamp(46px,13vw,64px)}}
+
+:root{color-scheme:light;
+  --text-d:#ffffff;--text-dm:#f7eef7;--text-l:#ffffff;--text-lm:#f5ebf5;
+  --line-d:rgba(255,255,255,.3);--line-l:rgba(255,255,255,.3);
+  --plum:#5b3a63;--peri-d:#ffffff;--burg:#7d5a86;--burg-2:#9d7ca6;
+  --gold:#f6e7a6;--gold-l:#fff4cf;--gold-d:#fff0bf;
+  --glass:rgba(104,72,130,.36);--glass-2:rgba(255,255,255,.13);
+}
+body{background:#c6a7d6;color:#fff}
+.sky-bg{display:block;position:fixed;inset:-5%;z-index:-1;pointer-events:none;background:url("img/sky.jpg") center 55%/cover no-repeat;animation:skyDrift 70s ease-in-out infinite alternate}
+.sky-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(96,66,128,.18) 0%,rgba(96,66,128,.06) 45%,rgba(96,66,128,.22) 100%)}
+@media (max-width:760px){.sky-bg{background-image:url("img/sky-m.jpg");background-position:50% 55%}}
+@keyframes skyDrift{from{transform:scale(1.02) translate(0,0)}to{transform:scale(1.1) translate(-2%,-1.2%)}}
+h1,h2{font-weight:300;letter-spacing:-.035em;color:#fff;text-shadow:0 6px 40px rgba(110,60,120,.25)}
+h2{font-size:clamp(32px,3.6vw,54px)}
+h3{color:#fff!important}
+p,li{color:var(--text-dm)}
+main p,main li,main h2,main h3{text-shadow:0 1px 10px rgba(70,35,90,.28)}
+.poster *{text-shadow:none!important}
+.grad,.cream .grad{background:linear-gradient(100deg,#fff8dc 0%,#ffe2ef 60%,#f5d2ff 100%)!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important}
+.eyebrow,.cream .eyebrow,.dark .eyebrow,.card-k .eyebrow{color:#fff;opacity:.85}
+/* every section = frosted glass panel over the sky */
+.mega.cream,.sec.dark:not(.hero3){background:var(--glass)!important;backdrop-filter:blur(22px) saturate(125%);-webkit-backdrop-filter:blur(22px) saturate(125%);border:1px solid rgba(255,255,255,.42);box-shadow:0 30px 80px -40px rgba(70,40,90,.45),inset 0 1px 0 rgba(255,255,255,.35);color:#fff}
+.cream p,.cream li,.dark p,.dark li{color:var(--text-dm)}
+.card-w,.use,.res,.howl li,.nw,.agenda,.glass,.uq,.faq details,.tc,.tier,.day{background:var(--glass-2)!important;border:1px solid rgba(255,255,255,.36)!important;box-shadow:0 20px 50px -34px rgba(70,40,90,.5)!important;color:#fff}
+.card-k,.use.main{background:rgba(84,52,104,.42)!important;border:1px solid rgba(255,255,255,.3);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.card-k::before{background:radial-gradient(circle,rgba(255,236,190,.35),transparent 65%)}
+.faq details[open],.uq[open]{background:rgba(255,255,255,.22)!important}
+.ag h3,.cream h3,.card-w h3,.res h3,.nw h3{color:#fff!important}
+.ag .ic,.use .ic{background:rgba(255,255,255,.22);color:#fff;border:1px solid rgba(255,255,255,.4)}
+.agenda .ag{border-bottom-color:rgba(255,255,255,.25)}
+.dots li{border-bottom-color:rgba(255,255,255,.22)!important}
+.dots li::before,.dark .dots li::before,.card-k .dots li::before{background:#fff;box-shadow:0 0 8px rgba(255,255,255,.8)}
+.ticks li::before,.card-k .ticks li::before{background:rgba(255,255,255,.9);color:var(--plum)}
+.card-w .ticks li,.card-k .ticks li{color:#fff}
+.tag.t-gold,.tag.t-burg{background:rgba(255,255,255,.24);color:#fff;border:1px solid rgba(255,255,255,.45)}
+.howl .n,.uq summary .n{background:rgba(255,255,255,.92);color:var(--plum)}
+.res .n{color:#fff;opacity:.9}
+.hand,.card-k .hand,.horse .hand{color:#fff6d6!important}
+.sub-h{color:#fff6d6!important}
+.note{color:#f7eef7}
+.price .sum{color:#fff}
+.tc .role{color:#fff6d6!important}
+/* buttons like the reference: soft cream-lime pill */
+.btn-gold,.cream .btn-gold,.card-w .btn-gold{background:linear-gradient(120deg,#fbf6d0,#e6f1b8);color:#4a2f52;box-shadow:0 10px 30px -12px rgba(90,50,100,.45)}
+.btn-dark{background:rgba(255,255,255,.9);color:#4a2f52}
+.btn-ghost{border:1px solid rgba(255,255,255,.75);background:rgba(255,255,255,.14);color:#fff}
+.btn-ghost:hover{color:#4a2f52}
+.strip-nav button,.cream .strip-nav button{background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.5);color:#fff}
+.hdr-in{background:rgba(118,86,140,.3);border:1px solid rgba(255,255,255,.45);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.mnav,.sup-card{background:rgba(110,80,132,.94)}
+.sup-btn{background:rgba(118,86,140,.55);border-color:rgba(255,255,255,.5)}
+.ftr{background:rgba(84,52,104,.45);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-top:1px solid rgba(255,255,255,.3)}
+.banner .q{color:#fff}
+/* posters become light glass cards */
+.poster.v1::before,.poster.v2::before,.poster.v3::before{background:radial-gradient(ellipse at 50% 85%,rgba(255,250,235,.85),transparent 60%),linear-gradient(170deg,rgba(255,255,255,.62) 0%,rgba(255,236,246,.5) 100%)}
+.poster,.p-sub,.p-kick,.p-title{color:#4a2a4e!important}
+.p-pill,.p-box{background:#6d4a74!important}
+.p-div{color:#7d5a86}
+/* hero */
+.hero3{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;overflow:hidden}
+.hero3 .sun{position:absolute;left:50%;top:60%;width:min(90vw,1100px);aspect-ratio:2/1;transform:translate(-50%,-50%);background:radial-gradient(ellipse at center,rgba(255,250,228,.85) 0%,rgba(255,222,200,.4) 30%,rgba(255,210,230,0) 62%);pointer-events:none;animation:sunB 10s ease-in-out infinite}
+@keyframes sunB{0%{opacity:.4;transform:translate(-50%,-50%) scale(.88)}40%{opacity:1;transform:translate(-50%,-50%) scale(1.06)}100%{opacity:.4;transform:translate(-50%,-50%) scale(.88)}}
+.hero3 .seeds i{background:radial-gradient(circle at 35% 30%,#fff,#fff0f7 60%,#f7cfe4);box-shadow:0 0 12px rgba(255,255,255,.9)}
+.hero3-in{position:relative;z-index:2;width:100%;max-width:60rem;padding:100px var(--pad) 22px;display:grid;justify-items:center;gap:13px}
+.arc{width:min(720px,92vw);height:auto;overflow:visible;margin-bottom:4px}
+.arc .node{animation:nodeGlow 10s ease-in-out infinite}
+.arc .node:nth-of-type(2){animation-delay:-2.5s}.arc .node:nth-of-type(3){animation-delay:-5s}.arc .node:nth-of-type(4){animation-delay:-7.5s}
+@keyframes nodeGlow{0%,100%{opacity:.75}40%{opacity:1}}
+.hero3 h1{font-size:clamp(54px,min(8vw,13vh),124px);font-weight:300;line-height:.98;letter-spacing:-.045em}
+.hero3 h1 .grad{display:inline-block;font-weight:400;filter:drop-shadow(0 4px 24px rgba(110,60,120,.35))}
+.hero3 .sub{text-wrap:balance;font-family:var(--sans);font-weight:500;font-style:normal;font-size:clamp(17px,1.6vw,22px);color:#fff;max-width:28em}
+.lead3{max-width:38rem;font-size:16.5px;line-height:1.55;color:#fff;font-weight:500;padding:14px 22px;border-radius:24px;background:rgba(118,86,140,.26);border:1px solid rgba(255,255,255,.4);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.hero3 .ctas{justify-content:center}
+.chip{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.55);color:#fff}
+.chip i{background:#fff;box-shadow:0 0 10px #fff}
+.breath{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.55);color:#fff}
+.breath b{color:#fff;font-family:var(--sans);font-style:normal;font-weight:600;font-size:18px}
+.breath i{background:#fff;box-shadow:0 0 10px #fff}
+.dock{position:relative;z-index:2;width:calc(100% - 2*var(--pad));max-width:66rem;margin:8px auto 28px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;padding:10px;border-radius:30px;background:rgba(118,86,140,.28);border:1px solid rgba(255,255,255,.45);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.dock div{display:grid;gap:2px;padding:10px 12px;border-radius:22px;line-height:1.25}
+.dock div:first-child{background:rgba(255,255,255,.22)}
+.dock b{font-weight:600;font-size:clamp(16px,1.4vw,19px);color:#fff}
+.dock span{font-size:12.5px;color:#f5ebf5}
+@media (max-width:760px){.dock{grid-template-columns:1fr 1fr}.hero3-in{padding-top:104px}.hero3 .ctas{width:100%}.hero3 .ctas .btn{width:100%}}
+@media (prefers-reduced-motion:reduce){.sky-bg,.hero3 .sun{animation:none}}
 </style>
 </head>
 <body>
@@ -775,26 +861,22 @@ h2{font-size:clamp(32px,3.6vw,52px)}
 </nav>
 
 <main>
-  <section class="hero hero2" id="top">
-    <canvas id="scene" aria-hidden="true"></canvas>
-    <div class="hero-frame" aria-hidden="true"></div>
-    <div class="hero-shade" aria-hidden="true"></div>
-    <div class="hero2-in">
-      <div class="h-left">
-        <span class="chip"><i></i>от Академии Классической Мудрости</span>
-        <h1>Клуб <span class="grad">медитации</span></h1>
-        <p class="sub">Уникальная система медитаций с историей в 2,5 тысячи лет</p>
+  <section class="hero hero3" id="top">
+    <div class="sun" aria-hidden="true"></div>
+    <div class="seeds" id="seeds" aria-hidden="true"></div>
+    <div class="hero3-in">
+      <svg class="arc" viewBox="0 0 720 80" aria-hidden="true"><path d="M20 70 Q360 -10 700 70" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1"/><g class="node" transform="translate(150 36)"><circle r="17" fill="rgba(255,255,255,.22)" stroke="rgba(255,255,255,.7)"/><g fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M0 7C-3 4-3-1 0-5c3 4 3 9 0 12z"/><path d="M0 7c-3-1-7-3-8-8 4 0 7 3 8 8zM0 7c3-1 7-3 8-8-4 0-7 3-8 8z"/></g></g><g class="node" transform="translate(290 20)"><circle r="17" fill="rgba(255,255,255,.22)" stroke="rgba(255,255,255,.7)"/><g fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle r="4"/><path d="M0-9v2M0 7v2M-9 0h2M7 0h2M-6.4-6.4l1.4 1.4M5 5l1.4 1.4M-6.4 6.4l1.4-1.4M5-5l1.4-1.4"/></g></g><g class="node" transform="translate(430 20)"><circle r="17" fill="rgba(255,255,255,.22)" stroke="rgba(255,255,255,.7)"/><g fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M0 6C-5 2-8-1-7.5-4.2-7-7-3.5-7.5 0-4c3.5-3.5 7-3 7.5-.2C8-1 5 2 0 6z"/></g></g><g class="node" transform="translate(570 36)"><circle r="17" fill="rgba(255,255,255,.22)" stroke="rgba(255,255,255,.7)"/><g fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.5A7 7 0 01-3-6a7 7 0 107 10.5z"/></g></g></svg>
+      <span class="chip"><i></i>от Академии Классической Мудрости</span>
+      <h1>Клуб <span class="grad">медитации</span></h1>
+      <p class="sub">Уникальная система медитаций с историей в 2,5 тысячи лет</p>
+      <p class="lead3">Для новичков и продвинутых практиков: медитации с сопровождением преподавателей, курсы в записи и в прямом эфире.</p>
+      <div class="ctas">
+        <a class="btn btn-gold" href="https://t.me/Meditation_club_acm_bot?start=649c00d0dbae8e42c708b9d4">Вступить в Клуб <span class="ar">→</span></a>
+        <a class="btn btn-ghost" href="#club">Что внутри</a>
       </div>
-      <div class="h-right">
-        <p class="lead2">Для новичков и продвинутых практиков: медитации с сопровождением преподавателей, курсы в записи и в прямом эфире.</p>
-        <div class="ctas">
-          <a class="btn btn-gold" href="https://t.me/Meditation_club_acm_bot?start=649c00d0dbae8e42c708b9d4">Вступить в Клуб <span class="ar">→</span></a>
-          <a class="btn btn-ghost" href="#club">Что внутри</a>
-        </div>
-        <p class="breath" aria-live="off"><i></i><span>Сделайте паузу<span class="bl"> вместе с нами</span>:</span> <b id="breathTxt">вдох</b></p>
-      </div>
+      <p class="breath" aria-live="off"><i></i><span>Сделайте паузу<span class="bl"> вместе с нами</span>:</span> <b id="breathTxt">вдох</b></p>
     </div>
-    <div class="h-facts">
+    <div class="dock">
       <div><b>2,5 тысячи лет</b><span>непрерывной линии передачи</span></div>
       <div><b>2 раза в неделю</b><span>живые медитации в группе</span></div>
       <div><b>Все курсы Клуба</b><span>в записи в приложении</span></div>
@@ -1193,7 +1275,6 @@ h2{font-size:clamp(32px,3.6vw,52px)}
   </button>
 </div>
 
-<script src="hero.js" defer></script>
 <script>
 (function(){
   var btn=document.getElementById('menuBtn'),nav=document.getElementById('mnav');
