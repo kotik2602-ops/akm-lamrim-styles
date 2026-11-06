@@ -1684,7 +1684,6 @@ h1,h2,h3,h4,.p-title,.sub-h,.stat .num,.price .sum,.tier .sum,.facts b,.dock b,.
     for(var j=0;j<N;j++)setTimeout(star,400+j*(mob?1500:1000));}
   var hl=document.querySelector('.hlogo');
   if(hl&&!reduce){var inh=1;function br(){hl.classList.toggle('inhale',inh===1);var d=inh?4000:6000;inh=1-inh;setTimeout(br,d);}br();}
-  if(s&&!reduce){for(var i=0;i<26;i++){var x=document.createElement('i');x.style.left=(Math.random()*100)+'%';x.style.setProperty('--s',(4+Math.random()*7)+'px');x.style.setProperty('--d',(9+Math.random()*10)+'s');x.style.setProperty('--dl',(-Math.random()*18)+'s');x.style.setProperty('--dx',(Math.random()*120-60)+'px');s.appendChild(x);}}
   document.querySelectorAll('.yt').forEach(function(b){
     b.addEventListener('click',function(){var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+b.dataset.id+'?autoplay=1&rel=0';f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;f.title=b.getAttribute('aria-label')||'Видео';f.style.cssText='position:absolute;inset:0;width:100%;height:100%;border:0';b.replaceWith(f);});
   });
