@@ -911,6 +911,24 @@ h2 .grad{font-size:1.12em}
 .cream .big,.cream .card-w .big,.cream .callout{color:var(--ink-t)!important;text-shadow:none!important}
 .cream .card-k .big{color:#fff!important}
 .cream .card-k .eyebrow{color:#ffd98a!important;background:rgba(255,201,107,.12);border-color:rgba(255,201,107,.4)}
+
+/* animated glow on feature icons */
+.feat .use .ic{position:relative;overflow:visible;animation:icGlow 3.6s ease-in-out infinite}
+.feat .use .ic::before{content:"";position:absolute;inset:-10px;border-radius:24px;background:radial-gradient(circle,rgba(255,190,120,.75) 0%,rgba(255,150,120,.35) 45%,rgba(255,150,120,0) 72%);z-index:-1;animation:icHalo 3.6s ease-in-out infinite}
+.feat .use .ic::after{content:"";position:absolute;inset:0;border-radius:16px;background:linear-gradient(115deg,rgba(255,255,255,0) 30%,rgba(255,255,255,.75) 50%,rgba(255,255,255,0) 70%);background-size:250% 100%;animation:icShine 3.6s ease-in-out infinite}
+.feat .use .ic svg{position:relative;z-index:1;animation:icFloat 3.6s ease-in-out infinite}
+.feat .use:nth-child(2) .ic,.feat .use:nth-child(2) .ic::before,.feat .use:nth-child(2) .ic::after,.feat .use:nth-child(2) .ic svg{animation-delay:.6s}
+.feat .use:nth-child(3) .ic,.feat .use:nth-child(3) .ic::before,.feat .use:nth-child(3) .ic::after,.feat .use:nth-child(3) .ic svg{animation-delay:1.2s}
+.feat .use:nth-child(4) .ic,.feat .use:nth-child(4) .ic::before,.feat .use:nth-child(4) .ic::after,.feat .use:nth-child(4) .ic svg{animation-delay:1.8s}
+.feat .use:nth-child(5) .ic,.feat .use:nth-child(5) .ic::before,.feat .use:nth-child(5) .ic::after,.feat .use:nth-child(5) .ic svg{animation-delay:2.4s}
+.feat .use{isolation:isolate;transition:transform .35s ease,box-shadow .35s ease}
+.feat .use:hover{transform:translateY(-6px)}
+.feat .use:hover .ic::before{inset:-16px;opacity:1}
+@keyframes icGlow{0%,100%{box-shadow:0 0 0 0 rgba(255,170,110,0)}50%{box-shadow:0 0 22px 4px rgba(255,170,110,.55)}}
+@keyframes icHalo{0%,100%{opacity:.15;transform:scale(.8)}50%{opacity:1;transform:scale(1.15)}}
+@keyframes icShine{0%,35%{background-position:150% 0}65%,100%{background-position:-50% 0}}
+@keyframes icFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px) scale(1.06)}}
+@media (prefers-reduced-motion:reduce){.feat .use .ic,.feat .use .ic::before,.feat .use .ic::after,.feat .use .ic svg{animation:none}}
 </style>
 </head>
 <body>
