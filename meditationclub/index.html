@@ -1157,6 +1157,26 @@ h2 .grad{font-size:1.12em}
 img[src$="logo.jpg"]{border-radius:50%!important;object-fit:cover;background:none!important;padding:0!important}
 .final img.lg{width:170px;height:170px;box-shadow:0 0 0 6px rgba(255,217,138,.25),0 0 60px rgba(255,190,140,.55)!important}
 </style>
+<script>
+/* geo: RU/BY visitors see Boosty only and no Ukrainian FOP requisites */
+(function(){var d=document.documentElement,K='akm-geo';
+function set(r){d.classList.remove('geo-wait');d.classList.toggle('geo-ru',r==='ru');try{sessionStorage.setItem(K,r)}catch(e){}}
+var q=(location.search.match(/[?&]region=(ru|intl)/)||[])[1];if(q){set(q);return;}
+try{var s=sessionStorage.getItem(K);if(s){set(s);return;}}catch(e){}
+var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}
+var RTZ=/^(Europe\/(Moscow|Kaliningrad|Samara|Volgograd|Saratov|Ulyanovsk|Astrakhan|Kirov|Minsk)|Asia\/(Yekaterinburg|Omsk|Novosibirsk|Barnaul|Tomsk|Novokuznetsk|Krasnoyarsk|Irkutsk|Chita|Yakutsk|Khandyga|Vladivostok|Ust-Nera|Magadan|Sakhalin|Srednekolymsk|Kamchatka|Anadyr))$/;
+if(RTZ.test(tz)){set('ru');return;}
+d.classList.add('geo-wait');
+var done=false;function fin(r){if(!done){done=true;set(r)}}
+setTimeout(function(){fin('intl')},2500);
+fetch('https://get.geojs.io/v1/ip/country.json').then(function(r){return r.json()}).then(function(j){fin(/^(RU|BY)$/.test(j.country)?'ru':'intl')}).catch(function(){fin('intl')});
+})();
+</script>
+<style>
+html:not(.geo-ru) .only-ru{display:none!important}
+html.geo-ru .only-intl{display:none!important}
+html.geo-wait .only-intl{visibility:hidden}
+</style>
 <style id="final-type">
 :root{--sans:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;--display:'Nunito',system-ui,sans-serif}
 body,p,li,a,button,input,select,textarea,summary,label,td,th,.btn,.lead3,.hero3 .sub,.callout,.big,.quote,.banner .q,.p-box,.goal-sum,.photo-stack .cap,.plaque p,.eyebrow,.chip,.breath,.dock span{font-family:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif!important}
@@ -1636,7 +1656,7 @@ h1,h2,h3,h4,.p-title,.sub-h,.stat .num,.price .sum,.tier .sum,.facts b,.dock b,.
 <footer class="ftr">
   <div class="ftr-in">
     <a class="brand" href="#top"><img src="img/logo.jpg" width="52" height="52" alt=""><span class="brand-txt" style="display:grid"><b>Клуб медитации</b><span>Академия Классической Мудрости</span></span></a>
-    <div>ФОП Беліцька Олеся Олександрівна | ЄДРПОУ 2991816226<br><a href="mailto:acirussian2@gmail.com">acirussian2@gmail.com</a> · <a href="https://lp.classicwisdomacademy.com/ofertakk">Оферта</a></div>
+    <div><span class="only-intl">ФОП Гащук Олена Валеріївна | ЄДРПОУ 3098605909<br></span><a href="mailto:acirussian2@gmail.com">acirussian2@gmail.com</a><span class="only-intl"> · <a href="oferta/">Оферта</a></span></div>
   </div>
 </footer>
 
