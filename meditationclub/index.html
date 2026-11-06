@@ -10,7 +10,7 @@
 <meta property="og:title" content="Клуб медитации Академии Классической Мудрости">
 <meta property="og:description" content="Медитации с сопровождением преподавателей, курсы в записи и в прямом эфире, поддержка единомышленников. От 5 € в месяц.">
 <meta property="og:image" content="img/logo-512.png">
-<meta name="theme-color" content="#1d1533">
+<meta name="theme-color" content="#8b8cd4">
 <link rel="icon" type="image/svg+xml" href="img/logo.svg">
 <link rel="icon" type="image/png" href="img/logo-sm.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -612,6 +612,134 @@ h3{font-family:var(--sans);font-weight:800;letter-spacing:-.01em}
 .breath{white-space:nowrap}
 @media (max-width:640px){.breath .bl{display:none}.hero-logo .orb{width:min(72vw,300px)}}
 @media (prefers-reduced-motion:reduce){.hero-logo .orb img,.hero-logo .aura{animation:none}}
+
+.hero2{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;background:#1d1533}
+.hero2::before{display:none}
+#scene{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero-shade{position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(29,21,51,.45) 0%,rgba(29,21,51,0) 20%,rgba(29,21,51,0) 58%,rgba(29,21,51,.55) 82%,rgba(29,21,51,.8) 100%)}
+.hero2-in{position:relative;z-index:2;max-width:80rem;width:100%;margin:0 auto;padding:120px var(--pad) 26px;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:22px 70px;align-items:end}
+.h-left{display:grid;gap:14px;justify-items:start}
+.hero2 h1{font-size:clamp(60px,8vw,128px);color:#fff;text-shadow:0 6px 40px rgba(29,21,51,.6)}
+.hero2 h1 .grad{display:inline}
+.hero2 .sub{max-width:20em;color:#fff4ee}
+.h-right{display:grid;gap:18px;justify-items:start;padding-bottom:6px}
+.lead2{color:#f6eef8;font-size:17px;font-weight:600;line-height:1.55;text-shadow:0 2px 16px rgba(29,21,51,.8)}
+.h-facts{position:relative;z-index:2;max-width:80rem;width:100%;margin:0 auto;padding:18px var(--pad) 30px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px 30px}
+.h-facts::before{content:"";position:absolute;left:var(--pad);right:var(--pad);top:0;height:1px;background:linear-gradient(90deg,rgba(255,236,200,0),rgba(255,236,200,.45),rgba(255,236,200,0))}
+.h-facts div{display:grid;line-height:1.25}
+.h-facts b{font-family:var(--display);font-weight:700;font-size:clamp(20px,1.9vw,26px);color:var(--gold-l)}
+.h-facts span{font-size:13.5px;color:var(--text-lm)}
+@media (max-width:960px){.hero2-in{grid-template-columns:1fr;padding-top:52vh;gap:16px}.h-facts{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.hero2-in{padding-top:46vh}.hero2 h1{font-size:clamp(52px,15vw,72px)}.hero2 .ctas{width:100%}.h-right{justify-items:stretch}.breath{justify-self:center}}
+
+:root{color-scheme:light;
+  --peri:#8b8cd4;--peri-d:#6668b8;--plum:#2c0f1f;--lil:#f2eef9;
+  --ink:#2c0f1f;--ink-2:#3a1729;--ink-3:#4a2236;
+  --burg:#6668b8;--burg-2:#8b8cd4;
+  --gold:#b9b6f0;--gold-l:#e6e4ff;--gold-d:#6668b8;
+  --rose:#e9d6f0;--rose-l:#f6ecf8;--lav:#b9b6f0;
+  --cream:#fbf9fe;--cream-2:#f2eef9;--white:#ffffff;
+  --text-d:#2a1e33;--text-dm:#5d5670;--text-l:#ffffff;--text-lm:#eeedfb;
+  --line-l:rgba(255,255,255,.32);--line-d:rgba(42,30,51,.1);
+  --display:'Manrope',system-ui,sans-serif;
+}
+body{background:var(--lil);color:var(--text-d)}
+.sky-bg{display:none}
+h1,h2{font-family:var(--sans);font-weight:500;letter-spacing:-.035em;line-height:1.05}
+h2{font-size:clamp(32px,3.6vw,52px)}
+.grad{background:none!important;-webkit-background-clip:initial!important;background-clip:initial!important;color:#fff!important}
+.cream .grad{color:var(--peri-d)!important}
+.hero h1 .grad,.hero .sub{font-style:normal}
+.eyebrow{color:var(--peri-d);letter-spacing:.18em;font-weight:700}
+.dark .eyebrow,.card-k .eyebrow{color:#e9e8ff}
+.cream .eyebrow{color:var(--peri-d)}
+/* sections: periwinkle rounded panels instead of dark */
+.sec.dark:not(.hero2){background:linear-gradient(180deg,#8f90d7 0%,#7d7fca 100%);margin:clamp(10px,1.4vw,20px) clamp(8px,1.4vw,20px);border-radius:var(--r-mega);color:#fff}
+.dark p,.dark li{color:#f1f0fd}
+.dark h3{color:#fff}
+.dark b{color:#fff}
+.cream{background:var(--cream)}
+.mega.cream{box-shadow:0 30px 70px -50px rgba(102,104,184,.45)}
+.card-k,.use.main{background:linear-gradient(160deg,#3d1529 0%,#2c0f1f 85%)!important;color:#fff}
+.card-k::before{background:radial-gradient(circle,rgba(185,182,240,.35),transparent 65%)}
+.card-k p,.card-k li,.cream .card-k p,.cream .card-k li{color:#efe9f3!important}
+.card-k .ticks li{color:#fff}
+.card-w,.use,.res,.howl li,.nw,.agenda,.day,.tier{background:#fff}
+.glass,.faq details,.uq,.tc,.plan li,.steps li{background:rgba(255,255,255,.14)!important;border:1px solid rgba(255,255,255,.38)!important;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.faq details[open],.uq[open]{background:rgba(255,255,255,.22)!important;border-color:rgba(255,255,255,.6)!important}
+.faq summary,.uq summary{color:#fff}
+.faq summary::after{background:rgba(255,255,255,.2);color:#fff}
+.faq details[open] summary::after,.uq summary .n{background:#fff;color:var(--plum)}
+.tc .role{color:#fff!important;opacity:.85}
+.tc details summary{color:#eceafd}
+.dots li::before{background:var(--peri)}
+.dark .dots li::before,.card-k .dots li::before{background:#fff}
+.ticks li::before{background:var(--peri);color:#fff}
+.card-k .ticks li::before{background:#fff;color:var(--plum)}
+.use .ic,.ag .ic{background:#ecebfb;color:var(--peri-d)}
+.tag.t-gold{background:#ecebfb;color:var(--peri-d)}
+.tag.t-burg{background:#fff;color:var(--plum)}
+.howl .n{background:var(--peri);color:#fff}
+.res .n{color:var(--peri);font-style:normal;font-weight:300;font-size:46px}
+.hand{font-family:var(--sans);font-weight:600;font-size:clamp(22px,2vw,28px);transform:none;color:var(--peri-d)}
+.card-k .hand,.horse .hand{color:#e9e8ff!important}
+/* buttons: soft pills */
+.btn-gold{background:#fff;color:var(--plum);animation:none;box-shadow:0 10px 30px -12px rgba(44,15,31,.45)}
+.btn-gold::after{display:none}
+.btn-gold:hover{box-shadow:0 14px 34px -10px rgba(44,15,31,.5),0 0 0 4px rgba(255,255,255,.35)}
+.cream .btn-gold,.card-w .btn-gold{background:var(--plum);color:#fff}
+.btn-ghost{border:1px solid rgba(255,255,255,.7);background:rgba(255,255,255,.12);color:#fff}
+.btn-ghost::before{background:#fff}
+.btn-ghost:hover{color:var(--plum);border-color:#fff}
+.btn-dark{background:var(--plum);color:#fff}
+.strip-nav button{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.5);color:#fff}
+.cream .strip-nav button{background:#fff;border-color:var(--line-d);color:var(--peri-d)}
+/* header: frosted periwinkle */
+.hdr-in{background:rgba(125,127,202,.62);border:1px solid rgba(255,255,255,.45);box-shadow:0 18px 40px -26px rgba(44,15,31,.6)}
+.dnav{color:#fff}.dnav a:hover{color:#e6e4ff}
+.brand-txt b{color:#fff}.brand-txt span{color:#eeedfb}
+.menu-btn{color:#fff;border-color:rgba(255,255,255,.5)}
+.mnav,.sup-card{background:rgba(110,112,190,.97)}
+.chip{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.5);color:#fff}
+.chip i{background:#fff;box-shadow:0 0 10px #fff}
+.breath{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.5);color:#fff}
+.breath b{color:#fff;font-family:var(--sans);font-style:normal;font-weight:600;font-size:18px}
+.breath i{background:#fff;box-shadow:0 0 10px #fff}
+.banner .q{font-family:var(--sans);font-style:normal;font-weight:400;font-size:clamp(18px,1.6vw,22px)}
+.banner .by{color:#fff}
+.banner .lotus-big{color:#fff}
+.ftr{background:var(--plum);border:0}
+.ftr-in{color:#e7dfe9}.ftr-in a{color:#fff}
+/* hero */
+.hero2{background:#9d98de}
+.hero2 h1{font-weight:300;letter-spacing:-.045em;font-size:clamp(56px,7.4vw,118px);text-shadow:0 6px 40px rgba(44,15,31,.35)}
+.hero2 .sub{font-family:var(--sans);font-weight:500;font-size:clamp(18px,1.6vw,23px);color:#fff}
+.hero-shade{background:linear-gradient(180deg,rgba(44,15,31,.08) 0%,rgba(44,15,31,0) 30%,rgba(44,15,31,0) 55%,rgba(44,15,31,.35) 80%,rgba(44,15,31,.6) 100%)}
+.hero-frame{position:absolute;z-index:1;inset:calc(84px + env(safe-area-inset-top,0px)) clamp(10px,2vw,28px) clamp(10px,2vw,28px);border:1px solid rgba(255,255,255,.55);border-radius:clamp(24px,3vw,44px);pointer-events:none;box-shadow:inset 0 0 60px rgba(255,255,255,.08)}
+.h-facts b{font-family:var(--sans);font-weight:500;color:#fff}
+.h-facts span{color:#f0eefc}
+.h-facts::before{background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.6),rgba(255,255,255,0))}
+.lead2{color:#fff}
+/* posters in the new palette */
+.poster.v1::before{background:radial-gradient(ellipse at 50% 85%,rgba(255,255,255,.9),transparent 60%),linear-gradient(170deg,#d9d6f6 0%,#ece3f4 55%,#f7eef4 100%)}
+.poster.v2::before{background:radial-gradient(circle at 50% 78%,rgba(255,255,255,.95),transparent 45%),linear-gradient(180deg,#c9c8f1 0%,#e3dcf5 55%,#f4ecf6 100%)}
+.poster.v3::before{background:radial-gradient(circle at 50% 80%,rgba(255,255,255,1),transparent 55%),linear-gradient(170deg,#f3eefb 0%,#e2dcf6 60%,#d2cdf2 100%)}
+.p-pill,.p-box{background:var(--plum)!important;color:#fff!important}
+.p-pill svg{color:#d9d6f6}
+.poster{color:var(--plum)}
+.p-sub{color:#4a2a3c}
+.p-div{color:var(--peri-d)}
+.p-div::before{background:linear-gradient(90deg,transparent,var(--peri-d))}.p-div::after{background:linear-gradient(90deg,var(--peri-d),transparent)}
+.poster .pin{background:radial-gradient(circle at 35% 30%,#fff,#c9c8f1 60%,#8b8cd4)}
+.ag h3{color:var(--plum)!important}
+.agenda .ag{border-bottom-color:rgba(102,104,184,.2)}
+.final img.lg{box-shadow:none}
+.sup-btn{background:rgba(110,112,190,.92);border-color:rgba(255,255,255,.5);color:#fff}
+.price .sum{color:#fff;font-weight:300;font-family:var(--sans)}
+.facts b{color:#fff}
+.quote-by{color:#fff!important}
+@media (max-width:960px){.hero2-in{padding-top:44vh}}
+@media (max-width:640px){.hero2-in{padding-top:50vh}.hero2 h1{font-size:clamp(46px,13vw,64px)}}
 </style>
 </head>
 <body>
@@ -647,28 +775,30 @@ h3{font-family:var(--sans);font-weight:800;letter-spacing:-.01em}
 </nav>
 
 <main>
-  <section class="hero" id="top">
-    <div class="seeds" id="seeds" aria-hidden="true"></div>
-    <div class="hero-in">
-      <div class="hero-text">
+  <section class="hero hero2" id="top">
+    <canvas id="scene" aria-hidden="true"></canvas>
+    <div class="hero-frame" aria-hidden="true"></div>
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero2-in">
+      <div class="h-left">
         <span class="chip"><i></i>от Академии Классической Мудрости</span>
         <h1>Клуб <span class="grad">медитации</span></h1>
         <p class="sub">Уникальная система медитаций с историей в 2,5 тысячи лет</p>
-        <p class="lead">Для новичков и продвинутых практиков: медитации с сопровождением преподавателей, курсы в записи и в прямом эфире.</p>
-        <div class="facts">
-          <div><b>2,5 тысячи лет</b><span>непрерывной линии передачи</span></div>
-          <div><b>2 раза в неделю</b><span>живые медитации в группе</span></div>
-          <div><b>от 5 €</b><span>в месяц</span></div>
-        </div>
+      </div>
+      <div class="h-right">
+        <p class="lead2">Для новичков и продвинутых практиков: медитации с сопровождением преподавателей, курсы в записи и в прямом эфире.</p>
         <div class="ctas">
           <a class="btn btn-gold" href="https://t.me/Meditation_club_acm_bot?start=649c00d0dbae8e42c708b9d4">Вступить в Клуб <span class="ar">→</span></a>
           <a class="btn btn-ghost" href="#club">Что внутри</a>
         </div>
-      </div>
-      <div class="hero-logo">
-        <div class="orb" aria-hidden="true"><span class="aura"></span><span class="ring"></span><img src="img/logo.svg" width="400" height="400" alt=""></div>
         <p class="breath" aria-live="off"><i></i><span>Сделайте паузу<span class="bl"> вместе с нами</span>:</span> <b id="breathTxt">вдох</b></p>
       </div>
+    </div>
+    <div class="h-facts">
+      <div><b>2,5 тысячи лет</b><span>непрерывной линии передачи</span></div>
+      <div><b>2 раза в неделю</b><span>живые медитации в группе</span></div>
+      <div><b>Все курсы Клуба</b><span>в записи в приложении</span></div>
+      <div><b>от 5 €</b><span>в месяц</span></div>
     </div>
   </section>
 
@@ -1063,6 +1193,7 @@ h3{font-family:var(--sans);font-weight:800;letter-spacing:-.01em}
   </button>
 </div>
 
+<script src="hero.js" defer></script>
 <script>
 (function(){
   var btn=document.getElementById('menuBtn'),nav=document.getElementById('mnav');
