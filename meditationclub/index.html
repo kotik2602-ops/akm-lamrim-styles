@@ -1177,6 +1177,13 @@ h1,h2,h3,h4,.p-title,.sub-h,.stat .num,.price .sum,.tier .sum,.facts b,.dock b,.
 .poster.pimg::before{display:none!important}
 .poster.pimg img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}
 .nw:hover .poster.pimg img{transform:scale(1.03)}
+.cream .howl li{color:#2a2230!important;font-weight:600}
+.tgrid.trow{display:flex!important;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 18px;align-items:flex-start;scrollbar-width:thin;scrollbar-color:#ffd98a transparent;-webkit-overflow-scrolling:touch}
+.tgrid.trow .tc{flex:0 0 clamp(230px,22vw,270px);scroll-snap-align:start;opacity:1!important;transform:none!important}
+@media (max-width:760px){.tgrid.trow .tc{flex-basis:72vw}}
+.tgrid.trow .tc.lead-t{display:block!important}
+.tgrid.trow .tc.lead-t img{height:auto!important;aspect-ratio:1!important}
+.tgrid.trow .tc .tc-b{padding:16px 18px 18px!important;align-content:start!important}
 /* key block */
 .keyblock{grid-template-columns:auto minmax(0,1fr)!important;max-width:940px;margin-inline:auto;gap:clamp(32px,5vw,72px)!important;padding:clamp(30px,3.6vw,52px) clamp(30px,4.6vw,68px)!important;align-items:center}
 .keyart{width:clamp(84px,7.4vw,112px)!important;margin:0!important}
@@ -1488,7 +1495,7 @@ h1,h2,h3,h4,.p-title,.sub-h,.stat .num,.price .sum,.tier .sum,.facts b,.dock b,.
         </div>
         <p>Опытные практики и тренеры Академии Классической Мудрости. Нажмите «Подробнее», чтобы узнать о каждом.</p>
       </div>
-      <div class="tgrid"><article class="tc lead-t reveal"><img src="img/t/t01.jpg" alt="Питер Мёртл" loading="lazy" width="320" height="320">
+      <div class="tgrid trow" id="stripT"><article class="tc lead-t reveal"><img src="img/t/t01.jpg" alt="Питер Мёртл" loading="lazy" width="320" height="320">
 <div class="tc-b"><h3>Питер Мёртл</h3><p class="role">Старший преподаватель ACI, почётный преподаватель и спикер Клуба</p>
 <details><summary>Подробнее</summary><ul class="dots sm"><li>Практикует и преподает медитацию и йогу более 13 лет</li><li>Прошел 8 медитационных ретритов, каждый из которых длился месяц</li><li>Преподаватель ACI</li><li>Тренер Diamond Cutter Institute (DCI Global) и доцент Sedona College of International Management (SCIM), США, штат Аризона</li><li>Основатель ACI DACH</li><li>С 2010 года он принял участие в более чем 100 мероприятиях в качестве организатора, переводчика и тренера в Европе, Америке, Азии, России и Украине.</li><li>Переводит древние тексты мудрости на немецкий язык</li><li>Вместе со своей женой Марией основал благотворительный фонд Gold Club, который за 3 года собрал более $1000000</li></ul></details></div></article>
 <article class="tc reveal"><img src="img/t/t02.jpg" alt="Инна Катунина" loading="lazy" width="320" height="320">
@@ -1527,6 +1534,7 @@ h1,h2,h3,h4,.p-title,.sub-h,.stat .num,.price .sum,.tier .sum,.facts b,.dock b,.
 <article class="tc reveal"><img src="img/t/t15.jpg" alt="Анна Волчок" loading="lazy" width="320" height="320">
 <div class="tc-b"><h3>Анна Волчок</h3><p class="role">Лектор Клуба</p>
 <details><summary>Подробнее</summary><ul class="dots sm"><li>Лектор, куратор и волонтёр AКМ</li><li>Закончила 6 курсов преподавателей ACI, из них 5 как куратор</li><li>Изучаю ACI с 2018 года, успешно закончила первые 18 ACI курсов в 2022 году</li><li>Регулярно медитирую с 2020 года, прошла 2 месячных молчаливых ретрита.</li></ul></details></div></article></div>
+      <div class="strip-nav" data-for="stripT"><button aria-label="Назад">←</button><button aria-label="Вперёд">→</button></div>
     </div>
   </section>
 
