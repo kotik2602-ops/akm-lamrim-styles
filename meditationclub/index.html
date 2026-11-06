@@ -1219,16 +1219,16 @@ h1,h2,h3,h4,.p-title,.sub-h,.stat .num,.price .sum,.tier .sum,.facts b,.dock b,.
 <script>/* AUTOSLIDE: review strips scroll themselves, pause on hover/touch/video */
 document.addEventListener('DOMContentLoaded',function(){
   if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
-  ['stripV','stripS'].forEach(function(id,n){
-    var st=document.getElementById(id);if(!st)return;var hold=false,t;
+  [document.getElementById('stripV'),document.getElementById('stripS'),document.querySelector('.news')].forEach(function(st,n){
+    if(!st)return;var id=st.id,hold=false,t;
     function pause(){hold=true;clearTimeout(t);t=setTimeout(function(){hold=false},6000);}
     ['pointerenter','touchstart','focusin','wheel'].forEach(function(e){st.addEventListener(e,pause,{passive:true});});
     st.addEventListener('pointerleave',function(){clearTimeout(t);t=setTimeout(function(){hold=false},1500);});
-    var nav=document.querySelector('.strip-nav[data-for="'+id+'"]');if(nav)nav.addEventListener('click',pause);
+    var nav=id&&document.querySelector('.strip-nav[data-for="'+id+'"]');if(nav)nav.addEventListener('click',pause);
     setTimeout(function(){setInterval(function(){
-      if(hold||document.hidden||st.querySelector('iframe'))return;
+      if(hold||document.hidden||st.querySelector('iframe')||st.scrollWidth<=st.clientWidth+8)return;
       var r=st.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;
-      var it=st.children[0];if(!it)return;var step=it.getBoundingClientRect().width+14;
+      var it=st.children[0];if(!it)return;var step=it.getBoundingClientRect().width+(parseFloat(getComputedStyle(st).columnGap)||14);
       if(st.scrollLeft+st.clientWidth>=st.scrollWidth-8)st.scrollTo({left:0,behavior:'smooth'});
       else st.scrollBy({left:step,behavior:'smooth'});
     },3800);},n*1900);
