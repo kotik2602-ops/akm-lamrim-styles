@@ -1012,6 +1012,36 @@ h2 .grad{font-size:1.12em}
 @keyframes haloB{0%,100%{transform:scale(.85);opacity:.7}45%{transform:scale(1.15);opacity:1}}
 @media (max-width:700px){.ress.road .res,.ress.road .res:nth-child(odd of .res),.ress.road .res:nth-child(even of .res){width:auto;margin-left:52px!important;margin-right:0!important}.road-bed{stroke-width:16}}
 
+/* ---- hero: stars with meditating figure ---- */
+.hero3 .seeds{display:none!important}
+.stars{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden}
+.stars i{position:absolute;width:var(--z);height:var(--z);margin:calc(var(--z)/-2) 0 0 calc(var(--z)/-2)}
+.stars .spark{position:absolute;left:50%;top:50%;width:30px;height:30px;margin:-15px 0 0 -15px;opacity:0;
+ background:radial-gradient(circle,#fff 0,#fff 9%,rgba(255,240,200,.6) 16%,transparent 34%),
+ conic-gradient(from 0deg,transparent 0 40deg,transparent 0);
+ -webkit-mask:none;animation:spark var(--d) ease-in-out forwards}
+.stars .spark::before,.stars .spark::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 44%,rgba(255,250,225,.95) 50%,transparent 56%),linear-gradient(0deg,transparent 44%,rgba(255,250,225,.95) 50%,transparent 56%);border-radius:50%;filter:drop-shadow(0 0 6px rgba(255,220,150,.9))}
+.stars .spark::after{transform:rotate(45deg) scale(.6)}
+.stars .orb{position:absolute;inset:0;border-radius:50%;display:grid;place-items:center;opacity:0;transform:scale(.15);
+ background:radial-gradient(circle at 50% 45%,rgba(255,250,232,.95) 0,rgba(255,226,170,.75) 34%,rgba(255,190,170,.35) 58%,rgba(255,180,200,0) 72%);
+ box-shadow:0 0 40px 6px rgba(255,214,150,.35);animation:orb var(--d) ease-in-out forwards}
+.stars .orb svg{width:46%;height:46%;fill:#b0683a;opacity:.85;filter:drop-shadow(0 0 4px rgba(255,240,200,.9));margin-top:8%}
+@keyframes spark{0%{opacity:0;transform:scale(.2) rotate(0)}10%{opacity:1;transform:scale(1) rotate(30deg)}18%{opacity:.5;transform:scale(.7) rotate(50deg)}26%{opacity:1;transform:scale(1.25) rotate(80deg)}40%{opacity:0;transform:scale(2.2) rotate(120deg)}100%{opacity:0}}
+@keyframes orb{0%,22%{opacity:0;transform:scale(.15)}45%{opacity:1;transform:scale(1)}58%{transform:scale(.94)}72%{opacity:1;transform:scale(1.02)}100%{opacity:0;transform:scale(1.12)}}
+/* ---- hero: breathing logo ---- */
+.hlogo{position:relative;width:clamp(130px,min(15vw,22vh),200px);aspect-ratio:1;margin:clamp(6px,1.4vh,18px) 0 clamp(4px,1vh,12px);transition:transform 4s cubic-bezier(.45,0,.4,1)}
+.hlogo img{position:absolute;inset:0;width:100%;height:100%;border-radius:50%}
+.hl-base{box-shadow:0 0 0 1px rgba(255,217,138,.6),0 18px 50px -14px rgba(120,50,90,.55)}
+.hl-heart{-webkit-mask:radial-gradient(circle at 50% 42.5%,#000 0,#000 13%,transparent 18.5%);mask:radial-gradient(circle at 50% 42.5%,#000 0,#000 13%,transparent 18.5%);transform-origin:50% 42.5%;transition:transform 4s cubic-bezier(.45,0,.4,1),filter 4s ease}
+.hl-glow{position:absolute;left:50%;top:44%;width:44%;aspect-ratio:1;transform:translate(-50%,-50%) scale(.5);border-radius:50%;background:radial-gradient(circle,rgba(255,255,240,.95) 0,rgba(255,220,140,.55) 26%,rgba(255,160,150,0) 66%);mix-blend-mode:screen;opacity:.35;transition:transform 4s cubic-bezier(.45,0,.4,1),opacity 4s ease;pointer-events:none}
+.hl-aura{position:absolute;inset:-22%;border-radius:50%;background:radial-gradient(circle,rgba(255,236,190,.55) 0,rgba(255,190,160,.22) 45%,transparent 70%);opacity:.5;transform:scale(.88);transition:transform 4s ease,opacity 4s ease}
+.hlogo:not(.inhale),.hlogo:not(.inhale) *{transition-duration:6s}
+.hlogo.inhale{transform:scale(1.06)}
+.hlogo.inhale .hl-heart{transform:scale(1.2);filter:brightness(1.18) saturate(1.2) drop-shadow(0 0 8px rgba(255,220,150,.9))}
+.hlogo.inhale .hl-glow{opacity:1;transform:translate(-50%,-50%) scale(1.25)}
+.hlogo.inhale .hl-aura{opacity:1;transform:scale(1.05)}
+@media (prefers-reduced-motion:reduce){.hlogo .hl-glow{opacity:.7}}
+
 .sr-only{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 /* oval title */
 .banner .wrap{gap:34px}
@@ -1154,11 +1184,12 @@ img[src$="logo.jpg"]{border-radius:50%!important;object-fit:cover;background:non
 <main>
   <section class="hero hero3" id="top">
     <div class="sun" aria-hidden="true"></div>
-    <div class="seeds" id="seeds" aria-hidden="true"></div>
+    <div class="stars" id="stars" aria-hidden="true"></div>
     <div class="hero3-in">
       <svg class="arc" viewBox="0 0 720 80" aria-hidden="true"><path d="M20 70 Q360 -10 700 70" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1"/><g class="node" transform="translate(150 36)"><circle r="17" fill="rgba(255,255,255,.22)" stroke="rgba(255,255,255,.7)"/><g fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M0 7C-3 4-3-1 0-5c3 4 3 9 0 12z"/><path d="M0 7c-3-1-7-3-8-8 4 0 7 3 8 8zM0 7c3-1 7-3 8-8-4 0-7 3-8 8z"/></g></g><g class="node" transform="translate(290 20)"><circle r="17" fill="rgba(255,255,255,.22)" stroke="rgba(255,255,255,.7)"/><g fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle r="4"/><path d="M0-9v2M0 7v2M-9 0h2M7 0h2M-6.4-6.4l1.4 1.4M5 5l1.4 1.4M-6.4 6.4l1.4-1.4M5-5l1.4-1.4"/></g></g><g class="node" transform="translate(430 20)"><circle r="17" fill="rgba(255,255,255,.22)" stroke="rgba(255,255,255,.7)"/><g fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M0 6C-5 2-8-1-7.5-4.2-7-7-3.5-7.5 0-4c3.5-3.5 7-3 7.5-.2C8-1 5 2 0 6z"/></g></g><g class="node" transform="translate(570 36)"><circle r="17" fill="rgba(255,255,255,.22)" stroke="rgba(255,255,255,.7)"/><g fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.5A7 7 0 01-3-6a7 7 0 107 10.5z"/></g></g></svg>
       <span class="chip"><i></i>от Академии Классической Мудрости</span>
       <h1>Клуб <span class="grad">медитации</span></h1>
+      <div class="hlogo" aria-hidden="true"><span class="hl-aura"></span><img class="hl-base" src="img/logo-512.png" alt="" width="512" height="512"><img class="hl-heart" src="img/logo-512.png" alt="" width="512" height="512"><span class="hl-glow"></span></div>
       <p class="sub">Уникальная система медитаций с историей в 2,5 тысячи лет</p>
       <p class="lead3">Для новичков и продвинутых практиков: медитации с сопровождением преподавателей, курсы в записи и в прямом эфире.</p>
       <div class="ctas">
@@ -1608,7 +1639,16 @@ img[src$="logo.jpg"]{border-radius:50%!important;object-fit:cover;background:non
   var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var bt=document.getElementById('breathTxt');
   if(bt&&!reduce){var ph=0;function tick(){bt.style.opacity=0;setTimeout(function(){bt.textContent=ph?'выдох':'вдох';bt.style.opacity=1;},300);var d=ph?6000:4000;ph=1-ph;setTimeout(tick,d);}tick();}
-  var s=document.getElementById('seeds');
+  var sf=document.getElementById('stars');
+  if(sf&&!reduce){var SIL='<svg viewBox="-16 -32 32 34"><circle cx="0" cy="-25" r="4.6"/><path d="M0-19.5c-4 0-6 2.5-6.6 5.7l-1.1 5.5-5 3c-1.7 1-1 3.4 1 3.4h23.4c2 0 2.7-2.4 1-3.4l-5-3-1.1-5.5C6-17 4-19.5 0-19.5z"/></svg>';
+    var mob=window.innerWidth<700,N=mob?6:11,k=0;
+    function spot(){var x,y,t=0;do{x=3+Math.random()*94;y=15+Math.random()*75;t++;}while(t<30&&x>22&&x<78&&y>18&&y<92);return [x,y];}
+    function star(){var e=document.createElement('i'),q=spot(),z=mob?(46+Math.random()*30):(60+Math.random()*60),d=7+Math.random()*5;
+      e.innerHTML='<b class="spark"></b><b class="orb">'+SIL+'</b>';e.style.left=q[0]+'%';e.style.top=q[1]+'%';e.style.setProperty('--z',z+'px');e.style.setProperty('--d',d+'s');
+      sf.appendChild(e);setTimeout(function(){e.remove();star();},d*1000);}
+    for(var j=0;j<N;j++)setTimeout(star,j*(mob?1300:850));}
+  var hl=document.querySelector('.hlogo');
+  if(hl&&!reduce){var inh=1;function br(){hl.classList.toggle('inhale',inh===1);var d=inh?4000:6000;inh=1-inh;setTimeout(br,d);}br();}
   if(s&&!reduce){for(var i=0;i<26;i++){var x=document.createElement('i');x.style.left=(Math.random()*100)+'%';x.style.setProperty('--s',(4+Math.random()*7)+'px');x.style.setProperty('--d',(9+Math.random()*10)+'s');x.style.setProperty('--dl',(-Math.random()*18)+'s');x.style.setProperty('--dx',(Math.random()*120-60)+'px');s.appendChild(x);}}
   document.querySelectorAll('.yt').forEach(function(b){
     b.addEventListener('click',function(){var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+b.dataset.id+'?autoplay=1&rel=0';f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;f.title=b.getAttribute('aria-label')||'Видео';f.style.cssText='position:absolute;inset:0;width:100%;height:100%;border:0';b.replaceWith(f);});
