@@ -1,0 +1,978 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Клуб медитации АКМ</title>
+<meta name="description" content="Клуб медитации Академии Классической Мудрости: уникальная система медитаций с историей в 2,5 тысячи лет для новичков и продвинутых практиков.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Клуб медитации Академии Классической Мудрости">
+<meta property="og:description" content="Медитации с сопровождением преподавателей, курсы в записи и в прямом эфире, поддержка единомышленников. От 5 € в месяц.">
+<meta property="og:image" content="img/logo-512.png">
+<meta name="theme-color" content="#1a1012">
+<link rel="icon" type="image/svg+xml" href="img/logo.svg">
+<link rel="icon" type="image/png" href="img/logo-sm.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap">
+<style>
+:root{
+  color-scheme: dark;
+  --ink:#1a1012;--ink-2:#24161a;--ink-3:#2f1d22;
+  --burg:#69232d;--burg-2:#8a3340;
+  --gold:#ddae35;--gold-d:#a8780f;--gold-l:#f3d991;
+  --rose:#e8b9a8;--rose-l:#f6dcd2;
+  --sky:#9fc3dc;
+  --cream:#f5efe6;--cream-2:#ece3d5;--white:#fffdf9;
+  --text-d:#1f1416;--text-dm:#5a4649;--text-l:#f7efe6;--text-lm:#d3c6c1;
+  --line-l:rgba(247,239,230,.14);--line-d:rgba(31,20,22,.13);
+  --r-mega:40px;--r-card:28px;
+  --pad:clamp(16px,4vw,56px);
+  --display:'Unbounded',system-ui,sans-serif;
+  --sans:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--ink);isolation:isolate;color:var(--text-l);font-family:var(--sans);font-size:17px;font-weight:500;line-height:1.62;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:76rem;margin:0 auto;padding:0 var(--pad)}
+.narrow{max-width:58rem}
+.grad{background:linear-gradient(100deg,var(--gold-l) 0%,var(--gold) 45%,var(--rose) 100%);-webkit-background-clip:text;background-clip:text;color:transparent!important}
+.cream .grad{background-image:linear-gradient(100deg,var(--burg) 0%,var(--burg-2) 50%,var(--gold-d) 100%)}
+.eyebrow{font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.cream .eyebrow{color:var(--gold-d)}
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-.02em;line-height:1.1;text-wrap:balance}
+h2{font-size:clamp(28px,3.4vw,50px)}
+h3{font-size:clamp(18px,1.6vw,22px);line-height:1.2}
+b,strong{font-weight:800}
+.dark b{color:var(--gold-l)}
+.cream b{color:var(--burg)}
+.prose{display:grid;gap:14px;max-width:46rem}
+.note{font-size:14.5px;opacity:.85}
+
+/* buttons */
+.btn{position:relative;overflow:hidden;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 28px;border-radius:999px;font-family:var(--sans);font-weight:800;font-size:16px;letter-spacing:.01em;cursor:pointer;border:0;transition:transform .25s ease,box-shadow .25s ease,color .3s ease;text-align:center;line-height:1.2}
+.btn:hover{transform:translateY(-2px)}
+.btn .ar{font-family:var(--display);font-weight:500}
+.btn-gold{background:linear-gradient(120deg,var(--gold-l),var(--gold));color:var(--ink);animation:btnPulse 2.8s ease-in-out infinite}
+.btn-gold::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:38%;background:linear-gradient(100deg,rgba(255,250,230,0),rgba(255,250,230,.75),rgba(255,250,230,0));transform:skewX(-20deg);animation:btnShine 3.6s ease-in-out infinite}
+.btn-gold:hover{animation:none;box-shadow:0 14px 34px -8px rgba(221,174,53,.8),0 0 0 4px rgba(243,217,145,.35)}
+@keyframes btnPulse{0%,100%{box-shadow:0 10px 28px -10px rgba(221,174,53,.7),0 0 0 0 rgba(221,174,53,0)}50%{box-shadow:0 12px 34px -8px rgba(221,174,53,.85),0 0 0 7px rgba(221,174,53,.18)}}
+@keyframes btnShine{0%,62%{left:-60%}100%{left:130%}}
+.btn-ghost{border:1.5px solid rgba(247,239,230,.5);color:var(--text-l);background:rgba(26,16,18,.25);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.btn-ghost::before{content:"";position:absolute;inset:0;background:var(--gold);transform:scaleX(0);transform-origin:left center;transition:transform .35s ease;z-index:-1}
+.btn-ghost:hover{color:var(--ink);border-color:var(--gold)}
+.btn-ghost:hover::before{transform:scaleX(1)}
+.btn-dark{background:var(--ink);color:var(--gold-l)}
+.btn-dark:hover{box-shadow:0 12px 30px -10px rgba(26,16,18,.7)}
+.btn-line-d{border:1.5px solid var(--text-d);color:var(--text-d);background:transparent}
+.btn-line-d::before{content:"";position:absolute;inset:0;background:var(--text-d);transform:scaleX(0);transform-origin:left center;transition:transform .35s ease;z-index:-1}
+.btn-line-d:hover{color:var(--cream)}
+.btn-line-d:hover::before{transform:scaleX(1)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.hdr{position:fixed;top:0;left:0;right:0;z-index:50;padding:calc(12px + env(safe-area-inset-top,0px)) var(--pad) 0;pointer-events:none}
+.hdr-in{pointer-events:auto;max-width:80rem;margin:0 auto;display:flex;align-items:center;gap:14px;background:rgba(26,16,18,.84);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(247,239,230,.1);border-radius:999px;padding:7px 8px 7px 10px;box-shadow:0 18px 40px -24px rgba(0,0,0,.8)}
+.brand{display:flex;align-items:center;gap:10px;min-width:0;flex-shrink:0}
+.brand img{width:44px;height:44px;border-radius:50%;background:var(--white);padding:2px}
+.brand-txt{display:grid;line-height:1.2}
+.brand-txt b{font-family:var(--display);font-weight:700;font-size:14px;color:var(--white);white-space:nowrap}
+.brand-txt span{font-size:11.5px;color:var(--text-lm);white-space:nowrap}
+.dnav{display:flex;gap:20px;font-size:14px;font-weight:700;color:var(--text-lm);margin-left:auto;white-space:nowrap}
+.dnav a:hover{color:var(--gold-l)}
+.langs{display:flex;gap:2px;font-size:12px;font-weight:800;margin-left:6px}
+.langs a{padding:6px 9px;border-radius:999px;color:var(--text-lm)}
+.langs a:hover{color:var(--gold-l)}
+.langs a.on{background:var(--gold);color:var(--ink)}
+.menu-btn{display:none;align-items:center;gap:8px;min-height:42px;padding:0 15px;border-radius:999px;border:1px solid rgba(247,239,230,.22);background:transparent;color:var(--text-l);font-family:var(--sans);font-weight:700;font-size:14px;cursor:pointer}
+.burger{position:relative;width:16px;height:2px;background:currentColor;border-radius:2px}
+.burger::before,.burger::after{content:"";position:absolute;left:0;width:16px;height:2px;background:currentColor;border-radius:2px;transition:transform .25s ease}
+.burger::before{top:-5px}.burger::after{top:5px}
+.menu-btn[aria-expanded="true"] .burger{background:transparent}
+.menu-btn[aria-expanded="true"] .burger::before{transform:translateY(5px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] .burger::after{transform:translateY(-5px) rotate(-45deg)}
+.hdr .btn{min-height:42px;padding:0 20px;font-size:14px;flex-shrink:0;animation:none;box-shadow:0 6px 18px -8px rgba(221,174,53,.7)}
+.mnav{position:fixed;left:var(--pad);right:var(--pad);top:80px;z-index:60;max-width:26rem;margin-left:auto;display:grid;gap:2px;padding:10px;background:rgba(36,22,26,.97);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line-l);border-radius:24px;box-shadow:0 30px 60px -20px rgba(0,0,0,.8)}
+.mnav[hidden]{display:none}
+.mnav > a{padding:12px 16px;border-radius:16px;font-weight:700;font-size:16px;color:var(--text-l)}
+.mnav > a:hover,.mnav > a:focus-visible{background:rgba(221,174,53,.14);color:var(--gold-l)}
+.mnav .langs{display:none;margin:8px 6px 4px;padding-top:10px;border-top:1px solid var(--line-l)}
+@media (max-width:1240px){.dnav{display:none}.menu-btn{display:inline-flex;margin-left:auto}}
+@media (max-width:640px){.brand-txt{display:none}.hdr-in>.langs{display:none}.mnav .langs{display:flex}}
+@media (max-width:380px){.menu-txt{display:none}.menu-btn{padding:0 13px}.hdr .btn{padding:0 15px;font-size:13px}}
+
+/* fixed mountain backdrop under dark sections */
+.sky-bg{position:fixed;inset:0;z-index:-1;pointer-events:none;background:
+  linear-gradient(180deg,rgba(26,16,18,.5) 0%,rgba(26,16,18,.66) 55%,rgba(26,16,18,.8) 100%),
+  url("../108000arias/img/mountains.jpg") center 35%/cover no-repeat}
+
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(ellipse at 72% 38%,rgba(243,217,145,.34),transparent 55%),
+  linear-gradient(180deg,rgba(105,35,45,.35) 0%,rgba(26,16,18,0) 40%,rgba(26,16,18,.55) 85%,rgba(26,16,18,.9) 100%),
+  linear-gradient(90deg,rgba(26,16,18,.7) 0%,rgba(26,16,18,.25) 60%,rgba(26,16,18,0) 100%)}
+.hero-in{position:relative;z-index:2;max-width:80rem;width:100%;margin:0 auto;padding:118px var(--pad) 64px;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(28px,4vw,64px);align-items:center}
+.hero-text{display:grid;gap:18px;justify-items:start}
+.chip{display:inline-flex;align-items:center;gap:10px;padding:8px 18px;border-radius:999px;background:rgba(26,16,18,.5);border:1px solid rgba(243,217,145,.4);font-size:14px;font-weight:700;color:var(--gold-l);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.chip i{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px var(--gold)}
+.hero h1{font-size:clamp(44px,6.4vw,96px);font-weight:800;line-height:.98;color:var(--white);letter-spacing:-.035em;text-shadow:0 8px 50px rgba(26,16,18,.5)}
+.hero h1 .grad{display:block}
+.hero .sub{font-family:var(--display);font-weight:600;font-size:clamp(19px,2vw,28px);line-height:1.25;color:var(--cream);max-width:24em;text-shadow:0 2px 20px rgba(26,16,18,.7)}
+.hero .lead{max-width:36rem;color:#fff;font-size:17px;font-weight:600;padding:12px 20px;border-radius:22px;background:rgba(26,16,18,.45);border:1px solid rgba(243,217,145,.28);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.facts{display:flex;flex-wrap:wrap;gap:10px}
+.facts div{display:grid;padding:10px 20px;border-radius:22px;border:1px solid var(--line-l);background:rgba(26,16,18,.58);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);line-height:1.3}
+.facts b{font-family:var(--display);font-weight:700;font-size:18px;color:var(--gold-l)}
+.facts span{font-size:13px;color:var(--text-lm)}
+.hero-logo{position:relative;justify-self:center;width:min(100%,460px);aspect-ratio:1}
+.hero-logo .halo{position:absolute;inset:6%;border-radius:50%;background:radial-gradient(circle,rgba(255,250,235,.95) 0%,rgba(255,244,214,.85) 48%,rgba(243,217,145,.25) 66%,transparent 72%);animation:halo 5s ease-in-out infinite alternate}
+.hero-logo img{position:relative;width:100%;height:100%;object-fit:contain;animation:floaty 7s ease-in-out infinite alternate}
+.hero-logo .ring{position:absolute;inset:-2%;border-radius:50%;border:1px dashed rgba(243,217,145,.45);animation:spin 60s linear infinite}
+@keyframes halo{from{transform:scale(.96);opacity:.85}to{transform:scale(1.04);opacity:1}}
+@keyframes floaty{from{transform:translateY(4px)}to{transform:translateY(-8px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.seeds{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:1}
+.seeds i{position:absolute;bottom:-20px;width:var(--s);height:var(--s);border-radius:50% 50% 50% 50%/60% 60% 40% 40%;background:radial-gradient(circle at 35% 30%,#fff3c4,var(--gold) 60%,var(--gold-d));opacity:0;animation:seedUp var(--d) linear infinite;animation-delay:var(--dl);box-shadow:0 0 10px rgba(243,217,145,.7)}
+@keyframes seedUp{0%{opacity:0;transform:translate(0,0) rotate(0)}10%{opacity:.9}85%{opacity:.6}100%{opacity:0;transform:translate(var(--dx),-105vh) rotate(260deg)}}
+
+/* sections */
+.mega-wrap{padding:0 clamp(8px,1.4vw,20px)}
+.mega{border-radius:var(--r-mega);margin:0 auto;max-width:1440px;position:relative}
+.cream{background:var(--cream);color:var(--text-d)}
+.dark{color:var(--text-l)}
+.burgm{background:linear-gradient(170deg,rgba(58,18,25,.8) 0%,rgba(36,22,26,.7) 55%,rgba(26,16,18,.66) 100%);color:var(--text-l);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+.sec{padding:clamp(60px,8vw,112px) 0;scroll-margin-top:84px;position:relative}
+.mega.sec{margin-top:clamp(10px,1.4vw,20px);margin-bottom:clamp(10px,1.4vw,20px)}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:18px 40px;flex-wrap:wrap;margin-bottom:clamp(30px,4vw,48px)}
+.sec-head > div{max-width:46rem;min-width:0}
+.sec-head h2{margin-top:14px}
+.sec-head > p{max-width:25rem;min-width:0;font-size:16px;color:var(--text-dm)}
+.dark .sec-head > p,.burgm .sec-head > p{color:var(--text-lm)}
+.cream p,.cream li{color:var(--text-dm)}
+.cream h3{color:var(--text-d)}
+.dark p,.dark li,.burgm p,.burgm li{color:var(--text-lm)}
+.dark h3,.burgm h3{color:var(--text-l)}
+
+.card{border-radius:var(--r-card);padding:clamp(24px,3vw,40px);min-width:0;position:relative}
+.card-w{background:var(--white);box-shadow:0 30px 60px -40px rgba(105,35,45,.35)}
+.card-k{background:linear-gradient(160deg,var(--ink-3) 0%,var(--ink) 75%);color:var(--text-l);overflow:hidden}
+.card-k::before{content:"";position:absolute;width:320px;height:320px;right:-120px;top:-120px;border-radius:50%;background:radial-gradient(circle,rgba(221,174,53,.32),transparent 65%);pointer-events:none}
+.card-k > *{position:relative}
+.cream .card-k p,.cream .card-k li{color:var(--text-lm)}
+.cream .card-k b{color:var(--gold-l)}
+.cream .card-k h3{color:var(--text-l)}
+.glass{background:rgba(40,24,28,.62);border:1px solid var(--line-l);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.tag{display:inline-flex;align-items:center;padding:8px 16px;border-radius:999px;font-weight:800;font-size:13px;line-height:1.2;letter-spacing:.02em}
+.t-gold{background:linear-gradient(120deg,#f8e6b4,#f3cfc0);color:var(--burg)}
+.t-burg{background:var(--burg);color:var(--gold-l)}
+.t-dark{background:var(--ink);color:var(--cream)}
+.callout{font-family:var(--display);font-weight:600;font-size:clamp(19px,2vw,26px);line-height:1.32;letter-spacing:-.015em}
+.callout-box{margin-top:clamp(24px,3vw,36px);border-radius:var(--r-card);padding:clamp(24px,3.4vw,44px);position:relative;overflow:hidden}
+.cream .callout-box{background:linear-gradient(120deg,#f8e6b4 0%,#f3cfc0 100%);color:var(--burg)}
+.dark .callout-box,.burgm .callout-box{background:linear-gradient(120deg,rgba(221,174,53,.16),rgba(232,185,168,.08));border:1px solid rgba(221,174,53,.35);color:var(--text-l)}
+.callout-box::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:linear-gradient(180deg,var(--gold),var(--burg))}
+.callout-box .callout{color:inherit}
+.big{font-family:var(--display);font-weight:600;font-size:clamp(19px,1.9vw,25px);line-height:1.3;letter-spacing:-.015em}
+.cream .big{color:var(--text-d)}
+.dots{list-style:none;display:flex;flex-direction:column}
+.dots li{display:flex;align-items:flex-start;gap:14px;padding:12px 0;border-bottom:1px solid var(--line-d);font-weight:600}
+.dark .dots li,.card-k .dots li,.burgm .dots li{border-bottom-color:var(--line-l)}
+.dots li:last-child{border-bottom:0}
+.dots li::before{content:"";flex-shrink:0;margin-top:8px;width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--burg))}
+.card-k .dots li::before,.dark .dots li::before,.burgm .dots li::before{background:linear-gradient(135deg,var(--gold-l),var(--gold))}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* thanks + mission */
+.thanks{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:16px;align-items:stretch}
+.thanks .card-w{display:flex;flex-direction:column;gap:18px;justify-content:center}
+.hand{font-family:'Caveat',cursive;font-weight:700;font-size:clamp(30px,3vw,42px);line-height:1.05;color:var(--burg);transform:rotate(-2deg);display:inline-block}
+.sprout-card{display:flex;flex-direction:column;justify-content:space-between;gap:16px;overflow:hidden}
+.sprout-card img{width:62%;margin:-20px auto -40px;filter:drop-shadow(0 0 24px rgba(160,210,110,.35));animation:floaty 6s ease-in-out infinite alternate}
+.mission{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;margin-top:16px;align-items:stretch}
+.video{position:relative;min-width:0;width:100%;aspect-ratio:16/9;border-radius:var(--r-card);overflow:hidden;background:#000;box-shadow:0 30px 60px -36px rgba(105,35,45,.6)}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.yt{position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;cursor:pointer;background:#000;display:block}
+.yt img{width:100%;height:100%;object-fit:cover;opacity:.88;transition:opacity .3s,transform .6s}
+.yt:hover img{opacity:1;transform:scale(1.03)}
+.yt .play{position:absolute;left:50%;top:50%;width:72px;height:72px;margin:-36px 0 0 -36px;border-radius:50%;background:linear-gradient(120deg,var(--gold-l),var(--gold));display:grid;place-items:center;box-shadow:0 0 0 8px rgba(221,174,53,.25),0 14px 30px -8px rgba(0,0,0,.6);transition:transform .3s}
+.yt:hover .play{transform:scale(1.08)}
+.yt .play::after{content:"";margin-left:5px;border-left:20px solid var(--ink);border-top:12px solid transparent;border-bottom:12px solid transparent}
+.yt .cap{position:absolute;left:12px;bottom:12px;padding:6px 14px;border-radius:999px;background:rgba(26,16,18,.8);color:var(--cream);font-size:13px;font-weight:700}
+
+/* results */
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.stat{container-type:inline-size;border-radius:var(--r-card);padding:clamp(22px,2.6vw,34px);display:grid;gap:6px;align-content:start;min-width:0}
+.stat .num{font-family:var(--display);font-weight:800;font-size:clamp(28px,17.5cqi,64px);line-height:1;letter-spacing:-.04em;color:var(--gold-l);white-space:nowrap}
+.stat .num small{font-size:.5em;letter-spacing:0;margin-left:4px}
+.stat .lbl{font-weight:700;color:var(--text-l)}
+.stat .sm{font-size:14px;color:var(--text-lm)}
+.stat.hl{background:linear-gradient(165deg,rgba(138,51,64,.88) 0%,rgba(105,35,45,.86) 55%,rgba(58,18,25,.85) 100%);border:0;box-shadow:0 0 0 1px rgba(221,174,53,.5),0 30px 70px -30px rgba(221,174,53,.35)}
+.chart{margin-top:16px;border-radius:var(--r-card);padding:clamp(22px,3vw,40px)}
+.chart-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 24px;margin-bottom:26px}
+.bars{--bh:210px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,3vw,40px);align-items:end;height:280px;padding-bottom:4px;border-bottom:1px solid var(--line-l)}
+.bar{display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%;gap:10px;min-width:0}
+.bar .val{font-family:var(--display);font-weight:700;font-size:clamp(16px,1.8vw,24px);color:var(--white);white-space:nowrap}
+.bar .col{flex-shrink:0;width:min(100%,150px);height:0;border-radius:18px 18px 6px 6px;background:linear-gradient(180deg,var(--gold-l) 0%,var(--gold) 45%,var(--burg-2) 100%);box-shadow:0 0 30px -6px rgba(221,174,53,.6);transition:height 1.6s cubic-bezier(.2,.8,.2,1);position:relative;overflow:hidden}
+.bar .col.part{background:linear-gradient(180deg,rgba(243,217,145,.85) 0%,rgba(221,174,53,.75) 45%,rgba(138,51,64,.8) 100%)}
+.bar .col::after{content:"";position:absolute;left:0;right:0;top:-40%;height:40%;background:linear-gradient(180deg,rgba(255,255,255,0),rgba(255,255,255,.45),rgba(255,255,255,0));animation:barShine 3.2s ease-in-out infinite}
+@keyframes barShine{0%{top:-40%}60%,100%{top:110%}}
+.bar-lbls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,3vw,40px);margin-top:12px;text-align:center}
+.bar-lbls b{display:block;font-family:var(--display);font-size:18px;color:var(--text-l)}
+.bar-lbls span{font-size:13.5px;color:var(--text-lm)}
+.growth-note{display:inline-flex;gap:10px;align-items:center;padding:8px 16px;border-radius:999px;background:rgba(221,174,53,.14);border:1px solid rgba(221,174,53,.4);color:var(--gold-l);font-weight:800;font-size:14px}
+.academy{margin-top:16px}
+.academy .mini div,.goal-split div{min-width:0;overflow-wrap:break-word}
+.ac-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px 40px;align-items:end}
+.academy .mini{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:22px}
+.academy .mini div{border-radius:20px;padding:18px 20px;background:rgba(247,239,230,.06);border:1px solid var(--line-l)}
+.academy .mini b{display:block;font-family:var(--display);font-size:clamp(26px,2.6vw,38px);line-height:1.1;color:var(--gold-l);white-space:nowrap}
+.academy .mini span{display:block;margin-top:4px;line-height:1.4;font-size:13.5px;color:var(--text-lm)}
+
+/* where money goes */
+.uses{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.use{border-radius:24px;padding:24px 22px 26px;background:var(--white);box-shadow:0 24px 50px -40px rgba(105,35,45,.45);display:grid;gap:10px;align-content:start;min-width:0;position:relative;overflow:hidden}
+.use .ic{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg,#f8e6b4,#f3cfc0);color:var(--burg)}
+.use .ic svg{width:28px;height:28px}
+.use p{font-size:15.5px;line-height:1.5}
+.use.main{grid-column:1/-1;background:linear-gradient(160deg,var(--ink-3) 0%,var(--ink) 80%);color:var(--text-l)}
+.use.main h3{color:var(--text-l)}
+.use.main p{color:var(--text-lm)}
+.use.main .ic{background:linear-gradient(135deg,var(--gold-l),var(--gold));color:var(--ink)}
+.use.main::before{content:"";position:absolute;width:300px;height:300px;right:-110px;top:-120px;border-radius:50%;background:radial-gradient(circle,rgba(221,174,53,.3),transparent 65%)}
+.use.main > *{position:relative}
+.use-note{grid-column:span 2;display:flex;align-items:center;gap:14px;border-radius:999px;border:1.5px dashed rgba(105,35,45,.35);padding:16px 28px;font-weight:600;color:var(--text-dm);border-radius:24px}
+
+/* 2027 */
+.goal{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:stretch}
+.goal-main{container-type:inline-size;display:flex;flex-direction:column;gap:18px;justify-content:center;text-align:left}
+.goal-sum{white-space:nowrap;font-family:var(--display);font-weight:800;font-size:clamp(30px,14cqi,96px);line-height:.95;letter-spacing:-.05em}
+.goal-sum small{font-size:.4em;letter-spacing:0}
+.goal-split{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.goal-split div{border-radius:20px;padding:16px 18px;background:rgba(247,239,230,.06);border:1px solid var(--line-l)}
+.goal-split b{display:block;font-family:var(--display);font-size:clamp(22px,2.2vw,30px);color:var(--gold-l);line-height:1.1}
+.goal-split span{font-size:13.5px;color:var(--text-lm)}
+.plan{list-style:none;display:grid;gap:10px}
+.plan li{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;border-radius:20px;padding:16px 18px;background:rgba(40,24,28,.6);border:1px solid var(--line-l);color:var(--text-l)!important;font-weight:600;font-size:15.5px;line-height:1.45}
+.plan li .n{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--gold-l),var(--gold));color:var(--ink);font-family:var(--display);font-size:12px;font-weight:700}
+.plan li span{color:var(--text-lm);font-weight:500;display:block;font-size:14.5px;margin-top:2px}
+.ring-wrap{display:grid;place-items:center;position:relative}
+.ring-wrap svg{width:min(100%,280px);height:auto;transform:rotate(-90deg)}
+.ring-wrap .rt{position:absolute;text-align:center}
+.ring-wrap .rt b{display:block;font-family:var(--display);font-size:clamp(28px,3vw,40px);color:var(--white);line-height:1}
+.ring-wrap .rt span{font-size:13px;color:var(--text-lm)}
+.ring-bg{fill:none;stroke:rgba(247,239,230,.1);stroke-width:14}
+.ring-fg{fill:none;stroke:url(#rg);stroke-width:14;stroke-linecap:round;stroke-dasharray:0 1000;transition:stroke-dasharray 2s cubic-bezier(.2,.8,.2,1);filter:drop-shadow(0 0 8px rgba(221,174,53,.7))}
+
+/* amounts */
+.tiers{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.tier{position:relative;border-radius:24px;padding:22px 16px 20px;background:var(--white);box-shadow:0 24px 50px -40px rgba(105,35,45,.45);display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;min-width:0;transition:transform .3s ease,box-shadow .3s ease;color:var(--text-d)}
+.tier:hover{transform:translateY(-6px);box-shadow:0 30px 60px -30px rgba(105,35,45,.55)}
+.tier .plant{height:64px;width:64px}
+.tier .sum{font-family:var(--display);font-weight:800;font-size:clamp(26px,2.4vw,34px);line-height:1;letter-spacing:-.03em;color:var(--burg)}
+.tier .sum small{font-size:.5em}
+.tier .nm{font-weight:800;font-size:14px;color:var(--text-d)}
+.tier p{font-size:13.5px;line-height:1.4}
+.tier .go{margin-top:auto;padding-top:8px;font-weight:800;font-size:13.5px;color:var(--gold-d)}
+.tier.pop{background:linear-gradient(165deg,#f8e7b8 0%,var(--gold) 70%,#c98d4f 100%)}
+.tier.pop .sum{color:var(--ink)}
+.tier.pop p{color:#3a2225}
+.tier.pop .go{color:var(--burg)}
+.tier .flag{position:absolute;top:-12px;left:50%;transform:translateX(-50%);white-space:nowrap;padding:5px 12px;border-radius:999px;font-size:11.5px;font-weight:800;background:var(--ink);color:var(--gold-l)}
+.pay-row{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:16px;margin-top:16px;align-items:stretch}
+.bonus{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center}
+.bonus img{width:110px;height:110px;border-radius:50%;box-shadow:0 0 0 4px rgba(243,217,145,.4),0 0 40px rgba(232,185,168,.6);animation:floaty 5s ease-in-out infinite alternate}
+.pay-card{display:flex;flex-direction:column;gap:14px;justify-content:center}
+.pay-card .btn{width:100%}
+
+/* stories */
+.stories{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.story{display:grid;gap:12px;min-width:0}
+.story .video{box-shadow:0 0 0 1px rgba(243,217,145,.3),0 30px 60px -30px rgba(0,0,0,.7)}
+.story h3{font-size:17px}
+.stories .story:nth-child(4),.stories .story:nth-child(5){grid-column:span 1}
+.more-row{margin-top:22px;display:flex;justify-content:center}
+
+/* community channel */
+.week{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.day{position:relative;border-radius:24px;padding:20px 18px 22px;background:var(--white);box-shadow:0 24px 50px -40px rgba(105,35,45,.45);display:grid;gap:8px;align-content:start;min-width:0;overflow:hidden}
+.day .dn{font-family:var(--display);font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--gold-d)}
+.day .emo{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,#f8e6b4,#f3cfc0);color:var(--burg)}
+.day .emo svg{width:26px;height:26px}
+.day h3{font-size:16px;line-height:1.25}
+.day p{font-size:14px;line-height:1.45}
+.day .live{justify-self:start;margin-top:4px;padding:4px 10px;border-radius:999px;background:var(--burg);color:var(--gold-l);font-size:11.5px;font-weight:800;letter-spacing:.03em;display:inline-flex;align-items:center;gap:6px}
+.day .live i{width:6px;height:6px;border-radius:50%;background:#ff7a6b;box-shadow:0 0 8px #ff7a6b;animation:blink 1.4s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:.35}50%{opacity:1}}
+.day.zoom{background:linear-gradient(165deg,#fff8e8 0%,#f8e6b4 100%)}
+.extras{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:16px;margin-top:16px;align-items:stretch}
+.photo-stack{position:relative;border-radius:var(--r-card);overflow:hidden;min-height:360px}
+.photo-stack img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity 1.4s ease,transform 6s ease-out}
+.photo-stack img.on{opacity:1;transform:scale(1)}
+.photo-stack::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(26,16,18,.85) 0%,rgba(26,16,18,0) 55%);pointer-events:none}
+.photo-stack .cap{position:absolute;z-index:2;left:22px;right:22px;bottom:20px;color:var(--white);font-family:var(--display);font-weight:600;font-size:clamp(17px,1.8vw,22px);line-height:1.3}
+.photo-stack .cap small{display:block;margin-top:6px;font-family:var(--sans);font-weight:600;font-size:13px;color:var(--rose-l)}
+.tg-card{display:flex;flex-direction:column;gap:16px;justify-content:center}
+.tg-card .free{font-family:var(--display);font-weight:800;font-size:clamp(30px,3.2vw,44px);line-height:1;color:var(--gold-l)}
+
+/* karma */
+.karma{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:16px;align-items:stretch}
+.chain{list-style:none;display:grid;gap:0;position:relative}
+.chain li{position:relative;display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start;padding:14px 0}
+.chain li .st{position:relative;z-index:1;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--gold-l),var(--gold));color:var(--ink);font-family:var(--display);font-size:13px;font-weight:700;box-shadow:0 0 0 6px rgba(221,174,53,.15)}
+.chain li:not(:last-child)::before{content:"";position:absolute;left:19px;top:54px;bottom:-14px;width:2px;background:linear-gradient(180deg,var(--gold),rgba(221,174,53,.15))}
+.chain li p{color:var(--text-l)!important;font-weight:600;padding-top:7px}
+.fruits{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fruit{border-radius:22px;padding:20px 20px 22px;display:grid;gap:8px;align-content:start}
+.fruit .fi{font-size:26px;line-height:1}
+.fruit p{color:var(--text-l)!important;font-weight:600;font-size:15.5px;line-height:1.45}
+.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:16px}
+.steps li{list-style:none;border-radius:22px;padding:20px 18px 22px;background:rgba(40,24,28,.62);border:1px solid var(--line-l);color:var(--text-l)!important;font-weight:600;font-size:15px;line-height:1.45;min-width:0;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.steps li .n{display:block;font-family:var(--display);font-weight:700;font-size:13px;color:var(--gold);margin-bottom:10px}
+.steps li b{color:var(--gold-l)}
+
+/* volunteers */
+.vol{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:16px;align-items:stretch}
+.vol figure{position:relative;border-radius:var(--r-card);overflow:hidden;min-height:320px}
+.vol figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* faq */
+.faq{display:grid;gap:10px;max-width:56rem}
+.faq details{border-radius:24px;background:rgba(40,24,28,.6);border:1px solid var(--line-l);transition:background .3s ease,border-color .3s ease;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.faq details[open]{background:linear-gradient(160deg,rgba(58,31,37,.85),rgba(47,29,34,.75));border-color:rgba(221,174,53,.4)}
+.faq summary{cursor:pointer;list-style:none;padding:20px 64px 20px 26px;position:relative;font-weight:800;font-size:17px;line-height:1.4;color:var(--text-l)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:rgba(247,239,230,.08);color:var(--gold);font-family:var(--display);font-size:18px}
+.faq details[open] summary::after{content:"−";background:var(--gold);color:var(--ink)}
+.faq .ans{padding:0 26px 22px;display:grid;gap:12px;max-width:46rem}
+.faq .ans a{color:var(--gold-l);text-decoration:underline;text-underline-offset:3px}
+
+/* final */
+.final{position:relative;overflow:hidden;text-align:center}
+.final::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(221,174,53,.25),transparent 60%),radial-gradient(ellipse at 50% 100%,rgba(105,35,45,.55),transparent 60%);pointer-events:none}
+.final .wrap{position:relative;max-width:54rem;display:grid;gap:22px;justify-items:center}
+.final img.lg{width:150px;height:150px;border-radius:50%;background:var(--white);padding:8px;box-shadow:0 0 0 6px rgba(243,217,145,.25),0 0 60px rgba(243,217,145,.45)}
+.final .ctas{justify-content:center}
+
+/* footer */
+.ftr{padding:36px var(--pad) calc(36px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line-l);background:rgba(26,16,18,.88)}
+.ftr-in{max-width:76rem;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px 40px;align-items:center;font-size:14px;color:var(--text-lm)}
+.ftr-in a{color:var(--gold-l)}
+.ftr .brand img{width:52px;height:52px}
+
+
+/* support widget */
+.sup{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:70;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.sup-btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 20px 0 8px;border-radius:999px;border:1px solid rgba(243,217,145,.45);background:rgba(26,16,18,.9);color:var(--text-l);font-family:var(--sans);font-weight:800;font-size:15px;cursor:pointer;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 18px 40px -16px rgba(0,0,0,.8);transition:transform .25s ease,border-color .25s ease}
+.sup-btn:hover{transform:translateY(-2px);border-color:var(--gold)}
+.sup-btn .tg{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#5ab8ee,#2a9bd8);color:#fff;position:relative}
+.sup-btn .tg::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(90,184,238,.6);animation:supPing 2.4s ease-out infinite}
+@keyframes supPing{0%{transform:scale(.9);opacity:1}100%{transform:scale(1.4);opacity:0}}
+.sup-btn .tg svg{width:20px;height:20px;margin-left:-2px}
+.sup-card{width:min(320px,calc(100vw - 32px));border-radius:24px;padding:22px 22px 20px;background:rgba(36,22,26,.97);border:1px solid var(--line-l);box-shadow:0 30px 60px -20px rgba(0,0,0,.85);display:grid;gap:10px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.sup-card[hidden]{display:none}
+.sup-card h3{font-size:18px;color:var(--white)}
+.sup-card p{font-size:14.5px;line-height:1.5;color:var(--text-lm)}
+.sup-card .who{display:flex;align-items:center;gap:12px;margin-top:4px;padding:10px 12px;border-radius:16px;background:rgba(247,239,230,.06)}
+.sup-card .who b{display:block;font-size:15px;color:var(--text-l)}
+.sup-card .who span{font-size:13px;color:var(--text-lm)}
+.sup-card .av{flex-shrink:0;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--gold-l),var(--gold));color:var(--ink);font-family:var(--display);font-weight:700;font-size:15px}
+.sup-card .btn{width:100%;margin-top:6px;min-height:48px;font-size:15px;animation:none}
+.sup-x{position:absolute;top:12px;right:12px;width:32px;height:32px;border-radius:50%;border:0;background:rgba(247,239,230,.08);color:var(--text-lm);font-size:18px;cursor:pointer}
+.sup-card{position:relative}
+@media (max-width:640px){.sup-btn{min-height:46px;padding:0 16px 0 5px;font-size:14px}.sup-btn .tg{width:36px;height:36px}}
+
+@media (max-width:1100px){
+  .hero-in{grid-template-columns:1fr;padding-top:104px;justify-items:center;text-align:center}
+  .hero-text{justify-items:center}
+  .hero-logo{order:-1;width:min(70vw,320px)}
+  .facts,.ctas{justify-content:center}
+  .week{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .tiers{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:22px}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .steps li:last-child{grid-column:1/-1}
+}
+@media (max-width:960px){
+  .ac-head{grid-template-columns:1fr}
+  .academy .mini{grid-template-columns:1fr 1fr}
+  .thanks,.mission,.goal,.pay-row,.extras,.karma,.vol{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr}
+  .uses{grid-template-columns:1fr 1fr}
+  .stories{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  :root{--r-mega:28px;--r-card:24px}
+  .hero-in{padding-top:92px;padding-bottom:48px;gap:20px}
+  .ctas .btn,.hero .ctas{width:100%}
+  .uses,.stories,.fruits,.week,.steps{grid-template-columns:1fr}
+  .use.main,.use-note{grid-column:auto}
+  .tiers{grid-template-columns:1fr 1fr}
+  .bars{height:220px;--bh:150px}
+  .goal-split,.academy .mini{grid-template-columns:1fr 1fr}
+  .use-note{border-radius:22px;padding:16px 20px}
+  .faq summary{padding:18px 58px 18px 20px;font-size:16px}
+  .faq summary::after{right:12px}
+  .faq .ans{padding:0 20px 20px}
+  .sec-head{margin-bottom:28px}
+  .bonus{grid-template-columns:1fr;justify-items:center;text-align:center}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none}
+  .seeds{display:none}
+}
+
+.brand img{background:transparent;padding:0}
+.hero-logo .halo{inset:4%}
+.feat{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.feat .use{padding:22px 18px 24px}
+.feat .use h3{font-size:16px;line-height:1.3}
+.news{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:16px}
+.nw{border-radius:var(--r-card);overflow:hidden;background:var(--white);box-shadow:0 30px 60px -40px rgba(105,35,45,.45);display:flex;flex-direction:column;min-width:0}
+.nw img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top}
+.nw div{padding:20px 22px 24px;display:grid;gap:8px}
+.nw h3{font-size:17px}
+.nw p{font-size:15px;line-height:1.5}
+.strip{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 18px;scrollbar-width:thin;scrollbar-color:var(--gold) transparent}
+.strip img{flex:0 0 auto;scroll-snap-align:start;border-radius:20px;box-shadow:0 20px 40px -24px rgba(0,0,0,.7)}
+.strip.courses img{width:min(78vw,380px);aspect-ratio:16/9;object-fit:cover}
+.strip.shots img{width:min(78vw,340px);height:auto;background:#fff}
+.strip.vrevs .vr{flex:0 0 auto;width:min(82vw,400px);aspect-ratio:1680/1187;scroll-snap-align:start}
+.strip-nav{display:flex;gap:8px;justify-content:flex-end;margin-top:-4px}
+.strip-nav button{width:44px;height:44px;border-radius:50%;border:1px solid var(--line-l);background:rgba(40,24,28,.6);color:var(--gold-l);font-size:18px;cursor:pointer}
+.cream .strip-nav button{border-color:var(--line-d);background:var(--white);color:var(--burg)}
+.price{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:16px;align-items:stretch}
+.price .card-k{display:flex;flex-direction:column;gap:16px;justify-content:center}
+.price .sum{font-family:var(--display);font-weight:800;font-size:clamp(44px,5.4vw,76px);line-height:1;letter-spacing:-.04em;color:var(--gold-l)}
+.price .sum small{display:block;margin-top:10px;font-size:.3em;letter-spacing:0;color:var(--text-l)}
+.price .card-w{display:flex;flex-direction:column;justify-content:center;gap:18px}
+.who2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.who2 .card-w{display:grid;gap:12px;align-content:start}
+.uqs{display:grid;gap:10px}
+.uq{border-radius:24px;background:rgba(40,24,28,.6);border:1px solid var(--line-l);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.uq[open]{background:linear-gradient(160deg,rgba(58,31,37,.85),rgba(47,29,34,.75));border-color:rgba(221,174,53,.4)}
+.uq summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:14px;padding:18px 22px;font-family:var(--display);font-weight:600;font-size:clamp(16px,1.5vw,19px);color:var(--text-l)}
+.uq summary::-webkit-details-marker{display:none}
+.uq summary .n{flex-shrink:0;display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--gold-l),var(--gold));color:var(--ink);font-size:12px}
+.uq .ans{padding:0 24px 22px 74px;display:grid;gap:10px}
+.lineage{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:16px;margin-top:16px;align-items:stretch}
+.quote{font-family:var(--display);font-weight:500;font-size:clamp(15px,1.25vw,17px);line-height:1.55;color:var(--text-l)}
+.lineage .story{align-content:start}
+.lineage{margin-top:clamp(28px,3vw,40px)!important}
+.quote-by{margin-top:14px;font-size:14px;color:var(--gold-l)!important;font-weight:700}
+.ress{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.ress .res{grid-column:span 2}
+.ress .res:nth-child(n+4){grid-column:span 3}
+.res{border-radius:24px;padding:22px 18px 24px;background:var(--white);box-shadow:0 24px 50px -40px rgba(105,35,45,.45);display:grid;gap:8px;align-content:start;min-width:0}
+.res .n{font-family:var(--display);font-weight:800;font-size:30px;line-height:1;color:var(--gold-d)}
+.res h3{font-size:16px;line-height:1.25}
+.res p{font-size:14.5px;line-height:1.45}
+.tracks{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.tracks .card{display:grid;gap:14px;align-content:start}
+.ticks{list-style:none;display:grid;gap:10px}
+.ticks li{display:grid;grid-template-columns:24px 1fr;gap:10px;font-weight:600}
+.ticks li::before{content:"✓";display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:linear-gradient(135deg,var(--gold-l),var(--gold));color:var(--ink);font-size:13px;font-weight:800}
+.card-w .ticks li{color:var(--text-d)}
+.card-k .ticks li{color:var(--text-l)}
+.sub-h{font-family:var(--display);font-weight:600;font-size:15px;color:var(--gold-d);margin-top:6px}
+.card-k .sub-h{color:var(--gold-l)}
+.horse{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:16px;align-items:stretch}
+.horse .prose p{color:var(--text-lm)}
+.horse .key{display:flex;flex-direction:column;justify-content:center;gap:18px}
+.howl{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;counter-reset:x}
+.howl li{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;border-radius:22px;padding:18px 18px 20px;background:var(--white);box-shadow:0 24px 50px -40px rgba(105,35,45,.45);font-weight:600;color:var(--text-d)!important;line-height:1.45}
+.howl .n{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--burg-2),var(--burg));color:var(--gold-l);font-family:var(--display);font-size:12px;font-weight:700}
+.tgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;align-items:start}
+.tc{border-radius:24px;overflow:hidden;background:rgba(40,24,28,.66);border:1px solid var(--line-l);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);min-width:0}
+.tc img{width:100%;aspect-ratio:1;object-fit:cover;object-position:center 25%}
+.tc-b{padding:16px 18px 18px;display:grid;gap:6px}
+.tc h3{font-size:17px}
+.tc .role{font-size:13.5px;line-height:1.4;color:var(--gold-l)!important;font-weight:700}
+.tc details summary{cursor:pointer;list-style:none;font-size:13.5px;font-weight:800;color:var(--text-lm);margin-top:4px}
+.tc details summary::-webkit-details-marker{display:none}
+.tc details summary::after{content:" +";color:var(--gold)}
+.tc details[open] summary::after{content:" −"}
+.dots.sm li{font-size:13.5px;padding:7px 0;font-weight:500;gap:10px}
+.dots.sm li::before{margin-top:6px;width:7px;height:7px}
+.tc.lead-t{grid-column:span 2;display:grid;grid-template-columns:1fr 1fr}
+.tc.lead-t img{height:100%;aspect-ratio:auto}
+.tc.lead-t .tc-b{align-content:center;padding:24px}
+.vr .yt .play{left:auto;top:auto;right:16px;bottom:16px;margin:0;width:56px;height:56px}
+.vr .yt .play::after{border-left-width:16px;border-top-width:10px;border-bottom-width:10px}
+.revs-h{margin:clamp(34px,4vw,52px) 0 16px;font-size:clamp(20px,2vw,26px)}
+.support-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.support-row .card{display:flex;flex-direction:column;gap:14px;justify-content:center}
+.final img.lg{background:transparent;padding:0}
+@media (max-width:1100px){.feat{grid-template-columns:repeat(3,minmax(0,1fr))}.ress{grid-template-columns:1fr 1fr}.ress .res,.ress .res:nth-child(n+4){grid-column:auto}.ress .res:last-child{grid-column:1/-1}.tgrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:960px){.news,.price,.who2,.lineage,.tracks,.horse,.support-row{grid-template-columns:1fr}.howl{grid-template-columns:1fr 1fr}.tgrid{grid-template-columns:1fr 1fr}.tc.lead-t{grid-column:1/-1}}
+@media (max-width:640px){.ress .res:last-child{grid-column:auto}.ress,.howl{grid-template-columns:1fr}.feat{grid-template-columns:1fr 1fr}.tc.lead-t{grid-template-columns:1fr}.tc.lead-t img{aspect-ratio:1}.uq .ans{padding:0 20px 20px}.tgrid{grid-template-columns:1fr 1fr;gap:10px}.tc-b{padding:12px 12px 14px}.tc h3{font-size:15px}}
+@media (max-width:420px){.tgrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="sky-bg" aria-hidden="true"></div>
+
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="#top" aria-label="Клуб медитации АКМ — в начало">
+      <img src="img/logo.svg" width="44" height="44" alt="">
+      <span class="brand-txt"><b>Клуб медитации</b><span>Академия Классической Мудрости</span></span>
+    </a>
+    <nav class="dnav" aria-label="Разделы">
+      <a href="#unique">Уникальность</a>
+      <a href="#results">Что в результате</a>
+      <a href="#teachers">Преподаватели</a>
+      <a href="#price">Стоимость</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#how">Как получить доступ</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mnav"><span class="burger"></span><span class="menu-txt">Меню</span></button>
+    <a class="btn btn-gold" href="https://t.me/Meditation_club_acm_bot?start=649c00d0dbae8e42c708b9d4">Вступить</a>
+  </div>
+</header>
+<nav class="mnav" id="mnav" aria-label="Меню" hidden>
+  <a href="#club">Что внутри Клуба</a>
+  <a href="#price">Стоимость и кому подходит</a>
+  <a href="#unique">Уникальность Клуба</a>
+  <a href="#results">Что в результате</a>
+  <a href="#how">Как получить доступ</a>
+  <a href="#teachers">Наши преподаватели</a>
+  <a href="#reviews">Отзывы</a>
+  <a href="#faq">Вопросы и поддержка</a>
+</nav>
+
+<main>
+  <section class="hero" id="top">
+    <div class="seeds" id="seeds" aria-hidden="true"></div>
+    <div class="hero-in">
+      <div class="hero-text">
+        <span class="chip"><i></i>от Академии Классической Мудрости</span>
+        <h1>Клуб <span class="grad">медитации</span></h1>
+        <p class="sub">Уникальная система медитаций с историей в 2,5 тысячи лет</p>
+        <p class="lead">Для новичков и продвинутых практиков: медитации с сопровождением преподавателей, курсы в записи и в прямом эфире.</p>
+        <div class="facts">
+          <div><b>2,5 тысячи лет</b><span>непрерывной линии передачи</span></div>
+          <div><b>2 раза в неделю</b><span>живые медитации в группе</span></div>
+          <div><b>от 5 €</b><span>в месяц</span></div>
+        </div>
+        <div class="ctas">
+          <a class="btn btn-gold" href="https://t.me/Meditation_club_acm_bot?start=649c00d0dbae8e42c708b9d4">Вступить в Клуб <span class="ar">→</span></a>
+          <a class="btn btn-ghost" href="#club">Что внутри</a>
+        </div>
+      </div>
+      <div class="hero-logo" aria-hidden="true">
+        <span class="ring"></span>
+        <img src="img/logo.svg" width="400" height="400" alt="">
+      </div>
+    </div>
+  </section>
+
+  <div class="mega-wrap">
+    <section class="mega cream sec" id="club">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="eyebrow">Что внутри</span>
+            <h2>Всё для регулярной <span class="grad">практики</span></h2>
+          </div>
+          <p>Получите доступ ко всем предыдущим курсам Клуба!</p>
+        </div>
+        <div class="feat uses reveal"><div class="use"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="6" r="2.6"/><path d="M5 20c1.5-3 4-4.5 7-4.5s5.5 1.5 7 4.5"/><path d="M8 13l4-2 4 2"/></svg></span><h3>Медитации с сопровождением преподавателей</h3></div>
+<div class="use"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9l5 3-5 3z"/></svg></span><h3>Курсы в записи и в прямом эфире</h3></div>
+<div class="use"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span><h3>Возможность подключиться в любое время</h3></div>
+<div class="use"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.4 4.3L2.9 11.4c-1.3.5-1.2 1.3-.2 1.6l4.7 1.5 1.8 5.6c.2.6.4.8.9.8.4 0 .6-.2.9-.5l2.3-2.2 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.7c.3-1.3-.5-1.9-1.5-1.4z"/></svg></span><h3>Телеграм-канал участников</h3></div>
+<div class="use"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19h5v-5h5V9h6"/><path d="M17 6l3 3-3 3"/></svg></span><h3>Программа для новичков и для тех, кто уже медитирует</h3></div></div>
+
+        <div class="sec-head" style="margin-top:clamp(48px,6vw,80px)">
+          <div>
+            <span class="eyebrow">Сейчас в Клубе</span>
+            <h2>Что нового в Клубе <span class="grad">медитации АКМ?</span></h2>
+          </div>
+        </div>
+        <div class="news"><article class="nw reveal"><img src="img/new/p1.jpg" alt="" loading="lazy"><div><h3>Марафон ретритов для достижения целей</h3><p>4 недели — 4 личных ретрита для создания причин для важных целей, финансового благополучия, счастливых отношений и перемен.</p></div></article>
+<article class="nw reveal"><img src="img/new/p3.jpg" alt="" loading="lazy"><div><h3>Обновлённая медитация на пустоту Кедрупа Чже</h3><p>Полная версия медитации и регулярные совместные практики с сопровождением тренера.</p></div></article>
+<article class="nw reveal"><img src="img/new/p2.jpg" alt="" loading="lazy"><div><h3>Продолжение курса по учениям Мастера Камалашилы</h3><p>Лекции, медитации и практические инструменты для осознанных изменений в жизни. Присоединиться можно сейчас — прошедшие занятия доступны в записи.</p></div></article></div>
+      </div>
+    </section>
+  </div>
+
+  <section class="sec dark" id="courses">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">Библиотека Клуба</span>
+          <h2>Доступ ко всем <span class="grad">предыдущим курсам</span></h2>
+        </div>
+        <p>Записи всех курсов, медитаций, мануалы и руководства — в удобном приложении.</p>
+      </div>
+      <div class="strip courses" id="stripC"><img src="img/courses/course01.jpg" alt="Курс Клуба медитации" loading="lazy" width="400" height="225">
+<img src="img/courses/course02.jpg" alt="Курс Клуба медитации" loading="lazy" width="400" height="225">
+<img src="img/courses/course03.jpg" alt="Курс Клуба медитации" loading="lazy" width="400" height="225">
+<img src="img/courses/course04.jpg" alt="Курс Клуба медитации" loading="lazy" width="400" height="225">
+<img src="img/courses/course05.jpg" alt="Курс Клуба медитации" loading="lazy" width="400" height="225">
+<img src="img/courses/course06.jpg" alt="Курс Клуба медитации" loading="lazy" width="400" height="225">
+<img src="img/courses/course07.jpg" alt="Курс Клуба медитации" loading="lazy" width="400" height="225">
+<img src="img/courses/course08.jpg" alt="Курс Клуба медитации" loading="lazy" width="400" height="225">
+<img src="img/courses/course09.jpg" alt="Курс Клуба медитации" loading="lazy" width="400" height="225"></div>
+      <div class="strip-nav" data-for="stripC"><button aria-label="Назад">←</button><button aria-label="Вперёд">→</button></div>
+    </div>
+  </section>
+
+  <div class="mega-wrap">
+    <section class="mega cream sec" id="price">
+      <div class="wrap">
+        <div class="price reveal">
+          <div class="card card-k">
+            <span class="eyebrow">Стоимость участия в Клубе</span>
+            <div class="sum">от 5 €<small>в месяц*</small></div>
+            <p>Оформляя регулярную подписку, вы способствуете тому, чтобы древняя мудрость оставалась в нашем мире.</p>
+            <a class="btn btn-gold" href="https://t.me/Meditation_club_acm_bot?start=649c00d0dbae8e42c708b9d4">Вступить в Клуб <span class="ar">→</span></a>
+          </div>
+          <div class="card card-w prose">
+            <span class="hand">Каждая подписка — это семя</span>
+            <p class="note">*Все деньги будут направлены в поддержку и развитие Академии Классической Мудрости (на рекламу и маркетинг курсов ACI, на покрытие затрат, которые мы несем на организацию мероприятий онлайн и вживую, на оплату программистам за доработку мобильного приложения нашей платформы, на зарплаты сотрудникам, ежемесячную оплату различных технических сервисов и другие организационные затраты).</p>
+          </div>
+        </div>
+
+        <div class="sec-head" style="margin-top:clamp(48px,6vw,80px)">
+          <div>
+            <span class="eyebrow">Кому подходит?</span>
+            <h2>Для новичков и для тех, <span class="grad">кто уже медитирует</span></h2>
+          </div>
+        </div>
+        <div class="who2 reveal">
+          <div class="card card-w">
+            <span class="tag t-gold" style="justify-self:start">Начинающий</span>
+            <p class="big">Вы ни разу не медитировали, но слышали, что это круто и полезно, поэтому хотите научиться это делать.</p>
+            <p>Вам нужно понимать, с чего начать, и как медитировать правильно.</p>
+            <p class="sub-h">Что даст участие в Клубе</p>
+            <ul class="dots"><li>Четкое понимание, что такое медитация и инструкции, с чего начать вашу практику.</li><li>Экспертные программы в соответствии с вашим уровнем медитации, а также рекомендации, как избежать ошибок и ускорить продвижение в практике.</li><li>Сильную мотивацию для роста, поддержку единомышленников и самое главное - регулярность практики на старте, что является основой любого успеха.</li></ul>
+          </div>
+          <div class="card card-k">
+            <span class="tag t-burg" style="justify-self:start">Тем, кто в теме</span>
+            <p class="big" style="color:var(--white)">Медитируете, но чувствуете, что вам не хватает знаний и понимания, на правильном ли вы пути.</p>
+            <p>Или у вас нет регулярности в практике, или вы достигли определенных результатов, но не хотите на этом останавливаться и вам нужны четкие инструкции, что дальше.</p>
+            <p class="sub-h">Что даст участие в Клубе</p>
+            <ul class="dots"><li>Регулярность практики и возможность совершенствовать свое мастерство.</li><li>Экспертные программы в соответствии с вашим уровнем медитации и рекомендации для быстрого продвижения в практике.</li><li>Укрепление мотивации, поддержка единомышленников и возможность пойти глубже благодаря практике в группе.</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="sec dark" id="unique">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">Уникальность Клуба</span>
+          <h2>В чём уникальность нашего <span class="grad">Клуба медитаций?</span></h2>
+        </div>
+        <p>Это медитационная традиция, которая передавалась от Учителя к ученику на протяжении 44-х поколений: если бы она не приводила к результатам, она бы не сохранилась!</p>
+      </div>
+      <div class="uqs reveal"><details class="uq" open><summary><span class="n">01</span>Аутентичность</summary><div class="ans"><p>Все медитации Клуба основаны на аутентичных знаниях тибетской линии буддизма, которые передаются от Учителя к ученику на протяжении 2,5 тысяч лет. А значит вы получите детальные инструкции для своей практики, проверенные опытом 44 поколений, чтобы минимизировать ошибки и достичь истинной цели медитации - абсолютного счастья.</p></div></details>
+<details class="uq"><summary><span class="n">02</span>Экспертность</summary><div class="ans"><p>“Медитация – это искусство, которым можно овладеть только самостоятельно, путем долгих часов, проведенных на подушке. Но, как и во всех других духовных практиках, очень полезно, если в процессе медитации нас направляет хорошо обученный медитатор &lt;...&gt;Потратьте время; проверьте несколько учителей медитации; найдите того, кто действительно квалифицирован в подлинной линии и сам является хорошим медитатором” - сказал великий учитель древней традиции медитации Мастер Чже Цонгкапа (1357-1419) и мы придерживаемся его рекомендаций.</p><p>Чтобы успешно продвигаться в медитации вам нужен квалифицированный Учитель. В противном случае, вы можете не только затормозить свой прогресс в медитации, но даже - принести вред своему уму, последствия которого могут быть трудно непоправимыми.</p></div></details>
+<details class="uq"><summary><span class="n">03</span>Регулярность</summary><div class="ans"><p>Продвинутые медитаторы часто шутят, что если у вас нет регулярности в этой практике, то и проблем с медитацией у вас не будет: регулярность - это один из синонимов слова “Медитация”, который указывает на базовую суть этого тренинга. Поэтому, если вы настроены серьезно, регулярность в медитации - ваша первая цель на пути овладения этим мастерством.</p></div></details>
+<details class="uq"><summary><span class="n">04</span>Поддержка единомышленников</summary><div class="ans"><p>Возможно, вы слышали, что то, насколько вы успешны по жизни, на 60% зависит от вашего окружения. И медитация здесь - не исключение. Сочетание индивидуальных медитаций с регулярной практикой в группе сводит к минимуму опасность забросить и откатиться назад в своей практике, где каждый день может быть решающим.</p></div></details>
+<details class="uq"><summary><span class="n">05</span>Системный рост и продвижение в практике</summary><div class="ans"><p>Программы Клуба медитаций разработаны на основе учений от мастеров, которые досконально изучили как работает наш ум и какие практики необходимы на том или ином этапе развития, чтобы обеспечить стабильный прогресс и уверенное достижение желаемых результатов. Работа с умом с помощью медитации проходит на очень тонком уровне и требует филигранной техники и детальнейших инструкций: они у нас есть и мы готовы поделиться этими сокровищами с каждым из вас.</p></div></details></div>
+
+      <div class="lineage">
+        <div class="card glass">
+          <span class="eyebrow">Важность непрерывной линии передачи знаний</span>
+          <p class="quote" style="margin-top:14px">«Медитация – это искусство, которым можно овладеть только самостоятельно, путем долгих часов, проведенных на подушке. Но, как и во всех других духовных практиках, очень полезно, если в процессе медитации нас направляет хорошо обученный медитатор. Потратьте время; проверьте несколько учителей медитации; найдите того, кто действительно квалифицирован в подлинной линии и сам является хорошим медитатором»</p>
+          <p class="quote-by">Великий учитель древней традиции медитации Мастер Чже Цонгкапа (1357-1419)</p>
+        </div>
+        <div class="story">
+          <div class="video"><button class="yt" data-id="10PS26bwnGY" aria-label="Питер Мёртл: медитационная традиция, которой 2,5 тысячи лет">
+            <img src="https://i.ytimg.com/vi/10PS26bwnGY/hqdefault.jpg" alt="" loading="lazy"><span class="play"></span><span class="cap">Питер Мёртл</span></button></div>
+          <h3>Медитационная традиция, которой 2,5 тысячи лет: в чем ее суть и чем она уникальна?</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="mega-wrap">
+    <section class="mega cream sec" id="results">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="eyebrow">Что в результате</span>
+            <h2>В результате <span class="grad">участия в Клубе</span></h2>
+          </div>
+          <p>Вы не научитесь медитировать по приложениям, статьям или мини-курсам из Сети!</p>
+        </div>
+        <div class="ress"><div class="res reveal"><span class="n">1</span><h3>Получите знания прямой линии передачи</h3><p>аутентичных учений по медитации от опытных преподавателей - специальные программы и инструкции для постепенного и уверенного роста в практике от новичка до мастера</p></div>
+<div class="res reveal"><span class="n">2</span><h3>Сможете задавать волнующие вопросы</h3><p>и получить на них ответы от продвинутых практиков медитации</p></div>
+<div class="res reveal"><span class="n">3</span><h3>Обретете поддерживающее окружение</h3><p>в виде экспертов по теме и единомышленников</p></div>
+<div class="res reveal"><span class="n">4</span><h3>Достигнете регулярности</h3><p>а значит - мощных результатов в практике</p></div>
+<div class="res reveal"><span class="n">5</span><h3>Выработаете полезные привычки</h3><p>в управлении своим умом, которые выведут вас на новый уровень во всех сферах жизни</p></div></div>
+
+        <div class="sec-head" style="margin-top:clamp(48px,6vw,80px)">
+          <div>
+            <span class="eyebrow">Программа</span>
+            <h2>Что даст участие <span class="grad">в Клубе?</span></h2>
+          </div>
+        </div>
+        <div class="tracks reveal">
+          <div class="card card-w"><span class="tag t-gold" style="justify-self:start">Начинающим</span>
+            <ul class="ticks"><li>Поэтапная медитация «Башня освобождения» в прямом эфире</li><li>2 живых онлайн-медитации в неделю в групповом Телеграм-чате</li><li>Занятия по основам медитации в записи</li><li>Практический челлендж — медитация 100 дней</li></ul></div>
+          <div class="card card-k"><span class="tag t-gold" style="justify-self:start">Кто практикует регулярно</span>
+            <ul class="ticks"><li>Новая медитация или курс в записи 1 раз в 2 месяца</li><li>2 живых онлайн-медитации в неделю в групповом Телеграм-чате</li><li>Занятия по читкодам и фишкам медитации в записи</li><li>Практический челлендж — медитация 100 дней</li></ul></div>
+        </div>
+        <div class="ctas" style="margin-top:28px;justify-content:center"><a class="btn btn-dark" href="https://t.me/Meditation_club_acm_bot?start=649c00d0dbae8e42c708b9d4">Присоединиться <span class="ar">→</span></a></div>
+      </div>
+    </section>
+  </div>
+
+  <section class="sec dark" id="why">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">Как это работает</span>
+          <h2>Почему стать мастером медитации — <span class="grad">это так важно?</span></h2>
+        </div>
+      </div>
+      <div class="horse reveal">
+        <div class="card glass prose"><p>Наш ум как дикая лошадь. Неуправляемая, она может привести вас в то место, куда вы совсем не планировали попадать. К депрессии, эмоциональным срывам, апатии. Когда вы не достигаете желаемого, не чувствуете себя реализованным и счастливым.</p><p>И чтобы все изменить, нам нужно научиться управлять этой лошадью - своим умом.</p><p>И вы можете это сделать: оседлать свой дикий ум так же, как умелый наездник может оседлать дикую лошадь.</p><p>И когда ваш ум будет хотеть купить новые вещи или беспокоиться о том, что будет, если вам задержат зарплату в следующем месяце, или что будет с нашей страной, вы сможете направить его в то место, куда вы хотите.</p><p>На благодарность к своим близким, родителям. На творчество. На продуктивные размышления о том, как мне улучшить все сферы своей жизни. Как стать полностью счастливым и помочь в этом окружающим.</p><p>Мы можем научиться управлять своими мыслями с помощью медитации. Мы можем оседлать эту дикую лошадь с помощью тренировки.</p><p>И те медитации, которые мы с вами будем делать в Клубе медитаций Академии классической мудрости созданы специально для этого.</p><p>Подключайтесь и давайте сделаем это вместе!</p></div>
+        <div class="card card-k key">
+          <span class="hand" style="color:var(--gold-l)">Ваш ключ к гармоничному уму</span>
+          <p class="big" style="color:var(--white)">«Клуб медитации Академии классической мудрости» - это ваш ключ к гармоничному уму и, как следствие, к абсолютному счастью.</p>
+          <a class="btn btn-gold" href="https://t.me/Meditation_club_acm_bot?start=649c00d0dbae8e42c708b9d4">Подключиться <span class="ar">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="mega-wrap">
+    <section class="mega cream sec" id="how">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="eyebrow">Как получить доступ</span>
+            <h2>Как получить доступ к Клубу <span class="grad">и что вас ждёт потом?</span></h2>
+          </div>
+        </div>
+        <ol class="howl reveal"><li><span class="n">01</span>Проходите регистрацию, проводите оплату</li>
+<li><span class="n">02</span>Получаете доступ к специальному каналу и чату в Телеграм</li>
+<li><span class="n">03</span>Выбирайте свой трэк внутри клуба</li>
+<li><span class="n">04</span>Получаете соответствующую медитацию и инструкцию к ней</li>
+<li><span class="n">05</span>Получаете инструкции и видео лекции о предстоящей практике</li>
+<li><span class="n">06</span>2 раза в неделю выполняете медитации с сопровождением преподавателей по расписанию</li>
+<li><span class="n">07</span>Подключаетесь к челленджу и в остальные дни выполняете медитации самостоятельно</li>
+<li><span class="n">08</span>Задаете вопросы, получаете ответы и переходите к следующему этапу / курсу медитаций</li>
+<li><span class="n">09</span>Получаете бонусы для всех участников клуба - эфиры со специальными гостями</li></ol>
+        <div class="ctas" style="margin-top:28px;justify-content:center"><a class="btn btn-dark" href="https://t.me/Meditation_club_acm_bot?start=649c00d0dbae8e42c708b9d4">Присоединиться <span class="ar">→</span></a></div>
+      </div>
+    </section>
+  </div>
+
+  <section class="sec dark" id="teachers">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">Команда Клуба</span>
+          <h2>Наши <span class="grad">преподаватели</span></h2>
+        </div>
+        <p>Опытные практики и тренеры Академии Классической Мудрости. Нажмите «Подробнее», чтобы узнать о каждом.</p>
+      </div>
+      <div class="tgrid"><article class="tc lead-t reveal"><img src="img/t/t01.jpg" alt="Питер Мёртл" loading="lazy" width="320" height="320">
+<div class="tc-b"><h3>Питер Мёртл</h3><p class="role">Старший преподаватель ACI, почётный преподаватель и спикер Клуба</p>
+<details><summary>Подробнее</summary><ul class="dots sm"><li>Практикует и преподает медитацию и йогу более 13 лет</li><li>Прошел 8 медитационных ретритов, каждый из которых длился месяц</li><li>Преподаватель ACI</li><li>Тренер Diamond Cutter Institute (DCI Global) и доцент Sedona College of International Management (SCIM), США, штат Аризона</li><li>Основатель ACI DACH</li><li>С 2010 года он принял участие в более чем 100 мероприятиях в качестве организатора, переводчика и тренера в Европе, Америке, Азии, России и Украине.</li><li>Переводит древние тексты мудрости на немецкий язык</li><li>Вместе со своей женой Марией основал благотворительный фонд Gold Club, который за 3 года собрал более $1000000</li></ul></details></div></article>
+<article class="tc reveal"><img src="img/t/t02.jpg" alt="Инна Катунина" loading="lazy" width="320" height="320">
+<div class="tc-b"><h3>Инна Катунина</h3><p class="role">Лектор и лидер Клуба</p>
+<details><summary>Подробнее</summary><ul class="dots sm"><li>Медитирует с 2017 года</li><li>является лидером Клуба медитации АКМ</li><li>учитель медитации</li><li>куратор ACI и ACI TT</li><li>организатор ACI курсов</li><li>тренер ACI</li><li>преподаватель массажа &quot;Массаж в каждый дом&quot;</li><li>руководитель проекта &quot;Массажный патруль с Катуниной&quot;</li><li>Закончила 18 открытых курсов АСІ.</li><li>Мама троих детей и счастливая жена</li></ul></details></div></article>
+<article class="tc reveal"><img src="img/t/t03.jpg" alt="Максим Джабали" loading="lazy" width="320" height="320">
+<div class="tc-b"><h3>Максим Джабали</h3><p class="role">Преподаватель Клуба, генеральный директор АКМ, почётный спикер Клуба</p>
+<details><summary>Подробнее</summary><ul class="dots sm"><li>Практикует медитацию с 2010 года</li><li>Консультант по личной эффективности</li><li>Директор Академии Классической Мудрости</li><li>Прошёл 18 ACI курсов</li><li>Прошёл 10-дневный и 1-месячный молчаливые медитационные ретриты</li><li>Инвестор в сфере недвижимости</li><li>Соучредитель, директор по маркетингу онлайн-платформы йоги Pranamove</li><li>Фанат аштанга-йоги</li></ul></details></div></article>
+<article class="tc reveal"><img src="img/t/t04.jpg" alt="Мила Брант" loading="lazy" width="320" height="320">
+<div class="tc-b"><h3>Мила Брант</h3><p class="role">Преподаватель медитации и лектор Клуба</p>
+<details><summary>Подробнее</summary><ul class="dots sm"><li>Завершила обучение преподавателей медитации MTT c Питером Мёртл</li><li>Прослушала 8 курсов ACI и DCI, курс «Йога Леди Нигума», 1 уровень, «Волшебный мир Арьи Нагарджуны», «Махамудра», “Хатха-йога Прадипика»</li><li>Начала медитировать в 2018 году</li><li>Педагог с 20-тилетнем стажем, основатель онлайн-школы немецкого языка</li><li>Магистр психологии</li><li>Трансформационный коуч</li><li>Организатор и ведущая развивающих программ и фестивалей для женщин</li><li>Волонтёр (ведущая медитаций и куратор курсов в Gold- клубе в 2019 году).</li><li>Переводчик</li><li>Благотворитель ( 2 года была директором благотворительного фонда)</li></ul></details></div></article>
+<article class="tc reveal"><img src="img/t/t05.jpg" alt="Алсу Нойманн" loading="lazy" width="320" height="320">
+<div class="tc-b"><h3>Алсу Нойманн</h3><p class="role">Преподаватель медитации и лектор Клуба</p>
+<details><summary>Подробнее</summary><ul class="dots sm"><li>Завершила:</li><li>курс по обучению преподавателей медитации МТТ с Питером Мёртлом</li><li>курс &quot;Основы медитации» с Эрлом Бёрни, YSI</li><li>йога Леди Нигума, 1 уровень, YSI</li><li>8 курсов DCI, также DCI3 по медитации</li><li>2 курса ACI</li><li>Медитирует с 2021 г. Опыт медитации 2 года.</li><li>Волонтёрская деятельность: помощник куратора &quot;Точно в цель&quot;, GoldClub, админ групп совместного прохождения ACI</li><li>Дипломированный преподаватель нем. и англ. языков, переводчик.</li><li>Управляет проектами в области элитных интерьеров.</li></ul></details></div></article>
+<article class="tc reveal"><img src="img/t/t06.jpg" alt="Иван Галюзин" loading="lazy" width="320" height="320">
+<div class="tc-b"><h3>Иван Галюзин</h3><p class="role">Лектор Клуба</p>
+<details><summary>Подробнее</summary><ul class="dots sm"><li>Узнал о системе ментальных семян в 2016, начал медитировать в 2017, в 2024 сделал месячный медитационный молчаливый ретрит</li><li>Закончил 15 курсов ACI, 6 курсов обучения учителей ACI (ACI TT), лектор, куратор и волонтер Академии Классической Мудрости</li><li>Профессиональный бэкграунд, образование — финансы, экономика, менеджмент. Финансовый директор Академии Классической Мудрости.</li><li>Медитация на сегодня неотъемлемая часть моей практики и моей жизни</li><li>С помощью системы семян превратил очень конфликтные отношения в дружеские и доброжелательные, также с 2016 года с семьей живу на пассивный доход от инвестиций</li><li>Женат, сыну 13 лет.</li></ul></details></div></article>
+<article class="tc reveal"><img src="img/t/t07.jpg" alt="Мария Старушкевич" loading="lazy" width="320" height="320">
+<div class="tc-b"><h3>Мария Старушкевич</h3><p class="role">Лектор Клуба</p>
+<details><summary>Подробнее</summary><ul class="dots sm"><li>Изучаю систему семян с конца 2019 года, примерно с того же времени начала знакомиться и с медитацией.</li><li>Закончила 18 ACI курсов, 6 ACI TT.</li><li>Юрист</li><li>Медитация занимает теперь неотъемлемое место в жизни, поскольку это и ключ к спокойному сознанию, и к решению проблем и текущих вопросов в жизни.</li><li>Один из значимых результатов по системе семян для меня - это возможность передавать эти знания, как тренер.</li></ul></details></div></article>
+<article class="tc reveal"><img src="img/t/t08.jpg" alt="Александра Пунько" loading="lazy" width="320" height="320">
+<div class="tc-b"><h3>Александра Пунько</h3><p class="role">Ведущая медитаций и лектор Клуба</p>
+<details><summary>Подробнее</summary><ul class="dots sm"><li>Изучаю систему семян с 2018 года.</li><li>С 2019 года начала проходить курсы ACI.В 2023 году закончила первые 18 курсов.</li><li>Прошла 4 тренинга для ACI-преподавателей как участник и куратор.</li><li>По образованию программист, но последние 25 лет изучала фен-шуй, китайскую метафизику и психологию, пытаясь найти способ максимально эффективно помогать людям.И я нашла его в 2018 году.</li><li>Один из самых значимых результатов по системе семян:  благодаря системе семян я создала доход, улучшила отношения в семье, полюбила медитацию и сделала её регулярной. Также достигла самой заветной цели — стать преподавателем курсов ACI.Сейчас помогаю другим проходить эти курсы и добиваться своих целей с легкостью и радостью.</li></ul></details></div></article>
+<article class="tc reveal"><img src="img/t/t09.jpg" alt="Наталия Ванеева" loading="lazy" width="320" height="320">
+<div class="tc-b"><h3>Наталия Ванеева</h3><p class="role">Ведущая медитаций</p>
+<details><summary>Подробнее</summary><ul class="dots sm"><li>С 2019 года начала изучать систему семян.</li><li>Закончила 12 курсов ACI.</li><li>Завершила 7 тренингов для преподавателей ACI.</li><li>По образованию - теплофизик.</li><li>По профессии - организатор мероприятий, массажист.</li><li>Мама 3х-летней дочки, была со мной на всех живых курсах ACI.</li><li>Проехала автостопом от Китая до Украины.</li><li>Один из самых значимых результатов по системе семян:  я создала пассивный доход, комфортное жилье и возможность заниматься тем, что я люблю и приносит смысл и радость людям.</li></ul></details></div></article>
+<article class="tc reveal"><img src="img/t/t10.jpg" alt="Людмила Мишанина" loading="lazy" width="320" height="320">
+<div class="tc-b"><h3>Людмила Мишанина</h3><p class="role">Лектор Клуба</p>
+<details><summary>Подробнее</summary><ul class="dots sm"><li>С 2018 года начала изучать систему семян и регулярно медитировать.</li><li>В 2022 году закончила 18 курсов ACI.</li><li>Завершила 3 тренинга для преподавателей ACI</li><li>Тренер АКМ, начала преподавать курсы ACI в 2-х городах Германии</li><li>Юридическое образование. На данный момент я являюсь исполнительным директором Академии Классической Мудрости.</li><li>Завершила 2 молчаливых медитационных ретрита, длинной в месяц.</li><li>Один из самых значимых результатов по системе семян:  я создала божественную работу, от которой получаю удовольствие и деньги, и чувствую наполненность от того, что моя деятельность помогает большому количеству людей.</li></ul></details></div></article>
+<article class="tc reveal"><img src="img/t/t11.jpg" alt="Елена Михадюк" loading="lazy" width="320" height="320">
+<div class="tc-b"><h3>Елена Михадюк</h3><p class="role">Лектор Клуба</p>
+<details><summary>Подробнее</summary><ul class="dots sm"><li>С 2017 года начала изучать систему семян</li><li>Закончила 18 курсов ACI</li><li>Старший тренер ACI</li><li>Преподаёт курсы ACI в команде тренеров Москвы и Санкт-Петербурга</li><li>Высшее медицинское образование, врач</li><li>Руководитель проекта по йоге Pranamove</li><li>Руководитель обучающей платформы и член Совета Директоров Академии Классической Мудрости</li><li>Завершила молчаливый медитационный ретрит, длинною в месяц</li><li>Практикует йогу и медитацию с 2017 года</li></ul></details></div></article>
+<article class="tc reveal"><img src="img/t/t12.jpg" alt="Татьяна Крист" loading="lazy" width="320" height="320">
+<div class="tc-b"><h3>Татьяна Крист</h3><p class="role">Лектор Клуба</p>
+<details><summary>Подробнее</summary><ul class="dots sm"><li>Начала изучать систему семян с 2019 года</li><li>Закончила 18 курсов ACI</li><li>Перевожу ACI с русского на немецкий</li><li>Бухгалтер</li><li>Проводила в группе марафоны по 21 дню Тонглен</li></ul></details></div></article>
+<article class="tc reveal"><img src="img/t/t13.jpg" alt="Ольга Бородиенко" loading="lazy" width="320" height="320">
+<div class="tc-b"><h3>Ольга Бородиенко</h3><p class="role">Лектор Клуба</p>
+<details><summary>Подробнее</summary><ul class="dots sm"><li>Начала изучать систему семян с 2017.</li><li>Первые шаги в медитации оказалось, что пробовала в подростковом возрасте. Нашла в учебнике текст практики и начала пробовать. Тогда даже не поняла что это была медитация. Ну а в 2018 году начала медитировать, изучая учения алмазной мудрости.</li><li>Завершила 16 АСІ курсов, АСІ ТТ 3, 4, 6, 7.</li><li>Прошла обучение МТТ у Питера Мертла на тренера медитации в 2023 году.</li><li>По образованию фельдшер. Но по профессии массажист и помогаю распространять учения системы семян.</li><li>Медитация плавно входила в мою молодую занятую жизнь. Были первые чудеса в жизни от практики, были спады, возвращения к регулярной медитации. Заняло время, чтобы понять почему так важна регулярная практика. Но с каждым годом и днем я все больше понимаю важность медитации. И с 2023 года я не представляю свою жизнь без регулярной медитации.</li><li>Вся моя жизнь - это результат практики этих невероятных учений: материальные блага, прекрасные отношения с партнером, окружением, более спокойный, ясный ум, жизнь со смыслом.</li></ul></details></div></article>
+<article class="tc reveal"><img src="img/t/t14.jpg" alt="Ольга Лаврёнова" loading="lazy" width="320" height="320">
+<div class="tc-b"><h3>Ольга Лаврёнова</h3><p class="role">Лектор Клуба</p>
+<details><summary>Подробнее</summary><ul class="dots sm"><li>Систему семян стала изучать с 2019 года и тогда же были первые попытки начать медитировать.</li><li>По медитации прошла курс Питера Мертл как преподавателя медитации, АСИ 3 и ДСИ 3. Закончина 18 открытых курсов АСИ и 4 преподавательских курса АСИ ТТ.</li><li>Высшее математическое образование, предприниматель, руководитель бизнеса в сфере ИТ.</li><li>Медитация - это основная практика, минимум 5 раз в неделю. Веду оффлайн - клуб медитации, потому что считаю эту практику очень важной в жизни каждого человека.</li><li>Обороты компании растут ежегодно, И в плане здоровья, после практически смертельного диагноза, смогла благодаря Алмазной Мудрости стать здоровой, за один год сдать 5 курсов АСИ, посетить 4 мероприятия с Учителями вживую, увеличить доход компании.</li></ul></details></div></article>
+<article class="tc reveal"><img src="img/t/t15.jpg" alt="Анна Волчок" loading="lazy" width="320" height="320">
+<div class="tc-b"><h3>Анна Волчок</h3><p class="role">Лектор Клуба</p>
+<details><summary>Подробнее</summary><ul class="dots sm"><li>Лектор, куратор и волонтёр AКМ</li><li>Закончила 6 курсов преподавателей ACI, из них 5 как куратор</li><li>Изучаю ACI с 2018 года, успешно закончила первые 18 ACI курсов в 2022 году</li><li>Регулярно медитирую с 2020 года, прошла 2 месячных молчаливых ретрита.</li></ul></details></div></article>
+<article class="tc reveal"><img src="img/t/t16.jpg" alt="Татьяна Цыбулько" loading="lazy" width="320" height="320">
+<div class="tc-b"><h3>Татьяна Цыбулько</h3><p class="role">Лектор Клуба</p>
+<details><summary>Подробнее</summary><ul class="dots sm"><li>С 2014 года начала изучать систему семян</li><li>Закончила 18 курсов ACI, прошла 5 курсов преподавателей ACI</li><li>Высшее техническое образование, инженер</li><li>Руководитель отдела поддержки студентов АКМ и член Совета Директоров Академии Классической Мудрости</li><li>Начала медитировать в 2012 году, прошла 14 медитационных ретритов и из них два мантра-ретрита, длинною в месяц.</li></ul></details></div></article>
+<article class="tc reveal"><img src="img/t/t17.jpg" alt="Лилия Тойкина" loading="lazy" width="320" height="320">
+<div class="tc-b"><h3>Лилия Тойкина</h3><p class="role">Лектор Клуба</p>
+<details><summary>Подробнее</summary><ul class="dots sm"><li>В 2019 году впервые услышала про ручку и Кармический менеджемент. В этом же году попала на тренинг к Майклу Роучу и с этого момента началось глубокое погружение в систему Алмазной мудрости. С конца 2019 года начала прохождение АСИ. С 2020 года начала медитировать.</li><li>Курсы по медитации: АСl 3, DCI 3, SCIM 3, АСI ТТ3, МТТ. Закончила 17 курсов АСI, завершаю 18-й</li><li>Врач биохимик (2 Московский медицинский институт)</li><li>Специалист по международным отношениям (Дипломатическая академия МИД РФ)</li><li>Медитирую ежедневно в среднем 45 мин. Было время, когда медитировала более часа.</li><li>Медитация для меня способ погрузиться в свое сознание, услышать свои мысли и возможность управлять ими. Благодаря медитациям я решаю проблемы, так как сразу же через шесть оттенков пустоты понимаю, как я могу себе помочь.</li><li>Семь предварительных шагов для меня обязательная практика , в которой я соединяюсь с Учителем и получаю его благословение на день.</li><li>В медитациях я научилась визуализировать желаемую реальность и выбрасывать ее в жизнь.</li><li>С помощью медитации я создала своего учителя.</li><li>С помощью инструментов АМ создала дом мечты; отношения с дочерью из минуса трансформировались в то, что дочь практикует систему семян и передает знания; отношения с мужем, которые были на грани развода, приобретают новые грани, где есть поддержка, принятие, радость и счастье.</li></ul></details></div></article></div>
+    </div>
+  </section>
+
+  <div class="mega-wrap">
+    <section class="mega cream sec" id="reviews">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="eyebrow">Отзывы</span>
+            <h2>Отзывы <span class="grad">участников</span></h2>
+          </div>
+        </div>
+        <div class="strip vrevs" id="stripV"><div class="video vr"><button class="yt" data-id="FXVS-vrR3jg" aria-label="Видеоотзыв участника Клуба">
+<img src="img/vrev/revB01.jpg" alt="" loading="lazy"><span class="play"></span></button></div>
+<div class="video vr"><button class="yt" data-id="yIAtybfHgAQ" aria-label="Видеоотзыв участника Клуба">
+<img src="img/vrev/revB02.jpg" alt="" loading="lazy"><span class="play"></span></button></div>
+<div class="video vr"><button class="yt" data-id="OJ1i8eVqn2A" aria-label="Видеоотзыв участника Клуба">
+<img src="img/vrev/revB03.jpg" alt="" loading="lazy"><span class="play"></span></button></div>
+<div class="video vr"><button class="yt" data-id="-ukACNENjvM" aria-label="Видеоотзыв участника Клуба">
+<img src="img/vrev/revB04.jpg" alt="" loading="lazy"><span class="play"></span></button></div>
+<div class="video vr"><button class="yt" data-id="NJxrxXdYy_4" aria-label="Видеоотзыв участника Клуба">
+<img src="img/vrev/revB05.jpg" alt="" loading="lazy"><span class="play"></span></button></div>
+<div class="video vr"><button class="yt" data-id="XbrRSNOJ60c" aria-label="Видеоотзыв участника Клуба">
+<img src="img/vrev/revB06.jpg" alt="" loading="lazy"><span class="play"></span></button></div>
+<div class="video vr"><button class="yt" data-id="7SV8LYbYqL0" aria-label="Видеоотзыв участника Клуба">
+<img src="img/vrev/revB07.jpg" alt="" loading="lazy"><span class="play"></span></button></div>
+<div class="video vr"><button class="yt" data-id="ZcsDgkT6rDM" aria-label="Видеоотзыв участника Клуба">
+<img src="img/vrev/revB08.jpg" alt="" loading="lazy"><span class="play"></span></button></div>
+<div class="video vr"><button class="yt" data-id="mN9xfF16oTM" aria-label="Видеоотзыв участника Клуба">
+<img src="img/vrev/revB09.jpg" alt="" loading="lazy"><span class="play"></span></button></div>
+<div class="video vr"><button class="yt" data-id="rFkcVRV46SA" aria-label="Видеоотзыв участника Клуба">
+<img src="img/vrev/revB10.jpg" alt="" loading="lazy"><span class="play"></span></button></div>
+<div class="video vr"><button class="yt" data-id="K-9RDETduoM" aria-label="Видеоотзыв участника Клуба">
+<img src="img/vrev/revB11.jpg" alt="" loading="lazy"><span class="play"></span></button></div></div>
+        <div class="strip-nav" data-for="stripV"><button aria-label="Назад">←</button><button aria-label="Вперёд">→</button></div>
+        <h3 class="revs-h">Что пишут в чате Клуба</h3>
+        <div class="strip shots" id="stripS"><img src="img/rev/revA01.jpg" alt="Отзыв участника Клуба" loading="lazy">
+<img src="img/rev/revA02.jpg" alt="Отзыв участника Клуба" loading="lazy">
+<img src="img/rev/revA03.jpg" alt="Отзыв участника Клуба" loading="lazy">
+<img src="img/rev/revA04.jpg" alt="Отзыв участника Клуба" loading="lazy">
+<img src="img/rev/revA05.jpg" alt="Отзыв участника Клуба" loading="lazy">
+<img src="img/rev/revA06.jpg" alt="Отзыв участника Клуба" loading="lazy">
+<img src="img/rev/revA07.jpg" alt="Отзыв участника Клуба" loading="lazy">
+<img src="img/rev/revA08.jpg" alt="Отзыв участника Клуба" loading="lazy">
+<img src="img/rev/revA09.jpg" alt="Отзыв участника Клуба" loading="lazy">
+<img src="img/rev/revA10.jpg" alt="Отзыв участника Клуба" loading="lazy">
+<img src="img/rev/revA11.jpg" alt="Отзыв участника Клуба" loading="lazy">
+<img src="img/rev/revA12.jpg" alt="Отзыв участника Клуба" loading="lazy">
+<img src="img/rev/revA13.jpg" alt="Отзыв участника Клуба" loading="lazy">
+<img src="img/rev/revA14.jpg" alt="Отзыв участника Клуба" loading="lazy">
+<img src="img/rev/revA15.jpg" alt="Отзыв участника Клуба" loading="lazy">
+<img src="img/rev/revA16.jpg" alt="Отзыв участника Клуба" loading="lazy">
+<img src="img/rev/revA17.jpg" alt="Отзыв участника Клуба" loading="lazy"></div>
+        <div class="strip-nav" data-for="stripS"><button aria-label="Назад">←</button><button aria-label="Вперёд">→</button></div>
+      </div>
+    </section>
+  </div>
+
+  <section class="sec dark" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">Вопросы и поддержка</span>
+          <h2>Частые <span class="grad">вопросы</span></h2>
+        </div>
+      </div>
+      <div class="faq">
+        <details><summary>Будут ли доступны записи курсов и медитаций?</summary><div class="ans"><p>Да, записи всех предыдущих курсов, а также все сопутствующие материалы, записи медитаций, мануалы и руководства доступны участникам в удобном приложении.</p></div></details>
+        <details><summary>Я оформил(а) подписку, но не получил(а) доступ</summary><div class="ans"><p>Если вы оформили регулярную подписку, но не получили доступ к Клубу в течение 24 часов, напишите в <a href="https://t.me/+2FOgDGwJgUtkOWQy">чат техподдержки</a> — наша Служба заботы ответит вам.</p></div></details>
+      </div>
+      <div class="support-row">
+        <div class="card glass">
+          <span class="eyebrow">Техподдержка</span>
+          <p>Остались вопросы о Клубе или оплате? Напишите нам — поможем.</p>
+          <a class="btn btn-ghost" href="https://t.me/+2FOgDGwJgUtkOWQy">Чат техподдержки</a>
+        </div>
+        <div class="card glass">
+          <span class="eyebrow">Поддержать проект</span>
+          <p>Друзья, вы также можете поддержать Академию Классической Мудрости и Клуб Медитации в частности, внеся разовый платеж на любую сумму. Благодаря этому больше людей смогут узнать о древней мудрости и медитации!</p>
+          <a class="btn btn-ghost" href="https://secure.wayforpay.com/button/b0b0f574507d6">Поддержать Клуб медитации АКМ</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec dark final">
+    <div class="wrap">
+      <img class="lg" src="img/logo.svg" width="150" height="150" alt="Логотип Клуба медитации АКМ">
+      <span class="eyebrow">Подключайтесь</span>
+      <h2>Давайте сделаем это <span class="grad">вместе!</span></h2>
+      <p class="big" style="color:var(--text-lm);max-width:40rem">Медитации с сопровождением преподавателей, поддержка единомышленников и регулярность, которая меняет жизнь.</p>
+      <div class="ctas">
+        <a class="btn btn-gold" href="https://t.me/Meditation_club_acm_bot?start=649c00d0dbae8e42c708b9d4">Вступить в Клуб <span class="ar">→</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr">
+  <div class="ftr-in">
+    <a class="brand" href="#top"><img src="img/logo.svg" width="52" height="52" alt=""><span class="brand-txt" style="display:grid"><b>Клуб медитации</b><span>Академия Классической Мудрости</span></span></a>
+    <div>ФОП Беліцька Олеся Олександрівна | ЄДРПОУ 2991816226<br><a href="mailto:acirussian2@gmail.com">acirussian2@gmail.com</a> · <a href="https://lp.classicwisdomacademy.com/ofertakk">Оферта</a></div>
+  </div>
+</footer>
+
+<div class="sup">
+  <div class="sup-card" id="supCard" role="dialog" aria-labelledby="supTitle" hidden>
+    <button class="sup-x" id="supX" aria-label="Закрыть">×</button>
+    <h3 id="supTitle">Техподдержка</h3>
+    <p>Если вы оформили подписку, но не получили доступ к Клубу в течение 24 часов, напишите нам — Служба заботы ответит.</p>
+    <a class="btn btn-gold" href="https://t.me/+2FOgDGwJgUtkOWQy" target="_blank" rel="noopener">Чат техподдержки <span class="ar">→</span></a>
+  </div>
+  <button class="sup-btn" id="supBtn" aria-expanded="false" aria-controls="supCard">
+    <span class="tg"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.4 4.3L2.9 11.4c-1.3.5-1.2 1.3-.2 1.6l4.7 1.5 1.8 5.6c.2.6.4.8.9.8.4 0 .6-.2.9-.5l2.3-2.2 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.7c.3-1.3-.5-1.9-1.5-1.4z"/></svg></span><span class="lbl">Техподдержка</span>
+  </button>
+</div>
+
+<script>
+(function(){
+  var btn=document.getElementById('menuBtn'),nav=document.getElementById('mnav');
+  btn.addEventListener('click',function(){var o=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',String(!o));nav.hidden=o;});
+  nav.addEventListener('click',function(e){if(e.target.closest('a')){btn.setAttribute('aria-expanded','false');nav.hidden=true;}});
+  var sb=document.getElementById('supBtn'),sc=document.getElementById('supCard');
+  function supSet(o){sc.hidden=!o;sb.setAttribute('aria-expanded',String(o));}
+  sb.addEventListener('click',function(){supSet(sc.hidden);});
+  document.getElementById('supX').addEventListener('click',function(){supSet(false);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')supSet(false);});
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var s=document.getElementById('seeds');
+  if(s&&!reduce){for(var i=0;i<26;i++){var x=document.createElement('i');x.style.left=(Math.random()*100)+'%';x.style.setProperty('--s',(4+Math.random()*7)+'px');x.style.setProperty('--d',(9+Math.random()*10)+'s');x.style.setProperty('--dl',(-Math.random()*18)+'s');x.style.setProperty('--dx',(Math.random()*120-60)+'px');s.appendChild(x);}}
+  document.querySelectorAll('.yt').forEach(function(b){
+    b.addEventListener('click',function(){var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+b.dataset.id+'?autoplay=1&rel=0';f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;f.title=b.getAttribute('aria-label')||'Видео';f.style.cssText='position:absolute;inset:0;width:100%;height:100%;border:0';b.replaceWith(f);});
+  });
+  document.querySelectorAll('.strip-nav').forEach(function(n){
+    var st=document.getElementById(n.dataset.for),bs=n.querySelectorAll('button');
+    function go(d){st.scrollBy({left:d*st.clientWidth*.8,behavior:reduce?'auto':'smooth'});}
+    bs[0].addEventListener('click',function(){go(-1)});bs[1].addEventListener('click',function(){go(1)});
+  });
+  if(!('IntersectionObserver' in window)||reduce){document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(!en.isIntersecting)return;en.target.classList.add('in');io.unobserve(en.target);});},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>
