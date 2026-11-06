@@ -976,6 +976,41 @@ h2 .grad{font-size:1.12em}
 
 /* translucent navy panels: the sky glows through */
 .sec.dark:not(.hero3){background:linear-gradient(165deg,rgba(45,54,100,.58) 0%,rgba(27,33,64,.66) 100%)!important;backdrop-filter:blur(22px) saturate(130%)!important;-webkit-backdrop-filter:blur(22px) saturate(130%)!important;border:1px solid rgba(255,255,255,.28)!important}
+
+/* winding road through results */
+.ress.road{display:block!important;position:relative;padding:30px 0 20px}
+.ress.road .res{position:relative;z-index:1;width:min(44%,470px);margin:0 0 34px!important;grid-column:auto!important;transition:box-shadow .6s ease,transform .6s ease,border-color .6s ease,background .6s ease}
+.ress.road .res:nth-child(odd of .res){margin-right:auto!important}
+.ress.road .res:nth-child(even of .res){margin-left:auto!important}
+.ress.road .res:last-of-type{margin-bottom:0!important}
+.road-svg{position:absolute;inset:0;z-index:0;overflow:visible;pointer-events:none}
+.road-bed{fill:none;stroke:#f3e3cf;stroke-width:22;stroke-linecap:round;opacity:.9}
+.road-line{fill:none;stroke:#e2c39c;stroke-width:2;stroke-dasharray:2 10;stroke-linecap:round}
+.road-lit{fill:none;stroke:url(#none);stroke:#f0a85a;stroke-width:4;stroke-linecap:round;filter:drop-shadow(0 0 6px rgba(255,180,90,.8));transition:stroke-dashoffset .15s linear}
+.road-svg .stop{fill:#fff;stroke:#e8b07a;stroke-width:2}
+.cream .ress.road .res.lit{border:1px solid rgba(232,160,90,.6)!important;box-shadow:0 0 0 4px rgba(255,200,120,.18),0 24px 60px -24px rgba(240,150,80,.6)!important;background:linear-gradient(160deg,#fffdf8 0%,#fff3e2 100%)!important}
+.cream .ress.road .res.now{transform:scale(1.025)}
+.cream .ress.road .res.lit .n{filter:drop-shadow(0 0 10px rgba(255,170,80,.75))}
+.ress.road .res::after{content:"✦";position:absolute;top:18px;right:20px;color:#e8a05a;font-size:18px;opacity:0;transform:scale(.4) rotate(-40deg);transition:all .6s cubic-bezier(.3,1.6,.5,1)}
+.ress.road .res.lit::after{opacity:1;transform:none}
+.trav{position:absolute;left:0;top:0;z-index:2;width:56px;height:64px;margin:-60px 0 0 -28px;pointer-events:none;will-change:transform}
+.trav svg{position:relative;width:56px;height:64px;overflow:visible;filter:drop-shadow(0 0 6px rgba(255,190,100,.85))}
+.trav.flip svg{transform:scaleX(-1)}
+.trav .walker{fill:#1b2140;stroke:#1b2140;stroke-width:3.4;stroke-linecap:round}
+.trav .walker circle{stroke:none}
+.trav .sitter{fill:#1b2140;display:none}
+.trav .sitter .heart{fill:#ffd27a}
+.trav.sit .walker{display:none}.trav.sit .sitter{display:block}
+.trav .leg,.trav .arm{transform-box:view-box;transform-origin:0 -13px}
+.trav .arm{transform-origin:0 -25px}
+.trav.moving .l1,.trav.moving .a2{animation:swingA .5s ease-in-out infinite alternate}
+.trav.moving .l2,.trav.moving .a1{animation:swingB .5s ease-in-out infinite alternate}
+@keyframes swingA{from{transform:rotate(-24deg)}to{transform:rotate(24deg)}}
+@keyframes swingB{from{transform:rotate(24deg)}to{transform:rotate(-24deg)}}
+.trav .halo{position:absolute;left:50%;top:60%;width:96px;height:96px;margin:-48px 0 0 -48px;border-radius:50%;background:radial-gradient(circle,rgba(255,214,140,.85),rgba(255,190,120,.25) 45%,transparent 70%);opacity:0;transform:scale(.5);transition:opacity .5s,transform .5s}
+.trav.sit .halo{opacity:1;transform:scale(1);animation:haloB 4s ease-in-out infinite}
+@keyframes haloB{0%,100%{transform:scale(.85);opacity:.7}45%{transform:scale(1.15);opacity:1}}
+@media (max-width:700px){.ress.road .res,.ress.road .res:nth-child(odd of .res),.ress.road .res:nth-child(even of .res){width:auto;margin-left:52px!important;margin-right:0!important}.road-bed{stroke-width:16}}
 </style>
 </head>
 <body>
@@ -1429,6 +1464,7 @@ h2 .grad{font-size:1.12em}
 </div>
 
 <script src="vine.js" defer></script>
+<script src="road.js" defer></script>
 <script>
 (function(){
   var btn=document.getElementById('menuBtn'),nav=document.getElementById('mnav');
