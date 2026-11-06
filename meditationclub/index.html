@@ -1166,6 +1166,10 @@ h1,h2,h3,h4,.p-title,.sub-h,.stat .num,.price .sum,.tier .sum,.facts b,.dock b,.
 .hand,.cream .hand,.keytext .hand{font-family:'Cormorant Garamond',Georgia,serif!important;font-style:italic!important;font-weight:600!important;transform:none!important}
 .ink-wrap,.ink-wrap *{font-family:'Caveat',cursive!important;font-style:normal!important}
 .scroll-paper .by{font-family:'Cormorant Garamond',Georgia,serif!important;font-style:italic!important}
+/* hero title: one script font, high contrast */
+.hero3 h1.ttl{position:relative;font-size:clamp(60px,min(9.4vw,15vh),150px)!important;line-height:1!important;letter-spacing:0!important}
+.hero3 h1.ttl::before{content:"";position:absolute;left:50%;top:52%;width:118%;height:150%;transform:translate(-50%,-50%);z-index:-1;border-radius:50%;background:radial-gradient(ellipse at center,rgba(40,26,70,.42) 0,rgba(40,26,70,.2) 42%,transparent 70%);filter:blur(10px);pointer-events:none}
+.hero3 h1.ttl .grad{font-size:1em!important;padding:0 .08em .06em;background:linear-gradient(100deg,#ffe3a1 0%,#ffc58d 35%,#ffa48f 65%,#ff8fb0 100%)!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important;filter:drop-shadow(0 1px 1px rgba(70,30,60,.55)) drop-shadow(0 4px 22px rgba(60,25,80,.5))!important}
 /* key block */
 .keyblock{grid-template-columns:auto minmax(0,1fr)!important;max-width:940px;margin-inline:auto;gap:clamp(32px,5vw,72px)!important;padding:clamp(30px,3.6vw,52px) clamp(30px,4.6vw,68px)!important;align-items:center}
 .keyart{width:clamp(84px,7.4vw,112px)!important;margin:0!important}
@@ -1216,7 +1220,7 @@ h1,h2,h3,h4,.p-title,.sub-h,.stat .num,.price .sum,.tier .sum,.facts b,.dock b,.
     <div class="hero3-in">
       <svg class="arc" viewBox="0 0 720 80" aria-hidden="true"><path d="M20 70 Q360 -10 700 70" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1"/><g class="node" transform="translate(150 36)"><circle r="17" fill="rgba(255,255,255,.22)" stroke="rgba(255,255,255,.7)"/><g fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M0 7C-3 4-3-1 0-5c3 4 3 9 0 12z"/><path d="M0 7c-3-1-7-3-8-8 4 0 7 3 8 8zM0 7c3-1 7-3 8-8-4 0-7 3-8 8z"/></g></g><g class="node" transform="translate(290 20)"><circle r="17" fill="rgba(255,255,255,.22)" stroke="rgba(255,255,255,.7)"/><g fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle r="4"/><path d="M0-9v2M0 7v2M-9 0h2M7 0h2M-6.4-6.4l1.4 1.4M5 5l1.4 1.4M-6.4 6.4l1.4-1.4M5-5l1.4-1.4"/></g></g><g class="node" transform="translate(430 20)"><circle r="17" fill="rgba(255,255,255,.22)" stroke="rgba(255,255,255,.7)"/><g fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M0 6C-5 2-8-1-7.5-4.2-7-7-3.5-7.5 0-4c3.5-3.5 7-3 7.5-.2C8-1 5 2 0 6z"/></g></g><g class="node" transform="translate(570 36)"><circle r="17" fill="rgba(255,255,255,.22)" stroke="rgba(255,255,255,.7)"/><g fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.5A7 7 0 01-3-6a7 7 0 107 10.5z"/></g></g></svg>
       <span class="chip"><i></i>от Академии Классической Мудрости</span>
-      <h1>Клуб <span class="grad">медитации</span></h1>
+      <h1 class="ttl"><span class="grad">Клуб медитации</span></h1>
       <div class="hlogo" aria-hidden="true"><span class="hl-aura"></span><img class="hl-base" src="img/logo-512.png" alt="" width="512" height="512"><img class="hl-heart" src="img/logo-512.png" alt="" width="512" height="512"><span class="hl-glow"></span></div>
       <p class="sub">Уникальная система медитаций с историей в 2,5 тысячи лет</p>
       <p class="lead3">Для новичков и продвинутых практиков: медитации с сопровождением преподавателей, курсы в записи и в прямом эфире.</p>
@@ -1669,12 +1673,12 @@ h1,h2,h3,h4,.p-title,.sub-h,.stat .num,.price .sum,.tier .sum,.facts b,.dock b,.
   if(bt&&!reduce){var ph=0;function tick(){bt.style.opacity=0;setTimeout(function(){bt.textContent=ph?'выдох':'вдох';bt.style.opacity=1;},300);var d=ph?6000:4000;ph=1-ph;setTimeout(tick,d);}tick();}
   var sf=document.getElementById('stars');
   if(sf&&!reduce){var SIL='<svg viewBox="-16 -32 32 34"><circle cx="0" cy="-25" r="4.6"/><path d="M0-19.5c-4 0-6 2.5-6.6 5.7l-1.1 5.5-5 3c-1.7 1-1 3.4 1 3.4h23.4c2 0 2.7-2.4 1-3.4l-5-3-1.1-5.5C6-17 4-19.5 0-19.5z"/></svg>';
-    var mob=window.innerWidth<700,N=mob?3:6,k=0;
+    var mob=window.innerWidth<700,N=mob?5:10,k=0;
     function spot(){var x,y,t=0;do{x=3+Math.random()*94;y=15+Math.random()*75;t++;}while(t<30&&x>22&&x<78&&y>18&&y<92);return [x,y];}
     function star(){var e=document.createElement('i'),q=spot(),z=mob?(22+Math.random()*8):(26+Math.random()*14),d=8+Math.random()*4;
       e.innerHTML='<b class="spark"></b><b class="orb">'+SIL+'</b>';e.style.left=q[0]+'%';e.style.top=q[1]+'%';e.style.setProperty('--z',z+'px');e.style.setProperty('--d',d+'s');
-      sf.appendChild(e);setTimeout(function(){e.remove();setTimeout(star,2500+Math.random()*4500);},d*1000);}
-    for(var j=0;j<N;j++)setTimeout(star,600+j*(mob?2600:1900));}
+      sf.appendChild(e);setTimeout(function(){e.remove();setTimeout(star,1200+Math.random()*2800);},d*1000);}
+    for(var j=0;j<N;j++)setTimeout(star,400+j*(mob?1500:1000));}
   var hl=document.querySelector('.hlogo');
   if(hl&&!reduce){var inh=1;function br(){hl.classList.toggle('inhale',inh===1);var d=inh?4000:6000;inh=1-inh;setTimeout(br,d);}br();}
   if(s&&!reduce){for(var i=0;i<26;i++){var x=document.createElement('i');x.style.left=(Math.random()*100)+'%';x.style.setProperty('--s',(4+Math.random()*7)+'px');x.style.setProperty('--d',(9+Math.random()*10)+'s');x.style.setProperty('--dl',(-Math.random()*18)+'s');x.style.setProperty('--dx',(Math.random()*120-60)+'px');s.appendChild(x);}}
