@@ -1160,17 +1160,23 @@ img[src$="logo.jpg"]{border-radius:50%!important;object-fit:cover;background:non
 <script>
 /* geo: RU/BY visitors see Boosty only and no Ukrainian FOP requisites */
 (function(){var d=document.documentElement,K='akm-geo';
-function set(r){d.classList.remove('geo-wait');d.classList.toggle('geo-ru',r==='ru');try{sessionStorage.setItem(K,r)}catch(e){}}
-var q=(location.search.match(/[?&]region=(ru|intl)/)||[])[1];if(q){set(q);return;}
+function set(r){d.classList.remove('geo-wait');d.classList.toggle('geo-ru',r==='ru');d.classList.toggle('geo-ua',r==='ua');try{sessionStorage.setItem(K,r)}catch(e){}}
+var q=(location.search.match(/[?&]region=(ru|ua|intl)/)||[])[1];if(q){set(q);return;}
 try{var s=sessionStorage.getItem(K);if(s){set(s);return;}}catch(e){}
 var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}
 var RTZ=/^(Europe\/(Moscow|Kaliningrad|Samara|Volgograd|Saratov|Ulyanovsk|Astrakhan|Kirov|Minsk)|Asia\/(Yekaterinburg|Omsk|Novosibirsk|Barnaul|Tomsk|Novokuznetsk|Krasnoyarsk|Irkutsk|Chita|Yakutsk|Khandyga|Vladivostok|Ust-Nera|Magadan|Sakhalin|Srednekolymsk|Kamchatka|Anadyr))$/;
 if(RTZ.test(tz)){set('ru');return;}
+if(/^Europe\/(Kiev|Kyiv|Uzhgorod|Zaporozhye)$/.test(tz)){set('ua');return;}
 d.classList.add('geo-wait');
 var done=false;function fin(r){if(!done){done=true;set(r)}}
 setTimeout(function(){fin('intl')},2500);
-fetch('https://get.geojs.io/v1/ip/country.json').then(function(r){return r.json()}).then(function(j){fin(/^(RU|BY)$/.test(j.country)?'ru':'intl')}).catch(function(){fin('intl')});
+fetch('https://get.geojs.io/v1/ip/country.json').then(function(r){return r.json()}).then(function(j){fin(/^(RU|BY)$/.test(j.country)?'ru':j.country==='UA'?'ua':'intl')}).catch(function(){fin('intl')});
 })();
+/* UA visitors: bot entry without Boosty (fill UA_START when the bot flow is ready) */
+(function(){var UA_START='';if(!UA_START)return;
+function swap(){if(!document.documentElement.classList.contains('geo-ua'))return;
+[].forEach.call(document.querySelectorAll('a[href*="Meditation_club_acm_bot?start="]'),function(a){a.href='https://t.me/Meditation_club_acm_bot?start='+UA_START;});}
+document.addEventListener('DOMContentLoaded',swap);new MutationObserver(swap).observe(document.documentElement,{attributes:true,attributeFilter:['class']});})();
 </script>
 <style>
 html:not(.geo-ru) .only-ru{display:none!important}
