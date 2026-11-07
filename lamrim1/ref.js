@@ -23,6 +23,7 @@ var LAMRIM_PARTNERS = {
   // Diamond Mind Academy (немецкоязычная команда): 5 проданных билетов = 1 бесплатный
   dma: {
     b27b9968a0cf1: 'ba4504aa93b04',   // место 169 € (EN/DE) — кнопка DMA
+    b305aadd75ff7: 'bc2001aa60dd4',   // VIP 600 € (EN/DE) — кнопка DMA
   },
 };
 
