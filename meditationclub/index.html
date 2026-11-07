@@ -1173,7 +1173,7 @@ setTimeout(function(){fin('intl')},2500);
 fetch('https://get.geojs.io/v1/ip/country.json').then(function(r){return r.json()}).then(function(j){fin(/^(RU|BY)$/.test(j.country)?'ru':j.country==='UA'?'ua':'intl')}).catch(function(){fin('intl')});
 })();
 /* UA visitors: bot entry without Boosty (fill UA_START when the bot flow is ready) */
-(function(){var UA_START='';if(!UA_START)return;
+(function(){var UA_START='6aef8dacfe602eace4097769';if(!UA_START)return;
 function swap(){if(!document.documentElement.classList.contains('geo-ua'))return;
 [].forEach.call(document.querySelectorAll('a[href*="Meditation_club_acm_bot?start="]'),function(a){a.href='https://t.me/Meditation_club_acm_bot?start='+UA_START;});}
 document.addEventListener('DOMContentLoaded',swap);new MutationObserver(swap).observe(document.documentElement,{attributes:true,attributeFilter:['class']});})();
