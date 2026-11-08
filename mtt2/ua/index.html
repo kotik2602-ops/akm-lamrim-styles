@@ -539,6 +539,25 @@ b,strong{font-weight:800}
 .langs a.on{background:var(--gold);color:var(--ink)}
 .mnav .langs{display:none;margin:8px 6px 4px;padding-top:10px;border-top:1px solid var(--line-l)}
 @media (max-width:640px){.hdr-in>.langs{display:none}.mnav .langs{display:flex}.mnav .langs a{padding:8px 14px;font-size:13px}}
+/* video invitations */
+.vids{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.vcard{display:flex;flex-direction:column;gap:20px;padding:clamp(14px,1.6vw,18px);border-radius:var(--r-card);background:linear-gradient(160deg,rgba(47,29,34,.76) 0%,rgba(26,16,18,.66) 75%);border:1px solid var(--line-l)}
+.vq{padding:0 6px 6px}
+.vplay{position:relative;display:block;width:100%;aspect-ratio:9/16;border-radius:18px;overflow:hidden;border:1px solid rgba(243,217,145,.35);background:#1a1012;padding:0;cursor:pointer;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.vplay img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease,filter .4s}
+.vplay::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(26,16,18,.55))}
+.vplay .pl{position:absolute;left:50%;bottom:18px;z-index:1;width:60px;height:60px;margin-left:-30px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold-l),var(--gold));box-shadow:0 0 0 8px rgba(221,174,53,.25),0 10px 30px rgba(0,0,0,.4);transition:transform .3s}
+.vplay .pl svg{width:24px;height:24px;margin-left:4px;fill:var(--ink)}
+.vplay:hover img{transform:scale(1.04)}.vplay:hover .pl{transform:scale(1.08)}
+.vplay iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vq{margin:0}
+.vq blockquote{margin:0;font-family:var(--display);font-weight:600;font-size:clamp(16px,1.35vw,19px);line-height:1.35;letter-spacing:-.015em;color:var(--text-l);position:relative;padding-top:34px}
+.vq blockquote::before{content:"“";position:absolute;top:-14px;left:-4px;font-size:72px;line-height:1;color:var(--gold);font-family:Georgia,serif}
+.vq p{margin-top:14px;font-size:15px}
+.vq figcaption{margin-top:16px;display:flex;flex-direction:column;gap:2px}
+.vq figcaption b{font-family:var(--display);font-size:15px}
+.vq figcaption span{font-size:13px;color:var(--text-lm)}
+@media (max-width:860px){.vids{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;padding-bottom:12px;scrollbar-width:thin;scrollbar-color:var(--gold) transparent}.vcard{flex:0 0 min(80vw,320px);scroll-snap-align:start}}
 /* faces constellation */
 .stars-faces{position:relative;aspect-ratio:2/1;width:100%;margin:clamp(36px,5vw,64px) 0 0}
 .stars-faces::before{content:"";position:absolute;inset:0 10%;border-radius:50%;background:radial-gradient(ellipse,rgba(221,174,53,.16),transparent 70%);pointer-events:none}
@@ -898,6 +917,39 @@ b,strong{font-weight:800}
   </div>
 </section></div>
 
+<!-- VIDEO INVITATIONS -->
+<div class="mega-wrap"><section class="mega sec burgm" id="videos">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Відео-запрошення</span><h2>Послухайте <span class="grad">викладачів</span></h2></div><p>Короткі відео, у&nbsp;яких викладачі розповідають, навіщо йти на&nbsp;МТТ-2. Відео російською мовою.</p></div>
+    <div class="vids">
+      <article class="vcard reveal">
+        <button class="vplay" type="button" data-yt="MBxoqcAr6RI" aria-label="Дивитися відео-запрошення Людмили Мішаніної"><img src="../img/vid/mila.webp" width="540" height="960" alt="" loading="lazy"><span class="pl" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span></button>
+        <figure class="vq">
+          <blockquote>Наша реальність не&nbsp;є чимось незмінним. І&nbsp;ми можемо створювати причини для її зміни.</blockquote>
+          <p>Як пояснювати пустоту простими словами, відповідати на&nbsp;складні запитання й&nbsp;допомагати людям перетворювати теорію на&nbsp;реальні результати.</p>
+          <figcaption><b>Людмила Мішаніна</b><span>Заняття 1 · старший тренер АКМ</span></figcaption>
+        </figure>
+      </article>
+      <article class="vcard reveal">
+        <button class="vplay" type="button" data-yt="5M7cin_0V7Q" aria-label="Дивитися відео-запрошення Олександри Пунько"><img src="../img/vid/alexandra.webp" width="540" height="960" alt="" loading="lazy"><span class="pl" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span></button>
+        <figure class="vq">
+          <blockquote>Тренер — це не&nbsp;той, хто все знає і&nbsp;вміє. У&nbsp;нас усе знає і&nbsp;вміє тільки Будда!</blockquote>
+          <p>Особливо для тих, хто давно хотів ділитися знаннями, але сумнівався в&nbsp;собі.</p>
+          <figcaption><b>Олександра Пунько</b><span>Заняття 2 · старший тренер АКМ</span></figcaption>
+        </figure>
+      </article>
+      <article class="vcard reveal">
+        <button class="vplay" type="button" data-yt="lPDsVldNJSs" aria-label="Дивитися відео-запрошення Марини Щепаняк"><img src="../img/vid/marina.webp" width="540" height="960" alt="" loading="lazy"><span class="pl" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span></button>
+        <figure class="vq">
+          <blockquote>Один із&nbsp;найпотужніших способів поглибити свою практику — допомагати іншим опановувати медитацію й&nbsp;розуміти пустоту.</blockquote>
+          <p>Чому навчання інших створює причини для стабільної практики та&nbsp;глибоких інсайтів.</p>
+          <figcaption><b>Марина Щепаняк</b><span>Заняття 4 · старший тренер АКМ</span></figcaption>
+        </figure>
+      </article>
+    </div>
+  </div>
+</section></div>
+
 <!-- OUTCOMES -->
 <section class="sec dark">
   <div class="wrap">
@@ -1140,6 +1192,11 @@ b,strong{font-weight:800}
 
 <script>
 (function(){
+  /* video invitations: load YouTube only on click */
+  document.querySelectorAll('.vplay[data-yt]').forEach(function(b){b.addEventListener('click',function(){
+    var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+b.dataset.yt+'?autoplay=1&playsinline=1&rel=0';
+    f.title=b.getAttribute('aria-label');f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;
+    b.innerHTML='';b.appendChild(f);b.removeAttribute('data-yt');b.style.cursor='default';},{once:true});});
   var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
   var hasIO='IntersectionObserver' in window;
 
