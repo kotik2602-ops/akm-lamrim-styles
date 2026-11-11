@@ -540,7 +540,8 @@ b,strong{font-weight:800}
 .mnav .langs{display:none;margin:8px 6px 4px;padding-top:10px;border-top:1px solid var(--line-l)}
 @media (max-width:640px){.hdr-in>.langs{display:none}.mnav .langs{display:flex}.mnav .langs a{padding:8px 14px;font-size:13px}}
 /* video invitations */
-.vids{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.vids{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+@media (max-width:1180px) and (min-width:861px){.vids{grid-template-columns:repeat(2,minmax(0,1fr))}.vplay{max-width:300px;margin:0 auto}}
 .vcard{display:flex;flex-direction:column;gap:20px;padding:clamp(14px,1.6vw,18px);border-radius:var(--r-card);background:linear-gradient(160deg,rgba(47,29,34,.76) 0%,rgba(26,16,18,.66) 75%);border:1px solid var(--line-l)}
 .vq{padding:0 6px 6px}
 .vplay{position:relative;display:block;width:100%;aspect-ratio:9/16;border-radius:18px;overflow:hidden;border:1px solid rgba(243,217,145,.35);background:#1a1012;padding:0;cursor:pointer;box-shadow:0 18px 40px rgba(0,0,0,.35)}
@@ -551,7 +552,7 @@ b,strong{font-weight:800}
 .vplay:hover img{transform:scale(1.04)}.vplay:hover .pl{transform:scale(1.08)}
 .vplay iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .vq{margin:0}
-.vq blockquote{margin:0;font-family:var(--display);font-weight:600;font-size:clamp(16px,1.35vw,19px);line-height:1.35;letter-spacing:-.015em;color:var(--text-l);position:relative;padding-top:34px}
+.vq blockquote{margin:0;font-family:var(--display);font-weight:600;font-size:clamp(15px,1.15vw,17px);line-height:1.35;letter-spacing:-.015em;color:var(--text-l);position:relative;padding-top:34px}
 .vq blockquote::before{content:"“";position:absolute;top:-14px;left:-4px;font-size:72px;line-height:1;color:var(--gold);font-family:Georgia,serif}
 .vq p{margin-top:14px;font-size:15px}
 .vq figcaption{margin-top:16px;display:flex;flex-direction:column;gap:2px}
@@ -936,6 +937,14 @@ b,strong{font-weight:800}
           <blockquote>Тренер — это не&nbsp;тот, кто всё знает и&nbsp;умеет. У&nbsp;нас всё знает и&nbsp;умеет только Будда!</blockquote>
           <p>Особенно для тех, кто давно хотел делиться знаниями, но&nbsp;сомневался в&nbsp;себе.</p>
           <figcaption><b>Александра Пунько</b><span>Занятие 2 · старший тренер АКМ</span></figcaption>
+        </figure>
+      </article>
+      <article class="vcard reveal">
+        <button class="vplay" type="button" data-yt="do8bzOlNVqE" aria-label="Смотреть видео-приглашение Марии Старушкевич"><img src="img/vid/maria.webp" width="540" height="960" alt="" loading="lazy"><span class="pl" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span></button>
+        <figure class="vq">
+          <blockquote>А&nbsp;что, если человек, которого вы научите медитировать, однажды увидит пустоту напрямую?</blockquote>
+          <p>Как хороший тренер помогает человеку влюбиться в&nbsp;медитацию — с&nbsp;первых минут практики до&nbsp;глубокого понимания.</p>
+          <figcaption><b>Мария Старушкевич</b><span>Занятие 3 · старший тренер АКМ</span></figcaption>
         </figure>
       </article>
       <article class="vcard reveal">
