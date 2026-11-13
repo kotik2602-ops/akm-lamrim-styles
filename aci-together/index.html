@@ -13,15 +13,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="style.css?v=1794604165">
+<link rel="stylesheet" href="style.css?v=1794604366">
 </head>
 <body>
+<div class="page-bg" aria-hidden="true"></div>
 <header class="top"><div class="wrap">
   <a class="brand" href="https://classicwisdomacademy.com/"><img src="img/logo-mark.png" alt="">Академия <b>Классической</b> Мудрости</a>
   <nav class="nav"><a href="#courses">Курсы 1–18</a><a href="#curators">С куратором</a><a href="#how">Как проходит</a><a href="#reviews">Отзывы</a><a href="faq/">Вопросы</a></nav>
 </div></header>
 
-<section class="hero"><div class="hero-bg"><img src="img/rainbow.jpg" alt="" fetchpriority="high"></div><div class="wrap">
+<section class="hero"><div class="hero-bg"><picture><source media="(max-width:860px)" srcset="img/hero-m.jpg"><img src="img/hero.jpg" alt="" fetchpriority="high"></picture></div><div class="wrap">
   <div class="kicker">Группы совместного прохождения</div>
   <h1>Курсы ACI — <em>вместе</em> с группой и куратором</h1>
   <p class="sub">18 бесплатных курсов о карме и мудрости Тибета от Геше Майкла Роуча. Проходить вместе легче: группа поддерживает, а куратор раз в неделю разбирает с вами домашние задания и сложные вопросы.</p>
@@ -29,19 +30,19 @@
   <div class="soon"><div class="plate"><span class="pdot"></span>Идёт набор — ближайшие старты<span class="parr" aria-hidden="true">↓</span></div><div class="soon-row" id="soon"></div><div class="swipe">← листайте →</div></div>
 </div></section>
 
-<section id="courses"><div class="wrap">
+<section id="courses" class="panel-sec"><div class="wrap">
   <h2>Выберите <em>курс</em></h2>
   <p class="lead">Нажмите на курс — откроется его страница с описанием и записью. Светятся курсы, на которые сейчас идёт набор.</p>
   <div class="cat" id="cat"></div>
 </div></section>
 
-<section id="curators"><div class="wrap">
+<section id="curators" class="panel-sec"><div class="wrap">
   <h2><em>Весь путь</em> с одним куратором</h2>
   <p class="lead">Некоторые кураторы ведут свою группу курс за курсом. Если вам близок человек — можно идти с ним дальше, от курса к курсу.</p>
   <div class="cgrid" id="cgrid"></div>
 </div></section>
 
-<section id="how" style="padding-top:0"><div class="wrap">
+<section id="how" class="panel-sec"><div class="wrap">
   <h2>Как проходит <em>обучение</em></h2>
   <p class="lead">Всё онлайн и бесплатно. Подробности придут после регистрации.</p>
   <ol class="how" style="padding:0;margin:0">
@@ -61,13 +62,13 @@
   <div class="yt" id="introVideo"></div>
 </div></section>
 
-<section id="reviews"><div class="wrap">
+<section id="reviews" class="panel-sec"><div class="wrap">
   <h2>Что говорят студенты <em>о курсах ACI</em></h2>
   <div class="slider"><div class="strip" id="revStrip"></div>
   <div class="arrows"><button class="arr" data-s="revStrip" data-d="-1" aria-label="Назад">←</button><button class="arr" data-s="revStrip" data-d="1" aria-label="Вперёд">→</button></div></div>
 </div></section>
 
-<section style="padding-top:0"><div class="wrap">
+<section class="panel-sec"><div class="wrap">
   <h2>ACI <em>меняет</em> жизни</h2>
   <p class="lead">Истории студентов, которые прошли курсы.</p>
   <div class="slider"><div class="strip stories" id="stories"></div>
@@ -81,7 +82,7 @@
   <div class="arrows"><button class="arr" data-s="vStrip" data-d="-1" aria-label="Назад">←</button><button class="arr" data-s="vStrip" data-d="1" aria-label="Вперёд">→</button></div></div>
 </div></section>
 
-<section class="final"><div class="wrap">
+<section class="final panel-sec"><div class="wrap">
   <h2>Готовы <em>начать</em>?</h2>
   <p class="lead">Выберите курс с открытым набором — или нажмите «Сообщить мне о старте» на нужном курсе, и мы напишем вам, когда откроется запись.</p>
   <div class="row"><a class="btn btn-gold" href="#courses">Выбрать курс</a><a class="btn btn-ghost" href="faq/">Частые вопросы</a></div>
@@ -94,8 +95,8 @@
 
 <div class="toast" id="toast"></div>
 <div class="lb" id="lb"><img alt=""></div>
-<script src="data.js?v=1794604165"></script>
-<script src="common.js?v=1794604165"></script>
+<script src="data.js?v=1794604366"></script>
+<script src="common.js?v=1794604366"></script>
 <script>
 (function(){
   var A = window.ACI, K = window.AK, esc = K.esc;
