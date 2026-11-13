@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="style.css?v=1794603740">
+<link rel="stylesheet" href="style.css?v=1794603817">
 </head>
 <body>
 <header class="top"><div class="wrap">
@@ -94,8 +94,8 @@
 
 <div class="toast" id="toast"></div>
 <div class="lb" id="lb"><img alt=""></div>
-<script src="data.js?v=1794603740"></script>
-<script src="common.js?v=1794603740"></script>
+<script src="data.js?v=1794603817"></script>
+<script src="common.js?v=1794603817"></script>
 <script>
 (function(){
   var A = window.ACI, K = window.AK, esc = K.esc;
@@ -117,12 +117,13 @@
     var gs = A.groups.filter(function(g){ return g.curator===cu.id; });
     var last = cu.track[cu.track.length-1], lg = gs.filter(function(x){ return x.course === last[0]; })[0];
     var lopen = lg && lg.state === 'open';
+    var lead = (cu.id==='sibir'?'Ведут':'Ведёт')+' группу по порядку курсов — '+(lopen?'следующий ACI '+last[0]+', старт '+lg.startText:'сейчас идёт ACI '+last[0])+'.';
     var plate = '<a class="pplate '+(lopen?'open':'run')+'" href="'+last[0]+'/"><small>'+(lopen?'Набор открыт':'Сейчас идёт')+'</small><b>ACI '+last[0]+'</b>'+(lopen?'<span>'+esc(lg.startText)+'</span>':'')+'</a>';
     var steps = '<div class="path"><svg viewBox="0 0 300 70" preserveAspectRatio="none" data-stars="'+(cu.track.length-1)+'"><path d="M4 50 C 50 10, 80 64, 128 36 S 210 8, 250 38 S 290 46, 298 30"/></svg>'+plate+'</div>';
     var og = gs.filter(function(g){return g.state==='open'})[0];
     var act = og ? '<a class="btn btn-gold" href="'+og.course+'/">Записаться на ACI '+og.course+' · '+esc(og.startText)+'</a>'
                  : K.btn((A.waitCurator||{})[cu.id], 'btn-ghost', 'Сообщить о следующем курсе', 'Кнопка заработает после подключения бота');
-    return '<div class="ccard" id="'+cu.id+'"><div class="hd"><span class="ava">'+cu.initials+'</span><div><h3>'+esc(cu.name)+'</h3>'+(cu.lang?'<span class="lang">'+esc(cu.lang)+'</span>':'')+'</div></div><p>'+esc(cu.lead)+'</p><div class="track">'+steps+'</div><div class="act">'+act+'</div></div>';
+    return '<div class="ccard" id="'+cu.id+'"><div class="hd"><span class="ava">'+cu.initials+'</span><div><h3>'+esc(cu.name)+'</h3>'+(cu.lang?'<span class="lang">'+esc(cu.lang)+'</span>':'')+'</div></div><p>'+esc(lead)+'</p><div class="track">'+steps+'</div><div class="act">'+act+'</div></div>';
   }).join('');
   document.querySelectorAll('.path svg').forEach(function(svg){
     var p = svg.querySelector('path'), n = +svg.getAttribute('data-stars'), L = p.getTotalLength(), NS = 'http://www.w3.org/2000/svg';
