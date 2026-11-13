@@ -489,3 +489,13 @@ a.tlink{color:var(--burg);font-weight:700;text-decoration:underline;text-decorat
 a.tlink:hover{text-decoration-color:var(--burg)}
 .mist a.tlink{color:var(--gold2);text-decoration-color:rgba(233,185,104,.5)}
 .lang.ru::before{background:linear-gradient(180deg,#fff 33%,#2f4fb5 33% 66%,#d03a3a 66%);display:none}.lang.ru{background:#eef0f7;color:#3a3f5e}
+/* «Что такое курсы ACI» внутри бордового блока */
+.aci-what{display:grid;grid-template-columns:1.25fr 1fr;gap:36px;align-items:center;margin-top:44px;padding-top:40px;border-top:1px solid rgba(251,243,234,.16)}
+@media(max-width:860px){.aci-what{grid-template-columns:1fr;gap:22px}}
+.aci-what h3{font:700 clamp(22px,2.4vw,30px)/1.15 var(--serif);color:#fff;margin:0 0 14px;letter-spacing:-.02em}
+.aci-what h3 em{font-style:normal;color:var(--gold2)}
+.aci-what p{color:rgba(251,243,234,.88);font-size:16px;margin:0 0 12px}
+.aw-stats{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.aw-stats li{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:18px}
+.aw-stats b{display:block;font:700 clamp(22px,2.4vw,30px)/1.1 var(--serif);color:var(--gold2);letter-spacing:-.02em;margin-bottom:6px;font-variant-numeric:lining-nums}
+.aw-stats span{font-size:13.5px;color:rgba(251,243,234,.85);line-height:1.35;display:block}
