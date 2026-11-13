@@ -508,3 +508,27 @@ a.tlink:hover{text-decoration-color:var(--burg)}
 .lang.ru{background:#eef0f7;color:#3a3f5e;padding-left:10px}
 .regbox .lang.ru{background:rgba(255,255,255,.12);color:#fff}
 .ccard h3{line-height:1.2}
+
+/* телефон: компактные карточки ближайших стартов, без вылета за край */
+html,body{overflow-x:clip}
+@media(max-width:600px){
+  .soon-row{margin:0 -16px;padding:4px 16px 12px;gap:10px;align-items:flex-start}
+  .soon-row .scard{width:58vw;max-width:240px;padding:14px 14px 12px}
+  .scard .sim{margin:-14px -14px 10px;height:96px}
+  .scard .sim span{font-size:22px;left:12px;bottom:8px}
+  .scard .t{font-size:14px;min-height:0;margin:2px 0 6px}
+  .scard .d{font-size:12px}
+  .scard .who{font-size:12px}
+  .scard .go{padding-top:10px}
+  .scard .go .btn{padding:10px 12px;font-size:13px}
+  .scard .more{font-size:11.5px;margin-top:6px}
+  .plate{font-size:13.5px;padding:10px 14px 10px 12px;gap:10px}
+  .hero{padding-bottom:24px}
+}
+@media(max-width:440px){.brand{font-size:10.5px}}
+@media(max-width:600px){
+  .soon-row{align-items:stretch}
+  .soon-row .scard{width:68vw;max-width:270px}
+  .scard .who{margin-top:2px;line-height:1.3}
+  .scard .lang{margin-top:5px;font-size:11px;padding:3px 8px 3px 6px}
+}
