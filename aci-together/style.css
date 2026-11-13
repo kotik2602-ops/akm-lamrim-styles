@@ -488,3 +488,4 @@ footer{background:rgba(252,249,243,.92);backdrop-filter:blur(8px);-webkit-backdr
 a.tlink{color:var(--burg);font-weight:700;text-decoration:underline;text-decoration-color:rgba(103,36,45,.35);text-underline-offset:3px}
 a.tlink:hover{text-decoration-color:var(--burg)}
 .mist a.tlink{color:var(--gold2);text-decoration-color:rgba(233,185,104,.5)}
+.lang.ru::before{background:linear-gradient(180deg,#fff 33%,#2f4fb5 33% 66%,#d03a3a 66%);display:none}.lang.ru{background:#eef0f7;color:#3a3f5e}

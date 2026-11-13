@@ -18,7 +18,7 @@
   K.open = A.groups.filter(function(g){ return g.state === 'open'; }).sort(function(a,b){ return a.start < b.start ? -1 : 1; });
   K.withCur = function(g){ if (g.curator === 'sibir') return 'с командой кураторов Сибирь / Дальний Восток'; var c = K.CUR[g.curator]; return c && c.coInstr ? g.curatorShort.replace(/^с /, 'с кураторами ') + ' и ' + c.coInstr : g.curatorShort.replace(/^с /, 'с куратором '); };
   K.curNames = function(c){ return c.co ? c.name + ' и ' + c.co : c.name; };
-  K.langOf = function(g){ var c = g.curator && K.CUR[g.curator]; return (c && c.lang) || ''; };
+  K.langOf = function(g){ if (g.lang) return g.lang; var c = g.curator && K.CUR[g.curator]; return (c && c.lang) || ''; };
   K.waitLink = function(n){ return (A.wait && A.wait[n]) || ''; };
   K.btn = function(href, cls, text, soon){
     return href ? '<a class="btn '+cls+'" href="'+K.esc(href)+'" target="_blank" rel="noopener">'+text+'</a>'

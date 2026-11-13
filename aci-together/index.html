@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="style.css?v=1794606823">
+<link rel="stylesheet" href="style.css?v=1794606869">
 </head>
 <body>
 <div class="page-bg" aria-hidden="true"></div>
@@ -127,8 +127,8 @@
 
 <div class="toast" id="toast"></div>
 <div class="lb" id="lb"><img alt=""></div>
-<script src="data.js?v=1794606823"></script>
-<script src="common.js?v=1794606823"></script>
+<script src="data.js?v=1794606869"></script>
+<script src="common.js?v=1794606869"></script>
 <script>
 (function(){
   var A = window.ACI, K = window.AK, esc = K.esc;
@@ -156,7 +156,7 @@
     var og = gs.filter(function(g){return g.state==='open'})[0];
     var act = og ? '<a class="btn btn-gold" href="'+og.course+'/">Записаться на ACI '+og.course+' · '+esc(og.startText)+'</a>'
                  : K.btn((A.waitCurator||{})[cu.id], 'btn-ghost', 'Сообщить о следующем курсе', 'Кнопка заработает после подключения бота');
-    return '<div class="ccard" id="'+cu.id+'"><div class="hd"><span class="ava">'+cu.initials+'</span><div><h3>'+esc(cu.name)+'</h3>'+(cu.co?'<div class="co">вместе с '+esc(cu.coInstr)+'</div>':'')+(cu.lang?'<span class="lang">'+esc(cu.lang)+'</span>':'')+'</div></div><p>'+esc(lead)+'</p><div class="track">'+steps+'</div><div class="act">'+act+'</div></div>';
+    return '<div class="ccard" id="'+cu.id+'"><div class="hd"><span class="ava">'+cu.initials+'</span><div><h3>'+esc(cu.name)+'</h3>'+(cu.co?'<div class="co">вместе с '+esc(cu.coInstr)+'</div>':'')+(cu.langLabel?'<span class="lang'+(cu.lang?'':' ru')+'">'+esc(cu.langLabel)+'</span>':'')+'</div></div><p>'+esc(lead)+'</p><div class="track">'+steps+'</div><div class="act">'+act+'</div></div>';
   }).join('');
   document.querySelectorAll('.path svg').forEach(function(svg){
     var p = svg.querySelector('path'), n = +svg.getAttribute('data-stars'), L = p.getTotalLength(), NS = 'http://www.w3.org/2000/svg';
