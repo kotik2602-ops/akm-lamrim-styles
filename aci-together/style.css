@@ -327,3 +327,19 @@ a.step{text-decoration:none}
 .pplate.open{background:var(--navy);color:#fff;animation:glow 3.2s ease-in-out infinite}
 .pplate.open small,.pplate.open span{color:var(--gold2)}
 .pplate.run{background:var(--runsoft);color:var(--run)}
+/* частые вопросы */
+.faqw .fq,.faqw .faqcta{max-width:860px}
+.fq{background:#fff;border:1.5px solid var(--line);border-radius:18px;margin-bottom:12px;transition:border-color .2s}
+.fq[open]{border-color:#e7c483;box-shadow:var(--shadow)}
+.fq summary{list-style:none;cursor:pointer;display:flex;gap:14px;align-items:flex-start;padding:20px 22px;font-weight:700;font-size:17px;line-height:1.4}
+.fq summary::-webkit-details-marker{display:none}
+.fq summary::after{content:"+";margin-left:auto;flex:none;font:400 26px/1 var(--sans);color:var(--gold)}
+.fq[open] summary::after{content:"–"}
+.qn{flex:none;min-width:30px;font:600 24px/1 var(--serif);color:var(--gold);font-variant-numeric:lining-nums}
+.fa{padding:0 22px 20px 66px;color:#3a3f5e;font-size:16px}
+.fa p{margin:0 0 12px}
+.fa a{color:var(--gold);font-weight:700}
+@media(max-width:600px){.fa{padding:0 18px 18px}.fq summary{padding:18px;font-size:16px}}
+.faqcta{margin-top:30px;background:var(--navy);color:#fff;border-radius:22px;padding:26px;display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}
+.faqcta b{font:600 26px/1.1 var(--serif);width:100%}
+.faqcta span{flex:1;min-width:220px;color:#c4c8e2}
