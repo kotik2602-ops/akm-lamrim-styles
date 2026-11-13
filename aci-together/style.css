@@ -309,3 +309,8 @@ footer a{color:var(--mute)}
 a.step{text-decoration:none}
 .chero .pic{max-width:360px;justify-self:end;width:100%}@media(max-width:860px){.chero .pic{justify-self:start;max-width:300px}}
 .step b,.topic::before{font-variant-numeric:lining-nums}
+/* темы курса — листающаяся лента */
+.strip.topics2{display:flex;grid-template-columns:none;gap:14px}
+.strip.topics2 .topic{flex:none;width:290px;min-height:150px;flex-direction:column;gap:12px;padding:20px;scroll-snap-align:start}
+.strip.topics2 .topic::before{font-size:34px}
+@media(max-width:520px){.strip.topics2 .topic{width:74vw}}

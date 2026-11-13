@@ -59,6 +59,6 @@
       st.querySelectorAll('.more').forEach(function(b){ b.addEventListener('click', function(){ var f = b.parentNode.classList.toggle('full'); b.textContent = f ? 'Свернуть' : 'Читать полностью'; }); }); }
     document.querySelectorAll('.arr').forEach(function(b){ b.addEventListener('click', function(){ var s = document.getElementById(b.getAttribute('data-s')); s.scrollBy({left: +b.getAttribute('data-d') * s.clientWidth * .85, behavior:'smooth'}); }); });
     var io = ('IntersectionObserver' in window && !/[?&]still/.test(location.search)) ? new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, {threshold:.12}) : null;
-    document.querySelectorAll('section h2, .ccard, .how li, .topic').forEach(function(el){ if (io){ el.classList.add('reveal'); io.observe(el); } });
+    document.querySelectorAll('section h2, .ccard, .how li').forEach(function(el){ if (io){ el.classList.add('reveal'); io.observe(el); } });
   };
 })();

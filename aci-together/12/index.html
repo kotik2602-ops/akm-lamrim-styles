@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="../style.css?v=1794602174">
+<link rel="stylesheet" href="../style.css?v=1794602284">
 </head>
 <body>
 <header class="top"><div class="wrap">
@@ -45,8 +45,9 @@
 
 <section id="tsec"><div class="wrap">
   <h2>Темы <em>курса</em></h2>
-  <p class="lead">Что вы изучите вместе с группой.</p>
-  <div class="topics2" id="topics"></div>
+  <p class="lead">Что вы изучите вместе с группой. Листайте →</p>
+  <div class="slider"><div class="strip topics2" id="topics"></div>
+  <div class="arrows"><button class="arr" data-s="topics" data-d="-1" aria-label="Назад">←</button><button class="arr" data-s="topics" data-d="1" aria-label="Вперёд">→</button></div></div>
 </div></section>
 
 <section style="padding-top:0"><div class="wrap">
@@ -62,8 +63,8 @@
 
 <div class="sticky-cta" id="sticky"></div>
 <div class="toast" id="toast"></div>
-<script src="../data.js?v=1794602174"></script>
-<script src="../common.js?v=1794602174"></script>
+<script src="../data.js?v=1794602284"></script>
+<script src="../common.js?v=1794602284"></script>
 <script>
 (function(){
   var N = 12, A = window.ACI, K = window.AK, esc = K.esc, c = A.courses[N-1], $ = function(id){ return document.getElementById(id); };
@@ -101,6 +102,12 @@
     '<div><p>' + esc(c.intro) + '</p><p class="platl"><a class="btn btn-ghost" href="' + c.plat + '" target="_blank" rel="noopener">ACI ' + N + ' на Обучающей платформе АКМ →</a></p><p><button class="share" data-share="' + N + '">Скопировать ссылку на этот курс</button></p></div>';
   if (c.topics.length) $('topics').innerHTML = c.topics.map(function(t){ return '<div class="topic">' + esc(t.charAt(0).toUpperCase() + t.slice(1)) + '</div>'; }).join('');
   else $('tsec').style.display = 'none';
+  (function(ts){ var pause = false;
+    ts.addEventListener('pointerenter', function(){ pause = true; }); ts.addEventListener('pointerleave', function(){ pause = false; });
+    ts.addEventListener('touchstart', function(){ pause = true; setTimeout(function(){ pause = false; }, 8000); }, {passive:true});
+    setInterval(function(){ if (pause || document.hidden) return; var end = ts.scrollLeft + ts.clientWidth >= ts.scrollWidth - 5;
+      ts.scrollTo({left: end ? 0 : ts.scrollLeft + ts.firstElementChild.offsetWidth + 14, behavior:'smooth'}); }, 4000);
+  })($('topics'));
 
   // Другие курсы: сначала открытые наборы
   var others = A.courses.filter(function(x){ return x.n !== N; }).sort(function(a, b){ var r = { open: 0, run: 1, wait: 2 }; return r[K.stateOf(a.n)] - r[K.stateOf(b.n)] || a.n - b.n; });
