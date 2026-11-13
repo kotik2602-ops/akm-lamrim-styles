@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="../style.css?v=1794601314">
+<link rel="stylesheet" href="../style.css?v=1794601833">
 </head>
 <body>
 <header class="top"><div class="wrap">
@@ -49,17 +49,6 @@
   <div class="topics2" id="topics"></div>
 </div></section>
 
-<section class="dark" style="padding:56px 0"><div class="wrap">
-  <h2>Как проходит <em>обучение</em></h2>
-  <p class="lead" style="margin-bottom:0">Лекции и домашние задания — на платформе <a href="https://ru.acistudent.com/courses" target="_blank" rel="noopener" style="color:var(--gold2)">ru.acistudent.com</a>. <span id="wk">Раз в неделю</span> кураторы проводят онлайн-встречу: вместе делаем домашние задания и разбираем неясные вопросы. Общение — в Telegram-чате группы.</p>
-</div></section>
-
-<section id="reviews"><div class="wrap">
-  <h2>Что говорят <em>студенты</em></h2>
-  <div class="slider"><div class="strip" id="revStrip"></div>
-  <div class="arrows"><button class="arr" data-s="revStrip" data-d="-1" aria-label="Назад">←</button><button class="arr" data-s="revStrip" data-d="1" aria-label="Вперёд">→</button></div></div>
-</div></section>
-
 <section style="padding-top:0"><div class="wrap">
   <h2>Другие <em>курсы</em></h2>
   <div class="others" id="others"></div>
@@ -73,15 +62,13 @@
 
 <div class="sticky-cta" id="sticky"></div>
 <div class="toast" id="toast"></div>
-<div class="lb" id="lb"><img alt=""></div>
-<script src="../data.js?v=1794601314"></script>
-<script src="../common.js?v=1794601314"></script>
+<script src="../data.js?v=1794601833"></script>
+<script src="../common.js?v=1794601833"></script>
 <script>
 (function(){
   var N = 2, A = window.ACI, K = window.AK, esc = K.esc, c = A.courses[N-1], $ = function(id){ return document.getElementById(id); };
   $('h1').innerHTML = '<span class="no">ACI ' + N + '</span>' + esc(c.t);
   $('pic').innerHTML = c.img ? '<img src="../' + c.img + '" alt="' + esc(c.t) + '">' : '<div class="ph"><b>' + N + '</b><small>ACI</small></div>';
-  if (c.week === 2) $('wk').textContent = 'Два раза в неделю';
 
   // Блок записи
   var gs = K.groupsOf(N), open = gs.filter(function(g){ return g.state === 'open'; }), run = gs.filter(function(g){ return g.state !== 'open'; });
