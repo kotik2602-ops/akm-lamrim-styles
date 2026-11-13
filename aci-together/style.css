@@ -419,3 +419,16 @@ footer{background:rgba(252,249,243,.92);backdrop-filter:blur(8px);-webkit-backdr
 .mist .arr{color:#fbf3ea;border-color:rgba(251,243,234,.6);background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none}
 .mist .arr:hover{background:var(--gold2);border-color:var(--gold2);color:#2a1a05}
 .mist .yt{box-shadow:0 22px 50px -24px rgba(30,8,14,.7)}
+
+/* курсы с открытым набором — бордовые полупрозрачные, пульсируют и подсвечиваются */
+.ctile.is-open{background:linear-gradient(135deg,rgba(138,58,73,.86),rgba(108,40,52,.8));border-color:rgba(233,185,104,.55);color:#fbf3ea;
+  backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);animation:pulseB 2.6s ease-in-out infinite}
+.ctile.is-open .ct b{color:#fff}
+.ctile.is-open small{color:var(--gold2)!important}
+.ctile.is-open .go{color:var(--gold2)}
+.ctile.is-open .cn.pic2 i{background:var(--gold2);color:#3a1018;border-color:#7a2f3d}
+.ctile.is-open:hover{border-color:var(--gold2)}
+@keyframes pulseB{
+  0%,100%{box-shadow:0 0 0 0 rgba(138,58,73,.45),0 10px 26px -14px rgba(108,40,52,.6);transform:scale(1)}
+  50%{box-shadow:0 0 0 7px rgba(138,58,73,0),0 0 26px 2px rgba(233,185,104,.38),0 14px 30px -14px rgba(108,40,52,.7);transform:scale(1.012)}}
+@media(prefers-reduced-motion:reduce){.ctile.is-open{animation:none}}
