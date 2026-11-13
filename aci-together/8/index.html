@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="../style.css?v=1794601833">
+<link rel="stylesheet" href="../style.css?v=1794601981">
 </head>
 <body>
 <header class="top"><div class="wrap">
@@ -34,7 +34,7 @@
   <div class="steps3">
     <div><i>1</i><span>Нажмите кнопку «Записаться» — откроется наш бот в Telegram.</span></div>
     <div><i>2</i><span>Бот спросит имя и e-mail — это займёт минуту.</span></div>
-    <div><i>3</i><span>Бот пришлёт ссылку на чат группы. Все подробности — там.</span></div>
+    <div><i>3</i><span>Бот пришлёт ссылку на чат группы. Лекции и задания — <a href="#" id="platStep" target="_blank" rel="noopener" style="color:var(--gold);font-weight:700">на платформе</a>.</span></div>
   </div>
 </div></section>
 
@@ -62,8 +62,8 @@
 
 <div class="sticky-cta" id="sticky"></div>
 <div class="toast" id="toast"></div>
-<script src="../data.js?v=1794601833"></script>
-<script src="../common.js?v=1794601833"></script>
+<script src="../data.js?v=1794601981"></script>
+<script src="../common.js?v=1794601981"></script>
 <script>
 (function(){
   var N = 8, A = window.ACI, K = window.AK, esc = K.esc, c = A.courses[N-1], $ = function(id){ return document.getElementById(id); };
@@ -91,13 +91,14 @@
       (run.length ? '<div class="also">Сейчас занимается группа ' + run.map(function(g){ return g.curatorShort ? esc(K.withCur(g)) : ''; }).filter(Boolean).join(', ') + ' — набор в неё закрыт.</div>' : '') + '</div>';
   }
   $('reg').innerHTML = html;
+  $('platStep').href = c.plat;
   $('sticky').innerHTML = sticky;
   // Кнопка внизу экрана на телефоне, когда блок записи ушёл из вида
   if ('IntersectionObserver' in window) new IntersectionObserver(function(es){ $('sticky').classList.toggle('on', !es[0].isIntersecting && es[0].boundingClientRect.top < 0); }).observe($('reg'));
 
   // О курсе: цитата + текст
   $('about').innerHTML = (c.q ? '<blockquote class="quote">' + esc(c.q) + '<cite>ACI ' + N + ' · ' + esc(c.t) + '</cite></blockquote>' : '') +
-    '<div><p>' + esc(c.intro) + '</p><p><button class="share" data-share="' + N + '">Скопировать ссылку на этот курс</button></p></div>';
+    '<div><p>' + esc(c.intro) + '</p><p class="platl"><a class="btn btn-ghost" href="' + c.plat + '" target="_blank" rel="noopener">Курс ACI ' + N + ' на платформе →</a></p><p><button class="share" data-share="' + N + '">Скопировать ссылку на этот курс</button></p></div>';
   if (c.topics.length) $('topics').innerHTML = c.topics.map(function(t){ return '<div class="topic">' + esc(t.charAt(0).toUpperCase() + t.slice(1)) + '</div>'; }).join('');
   else $('tsec').style.display = 'none';
 
