@@ -347,3 +347,18 @@ a.step{text-decoration:none}
 @media(max-width:520px){.top .wrap:has(.back) .brand{font-size:0;gap:0}.top .wrap:has(.back) .brand img{height:36px}}
 .cgrid{grid-template-columns:repeat(2,minmax(0,1fr))}@media(max-width:800px){.cgrid{grid-template-columns:minmax(0,1fr)}}.ccard{min-width:0}.ccard .act .btn{max-width:100%;white-space:normal;text-align:center}
 .ccard .track{display:block;margin-bottom:0}.path{width:100%}.path svg{flex:1 1 0;width:0}
+/* полупрозрачный фон с горами вместо тёмно-синих блоков */
+.mist{position:relative;isolation:isolate;color:var(--ink);background:#dfe9ef url("img/mist.jpg") center 62%/cover no-repeat}
+@media(max-width:700px){.mist{background-image:url("img/mist-m.jpg")}}
+.mist::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:linear-gradient(180deg,rgba(247,242,234,.72) 0%,rgba(247,250,252,.42) 45%,rgba(247,250,252,.30) 100%)}
+.mist h2{color:var(--navy)}
+.mist .lead{color:#33405e}
+.mist .btn-light{background:var(--navy);color:#fff}
+.mist .yt{box-shadow:0 18px 40px -18px rgba(27,33,66,.45)}
+.mist .vcard p{color:var(--navy);text-shadow:0 1px 8px rgba(255,255,255,.7)}
+.mist .arr{color:var(--navy);background:rgba(255,255,255,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.mist .arr:hover{background:var(--gold2);border-color:var(--gold2)}
+.mist .intro-v>div:first-child{background:rgba(255,255,255,.55);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.7);border-radius:24px;padding:30px}
+.mist{background-position:center 78%}
+.mist::before{background:linear-gradient(180deg,rgba(247,242,234,.55) 0%,rgba(247,250,252,.18) 50%,rgba(247,250,252,.05) 100%)}
