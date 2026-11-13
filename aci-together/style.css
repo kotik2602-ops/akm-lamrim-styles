@@ -314,3 +314,16 @@ a.step{text-decoration:none}
 .strip.topics2 .topic{flex:none;width:290px;min-height:150px;flex-direction:column;gap:12px;padding:20px;scroll-snap-align:start}
 .strip.topics2 .topic::before{font-size:34px}
 @media(max-width:520px){.strip.topics2 .topic{width:74vw}}
+/* путь куратора: извилистая дорожка со звёздами -> плашка текущего курса */
+.path{display:flex;align-items:center;gap:6px;margin:4px 0 20px}
+.path svg{flex:1;height:70px;overflow:visible;min-width:0}
+.path path{fill:none;stroke:#e2cfa8;stroke-width:2;stroke-dasharray:5 6;vector-effect:non-scaling-stroke}
+.path .star{font-size:15px;fill:var(--gold);text-anchor:middle;filter:drop-shadow(0 0 4px rgba(233,185,104,.9));animation:tw 2.4s ease-in-out infinite}
+@keyframes tw{0%,100%{opacity:.45}50%{opacity:1}}
+.pplate{flex:none;display:flex;flex-direction:column;align-items:center;text-decoration:none;padding:10px 16px;border-radius:16px;text-align:center;line-height:1.15}
+.pplate small{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;opacity:.8}
+.pplate b{font:600 26px/1.1 var(--serif);font-variant-numeric:lining-nums}
+.pplate span{font-size:13px;font-weight:700}
+.pplate.open{background:var(--navy);color:#fff;animation:glow 3.2s ease-in-out infinite}
+.pplate.open small,.pplate.open span{color:var(--gold2)}
+.pplate.run{background:var(--runsoft);color:var(--run)}
