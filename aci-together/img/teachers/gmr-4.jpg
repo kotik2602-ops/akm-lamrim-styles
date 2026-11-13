@@ -1,0 +1,1675 @@
+<!doctype html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name='robots' content='noindex, follow' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v28.7 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>Страница не найдена - Академия Классической Мудрости</title>
+	<meta property="og:locale" content="ru_RU" />
+	<meta property="og:title" content="Страница не найдена - Академия Классической Мудрости" />
+	<meta property="og:site_name" content="Академия Классической Мудрости" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebSite","@id":"https:\/\/classicwisdomacademy.com\/#website","url":"https:\/\/classicwisdomacademy.com\/","name":"Академия Классической Мудрости","description":"Мощные древние знания для трансформации вашей жизни","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/classicwisdomacademy.com\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"ru-RU"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://classicwisdomacademy.com/wp-includes/css/dist/block-library/style.css?ver=6.9.11'  media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio :where(figcaption){
+  color:#555;
+  font-size:13px;
+  text-align:center;
+}
+.is-dark-theme .wp-block-audio :where(figcaption){
+  color:#ffffffa6;
+}
+
+.wp-block-audio{
+  margin:0 0 1em;
+}
+
+.wp-block-code{
+  border:1px solid #ccc;
+  border-radius:4px;
+  font-family:Menlo,Consolas,monaco,monospace;
+  padding:.8em 1em;
+}
+
+.wp-block-embed :where(figcaption){
+  color:#555;
+  font-size:13px;
+  text-align:center;
+}
+.is-dark-theme .wp-block-embed :where(figcaption){
+  color:#ffffffa6;
+}
+
+.wp-block-embed{
+  margin:0 0 1em;
+}
+
+.blocks-gallery-caption{
+  color:#555;
+  font-size:13px;
+  text-align:center;
+}
+.is-dark-theme .blocks-gallery-caption{
+  color:#ffffffa6;
+}
+
+:root :where(.wp-block-image figcaption){
+  color:#555;
+  font-size:13px;
+  text-align:center;
+}
+.is-dark-theme :root :where(.wp-block-image figcaption){
+  color:#ffffffa6;
+}
+
+.wp-block-image{
+  margin:0 0 1em;
+}
+
+.wp-block-pullquote{
+  border-bottom:4px solid;
+  border-top:4px solid;
+  color:currentColor;
+  margin-bottom:1.75em;
+}
+.wp-block-pullquote :where(cite),.wp-block-pullquote :where(footer),.wp-block-pullquote__citation{
+  color:currentColor;
+  font-size:.8125em;
+  font-style:normal;
+  text-transform:uppercase;
+}
+
+.wp-block-quote{
+  border-left:.25em solid;
+  margin:0 0 1.75em;
+  padding-left:1em;
+}
+.wp-block-quote cite,.wp-block-quote footer{
+  color:currentColor;
+  font-size:.8125em;
+  font-style:normal;
+  position:relative;
+}
+.wp-block-quote:where(.has-text-align-right){
+  border-left:none;
+  border-right:.25em solid;
+  padding-left:0;
+  padding-right:1em;
+}
+.wp-block-quote:where(.has-text-align-center){
+  border:none;
+  padding-left:0;
+}
+.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote:where(.is-style-plain){
+  border:none;
+}
+
+.wp-block-search .wp-block-search__label{
+  font-weight:700;
+}
+
+.wp-block-search__button{
+  border:1px solid #ccc;
+  padding:.375em .625em;
+}
+
+:where(.wp-block-group.has-background){
+  padding:1.25em 2.375em;
+}
+
+.wp-block-separator.has-css-opacity{
+  opacity:.4;
+}
+
+.wp-block-separator{
+  border:none;
+  border-bottom:2px solid;
+  margin-left:auto;
+  margin-right:auto;
+}
+.wp-block-separator.has-alpha-channel-opacity{
+  opacity:1;
+}
+.wp-block-separator:not(.is-style-wide):not(.is-style-dots){
+  width:100px;
+}
+.wp-block-separator.has-background:not(.is-style-dots){
+  border-bottom:none;
+  height:1px;
+}
+.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){
+  height:2px;
+}
+
+.wp-block-table{
+  margin:0 0 1em;
+}
+.wp-block-table td,.wp-block-table th{
+  word-break:normal;
+}
+.wp-block-table :where(figcaption){
+  color:#555;
+  font-size:13px;
+  text-align:center;
+}
+.is-dark-theme .wp-block-table :where(figcaption){
+  color:#ffffffa6;
+}
+
+.wp-block-video :where(figcaption){
+  color:#555;
+  font-size:13px;
+  text-align:center;
+}
+.is-dark-theme .wp-block-video :where(figcaption){
+  color:#ffffffa6;
+}
+
+.wp-block-video{
+  margin:0 0 1em;
+}
+
+:root :where(.wp-block-template-part.has-background){
+  margin-bottom:0;
+  margin-top:0;
+  padding:1.25em 2.375em;
+}
+/*# sourceURL=/wp-includes/css/dist/block-library/theme.css */
+</style>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/**
+ * These rules are needed for backwards compatibility.
+ * They should match the button element rules in the base theme.json file.
+ */
+.wp-block-button__link {
+	color: #ffffff;
+	background-color: #32373c;
+	border-radius: 9999px; /* 100% causes an oval, but any explicit but really high value retains the pill shape. */
+
+	/* This needs a low specificity so it won't override the rules from the button element if defined in theme.json. */
+	box-shadow: none;
+	text-decoration: none;
+
+	/* The extra 2px are added to size solids the same as the outline versions.*/
+	padding: calc(0.667em + 2px) calc(1.333em + 2px);
+
+	font-size: 1.125em;
+}
+
+.wp-block-file__button {
+	background: #32373c;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/*# sourceURL=/wp-includes/css/classic-themes.css */
+</style>
+<style id='search-meter-recent-searches-style-inline-css' type='text/css'>
+.wp-block-search-meter-recent-searches>h2{margin-block-end:0;margin-block-start:0}.wp-block-search-meter-recent-searches>ul{list-style:none;padding-left:0}
+
+/*# sourceURL=https://classicwisdomacademy.com/wp-content/plugins/search-meter/blocks/build/recent-searches/style-index.css */
+</style>
+<style id='search-meter-popular-searches-style-inline-css' type='text/css'>
+.wp-block-search-meter-popular-searches>h2{margin-block-end:0;margin-block-start:0}.wp-block-search-meter-popular-searches>ul{list-style:none;padding-left:0}
+
+/*# sourceURL=https://classicwisdomacademy.com/wp-content/plugins/search-meter/blocks/build/popular-searches/style-index.css */
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 19.5px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36.5px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--normal: 22px;--wp--preset--font-size--huge: 49.5px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-term-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-term-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link rel='stylesheet' id='page-list-style-css' href='https://classicwisdomacademy.com/wp-content/plugins/page-list/css/page-list.css?ver=100'  media='all' />
+<link rel='stylesheet' id='my-popup-style-css' href='https://classicwisdomacademy.com/wp-content/plugins/my-popup/assets/public/css/styles.min.css?ver=2.1.2'  media='all' />
+<link rel='stylesheet' id='quizle-style-css' href='https://classicwisdomacademy.com/wp-content/plugins/quizle/assets/public/css/style.min.css?ver=1.6.0'  media='all' />
+<link rel='stylesheet' id='weglot-css-css' href='https://classicwisdomacademy.com/wp-content/plugins/weglot/dist/css/front-css.css?ver=5.2'  media='all' />
+<link rel='stylesheet' id='new-flag-css-css' href='https://classicwisdomacademy.com/wp-content/plugins/weglot/dist/css/new-flags.css?ver=5.2'  media='all' />
+<link rel='stylesheet' id='google-fonts-css' href='https://fonts.googleapis.com/css?family=Roboto%3A400%2C400i%2C700%7CMontserrat%3A400%2C400i%2C700&#038;subset=cyrillic&#038;display=swap&#038;ver=6.9.11'  media='all' />
+<link rel='stylesheet' id='reboot-style-css' href='https://classicwisdomacademy.com/wp-content/themes/reboot/assets/css/style.min.css?ver=1.5.5'  media='all' />
+<script type="text/javascript" src="https://classicwisdomacademy.com/wp-includes/js/jquery/jquery.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://classicwisdomacademy.com/wp-includes/js/jquery/jquery-migrate.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://classicwisdomacademy.com/wp-content/plugins/weglot/dist/front-js.js?ver=5.2" id="wp-weglot-js-js"></script>
+
+<!-- Сниппет тегов Google (gtag.js), добавленный Site Kit -->
+<!-- Сниппет Google Analytics добавлен с помощью Site Kit -->
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=GT-TWRLLD6" id="google_gtagjs-js" async></script>
+<script type="text/javascript" id="google_gtagjs-js-after">
+/* <![CDATA[ */
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["classicwisdomacademy.com"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-TWRLLD6");
+//# sourceURL=google_gtagjs-js-after
+/* ]]> */
+</script>
+<link rel="https://api.w.org/" href="https://classicwisdomacademy.com/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://classicwisdomacademy.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.9.11" />
+<meta name="generator" content="Site Kit by Google 1.191.0" /><style type="text/css" media="screen"></style>
+<link rel="alternate" href="https://classicwisdomacademy.com/wp-content/uploads/2019/06/essay-04.jpg" hreflang="ru"/>
+<link rel="alternate" href="https://classicwisdomacademy.com/uk/wp-content/uploads/2019/06/essay-04.jpg" hreflang="uk"/>
+<link rel="alternate" href="https://classicwisdomacademy.com/en/wp-content/uploads/2019/06/essay-04.jpg" hreflang="en"/>
+<script type="application/json" id="weglot-data">{"website":"https:\/\/classicwisdomacademy.com","uid":"96578d3e4f","project_slug":"akm","language_from":"ru","language_from_custom_flag":null,"language_from_custom_name":null,"excluded_paths":[{"type":"IS_EXACTLY","value":"\/geshe-michael-autobiography","language_button_displayed":false,"exclusion_behavior":"REDIRECT","excluded_languages":[],"regex":"^\/geshe\\-michael\\-autobiography$"},{"type":"IS_EXACTLY","value":"\/kratkoe-soderzhanie-18-bazovyh-kursov","language_button_displayed":false,"exclusion_behavior":"REDIRECT","excluded_languages":[],"regex":"^\/kratkoe\\-soderzhanie\\-18\\-bazovyh\\-kursov$"}],"excluded_blocks":[],"custom_settings":{"button_style":{"is_dropdown":true,"flag_type":"rectangle_mat","with_name":true,"custom_css":"","with_flags":false,"full_name":false},"wp_user_version":"4.3.0","translate_email":false,"translate_search":false,"translate_amp":false,"switchers":[{"templates":{"name":"default","hash":"646daf6c32ade6e79e90839657e908df50e96909"},"location":[],"style":{"with_flags":false,"flag_type":"rectangle_mat","with_name":true,"full_name":false,"is_dropdown":true}}]},"pending_translation_enabled":false,"curl_ssl_check_enabled":true,"custom_css":null,"languages":[{"language_to":"uk","custom_code":null,"custom_name":null,"custom_local_name":null,"provider":null,"enabled":true,"automatic_translation_enabled":true,"deleted_at":null,"connect_host_destination":null,"custom_flag":null},{"language_to":"en","custom_code":null,"custom_name":null,"custom_local_name":null,"provider":null,"enabled":true,"automatic_translation_enabled":true,"deleted_at":null,"connect_host_destination":null,"custom_flag":null}],"organization_slug":"w-8a5773fe0b","api_domain":"cdn-api-weglot.com","api_base_url":"https:\/\/cdn-api-weglot.com","product":"1.0","current_language":"ru","switcher_links":{"ru":"https:\/\/classicwisdomacademy.com\/wp-content\/uploads\/2019\/06\/essay-04.jpg","uk":"https:\/\/classicwisdomacademy.com\/uk\/wp-content\/uploads\/2019\/06\/essay-04.jpg","en":"https:\/\/classicwisdomacademy.com\/en\/wp-content\/uploads\/2019\/06\/essay-04.jpg"},"original_path":"\/wp-content\/uploads\/2019\/06\/essay-04.jpg"}</script><link rel="preload" href="https://classicwisdomacademy.com/wp-content/themes/reboot/assets/fonts/wpshop-core.ttf" as="font" crossorigin>
+    <style>.site-logotype{max-width:500px}.scrolltop:before{content:"\fe3d"}body{color:#081d3e}::selection, .card-slider__category, .card-slider-container .swiper-pagination-bullet-active, .post-card--grid .post-card__thumbnail:before, .post-card:not(.post-card--small) .post-card__thumbnail a:before, .post-card:not(.post-card--small) .post-card__category,  .post-box--high .post-box__category span, .post-box--wide .post-box__category span, .page-separator, .pagination .nav-links .page-numbers:not(.dots):not(.current):before, .btn, .btn-primary:hover, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle, .comment-respond .form-submit input, .page-links__item:hover{background-color:#691e25}.entry-image--big .entry-image__body .post-card__category a, .home-text ul:not([class])>li:before, .home-text ul.wp-block-list>li:before, .page-content ul:not([class])>li:before, .page-content ul.wp-block-list>li:before, .taxonomy-description ul:not([class])>li:before, .taxonomy-description ul.wp-block-list>li:before, .widget-area .widget_categories ul.menu li a:before, .widget-area .widget_categories ul.menu li span:before, .widget-area .widget_categories>ul li a:before, .widget-area .widget_categories>ul li span:before, .widget-area .widget_nav_menu ul.menu li a:before, .widget-area .widget_nav_menu ul.menu li span:before, .widget-area .widget_nav_menu>ul li a:before, .widget-area .widget_nav_menu>ul li span:before, .page-links .page-numbers:not(.dots):not(.current):before, .page-links .post-page-numbers:not(.dots):not(.current):before, .pagination .nav-links .page-numbers:not(.dots):not(.current):before, .pagination .nav-links .post-page-numbers:not(.dots):not(.current):before, .entry-image--full .entry-image__body .post-card__category a, .entry-image--fullscreen .entry-image__body .post-card__category a, .entry-image--wide .entry-image__body .post-card__category a{background-color:#691e25}.comment-respond input:focus, select:focus, textarea:focus, .post-card--grid.post-card--thumbnail-no, .post-card--standard:after, .post-card--related.post-card--thumbnail-no:hover, .spoiler-box, .btn-primary, .btn-primary:hover, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle, .inp:focus, .entry-tag:focus, .entry-tag:hover, .search-screen .search-form .search-field:focus, .entry-content ul:not([class])>li:before, .entry-content ul.wp-block-list>li:before, .text-content ul:not([class])>li:before, .text-content ul.wp-block-list>li:before, .page-content ul:not([class])>li:before, .page-content ul.wp-block-list>li:before, .taxonomy-description ul:not([class])>li:before, .taxonomy-description ul.wp-block-list>li:before, .entry-content blockquote:not(.wpremark),
+        .input:focus, input[type=color]:focus, input[type=date]:focus, input[type=datetime-local]:focus, input[type=datetime]:focus, input[type=email]:focus, input[type=month]:focus, input[type=number]:focus, input[type=password]:focus, input[type=range]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=time]:focus, input[type=url]:focus, input[type=week]:focus, select:focus, textarea:focus{border-color:#691e25 !important}.post-card--small .post-card__category, .post-card__author:before, .post-card__comments:before, .post-card__date:before, .post-card__like:before, .post-card__views:before, .entry-author:before, .entry-date:before, .entry-time:before, .entry-views:before, .entry-comments:before, .entry-content ol:not([class])>li:before, .entry-content ol.wp-block-list>li:before, .text-content ol:not([class])>li:before, .text-content ol.wp-block-list>li:before, .entry-content blockquote:before, .spoiler-box__title:after, .search-icon:hover:before, .search-form .search-submit:hover:before, .star-rating-item.hover,
+        .comment-list .bypostauthor>.comment-body .comment-author:after,
+        .breadcrumb a, .breadcrumb span,
+        .search-screen .search-form .search-submit:before, 
+        .star-rating--score-1:not(.hover) .star-rating-item:nth-child(1),
+        .star-rating--score-2:not(.hover) .star-rating-item:nth-child(1), .star-rating--score-2:not(.hover) .star-rating-item:nth-child(2),
+        .star-rating--score-3:not(.hover) .star-rating-item:nth-child(1), .star-rating--score-3:not(.hover) .star-rating-item:nth-child(2), .star-rating--score-3:not(.hover) .star-rating-item:nth-child(3),
+        .star-rating--score-4:not(.hover) .star-rating-item:nth-child(1), .star-rating--score-4:not(.hover) .star-rating-item:nth-child(2), .star-rating--score-4:not(.hover) .star-rating-item:nth-child(3), .star-rating--score-4:not(.hover) .star-rating-item:nth-child(4),
+        .star-rating--score-5:not(.hover) .star-rating-item:nth-child(1), .star-rating--score-5:not(.hover) .star-rating-item:nth-child(2), .star-rating--score-5:not(.hover) .star-rating-item:nth-child(3), .star-rating--score-5:not(.hover) .star-rating-item:nth-child(4), .star-rating--score-5:not(.hover) .star-rating-item:nth-child(5){color:#691e25}.entry-content a:not(.wp-block-button__link), .entry-content a:not(.wp-block-button__link):visited, .spanlink, .comment-reply-link, .pseudo-link, .widget_calendar a, .widget_recent_comments a, .child-categories ul li a{color:#081d3e}.child-categories ul li a{border-color:#081d3e}a:hover, a:focus, a:active, .spanlink:hover, .entry-content a:not(.wp-block-button__link):hover, .entry-content a:not(.wp-block-button__link):focus, .entry-content a:not(.wp-block-button__link):active, .top-menu ul li>a:hover, .top-menu ul li>span:hover, .main-navigation ul li a:hover, .main-navigation ul li span:hover, .footer-navigation ul li a:hover, .footer-navigation ul li span:hover, .comment-reply-link:hover, .pseudo-link:hover, .child-categories ul li a:hover{color:#691e25}.top-menu>ul>li>a:before, .top-menu>ul>li>span:before{background:#691e25}.child-categories ul li a:hover, .post-box--no-thumb a:hover{border-color:#691e25}.post-box--card:hover{box-shadow: inset 0 0 0 1px #691e25}.post-box--card:hover{-webkit-box-shadow: inset 0 0 0 1px #691e25}.site-header, .site-header a, .site-header .pseudo-link{color:#081d3e}.humburger span{background:#081d3e}.site-title, .site-title a{color:#081d3e}.site-description{color:#081d3e}body{font-family:"Roboto" ,"Helvetica Neue", Helvetica, Arial, sans-serif;font-size:20px;}.site-title, .site-title a{line-height:1.4;}.site-description{font-size:14px;}.main-navigation ul li a, .main-navigation ul li span, .footer-navigation ul li a, .footer-navigation ul li span{font-size:14px;line-height:1;}</style>
+<meta name="generator" content="Elementor 3.34.1; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="https://classicwisdomacademy.com/wp-content/uploads/2022/01/cropped-ACW_1-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://classicwisdomacademy.com/wp-content/uploads/2022/01/cropped-ACW_1-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://classicwisdomacademy.com/wp-content/uploads/2022/01/cropped-ACW_1-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://classicwisdomacademy.com/wp-content/uploads/2022/01/cropped-ACW_1-1-270x270.png" />
+		<style type="text/css" id="wp-custom-css">
+			   /*
+ * Prefixed by https://autoprefixer.github.io
+ * PostCSS: v7.0.29,
+ * Autoprefixer: v9.7.6
+ * Browsers: last 4 version
+ */
+
+ .social-links {
+    display: none;
+}
+/* Main Page */
+
+.aci-banner {
+background-image: url("https://classicwisdomacademy.com/wp-content/uploads/2022/01/FonAKM.png");
+width: 175%;
+margin-left: -37%;
+height: 100vh;
+max-height: 600px;
+background-position: center;
+background-size: cover;
+color: #fff;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: relative;
+margin-bottom: 30px;
+}
+
+.aci-banner--content {
+padding: 0 20px;
+max-width: 65%;
+text-align: left;
+font-size: 24px;
+color: #ddae31;
+}
+.aci-banner--heading {
+text-transform: uppercase;
+font-size: 2rem;
+color: #67242d;
+}
+.aci-banner--arrow {
+position: absolute;
+bottom: 30px;
+left: 50%;
+transform: translate(-50%, 0);
+display: block;
+background: url("https://classicwisdomacademy.com/wp-content/uploads/2020/11/Subtract.svg");
+width: 41px;
+height: 21px;
+transform-origin: 0% 100%;
+animation: arrow-down 1500ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+@keyframes arrow-down {
+
+50% {
+transform: translate(-50%, -8px)
+}
+
+}
+
+.section-block__header {
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+}
+
+.site-title {
+font-size: 1.3rem;
+}
+
+.all-articles {
+margin-bottom: 0;
+}
+
+.aci-list {
+padding: 0;
+list-style-position: inside;
+}
+
+.aci-social--block {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-pack: distribute;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+}
+
+.aci-social--item {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+}
+.aci-list--checking {
+list-style: none;
+text-align: left;
+}
+
+.aci-list--checking li {
+padding-left: 40px;
+}
+
+.aci-list--checking li::before {
+content: "✅";
+display: inline-block;
+margin: 0 15px 0 -40px;
+font-size: 28px;
+font-family: wpshop-core!important;
+color: #691E25;
+}
+
+.aci-social--item span {
+padding: 0 0.1em;
+}
+
+.btn {
+border-radius: 100px;
+}
+
+.aci-grid--wrapper {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: nowrap;
+flex-wrap: nowrap;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+}
+
+.aci-grid--wrapper > * + * {
+margin-left: 0;
+}
+
+.aci-grid .page-list-ext-image {
+float: none;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+margin: 0;
+position: relative;
+overflow: hidden;
+}
+
+.aci-grid {
+display: -webkit-box;
+display: -ms-flexbox;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-ms-flex-direction: column;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+margin-bottom: -70px;
+}
+.aci-grid.aci-grid--even .page-list-ext-item:nth-of-type(2n) {
+margin-left: 0px;
+margin-bottom: 35px;
+	
+}
+.aci-grid.aci-grid--odd .page-list-ext-item:nth-of-type(2n + 1) {
+margin-left: 0px;
+}
+.aci-grid.aci-grid--odd .page-list-ext-item:first-of-type {
+margin-left: 0 !important;
+flex-basis: 100%;
+}
+.aci-grid.aci-grid--odd .page-list-ext-item:first-of-type .page-list-ext-image{
+height: 180px;
+}
+.aci-grid .page-list-ext-item {
+width: 100%;
+flex-basis: 100%;
+max-width: 400px;
+margin: 10px 0;
+}
+.aci-grid--video .page-list-ext-title {
+    margin-top: 25px;
+}
+.aci-grid--video .page-list-ext-title a{
+    font-size: 24px;
+    font-weight: normal;
+    text-decoration: none;
+}
+.aci-grid--video .page-list-ext-image {
+    height: 180px;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.25);
+}
+
+.aci-grid--video .page-list-ext-image img {
+    height: 100%;
+    max-width: none;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.aci-practice--grid {
+flex: 1 1 100%;
+}
+
+.aci-practice--grid .page-list-ext-item{
+position: relative;
+}
+.aci-practice--grid .page-list-ext-item:hover .page-list-ext-title {
+-webkit-transform: translate3d(0,-3px,0);
+-ms-transform: translate3d(0,-3px,0);
+transform: translate3d(0,-3px,0);
+}
+.aci-practice--grid .page-list-ext-title{
+position: absolute;
+z-index: 1000;
+bottom: 0;
+margin: 20px 0;
+padding: 0 16px;
+line-height: 1;
+-webkit-transition: all 0.22s linear;
+-o-transition: all 0.22s linear;
+transition: all 0.22s linear;
+-webkit-transform: translate3d(0,0,0);
+-ms-transform: translate3d(0,0,0);
+transform: translate3d(0,0,0);
+}
+.aci-practice--grid .page-list-ext-title a {
+color: #fff;
+text-decoration: none;
+font-size: 18px;
+}
+
+.aci-practice--grid .page-list-ext-image{
+float: none;
+margin: 0;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+    height: 180px;
+width: auto;
+}
+.aci-practice--grid .page-list-ext-image a::before {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+top: 0;
+z-index:100;
+width: 100%;
+background: rgba(0, 0, 0, 0.5);
+
+}
+.aci-practice--grid .page-list-ext-image img {
+height: 100%;
+max-width: none;
+width: 100%;
+    object-fit: cover;
+object-position: top;
+}
+
+/* Courses */
+.aci-grid--courses .page-list-ext-item{
+position: relative;
+max-width: 730px;
+margin: 0 auto 50px;
+padding-bottom: 0;
+-webkit-box-flex: 1;
+-webkit-flex: 1 0 100%;
+-ms-flex: 1 0 100%;
+flex: 1 0 100%;
+margin-left: auto;
+margin-right: auto;
+max-width: 335px;
+margin-bottom: 20px;
+-webkit-transition: all .2s;
+-o-transition: all .2s;
+transition: all .2s;
+}
+.aci-grid--courses .page-list-ext-item:nth-child(6n), .aci-grid--courses .page-list-ext-item:nth-child(6n+1) {
+
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-webkit-flex-direction: column;
+-ms-flex-direction: column;
+flex-direction: column;
+-webkit-box-pack: end;
+-webkit-justify-content: flex-end;
+-ms-flex-pack: end;
+justify-content: flex-end;
+padding: 20px;
+max-width: none;
+}
+
+.aci-grid--courses .page-list-ext-image {
+position: relative;
+-webkit-box-flex: 1;
+-webkit-flex-grow: 1;
+-ms-flex-positive: 1;
+flex-grow: 1;
+-webkit-flex-basis: 0;
+-ms-flex-preferred-size: 0;
+flex-basis: 0;
+max-width: 100%;
+margin: 0;
+margin-bottom: 1em;
+float: none;
+display: block;
+}
+.aci-grid--courses .page-list-ext-title {
+position: relative;
+-webkit-box-flex: 1;
+-webkit-flex-grow: 1;
+-ms-flex-positive: 1;
+flex-grow: 1;
+-webkit-flex-basis: 0;
+-ms-flex-preferred-size: 0;
+flex-basis: 0;
+max-width: 100%;
+font-weight: 700;
+font-size: 1.1em;
+margin: 0;
+margin-bottom: .4em;
+-webkit-transition: all .3s;
+-o-transition: all .3s;
+transition: all .3s;
+}
+
+.aci-grid--courses .page-list-ext-title a {
+text-decoration: none;
+}
+
+.aci-grid--courses .page-list-ext-item-content {
+font-size: 14px;
+color: #111111;
+}
+
+.aci-grid--courses .page-list-ext-item:nth-child(6n) .page-list-ext-item-content, .aci-grid--courses .page-list-ext-item:nth-child(6n+1) .page-list-ext-item-content {
+color: #fff;
+}
+
+.aci-grid--courses .page-list-ext-item:nth-child(6n) .page-list-ext-image, .aci-grid--courses .page-list-ext-item:nth-child(6n+1) .page-list-ext-image {
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+height: auto;
+margin: 0;
+overflow: hidden;
+z-index: 2
+}
+
+.aci-grid--courses .page-list-ext-item:nth-child(6n) .page-list-ext-image img, .aci-grid--courses .page-list-ext-item:nth-child(6n+1) .page-list-ext-image img {
+max-width: none;
+min-width: 100%;
+min-height: 100%;
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: top;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+-webkit-transition: all .25s;
+-o-transition: all .25s;
+transition: all .25s;
+z-index: 2;
+}
+
+.aci-grid--courses .page-list-ext-item:nth-child(6n) .page-list-ext-title, .aci-grid--courses .page-list-ext-item:nth-child(6n+1) .page-list-ext-title {
+
+z-index: 4;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-webkit-flex-direction: column;
+-ms-flex-direction: column;
+flex-direction: column;
+-webkit-box-pack: end;
+-webkit-justify-content: flex-end;
+-ms-flex-pack: end;
+justify-content: flex-end;
+min-height: 180px;
+}
+
+.aci-grid--courses .page-list-ext-item:nth-child(6n) .page-list-ext-title a, .aci-grid--courses .page-list-ext-item:nth-child(6n+1) .page-list-ext-title a {
+font-size: 1.2em;
+color: #fff;
+}
+.aci-grid--courses .page-list-ext-item:nth-child(6n) .page-list-ext-image::before, .aci-grid--courses .page-list-ext-item:nth-child(6n+1) .page-list-ext-image::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(80%, #000));
+background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, #000 80%);
+background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0, #000 80%);
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #000 80%);
+opacity: .55;
+-webkit-transition: all .2s;
+-o-transition: all .2s;
+transition: all .2s;
+z-index: 3;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden
+}
+
+.aci-grid--events {
+    margin-bottom: 20px;
+}
+
+.aci-grid--events .page-list-ext-item {
+    display: flex;
+    flex-direction: column;
+    min-height: 180px;
+    justify-content: flex-end;
+}
+
+.aci-grid--events .page-list-ext-image img {
+    height: 100%;
+max-width: none;
+width: 100%;
+    object-fit: cover;
+object-position: top;
+}
+
+.aci-grid--events .page-list-ext-image{
+    position: absolute;
+    bottom: 0;
+    min-height: 180px;
+}
+.aci-grid--events .page-list-ext-title {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 400;
+}
+.aci-grid--events .page-list-ext-item-content {
+    position: relative;
+    font-size: 14px;
+    color: #fff;
+    padding: 0 16px;
+    z-index: 200;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+
+@media (min-width: 576px) {
+.aci-grid {
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+flex-direction: row;
+}
+.aci-grid.aci-grid--even .page-list-ext-item:nth-of-type(2n) {
+margin-left: 20px;
+}
+.aci-grid.aci-grid--odd .page-list-ext-item:nth-of-type(2n + 1) {
+margin-left: 20px;
+}
+.aci-grid.aci-grid--odd .page-list-ext-item:first-of-type .page-list-ext-image {
+height: 380px;
+}
+.aci-grid .page-list-ext-item {
+    max-width: none;
+}
+.aci-grid .page-list-ext-item {
+/*max-width: calc(50% - 21px);*/
+width: 180px;
+flex-basis: calc(50% - 11px);
+}
+.aci-pages .page-list-ext-image {
+max-height: none;
+}
+.aci-grid--courses .page-list-ext-item {
+    -ms-flex: 0 0 calc(50% - 20px);
+-webkit-box-flex: 0;
+-webkit-flex: 0 0 calc(50% - 20px);
+flex: 0 0 calc(50% - 20px);
+max-width: calc(50% - 20px);
+margin-left: 10px;
+margin-right: 10px;
+}
+.aci-grid--courses .page-list-ext-item:nth-child(6n), .aci-grid--courses .page-list-ext-item:nth-child(6n+1) {
+    -ms-flex: 0 0 calc(100% - 20px);
+-webkit-box-flex: 0;
+-webkit-flex: 0 0 calc(100% - 20px);
+flex: 0 0 calc(100% - 20px);
+max-width: calc(100% - 20px);
+}
+.aci-grid--events {
+    margin-bottom: 50px;
+}
+.aci-grid--events .page-list-ext-item {
+    height: 250px;
+}
+
+.aci-grid--events .page-list-ext-image{
+    height: 250px;
+}
+.aci-grid--video .page-list-ext-image {
+    height: 360px;
+}
+}
+
+@media screen and (min-width: 768px) {
+.site-title {
+font-size: 2.2rem;
+}
+.social-links {
+    display: block;
+}
+.aci-banner--heading {
+font-size: 52px;
+	color: #67242d;
+}
+.section-block__title {
+margin-right: 0;
+text-align: center;
+font-size: 2.5rem;
+line-height: 1.2;
+}
+
+.aci-pages {
+max-width: calc(50% - 21px);
+}
+.aci-grid--courses .page-list-ext-item {
+margin-left: 20px;
+margin-right: 20px;
+margin-bottom: 50px;
+    -ms-flex: 0 0 calc(50% - 40px);
+-webkit-box-flex: 0;
+-webkit-flex: 0 0 calc(50% - 40px);
+flex: 0 0 calc(50% - 40px);
+max-width: calc(50% - 40px);
+    
+}
+.aci-grid--courses .page-list-ext-item:nth-child(6n), .aci-grid--courses .page-list-ext-item:nth-child(6n+1) {
+    -ms-flex: 0 0 calc(50% - 40px);
+-webkit-box-flex: 0;
+-webkit-flex: 0 0 calc(50% - 40px);
+flex: 0 0 calc(50% - 40px);
+max-width: calc(50% - 40px);
+}
+}
+@media screen and (min-width: 992px) {
+.aci-grid--wrapper {
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+-ms-flex-direction: row;
+flex-direction: row;
+}
+.aci-grid--wrapper > * + * {
+margin-left: 20px;
+}
+.aci-grid--courses .page-list-ext-item {
+-ms-flex: 0 0 calc(25% - 40px);
+-webkit-box-flex: 0;
+-webkit-flex: 0 0 calc(25% - 40px);
+flex: 0 0 calc(25% - 40px);
+max-width: calc(25% - 40px);
+}
+.aci-grid--events .page-list-ext-item {
+    height: 300px;
+}
+
+.aci-grid--events .page-list-ext-image{
+    height: 300px;
+}
+}
+
+@media screen and (max-width: 575px) {
+	.aci-banner {
+		background-position-x: 76px;
+    background-position-y: 69px;
+	}
+	.aci-banner--content {
+		height: 100%;
+    padding-top: 10px;
+	}
+	.aci-banner--heading {
+		margin-bottom: 4px;
+	}
+	.aci-banner--desc {
+		font-size: 18px;
+	}
+}		</style>
+		    </head>
+
+<body class="error404 wp-embed-responsive wp-theme-reboot sidebar-right elementor-default elementor-kit-466">
+
+
+
+<div id="page" class="site">
+    <a class="skip-link screen-reader-text" href="#content"><!--noindex-->Перейти к содержанию<!--/noindex--></a>
+
+    <div class="search-screen-overlay js-search-screen-overlay"></div>
+    <div class="search-screen js-search-screen">
+        
+<form role="search" method="get" class="search-form" action="https://classicwisdomacademy.com/">
+    <label>
+        <span class="screen-reader-text"><!--noindex-->Search for:<!--/noindex--></span>
+        <input type="search" class="search-field" placeholder="Поиск…" value="" name="s">
+    </label>
+    <button type="submit" class="search-submit"></button>
+</form>    </div>
+
+    
+
+<header id="masthead" class="site-header full" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="site-header-inner full">
+
+        <div class="humburger js-humburger"><span></span><span></span><span></span></div>
+
+        
+<div class="site-branding">
+
+    <div class="site-logotype"><a href="https://classicwisdomacademy.com/"><img src="https://classicwisdomacademy.com/wp-content/uploads/2022/08/logos.svg" width="200" height="200" alt="Академия Классической Мудрости"></a></div><div class="site-branding__body"><div class="site-title"><a href="https://classicwisdomacademy.com/">Академия Классической Мудрости</a></div><p class="site-description">Мощные древние знания для трансформации вашей жизни</p></div></div><!-- .site-branding -->
+<div class="social-links">
+    <div class="social-buttons social-buttons--square social-buttons--circle">
+
+    <span class="social-button social-button--facebook js-link" data-href="aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL2NsYXNzaWN3aXNkb21hY2FkZW15" data-target="_blank"></span><span class="social-button social-button--telegram js-link" data-href="aHR0cHM6Ly90Lm1lLytRYkhzRF8wQThnbGlaREpp" data-target="_blank"></span><span class="social-button social-button--youtube js-link" data-href="aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQ0ZjM2VuN0oxcW1VU3FMQzdudDhDZncvZmVhdHVyZWQ=" data-target="_blank"></span><span class="social-button social-button--instagram js-link" data-href="aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9jbGFzc2ljd2lzZG9tYWNhZGVteS8=" data-target="_blank"></span>
+    </div>
+</div>
+
+
+    </div>
+</header><!-- #masthead -->
+
+
+
+    
+    
+    <nav id="site-navigation" class="main-navigation full" itemscope itemtype="http://schema.org/SiteNavigationElement">
+        <div class="main-navigation-inner full">
+            <div class="menu-%d0%bc%d0%b5%d0%bd%d1%8e-%d0%bf%d0%be%d0%b4-%d1%88%d0%b0%d0%bf%d0%ba%d0%be%d0%b9-%d0%b3%d0%bb%d0%b0%d0%b2%d0%bd%d0%be%d0%b5-container"><ul id="header_menu" class="menu"><li id="menu-item-150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-150"><a href="/">Главная</a></li>
+<li id="menu-item-1520" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1520"><a href="#">Об Институте</a>
+<ul class="sub-menu">
+	<li id="menu-item-190" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-190"><a href="https://classicwisdomacademy.com/istoriya-aci/">История ACI</a></li>
+	<li id="menu-item-3772" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3772"><a href="https://classicwisdomacademy.com/prepodavateli-aci/">Преподаватели и лекторы ACI Академии Классической Мудрости</a></li>
+	<li id="menu-item-191" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-191"><a href="https://classicwisdomacademy.com/geshe-michael-autobiography/">Геше Майкл Роуч</a></li>
+	<li id="menu-item-4029" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4029"><a href="https://classicwisdomacademy.com/ucheniya-po-avtobiografii-geshe-maykla-roucha/">Учения по автобиографии Геше Майкла</a></li>
+	<li id="menu-item-192" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-192"><a href="https://classicwisdomacademy.com/piter-myortl/">Питер Мёртл</a></li>
+	<li id="menu-item-193" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-193"><a href="https://classicwisdomacademy.com/khen-rinpoche-geshe-lobsang-tarchin-1921-2004/">Кхен Ринпоче Геше Лобсанг Тарчин (1921 – 2004)</a></li>
+	<li id="menu-item-194" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-194"><a href="https://classicwisdomacademy.com/pabongka-rinpoche-1878-1941/">Пабонгка Ринпоче (1878 – 1941)</a></li>
+	<li id="menu-item-195" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-195"><a href="https://classicwisdomacademy.com/chzhe-tsonkapa-1357-1419/">Чже Цонгкапа (1357 – 1419)</a></li>
+</ul>
+</li>
+<li id="menu-item-1542" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1542"><a href="#">Курсы</a>
+<ul class="sub-menu">
+	<li id="menu-item-267" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-267"><a href="https://classicwisdomacademy.com/kratkoe-soderzhanie-18-bazovyh-kursov/">Описание курсов ACI</a></li>
+	<li id="menu-item-3510" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3510"><a href="https://classicwisdomacademy.com/schedule/">Расписание мероприятий 2026</a></li>
+	<li id="menu-item-268" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-268"><a href="https://classicwisdomacademy.com/gruppy-sovmestnogo-izucheniya/">Группы совместного обучения</a></li>
+	<li id="menu-item-3019" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3019"><a href="https://classicwisdomacademy.com/osnovy-aci/">Основы ACI</a></li>
+	<li id="menu-item-269" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-269"><a href="https://classicwisdomacademy.com/kursy-aci/aci-1/">ACI 1</a></li>
+	<li id="menu-item-270" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-270"><a href="https://classicwisdomacademy.com/kursy-aci/aci-2/">ACI 2</a></li>
+	<li id="menu-item-271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-271"><a href="https://classicwisdomacademy.com/kursy-aci/aci-3/">ACI 3</a></li>
+	<li id="menu-item-1461" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1461"><a href="https://classicwisdomacademy.com/kursy-aci/aci-4/">ACI 4</a></li>
+	<li id="menu-item-1946" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1946"><a href="https://classicwisdomacademy.com/kursy-aci/aci-5/">ACI 5</a></li>
+	<li id="menu-item-2394" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2394"><a href="https://classicwisdomacademy.com/kursy-aci/aci-6/">ACI 6</a></li>
+	<li id="menu-item-3119" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3119"><a href="https://classicwisdomacademy.com/kursy-aci/aci-7/">ACI 7</a></li>
+	<li id="menu-item-2777" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2777"><a href="https://classicwisdomacademy.com/kursy-aci/aci-8/">ACI 8</a></li>
+	<li id="menu-item-277" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-277"><a href="https://classicwisdomacademy.com/kursy-aci/aci-9/">ACI 9</a></li>
+	<li id="menu-item-278" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-278"><a href="https://classicwisdomacademy.com/kursy-aci/aci-10/">ACI 10</a></li>
+	<li id="menu-item-279" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-279"><a href="https://classicwisdomacademy.com/kursy-aci/aci-11/">ACI 11</a></li>
+	<li id="menu-item-280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-280"><a href="https://classicwisdomacademy.com/kursy-aci/aci-12/">ACI 12</a></li>
+	<li id="menu-item-281" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-281"><a href="https://classicwisdomacademy.com/kursy-aci/aci-13/">ACI 13</a></li>
+	<li id="menu-item-282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-282"><a href="https://classicwisdomacademy.com/kursy-aci/aci-14/">ACI 14</a></li>
+	<li id="menu-item-2664" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2664"><a href="https://classicwisdomacademy.com/kursy-aci/aci-15/">ACI 15</a></li>
+	<li id="menu-item-284" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-284"><a href="https://classicwisdomacademy.com/kursy-aci/aci-16/">ACI 16</a></li>
+	<li id="menu-item-285" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-285"><a href="https://classicwisdomacademy.com/kursy-aci/aci-17/">ACI 17</a></li>
+	<li id="menu-item-2918" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2918"><a href="https://classicwisdomacademy.com/kursy-aci/aci-18/">ACI 18</a></li>
+</ul>
+</li>
+<li id="menu-item-2553" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2553"><a href="https://classicwisdomacademy.com/lamrimy-s-geshe-majklom/">Ламримы с<br>Геше Майклом</a></li>
+<li id="menu-item-1532" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1532"><a href="#">Практики</a>
+<ul class="sub-menu">
+	<li id="menu-item-4614" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4614"><a href="https://classicwisdomacademy.com/meditatsionnyy-trek-dlya-studentov-aci/">Медитационный трек для студентов ACI</a></li>
+	<li id="menu-item-5309" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5309"><a href="https://classicwisdomacademy.com/preface/">Книга Геше Майкла Роуча о том, как самому увидеть пустоту</a></li>
+	<li id="menu-item-2248" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2248"><a href="https://classicwisdomacademy.com/10ep/">10 этических принципов</a></li>
+	<li id="menu-item-3479" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3479"><a href="https://classicwisdomacademy.com/klub-meditatsii-akm/">Клуб медитации АКМ</a></li>
+	<li id="menu-item-3226" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3226"><a href="https://classicwisdomacademy.com/mahamudra-pustota-uma-v-shesti-razlichnyh-ottenkah/">Махамудра: Пустота ума, в шести различных оттенках</a></li>
+	<li id="menu-item-1621" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1621"><a href="https://classicwisdomacademy.com/joga-kompleks-ledi-nigumy/">Йога комплекс Леди Нигумы</a></li>
+	<li id="menu-item-1618" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1618"><a href="https://classicwisdomacademy.com/obzornyy-kurs/">Обзорный курс по тибетскому языку</a></li>
+	<li id="menu-item-2263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2263"><a href="https://classicwisdomacademy.com/meditatsiya-tong-len/">Медитация «Тонг Лен»</a></li>
+	<li id="menu-item-1612" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1612"><a href="https://classicwisdomacademy.com/podgotovitelnye-meropriyatiya-k-meditatsii/">Подготовительные мероприятия к медитации</a></li>
+	<li id="menu-item-1662" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1662"><a href="https://classicwisdomacademy.com/dnevnik/">Как вести дневник</a></li>
+	<li id="menu-item-1897" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1897"><a href="https://classicwisdomacademy.com/osnovy-debata/">Основы дебатов</a></li>
+	<li id="menu-item-4046" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4046"><a href="https://classicwisdomacademy.com/4-sily-metod-dlya-ustraneniya-plohoj-karmy/">4 Силы — Метод для устранения плохой кармы</a></li>
+	<li id="menu-item-2211" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2211"><a href="https://classicwisdomacademy.com/karmic-partners/">Кармические<br>партнеры</a></li>
+	<li id="menu-item-3001" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3001"><a href="https://classicwisdomacademy.com/meditatsiya-zolotaya-komnata/">Медитация «Золотая комната»</a></li>
+	<li id="menu-item-3978" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3978"><a href="https://classicwisdomacademy.com/7-ingredientov/">7 ингредиентов</a></li>
+	<li id="menu-item-4070" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4070"><a href="https://classicwisdomacademy.com/kak-razgovarivat-s-umershimi-blizkimi/">Как разговаривать с умершими близкими</a></li>
+	<li id="menu-item-4071" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4071"><a href="https://classicwisdomacademy.com/chto-buddistu-sleduyet-delat-kogda-chelovek-umirayet/">Что буддисту следует делать, когда человек умирает</a></li>
+</ul>
+</li>
+<li id="menu-item-123" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-123"><a href="https://classicwisdomacademy.com/category/blog/">Блог</a></li>
+<li id="menu-item-1533" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1533"><a href="#">Рекомендации</a>
+<ul class="sub-menu">
+	<li id="menu-item-297" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-297"><a href="https://classicwisdomacademy.com/s-chego-nachat/">С чего начать</a></li>
+	<li id="menu-item-299" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-299"><a href="https://classicwisdomacademy.com/chasto-zadavaemye-voprosy/">FAQ / Часто задаваемые вопросы</a></li>
+	<li id="menu-item-1967" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1967"><a href="https://classicwisdomacademy.com/kak-pisat-domashki/">Как писать домашки так, чтобы Вас не обвинили в списывании</a></li>
+	<li id="menu-item-298" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-298"><a href="https://classicwisdomacademy.com/posledovatelnost-izucheniya/">Последовательность изучения</a></li>
+	<li id="menu-item-300" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-300"><a href="https://classicwisdomacademy.com/karma-sluzheniya-opyt-geshe-majkla-roucha/">Карма служения. Опыт Геше Майкла Роуча</a></li>
+	<li id="menu-item-3032" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3032"><a href="https://classicwisdomacademy.com/karernaya-lestnitsa-studenta-aci/">Карьерная лестница студента ACI</a></li>
+	<li id="menu-item-3048" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3048"><a href="https://classicwisdomacademy.com/eticheskaya_politika/">Этическая политика по финансам и сбору средств</a></li>
+</ul>
+</li>
+<li id="menu-item-2992" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2992"><a href="https://classicwisdomacademy.com/rezultaty-studentov/">Результаты<br>студентов</a></li>
+<li id="menu-item-3970" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3970"><a href="https://classicwisdomacademy.com/6-razovyy-dnevnik-v-telegram/">6-разовый дневник<br>в Telegram</a></li>
+<li id="menu-item-3968" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3968"><a href="https://classicwisdomacademy.com/blagodarnost/">Фонд Вечной Мудрости</a></li>
+<li id="menu-item-4162" class="weglot-parent-menu-item wg-ru weglot-lang menu-item-weglot weglot-language ru menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4162"><a href="#weglot_switcher" title="Русский" data-wg-notranslate="true">RU</a>
+<ul class="sub-menu">
+	<li id="menu-item-weglot-4162-uk" class="weglot-lang menu-item-weglot weglot-language weglot-uk menu-item menu-item-type-custom menu-item-object-custom menu-item-weglot-4162-uk"><a href="https://classicwisdomacademy.com/uk/wp-content/uploads/2019/06/essay-04.jpg" title="Українська" data-wg-notranslate="true">UK</a></li>
+	<li id="menu-item-weglot-4162-en" class="weglot-lang menu-item-weglot weglot-language weglot-en menu-item menu-item-type-custom menu-item-object-custom menu-item-weglot-4162-en"><a href="https://classicwisdomacademy.com/en/wp-content/uploads/2019/06/essay-04.jpg" title="English" data-wg-notranslate="true">EN</a></li>
+</ul>
+</li>
+</ul></div>        </div>
+    </nav><!-- #site-navigation -->
+
+    
+
+    <div class="mobile-menu-placeholder js-mobile-menu-placeholder"></div>
+    
+	
+    <div id="content" class="site-content fixed">
+
+        
+        <div class="site-content-inner">
+    <div id="primary" class="content-area">
+         <main id="main" class="site-main">
+
+             <section class="error-404 not-found">
+                 <header class="page-header">
+                     <h1 class="page-title">К сожалению, запрашиваемая страница не существует.</h1>
+                 </header><!-- .page-header -->
+
+                 <div class="page-content">
+                     <p>Ничего не найдено по данному адресу. Попробуйте воспользоваться поиском или ссылками ниже.</p>
+                     
+<form role="search" method="get" class="search-form" action="https://classicwisdomacademy.com/">
+    <label>
+        <span class="screen-reader-text"><!--noindex-->Search for:<!--/noindex--></span>
+        <input type="search" class="search-field" placeholder="Поиск…" value="" name="s">
+    </label>
+    <button type="submit" class="search-submit"></button>
+</form>                 </div><!-- .page-content -->
+             </section><!-- .error-404 -->
+
+             <div id="related-posts" class="related-posts fixed"><div class="related-posts__header">Вам также может понравиться</div><div class="post-cards post-cards--vertical">
+<div class="post-card post-card--related">
+    <div class="post-card__thumbnail"><a href="https://classicwisdomacademy.com/ne-daj-potoku-plavno-tech/"><img fetchpriority="high" width="335" height="220" src="https://classicwisdomacademy.com/wp-content/uploads/2021/10/photo_2021-07-31_09-12-23-335x220.jpg" class="attachment-reboot_small size-reboot_small wp-post-image" alt="" decoding="async" /></a></div><div class="post-card__title"><a href="https://classicwisdomacademy.com/ne-daj-potoku-plavno-tech/">НЕ ДАЙ ПОТОКУ ПЛАВНО ТЕЧЬ</a></div><div class="post-card__description">Автор: Вел Котенко. Попробуйте понаблюдать за потоком сознания.</div><div class="post-card__meta"><span class="post-card__views">1.4к.</span></div>
+</div>
+
+<div class="post-card post-card--related">
+    <div class="post-card__thumbnail"><a href="https://classicwisdomacademy.com/put-dlinoyu-v-zhizn/"><img width="335" height="220" src="https://classicwisdomacademy.com/wp-content/uploads/2020/12/buddhist-737274-e1607001045133-335x220.jpg" class="attachment-reboot_small size-reboot_small wp-post-image" alt="" decoding="async" /></a></div><div class="post-card__title"><a href="https://classicwisdomacademy.com/put-dlinoyu-v-zhizn/">Путь длиною в жизнь</a></div><div class="post-card__description">Автор: Мария Кондратьева-Мёртл Многие спрашивают: как</div><div class="post-card__meta"><span class="post-card__views">489</span></div>
+</div>
+
+<div class="post-card post-card--related">
+    <div class="post-card__thumbnail"><a href="https://classicwisdomacademy.com/karmicheskaya-reklama/"><img width="335" height="220" src="https://classicwisdomacademy.com/wp-content/uploads/2020/12/business-3639565-335x220.jpg" class="attachment-reboot_small size-reboot_small wp-post-image" alt="" decoding="async" /></a></div><div class="post-card__title"><a href="https://classicwisdomacademy.com/karmicheskaya-reklama/">Кармическая реклама</a></div><div class="post-card__description">Автор: Мария Кондратьева-Мёртл Как сделать ваш Инстаграм</div><div class="post-card__meta"><span class="post-card__views">433</span></div>
+</div>
+
+<div class="post-card post-card--related">
+    <div class="post-card__thumbnail"><a href="https://classicwisdomacademy.com/ochistit-soznanie-vozmozhno/"><img width="335" height="220" src="https://classicwisdomacademy.com/wp-content/uploads/2020/12/fantasy-3317298-1-scaled-e1606913119144-335x220.jpg" class="attachment-reboot_small size-reboot_small wp-post-image" alt="" decoding="async" /></a></div><div class="post-card__title"><a href="https://classicwisdomacademy.com/ochistit-soznanie-vozmozhno/">Очистить сознание. Возможно?</a></div><div class="post-card__description">Автор: Мария Кондратьева-Мёртл Находясь в теле человека</div><div class="post-card__meta"><span class="post-card__views">357</span></div>
+</div>
+
+<div class="post-card post-card--related">
+    <div class="post-card__thumbnail"><a href="https://classicwisdomacademy.com/max-dzhabali-interview-september2024/"><img width="335" height="220" src="https://classicwisdomacademy.com/wp-content/uploads/2024/09/maks-dzhabali-kursy-aci-335x220.png" class="attachment-reboot_small size-reboot_small wp-post-image" alt="макс джабали курсы aci" decoding="async" /></a></div><div class="post-card__title"><a href="https://classicwisdomacademy.com/max-dzhabali-interview-september2024/">Вопросы Максу Джабали: о любимых книгах, &#171;таковости&#187; и &#171;самости&#187;, разъяснении обетов</a></div><div class="post-card__description">Привет, Макс! Спасибо за ответы на предыдущие вопросы</div><div class="post-card__meta"><span class="post-card__views">431</span></div>
+</div>
+
+<div class="post-card post-card--related">
+    <div class="post-card__thumbnail"><a href="https://classicwisdomacademy.com/obzornyy-kurs/"><img width="335" height="220" src="https://classicwisdomacademy.com/wp-content/uploads/2020/10/yoga-1915564-335x220.jpg" class="attachment-reboot_small size-reboot_small wp-post-image" alt="" decoding="async" /></a></div><div class="post-card__title"><a href="https://classicwisdomacademy.com/obzornyy-kurs/">Обзорный курс по тибетскому языку</a></div><div class="post-card__description">Тибетский язык — язык Дхармы, буддийского Учения.</div><div class="post-card__meta"><span class="post-card__views">5</span></div>
+</div>
+
+<div class="post-card post-card--related">
+    <div class="post-card__thumbnail"><a href="https://classicwisdomacademy.com/otdat-ili-zabrat/"><img width="335" height="220" src="https://classicwisdomacademy.com/wp-content/uploads/2020/12/heart-3042975-335x220.jpg" class="attachment-reboot_small size-reboot_small wp-post-image" alt="" decoding="async" /></a></div><div class="post-card__title"><a href="https://classicwisdomacademy.com/otdat-ili-zabrat/">Отдать или забрать?</a></div><div class="post-card__description">Автор: Мария Кондратьева-Мёртл ⠀ Этот вопрос волнует</div><div class="post-card__meta"><span class="post-card__views">355</span></div>
+</div>
+
+<div class="post-card post-card--related">
+    <div class="post-card__thumbnail"><a href="https://classicwisdomacademy.com/aci-10-lamrim/"><img width="335" height="220" src="https://classicwisdomacademy.com/wp-content/uploads/2025/02/yutub_zastavki_k_video_2025_01_31t020823_404-335x220.png" class="attachment-reboot_small size-reboot_small wp-post-image" alt="" decoding="async" /></a></div><div class="post-card__title"><a href="https://classicwisdomacademy.com/aci-10-lamrim/">🔹 ACI 10 Ламрим</a></div><div class="post-card__description"></div><div class="post-card__meta"><span class="post-card__views">732</span></div>
+</div>
+</div></div>
+         </main><!-- #main -->
+	</div><!-- #primary -->
+
+    
+
+</div><!--.site-content-inner-->
+
+
+</div><!--.site-content-->
+
+
+
+
+
+<div class="site-footer-container ">
+
+    
+
+    <footer id="colophon" class="site-footer site-footer--style-gray full">
+        <div class="site-footer-inner full">
+
+            <div class="footer-widgets footer-widgets-5"><div class="footer-widget"><div id="text-5" class="widget widget_text">			<div class="textwidget"><p><a href="/">Главная</a></p>
+</div>
+		</div><div id="text-6" class="widget widget_text">			<div class="textwidget"><p><a href="/istoriya-aci/">История ACI</a></p>
+</div>
+		</div><div id="text-12" class="widget widget_text">			<div class="textwidget"><p><a href="https://classicwisdomacademy.com/blagodarnost/">Благодарность</a></p>
+</div>
+		</div></div><div class="footer-widget"><div id="text-7" class="widget widget_text">			<div class="textwidget"><p><a href="https://classicwisdomacademy.com/lamrimy-s-geshe-majklom/">Ламримы с Геше Майклом</a></p>
+</div>
+		</div><div id="text-13" class="widget widget_text">			<div class="textwidget"><p><a href="/dnevnik/">Шестиразовый дневник</a></p>
+</div>
+		</div></div><div class="footer-widget"><div id="text-8" class="widget widget_text">			<div class="textwidget"><p><a href="https://classicwisdomacademy.com/kratkoe-soderzhanie-18-bazovyh-kursov/">Описание курсов ACI</a></p>
+</div>
+		</div><div id="text-9" class="widget widget_text">			<div class="textwidget"><p><a href="https://classicwisdomacademy.com/stat-volonterom/"><span class="removed-link">Стать волонтером</span></a></p>
+</div>
+		</div></div><div class="footer-widget"><div id="text-4" class="widget widget_text">			<div class="textwidget"><p><a href="https://classicwisdomacademy.com/category/blog/">Блог</a></p>
+</div>
+		</div><div id="text-2" class="widget widget_text">			<div class="textwidget"><p><a href="/karmic-partners/" rel="noopener">Кармические партнёры</a></p>
+</div>
+		</div><div id="text-17" class="widget widget_text">			<div class="textwidget"><p><a href="/kontakty/" rel="noopener">Контакты</a></p>
+</div>
+		</div></div><div class="footer-widget"><div id="search-2" class="widget widget_search">
+<form role="search" method="get" class="search-form" action="https://classicwisdomacademy.com/">
+    <label>
+        <span class="screen-reader-text"><!--noindex-->Search for:<!--/noindex--></span>
+        <input type="search" class="search-field" placeholder="Поиск…" value="" name="s">
+    </label>
+    <button type="submit" class="search-submit"></button>
+</form></div></div></div>
+            
+<div class="footer-bottom">
+    <div class="footer-info">
+        © 2026 АКАДЕМИЯ КЛАССИЧЕСКОЙ МУДРОСТИ<br><span data-wg-notranslate="">Diamond Wisdom Group OÜ · Reg. code 17101952 · Seebi tn 1-1207, 11316 Tallinn, Estonia</span>
+	        </div>
+
+    <div class="footer-counters"><a href="https://classicwisdomacademy.com/policy/">Политика конфиденциальности</a></div></div>
+        </div>
+    </footer><!--.site-footer-->
+</div>
+
+
+    <button type="button" class="scrolltop js-scrolltop"></button>
+
+</div><!-- #page -->
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/reboot/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<a rel="nofollow" style="display:none" href="https://classicwisdomacademy.com/?blackhole=fb02261a1c" title="Do NOT follow this link or you will be banned from the site!">Академия Классической Мудрости</a>
+			<script>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<style id='core-block-supports-inline-css' type='text/css'>
+/**
+ * Core styles: block-supports
+ */
+
+/*# sourceURL=core-block-supports-inline-css */
+</style>
+<script type="text/javascript" id="my-popup-scripts-js-extra">
+/* <![CDATA[ */
+var my_popup_ajax = {"url":"https://classicwisdomacademy.com/wp-admin/admin-ajax.php","nonce":"2a6d239afa","action":"my-popup"};
+//# sourceURL=my-popup-scripts-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" id="my-popup-scripts-js-before">
+/* <![CDATA[ */
+var myPopupInitData = {params:"eyJpc180MDQiOnRydWUsImlkIjpudWxsLCJ0eXBlIjpudWxsLCJzdWJ0eXBlIjpudWxsLCJ1cmwiOiJcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMTlcLzA2XC9lc3NheS0wNC5qcGciLCJfbWFjIjoiOWY2MzJiNzQyMDAwYTFiYjlmYThkYTg3M2UxYzliYTcifQ=="};
+//# sourceURL=my-popup-scripts-js-before
+/* ]]> */
+</script>
+<script type="text/javascript" defer="defer" src="https://classicwisdomacademy.com/wp-content/plugins/my-popup/assets/public/js/scripts.min.js?ver=20221202" id="my-popup-scripts-js"></script>
+<script type="text/javascript" id="quizle-scripts-js-extra">
+/* <![CDATA[ */
+var quizle_script_params = {"url":"https://classicwisdomacademy.com/wp-admin/admin-ajax.php","nonce":"b7bd877055","goodshare_url":"https://classicwisdomacademy.com/wp-content/plugins/quizle/assets/public/js/plugins/goodshare.min.js?v=1.0","i18n":{"wrongPhoneMessage":"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0443\u043a\u0430\u0436\u0438\u0442\u0435 \u0441\u0432\u043e\u0439 \u043d\u043e\u043c\u0435\u0440","applyAgreement":"\u041c\u044b \u043d\u0435 \u043c\u043e\u0436\u0435\u043c \u043f\u0440\u0438\u043d\u044f\u0442\u044c \u0432\u0430\u0448\u0438 \u043a\u043e\u043d\u0442\u0430\u043a\u0442\u043d\u044b\u0435 \u0434\u0430\u043d\u043d\u044b\u0435 \u0431\u0435\u0437 \u0441\u043e\u0433\u043b\u0430\u0441\u0438\u044f \u0441 \u043f\u043e\u043b\u0438\u0442\u0438\u043a\u043e\u0439 \u043a\u043e\u043d\u0444\u0438\u0434\u0435\u043d\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u0438.","captchaErrorMessage":"Unable to validate captcha. Please try again later."},"files":{"allowed":true,"limit":3,"accept":"image/*,text/*,.doc,.pdf,.zip,.rar,.7z","reset_on_reload":0,"messages":{"maxFilesExceed":"\u0412\u044b \u0432\u044b\u0431\u0440\u0430\u043b\u0438 \u0441\u043b\u0438\u0448\u043a\u043e\u043c \u043c\u043d\u043e\u0433\u043e \u0444\u0430\u0439\u043b\u043e\u0432. A maximum of %\u0432 files is allowed"}}};
+//# sourceURL=quizle-scripts-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://classicwisdomacademy.com/wp-content/plugins/quizle/assets/public/js/scripts.min.js?ver=1.6.0" id="quizle-scripts-js"></script>
+<script type="text/javascript" id="rocket-browser-checker-js-after">
+/* <![CDATA[ */
+class RocketBrowserCompatibilityChecker {
+
+	constructor( options ) {
+		this.passiveSupported = false;
+
+		this._checkPassiveOption( this );
+		this.options = this.passiveSupported ? options : false;
+	}
+
+	/**
+	 * Initializes browser check for addEventListener passive option.
+	 *
+	 * @link https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#Safely_detecting_option_support
+	 * @private
+	 *
+	 * @param self Instance of this object.
+	 * @returns {boolean}
+	 */
+	_checkPassiveOption( self ) {
+		try {
+			const options = {
+				// This function will be called when the browser attempts to access the passive property.
+				get passive() {
+					self.passiveSupported = true;
+					return false;
+				}
+			};
+
+			window.addEventListener( 'test', null, options );
+			window.removeEventListener( 'test', null, options );
+		} catch ( err ) {
+			self.passiveSupported = false;
+		}
+	}
+
+	/**
+	 * Checks if the browser supports requestIdleCallback and cancelIdleCallback. If no, shims its behavior with a polyfills.
+	 *
+	 * @link @link https://developers.google.com/web/updates/2015/08/using-requestidlecallback
+	 */
+	initRequestIdleCallback() {
+		if ( ! 'requestIdleCallback' in window ) {
+			window.requestIdleCallback = ( cb ) => {
+				const start = Date.now();
+				return setTimeout( () => {
+					cb( {
+						didTimeout: false,
+						timeRemaining: function timeRemaining() {
+							return Math.max( 0, 50 - ( Date.now() - start ) );
+						}
+					} );
+				}, 1 );
+			};
+		}
+
+		if ( ! 'cancelIdleCallback' in window ) {
+			window.cancelIdleCallback = ( id ) => clearTimeout( id );
+		}
+	}
+
+	/**
+	 * Detects if data saver mode is on.
+	 *
+	 * @link https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/save-data/#detecting_the_save-data_setting
+	 *
+	 * @returns {boolean|boolean}
+	 */
+	isDataSaverModeOn() {
+		return (
+			'connection' in navigator
+			&&
+			true === navigator.connection.saveData
+		);
+	}
+
+	/**
+	 * Checks if the browser supports link prefetch.
+	 *
+	 * @returns {boolean|boolean}
+	 */
+	supportsLinkPrefetch() {
+		const elem = document.createElement( 'link' );
+		return (
+			elem.relList
+			&&
+			elem.relList.supports
+			&&
+			elem.relList.supports( 'prefetch' )
+			&&
+			window.IntersectionObserver
+			&&
+			'isIntersecting' in IntersectionObserverEntry.prototype
+		);
+	}
+
+	isSlowConnection() {
+		return (
+			'connection' in navigator
+			&&
+			'effectiveType' in navigator.connection
+			&&
+			(
+				'2g' === navigator.connection.effectiveType
+				||
+				'slow-2g' === navigator.connection.effectiveType
+			)
+		)
+	}
+}
+
+//# sourceURL=rocket-browser-checker-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/(index.php/)?(.*)wp-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https://classicwisdomacademy.com","onHoverDelay":"100","rateThrottle":"3"};
+//# sourceURL=rocket-preload-links-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-after">
+/* <![CDATA[ */
+class RocketPreloadLinks {
+
+	constructor( browser, config ) {
+		this.browser = browser;
+		this.config  = config;
+		this.options = this.browser.options;
+
+		this.prefetched = new Set;
+		this.eventTime  = null;
+		this.threshold  = 1111;
+		this.numOnHover = 0;
+	}
+
+	/**
+	 * Initializes the handler.
+	 */
+	init() {
+		if (
+			! this.browser.supportsLinkPrefetch()
+			||
+			this.browser.isDataSaverModeOn()
+			||
+			this.browser.isSlowConnection()
+		) {
+			return;
+		}
+
+		this.regex = {
+			excludeUris: RegExp( this.config.excludeUris, 'i' ),
+			images: RegExp( '.(' + this.config.imageExt + ')$', 'i' ),
+			fileExt: RegExp( '.(' + this.config.fileExt + ')$', 'i' )
+		};
+
+		this._initListeners( this );
+	}
+
+	/**
+	 * Initializes the event listeners.
+	 *
+	 * @private
+	 *
+	 * @param self instance of this object, used for binding "this" to the listeners.
+	 */
+	_initListeners( self ) {
+		// Setting onHoverDelay to -1 disables the "on-hover" feature.
+		if ( this.config.onHoverDelay > -1 ) {
+			document.addEventListener( 'mouseover', self.listener.bind( self ), self.listenerOptions );
+		}
+
+		document.addEventListener( 'mousedown', self.listener.bind( self ), self.listenerOptions );
+		document.addEventListener( 'touchstart', self.listener.bind( self ), self.listenerOptions );
+	}
+
+	/**
+	 * Event listener. Processes when near or on a valid <a> hyperlink.
+	 *
+	 * @param Event event Event instance.
+	 */
+	listener( event ) {
+		const linkElem = event.target.closest( 'a' );
+		const url      = this._prepareUrl( linkElem );
+		if ( null === url ) {
+			return;
+		}
+
+		switch ( event.type ) {
+			case 'mousedown':
+			case 'touchstart':
+				this._addPrefetchLink( url );
+				break;
+			case 'mouseover':
+				this._earlyPrefetch( linkElem, url, 'mouseout' );
+		}
+	}
+
+	/**
+	 *
+	 * @private
+	 *
+	 * @param Element|null linkElem
+	 * @param object url
+	 * @param string resetEvent
+	 */
+	_earlyPrefetch( linkElem, url, resetEvent ) {
+		const doPrefetch = () => {
+			falseTrigger = null;
+
+			// Start the rate throttle: 1 sec timeout.
+			if ( 0 === this.numOnHover ) {
+				setTimeout( () => this.numOnHover = 0, 1000 );
+			}
+			// Bail out when exceeding the rate throttle.
+			else if ( this.numOnHover > this.config.rateThrottle ) {
+				return;
+			}
+
+			this.numOnHover++;
+			this._addPrefetchLink( url );
+		};
+
+		// Delay to avoid false triggers for hover/touch/tap.
+		let falseTrigger = setTimeout( doPrefetch, this.config.onHoverDelay );
+
+		// On reset event, reset the false trigger timer.
+		const reset = () => {
+			linkElem.removeEventListener( resetEvent, reset, { passive: true } );
+			if ( null === falseTrigger ) {
+				return;
+			}
+
+			clearTimeout( falseTrigger );
+			falseTrigger = null;
+		};
+		linkElem.addEventListener( resetEvent, reset, { passive: true } );
+	}
+
+	/**
+	 * Adds a <link rel="prefetch" href="<url>"> for the given URL.
+	 *
+	 * @param string url The Given URL to prefetch.
+	 */
+	_addPrefetchLink( url ) {
+		this.prefetched.add( url.href );
+
+		return new Promise( ( resolve, reject ) => {
+			const elem   = document.createElement( 'link' );
+			elem.rel     = 'prefetch';
+			elem.href    = url.href;
+			elem.onload  = resolve;
+			elem.onerror = reject;
+
+			document.head.appendChild( elem );
+		} ).catch(() => {
+			// ignore and continue.
+		});
+	}
+
+	/**
+	 * Prepares the target link's URL.
+	 *
+	 * @private
+	 *
+	 * @param Element|null linkElem Instance of the link element.
+	 * @returns {null|*}
+	 */
+	_prepareUrl( linkElem ) {
+		if (
+			null === linkElem
+			||
+			typeof linkElem !== 'object'
+			||
+			! 'href' in linkElem
+			||
+			// Link prefetching only works on http/https protocol.
+			[ 'http:', 'https:' ].indexOf( linkElem.protocol ) === -1
+		) {
+			return null;
+		}
+
+		const origin   = linkElem.href.substring( 0, this.config.siteUrl.length );
+		const pathname = this._getPathname( linkElem.href, origin );
+		const url      = {
+			original: linkElem.href,
+			protocol: linkElem.protocol,
+			origin: origin,
+			pathname: pathname,
+			href: origin + pathname
+		};
+
+		return this._isLinkOk( url ) ? url : null;
+	}
+
+	/**
+	 * Gets the URL's pathname. Note: ensures the pathname matches the permalink structure.
+	 *
+	 * @private
+	 *
+	 * @param object url Instance of the URL.
+	 * @param string origin The target link href's origin.
+	 * @returns {string}
+	 */
+	_getPathname( url, origin ) {
+		let pathname = origin
+			? url.substring( this.config.siteUrl.length )
+			: url;
+
+		if ( ! pathname.startsWith( '/' ) ) {
+			pathname = '/' + pathname;
+		}
+
+		if ( this._shouldAddTrailingSlash( pathname ) ) {
+			return pathname + '/';
+		}
+
+		return pathname;
+	}
+
+	_shouldAddTrailingSlash( pathname ) {
+		return (
+			this.config.usesTrailingSlash
+			&&
+			! pathname.endsWith( '/' )
+			&&
+			! this.regex.fileExt.test( pathname )
+		);
+	}
+
+	/**
+	 * Checks if the given link element is okay to process.
+	 *
+	 * @private
+	 *
+	 * @param object url URL parts object.
+	 *
+	 * @returns {boolean}
+	 */
+	_isLinkOk( url ) {
+		if ( null === url || typeof url !== 'object' ) {
+			return false;
+		}
+
+		return (
+			! this.prefetched.has( url.href )
+			&&
+			url.origin === this.config.siteUrl // is an internal document.
+			&&
+			url.href.indexOf( '?' ) === -1 // not a query string.
+			&&
+			url.href.indexOf( '#' ) === -1 // not an anchor.
+			&&
+			! this.regex.excludeUris.test( url.href ) // not excluded.
+			&&
+			! this.regex.images.test( url.href ) // not an image.
+		);
+	}
+
+	/**
+	 * Named static constructor to encapsulate how to create the object.
+	 */
+	static run() {
+		// Bail out if the configuration not passed from the server.
+		if ( typeof RocketPreloadLinksConfig === 'undefined' ) {
+			return;
+		}
+
+		const browser  = new RocketBrowserCompatibilityChecker( {
+			capture: true,
+			passive: true
+		} );
+		const instance = new RocketPreloadLinks( browser, RocketPreloadLinksConfig );
+		instance.init();
+	}
+}
+
+RocketPreloadLinks.run();
+
+//# sourceURL=rocket-preload-links-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" id="reboot-scripts-js-extra">
+/* <![CDATA[ */
+var settings_array = {"rating_text_average":"\u0441\u0440\u0435\u0434\u043d\u0435\u0435","rating_text_from":"\u0438\u0437","lightbox_display":"1","sidebar_fixed":""};
+var wps_ajax = {"url":"https://classicwisdomacademy.com/wp-admin/admin-ajax.php","nonce":"9e133b4151"};
+//# sourceURL=reboot-scripts-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://classicwisdomacademy.com/wp-content/themes/reboot/assets/js/scripts.min.js?ver=1.5.5" id="reboot-scripts-js"></script>
+<script>
+(function($) {
+$('a[href*="#"]')
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+ })(jQuery);
+</script>
+
+
+</body>
+</html>
