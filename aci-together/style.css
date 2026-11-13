@@ -362,3 +362,9 @@ a.step{text-decoration:none}
 .mist .intro-v>div:first-child{background:rgba(255,255,255,.55);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.7);border-radius:24px;padding:30px}
 .mist{background-position:center 78%}
 .mist::before{background:linear-gradient(180deg,rgba(247,242,234,.55) 0%,rgba(247,250,252,.18) 50%,rgba(247,250,252,.05) 100%)}
+/* язык группы */
+.lang{display:inline-flex;align-items:center;gap:6px;margin-top:6px;padding:4px 10px 4px 8px;border-radius:999px;background:linear-gradient(90deg,#e3edff,#fff6d6);color:#2c3f78;font:700 12px/1.2 var(--sans)}
+.lang::before{content:"";width:14px;height:10px;border-radius:2px;background:linear-gradient(180deg,#2f6fd6 50%,#f2c230 50%);flex:none}
+.scard .lang{display:inline-flex;margin-top:8px}
+.ccard .hd .lang{margin-top:6px}
+.regbox .lang{background:rgba(255,255,255,.12);color:#fff}

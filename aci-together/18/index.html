@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="../style.css?v=1794603482">
+<link rel="stylesheet" href="../style.css?v=1794603740">
 </head>
 <body>
 <header class="top"><div class="wrap">
@@ -64,8 +64,8 @@
 
 <div class="sticky-cta" id="sticky"></div>
 <div class="toast" id="toast"></div>
-<script src="../data.js?v=1794603482"></script>
-<script src="../common.js?v=1794603482"></script>
+<script src="../data.js?v=1794603740"></script>
+<script src="../common.js?v=1794603740"></script>
 <script>
 (function(){
   var N = 18, A = window.ACI, K = window.AK, esc = K.esc, c = A.courses[N-1], $ = function(id){ return document.getElementById(id); };
@@ -83,14 +83,14 @@
       if (!sticky) sticky = link.replace('Записаться', 'Записаться · старт ' + esc(g.startText));
       return '<div class="rg"><div><span class="chip open">' + (g.late ? 'Можно присоединиться' : 'Идёт набор') + '</span>' +
         '<div class="when">' + (g.late ? 'Группа стартовала ' : 'Старт ') + esc(g.startText) + '</div>' +
-        '<div class="meta">' + (cur ? 'Куратор: <b>' + esc(cur.name) + '</b> · ' : '') + (c.week === 2 ? '2 занятия' : '1 занятие') + ' в неделю · онлайн · бесплатно</div></div>' + link + '</div>';
-    }).join('') + (run.length ? '<div class="also">Также сейчас занимается группа ' + run.map(function(g){ return g.curatorShort ? esc(K.withCur(g)) : ''; }).filter(Boolean).join(', ') + ' — набор в неё закрыт.</div>' : '') + '</div>';
+        (K.langOf(g) ? '<div class="lang" style="margin-bottom:8px">' + esc(K.langOf(g)) + '</div>' : '') + '<div class="meta">' + (cur ? 'Куратор: <b>' + esc(cur.name) + '</b> · ' : '') + (c.week === 2 ? '2 занятия' : '1 занятие') + ' в неделю · онлайн · бесплатно</div></div>' + link + '</div>';
+    }).join('') + (run.length ? '<div class="also">Также сейчас занимается группа ' + run.map(function(g){ return g.curatorShort ? esc(K.withCur(g)) + (K.langOf(g) ? ' (' + esc(K.langOf(g)) + ')' : '') : ''; }).filter(Boolean).join(', ') + ' — набор в неё закрыт.</div>' : '') + '</div>';
   } else {
     var w = K.btn(K.waitLink(N), 'btn-gold', 'Сообщить мне о старте', 'Кнопка заработает после подключения бота');
     sticky = w;
     html = '<div class="regbox wait"><div class="rg"><div><span class="chip wait">' + esc(A.nextYearText) + '</span>' +
       '<div class="when">Набор пока закрыт</div><div class="meta">Нажмите кнопку — бот запомнит ваш интерес, и мы напишем, как только откроется набор.</div></div>' + w + '</div>' +
-      (run.length ? '<div class="also">Сейчас занимается группа ' + run.map(function(g){ return g.curatorShort ? esc(K.withCur(g)) : ''; }).filter(Boolean).join(', ') + ' — набор в неё закрыт.</div>' : '') + '</div>';
+      (run.length ? '<div class="also">Сейчас занимается группа ' + run.map(function(g){ return g.curatorShort ? esc(K.withCur(g)) + (K.langOf(g) ? ' (' + esc(K.langOf(g)) + ')' : '') : ''; }).filter(Boolean).join(', ') + ' — набор в неё закрыт.</div>' : '') + '</div>';
   }
   $('reg').innerHTML = html;
   $('platStep').href = c.plat;

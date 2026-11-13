@@ -17,6 +17,7 @@
     return gs.length ? 'run' : 'wait'; };
   K.open = A.groups.filter(function(g){ return g.state === 'open'; }).sort(function(a,b){ return a.start < b.start ? -1 : 1; });
   K.withCur = function(g){ return g.curator === 'sibir' ? 'с командой кураторов Сибирь / Дальний Восток' : g.curatorShort.replace(/^с /, 'с куратором '); };
+  K.langOf = function(g){ var c = g.curator && K.CUR[g.curator]; return (c && c.lang) || ''; };
   K.waitLink = function(n){ return (A.wait && A.wait[n]) || ''; };
   K.btn = function(href, cls, text, soon){
     return href ? '<a class="btn '+cls+'" href="'+K.esc(href)+'" target="_blank" rel="noopener">'+text+'</a>'
