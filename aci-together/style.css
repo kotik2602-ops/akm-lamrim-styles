@@ -343,3 +343,7 @@ a.step{text-decoration:none}
 .faqcta{margin-top:30px;background:var(--navy);color:#fff;border-radius:22px;padding:26px;display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}
 .faqcta b{font:600 26px/1.1 var(--serif);width:100%}
 .faqcta span{flex:1;min-width:220px;color:#c4c8e2}
+.brand{display:inline-flex;align-items:center;gap:10px}.brand img{height:36px;width:auto;flex:none}@media(max-width:420px){.brand{font-size:17px}.brand img{height:30px}}
+@media(max-width:520px){.top .wrap:has(.back) .brand{font-size:0;gap:0}.top .wrap:has(.back) .brand img{height:36px}}
+.cgrid{grid-template-columns:repeat(2,minmax(0,1fr))}@media(max-width:800px){.cgrid{grid-template-columns:minmax(0,1fr)}}.ccard{min-width:0}.ccard .act .btn{max-width:100%;white-space:normal;text-align:center}
+.ccard .track{display:block;margin-bottom:0}.path{width:100%}.path svg{flex:1 1 0;width:0}
