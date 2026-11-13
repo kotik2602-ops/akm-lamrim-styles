@@ -504,3 +504,7 @@ a.tlink:hover{text-decoration-color:var(--burg)}
 .cfact b{display:block;font:700 11px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--burg);margin-bottom:7px}
 .about p.cbase{font-size:14px;color:var(--mute);border-top:1px solid var(--line);padding-top:12px;margin-top:6px}
 .about p.cbase b{color:var(--burg)}
+.lang.ru::before{display:none}
+.lang.ru{background:#eef0f7;color:#3a3f5e;padding-left:10px}
+.regbox .lang.ru{background:rgba(255,255,255,.12);color:#fff}
+.ccard h3{line-height:1.2}

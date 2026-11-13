@@ -13,13 +13,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="style.css?v=1794607372">
+<link rel="stylesheet" href="style.css?v=1794607596">
 </head>
 <body>
 <div class="page-bg" aria-hidden="true"></div>
 <header class="top"><div class="wrap">
   <a class="brand" href="https://classicwisdomacademy.com/"><img src="img/logo-mark.png" alt="">Академия <b>Классической</b> Мудрости</a>
-  <nav class="nav"><a href="#about">Об АКМ</a><a href="#courses">Курсы 1–18</a><a href="#curators">С куратором</a><a href="#how">Как проходит</a><a href="#reviews">Отзывы</a><a href="faq/">Вопросы</a></nav>
+  <nav class="nav"><a href="#about">Об АКМ</a><a href="#courses">Курсы 1–18</a><a href="#curators">С кураторами</a><a href="#how">Как проходит</a><a href="#reviews">Отзывы</a><a href="faq/">Вопросы</a></nav>
 </div></header>
 
 <section class="hero"><div class="wrap">
@@ -37,7 +37,7 @@
 </div></section>
 
 <section id="curators" class="panel-sec"><div class="wrap">
-  <h2><em>Весь путь</em> с одним куратором</h2>
+  <h2><em>Весь путь</em> с одними кураторами</h2>
   <p class="lead">Некоторые кураторы ведут свою группу курс за курсом. Если вам близок человек — можно идти с ним дальше, от курса к курсу.</p>
   <div class="cgrid" id="cgrid"></div>
 </div></section>
@@ -140,8 +140,8 @@
 
 <div class="toast" id="toast"></div>
 <div class="lb" id="lb"><img alt=""></div>
-<script src="data.js?v=1794607372"></script>
-<script src="common.js?v=1794607372"></script>
+<script src="data.js?v=1794607596"></script>
+<script src="common.js?v=1794607596"></script>
 <script>
 (function(){
   var A = window.ACI, K = window.AK, esc = K.esc;
@@ -150,7 +150,7 @@
     var cta = g.reg ? '<a class="btn btn-gold" href="'+esc(g.reg)+'" target="_blank" rel="noopener">Записаться →</a>'
                     : '<a class="btn btn-gold" href="'+g.course+'/">Записаться →</a>';
     return '<div class="scard">'+(c.img?'<a class="sim" href="'+g.course+'/" style="background-image:url('+c.img+')"><span>ACI '+g.course+'</span></a>':'<div class="n">ACI '+g.course+'</div>')+'<div class="t">'+esc(c.t)+'</div>'+
-      '<div class="d">'+(g.late?'Стартовала <b>':'Старт <b>')+esc(g.startText)+'</b>'+(g.curatorShort?'<span class="who">'+esc(K.withCur(g))+'</span>':'')+(K.langOf(g)?'<span class="lang">'+esc(K.langOf(g))+'</span>':'')+'</div>'+
+      '<div class="d">'+(g.late?'Стартовала <b>':'Старт <b>')+esc(g.startText)+'</b>'+(g.curatorShort?'<span class="who">'+esc(K.withCur(g))+'</span>':'')+(K.langOf(g)?'<span class="lang'+(/украин/.test(K.langOf(g))?'':' ru')+'">'+esc(K.langOf(g))+'</span>':'')+'</div>'+
       '<div class="go">'+cta+'<a class="more" href="'+g.course+'/">Подробнее о курсе</a></div></div>';
   }).join('') || '<p class="lead">Сейчас нет открытых наборов — выберите курс ниже и нажмите «Сообщить мне о старте».</p>';
   // Каталог
@@ -163,13 +163,13 @@
     var gs = A.groups.filter(function(g){ return g.curator===cu.id; });
     var last = cu.track[cu.track.length-1], lg = gs.filter(function(x){ return x.course === last[0]; })[0];
     var lopen = lg && lg.state === 'open';
-    var lead = (cu.id==='sibir'?'Ведут':'Ведёт')+' группу по порядку курсов — '+(lopen?'следующий ACI '+last[0]+', старт '+lg.startText:'сейчас идёт ACI '+last[0])+'.';
+    var lead = ((cu.id==='sibir'||cu.co)?'Ведут':'Ведёт')+' группу по порядку курсов — '+(lopen?'следующий ACI '+last[0]+', старт '+lg.startText:'сейчас идёт ACI '+last[0])+'.';
     var plate = '<a class="pplate '+(lopen?'open':'run')+'" href="'+last[0]+'/"><small>'+(lopen?'Набор открыт':'Сейчас идёт')+'</small><b>ACI '+last[0]+'</b>'+(lopen?'<span>'+esc(lg.startText)+'</span>':'')+'</a>';
     var steps = '<div class="path"><svg viewBox="0 0 300 70" preserveAspectRatio="none" data-stars="'+(cu.track.length-1)+'"><path d="M4 50 C 50 10, 80 64, 128 36 S 210 8, 250 38 S 290 46, 298 30"/></svg>'+plate+'</div>';
     var og = gs.filter(function(g){return g.state==='open'})[0];
     var act = og ? '<a class="btn btn-gold" href="'+og.course+'/">Записаться на ACI '+og.course+' · '+esc(og.startText)+'</a>'
                  : K.btn((A.waitCurator||{})[cu.id], 'btn-ghost', 'Сообщить о следующем курсе', 'Кнопка заработает после подключения бота');
-    return '<div class="ccard" id="'+cu.id+'"><div class="hd"><span class="ava">'+cu.initials+'</span><div><h3>'+esc(cu.name)+'</h3>'+(cu.co?'<div class="co">вместе с '+esc(cu.coInstr)+'</div>':'')+(cu.langLabel?'<span class="lang'+(cu.lang?'':' ru')+'">'+esc(cu.langLabel)+'</span>':'')+'</div></div><p>'+esc(lead)+'</p><div class="track">'+steps+'</div><div class="act">'+act+'</div></div>';
+    return '<div class="ccard" id="'+cu.id+'"><div class="hd"><span class="ava">'+cu.initials+'</span><div><h3>'+esc(K.curNames(cu))+'</h3>'+(cu.langLabel?'<span class="lang'+(/украин/.test(cu.langLabel)?'':' ru')+'">'+esc(cu.langLabel)+'</span>':'')+'</div></div><p>'+esc(lead)+'</p><div class="track">'+steps+'</div><div class="act">'+act+'</div></div>';
   }).join('');
   document.querySelectorAll('.path svg').forEach(function(svg){
     var p = svg.querySelector('path'), n = +svg.getAttribute('data-stars'), L = p.getTotalLength(), NS = 'http://www.w3.org/2000/svg';
