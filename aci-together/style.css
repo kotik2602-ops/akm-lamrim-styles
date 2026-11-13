@@ -368,3 +368,28 @@ a.step{text-decoration:none}
 .scard .lang{display:inline-flex;margin-top:8px}
 .ccard .hd .lang{margin-top:6px}
 .regbox .lang{background:rgba(255,255,255,.12);color:#fff}
+
+/* ===== шрифты как на лендинге Ламрима: Unbounded (заголовки, цифры) + Manrope (текст) ===== */
+:root{--serif:'Unbounded',system-ui,sans-serif}
+h1,h2,h3{font-family:var(--serif);font-weight:700;letter-spacing:-.02em;line-height:1.12;text-wrap:balance}
+h1 em,h2 em,h3 em{font-style:normal}
+.hero h1{font-size:clamp(30px,4vw,54px)}
+h2{font-size:clamp(24px,3vw,40px)}
+.chero h1{font-size:clamp(28px,3.6vw,48px)}
+.panel h3,.ccard h3{font-size:clamp(18px,1.7vw,22px)}
+.brand{font:600 14px/1.1 var(--serif);letter-spacing:-.01em}
+.scard .n,.scard .sim span{font-weight:700;font-size:26px;letter-spacing:-.02em}
+.ctile .cn{font-weight:700;font-size:20px}
+.pplate b{font-weight:700;font-size:20px}
+.step b,.qn,.topic::before{font-weight:700}
+.topic::before{font-size:22px}
+.strip.topics2 .topic::before{font-size:26px}
+.qn{font-size:18px}
+.regbox .when{font-weight:700;font-size:24px;letter-spacing:-.02em}
+.gcard .gt{font-weight:700;font-size:20px}
+.quote{font:500 clamp(17px,1.7vw,21px)/1.45 var(--serif);letter-spacing:-.01em}
+.quote::before{font:700 90px/1 var(--serif);top:-14px}
+.story .who b{font:700 16px/1.2 var(--serif)}
+.faqcta b{font-weight:700;font-size:22px}
+.how li::before{font-weight:700;font-size:30px}
+.pic .ph b{font-weight:800;font-size:clamp(90px,12vw,150px)}
