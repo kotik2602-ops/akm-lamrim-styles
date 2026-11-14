@@ -533,3 +533,18 @@ html,body{overflow-x:clip}
   .scard .lang{margin-top:5px;font-size:11px;padding:3px 8px 3px 6px}
 }
 .cat-more{margin:22px 0 0;text-align:center}
+
+/* правки Алёны 14.11 */
+#courses .lead,#curators .lead{max-width:900px}
+.lang::before{display:none!important}
+.lang,.lang.ru{background:#eef0f7!important;color:#3a3f5e!important;padding:4px 10px!important}
+.regbox .lang,.regbox .lang.ru{background:rgba(255,255,255,.12)!important;color:#fff!important}
+.avas{display:flex;flex:none}
+.avas .ava{width:64px;height:64px;font-size:17px;border:3px solid #fff;box-shadow:0 6px 16px -8px rgba(40,25,20,.5)}
+.avas .ava.ph{background:#efe6d6 center 25%/cover no-repeat}
+.avas.duo .ava+.ava{margin-left:-16px}
+.ccard .hd{gap:16px}
+@media(max-width:520px){.avas .ava{width:54px;height:54px;font-size:15px}.avas.duo .ava+.ava{margin-left:-14px}}
+.ccard .hd .avas .ava{width:64px;height:64px;font-size:17px}
+.ccard .hd .avas.duo .ava+.ava{margin-left:-10px}
+@media(max-width:520px){.ccard .hd .avas .ava{width:54px;height:54px;font-size:15px}}
