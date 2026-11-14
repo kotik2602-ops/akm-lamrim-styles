@@ -548,3 +548,7 @@ html,body{overflow-x:clip}
 .ccard .hd .avas .ava{width:64px;height:64px;font-size:17px}
 .ccard .hd .avas.duo .ava+.ava{margin-left:-10px}
 @media(max-width:520px){.ccard .hd .avas .ava{width:54px;height:54px;font-size:15px}}
+.ccard .team{font:700 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.ccard .hd .avas.trio .ava{width:56px;height:56px}
+.ccard .hd .avas.trio .ava+.ava{margin-left:-14px}
+@media(max-width:520px){.ccard .hd .avas.trio .ava{width:46px;height:46px}}

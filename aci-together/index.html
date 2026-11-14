@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="style.css?v=1794664139">
+<link rel="stylesheet" href="style.css?v=1794664243">
 </head>
 <body>
 <div class="page-bg" aria-hidden="true"></div>
@@ -141,8 +141,8 @@
 
 <div class="toast" id="toast"></div>
 <div class="lb" id="lb"><img alt=""></div>
-<script src="data.js?v=1794664139"></script>
-<script src="common.js?v=1794664139"></script>
+<script src="data.js?v=1794664243"></script>
+<script src="common.js?v=1794664243"></script>
 <script>
 (function(){
   var A = window.ACI, K = window.AK, esc = K.esc;
@@ -169,7 +169,7 @@
   }).join('');
   function ini(name){ return name.split(/\s+/).filter(function(w){return /^[А-ЯЁA-Z]/.test(w)}).slice(0,2).map(function(w){return w[0]}).join(''); }
   function ava1(name, photo){ return photo ? '<span class="ava ph" title="'+esc(name)+'" style="background-image:url('+photo+')"></span>' : '<span class="ava" title="'+esc(name)+'">'+(name.length>20?ini(name.replace(/^Команда кураторов\s*/,'')):ini(name))+'</span>'; }
-  function avas(cu){ if (cu.id==='sibir') return '<span class="avas"><span class="ava">СД</span></span>';
+  function avas(cu){ if (cu.members) return '<span class="avas duo trio">'+cu.members.map(function(m){return ava1(m.name, m.photo)}).join('')+'</span>';
     return '<span class="avas'+(cu.co?' duo':'')+'">'+ava1(cu.name, cu.photo)+(cu.co?ava1(cu.co, cu.coPhoto):'')+'</span>'; }
   // Именные группы
   document.getElementById('cgrid').innerHTML = A.curators.map(function(cu){
@@ -182,7 +182,7 @@
     var og = gs.filter(function(g){return g.state==='open'})[0];
     var act = og ? '<a class="btn btn-gold" href="'+og.course+'/">Записаться на ACI '+og.course+' · '+esc(og.startText)+'</a>'
                  : K.btn((A.waitCurator||{})[cu.id], 'btn-ghost', 'Сообщить о следующем курсе', 'Кнопка заработает после подключения бота');
-    return '<div class="ccard" id="'+cu.id+'"><div class="hd">'+avas(cu)+'<div><h3>'+esc(K.curNames(cu))+'</h3>'+(cu.langLabel?'<span class="lang'+(/украин/.test(cu.langLabel)?'':' ru')+'">'+esc(cu.langLabel)+'</span>':'')+'</div></div><p>'+esc(lead)+'</p><div class="track">'+steps+'</div><div class="act">'+act+'</div></div>';
+    return '<div class="ccard" id="'+cu.id+'"><div class="hd">'+avas(cu)+'<div>'+(cu.team?'<div class="team">'+esc(cu.team)+'</div>':'')+'<h3>'+esc(cu.members?cu.members.map(function(m){return m.name}).join(', ').replace(/, ([^,]+)$/,' и $1'):K.curNames(cu))+'</h3>'+(cu.langLabel?'<span class="lang'+(/украин/.test(cu.langLabel)?'':' ru')+'">'+esc(cu.langLabel)+'</span>':'')+'</div></div><p>'+esc(lead)+'</p><div class="track">'+steps+'</div><div class="act">'+act+'</div></div>';
   }).join('');
   document.querySelectorAll('.path svg').forEach(function(svg){
     var p = svg.querySelector('path'), n = +svg.getAttribute('data-stars'), L = p.getTotalLength(), NS = 'http://www.w3.org/2000/svg';
