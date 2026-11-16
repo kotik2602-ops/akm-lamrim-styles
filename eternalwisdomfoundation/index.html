@@ -9,7 +9,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Фонд Вечной Мудрости — мудрость, которая переживёт нас">
 <meta property="og:description" content="Эндаумент-фонд Академии Классической Мудрости: капитал не тратится, курсы ACI живут на доход от него — веками.">
-<meta property="og:image" content="img/logo.jpg">
+<meta property="og:image" content="img/logo-full.png">
 <meta name="theme-color" content="#0c1620">
 <script>
 /* geo: RU/BY visitors see Boosty only and no Ukrainian FOP requisites */
@@ -98,7 +98,7 @@ b,strong{font-weight:800}
 .hdr{position:fixed;top:0;left:0;right:0;z-index:50;padding:calc(12px + env(safe-area-inset-top,0px)) var(--pad) 0;pointer-events:none}
 .hdr-in{pointer-events:auto;max-width:80rem;margin:0 auto;display:flex;align-items:center;gap:14px;background:rgba(12,22,32,.84);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(242,238,230,.1);border-radius:999px;padding:7px 8px 7px 10px;box-shadow:0 18px 40px -24px rgba(0,0,0,.8)}
 .brand{display:flex;align-items:center;gap:10px;min-width:0;flex-shrink:0}
-.brand img{width:44px;height:44px;border-radius:50%;background:var(--white);object-fit:cover}
+.brand img{width:44px;height:44px;border-radius:50%;background:var(--white);object-fit:contain;padding:3px}
 .brand-txt{display:grid;line-height:1.2}
 .brand-txt b{font-family:var(--display);font-weight:700;font-size:14px;color:var(--white);white-space:nowrap}
 .brand-txt span{font-size:11.5px;color:var(--text-lm);white-space:nowrap}
@@ -152,7 +152,7 @@ b,strong{font-weight:800}
 .hero-logo{position:relative;justify-self:center;width:min(100%,440px);aspect-ratio:1;display:grid;place-items:center}
 .hero-logo .halo{position:absolute;inset:4%;border-radius:50%;background:radial-gradient(circle,rgba(255,250,235,.55) 0%,rgba(243,217,145,.22) 55%,transparent 72%);animation:halo 5s ease-in-out infinite alternate}
 .hero-logo .disc{position:relative;width:78%;aspect-ratio:1;border-radius:50%;background:var(--white);overflow:hidden;box-shadow:0 0 0 6px rgba(243,217,145,.3),0 30px 80px -20px rgba(0,0,0,.7);animation:floaty 7s ease-in-out infinite alternate}
-.hero-logo .disc img{width:100%;height:100%;object-fit:cover}
+.hero-logo .disc img{width:100%;height:100%;object-fit:contain;padding:7%}
 .hero-logo svg.orbit{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
 .orbit .o1{fill:none;stroke:rgba(243,217,145,.45);stroke-width:1;stroke-dasharray:3 7;transform-origin:50% 50%;animation:spin 80s linear infinite}
 .orbit .dotp{fill:var(--gold-l);filter:drop-shadow(0 0 6px var(--gold))}
@@ -418,7 +418,7 @@ b,strong{font-weight:800}
 .final{position:relative;overflow:hidden;text-align:center}
 .final::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(221,174,53,.22),transparent 60%),radial-gradient(ellipse at 50% 100%,rgba(31,64,88,.6),transparent 60%);pointer-events:none}
 .final .wrap{position:relative;max-width:54rem;display:grid;gap:22px;justify-items:center}
-.final img.lg{width:160px;height:160px;border-radius:50%;background:var(--white);object-fit:cover;box-shadow:0 0 0 6px rgba(243,217,145,.25),0 0 60px rgba(243,217,145,.45)}
+.final img.lg{width:160px;height:160px;border-radius:50%;background:var(--white);object-fit:contain;padding:14px;box-shadow:0 0 0 6px rgba(243,217,145,.25),0 0 60px rgba(243,217,145,.45)}
 .final .ctas{justify-content:center}
 .inf-big{font-family:var(--serif);font-size:clamp(80px,10vw,140px);line-height:.6;color:var(--gold);text-shadow:0 0 40px rgba(221,174,53,.6)}
 
@@ -549,7 +549,7 @@ b,strong{font-weight:800}
           <circle class="dotp" r="5"><animateMotion dur="14s" repeatCount="indefinite" path="M200,4 a196,196 0 1,1 -0.1,0"/></circle>
           <circle class="dotp" r="3" opacity=".7"><animateMotion dur="14s" begin="-7s" repeatCount="indefinite" path="M200,4 a196,196 0 1,1 -0.1,0"/></circle>
         </svg>
-        <div class="disc"><img src="img/logo.jpg" width="900" height="900" alt=""></div>
+        <div class="disc"><img src="img/logo.webp" width="900" height="900" alt=""></div>
       </div>
     </div>
   </section>
@@ -976,7 +976,7 @@ b,strong{font-weight:800}
   <!-- final -->
   <section class="sec dark final">
     <div class="wrap">
-      <img class="lg" src="img/logo.jpg" width="160" height="160" alt="Логотип Фонда Вечной Мудрости">
+      <img class="lg" src="img/logo.webp" width="160" height="160" alt="Логотип Фонда Вечной Мудрости">
       <span class="eyebrow">Для следующих поколений</span>
       <h2>Постройте то, что <span class="grad">переживёт нас</span></h2>
       <p class="big" style="color:var(--text-lm);max-width:40rem">Гарвард тоже когда-то начался с одного завещания и полки книг. Фонд Вечной Мудрости начинается с вас.</p>
