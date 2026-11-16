@@ -552,3 +552,20 @@ html,body{overflow-x:clip}
 .ccard .hd .avas.trio .ava{width:56px;height:56px}
 .ccard .hd .avas.trio .ava+.ava{margin-left:-14px}
 @media(max-width:520px){.ccard .hd .avas.trio .ava{width:46px;height:46px}}
+/* Ближайшие старты — один ряд с пролистыванием (десктоп) */
+@media(min-width:601px){
+  .soon{position:relative}
+  .soon-row{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;gap:14px;padding:4px 2px 14px;align-items:stretch}
+  .soon-row::-webkit-scrollbar{display:none}
+  .soon-row .scard{flex:0 0 224px;scroll-snap-align:start}
+  .soon-nav{position:absolute;top:50%;z-index:3;width:44px;height:44px;border-radius:50%;border:0;cursor:pointer;
+    background:linear-gradient(135deg,var(--burg2),var(--burg));color:#fff;font:700 20px/1 var(--sans);box-shadow:0 10px 24px -10px rgba(60,20,25,.6);transition:opacity .2s}
+  .soon-nav.l{left:-22px}.soon-nav.r{right:-22px}
+  .soon-nav[hidden]{display:none}
+}
+@media(max-width:600px){.soon-nav{display:none}}
+@media(min-width:601px){
+  .soon-nav{top:6px}
+  .soon-nav.l{left:auto;right:56px}.soon-nav.r{right:0}
+  .soon-nav[hidden]{display:block;opacity:.3;pointer-events:none}
+}

@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="style.css?v=1794847649">
+<link rel="stylesheet" href="style.css?v=1794848618">
 </head>
 <body>
 <div class="page-bg" aria-hidden="true"></div>
@@ -27,7 +27,7 @@
   <h1>Курсы ACI — <em>вместе</em> с группой и куратором</h1>
   <p class="sub">18 бесплатных курсов о карме и мудрости Тибета от Геше Майкла Роуча. Проходить вместе легче: группа поддерживает, а куратор раз в неделю разбирает с вами домашние задания и сложные вопросы.</p>
   <ul class="facts"><li>онлайн</li><li>бесплатно</li></ul>
-  <div class="soon"><div class="plate"><span class="pdot"></span>Идёт набор — ближайшие старты<span class="parr" aria-hidden="true">↓</span></div><div class="soon-row" id="soon"></div><div class="swipe">← листайте →</div></div>
+  <div class="soon"><div class="plate"><span class="pdot"></span>Идёт набор — ближайшие старты<span class="parr" aria-hidden="true">↓</span></div><button class="soon-nav l" type="button" aria-label="Назад" hidden>←</button><div class="soon-row" id="soon"></div><button class="soon-nav r" type="button" aria-label="Вперёд" hidden>→</button><div class="swipe">← листайте →</div></div>
 </div></section>
 
 <section id="courses" class="panel-sec"><div class="wrap">
@@ -141,8 +141,8 @@
 
 <div class="toast" id="toast"></div>
 <div class="lb" id="lb"><img alt=""></div>
-<script src="data.js?v=1794847649"></script>
-<script src="common.js?v=1794847649"></script>
+<script src="data.js?v=1794848618"></script>
+<script src="common.js?v=1794848618"></script>
 <script>
 (function(){
   var A = window.ACI, K = window.AK, esc = K.esc;
@@ -161,6 +161,13 @@
     setInterval(function(){ if (pause || document.hidden || r.scrollWidth <= r.clientWidth + 5) return;
       var c = r.querySelector('.scard'); if (!c) return; var end = r.scrollLeft + r.clientWidth >= r.scrollWidth - 5;
       r.scrollTo({left: end ? 0 : r.scrollLeft + c.offsetWidth + 10, behavior: 'smooth'}); }, 3200);
+  })(document.getElementById('soon'));
+  // Стрелки для ряда стартов
+  (function(r){ if (!r) return; var L = document.querySelector('.soon-nav.l'), R = document.querySelector('.soon-nav.r');
+    function upd(){ var over = r.scrollWidth > r.clientWidth + 5; L.hidden = !over || r.scrollLeft < 5; R.hidden = !over || r.scrollLeft + r.clientWidth >= r.scrollWidth - 5; }
+    function go(d){ var c = r.querySelector('.scard'); r.scrollBy({left: d * ((c ? c.offsetWidth : 220) + 14) * 2, behavior: 'smooth'}); }
+    L.onclick = function(){ go(-1); }; R.onclick = function(){ go(1); };
+    r.addEventListener('scroll', upd, {passive:true}); window.addEventListener('resize', upd); setTimeout(upd, 300); upd();
   })(document.getElementById('soon'));
   // Каталог
   document.getElementById('cat').innerHTML = A.courses.map(function(c){ var s = K.stateOf(c.n), o = K.open.filter(function(g){return g.course===c.n})[0];
