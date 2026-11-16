@@ -253,12 +253,19 @@ b,strong{font-weight:800}
 .inst .card{display:grid;gap:12px;align-content:start}
 .inst .top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
 .inst .yr{font-family:var(--serif);font-style:italic;font-weight:600;font-size:20px;color:var(--mist-l);white-space:nowrap}
-.inst .num{font-family:var(--display);font-weight:800;font-size:clamp(30px,3.6vw,52px);line-height:1;letter-spacing:-.04em;color:var(--gold-l)}
+.inst .num{white-space:nowrap;font-family:var(--display);font-weight:800;font-size:clamp(28px,3vw,46px);line-height:1;letter-spacing:-.04em;color:var(--gold-l)}
 .inst .num small{font-size:.42em;letter-spacing:0;color:var(--text-lm);font-weight:600;margin-left:6px}
 .inst .numlbl{display:block;margin-top:-4px;font-weight:700;font-size:14px;color:var(--text-lm)}
 .inst .story{font-size:15.5px}
 .inst .kpis{display:flex;flex-wrap:wrap;gap:8px}
 .inst .kpis span{padding:6px 12px;border-radius:999px;background:rgba(242,238,230,.07);border:1px solid var(--line-l);font-size:13px;font-weight:700;color:var(--text-l)}
+.inst .ihead{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 18px;align-items:end;margin:calc(-1*clamp(24px,3vw,40px)) calc(-1*clamp(24px,3vw,40px)) 0 0}
+.inst .itxt{display:grid;gap:12px;align-content:start;padding-top:clamp(24px,3vw,40px);align-self:start}
+.inst .top{flex-direction:column;gap:6px}
+.inst .uni{height:clamp(150px,15vw,215px);width:auto;max-width:min(46vw,250px);object-fit:contain;object-position:right bottom;margin-top:14px}
+.inst .uni-nobel{filter:sepia(.35) brightness(1.05)}
+.inst .card{overflow:hidden;backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(20,35,50,.82)}
+@media (max-width:640px){.inst .uni{height:120px;max-width:36vw}.inst .num{font-size:26px}}
 .inst .wide{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 40px;align-items:center}
 .lesson{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
 .lesson div{border-radius:22px;padding:20px 20px 22px;background:rgba(22,38,54,.62);border:1px solid var(--line-l);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
@@ -640,26 +647,34 @@ b,strong{font-weight:800}
 
       <div class="inst">
         <article class="card glass reveal">
+          <div class="ihead"><div class="itxt">
           <div class="top"><h3>Гарвардский университет</h3><span class="yr">с 1636</span></div>
           <div class="num">56,9 млрд<small>$</small></div>
+          </div><img class="uni uni-harvard" src="img/uni-harvard.webp" alt="Мемориал-холл Гарвардского университета" loading="lazy"></div>
           <p class="story">Всё началось с одного завещания. В 1638 году молодой священник Джон Гарвард оставил колледжу половину своего состояния — около 780 фунтов — и библиотеку из 400 книг. Сегодня фонд Гарварда — самый большой университетский эндаумент в мире.</p>
           <div class="kpis"><span>≈ 5% капитала в год — на работу университета</span><span>≈ 40% всех доходов Гарварда</span></div>
         </article>
         <article class="card glass reveal">
+          <div class="ihead"><div class="itxt">
           <div class="top"><h3>Йельский университет</h3><span class="yr">с 1701</span></div>
           <div class="num">44,1 млрд<small>$</small></div>
+          </div><img class="uni uni-yale" src="img/uni-yale.webp" alt="Башня Харкнесс Йельского университета" loading="lazy"></div>
           <p class="story">Йель каждый год берёт из фонда около 5,25% капитала — это примерно треть всех доходов университета. Остальное продолжает работать и расти для будущих поколений студентов.</p>
           <div class="kpis"><span>2,1 млрд $ в бюджет за 2025 год</span><span>≈ 34% доходов</span></div>
         </article>
         <article class="card glass reveal">
+          <div class="ihead"><div class="itxt">
           <div class="top"><h3>Оксфорд и Кембридж</h3><span class="yr">почти 1000 лет</span></div>
           <div><div class="num">8,3 млрд<small>£</small></div><span class="numlbl">фонды колледжей и университета Оксфорда</span></div>
+          </div><img class="uni uni-oxford" src="img/uni-oxford.webp" alt="Радклифф-Камера, Оксфорд" loading="lazy"></div>
           <p class="story">Колледжи Оксфорда и Кембриджа веками живут на доход от своих фондов. Только у колледжей Оксфорда — 6,4 млрд фунтов, ещё 1,9 млрд — у самого университета. Учёба в этих стенах пережила войны, кризисы и смены эпох.</p>
           <div class="kpis"><span>Старейший университет англоязычного мира</span></div>
         </article>
         <article class="card glass reveal">
+          <div class="ihead"><div class="itxt">
           <div class="top"><h3>Нобелевская премия</h3><span class="yr">с 1901</span></div>
           <div><div class="num">125 лет</div><span class="numlbl">премия живёт на доход от фонда</span></div>
+          </div><img class="uni uni-nobel" src="img/uni-nobel.webp" alt="Альфред Нобель" loading="lazy"></div>
           <p class="story">Альфред Нобель завещал превратить своё состояние — более 31 млн шведских крон — в фонд и вкладывать его в надёжные ценные бумаги. Премии выплачиваются только из дохода. Капитал фонда вырос до 6,8 млрд крон и продолжает работать.</p>
           <div class="kpis"><span>Основной капитал не тратится</span><span>Премия — из дохода</span></div>
         </article>
@@ -670,7 +685,7 @@ b,strong{font-weight:800}
         <div class="reveal"><span class="n">02</span><p>Их сила — во времени: капитал не тратится, а доход каждый год возвращается в дело.</p></div>
         <div class="reveal"><span class="n">03</span><p>Их построили люди, которые думали дальше своей жизни. Как вы — сейчас.</p></div>
       </div>
-      <p class="src">Источники: <a href="https://finance.harvard.edu/endowment" target="_blank" rel="noopener">Harvard Finance</a>, <a href="https://oira.harvard.edu/?p=1322" target="_blank" rel="noopener">Harvard OIRA</a> (на 30.06.2025); <a href="https://news.yale.edu/2025/10/24/yale-reports-investment-return-fiscal-2025" target="_blank" rel="noopener">Yale News</a> (2025); <a href="https://www.ox.ac.uk/about/organisation/finance-and-funding" target="_blank" rel="noopener">University of Oxford</a>; <a href="https://nobelprize.org/financial-management" target="_blank" rel="noopener">Nobel Foundation</a> (на конец 2024); <a href="https://en.wikipedia.org/wiki/John_Harvard" target="_blank" rel="noopener">John Harvard</a>.</p>
+      <p class="src">Источники: <a href="https://finance.harvard.edu/endowment" target="_blank" rel="noopener">Harvard Finance</a>, <a href="https://oira.harvard.edu/?p=1322" target="_blank" rel="noopener">Harvard OIRA</a> (на 30.06.2025); <a href="https://news.yale.edu/2025/10/24/yale-reports-investment-return-fiscal-2025" target="_blank" rel="noopener">Yale News</a> (2025); <a href="https://www.ox.ac.uk/about/organisation/finance-and-funding" target="_blank" rel="noopener">University of Oxford</a>; <a href="https://nobelprize.org/financial-management" target="_blank" rel="noopener">Nobel Foundation</a> (на конец 2024); <a href="https://en.wikipedia.org/wiki/John_Harvard" target="_blank" rel="noopener">John Harvard</a>. Фото: Wikimedia Commons — Daderot (Гарвард, public domain), Йель (public domain), <a href="https://commons.wikimedia.org/wiki/File:Radcliffe_Camera,_Oxford_-_Oct_2006.jpg" target="_blank" rel="noopener">Diliff</a> (Оксфорд, CC BY 2.5), Gösta Florman (Нобель, public domain).</p>
     </div>
   </section>
 
