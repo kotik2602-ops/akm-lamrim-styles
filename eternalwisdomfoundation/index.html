@@ -11,6 +11,27 @@
 <meta property="og:description" content="Эндаумент-фонд Академии Классической Мудрости: капитал не тратится, курсы ACI живут на доход от него — веками.">
 <meta property="og:image" content="img/logo.jpg">
 <meta name="theme-color" content="#0c1620">
+<script>
+/* geo: RU/BY visitors see Boosty only and no Ukrainian FOP requisites */
+(function(){var d=document.documentElement,K='akm-geo';
+function set(r){d.classList.remove('geo-wait');d.classList.toggle('geo-ru',r==='ru');try{sessionStorage.setItem(K,r)}catch(e){}}
+var q=(location.search.match(/[?&]region=(ru|intl)/)||[])[1];if(q){set(q);return;}
+try{var s=sessionStorage.getItem(K);if(s){set(s);return;}}catch(e){}
+var tz='';try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||''}catch(e){}
+var RTZ=/^(Europe\/(Moscow|Kaliningrad|Samara|Volgograd|Saratov|Ulyanovsk|Astrakhan|Kirov|Minsk)|Asia\/(Yekaterinburg|Omsk|Novosibirsk|Barnaul|Tomsk|Novokuznetsk|Krasnoyarsk|Irkutsk|Chita|Yakutsk|Khandyga|Vladivostok|Ust-Nera|Magadan|Sakhalin|Srednekolymsk|Kamchatka|Anadyr))$/;
+if(RTZ.test(tz)){set('ru');return;}
+d.classList.add('geo-wait');
+var done=false;function fin(r){if(!done){done=true;set(r)}}
+setTimeout(function(){fin('intl')},2500);
+fetch('https://get.geojs.io/v1/ip/country.json').then(function(r){return r.json()}).then(function(j){fin(/^(RU|BY)$/.test(j.country)?'ru':'intl')}).catch(function(){fin('intl')});
+})();
+</script>
+<style>
+html:not(.geo-ru) .only-ru{display:none!important}
+html.geo-ru .only-intl{display:none!important}
+html.geo-wait .only-intl{visibility:hidden}
+html.geo-ru .pay-grid{grid-template-columns:1fr}
+</style>
 <link rel="icon" type="image/png" href="img/logo-sm.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -578,7 +599,7 @@ b,strong{font-weight:800}
           </div>
         </div>
         <div class="callout-box reveal">
-          <p class="callout">Наша цель — чтобы Академия жила только на доход фонда и не зависела от случайных поступлений. Тогда курсы ACI смогут существовать тысячелетиями.</p>
+          <p class="callout">Наша цель — в течение 20 лет накопить достаточно средств, чтобы Академия жила только на доход фонда и не зависела от случайных поступлений. Тогда курсы ACI смогут существовать тысячелетиями.</p>
         </div>
       </div>
     </section>
@@ -691,7 +712,7 @@ b,strong{font-weight:800}
           <span class="eyebrow">Наша цель</span>
           <h2>3 000 000 $ — и Академия <span class="grad">живёт вечно</span></h2>
         </div>
-        <p>Когда фонд достигнет цели, дохода от него хватит, чтобы покрывать все расходы Академии. Каждый новый взнос приближает этот день.</p>
+        <p>За 20 лет мы хотим собрать сумму, дохода от которой хватит, чтобы покрывать все расходы Академии. Каждый новый взнос приближает этот день.</p>
       </div>
       <div class="goal">
         <div class="card glass goal-main reveal" id="goalCard">
@@ -702,7 +723,7 @@ b,strong{font-weight:800}
             <span><b>2021</b>старт</span>
             <span><b>100 000 $</b>за 4 года</span>
             <span><b>140 400 $</b>сегодня</span>
-            <span><b>3 000 000 $</b>Академия на доходе фонда</span>
+            <span><b>3 000 000 $</b>за 20 лет — Академия на доходе фонда</span>
           </div>
         </div>
         <div class="card glass reveal">
@@ -919,7 +940,7 @@ b,strong{font-weight:800}
       <div class="faq">
         <details><summary>Чем фонд отличается от обычного пожертвования?</summary><div class="ans"><p>Обычное пожертвование тратится сразу. Взнос в Фонд Вечной Мудрости становится частью капитала, который не расходуется: Академия использует только доход от него. Поэтому ваш вклад работает каждый год — бесконечно.</p></div></details>
         <details><summary>Как связаны фонд и проект «108 000 Арий»?</summary><div class="ans"><p>Это общее дело Академии. Пожертвования в «108 000 Арий» тоже поступают в Фонд Вечной Мудрости. Подробнее о проекте — на <a href="../108000arias/">его странице</a>.</p></div></details>
-        <details><summary>Сколько уже накоплено и какая цель?</summary><div class="ans"><p>Баланс фонда — 140 400 $. Цель — 3 000 000 $: дохода с такой суммы хватит, чтобы покрывать все расходы Академии.</p></div></details>
+        <details><summary>Сколько уже накоплено и какая цель?</summary><div class="ans"><p>Баланс фонда — 140 400 $. Цель — в течение 20 лет накопить 3 000 000 $: дохода с такой суммы хватит, чтобы покрывать все расходы Академии.</p></div></details>
         <details><summary>Почему лучше ежемесячно?</summary><div class="ans"><p>Регулярные взносы позволяют фонду расти предсказуемо, а с точки зрения семян регулярность делает их сильнее. Разовый вклад тоже очень ценен — любая сумма работает вечно.</p></div></details>
         <details><summary>Где следить за новостями фонда?</summary><div class="ans"><p>В <a href="https://t.me/+K4X97_PJIPwwY2Zi">телеграм-канале фонда</a>.</p></div></details>
         <details><summary>Платёж не проходит — что делать?</summary><div class="ans"><p>Проверьте, есть ли деньги на карте и разрешены ли интернет-платежи. Если банк говорит, что проблема на стороне платёжного сервиса, напишите в поддержку: <a href="https://t.me/Ivanlord">@Ivanlord</a>.</p></div></details>
@@ -945,7 +966,7 @@ b,strong{font-weight:800}
 <footer class="ftr">
   <div class="ftr-in">
     <a class="brand" href="#top"><img src="img/logo-sm.png" width="52" height="52" alt=""><span class="brand-txt" style="display:grid"><b>Фонд Вечной Мудрости</b><span>Академия Классической Мудрости</span></span></a>
-    <div>ФОП Беліцька Олеся Олександрівна | ЄДРПОУ 2991816226<br><a href="mailto:acirussian2@gmail.com">acirussian2@gmail.com</a> · <a href="https://lp.classicwisdomacademy.com/ofertakk">Оферта</a></div>
+    <div><span class="only-intl">ФОП Гащук Олена Валеріївна | ЄДРПОУ 3098605909<br></span><a href="mailto:info@classicwisdomacademy.com">info@classicwisdomacademy.com</a><span class="only-intl"> · <a href="../108000arias/oferta/">Оферта</a></span></div>
   </div>
 </footer>
 
