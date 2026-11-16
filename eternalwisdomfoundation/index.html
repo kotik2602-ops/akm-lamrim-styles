@@ -1,0 +1,1032 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Фонд Вечной Мудрости</title>
+<meta name="description" content="Фонд Вечной Мудрости — эндаумент-фонд Академии Классической Мудрости. Как у Гарварда, Оксфорда и Нобелевской премии: капитал не тратится, Академия живёт на доход от него — веками.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Фонд Вечной Мудрости — мудрость, которая переживёт нас">
+<meta property="og:description" content="Эндаумент-фонд Академии Классической Мудрости: капитал не тратится, курсы ACI живут на доход от него — веками.">
+<meta property="og:image" content="img/logo.jpg">
+<meta name="theme-color" content="#0c1620">
+<link rel="icon" type="image/png" href="img/logo-sm.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap">
+<style>
+:root{
+  color-scheme: dark;
+  --ink:#0c1620;--ink-2:#122130;--ink-3:#1a2e40;
+  --deep:#1f4058;--deep-2:#2f5a78;--mist:#8fb3c9;--mist-l:#cfe0ea;
+  --gold:#ddae35;--gold-d:#a8780f;--gold-l:#f3d991;
+  --rose:#e8b9a8;
+  --cream:#f4f0e8;--cream-2:#e9e3d7;--white:#fffdf9;
+  --text-d:#14202b;--text-dm:#4a5762;--text-l:#f2eee6;--text-lm:#c3ccd3;
+  --line-l:rgba(242,238,230,.14);--line-d:rgba(20,32,43,.13);
+  --r-mega:40px;--r-card:28px;
+  --pad:clamp(16px,4vw,56px);
+  --display:'Unbounded',system-ui,sans-serif;
+  --sans:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --serif:'Cormorant Garamond',Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--ink);isolation:isolate;color:var(--text-l);font-family:var(--sans);font-size:17px;font-weight:500;line-height:1.62;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:76rem;margin:0 auto;padding:0 var(--pad)}
+.grad{background:linear-gradient(100deg,var(--gold-l) 0%,var(--gold) 50%,var(--mist-l) 100%);-webkit-background-clip:text;background-clip:text;color:transparent!important}
+.cream .grad{background-image:linear-gradient(100deg,var(--deep) 0%,var(--deep-2) 45%,var(--gold-d) 100%)}
+.eyebrow{font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.cream .eyebrow{color:var(--gold-d)}
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-.02em;line-height:1.1;text-wrap:balance}
+h2{font-size:clamp(28px,3.4vw,50px)}
+h3{font-size:clamp(18px,1.6vw,22px);line-height:1.2}
+b,strong{font-weight:800}
+.dark b{color:var(--gold-l)}
+.cream b{color:var(--deep)}
+.prose{display:grid;gap:14px}
+.note{font-size:14px;opacity:.85}
+
+/* buttons */
+.btn{position:relative;overflow:hidden;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 28px;border-radius:999px;font-family:var(--sans);font-weight:800;font-size:16px;cursor:pointer;border:0;transition:transform .25s ease,box-shadow .25s ease,color .3s ease;text-align:center;line-height:1.2}
+.btn:hover{transform:translateY(-2px)}
+.btn .ar{font-family:var(--display);font-weight:500}
+.btn-gold{background:linear-gradient(120deg,var(--gold-l),var(--gold));color:var(--ink);animation:btnPulse 2.8s ease-in-out infinite}
+.btn-gold::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:38%;background:linear-gradient(100deg,rgba(255,250,230,0),rgba(255,250,230,.75),rgba(255,250,230,0));transform:skewX(-20deg);animation:btnShine 3.6s ease-in-out infinite}
+.btn-gold:hover{animation:none;box-shadow:0 14px 34px -8px rgba(221,174,53,.8),0 0 0 4px rgba(243,217,145,.35)}
+@keyframes btnPulse{0%,100%{box-shadow:0 10px 28px -10px rgba(221,174,53,.7),0 0 0 0 rgba(221,174,53,0)}50%{box-shadow:0 12px 34px -8px rgba(221,174,53,.85),0 0 0 7px rgba(221,174,53,.18)}}
+@keyframes btnShine{0%,62%{left:-60%}100%{left:130%}}
+.btn-ghost{border:1.5px solid rgba(242,238,230,.5);color:var(--text-l);background:rgba(12,22,32,.25);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.btn-ghost::before{content:"";position:absolute;inset:0;background:var(--gold);transform:scaleX(0);transform-origin:left center;transition:transform .35s ease;z-index:-1}
+.btn-ghost:hover{color:var(--ink);border-color:var(--gold)}
+.btn-ghost:hover::before{transform:scaleX(1)}
+.btn-dark{background:var(--ink);color:var(--gold-l)}
+.btn-dark:hover{box-shadow:0 12px 30px -10px rgba(12,22,32,.7)}
+.btn-line-d{border:1.5px solid var(--text-d);color:var(--text-d);background:transparent}
+.btn-line-d::before{content:"";position:absolute;inset:0;background:var(--text-d);transform:scaleX(0);transform-origin:left center;transition:transform .35s ease;z-index:-1}
+.btn-line-d:hover{color:var(--cream)}
+.btn-line-d:hover::before{transform:scaleX(1)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.hdr{position:fixed;top:0;left:0;right:0;z-index:50;padding:calc(12px + env(safe-area-inset-top,0px)) var(--pad) 0;pointer-events:none}
+.hdr-in{pointer-events:auto;max-width:80rem;margin:0 auto;display:flex;align-items:center;gap:14px;background:rgba(12,22,32,.84);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(242,238,230,.1);border-radius:999px;padding:7px 8px 7px 10px;box-shadow:0 18px 40px -24px rgba(0,0,0,.8)}
+.brand{display:flex;align-items:center;gap:10px;min-width:0;flex-shrink:0}
+.brand img{width:44px;height:44px;border-radius:50%;background:var(--white);object-fit:cover}
+.brand-txt{display:grid;line-height:1.2}
+.brand-txt b{font-family:var(--display);font-weight:700;font-size:14px;color:var(--white);white-space:nowrap}
+.brand-txt span{font-size:11.5px;color:var(--text-lm);white-space:nowrap}
+.dnav{display:flex;gap:20px;font-size:14px;font-weight:700;color:var(--text-lm);margin-left:auto;white-space:nowrap}
+.dnav a:hover{color:var(--gold-l)}
+.langs{display:flex;gap:2px;font-size:12px;font-weight:800;margin-left:6px}
+.langs a{padding:6px 9px;border-radius:999px;color:var(--text-lm)}
+.langs a:hover{color:var(--gold-l)}
+.langs a.on{background:var(--gold);color:var(--ink)}
+.menu-btn{display:none;align-items:center;gap:8px;min-height:42px;padding:0 15px;border-radius:999px;border:1px solid rgba(242,238,230,.22);background:transparent;color:var(--text-l);font-family:var(--sans);font-weight:700;font-size:14px;cursor:pointer}
+.burger{position:relative;width:16px;height:2px;background:currentColor;border-radius:2px}
+.burger::before,.burger::after{content:"";position:absolute;left:0;width:16px;height:2px;background:currentColor;border-radius:2px;transition:transform .25s ease}
+.burger::before{top:-5px}.burger::after{top:5px}
+.menu-btn[aria-expanded="true"] .burger{background:transparent}
+.menu-btn[aria-expanded="true"] .burger::before{transform:translateY(5px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] .burger::after{transform:translateY(-5px) rotate(-45deg)}
+.hdr .btn{min-height:42px;padding:0 20px;font-size:14px;flex-shrink:0;animation:none;box-shadow:0 6px 18px -8px rgba(221,174,53,.7)}
+.mnav{position:fixed;left:var(--pad);right:var(--pad);top:80px;z-index:60;max-width:26rem;margin-left:auto;display:grid;gap:2px;padding:10px;background:rgba(18,33,48,.97);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line-l);border-radius:24px;box-shadow:0 30px 60px -20px rgba(0,0,0,.8)}
+.mnav[hidden]{display:none}
+.mnav > a{padding:12px 16px;border-radius:16px;font-weight:700;font-size:16px;color:var(--text-l)}
+.mnav > a:hover,.mnav > a:focus-visible{background:rgba(221,174,53,.14);color:var(--gold-l)}
+.mnav .langs{display:none;margin:8px 6px 4px;padding-top:10px;border-top:1px solid var(--line-l)}
+@media (max-width:1240px){.dnav{display:none}.menu-btn{display:inline-flex;margin-left:auto}}
+@media (max-width:640px){.brand-txt{display:none}.hdr-in>.langs{display:none}.mnav .langs{display:flex}}
+@media (max-width:380px){.menu-txt{display:none}.menu-btn{padding:0 13px}.hdr .btn{padding:0 15px;font-size:13px}}
+
+/* fixed misty-mountain backdrop */
+.sky-bg{position:fixed;inset:0;z-index:-1;pointer-events:none;background:
+  linear-gradient(180deg,rgba(12,22,32,.5) 0%,rgba(12,22,32,.7) 55%,rgba(12,22,32,.86) 100%),
+  linear-gradient(0deg,rgba(31,64,88,.45),rgba(31,64,88,.45)),
+  url("../108000arias/img/mountains.jpg") center 35%/cover no-repeat}
+
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(ellipse at 74% 40%,rgba(243,217,145,.3),transparent 55%),
+  linear-gradient(180deg,rgba(31,64,88,.35) 0%,rgba(12,22,32,0) 40%,rgba(12,22,32,.55) 85%,rgba(12,22,32,.92) 100%),
+  linear-gradient(90deg,rgba(12,22,32,.72) 0%,rgba(12,22,32,.25) 60%,rgba(12,22,32,0) 100%)}
+.hero-in{position:relative;z-index:2;max-width:80rem;width:100%;margin:0 auto;padding:118px var(--pad) 64px;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(28px,4vw,64px);align-items:center}
+.hero-text{display:grid;gap:18px;justify-items:start}
+.chip{display:inline-flex;align-items:center;gap:10px;padding:8px 18px;border-radius:999px;background:rgba(12,22,32,.5);border:1px solid rgba(243,217,145,.4);font-size:14px;font-weight:700;color:var(--gold-l);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.chip i{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px var(--gold)}
+.hero h1{font-size:clamp(40px,5.8vw,88px);font-weight:800;line-height:.98;color:var(--white);letter-spacing:-.035em;text-shadow:0 8px 50px rgba(12,22,32,.5)}
+.hero h1 .grad{display:block}
+.hero .sub{font-family:var(--serif);font-style:italic;font-weight:600;font-size:clamp(24px,2.6vw,36px);line-height:1.2;color:var(--cream);max-width:22em;text-shadow:0 2px 20px rgba(12,22,32,.7)}
+.hero .lead{max-width:37rem;color:#fff;font-size:17px;font-weight:600;padding:12px 20px;border-radius:22px;background:rgba(12,22,32,.45);border:1px solid rgba(243,217,145,.28);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.facts{display:flex;flex-wrap:wrap;gap:10px}
+.facts div{display:grid;padding:10px 20px;border-radius:22px;border:1px solid var(--line-l);background:rgba(12,22,32,.58);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);line-height:1.3}
+.facts b{font-family:var(--display);font-weight:700;font-size:18px;color:var(--gold-l)}
+.facts span{font-size:13px;color:var(--text-lm)}
+.hero-logo{position:relative;justify-self:center;width:min(100%,440px);aspect-ratio:1;display:grid;place-items:center}
+.hero-logo .halo{position:absolute;inset:4%;border-radius:50%;background:radial-gradient(circle,rgba(255,250,235,.55) 0%,rgba(243,217,145,.22) 55%,transparent 72%);animation:halo 5s ease-in-out infinite alternate}
+.hero-logo .disc{position:relative;width:78%;aspect-ratio:1;border-radius:50%;background:var(--white);overflow:hidden;box-shadow:0 0 0 6px rgba(243,217,145,.3),0 30px 80px -20px rgba(0,0,0,.7);animation:floaty 7s ease-in-out infinite alternate}
+.hero-logo .disc img{width:100%;height:100%;object-fit:cover}
+.hero-logo svg.orbit{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.orbit .o1{fill:none;stroke:rgba(243,217,145,.45);stroke-width:1;stroke-dasharray:3 7;transform-origin:50% 50%;animation:spin 80s linear infinite}
+.orbit .dotp{fill:var(--gold-l);filter:drop-shadow(0 0 6px var(--gold))}
+@keyframes halo{from{transform:scale(.96);opacity:.85}to{transform:scale(1.04);opacity:1}}
+@keyframes floaty{from{transform:translateY(4px)}to{transform:translateY(-8px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.stars{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:1}
+.stars i{position:absolute;width:var(--s);height:var(--s);border-radius:50%;background:#fff6d6;box-shadow:0 0 8px rgba(243,217,145,.9);opacity:0;animation:tw var(--d) ease-in-out infinite;animation-delay:var(--dl)}
+@keyframes tw{0%,100%{opacity:0;transform:scale(.6)}50%{opacity:.9;transform:scale(1)}}
+
+/* marquee */
+.ticker{position:relative;z-index:3;overflow:hidden;border-block:1px solid rgba(243,217,145,.25);background:rgba(12,22,32,.7);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.ticker-in{display:flex;width:max-content;animation:tick 48s linear infinite}
+.ticker span{display:inline-flex;align-items:center;gap:18px;padding:14px 18px;font-family:var(--display);font-weight:600;font-size:15px;color:var(--text-l);white-space:nowrap}
+.ticker span::after{content:"∞";color:var(--gold);font-size:20px}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* sections */
+.mega-wrap{padding:0 clamp(8px,1.4vw,20px)}
+.mega{border-radius:var(--r-mega);margin:0 auto;max-width:1440px;position:relative}
+.cream{background:var(--cream);color:var(--text-d)}
+.dark{color:var(--text-l)}
+.sec{padding:clamp(60px,8vw,112px) 0;scroll-margin-top:84px;position:relative}
+.mega.sec{margin-top:clamp(10px,1.4vw,20px);margin-bottom:clamp(10px,1.4vw,20px)}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:18px 40px;flex-wrap:wrap;margin-bottom:clamp(30px,4vw,48px)}
+.sec-head > div{max-width:46rem;min-width:0}
+.sec-head h2{margin-top:14px}
+.sec-head > p{max-width:26rem;min-width:0;font-size:16px;color:var(--text-dm)}
+.dark .sec-head > p{color:var(--text-lm)}
+.cream p,.cream li{color:var(--text-dm)}
+.cream h3{color:var(--text-d)}
+.dark p,.dark li{color:var(--text-lm)}
+.dark h3{color:var(--text-l)}
+.card{border-radius:var(--r-card);padding:clamp(24px,3vw,40px);min-width:0;position:relative}
+.card-w{background:var(--white);box-shadow:0 30px 60px -40px rgba(31,64,88,.4)}
+.card-k{background:linear-gradient(160deg,var(--ink-3) 0%,var(--ink) 75%);color:var(--text-l);overflow:hidden}
+.card-k::before{content:"";position:absolute;width:320px;height:320px;right:-120px;top:-120px;border-radius:50%;background:radial-gradient(circle,rgba(221,174,53,.3),transparent 65%);pointer-events:none}
+.card-k > *{position:relative}
+.cream .card-k p,.cream .card-k li{color:var(--text-lm)}
+.cream .card-k b{color:var(--gold-l)}
+.cream .card-k h3{color:var(--text-l)}
+.glass{background:rgba(22,38,54,.62);border:1px solid var(--line-l);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.big{font-family:var(--display);font-weight:600;font-size:clamp(19px,1.9vw,25px);line-height:1.3;letter-spacing:-.015em}
+.cream .big{color:var(--text-d)}
+.dots{list-style:none;display:flex;flex-direction:column}
+.dots li{display:flex;align-items:flex-start;gap:14px;padding:12px 0;border-bottom:1px solid var(--line-d);font-weight:600}
+.dark .dots li,.card-k .dots li{border-bottom-color:var(--line-l)}
+.dots li:last-child{border-bottom:0}
+.dots li::before{content:"";flex-shrink:0;margin-top:8px;width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--deep))}
+.card-k .dots li::before,.dark .dots li::before{background:linear-gradient(135deg,var(--gold-l),var(--gold))}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+.callout-box{margin-top:clamp(20px,3vw,32px);border-radius:var(--r-card);padding:clamp(24px,3.4vw,44px);position:relative;overflow:hidden}
+.cream .callout-box{background:linear-gradient(120deg,#f8e6b4 0%,#dbe8ef 100%);color:var(--deep)}
+.dark .callout-box{background:linear-gradient(120deg,rgba(221,174,53,.16),rgba(143,179,201,.08));border:1px solid rgba(221,174,53,.35);color:var(--text-l)}
+.callout-box::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:linear-gradient(180deg,var(--gold),var(--deep-2))}
+.callout{font-family:var(--display);font-weight:600;font-size:clamp(18px,1.9vw,25px);line-height:1.32;letter-spacing:-.015em;color:inherit}
+
+/* 02 how an endowment works */
+.how{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:16px;align-items:stretch}
+.flow{display:grid;gap:10px;align-content:center}
+.flow .node{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;border-radius:22px;padding:18px 20px;background:var(--white);box-shadow:0 24px 50px -40px rgba(31,64,88,.45)}
+.flow .node .ic{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg,#f8e6b4,#dbe8ef);color:var(--deep)}
+.flow .node .ic svg{width:28px;height:28px}
+.flow .node h3{font-size:17px}
+.flow .node p{font-size:14.5px;line-height:1.45;margin-top:2px}
+.flow .node.core{background:linear-gradient(160deg,var(--ink-3),var(--ink));}
+.flow .node.core h3{color:var(--text-l)}
+.flow .node.core p{color:var(--text-lm)}
+.flow .node.core .ic{background:linear-gradient(135deg,var(--gold-l),var(--gold));color:var(--ink)}
+.flow .arrow{position:relative;height:30px;margin-left:44px;width:2px;background:linear-gradient(180deg,var(--gold),rgba(221,174,53,.2));overflow:visible}
+.flow .arrow::after{content:"";position:absolute;left:-4px;top:0;width:10px;height:10px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold);animation:drop 1.8s ease-in infinite}
+@keyframes drop{0%{top:-4px;opacity:0}20%{opacity:1}100%{top:26px;opacity:0}}
+.flow .loop{margin:4px 0 0 0;font-size:13.5px;font-weight:700;color:var(--gold-d);display:flex;gap:8px;align-items:center}
+.tree{display:flex;flex-direction:column;gap:18px;justify-content:center}
+.tree-pic{display:grid;place-items:center}
+.tree-pic svg{width:min(100%,320px);height:auto}
+.tree-pic .fruit-g circle{transform-box:fill-box;transform-origin:center;animation:ripen 3.6s ease-in-out infinite}
+.tree-pic .fruit-g circle:nth-child(2n){animation-delay:-1.2s}
+.tree-pic .fruit-g circle:nth-child(3n){animation-delay:-2.4s}
+@keyframes ripen{0%,100%{transform:scale(.75);opacity:.65}50%{transform:scale(1.1);opacity:1}}
+
+/* 03 world institutions */
+.timeline{position:relative;margin-bottom:clamp(26px,3vw,40px);padding:26px 0 8px}
+.tl-line{position:absolute;left:0;right:0;top:65px;height:2px;background:linear-gradient(90deg,rgba(221,174,53,.15),var(--gold) 60%,var(--gold-l))}
+.tl-items{position:relative;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+.tl-items div{display:grid;align-content:start;justify-items:center;text-align:center;gap:6px;min-width:0}
+.tl-items i{width:16px;height:16px;border-radius:50%;background:var(--ink);border:3px solid var(--gold);box-shadow:0 0 12px rgba(221,174,53,.6);margin-top:4px}
+.tl-items .last i{background:var(--gold);animation:halo 1.6s ease-in-out infinite alternate}
+.tl-items b{font-family:var(--display);font-size:22px;color:var(--gold-l);line-height:22px}
+.tl-items span{font-size:13px;line-height:1.35;color:var(--text-lm)}
+.inst{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.inst .card{display:grid;gap:12px;align-content:start}
+.inst .top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.inst .yr{font-family:var(--serif);font-style:italic;font-weight:600;font-size:20px;color:var(--mist-l);white-space:nowrap}
+.inst .num{font-family:var(--display);font-weight:800;font-size:clamp(30px,3.6vw,52px);line-height:1;letter-spacing:-.04em;color:var(--gold-l)}
+.inst .num small{font-size:.42em;letter-spacing:0;color:var(--text-lm);font-weight:600;margin-left:6px}
+.inst .numlbl{display:block;margin-top:-4px;font-weight:700;font-size:14px;color:var(--text-lm)}
+.inst .story{font-size:15.5px}
+.inst .kpis{display:flex;flex-wrap:wrap;gap:8px}
+.inst .kpis span{padding:6px 12px;border-radius:999px;background:rgba(242,238,230,.07);border:1px solid var(--line-l);font-size:13px;font-weight:700;color:var(--text-l)}
+.inst .wide{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 40px;align-items:center}
+.lesson{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+.lesson div{border-radius:22px;padding:20px 20px 22px;background:rgba(22,38,54,.62);border:1px solid var(--line-l);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.lesson .n{display:block;font-family:var(--display);font-weight:700;font-size:13px;color:var(--gold);margin-bottom:8px}
+.lesson p{color:var(--text-l)!important;font-weight:600;font-size:15.5px;line-height:1.45}
+.src{margin-top:18px;font-size:12.5px;color:var(--text-lm);opacity:.8}
+.src a{text-decoration:underline;text-underline-offset:2px}
+
+/* 04 Max */
+.max{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:16px;align-items:stretch}
+.video{position:relative;min-width:0;width:100%;aspect-ratio:16/9;border-radius:var(--r-card);overflow:hidden;background:#000;box-shadow:0 30px 60px -36px rgba(31,64,88,.6)}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.yt{position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;cursor:pointer;background:#000;display:block}
+.yt img{width:100%;height:100%;object-fit:cover;opacity:.88;transform:scale(1.32);transition:opacity .3s,transform .6s}
+.yt:hover img{opacity:1;transform:scale(1.36)}
+.yt .play{position:absolute;left:50%;top:50%;width:72px;height:72px;margin:-36px 0 0 -36px;border-radius:50%;background:linear-gradient(120deg,var(--gold-l),var(--gold));display:grid;place-items:center;box-shadow:0 0 0 8px rgba(221,174,53,.25),0 14px 30px -8px rgba(0,0,0,.6);transition:transform .3s}
+.yt:hover .play{transform:scale(1.08)}
+.yt .play::after{content:"";margin-left:5px;border-left:20px solid var(--ink);border-top:12px solid transparent;border-bottom:12px solid transparent}
+.yt .cap{position:absolute;left:12px;bottom:12px;padding:6px 14px;border-radius:999px;background:rgba(12,22,32,.8);color:var(--cream);font-size:13px;font-weight:700}
+.max-side{display:flex;flex-direction:column;gap:16px}
+.max-side .card-w{display:grid;gap:10px}
+.figs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.figs div{border-radius:20px;padding:16px;background:var(--white);box-shadow:0 24px 50px -40px rgba(31,64,88,.45);min-width:0}
+.figs b{display:block;font-family:var(--display);font-size:clamp(17px,1.45vw,21px);line-height:1.1;color:var(--deep);white-space:nowrap}
+.figs span{display:block;margin-top:6px;font-size:13px;line-height:1.35;color:var(--text-dm)}
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:16px}
+.q{position:relative;border-radius:var(--r-card);padding:34px 26px 24px;background:var(--white);box-shadow:0 30px 60px -40px rgba(31,64,88,.4);display:flex;flex-direction:column;gap:14px;min-width:0}
+.q::before{content:"“";position:absolute;top:-6px;left:20px;font-family:var(--serif);font-size:96px;line-height:1;color:var(--gold)}
+.q p{font-family:var(--serif);font-weight:600;font-size:clamp(20px,1.7vw,23px);line-height:1.3;color:var(--text-d)!important}
+.q .who{margin-top:auto;font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--gold-d)}
+.q.k{background:linear-gradient(160deg,var(--ink-3),var(--ink))}
+.q.k p{color:var(--text-l)!important}
+.q.k .who{color:var(--gold)}
+.q.wide{grid-column:1/-1;padding:clamp(34px,4vw,52px) clamp(26px,4vw,56px) clamp(26px,3vw,36px)}
+.q.wide p{font-size:clamp(23px,2.4vw,34px)}
+
+/* 05 goal / progress */
+.goal{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:16px;align-items:stretch}
+.goal-main{display:flex;flex-direction:column;gap:20px;justify-content:center}
+.goal-sum{white-space:nowrap;font-family:var(--display);font-weight:800;font-size:clamp(40px,6vw,92px);line-height:.95;letter-spacing:-.05em}
+.goal-sum small{font-size:.4em;letter-spacing:0}
+.prog{position:relative;height:18px;border-radius:999px;background:rgba(242,238,230,.1);overflow:visible}
+.prog .fill{position:absolute;left:0;top:0;bottom:0;width:0;min-width:0;border-radius:999px;background:linear-gradient(90deg,var(--gold-l),var(--gold));box-shadow:0 0 16px rgba(221,174,53,.8);transition:width 2s cubic-bezier(.2,.8,.2,1)}
+.prog .now{position:absolute;top:26px;left:0;font-size:13px;font-weight:800;color:var(--gold-l);white-space:nowrap}
+.marks{display:flex;justify-content:space-between;margin-top:34px;font-size:12.5px;color:var(--text-lm);gap:8px}
+.marks span{text-align:center}
+.marks b{display:block;color:var(--text-l);font-family:var(--display);font-size:14px;white-space:nowrap}
+.math{display:grid;gap:12px}
+.math .row{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center;border-radius:20px;padding:16px 18px;background:rgba(22,38,54,.6);border:1px solid var(--line-l)}
+.math .row b{font-family:var(--display);font-size:clamp(20px,2vw,26px);color:var(--gold-l);white-space:nowrap}
+.math .row span{color:var(--text-lm);font-size:14.5px;line-height:1.4}
+.math .eq{text-align:center;font-family:var(--display);color:var(--gold);font-size:18px;line-height:1}
+
+/* 06 results (from 108 000 Арий) */
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.stat{container-type:inline-size;border-radius:var(--r-card);padding:clamp(22px,2.6vw,34px);display:grid;gap:6px;align-content:start;min-width:0;background:var(--white);box-shadow:0 30px 60px -40px rgba(31,64,88,.4)}
+.stat .num{font-family:var(--display);font-weight:800;font-size:clamp(28px,17cqi,60px);line-height:1;letter-spacing:-.04em;color:var(--deep);white-space:nowrap}
+.stat .num small{font-size:.5em;letter-spacing:0;margin-left:4px}
+.stat .lbl{font-weight:800;color:var(--text-d)}
+.stat .sm{font-size:14px;color:var(--text-dm)}
+.stat.hl{background:linear-gradient(165deg,var(--deep-2) 0%,var(--deep) 55%,var(--ink-3) 100%)}
+.stat.hl .num{color:var(--gold-l)}
+.stat.hl .lbl{color:var(--white)}
+.stat.hl .sm{color:var(--mist-l)}
+.chart{margin-top:16px;border-radius:var(--r-card);padding:clamp(22px,3vw,40px)}
+.chart-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 24px;margin-bottom:26px}
+.bars{--bh:200px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,3vw,40px);align-items:end;height:270px;padding-bottom:4px;border-bottom:1px solid var(--line-l)}
+.bar{display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%;gap:10px;min-width:0}
+.bar .val{font-family:var(--display);font-weight:700;font-size:clamp(16px,1.8vw,24px);color:var(--white);white-space:nowrap}
+.bar .col{flex-shrink:0;width:min(100%,150px);height:0;border-radius:18px 18px 6px 6px;background:linear-gradient(180deg,var(--gold-l) 0%,var(--gold) 45%,var(--deep-2) 100%);box-shadow:0 0 30px -6px rgba(221,174,53,.6);transition:height 1.6s cubic-bezier(.2,.8,.2,1)}
+.bar .col.part{opacity:.82}
+.bar-lbls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,3vw,40px);margin-top:12px;text-align:center}
+.bar-lbls b{display:block;font-family:var(--display);font-size:18px;color:var(--text-l)}
+.bar-lbls span{font-size:13.5px;color:var(--text-lm)}
+.growth-note{display:inline-flex;gap:10px;align-items:center;padding:8px 16px;border-radius:999px;background:rgba(221,174,53,.14);border:1px solid rgba(221,174,53,.4);color:var(--gold-l);font-weight:800;font-size:14px}
+.academy{margin-top:16px}
+.ac-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px 40px;align-items:end}
+.mini{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:22px}
+.mini div{border-radius:20px;padding:18px 20px;background:rgba(242,238,230,.06);border:1px solid var(--line-l);min-width:0}
+.mini b{display:block;font-family:var(--display);font-size:clamp(26px,2.6vw,38px);line-height:1.1;color:var(--gold-l);white-space:nowrap}
+.mini span{display:block;margin-top:4px;line-height:1.4;font-size:13.5px;color:var(--text-lm)}
+.family{display:grid;grid-template-columns:auto 1fr auto;gap:22px;align-items:center;margin-bottom:16px}
+.family img{width:84px;height:84px;border-radius:50%;background:var(--white);object-fit:cover;box-shadow:0 0 0 4px rgba(221,174,53,.3)}
+.family .plus{font-family:var(--display);font-size:28px;color:var(--gold-d)}
+
+/* 07 calculator */
+.calc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:stretch}
+.calc-in{display:grid;gap:22px;align-content:start}
+.seg{display:inline-flex;padding:4px;border-radius:999px;background:var(--cream-2);gap:4px;justify-self:start}
+.seg button{border:0;background:transparent;padding:10px 18px;border-radius:999px;font-family:var(--sans);font-weight:800;font-size:14.5px;color:var(--text-dm);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--gold-l)}
+.fld{display:grid;gap:10px}
+.fld label{font-weight:800;font-size:15px;color:var(--text-d)}
+.fld .val{font-family:var(--display);font-weight:800;font-size:clamp(30px,3.4vw,46px);line-height:1;color:var(--deep);letter-spacing:-.03em}
+.fld input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:8px;border-radius:999px;background:linear-gradient(90deg,var(--gold) var(--p,20%),var(--cream-2) var(--p,20%));outline-offset:6px}
+.fld input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:28px;height:28px;border-radius:50%;background:var(--ink);border:4px solid var(--gold);cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.25)}
+.fld input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--ink);border:4px solid var(--gold);cursor:pointer}
+.fld .scale{display:flex;justify-content:space-between;font-size:12.5px;color:var(--text-dm)}
+.calc-out{display:flex;flex-direction:column;gap:14px;justify-content:center}
+.calc-out .res{display:grid;gap:4px;padding:16px 0;border-bottom:1px solid var(--line-l)}
+.calc-out .res:last-of-type{border-bottom:0}
+.calc-out .res span{font-size:14.5px;color:var(--text-lm)}
+.calc-out .res b{font-family:var(--display);font-size:clamp(28px,3vw,42px);line-height:1.05;color:var(--gold-l);letter-spacing:-.03em}
+.calc-out .res.inf b{font-size:clamp(34px,4vw,56px)}
+
+/* 08 support */
+.ways{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.way{border-radius:24px;padding:26px 24px 26px;background:var(--white);box-shadow:0 24px 50px -40px rgba(31,64,88,.45);display:flex;flex-direction:column;gap:12px;min-width:0;position:relative;overflow:hidden}
+.way .ic{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg,#f8e6b4,#dbe8ef);color:var(--deep)}
+.way .ic svg{width:28px;height:28px}
+.way p{font-size:15.5px;line-height:1.5}
+.way .btn{margin-top:auto}
+.way.main{background:linear-gradient(160deg,var(--ink-3) 0%,var(--ink) 80%)}
+.way.main h3{color:var(--text-l)}
+.way.main p{color:var(--text-lm)}
+.way.main .ic{background:linear-gradient(135deg,var(--gold-l),var(--gold));color:var(--ink)}
+.way.main::before{content:"";position:absolute;width:300px;height:300px;right:-110px;top:-120px;border-radius:50%;background:radial-gradient(circle,rgba(221,174,53,.3),transparent 65%)}
+.way.main > *{position:relative}
+.way .flag{align-self:flex-start;padding:5px 12px;border-radius:999px;font-size:11.5px;font-weight:800;background:var(--gold);color:var(--ink)}
+.uses-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;margin-top:16px;align-items:stretch}
+.photo{position:relative;border-radius:var(--r-card);overflow:hidden;min-height:300px}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(12,22,32,.85) 0%,rgba(12,22,32,0) 55%)}
+.photo figcaption{position:absolute;z-index:2;left:22px;right:22px;bottom:20px;color:var(--white);font-family:var(--display);font-weight:600;font-size:clamp(17px,1.8vw,22px);line-height:1.3}
+
+/* 09 karma */
+.karma{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:16px;align-items:stretch}
+.chain{list-style:none;display:grid;position:relative}
+.chain li{position:relative;display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start;padding:14px 0}
+.chain li .st{position:relative;z-index:1;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--gold-l),var(--gold));color:var(--ink);font-family:var(--display);font-size:13px;font-weight:700;box-shadow:0 0 0 6px rgba(221,174,53,.15)}
+.chain li:not(:last-child)::before{content:"";position:absolute;left:19px;top:54px;bottom:-14px;width:2px;background:linear-gradient(180deg,var(--gold),rgba(221,174,53,.15))}
+.chain li p{color:var(--text-l)!important;font-weight:600;padding-top:7px}
+.fruits{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fruit{border-radius:22px;padding:20px 20px 22px;display:grid;gap:8px;align-content:start}
+.fruit .fi{font-size:26px;line-height:1}
+.fruit p{color:var(--text-l)!important;font-weight:600;font-size:15.5px;line-height:1.45}
+
+/* faq */
+.faq{display:grid;gap:10px;max-width:56rem}
+.faq details{border-radius:24px;background:rgba(22,38,54,.6);border:1px solid var(--line-l);transition:background .3s ease,border-color .3s ease;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.faq details[open]{background:linear-gradient(160deg,rgba(31,64,88,.75),rgba(26,46,64,.75));border-color:rgba(221,174,53,.4)}
+.faq summary{cursor:pointer;list-style:none;padding:20px 64px 20px 26px;position:relative;font-weight:800;font-size:17px;line-height:1.4;color:var(--text-l)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:rgba(242,238,230,.08);color:var(--gold);font-family:var(--display);font-size:18px}
+.faq details[open] summary::after{content:"−";background:var(--gold);color:var(--ink)}
+.faq .ans{padding:0 26px 22px;display:grid;gap:12px;max-width:46rem}
+.faq .ans a{color:var(--gold-l);text-decoration:underline;text-underline-offset:3px}
+
+/* final */
+.final{position:relative;overflow:hidden;text-align:center}
+.final::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(221,174,53,.22),transparent 60%),radial-gradient(ellipse at 50% 100%,rgba(31,64,88,.6),transparent 60%);pointer-events:none}
+.final .wrap{position:relative;max-width:54rem;display:grid;gap:22px;justify-items:center}
+.final img.lg{width:160px;height:160px;border-radius:50%;background:var(--white);object-fit:cover;box-shadow:0 0 0 6px rgba(243,217,145,.25),0 0 60px rgba(243,217,145,.45)}
+.final .ctas{justify-content:center}
+.inf-big{font-family:var(--serif);font-size:clamp(80px,10vw,140px);line-height:.6;color:var(--gold);text-shadow:0 0 40px rgba(221,174,53,.6)}
+
+/* footer */
+.ftr{padding:36px var(--pad) calc(36px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line-l);background:rgba(12,22,32,.9)}
+.ftr-in{max-width:76rem;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px 40px;align-items:center;font-size:14px;color:var(--text-lm)}
+.ftr-in a{color:var(--gold-l)}
+.ftr .brand img{width:52px;height:52px}
+
+/* support widget */
+.sup{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:70;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.sup-btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 20px 0 8px;border-radius:999px;border:1px solid rgba(243,217,145,.45);background:rgba(12,22,32,.9);color:var(--text-l);font-family:var(--sans);font-weight:800;font-size:15px;cursor:pointer;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 18px 40px -16px rgba(0,0,0,.8);transition:transform .25s ease,border-color .25s ease}
+.sup-btn:hover{transform:translateY(-2px);border-color:var(--gold)}
+.sup-btn .tg{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#5ab8ee,#2a9bd8);color:#fff}
+.sup-btn .tg svg{width:20px;height:20px;margin-left:-2px}
+.sup-card{position:relative;width:min(320px,calc(100vw - 32px));border-radius:24px;padding:22px 22px 20px;background:rgba(18,33,48,.97);border:1px solid var(--line-l);box-shadow:0 30px 60px -20px rgba(0,0,0,.85);display:grid;gap:10px}
+.sup-card[hidden]{display:none}
+.sup-card h3{font-size:18px;color:var(--white)}
+.sup-card p{font-size:14.5px;line-height:1.5;color:var(--text-lm)}
+.sup-card .btn{width:100%;margin-top:6px;min-height:48px;font-size:15px;animation:none}
+.sup-x{position:absolute;top:12px;right:12px;width:32px;height:32px;border-radius:50%;border:0;background:rgba(242,238,230,.08);color:var(--text-lm);font-size:18px;cursor:pointer}
+@media (max-width:640px){.sup-btn{min-height:46px;padding:0 16px 0 5px;font-size:14px}.sup-btn .lbl{display:none}.sup-btn{padding:0 5px}}
+
+@media (max-width:1100px){
+  .hero-in{grid-template-columns:1fr;padding-top:104px;justify-items:center;text-align:center}
+  .hero-text{justify-items:center}
+  .hero-logo{order:-1;width:min(66vw,300px)}
+  .facts,.ctas{justify-content:center}
+  .quotes{grid-template-columns:1fr 1fr}
+  .tl-items{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:22px}
+  .tl-line{display:none}
+}
+@media (max-width:960px){
+  .how,.max,.goal,.calc,.karma,.uses-row,.ac-head,.inst .wide{grid-template-columns:1fr}
+  .inst,.stats{grid-template-columns:1fr}
+  .mini{grid-template-columns:1fr 1fr}
+  .ways{grid-template-columns:1fr 1fr}
+  .way.main{grid-column:1/-1}
+  .lesson{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  :root{--r-mega:28px;--r-card:24px}
+  .hero-in{padding-top:92px;padding-bottom:48px;gap:20px}
+  .ctas .btn{width:100%}
+  .quotes,.ways,.fruits,.figs{grid-template-columns:1fr}
+  .tl-items{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .family{grid-template-columns:auto auto;justify-content:center;text-align:center}
+  .family p{grid-column:1/-1}
+  .bars{height:220px;--bh:150px}
+  .faq summary{padding:18px 58px 18px 20px;font-size:16px}
+  .faq summary::after{right:12px}
+  .faq .ans{padding:0 20px 20px}
+  .sec-head{margin-bottom:28px}
+  .marks{font-size:11.5px}
+  .marks b{font-size:12px}
+  .marks span:nth-child(2){display:none}
+  .facts{display:grid;grid-template-columns:1fr 1fr;width:100%}
+  .facts div:last-child{grid-column:1/-1}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none}
+  .stars{display:none}
+}
+</style>
+</head>
+<body>
+<div class="sky-bg" aria-hidden="true"></div>
+
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="#top" aria-label="Фонд Вечной Мудрости — в начало">
+      <img src="img/logo-sm.png" width="44" height="44" alt="">
+      <span class="brand-txt"><b>Фонд Вечной Мудрости</b><span>Академия Классической Мудрости</span></span>
+    </a>
+    <nav class="dnav" aria-label="Разделы">
+      <a href="#how">Как это работает</a>
+      <a href="#world">Гарвард и Нобель</a>
+      <a href="#max">Слово руководителя</a>
+      <a href="#goal">Цель</a>
+      <a href="#results">Результаты</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <div class="langs"><a class="on" href="#top">Ru</a><a href="https://lp.classicwisdomacademy.com/eternalwisdomfund_eng">Eng</a></div>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mnav"><span class="burger"></span><span class="menu-txt">Меню</span></button>
+    <a class="btn btn-gold" href="#support">Вложиться в вечность</a>
+  </div>
+</header>
+<nav class="mnav" id="mnav" aria-label="Меню" hidden>
+  <a href="#how">Что такое эндаумент</a>
+  <a href="#world">Как живут Гарвард, Оксфорд и Нобель</a>
+  <a href="#max">Слово Максима Джабали</a>
+  <a href="#goal">Цель: 3 000 000 $</a>
+  <a href="#results">Что уже выросло</a>
+  <a href="#calc">Калькулятор вечности</a>
+  <a href="#support">Как поддержать</a>
+  <a href="#karma">Кармический смысл</a>
+  <a href="#faq">Вопросы</a>
+  <div class="langs"><a class="on" href="#top">Ru</a><a href="https://lp.classicwisdomacademy.com/eternalwisdomfund_eng">Eng</a></div>
+</nav>
+
+<main>
+  <!-- 01 hero -->
+  <section class="hero" id="top">
+    <div class="stars" id="stars" aria-hidden="true"></div>
+    <div class="hero-in">
+      <div class="hero-text">
+        <span class="chip"><i></i>Эндаумент-фонд Академии Классической Мудрости · с 2021 года</span>
+        <h1>Фонд <span class="grad">Вечной Мудрости</span></h1>
+        <p class="sub">Мудрость, которая переживёт нас всех</p>
+        <p class="lead">Как Гарвард, Оксфорд и Нобелевская премия, Академия создаёт фонд, который не тратится, а работает. Капитал остаётся навсегда — курсы ACI живут на доход от него. Сегодня, через сто лет и дольше.</p>
+        <div class="facts">
+          <div><b>140 400 $</b><span>баланс фонда</span></div>
+          <div><b>≈ 8%</b><span>годовых приносит капитал</span></div>
+          <div><b>3 000 000 $</b><span>наша цель</span></div>
+        </div>
+        <div class="ctas">
+          <a class="btn btn-gold" href="#support">Вложиться в вечность <span class="ar">→</span></a>
+          <a class="btn btn-ghost" href="#how">Как это работает</a>
+        </div>
+      </div>
+      <div class="hero-logo" aria-hidden="true">
+        <span class="halo"></span>
+        <svg class="orbit" viewBox="0 0 400 400">
+          <circle class="o1" cx="200" cy="200" r="196"/>
+          <circle class="dotp" r="5"><animateMotion dur="14s" repeatCount="indefinite" path="M200,4 a196,196 0 1,1 -0.1,0"/></circle>
+          <circle class="dotp" r="3" opacity=".7"><animateMotion dur="14s" begin="-7s" repeatCount="indefinite" path="M200,4 a196,196 0 1,1 -0.1,0"/></circle>
+        </svg>
+        <div class="disc"><img src="img/logo.jpg" width="900" height="900" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true"><div class="ticker-in">
+    <span>Гарвард — с 1636 года</span><span>Оксфорд — с 1096 года</span><span>Нобелевская премия — с 1901 года</span><span>Фонд Вечной Мудрости — с 2021 года</span><span>Капитал не тратится — работает доход</span><span>Курсы ACI — для следующих поколений</span>
+    <span>Гарвард — с 1636 года</span><span>Оксфорд — с 1096 года</span><span>Нобелевская премия — с 1901 года</span><span>Фонд Вечной Мудрости — с 2021 года</span><span>Капитал не тратится — работает доход</span><span>Курсы ACI — для следующих поколений</span>
+  </div></div>
+
+  <!-- 02 how it works -->
+  <div class="mega-wrap">
+    <section class="mega cream sec" id="how">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="eyebrow">Что такое эндаумент</span>
+            <h2>Дерево остаётся — <span class="grad">мы собираем плоды</span></h2>
+          </div>
+          <p>Эндаумент — особый фонд, капитал которого не расходуется. Его инвестируют, а организация живёт только на доход. Так фонд работает бесконечно.</p>
+        </div>
+        <div class="how">
+          <div class="flow reveal">
+            <div class="node">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 11c0 5.6-7 10-7 10z"/></svg></span>
+              <div><h3>Ваши взносы</h3><p>Ежемесячные и разовые пожертвования студентов и друзей Академии.</p></div>
+            </div>
+            <div class="arrow"></div>
+            <div class="node core">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l3 6-9 12L3 9z"/><path d="M3 9h18M9 3l3 18M15 3l-3 18"/></svg></span>
+              <div><h3>Капитал фонда</h3><p>Не тратится никогда. Инвестируется и с каждым годом становится больше.</p></div>
+            </div>
+            <div class="arrow"></div>
+            <div class="node">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span>
+              <div><h3>Пассивный доход</h3><p>Сейчас капитал приносит около 8% годовых.</p></div>
+            </div>
+            <div class="arrow"></div>
+            <div class="node">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9-4 9 4-9 4-9-4z"/><path d="M7 10.5V15c0 1.4 2.2 3 5 3s5-1.6 5-3v-4.5"/><path d="M21 8v5"/></svg></span>
+              <div><h3>Мудрость для всех</h3><p>Доход идёт на курсы и мероприятия, поддержку студентов и техническое обеспечение проектов.</p></div>
+            </div>
+          </div>
+          <div class="card card-k tree reveal">
+            <span class="eyebrow">Принцип вечности</span>
+            <div class="tree-pic" aria-hidden="true">
+              <svg viewBox="0 0 320 260">
+                <defs><radialGradient id="crown" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#3f7a9a"/><stop offset="1" stop-color="#1f4058"/></radialGradient></defs>
+                <path d="M160 250V150M160 190l-34-26M160 175l30-24" stroke="#a8780f" stroke-width="9" stroke-linecap="round" fill="none"/>
+                <path d="M40 250h240" stroke="rgba(243,217,145,.35)" stroke-width="2"/>
+                <circle cx="160" cy="100" r="78" fill="url(#crown)"/>
+                <circle cx="104" cy="122" r="44" fill="#2f5a78"/>
+                <circle cx="218" cy="120" r="46" fill="#2f5a78"/>
+                <g class="fruit-g" fill="#f3d991">
+                  <circle cx="128" cy="72" r="7"/><circle cx="178" cy="58" r="7"/><circle cx="206" cy="98" r="7"/><circle cx="96" cy="118" r="7"/><circle cx="150" cy="118" r="7"/><circle cx="228" cy="134" r="7"/><circle cx="118" cy="150" r="6"/><circle cx="192" cy="146" r="6"/>
+                </g>
+              </svg>
+            </div>
+            <p class="big" style="color:var(--white)">Мы не рубим дерево — мы собираем его плоды. Каждый год. Всегда.</p>
+            <p>Обычные пожертвования тратятся в том же году. Взнос в эндаумент работает вечно: он приносит доход каждый год — и через десять, и через сто лет.</p>
+          </div>
+        </div>
+        <div class="callout-box reveal">
+          <p class="callout">Наша цель — чтобы Академия жила только на доход фонда и не зависела от случайных поступлений. Тогда курсы ACI смогут существовать тысячелетиями.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- 03 world institutions -->
+  <section class="sec dark" id="world">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">Проверено веками</span>
+          <h2>Так живут <span class="grad">великие институции мира</span></h2>
+        </div>
+        <p>Лучшие университеты и самая известная премия планеты не зависят от случайных пожертвований. Они живут на доход своих фондов — сотни лет.</p>
+      </div>
+
+      <div class="timeline reveal" aria-label="Шкала времени">
+        <div class="tl-line"></div>
+        <div class="tl-items">
+          <div><b>1096</b><i></i><span>Оксфорд: первые упоминания о преподавании</span></div>
+          <div><b>1209</b><i></i><span>Кембридж</span></div>
+          <div><b>1636</b><i></i><span>Гарвард</span></div>
+          <div><b>1701</b><i></i><span>Йель</span></div>
+          <div><b>1901</b><i></i><span>Первая Нобелевская премия</span></div>
+          <div class="last"><b>2021</b><i></i><span>Фонд Вечной Мудрости АКМ</span></div>
+        </div>
+      </div>
+
+      <div class="inst">
+        <article class="card glass reveal">
+          <div class="top"><h3>Гарвардский университет</h3><span class="yr">с 1636</span></div>
+          <div class="num">56,9 млрд<small>$</small></div>
+          <p class="story">Всё началось с одного завещания. В 1638 году молодой священник Джон Гарвард оставил колледжу половину своего состояния — около 780 фунтов — и библиотеку из 400 книг. Сегодня фонд Гарварда — самый большой университетский эндаумент в мире.</p>
+          <div class="kpis"><span>≈ 5% капитала в год — на работу университета</span><span>≈ 40% всех доходов Гарварда</span></div>
+        </article>
+        <article class="card glass reveal">
+          <div class="top"><h3>Йельский университет</h3><span class="yr">с 1701</span></div>
+          <div class="num">44,1 млрд<small>$</small></div>
+          <p class="story">Йель каждый год берёт из фонда около 5,25% капитала — это примерно треть всех доходов университета. Остальное продолжает работать и расти для будущих поколений студентов.</p>
+          <div class="kpis"><span>2,1 млрд $ в бюджет за 2025 год</span><span>≈ 34% доходов</span></div>
+        </article>
+        <article class="card glass reveal">
+          <div class="top"><h3>Оксфорд и Кембридж</h3><span class="yr">почти 1000 лет</span></div>
+          <div><div class="num">8,3 млрд<small>£</small></div><span class="numlbl">фонды колледжей и университета Оксфорда</span></div>
+          <p class="story">Колледжи Оксфорда и Кембриджа веками живут на доход от своих фондов. Только у колледжей Оксфорда — 6,4 млрд фунтов, ещё 1,9 млрд — у самого университета. Учёба в этих стенах пережила войны, кризисы и смены эпох.</p>
+          <div class="kpis"><span>Старейший университет англоязычного мира</span></div>
+        </article>
+        <article class="card glass reveal">
+          <div class="top"><h3>Нобелевская премия</h3><span class="yr">с 1901</span></div>
+          <div><div class="num">125 лет</div><span class="numlbl">премия живёт на доход от фонда</span></div>
+          <p class="story">Альфред Нобель завещал превратить своё состояние — более 31 млн шведских крон — в фонд и вкладывать его в надёжные ценные бумаги. Премии выплачиваются только из дохода. Капитал фонда вырос до 6,8 млрд крон и продолжает работать.</p>
+          <div class="kpis"><span>Основной капитал не тратится</span><span>Премия — из дохода</span></div>
+        </article>
+      </div>
+
+      <div class="lesson">
+        <div class="reveal"><span class="n">01</span><p>Никто из них не начинал с миллиардов. Гарвард начался с 780 фунтов и полки книг.</p></div>
+        <div class="reveal"><span class="n">02</span><p>Их сила — во времени: капитал не тратится, а доход каждый год возвращается в дело.</p></div>
+        <div class="reveal"><span class="n">03</span><p>Их построили люди, которые думали дальше своей жизни. Как вы — сейчас.</p></div>
+      </div>
+      <p class="src">Источники: <a href="https://finance.harvard.edu/endowment" target="_blank" rel="noopener">Harvard Finance</a>, <a href="https://oira.harvard.edu/?p=1322" target="_blank" rel="noopener">Harvard OIRA</a> (на 30.06.2025); <a href="https://news.yale.edu/2025/10/24/yale-reports-investment-return-fiscal-2025" target="_blank" rel="noopener">Yale News</a> (2025); <a href="https://www.ox.ac.uk/about/organisation/finance-and-funding" target="_blank" rel="noopener">University of Oxford</a>; <a href="https://nobelprize.org/financial-management" target="_blank" rel="noopener">Nobel Foundation</a> (на конец 2024); <a href="https://en.wikipedia.org/wiki/John_Harvard" target="_blank" rel="noopener">John Harvard</a>.</p>
+    </div>
+  </section>
+
+  <!-- 04 Max -->
+  <div class="mega-wrap">
+    <section class="mega cream sec" id="max">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="eyebrow">Слово руководителя Академии</span>
+            <h2>«Мы в АКМ хотим <span class="grad">точно так же</span>»</h2>
+          </div>
+          <p>Максим Джабали — о том, зачем Академии фонд, сколько мы уже накопили и почему это кармический партнёр для каждого из нас.</p>
+        </div>
+        <div class="max">
+          <div class="video reveal">
+            <button class="yt" data-id="h_xr4JoJBB4" aria-label="Смотреть: Максим Джабали о Фонде Вечной Мудрости">
+              <img src="https://i.ytimg.com/vi/h_xr4JoJBB4/hqdefault.jpg" alt="" loading="lazy">
+              <span class="play"></span><span class="cap">Максим Джабали о Фонде Вечной Мудрости</span>
+            </button>
+          </div>
+          <div class="max-side reveal">
+            <div class="card card-w">
+              <span class="eyebrow">Из обращения</span>
+              <p class="big">«Фонд накапливает средства и генерирует пассивный доход, на который Академия сможет полностью жить, не тратя основные средства».</p>
+            </div>
+            <div class="figs">
+              <div><b>2021</b><span>фонд учреждён</span></div>
+              <div><b>100 000+ $</b><span>накоплено за первые 4 года</span></div>
+              <div><b>3 млн $</b><span>сумма, чтобы покрывать все расходы</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="quotes">
+          <figure class="q reveal"><p>Так живут крупные университеты — Гарвард, Принстон. Это некоммерческие организации, которые живут на пассивный доход своего фонда. А мы в АКМ хотим точно так же.</p><figcaption class="who">Максим Джабали</figcaption></figure>
+          <figure class="q k reveal"><p>Как Нобелевская премия: она существует уже очень долго, потому что тратит только пассивный доход, а не основные средства. И наша цель в АКМ точно такая же.</p><figcaption class="who">Максим Джабали</figcaption></figure>
+          <figure class="q reveal"><p>Откуда у меня уже есть четверть пассивного дохода? Потому что я поддерживаю Фонд Вечной Мудрости. Это мой кармический партнёр с 2021 года.</p><figcaption class="who">Максим Джабали</figcaption></figure>
+          <figure class="q k wide reveal"><p>После вас, после меня, после всех нас курсы ACI всё ещё будут продолжаться. Это и есть наследие Геше Майкла, Питера и Марии Мёртл. Для меня это реально классная цель.</p><figcaption class="who">Максим Джабали, руководитель Академии Классической Мудрости</figcaption></figure>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- 05 goal -->
+  <section class="sec dark" id="goal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">Наша цель</span>
+          <h2>3 000 000 $ — и Академия <span class="grad">живёт вечно</span></h2>
+        </div>
+        <p>Когда фонд достигнет цели, дохода от него хватит, чтобы покрывать все расходы Академии. Каждый новый взнос приближает этот день.</p>
+      </div>
+      <div class="goal">
+        <div class="card glass goal-main reveal" id="goalCard">
+          <span class="eyebrow">Баланс фонда сегодня</span>
+          <div class="goal-sum grad"><span data-count="140400">140 400</span><small> $</small></div>
+          <div class="prog" role="img" aria-label="Собрано 4,7% от цели 3 000 000 долларов"><span class="fill" data-w="4.68"></span><span class="now">4,7% пути</span></div>
+          <div class="marks">
+            <span><b>2021</b>старт</span>
+            <span><b>100 000 $</b>за 4 года</span>
+            <span><b>140 400 $</b>сегодня</span>
+            <span><b>3 000 000 $</b>Академия на доходе фонда</span>
+          </div>
+        </div>
+        <div class="card glass reveal">
+          <span class="eyebrow">Простая арифметика вечности</span>
+          <div class="math" style="margin-top:16px">
+            <div class="row"><b>3 000 000 $</b><span>капитал фонда — не тратится никогда</span></div>
+            <div class="eq">×</div>
+            <div class="row"><b>≈ 5%</b><span>в год — столько берёт из своего фонда Гарвард</span></div>
+            <div class="eq">=</div>
+            <div class="row"><b>≈ 150 000 $</b><span>каждый год на курсы, студентов и Учения — примерно весь годовой бюджет Академии</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 results from 108 000 Арий -->
+  <div class="mega-wrap">
+    <section class="mega cream sec" id="results">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="eyebrow">Что уже выросло</span>
+            <h2>Наши результаты — <span class="grad">ваших рук дело</span></h2>
+          </div>
+          <p>Пожертвования в проект «108 000 Арий» тоже поступают в Фонд Вечной Мудрости. Вот что мы уже сделали вместе.</p>
+        </div>
+        <div class="family card card-w reveal">
+          <img src="../108000arias/img/logo-108-sm.png" width="84" height="84" alt="Логотип проекта 108 000 Арий">
+          <p class="big">Проект «108 000 Арий» и Фонд Вечной Мудрости — одно общее дело: чтобы как можно больше людей прошли курсы ACI и увидели пустоту напрямую.</p>
+          <a class="btn btn-line-d" href="../108000arias/">О проекте <span class="ar">→</span></a>
+        </div>
+        <div class="stats">
+          <div class="stat hl reveal">
+            <span class="num" data-count="147840">147 840<small>$</small></span>
+            <span class="lbl">собрано в «108 000 Арий»</span>
+            <span class="sm">все пожертвования с ноября 2022 года</span>
+          </div>
+          <div class="stat reveal">
+            <span class="num" data-count="623">623</span>
+            <span class="lbl">активных благотворителя</span>
+            <span class="sm">с подпиской и хотя бы одним взносом за последние 3 месяца</span>
+          </div>
+          <div class="stat reveal">
+            <span class="num">+43<small>%</small></span>
+            <span class="lbl">рост поступлений в 2025 году</span>
+            <span class="sm">51 625 $ в 2025 году против 36 187 $ в 2024-м</span>
+          </div>
+        </div>
+        <div class="chart card card-k reveal" id="chart">
+          <div class="chart-head">
+            <h3>Поступления по годам</h3>
+            <span class="growth-note">2026 — данные за 9 месяцев</span>
+          </div>
+          <div class="bars">
+            <div class="bar"><span class="val">36 187 $</span><span class="col" data-h="70"></span></div>
+            <div class="bar"><span class="val">51 625 $</span><span class="col" data-h="100"></span></div>
+            <div class="bar"><span class="val">31 234 $</span><span class="col part" data-h="60.5"></span></div>
+          </div>
+          <div class="bar-lbls">
+            <div><b>2024</b><span>весь год</span></div>
+            <div><b>2025</b><span>весь год</span></div>
+            <div><b>2026</b><span>январь – сентябрь</span></div>
+          </div>
+        </div>
+        <div class="academy card card-k reveal">
+          <div class="ac-head">
+            <div>
+              <span class="eyebrow">Об Академии</span>
+              <p class="big" style="color:var(--white);margin-top:12px">С 2019 года — в 33 раза больше студентов</p>
+            </div>
+            <p>Наш регион — одно из самых масштабных сообществ среди всех стран, где преподаётся ACI. У нас своя платформа для прохождения курсов.</p>
+          </div>
+          <div class="mini">
+            <div><b data-count="3332">3 332</b><span>студента изучают курсы ACI (в 2019 году — 100)</span></div>
+            <div><b data-count="13606">13 606</b><span>сертификатов ACI (в 2019 году — 275)</span></div>
+            <div><b data-count="103">103</b><span>студента прошли все 18 открытых курсов</span></div>
+            <div><b data-count="33">33</b><span>живых курса ACI в 2025 году, их провёл 61 тренер</span></div>
+          </div>
+          <p class="note" style="margin-top:14px">Данные проекта на 26 октября 2026 года, платформы курсов — на 30 июня 2026 года.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- 07 calculator -->
+  <section class="sec dark" id="calc">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">Калькулятор вечности</span>
+          <h2>Сколько принесёт <span class="grad">ваш вклад</span></h2>
+        </div>
+        <p>Взнос в эндаумент не исчезает: он работает каждый год. Посмотрите, сколько ваш вклад будет давать Академии — без срока.</p>
+      </div>
+      <div class="calc">
+        <div class="card card-w calc-in reveal">
+          <div class="seg" role="group" aria-label="Тип взноса">
+            <button type="button" data-mode="m" aria-pressed="true">Ежемесячно</button>
+            <button type="button" data-mode="o" aria-pressed="false">Разово</button>
+          </div>
+          <div class="fld">
+            <label for="amt">Сумма взноса</label>
+            <div class="val" id="amtV">20 $</div>
+            <input type="range" id="amt" min="5" max="500" step="5" value="20">
+            <div class="scale"><span>5 $</span><span>500 $</span></div>
+          </div>
+          <div class="fld" id="yrsF">
+            <label for="yrs">Сколько лет поддерживаю</label>
+            <div class="val" id="yrsV">3 года</div>
+            <input type="range" id="yrs" min="1" max="20" step="1" value="3">
+            <div class="scale"><span>1 год</span><span>20 лет</span></div>
+          </div>
+        </div>
+        <div class="card glass calc-out reveal" aria-live="polite">
+          <div class="res"><span>Ваш вклад в капитал фонда</span><b id="rCap">720 $</b></div>
+          <div class="res"><span>Каждый год он будет давать Академии</span><b id="rYear">≈ 36 $</b></div>
+          <div class="res inf"><span>За 100 лет — и это только начало</span><b id="rCent">≈ 3 600 $</b></div>
+          <p class="note">Расчёт по консервативной ставке 5% в год, как у Гарварда. Капитал при этом остаётся в фонде и продолжает работать.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 support -->
+  <div class="mega-wrap">
+    <section class="mega cream sec" id="support">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <span class="eyebrow">Как вы можете помочь</span>
+            <h2>Вложитесь <span class="grad">в вечность</span></h2>
+          </div>
+          <p>Главное — регулярность. Ежемесячный взнос на любую сумму делает фонд устойчивым, а ваши семена — сильными.</p>
+        </div>
+        <div class="ways">
+          <div class="way main reveal">
+            <span class="flag">Самое сильное семя</span>
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a3 3 0 013-3h15"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v2a3 3 0 01-3 3H3"/></svg></span>
+            <h3>Ежемесячная подписка</h3>
+            <p>Удобная для вас сумма каждый месяц. Регулярность позволяет фонду расти предсказуемо.</p>
+            <a class="btn btn-gold" href="https://lp.classicwisdomacademy.com/eternalwisdomfoundationchoiceofpayment">Оформить подписку <span class="ar">→</span></a>
+          </div>
+          <div class="way reveal">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4l-5.2 2.7 1-5.8L3.5 9.2l5.9-.9z"/></svg></span>
+            <h3>Разовый вклад</h3>
+            <p>В честь дня рождения, важного события или просто от сердца. Любая сумма работает вечно.</p>
+            <a class="btn btn-dark" href="https://lp.classicwisdomacademy.com/eternalwisdomfoundationchoiceofpayment">Сделать вклад <span class="ar">→</span></a>
+          </div>
+          <div class="way reveal">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></span>
+            <h3>Расскажите друзьям</h3>
+            <p>Поделитесь страницей с единомышленниками — так фонд найдёт новых партнёров.</p>
+            <button class="btn btn-line-d" type="button" id="shareBtn">Поделиться</button>
+          </div>
+        </div>
+        <div class="uses-row">
+          <figure class="photo reveal"><img src="img/hall.jpg" alt="Студенты Академии на живом мероприятии" loading="lazy"><figcaption>На что пойдёт доход фонда — курсы, мероприятия, студенты</figcaption></figure>
+          <div class="card card-k reveal" style="display:flex;flex-direction:column;gap:14px;justify-content:center">
+            <span class="eyebrow">Доход фонда направляется на</span>
+            <ul class="dots">
+              <li>Организацию курсов ACI и мероприятий с Учителями</li>
+              <li>Поддержку студентов</li>
+              <li>Техническое обеспечение проектов: платформу, сервисы, приложение</li>
+            </ul>
+            <a class="btn btn-ghost" href="https://t.me/+K4X97_PJIPwwY2Zi">Телеграм-канал фонда <span class="ar">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- 09 karma -->
+  <section class="sec dark" id="karma">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">Кармический смысл</span>
+          <h2>Каждый взнос — <span class="grad">семя вечной мудрости</span></h2>
+        </div>
+        <p>Поддерживая фонд, который живёт на пассивный доход, вы сажаете семена собственного устойчивого финансового потока.</p>
+      </div>
+      <div class="karma">
+        <div class="card glass reveal">
+          <span class="eyebrow">Логическая цепочка</span>
+          <ol class="chain" style="margin-top:12px">
+            <li><span class="st">1</span><p>Вы помогаете Академии создать постоянный источник дохода, который не иссякнет.</p></li>
+            <li><span class="st">2</span><p>Благодаря этому курсы ACI будут доступны людям и через десятки, и через сотни лет.</p></li>
+            <li><span class="st">3</span><p>Вы берёте в кармические партнёры мощный объект — линию передачи Учений.</p></li>
+            <li><span class="st">4</span><p>Семя возвращается к вам: устойчивым доходом, доступом к глубоким Учениям и мудрыми наставниками рядом.</p></li>
+          </ol>
+        </div>
+        <div class="fruits">
+          <div class="fruit glass reveal"><span class="fi">🌊</span><p>Семена устойчивого финансового потока и пассивного дохода</p></div>
+          <div class="fruit glass reveal"><span class="fi">📚</span><p>Семена доступа к глубоким Учениям — в этой жизни и дальше</p></div>
+          <div class="fruit glass reveal"><span class="fi">🪷</span><p>Мудрые наставники в вашей жизни</p></div>
+          <div class="fruit glass reveal"><span class="fi">♾️</span><p>Причины для пробуждения и счастья — своего и других</p></div>
+          <div class="fruit glass reveal" style="grid-column:1/-1"><span class="fi">🏔️</span><p>Вы становитесь частью наследия Геше Майкла Роуча, Питера и Марии Мёртл — того, что останется после нас.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 faq -->
+  <section class="sec dark" id="faq" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">Вопросы</span>
+          <h2>Частые <span class="grad">вопросы</span></h2>
+        </div>
+        <p>Не нашли ответ? Напишите нам — кнопка «Помощь» в правом нижнем углу.</p>
+      </div>
+      <div class="faq">
+        <details><summary>Чем фонд отличается от обычного пожертвования?</summary><div class="ans"><p>Обычное пожертвование тратится сразу. Взнос в Фонд Вечной Мудрости становится частью капитала, который не расходуется: Академия использует только доход от него. Поэтому ваш вклад работает каждый год — бесконечно.</p></div></details>
+        <details><summary>Как связаны фонд и проект «108 000 Арий»?</summary><div class="ans"><p>Это общее дело Академии. Пожертвования в «108 000 Арий» тоже поступают в Фонд Вечной Мудрости. Подробнее о проекте — на <a href="../108000arias/">его странице</a>.</p></div></details>
+        <details><summary>Сколько уже накоплено и какая цель?</summary><div class="ans"><p>Баланс фонда — 140 400 $. Цель — 3 000 000 $: дохода с такой суммы хватит, чтобы покрывать все расходы Академии.</p></div></details>
+        <details><summary>Почему лучше ежемесячно?</summary><div class="ans"><p>Регулярные взносы позволяют фонду расти предсказуемо, а с точки зрения семян регулярность делает их сильнее. Разовый вклад тоже очень ценен — любая сумма работает вечно.</p></div></details>
+        <details><summary>Где следить за новостями фонда?</summary><div class="ans"><p>В <a href="https://t.me/+K4X97_PJIPwwY2Zi">телеграм-канале фонда</a>.</p></div></details>
+        <details><summary>Платёж не проходит — что делать?</summary><div class="ans"><p>Проверьте, есть ли деньги на карте и разрешены ли интернет-платежи. Если банк говорит, что проблема на стороне платёжного сервиса, напишите в поддержку: <a href="https://t.me/Ivanlord">@Ivanlord</a>.</p></div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- final -->
+  <section class="sec dark final">
+    <div class="wrap">
+      <img class="lg" src="img/logo.jpg" width="160" height="160" alt="Логотип Фонда Вечной Мудрости">
+      <span class="eyebrow">Для следующих поколений</span>
+      <h2>Постройте то, что <span class="grad">переживёт нас</span></h2>
+      <p class="big" style="color:var(--text-lm);max-width:40rem">Гарвард тоже когда-то начался с одного завещания и полки книг. Фонд Вечной Мудрости начинается с вас.</p>
+      <div class="ctas">
+        <a class="btn btn-gold" href="https://lp.classicwisdomacademy.com/eternalwisdomfoundationchoiceofpayment">Вложиться в вечность <span class="ar">→</span></a>
+        <a class="btn btn-ghost" href="https://t.me/+K4X97_PJIPwwY2Zi">Канал фонда</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr">
+  <div class="ftr-in">
+    <a class="brand" href="#top"><img src="img/logo-sm.png" width="52" height="52" alt=""><span class="brand-txt" style="display:grid"><b>Фонд Вечной Мудрости</b><span>Академия Классической Мудрости</span></span></a>
+    <div>ФОП Беліцька Олеся Олександрівна | ЄДРПОУ 2991816226<br><a href="mailto:acirussian2@gmail.com">acirussian2@gmail.com</a> · <a href="https://lp.classicwisdomacademy.com/ofertakk">Оферта</a></div>
+  </div>
+</footer>
+
+<div class="sup">
+  <div class="sup-card" id="supCard" role="dialog" aria-labelledby="supTitle" hidden>
+    <button class="sup-x" id="supX" aria-label="Закрыть">×</button>
+    <h3 id="supTitle">Помощь</h3>
+    <p>Вопросы о фонде или оплате? Напишите нам в Телеграм — поможем.</p>
+    <a class="btn btn-gold" href="https://t.me/Ivanlord" target="_blank" rel="noopener">Написать в Телеграм <span class="ar">→</span></a>
+  </div>
+  <button class="sup-btn" id="supBtn" aria-expanded="false" aria-controls="supCard">
+    <span class="tg"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.4 4.3L2.9 11.4c-1.3.5-1.2 1.3-.2 1.6l4.7 1.5 1.8 5.6c.2.6.4.8.9.8.4 0 .6-.2.9-.5l2.3-2.2 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.7c.3-1.3-.5-1.9-1.5-1.4zM8.9 14.2l9.4-5.9c.4-.3.8-.1.5.2l-7.8 7.1-.3 3.3z"/></svg></span>
+    <span class="lbl">Помощь</span>
+  </button>
+</div>
+
+<script>
+(function(){
+  var btn=document.getElementById('menuBtn'),nav=document.getElementById('mnav');
+  btn.addEventListener('click',function(){var o=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',String(!o));nav.hidden=o;});
+  nav.addEventListener('click',function(e){if(e.target.closest('a')){btn.setAttribute('aria-expanded','false');nav.hidden=true;}});
+
+  var sb=document.getElementById('supBtn'),sc=document.getElementById('supCard');
+  function supSet(o){sc.hidden=!o;sb.setAttribute('aria-expanded',String(o));}
+  sb.addEventListener('click',function(){supSet(sc.hidden);});
+  document.getElementById('supX').addEventListener('click',function(){supSet(false);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')supSet(false);});
+
+  // share
+  var shb=document.getElementById('shareBtn');
+  shb.addEventListener('click',function(){var d={title:'Фонд Вечной Мудрости',text:'Эндаумент-фонд Академии Классической Мудрости — как у Гарварда и Нобелевской премии.',url:location.href.split('#')[0]};
+    if(navigator.share){navigator.share(d).catch(function(){});return;}
+    try{navigator.clipboard.writeText(d.url).then(function(){shb.textContent='Ссылка скопирована ✓';setTimeout(function(){shb.textContent='Поделиться';},2500);});}catch(e){}});
+
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // twinkling stars in hero
+  var s=document.getElementById('stars');
+  if(s&&!reduce){for(var i=0;i<40;i++){var e=document.createElement('i');e.style.left=(Math.random()*100)+'%';e.style.top=(Math.random()*85)+'%';e.style.setProperty('--s',(2+Math.random()*3)+'px');e.style.setProperty('--d',(3+Math.random()*5)+'s');e.style.setProperty('--dl',(-Math.random()*6)+'s');s.appendChild(e);}}
+
+  // lazy youtube
+  document.querySelectorAll('.yt').forEach(function(b){
+    b.addEventListener('click',function(){var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+b.dataset.id+'?autoplay=1&rel=0';f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;f.title=b.getAttribute('aria-label')||'Видео';b.replaceWith(f);});
+  });
+
+  function fmt(n){return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g,' ');}
+
+  // calculator
+  var mode='m',amt=document.getElementById('amt'),yrs=document.getElementById('yrs'),yrsF=document.getElementById('yrsF');
+  function plural(n){var a=n%10,b=n%100;if(a===1&&b!==11)return 'год';if(a>=2&&a<=4&&(b<10||b>=20))return 'года';return 'лет';}
+  function paint(r){r.style.setProperty('--p',((r.value-r.min)/(r.max-r.min)*100)+'%');}
+  function calc(){var a=+amt.value,y=+yrs.value,cap=mode==='m'?a*12*y:a;
+    document.getElementById('amtV').textContent=fmt(a)+' $'+(mode==='m'?' / мес':'');
+    document.getElementById('yrsV').textContent=y+' '+plural(y);
+    yrsF.hidden=mode!=='m';
+    document.getElementById('rCap').textContent=fmt(cap)+' $';
+    document.getElementById('rYear').textContent='≈ '+fmt(cap*.05)+' $';
+    document.getElementById('rCent').textContent='≈ '+fmt(cap*.05*100)+' $';
+    paint(amt);paint(yrs);}
+  document.querySelectorAll('.seg button').forEach(function(b){b.addEventListener('click',function(){mode=b.dataset.mode;document.querySelectorAll('.seg button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});
+    if(mode==='o'){amt.max=5000;amt.step=50;if(+amt.value<100)amt.value=500;document.querySelector('#amt + .scale').lastElementChild.textContent='5 000 $';}
+    else{amt.max=500;amt.step=5;if(+amt.value>500)amt.value=20;document.querySelector('#amt + .scale').lastElementChild.textContent='500 $';}
+    calc();});});
+  amt.addEventListener('input',calc);yrs.addEventListener('input',calc);calc();
+
+  function countUp(el){var to=+el.dataset.count,suf=el.querySelector('small');var sufH=suf?suf.outerHTML:'';var t0=null;function step(t){if(!t0)t0=t;var p=Math.min((t-t0)/1600,1);p=1-Math.pow(1-p,3);el.innerHTML=fmt(to*p)+sufH;if(p<1)requestAnimationFrame(step);}requestAnimationFrame(step);}
+  function fillProg(el){el.querySelectorAll('.fill').forEach(function(f){f.style.width=f.dataset.w+'%';var n=el.querySelector('.now');if(n)n.style.left='calc('+f.dataset.w+'% - 4px)';});}
+
+  if(!('IntersectionObserver' in window)||reduce){
+    document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});
+    document.querySelectorAll('.bar .col').forEach(function(c){c.style.height='calc(var(--bh) * '+(c.dataset.h/100)+')';});
+    fillProg(document.getElementById('goalCard'));
+    return;
+  }
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(!en.isIntersecting)return;var el=en.target;el.classList.add('in');
+    if(el.id==='chart'){el.querySelectorAll('.col').forEach(function(c,i){setTimeout(function(){c.style.height='calc(var(--bh) * '+(c.dataset.h/100)+')';},i*220);});}
+    if(el.id==='goalCard')fillProg(el);
+    el.querySelectorAll('[data-count]').forEach(countUp);
+    io.unobserve(el);});},{threshold:.18});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>
