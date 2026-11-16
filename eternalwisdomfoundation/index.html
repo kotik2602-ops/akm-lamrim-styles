@@ -61,6 +61,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{o
 .wrap{max-width:76rem;margin:0 auto;padding:0 var(--pad)}
 .grad{background:linear-gradient(100deg,var(--gold-l) 0%,var(--gold) 50%,var(--mist-l) 100%);-webkit-background-clip:text;background-clip:text;color:transparent!important}
 .cream .grad{background-image:linear-gradient(100deg,var(--deep) 0%,var(--deep-2) 45%,var(--gold-d) 100%)}
+.cream .card-k .grad{background-image:linear-gradient(100deg,var(--gold-l) 0%,var(--gold) 50%,var(--mist-l) 100%)}
 .eyebrow{font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
 .cream .eyebrow{color:var(--gold-d)}
 h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-.02em;line-height:1.1;text-wrap:balance}
@@ -229,10 +230,15 @@ b,strong{font-weight:800}
 .tree{display:flex;flex-direction:column;gap:18px;justify-content:center}
 .tree-pic{display:grid;place-items:center}
 .tree-pic svg{width:min(100%,320px);height:auto}
-.tree-pic .fruit-g circle{transform-box:fill-box;transform-origin:center;animation:ripen 3.6s ease-in-out infinite}
-.tree-pic .fruit-g circle:nth-child(2n){animation-delay:-1.2s}
-.tree-pic .fruit-g circle:nth-child(3n){animation-delay:-2.4s}
-@keyframes ripen{0%,100%{transform:scale(.75);opacity:.65}50%{transform:scale(1.1);opacity:1}}
+.tree-pic .trunk{transform-box:view-box;transform-origin:160px 250px;transform:scaleY(.15)}
+.tree-pic .crown{transform-box:view-box;transform-origin:160px 175px;transform:scale(.1);opacity:0}
+.tree-pic .crown,.tree-pic .trunk,.tree-pic .fruit-g circle{will-change:transform}
+.tree-pic .fruit-g circle{transform-box:fill-box;transform-origin:center;transform:scale(0)}
+.tree-pic .fruit-g.ripe circle{animation:glow 2.8s ease-in-out infinite}
+.tree-pic .fruit-g.ripe circle:nth-child(2n){animation-delay:-.9s}
+.tree-pic .fruit-g.ripe circle:nth-child(3n){animation-delay:-1.8s}
+@keyframes glow{0%,100%{filter:drop-shadow(0 0 2px rgba(243,217,145,.4))}50%{filter:drop-shadow(0 0 9px rgba(243,217,145,1))}}
+.grow-cap{font-size:13px;font-weight:700;color:var(--gold-l);text-align:center;letter-spacing:.04em;min-height:1.4em}
 
 /* 03 world institutions */
 .timeline{position:relative;margin-bottom:clamp(26px,3vw,40px);padding:26px 0 8px}
@@ -584,16 +590,20 @@ b,strong{font-weight:800}
             <div class="tree-pic" aria-hidden="true">
               <svg viewBox="0 0 320 260">
                 <defs><radialGradient id="crown" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#3f7a9a"/><stop offset="1" stop-color="#1f4058"/></radialGradient></defs>
-                <path d="M160 250V150M160 190l-34-26M160 175l30-24" stroke="#a8780f" stroke-width="9" stroke-linecap="round" fill="none"/>
                 <path d="M40 250h240" stroke="rgba(243,217,145,.35)" stroke-width="2"/>
-                <circle cx="160" cy="100" r="78" fill="url(#crown)"/>
-                <circle cx="104" cy="122" r="44" fill="#2f5a78"/>
-                <circle cx="218" cy="120" r="46" fill="#2f5a78"/>
+                <ellipse cx="160" cy="250" rx="8" ry="4" fill="#c98d4f"/>
+                <path class="trunk" d="M160 250V150M160 190l-34-26M160 175l30-24" stroke="#a8780f" stroke-width="9" stroke-linecap="round" fill="none"/>
+                <g class="crown">
+                  <circle cx="160" cy="100" r="78" fill="url(#crown)"/>
+                  <circle cx="104" cy="122" r="44" fill="#2f5a78"/>
+                  <circle cx="218" cy="120" r="46" fill="#2f5a78"/>
+                </g>
                 <g class="fruit-g" fill="#f3d991">
-                  <circle cx="128" cy="72" r="7"/><circle cx="178" cy="58" r="7"/><circle cx="206" cy="98" r="7"/><circle cx="96" cy="118" r="7"/><circle cx="150" cy="118" r="7"/><circle cx="228" cy="134" r="7"/><circle cx="118" cy="150" r="6"/><circle cx="192" cy="146" r="6"/>
+                  <circle cx="150" cy="118" r="8"/><circle cx="128" cy="72" r="8"/><circle cx="206" cy="98" r="8"/><circle cx="96" cy="118" r="8"/><circle cx="178" cy="58" r="8"/><circle cx="228" cy="134" r="8"/><circle cx="118" cy="150" r="7"/><circle cx="192" cy="146" r="7"/><circle cx="160" cy="40" r="7"/><circle cx="80" cy="140" r="6"/><circle cx="242" cy="104" r="6"/>
                 </g>
               </svg>
             </div>
+            <p class="grow-cap" id="growCap" aria-hidden="true"></p>
             <p class="big" style="color:var(--white)">Мы не рубим дерево — мы собираем его плоды. Каждый год. Всегда.</p>
             <p>Обычные пожертвования тратятся в том же году. Взнос в эндаумент работает вечно: он приносит доход каждый год — и через десять, и через сто лет.</p>
           </div>
@@ -865,13 +875,13 @@ b,strong{font-weight:800}
             <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a3 3 0 013-3h15"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v2a3 3 0 01-3 3H3"/></svg></span>
             <h3>Ежемесячная подписка</h3>
             <p>Удобная для вас сумма каждый месяц. Регулярность позволяет фонду расти предсказуемо.</p>
-            <a class="btn btn-gold" href="https://lp.classicwisdomacademy.com/eternalwisdomfoundationchoiceofpayment">Оформить подписку <span class="ar">→</span></a>
+            <a class="btn btn-gold" href="pay/">Оформить подписку <span class="ar">→</span></a>
           </div>
           <div class="way reveal">
             <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4l-5.2 2.7 1-5.8L3.5 9.2l5.9-.9z"/></svg></span>
             <h3>Разовый вклад</h3>
             <p>В честь дня рождения, важного события или просто от сердца. Любая сумма работает вечно.</p>
-            <a class="btn btn-dark" href="https://lp.classicwisdomacademy.com/eternalwisdomfoundationchoiceofpayment">Сделать вклад <span class="ar">→</span></a>
+            <a class="btn btn-dark" href="pay/">Сделать вклад <span class="ar">→</span></a>
           </div>
           <div class="way reveal">
             <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></span>
@@ -956,7 +966,7 @@ b,strong{font-weight:800}
       <h2>Постройте то, что <span class="grad">переживёт нас</span></h2>
       <p class="big" style="color:var(--text-lm);max-width:40rem">Гарвард тоже когда-то начался с одного завещания и полки книг. Фонд Вечной Мудрости начинается с вас.</p>
       <div class="ctas">
-        <a class="btn btn-gold" href="https://lp.classicwisdomacademy.com/eternalwisdomfoundationchoiceofpayment">Вложиться в вечность <span class="ar">→</span></a>
+        <a class="btn btn-gold" href="pay/">Вложиться в вечность <span class="ar">→</span></a>
         <a class="btn btn-ghost" href="https://t.me/+K4X97_PJIPwwY2Zi">Канал фонда</a>
       </div>
     </div>
@@ -1011,6 +1021,32 @@ b,strong{font-weight:800}
   document.querySelectorAll('.yt').forEach(function(b){
     b.addEventListener('click',function(){var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+b.dataset.id+'?autoplay=1&rel=0';f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;f.title=b.getAttribute('aria-label')||'Видео';b.replaceWith(f);});
   });
+
+  // tree grows with scroll: trunk -> crown -> fruits from small to big
+  (function(){
+    var pic=document.querySelector('.tree-pic svg');if(!pic)return;
+    var tr=pic.querySelector('.trunk'),cr=pic.querySelector('.crown'),fg=pic.querySelector('.fruit-g'),fr=fg.querySelectorAll('circle'),cap=document.getElementById('growCap');
+    function cl(v){return v<0?0:v>1?1:v;}
+    function ease(v){return 1-Math.pow(1-v,3);}
+    var labels=['Семя','Росток','Дерево','Первые плоды','Плоды каждый год'];
+    function set(g){
+      var t=ease(cl(g/.3)),c=ease(cl((g-.18)/.35));
+      tr.style.transform='scaleY('+(.15+.85*t)+')';
+      cr.style.transform='scale('+(.1+.9*c)+')';cr.style.opacity=cl(c*2.5);
+      var n=fr.length,last=0;
+      fr.forEach(function(f,i){var s=0,start=.5+i*(.38/n);s=cl((g-start)/.14);last=s;
+        var k=s<1?ease(s)*1.18:1;if(s>=1)k=1;else if(s>.85)k=1.18-(s-.85)/.15*.18;
+        f.style.transform='scale('+k+')';});
+      fg.classList.toggle('ripe',g>=.98);
+      if(cap)cap.textContent=labels[g<.12?0:g<.3?1:g<.5?2:g<.98?3:4];
+    }
+    if(reduce){set(1);return;}
+    var card=pic.closest('.tree'),tick=false;
+    function upd(){tick=false;var r=card.getBoundingClientRect(),vh=window.innerHeight||800;
+      var g=(vh*.95-r.top)/(vh*.95-vh*.3+r.height*.35);set(cl(g));}
+    window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd);}},{passive:true});
+    window.addEventListener('resize',upd);upd();
+  })();
 
   function fmt(n){return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g,' ');}
 
