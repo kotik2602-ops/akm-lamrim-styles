@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="style.css?v=1794849856">
+<link rel="stylesheet" href="style.css?v=1794928126">
 </head>
 <body>
 <div class="page-bg" aria-hidden="true"></div>
@@ -141,8 +141,8 @@
 
 <div class="toast" id="toast"></div>
 <div class="lb" id="lb"><img alt=""></div>
-<script src="data.js?v=1794849856"></script>
-<script src="common.js?v=1794849856"></script>
+<script src="data.js?v=1794928126"></script>
+<script src="common.js?v=1794928126"></script>
 <script>
 (function(){
   var A = window.ACI, K = window.AK, esc = K.esc;
@@ -151,7 +151,7 @@
     var cta = g.reg ? '<a class="btn btn-gold" href="'+esc(g.reg)+'" target="_blank" rel="noopener">Записаться →</a>'
                     : '<a class="btn btn-gold" href="'+g.course+'/">Записаться →</a>';
     return '<div class="scard">'+(c.img?'<a class="sim" href="'+g.course+'/" style="background-image:url('+c.img+')"><span>ACI '+g.course+'</span></a>':'<div class="n">ACI '+g.course+'</div>')+'<div class="t">'+esc(c.t)+'</div>'+
-      '<div class="d">'+(g.late?'Стартовала <b>':'Старт <b>')+esc(g.startText)+'</b>'+(g.curatorShort?'<span class="who">'+esc(K.withCur(g))+'</span>':'')+(K.langOf(g)?'<span class="lang'+(/украин/.test(K.langOf(g))?'':' ru')+'">'+esc(K.langOf(g))+'</span>':'')+'</div>'+
+      '<div class="d">'+(g.late?'Стартовала <b>':'Старт <b>')+esc(g.startText)+'</b>'+(g.schedule?'<span class="sched">Разборы '+esc(g.schedule)+'</span>':'')+(g.curatorShort?'<span class="who">'+esc(K.withCur(g))+'</span>':'')+(K.langOf(g)?'<span class="lang'+(/украин/.test(K.langOf(g))?'':' ru')+'">'+esc(K.langOf(g))+'</span>':'')+'</div>'+
       '<div class="go">'+cta+'<a class="more" href="'+g.course+'/">Подробнее о курсе</a></div></div>';
   }).join('') || '<p class="lead">Сейчас нет открытых наборов — выберите курс ниже и нажмите «Сообщить мне о старте».</p>';
   // Автопрокрутка ближайших стартов (пауза при касании)
