@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="style.css?v=1794928126">
+<link rel="stylesheet" href="style.css?v=1794928441">
 </head>
 <body>
 <div class="page-bg" aria-hidden="true"></div>
@@ -141,8 +141,8 @@
 
 <div class="toast" id="toast"></div>
 <div class="lb" id="lb"><img alt=""></div>
-<script src="data.js?v=1794928126"></script>
-<script src="common.js?v=1794928126"></script>
+<script src="data.js?v=1794928441"></script>
+<script src="common.js?v=1794928441"></script>
 <script>
 (function(){
   var A = window.ACI, K = window.AK, esc = K.esc;
@@ -179,7 +179,7 @@
   function avas(cu){ if (cu.members) return '<span class="avas duo trio">'+cu.members.map(function(m){return ava1(m.name, m.photo)}).join('')+'</span>';
     return '<span class="avas'+(cu.co?' duo':'')+'">'+ava1(cu.name, cu.photo)+(cu.co?ava1(cu.co, cu.coPhoto):'')+'</span>'; }
   // Именные группы
-  document.getElementById('cgrid').innerHTML = A.curators.map(function(cu){
+  document.getElementById('cgrid').innerHTML = A.curators.filter(function(cu){ return !cu.single; }).map(function(cu){
     var gs = A.groups.filter(function(g){ return g.curator===cu.id; });
     var last = cu.track[cu.track.length-1], lg = gs.filter(function(x){ return x.course === last[0]; })[0];
     var lopen = lg && lg.state === 'open';
