@@ -163,6 +163,40 @@ b,strong{font-weight:800}
 .stars i{position:absolute;width:var(--s);height:var(--s);border-radius:50%;background:#fff6d6;box-shadow:0 0 8px rgba(243,217,145,.9);opacity:0;animation:tw var(--d) ease-in-out infinite;animation-delay:var(--dl)}
 @keyframes tw{0%,100%{opacity:0;transform:scale(.6)}50%{opacity:.9;transform:scale(1)}}
 
+
+/* dawn hero (own identity: parchment sunrise) */
+.dawn{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;overflow:hidden;color:#2a1418;
+  background:radial-gradient(ellipse 70% 55% at 50% 30%,rgba(255,236,170,.95) 0%,rgba(250,226,160,.55) 35%,rgba(244,230,196,0) 70%),
+  linear-gradient(180deg,#fbf6ea 0%,#f6ead0 55%,#efd9a6 100%)}
+.dawn::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.35;background-image:radial-gradient(rgba(107,36,48,.08) 1px,transparent 1px);background-size:22px 22px;-webkit-mask-image:linear-gradient(180deg,#000 0%,transparent 75%);mask-image:linear-gradient(180deg,#000 0%,transparent 75%)}
+.dawn-in{position:relative;z-index:2;width:100%;max-width:62rem;margin:0 auto;padding:104px var(--pad) 190px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px}
+.emblem{position:relative;width:clamp(190px,22vw,270px);aspect-ratio:1;display:grid;place-items:center;margin-bottom:6px}
+.emblem img{position:relative;z-index:2;width:100%;height:auto;filter:drop-shadow(0 18px 30px rgba(168,120,15,.28));animation:floaty 7s ease-in-out infinite alternate}
+.emblem .glow{position:absolute;inset:-30%;border-radius:50%;background:radial-gradient(circle,rgba(255,240,190,.95) 0%,rgba(243,217,145,.45) 40%,transparent 70%)}
+.emblem .ring{position:absolute;inset:0;border-radius:50%;border:1.5px solid rgba(168,120,15,.45);animation:ripple 8s linear infinite;opacity:0}
+.emblem .r2{animation-delay:2s}.emblem .r3{animation-delay:4s}.emblem .r4{animation-delay:6s}
+@keyframes ripple{0%{transform:scale(.95);opacity:0}12%{opacity:.8}100%{transform:scale(2.3);opacity:0}}
+.d-chip{display:inline-flex;padding:7px 16px;border-radius:999px;border:1px solid rgba(107,36,48,.25);background:rgba(255,255,255,.45);font-size:13.5px;font-weight:700;color:var(--burg);letter-spacing:.01em}
+.dawn h1{font-family:var(--serif);font-weight:600;font-size:clamp(48px,7.4vw,108px);line-height:.95;letter-spacing:-.01em;color:var(--burg)}
+.dawn h1 .pre{display:block;font-family:var(--sans);font-weight:700;font-size:clamp(13px,1.1vw,15px);letter-spacing:.45em;text-transform:uppercase;color:#a8780f;margin-bottom:14px;padding-left:.45em}
+.dawn h1 em{font-style:italic;background:linear-gradient(100deg,#a8780f 0%,#d8a330 45%,#8a3442 100%);-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.08em}
+.d-sub{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(21px,2.1vw,28px);color:#5a3a2e}
+.d-lead{max-width:40rem;font-size:17px;font-weight:500;line-height:1.65;color:#4a3a36}
+.d-facts{display:flex;flex-wrap:wrap;justify-content:center;margin-top:6px}
+.d-facts div{display:grid;padding:4px clamp(16px,2.6vw,34px);border-left:1px solid rgba(168,120,15,.45);line-height:1.2}
+.d-facts div:first-child{border-left:0}
+.d-facts b{font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1;font-family:var(--serif);font-weight:700;font-size:clamp(26px,2.6vw,36px);color:var(--burg)}
+.d-facts span{font-size:13px;font-weight:600;color:#7a6457;margin-top:4px}
+.d-ctas{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:10px}
+.btn-burg{background:linear-gradient(120deg,#8a3442,#6b2430);color:#fff6e0;box-shadow:0 14px 30px -12px rgba(107,36,48,.6)}
+.btn-burg:hover{box-shadow:0 18px 36px -10px rgba(107,36,48,.75),0 0 0 4px rgba(221,174,53,.35)}
+.ridge{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:clamp(90px,13vw,190px);z-index:1}
+.leaves{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:1}
+.leaves i{position:absolute;top:-30px;width:var(--s);height:calc(var(--s)*1.6);border-radius:0 100% 0 100%;background:linear-gradient(135deg,#f3d991,#c9982b);opacity:0;animation:leafFall var(--d) linear infinite;animation-delay:var(--dl)}
+@keyframes leafFall{0%{opacity:0;transform:translate(0,0) rotate(0)}10%{opacity:.75}85%{opacity:.5}100%{opacity:0;transform:translate(var(--dx),105vh) rotate(var(--r))}}
+@media (max-width:640px){.dawn-in{padding:92px var(--pad) 130px;gap:14px}.d-facts{display:grid;grid-template-columns:repeat(3,1fr);width:100%}.d-facts div{padding:4px 6px}.d-facts b{font-size:22px}.d-facts span{font-size:11.5px}.d-ctas .btn{width:100%}.d-lead{font-size:16px}}
+@media (prefers-reduced-motion:reduce){.leaves{display:none}.emblem .ring{display:none}}
+
 /* marquee */
 .ticker{position:relative;z-index:3;overflow:hidden;border-block:1px solid rgba(243,217,145,.25);background:rgba(12,22,32,.7);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
 .ticker-in{display:flex;width:max-content;animation:tick 48s linear infinite}
@@ -523,35 +557,33 @@ b,strong{font-weight:800}
 </nav>
 
 <main>
-  <!-- 01 hero -->
-  <section class="hero" id="top">
-    <div class="stars" id="stars" aria-hidden="true"></div>
-    <div class="hero-in">
-      <div class="hero-text">
-        <span class="chip"><i></i>Эндаумент-фонд Академии Классической Мудрости · с 2021 года</span>
-        <h1>Фонд <span class="grad">Вечной Мудрости</span></h1>
-        <p class="sub">Мудрость, которая переживёт нас всех</p>
-        <p class="lead">Как Гарвард, Оксфорд и Нобелевская премия, Академия создаёт фонд, который не тратится, а работает. Капитал остаётся навсегда — курсы ACI живут на доход от него. Сегодня, через сто лет и дольше.</p>
-        <div class="facts">
-          <div><b>140 400 $</b><span>баланс фонда</span></div>
-          <div><b>≈ 8%</b><span>годовых приносит капитал</span></div>
-          <div><b>3 000 000 $</b><span>наша цель</span></div>
-        </div>
-        <div class="ctas">
-          <a class="btn btn-gold" href="#support">Вложиться в вечность <span class="ar">→</span></a>
-          <a class="btn btn-ghost" href="#how">Как это работает</a>
-        </div>
+  <!-- 01 hero: dawn -->
+  <section class="dawn" id="top">
+    <div class="leaves" id="leaves" aria-hidden="true"></div>
+    <div class="dawn-in">
+      <div class="emblem" aria-hidden="true">
+        <span class="glow"></span>
+        <span class="ring r1"></span><span class="ring r2"></span><span class="ring r3"></span><span class="ring r4"></span>
+        <img src="img/logo.webp?v=3" width="640" height="616" alt="">
       </div>
-      <div class="hero-logo" aria-hidden="true">
-        <span class="halo"></span>
-        <svg class="orbit" viewBox="0 0 400 400">
-          <circle class="o1" cx="200" cy="200" r="196"/>
-          <circle class="dotp" r="5"><animateMotion dur="14s" repeatCount="indefinite" path="M200,4 a196,196 0 1,1 -0.1,0"/></circle>
-          <circle class="dotp" r="3" opacity=".7"><animateMotion dur="14s" begin="-7s" repeatCount="indefinite" path="M200,4 a196,196 0 1,1 -0.1,0"/></circle>
-        </svg>
-        <div class="disc"><img src="img/logo.webp?v=3" width="900" height="900" alt=""></div>
+      <span class="d-chip">Эндаумент-фонд Академии Классической Мудрости · с 2021 года</span>
+      <h1><span class="pre">Фонд</span>Вечной <em>Мудрости</em></h1>
+      <p class="d-sub">Мудрость, которая переживёт нас всех</p>
+      <p class="d-lead">Как Гарвард, Оксфорд и Нобелевская премия, Академия создаёт фонд, который не тратится, а работает. Капитал остаётся навсегда — курсы ACI живут на доход от него. Сегодня, через сто лет и дольше.</p>
+      <div class="d-facts">
+        <div><b>140 400 $</b><span>баланс фонда</span></div>
+        <div><b>≈ 8%</b><span>годовых приносит капитал</span></div>
+        <div><b>3 000 000 $</b><span>наша цель</span></div>
+      </div>
+      <div class="d-ctas">
+        <a class="btn btn-burg" href="#support">Вложиться в вечность <span class="ar">→</span></a>
+        <a class="btn btn-line-d" href="#how">Как это работает</a>
       </div>
     </div>
+    <svg class="ridge" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 220 V150 L330 40 L560 130 L760 70 L1050 175 L1240 120 L1440 165 V220 Z" fill="#0c1620"/>
+      <path d="M0 150 L330 40 L560 130 L760 70 L1050 175 L1240 120 L1440 165" fill="none" stroke="#6b2430" stroke-width="5" vector-effect="non-scaling-stroke"/>
+    </svg>
   </section>
 
   <div class="ticker" aria-hidden="true"><div class="ticker-in">
@@ -1028,9 +1060,9 @@ b,strong{font-weight:800}
 
   var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // twinkling stars in hero
-  var s=document.getElementById('stars');
-  if(s&&!reduce){for(var i=0;i<40;i++){var e=document.createElement('i');e.style.left=(Math.random()*100)+'%';e.style.top=(Math.random()*85)+'%';e.style.setProperty('--s',(2+Math.random()*3)+'px');e.style.setProperty('--d',(3+Math.random()*5)+'s');e.style.setProperty('--dl',(-Math.random()*6)+'s');s.appendChild(e);}}
+  // golden leaves drifting in the dawn hero
+  var lv=document.getElementById('leaves');
+  if(lv&&!reduce){for(var i=0;i<18;i++){var e=document.createElement('i');e.style.left=(Math.random()*100)+'%';e.style.setProperty('--s',(7+Math.random()*8)+'px');e.style.setProperty('--d',(12+Math.random()*12)+'s');e.style.setProperty('--dl',(-Math.random()*20)+'s');e.style.setProperty('--dx',(Math.random()*240-120)+'px');e.style.setProperty('--r',(Math.random()*540-270)+'deg');lv.appendChild(e);}}
 
   // lazy youtube
   document.querySelectorAll('.yt').forEach(function(b){
