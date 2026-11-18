@@ -163,7 +163,7 @@ b,strong{font-weight:800}
 .env::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 0%,rgba(243,217,145,.25),transparent 55%);pointer-events:none}
 .env-ph{position:relative;min-height:380px;background:radial-gradient(ellipse at 50% 70%,rgba(243,217,145,.38),rgba(221,174,53,.08) 55%,transparent 75%),rgba(26,16,18,.18);overflow:hidden}
 .env-people{position:absolute;left:0;right:0;bottom:0;width:100%;height:92%;object-fit:contain;object-position:50% 100%;filter:drop-shadow(0 20px 40px rgba(0,0,0,.45))}
-.env-art{position:absolute;top:22px;right:22px;z-index:2;width:clamp(74px,8vw,104px);aspect-ratio:3/4;border-radius:14px;background:linear-gradient(160deg,#c8323f,#9b1f2c);box-shadow:0 30px 50px -20px rgba(0,0,0,.6),inset 0 0 0 2px rgba(243,217,145,.5);overflow:hidden;animation:envFloat 5s ease-in-out infinite alternate}
+.env-art{position:absolute;top:22px;left:22px;z-index:2;width:clamp(74px,8vw,104px);aspect-ratio:3/4;border-radius:14px;background:linear-gradient(160deg,#c8323f,#9b1f2c);box-shadow:0 30px 50px -20px rgba(0,0,0,.6),inset 0 0 0 2px rgba(243,217,145,.5);overflow:hidden;animation:envFloat 5s ease-in-out infinite alternate}
 .env-flap{position:absolute;left:0;right:0;top:0;height:46%;background:linear-gradient(180deg,#b02a37,#8e1f2b);clip-path:polygon(0 0,100% 0,50% 100%);box-shadow:inset 0 -2px 0 rgba(243,217,145,.4)}
 .env-seal{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);width:44%;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,var(--gold-l),var(--gold) 60%,var(--gold-d));color:#7a1a24;font-family:var(--display);font-weight:800;font-size:clamp(11px,1vw,14px);box-shadow:0 0 24px rgba(221,174,53,.7)}
 @keyframes envFloat{from{transform:translateY(4px) rotate(-2deg)}to{transform:translateY(-6px) rotate(1deg)}}
@@ -172,7 +172,7 @@ b,strong{font-weight:800}
 .env-txt h3{font-size:clamp(22px,2.2vw,30px);color:var(--white)!important}
 .env-txt p{color:#f3dcd6!important;font-size:16.5px}
 .env-txt .env-last{font-family:var(--hand);font-size:clamp(22px,2vw,28px);line-height:1.15;color:var(--gold-l)!important}
-@media (max-width:900px){.env{grid-template-columns:1fr}.env-ph{min-height:0;aspect-ratio:1/1;max-height:560px}.env-people{height:auto;max-height:80%}.env-art{top:16px;right:16px}}
+@media (max-width:900px){.env{grid-template-columns:1fr}.env-ph{min-height:0;aspect-ratio:1/1;max-height:560px}.env-people{height:70%;max-height:none}.env-art{top:14px;left:14px}}
 
 /* lots */
 .lots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
@@ -490,7 +490,7 @@ var LOTS = [
    pay:'', rf:'', photos:['img/lot1-1.webp','img/lot1-2.webp']},
   {n:4, title:'Блокнот с&nbsp;ручкой и&nbsp;кошельком', origin:'Дрэгонсхед', min:5, btn:'Хочу блокнот',
    text:'Блокнот с&nbsp;ручкой из&nbsp;Дрэгонсхед, а&nbsp;к&nbsp;нему&nbsp;— чёрный кошелёк-конверт.',
-   pay:'', rf:'', photos:['img/lot2-1.webp','img/lot2-2.webp','img/lot2-4.webp']},
+   pay:'', rf:'', photos:['img/lot2-2.webp','img/lot2-1.webp','img/lot2-4.webp']},
   {n:5, title:'Карточки с&nbsp;личным посланием от&nbsp;учителей', origin:'Дрэгонсхед', min:3, btn:'Хочу карточки',
    text:'Набор открыток с&nbsp;видами Дрэгонсхед и&nbsp;личным посланием от&nbsp;учителей.',
    pay:'', rf:'', photos:['img/lot3-1.webp']},
