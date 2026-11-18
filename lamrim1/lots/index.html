@@ -165,16 +165,16 @@ b,strong{font-weight:800}
 .mq-track{display:flex;gap:12px;width:max-content;animation:mq 48s linear infinite}
 .mq:hover .mq-track{animation-play-state:paused}
 @keyframes mq{to{transform:translateX(-50%)}}
-.mq a{display:flex;align-items:center;gap:12px;padding:8px 18px 8px 8px;border-radius:999px;background:rgba(26,16,18,.62);border:1px solid rgba(243,217,145,.3);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transition:border-color .3s,background .3s}
+.mq a{display:flex;align-items:center;gap:14px;padding:8px 22px 8px 8px;border-radius:28px;background:rgba(26,16,18,.62);border:1px solid rgba(243,217,145,.3);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transition:border-color .3s,background .3s}
 .mq a:hover{border-color:var(--gold);background:rgba(105,35,45,.7)}
-.mq .th{width:56px;height:56px;border-radius:50%;background:#f7f2ed;overflow:hidden;flex-shrink:0;display:grid;place-items:center;color:var(--gold-d)}
-.mq .th img{width:100%;height:100%;object-fit:contain}
-.mq .th svg{width:28px;height:28px}
+.mq .th{width:92px;height:92px;border-radius:20px;background:linear-gradient(135deg,var(--gold-l),var(--gold));overflow:hidden;flex-shrink:0;display:grid;place-items:center;color:var(--burg);box-shadow:0 10px 24px -12px rgba(0,0,0,.6)}
+.mq .th img{width:100%;height:100%;object-fit:cover}
+.mq .th svg{width:40px;height:40px}
 .mq span{display:grid;line-height:1.25;white-space:nowrap}
-.mq b{font-size:14px;color:var(--white)}
-.mq small{font-size:13px;font-weight:700;color:var(--gold-l)}
+.mq b{font-size:15px;color:var(--white)}
+.mq small{font-size:14px;font-weight:700;color:var(--gold-l)}
 @media (prefers-reduced-motion: reduce){.mq{overflow-x:auto}}
-@media (max-width:640px){.mq .th{width:46px;height:46px}.mq b{font-size:13px}}
+@media (max-width:640px){.mq .th{width:72px;height:72px;border-radius:16px}.mq b{font-size:14px}}
 
 /* red envelope */
 .env{margin-top:16px;display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);border-radius:var(--r-card);overflow:hidden;background:linear-gradient(150deg,#8e1f2b 0%,#69232d 55%,#3a1219 100%);box-shadow:0 40px 80px -40px rgba(105,35,45,.7);position:relative}
@@ -501,19 +501,19 @@ var LOTS = [
   {n:1, short:'Термос с Гуаньинь', title:'Титановый термос с&nbsp;Гуаньинь и&nbsp;каллиграфией Геше Майкла', origin:'Малайзия · лимитированный выпуск', min:10, btn:'Хочу термос',
    text:'На&nbsp;лицевой стороне&nbsp;— Гуаньинь, на&nbsp;обратной&nbsp;— каллиграфия Геше Майкла Роуча «Шесть совершенств» на&nbsp;тибетском и&nbsp;его подпись красным. По&nbsp;всему термосу изображены 108&nbsp;Будд. Полностью из&nbsp;титана.',
    pay:'', rf:'', photos:[]},
-  {n:2, title:'Святая земля', origin:'Дрэгонсхед', min:5, btn:'Хочу святую землю',
+  {n:2, thumb:'img/thumb-lot2.webp', title:'Святая земля', origin:'Дрэгонсхед', min:5, btn:'Хочу святую землю',
    text:'Медальон-подвеска со&nbsp;святой землёй из&nbsp;Дрэгонсхед. С&nbsp;одной стороны&nbsp;— надпись, с&nbsp;другой&nbsp;— золотой дракон.',
    pay:'', rf:'', photos:['img/lot4-1.webp','img/lot4-2.webp']},
-  {n:3, title:'Шаль для медитации', origin:'Малайзия', min:5, btn:'Хочу шаль',
+  {n:3, thumb:'img/thumb-lot3.webp', title:'Шаль для медитации', origin:'Малайзия', min:5, btn:'Хочу шаль',
    text:'Шаль, подаренная нашим учителям на&nbsp;учениях в&nbsp;Малайзии. В&nbsp;родной шёлковой сумочке-упаковке.',
    pay:'', rf:'', photos:['img/lot1-1.webp','img/lot1-2.webp']},
-  {n:4, short:'Блокнот с ручкой', title:'Блокнот с&nbsp;ручкой и&nbsp;кошельком', origin:'Дрэгонсхед', min:5, btn:'Хочу блокнот',
+  {n:4, thumb:'img/thumb-lot4.webp', short:'Блокнот с ручкой', title:'Блокнот с&nbsp;ручкой и&nbsp;кошельком', origin:'Дрэгонсхед', min:5, btn:'Хочу блокнот',
    text:'Блокнот с&nbsp;ручкой из&nbsp;Дрэгонсхед, а&nbsp;к&nbsp;нему&nbsp;— чёрный кошелёк-конверт.',
    pay:'', rf:'', photos:['img/lot2-2.webp','img/lot2-1.webp','img/lot2-4.webp']},
-  {n:5, short:'Карточки от учителей', title:'Карточки с&nbsp;личным посланием от&nbsp;учителей', origin:'Дрэгонсхед', min:3, btn:'Хочу карточки',
+  {n:5, thumb:'img/thumb-lot5.webp', short:'Карточки от учителей', title:'Карточки с&nbsp;личным посланием от&nbsp;учителей', origin:'Дрэгонсхед', min:3, btn:'Хочу карточки',
    text:'Набор открыток с&nbsp;видами Дрэгонсхед и&nbsp;личным посланием от&nbsp;учителей.',
    pay:'', rf:'', photos:['img/lot3-1.webp']},
-  {n:6, title:'Запонки', origin:'Дрэгонсхед', min:5, btn:'Хочу запонки',
+  {n:6, thumb:'img/thumb-lot6.webp', title:'Запонки', origin:'Дрэгонсхед', min:5, btn:'Хочу запонки',
    text:'Запонки в&nbsp;фирменной упаковке Дрэгонсхед.',
    pay:'', rf:'', photos:['img/lot2-3.webp']}
 ];
@@ -542,7 +542,7 @@ var LOTS = [
   /* hero marquee */
   var mh=LOTS.map(function(l){
     var t=l.short||l.title.replace(/<[^>]+>/g,'');
-    return '<a href="#lot-'+l.n+'"><i class="th">'+(l.photos.length?'<img src="'+l.photos[0]+'" alt="" loading="lazy">':gift)+'</i><span><b>'+t+'</b><small>от '+l.min+'&nbsp;€</small></span></a>';
+    return '<a href="#lot-'+l.n+'"><i class="th">'+(l.thumb||l.photos.length?'<img src="'+(l.thumb||l.photos[0])+'" alt="" loading="lazy">':gift)+'</i><span><b>'+t+'</b><small>от '+l.min+'&nbsp;€</small></span></a>';
   }).join('');
   document.getElementById('mq').innerHTML=mh+mh.replace(/<a /g,'<a tabindex="-1" aria-hidden="true" ');
 
