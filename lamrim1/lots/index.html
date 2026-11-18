@@ -108,7 +108,7 @@ b,strong{font-weight:800}
 .bar-l b{color:var(--gold-l)}
 .goal ul{list-style:none;display:grid;gap:8px;border-top:1px solid var(--line-l);padding-top:16px}
 .goal li{display:flex;gap:12px;align-items:baseline;font-size:15px;color:var(--text-lm)}
-.goal li b{min-width:4.6em;font-family:var(--display);font-weight:600;font-size:14px}
+.goal li b{min-width:4.6em;white-space:nowrap;font-family:var(--display);font-weight:600;font-size:14px}
 
 /* sections */
 .mega-wrap{padding:0 clamp(8px,1.4vw,20px)}
@@ -157,6 +157,24 @@ b,strong{font-weight:800}
 .why-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 70%}
 .why-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,16,18,.85) 0%,rgba(105,35,45,.3) 45%,transparent 75%)}
 .why-photo figcaption{position:absolute;z-index:2;left:clamp(20px,3vw,36px);right:clamp(20px,3vw,36px);top:clamp(20px,3vw,32px);font-family:var(--display);font-weight:600;font-size:clamp(18px,1.8vw,24px);line-height:1.3;color:var(--white)}
+
+/* hero marquee */
+.hero{flex-direction:column;align-items:stretch}
+.hero-in{flex:1;align-content:center}
+.mq{position:relative;z-index:2;padding:0 0 calc(22px + env(safe-area-inset-bottom,0px));overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.mq-track{display:flex;gap:12px;width:max-content;animation:mq 48s linear infinite}
+.mq:hover .mq-track{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(-50%)}}
+.mq a{display:flex;align-items:center;gap:12px;padding:8px 18px 8px 8px;border-radius:999px;background:rgba(26,16,18,.62);border:1px solid rgba(243,217,145,.3);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transition:border-color .3s,background .3s}
+.mq a:hover{border-color:var(--gold);background:rgba(105,35,45,.7)}
+.mq .th{width:56px;height:56px;border-radius:50%;background:#f7f2ed;overflow:hidden;flex-shrink:0;display:grid;place-items:center;color:var(--gold-d)}
+.mq .th img{width:100%;height:100%;object-fit:contain}
+.mq .th svg{width:28px;height:28px}
+.mq span{display:grid;line-height:1.25;white-space:nowrap}
+.mq b{font-size:14px;color:var(--white)}
+.mq small{font-size:13px;font-weight:700;color:var(--gold-l)}
+@media (prefers-reduced-motion: reduce){.mq{overflow-x:auto}}
+@media (max-width:640px){.mq .th{width:46px;height:46px}.mq b{font-size:13px}}
 
 /* red envelope */
 .env{margin-top:16px;display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);border-radius:var(--r-card);overflow:hidden;background:linear-gradient(150deg,#8e1f2b 0%,#69232d 55%,#3a1219 100%);box-shadow:0 40px 80px -40px rgba(105,35,45,.7);position:relative}
@@ -318,6 +336,7 @@ b,strong{font-weight:800}
       </ul>
     </aside>
   </div>
+  <nav class="mq" aria-label="Лоты"><div class="mq-track" id="mq"></div></nav>
 </section>
 
 <!-- WHY -->
@@ -479,7 +498,7 @@ b,strong{font-weight:800}
 var GOAL = 5000;
 var RAISED = 0;
 var LOTS = [
-  {n:1, title:'Титановый термос с&nbsp;Гуаньинь и&nbsp;каллиграфией Геше Майкла', origin:'Малайзия · лимитированный выпуск', min:10, btn:'Хочу термос',
+  {n:1, short:'Термос с Гуаньинь', title:'Титановый термос с&nbsp;Гуаньинь и&nbsp;каллиграфией Геше Майкла', origin:'Малайзия · лимитированный выпуск', min:10, btn:'Хочу термос',
    text:'На&nbsp;лицевой стороне&nbsp;— Гуаньинь, на&nbsp;обратной&nbsp;— каллиграфия Геше Майкла Роуча «Шесть совершенств» на&nbsp;тибетском и&nbsp;его подпись красным. По&nbsp;всему термосу изображены 108&nbsp;Будд. Полностью из&nbsp;титана.',
    pay:'', rf:'', photos:[]},
   {n:2, title:'Святая земля', origin:'Дрэгонсхед', min:5, btn:'Хочу святую землю',
@@ -488,10 +507,10 @@ var LOTS = [
   {n:3, title:'Шаль для медитации', origin:'Малайзия', min:5, btn:'Хочу шаль',
    text:'Шаль, подаренная нашим учителям на&nbsp;учениях в&nbsp;Малайзии. В&nbsp;родной шёлковой сумочке-упаковке.',
    pay:'', rf:'', photos:['img/lot1-1.webp','img/lot1-2.webp']},
-  {n:4, title:'Блокнот с&nbsp;ручкой и&nbsp;кошельком', origin:'Дрэгонсхед', min:5, btn:'Хочу блокнот',
+  {n:4, short:'Блокнот с ручкой', title:'Блокнот с&nbsp;ручкой и&nbsp;кошельком', origin:'Дрэгонсхед', min:5, btn:'Хочу блокнот',
    text:'Блокнот с&nbsp;ручкой из&nbsp;Дрэгонсхед, а&nbsp;к&nbsp;нему&nbsp;— чёрный кошелёк-конверт.',
    pay:'', rf:'', photos:['img/lot2-2.webp','img/lot2-1.webp','img/lot2-4.webp']},
-  {n:5, title:'Карточки с&nbsp;личным посланием от&nbsp;учителей', origin:'Дрэгонсхед', min:3, btn:'Хочу карточки',
+  {n:5, short:'Карточки от учителей', title:'Карточки с&nbsp;личным посланием от&nbsp;учителей', origin:'Дрэгонсхед', min:3, btn:'Хочу карточки',
    text:'Набор открыток с&nbsp;видами Дрэгонсхед и&nbsp;личным посланием от&nbsp;учителей.',
    pay:'', rf:'', photos:['img/lot3-1.webp']},
   {n:6, title:'Запонки', origin:'Дрэгонсхед', min:5, btn:'Хочу запонки',
@@ -519,6 +538,13 @@ var LOTS = [
       +'</div></article>';
   });
   g.innerHTML=h;
+
+  /* hero marquee */
+  var mh=LOTS.map(function(l){
+    var t=l.short||l.title.replace(/<[^>]+>/g,'');
+    return '<a href="#lot-'+l.n+'"><i class="th">'+(l.photos.length?'<img src="'+l.photos[0]+'" alt="" loading="lazy">':gift)+'</i><span><b>'+t+'</b><small>от '+l.min+'&nbsp;€</small></span></a>';
+  }).join('');
+  document.getElementById('mq').innerHTML=mh+mh.replace(/<a /g,'<a tabindex="-1" aria-hidden="true" ');
 
   /* photo switcher */
   g.addEventListener('click',function(e){
