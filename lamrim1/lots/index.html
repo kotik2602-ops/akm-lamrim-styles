@@ -64,6 +64,11 @@ b,strong{font-weight:800}
 .btn-ghost::before{content:"";position:absolute;inset:0;background:var(--gold);transform:scaleX(0);transform-origin:left center;transition:transform .35s ease;z-index:-1}
 .btn-ghost:hover{color:var(--ink);border-color:var(--gold)}
 .btn-ghost:hover::before{transform:scaleX(1)}
+.btn-rose{background:linear-gradient(120deg,#c8323f,#8e1f2b);color:var(--white);border:1.5px solid rgba(243,217,145,.7);animation:rosePulse 2.8s ease-in-out .9s infinite}
+.btn-rose::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:38%;background:linear-gradient(100deg,rgba(255,220,220,0),rgba(255,230,230,.45),rgba(255,220,220,0));transform:skewX(-20deg);animation:btnShine 3.8s ease-in-out 1.2s infinite;pointer-events:none;z-index:1}
+.btn-rose:hover{animation:none;box-shadow:0 14px 34px -8px rgba(200,50,63,.8),0 0 0 4px rgba(243,217,145,.3)}
+.btn-rose .ar{color:var(--gold-l)}
+@keyframes rosePulse{0%,100%{box-shadow:0 10px 28px -10px rgba(200,50,63,.7),0 0 0 0 rgba(200,50,63,0)}50%{box-shadow:0 12px 34px -8px rgba(200,50,63,.85),0 0 0 7px rgba(200,50,63,.2)}}
 .btn-dark{background:var(--ink);color:var(--gold-l)}
 .btn-dark:hover{box-shadow:0 12px 30px -10px rgba(26,16,18,.7)}
 .ctas{display:flex;flex-wrap:wrap;gap:12px}
@@ -322,7 +327,7 @@ b,strong{font-weight:800}
       <p class="lead">Помогите нам организовать учения «Медитация&nbsp;Pro» с&nbsp;Питером и&nbsp;Марией Мёртл&nbsp;— первые учения нового цикла Ламрима. Сделайте взнос, выберите лот и&nbsp;участвуйте в&nbsp;розыгрыше особых подарков от&nbsp;учителей.</p>
       <div class="ctas">
         <a class="btn btn-gold" href="#lots">Выбрать лот <span class="ar">→</span></a>
-        <a class="btn btn-ghost" href="#donate">Просто поддержать</a>
+        <a class="btn btn-rose" href="#donate">Просто поддержать <span class="ar">♥</span></a>
       </div>
     </div>
     <aside class="goal" aria-label="Цель сбора">
