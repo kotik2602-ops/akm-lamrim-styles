@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Лоты в поддержку Ламрима</title>
+<meta name="description" content="Благотворительный сбор в поддержку учений «Медитация Pro» с Питером и Марией Мёртл, 19–21 декабря, Вена + онлайн. Сделайте взнос, выберите лот и участвуйте в розыгрыше.">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Лоты в поддержку Ламрима">
+<meta property="og:description" content="Благотворительный сбор в поддержку учений «Медитация Pro» с Питером и Марией Мёртл. Цель — 5 000 €.">
+<meta property="og:image" content="../img/rainbow-hd.jpg">
+<meta name="theme-color" content="#1a1012">
+<link rel="icon" type="image/png" href="../img/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap">
+<style>
+:root{
+  color-scheme: dark;
+  --ink:#1a1012;--ink-2:#24161a;--ink-3:#2f1d22;
+  --burg:#69232d;--burg-2:#8a3340;
+  --gold:#ddae35;--gold-d:#a8780f;--gold-l:#f3d991;
+  --rose:#e8b9a8;--rose-l:#f6dcd2;
+  --cream:#f5efe6;--cream-2:#ece3d5;--white:#fffdf9;
+  --text-d:#1f1416;--text-dm:#5a4649;--text-l:#f7efe6;--text-lm:#cdbdb7;
+  --line-l:rgba(247,239,230,.14);--line-d:rgba(31,20,22,.13);
+  --r-mega:40px;--r-card:28px;
+  --pad:clamp(16px,4vw,56px);
+  --display:'Unbounded',system-ui,sans-serif;
+  --sans:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --hand:'Caveat',cursive;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--ink);color:var(--text-l);font-family:var(--sans);font-size:17px;font-weight:500;line-height:1.62;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:76rem;margin:0 auto;padding:0 var(--pad)}
+.grad{background:linear-gradient(100deg,var(--gold-l) 0%,var(--gold) 40%,var(--rose) 100%);-webkit-background-clip:text;background-clip:text;color:transparent!important}
+.cream .grad{background-image:linear-gradient(100deg,var(--burg) 0%,var(--burg-2) 50%,var(--gold-d) 100%)}
+.eyebrow{font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.cream .eyebrow{color:var(--gold-d)}
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-.02em;line-height:1.1;text-wrap:balance}
+h2{font-size:clamp(28px,3.4vw,52px)}
+h3{font-size:clamp(18px,1.6vw,22px);line-height:1.2}
+p,li{min-width:0}
+b,strong{font-weight:800}
+.cream b{color:var(--burg)}
+.dark b,.burgm b{color:var(--gold-l)}
+.prose{display:grid;gap:14px;max-width:44rem}
+
+/* buttons */
+.btn{position:relative;overflow:hidden;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font-family:var(--sans);font-weight:800;font-size:15px;line-height:1.2;text-align:center;cursor:pointer;border:0;transition:transform .25s ease,box-shadow .3s ease,color .3s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn .ar{font-family:var(--display);font-weight:500}
+.btn-gold{background:linear-gradient(120deg,var(--gold-l),var(--gold));color:var(--ink);animation:btnPulse 2.8s ease-in-out infinite}
+.btn-gold::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:38%;background:linear-gradient(100deg,rgba(255,250,230,0),rgba(255,250,230,.75),rgba(255,250,230,0));transform:skewX(-20deg);animation:btnShine 3.8s ease-in-out infinite;pointer-events:none;z-index:1}
+.btn-gold:hover{animation:none;box-shadow:0 14px 34px -8px rgba(221,174,53,.8),0 0 0 4px rgba(243,217,145,.35)}
+@keyframes btnPulse{0%,100%{box-shadow:0 10px 28px -10px rgba(221,174,53,.7),0 0 0 0 rgba(221,174,53,0)}50%{box-shadow:0 12px 34px -8px rgba(221,174,53,.85),0 0 0 7px rgba(221,174,53,.18)}}
+@keyframes btnShine{0%,62%{left:-60%}100%{left:130%}}
+.btn-ghost{border:1.5px solid rgba(247,239,230,.5);color:var(--text-l);background:rgba(26,16,18,.25);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.btn-ghost::before{content:"";position:absolute;inset:0;background:var(--gold);transform:scaleX(0);transform-origin:left center;transition:transform .35s ease;z-index:-1}
+.btn-ghost:hover{color:var(--ink);border-color:var(--gold)}
+.btn-ghost:hover::before{transform:scaleX(1)}
+.btn-dark{background:var(--ink);color:var(--gold-l)}
+.btn-dark:hover{box-shadow:0 12px 30px -10px rgba(26,16,18,.7)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+
+/* header */
+.hdr{position:fixed;top:0;left:0;right:0;z-index:50;padding:calc(12px + env(safe-area-inset-top,0px)) var(--pad) 0;pointer-events:none}
+.hdr-in{pointer-events:auto;max-width:80rem;margin:0 auto;display:flex;align-items:center;gap:14px;background:rgba(26,16,18,.84);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(247,239,230,.1);border-radius:999px;padding:7px 7px 7px 14px;box-shadow:0 14px 40px -20px rgba(0,0,0,.6)}
+.brand{display:flex;align-items:center;gap:10px;min-width:0;flex-shrink:0}
+.brand img{width:44px;height:33px}
+.brand-txt{display:grid;line-height:1.2}
+.brand-txt b{font-family:var(--display);font-weight:600;font-size:12.5px;color:var(--white);white-space:nowrap}
+.brand-txt span{font-size:11.5px;color:var(--text-lm);white-space:nowrap}
+.dnav{display:flex;gap:20px;font-size:14px;font-weight:700;color:var(--text-lm);margin-left:auto;white-space:nowrap}
+.dnav a:hover{color:var(--gold-l)}
+.hdr .btn{min-height:42px;padding:0 20px;font-size:14px;flex-shrink:0;animation:none;box-shadow:0 6px 18px -8px rgba(221,174,53,.7)}
+@media (max-width:1000px){.dnav{display:none}.hdr .btn{margin-left:auto}}
+@media (max-width:560px){.brand-txt{display:none}}
+
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 40%;animation:drift 24s ease-in-out infinite alternate}
+.hero-bg::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(180deg,rgba(105,35,45,.62) 0%,rgba(221,174,53,.12) 30%,rgba(26,16,18,.5) 58%,rgba(26,16,18,.9) 84%,var(--ink) 100%),
+  linear-gradient(90deg,rgba(26,16,18,.7) 0%,rgba(26,16,18,.3) 60%,rgba(26,16,18,.1) 100%)}
+@keyframes drift{from{transform:scale(1.04)}to{transform:scale(1.12) translateY(-1.5%)}}
+.hero-in{position:relative;z-index:2;max-width:80rem;width:100%;margin:0 auto;padding:116px var(--pad) 64px;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(28px,4vw,64px);align-items:center}
+.hero-text{display:grid;gap:18px;justify-items:start}
+.with{display:inline-flex;align-items:center;gap:10px;padding:8px 18px;border-radius:999px;background:rgba(26,16,18,.5);border:1px solid rgba(243,217,145,.4);font-size:14px;font-weight:700;color:var(--gold-l);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.with i{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px var(--gold)}
+.hero h1{font-size:clamp(32px,4vw,60px);font-weight:800;color:var(--white);line-height:1.04;text-shadow:0 6px 40px rgba(26,16,18,.45)}
+.hand{font-family:var(--hand);font-weight:700;font-size:clamp(26px,2.6vw,36px);line-height:1;color:var(--gold-l);transform:rotate(-2deg)}
+.hero .lead{max-width:36rem;color:#fff;font-size:17.5px;font-weight:600;text-shadow:0 2px 14px rgba(26,16,18,.85)}
+
+/* goal card */
+.goal{border-radius:var(--r-card);padding:clamp(24px,3vw,36px);background:rgba(26,16,18,.72);border:1px solid rgba(243,217,145,.35);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 40px 90px -30px rgba(0,0,0,.75);display:grid;gap:18px}
+.goal .sum{font-family:var(--display);font-weight:800;font-size:clamp(46px,5.4vw,76px);line-height:1;letter-spacing:-.03em}
+.goal .sum small{display:block;font-family:var(--sans);font-size:14px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-lm);margin-bottom:10px}
+.bar{height:14px;border-radius:999px;background:rgba(247,239,230,.1);overflow:hidden}
+.bar i{display:block;height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,var(--burg-2),var(--gold),var(--gold-l));box-shadow:0 0 18px rgba(221,174,53,.7);transition:width 1.8s cubic-bezier(.2,.7,.2,1)}
+.bar-l{display:flex;justify-content:space-between;gap:12px;font-size:14px;color:var(--text-lm);margin-top:-8px}
+.bar-l b{color:var(--gold-l)}
+.goal ul{list-style:none;display:grid;gap:8px;border-top:1px solid var(--line-l);padding-top:16px}
+.goal li{display:flex;gap:12px;align-items:baseline;font-size:15px;color:var(--text-lm)}
+.goal li b{min-width:4.6em;font-family:var(--display);font-weight:600;font-size:14px}
+
+/* sections */
+.mega-wrap{padding:0 clamp(8px,1.4vw,20px)}
+.mega{border-radius:var(--r-mega);margin:clamp(10px,1.4vw,20px) auto;max-width:1440px;position:relative}
+.cream{background:var(--cream);color:var(--text-d)}
+.burgm{background:linear-gradient(170deg,#3a1219 0%,var(--ink-2) 55%,var(--ink) 100%);color:var(--text-l)}
+.sec{padding:clamp(60px,8vw,112px) 0;scroll-margin-top:84px;position:relative}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:18px 40px;flex-wrap:wrap;margin-bottom:clamp(30px,4vw,48px)}
+.sec-head > div{max-width:46rem;min-width:0}
+.sec-head h2{margin-top:14px}
+.sec-head > p{max-width:26rem;font-size:16px;color:var(--text-dm)}
+.dark .sec-head > p,.burgm .sec-head > p{color:var(--text-lm)}
+.cream p,.cream li{color:var(--text-dm)}
+.cream h3{color:var(--text-d)}
+.dark p,.dark li,.burgm p,.burgm li{color:var(--text-lm)}
+.dark h3,.burgm h3{color:var(--text-l)}
+
+.card{border-radius:var(--r-card);padding:clamp(24px,3vw,40px);min-width:0;position:relative}
+.card-w{background:var(--white);box-shadow:0 30px 60px -40px rgba(105,35,45,.35)}
+.card-k{background:linear-gradient(160deg,var(--ink-3) 0%,var(--ink) 75%);color:var(--text-l);overflow:hidden}
+.card-k::before{content:"";position:absolute;width:320px;height:320px;right:-120px;top:-120px;border-radius:50%;background:radial-gradient(circle,rgba(221,174,53,.32),transparent 65%);pointer-events:none}
+.card-k > *{position:relative}
+.cream .card-k p,.cream .card-k li{color:var(--text-lm)}
+.cream .card-k b{color:var(--gold-l)}
+.cream .card-k h3{color:var(--text-l)}
+.tag{display:inline-flex;align-items:center;padding:7px 15px;border-radius:999px;font-weight:800;font-size:13px;line-height:1.2;letter-spacing:.02em}
+.t-gold{background:linear-gradient(120deg,#f8e6b4,#f3cfc0);color:var(--burg)}
+.t-burg{background:var(--burg);color:var(--gold-l)}
+.t-dark{background:var(--ink);color:var(--cream)}
+.dots{list-style:none;display:flex;flex-direction:column}
+.dots li{display:flex;align-items:flex-start;gap:14px;padding:12px 0;border-bottom:1px solid var(--line-d);font-weight:600}
+.card-k .dots li,.burgm .dots li{border-bottom-color:var(--line-l)}
+.dots li:last-child{border-bottom:0}
+.dots li::before{content:"";flex-shrink:0;margin-top:8px;width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--burg))}
+.card-k .dots li::before,.burgm .dots li::before{background:linear-gradient(135deg,var(--gold-l),var(--gold))}
+.callout{font-family:var(--display);font-weight:600;font-size:clamp(19px,2vw,26px);line-height:1.32;letter-spacing:-.015em}
+.callout-box{margin-top:clamp(20px,3vw,32px);border-radius:var(--r-card);padding:clamp(24px,3.4vw,40px);position:relative;overflow:hidden}
+.cream .callout-box{background:linear-gradient(120deg,#f8e6b4 0%,#f3cfc0 100%);color:var(--burg)}
+.burgm .callout-box,.dark .callout-box{background:linear-gradient(120deg,rgba(221,174,53,.16),rgba(232,185,168,.08));border:1px solid rgba(221,174,53,.35);color:var(--text-l)}
+.callout-box::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:linear-gradient(180deg,var(--gold),var(--burg))}
+.callout-box p.callout{color:inherit}
+
+/* why */
+.why-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:16px;align-items:stretch}
+.why-photo{position:relative;border-radius:var(--r-card);overflow:hidden;min-height:420px}
+.why-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.why-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(26,16,18,.85) 0%,rgba(105,35,45,.25) 45%,transparent 75%)}
+.why-photo figcaption{position:absolute;z-index:2;left:clamp(20px,3vw,36px);right:clamp(20px,3vw,36px);bottom:clamp(20px,3vw,32px);font-family:var(--display);font-weight:600;font-size:clamp(18px,1.8vw,24px);line-height:1.3;color:var(--white)}
+
+/* red envelope */
+.env{margin-top:16px;display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);border-radius:var(--r-card);overflow:hidden;background:linear-gradient(150deg,#8e1f2b 0%,#69232d 55%,#3a1219 100%);box-shadow:0 40px 80px -40px rgba(105,35,45,.7);position:relative}
+.env::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 0%,rgba(243,217,145,.25),transparent 55%);pointer-events:none}
+.env-ph{position:relative;min-height:380px;background:radial-gradient(ellipse at 50% 70%,rgba(243,217,145,.38),rgba(221,174,53,.08) 55%,transparent 75%),rgba(26,16,18,.18);overflow:hidden}
+.env-people{position:absolute;left:0;right:0;bottom:0;width:100%;height:92%;object-fit:contain;object-position:50% 100%;filter:drop-shadow(0 20px 40px rgba(0,0,0,.45))}
+.env-art{position:absolute;top:22px;right:22px;z-index:2;width:clamp(74px,8vw,104px);aspect-ratio:3/4;border-radius:14px;background:linear-gradient(160deg,#c8323f,#9b1f2c);box-shadow:0 30px 50px -20px rgba(0,0,0,.6),inset 0 0 0 2px rgba(243,217,145,.5);overflow:hidden;animation:envFloat 5s ease-in-out infinite alternate}
+.env-flap{position:absolute;left:0;right:0;top:0;height:46%;background:linear-gradient(180deg,#b02a37,#8e1f2b);clip-path:polygon(0 0,100% 0,50% 100%);box-shadow:inset 0 -2px 0 rgba(243,217,145,.4)}
+.env-seal{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);width:44%;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,var(--gold-l),var(--gold) 60%,var(--gold-d));color:#7a1a24;font-family:var(--display);font-weight:800;font-size:clamp(11px,1vw,14px);box-shadow:0 0 24px rgba(221,174,53,.7)}
+@keyframes envFloat{from{transform:translateY(4px) rotate(-2deg)}to{transform:translateY(-6px) rotate(1deg)}}
+.env-txt{position:relative;padding:clamp(26px,3.4vw,44px);display:grid;gap:14px;align-content:center}
+.env-txt .eyebrow{color:var(--gold-l)!important}
+.env-txt h3{font-size:clamp(22px,2.2vw,30px);color:var(--white)!important}
+.env-txt p{color:#f3dcd6!important;font-size:16.5px}
+.env-txt .env-last{font-family:var(--hand);font-size:clamp(22px,2vw,28px);line-height:1.15;color:var(--gold-l)!important}
+@media (max-width:900px){.env{grid-template-columns:1fr}.env-ph{min-height:0;aspect-ratio:1/1;max-height:560px}.env-people{height:auto;max-height:80%}.env-art{top:16px;right:16px}}
+
+/* lots */
+.lots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.lot{display:flex;flex-direction:column;border-radius:var(--r-card);background:var(--white);box-shadow:0 30px 60px -40px rgba(105,35,45,.45);overflow:hidden;min-width:0;opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease,box-shadow .35s ease}
+.lot.in{opacity:1;transform:none}
+.lot:hover{box-shadow:0 36px 70px -36px rgba(105,35,45,.6)}
+.lot-ph{position:relative;aspect-ratio:4/5;background:#f7f2ed;overflow:hidden}
+.lot-ph img{width:100%;height:100%;object-fit:contain;transition:transform .6s ease,opacity .4s ease}
+.lot:hover .lot-ph img{transform:scale(1.04)}
+.lot-ph img[hidden]{display:none}
+.lot-ph.multi img{cursor:pointer}
+.lot-ph .ph-empty{position:absolute;inset:14px;border-radius:20px;border:1.5px dashed rgba(105,35,45,.25);display:grid;place-items:center;text-align:center;background:radial-gradient(circle at 50% 40%,#fbf3e3 0%,var(--cream) 70%);color:var(--text-dm);font-size:13px;font-weight:700}
+.ph-empty svg{display:block;width:64px;height:64px;margin:0 auto 10px;color:var(--gold-d)}
+.lot-n{position:absolute;top:16px;left:16px;z-index:2}
+.lot-ph .dots-nav{position:absolute;bottom:12px;left:0;right:0;display:flex;justify-content:center;gap:6px;z-index:2}
+.dots-nav button{width:9px;height:9px;border-radius:50%;border:0;background:rgba(105,35,45,.25);cursor:pointer;padding:0}
+.dots-nav button.on{background:var(--burg)}
+.lot-b{display:flex;flex-direction:column;gap:12px;padding:22px 24px 26px;flex:1}
+.lot-b h3{color:var(--text-d)}
+.lot-b p{font-size:15.5px;line-height:1.55;color:var(--text-dm)}
+.lot-b .origin{font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--gold-d)}
+.lot-price{margin-top:auto;padding-top:14px;border-top:1px solid var(--line-d);display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.lot-price b{font-family:var(--display);font-size:30px;font-weight:700;line-height:1;color:var(--burg)}
+.lot-price span{font-size:14px;color:var(--text-dm)}
+.lot .btn{width:100%}
+.lot.feature{grid-column:span 1}
+.lots-note{margin-top:22px;text-align:center;font-size:15px;color:var(--text-dm)}
+
+/* steps */
+.steps{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;counter-reset:s}
+.steps li{border-radius:24px;padding:24px 22px;background:rgba(47,29,34,.82);border:1px solid var(--line-l);counter-increment:s;display:grid;gap:10px;align-content:start}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--gold-l),var(--gold));color:var(--ink);font-family:var(--display);font-weight:700;font-size:15px}
+.steps li b{font-family:var(--display);font-weight:600;font-size:17px;line-height:1.25;color:var(--text-l)}
+.steps li span{font-size:15px;color:var(--text-lm)}
+
+/* prize */
+.prize{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:16px;align-items:stretch}
+.ticket{position:relative;border-radius:var(--r-card);padding:clamp(28px,3.4vw,44px);background:linear-gradient(135deg,#f8e6b4 0%,#f3cfc0 55%,#e8b9a8 100%);color:var(--burg);overflow:hidden;display:grid;align-content:center;gap:14px;min-height:340px}
+.ticket::before,.ticket::after{content:"";position:absolute;top:50%;width:44px;height:44px;margin-top:-22px;border-radius:50%;background:var(--cream)}
+.ticket::before{left:-22px}.ticket::after{right:-22px}
+.ticket .perf{position:absolute;top:24px;bottom:24px;right:30%;border-left:2px dashed rgba(105,35,45,.3)}
+.ticket .t1{font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+.ticket .t2{font-family:var(--display);font-weight:800;font-size:clamp(26px,3vw,40px);line-height:1.05;letter-spacing:-.02em;max-width:11em}
+.ticket .t3{font-family:var(--hand);font-weight:700;font-size:28px;line-height:1}
+.ticket .shine{position:absolute;inset:0;background:linear-gradient(110deg,rgba(255,255,255,0) 35%,rgba(255,255,255,.55) 50%,rgba(255,255,255,0) 65%);background-size:260% 100%;animation:tShine 5s ease-in-out infinite;pointer-events:none}
+@keyframes tShine{0%{background-position:160% 0}60%,100%{background-position:-60% 0}}
+
+/* just donate */
+.donate{display:grid;grid-template-columns:minmax(0,1.2fr) auto;gap:24px 40px;align-items:center}
+.donate .ctas{justify-content:flex-end}
+
+/* faq */
+.faq-wrap{max-width:56rem}
+.faq{display:grid;gap:10px}
+.faq details{border-radius:24px;background:var(--ink-3);border:1px solid var(--line-l);transition:background .3s ease,border-color .3s ease}
+.faq details[open]{background:linear-gradient(160deg,#3a1f25,var(--ink-3));border-color:rgba(221,174,53,.4)}
+.faq summary{cursor:pointer;list-style:none;padding:20px 64px 20px 26px;position:relative;font-weight:800;font-size:17px;line-height:1.4;color:var(--text-l)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:rgba(247,239,230,.08);color:var(--gold);font-family:var(--display);font-size:18px;font-weight:500}
+.faq details[open] summary::after{content:"−";background:var(--gold);color:var(--ink)}
+.faq .ans{padding:0 26px 22px;display:grid;gap:12px;max-width:46rem}
+.faq .ans p{color:var(--text-lm)}
+
+/* final */
+.final{position:relative;overflow:hidden;text-align:center}
+.final::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(221,174,53,.22),transparent 60%),radial-gradient(ellipse at 50% 100%,rgba(105,35,45,.5),transparent 60%);pointer-events:none}
+.final .wrap{position:relative;max-width:52rem;display:grid;gap:20px;justify-items:center}
+.final h2{font-size:clamp(28px,3.6vw,52px)}
+.final p{color:var(--text-l);font-size:18px}
+.final .hand{transform:none}
+
+/* footer */
+.ftr{padding:48px var(--pad) calc(44px + env(safe-area-inset-bottom,0px));text-align:center;color:var(--text-lm);font-size:14px;display:grid;gap:8px;justify-items:center;border-top:1px solid var(--line-l)}
+.ftr img{width:112px;height:112px;margin-bottom:8px;padding:8px;border-radius:28px;background:var(--cream)}
+.ftr a{color:var(--gold-l);text-decoration:underline;text-underline-offset:3px}
+
+/* sparkles over goal */
+.spark{position:absolute;width:6px;height:6px;border-radius:50%;background:var(--gold-l);box-shadow:0 0 12px var(--gold);opacity:0;animation:rise var(--d) linear var(--dl) infinite;pointer-events:none}
+@keyframes rise{0%{opacity:0;transform:translateY(0) scale(.6)}15%{opacity:.9}100%{opacity:0;transform:translateY(-260px) scale(1)}}
+
+@media (max-width:1060px){
+  .lots{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:900px){
+  .hero-in{grid-template-columns:1fr;padding-top:104px}
+  .why-grid,.prize,.donate{grid-template-columns:1fr}
+  .why-photo{min-height:320px}
+  .donate .ctas{justify-content:flex-start}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  :root{--r-mega:28px;--r-card:24px}
+  .lots,.steps{grid-template-columns:1fr}
+  .hdr .btn{padding:0 16px;font-size:13px}
+  .ticket .perf{display:none}
+}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .lot{opacity:1;transform:none}
+}
+</style>
+</head>
+<body id="top">
+
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="/lamrim1/"><img src="../img/logo-mark.png" width="160" height="120" alt="Академия Классической Мудрости"><span class="brand-txt"><b>Лоты в поддержку Ламрима</b><span>19–21 декабря · Вена + онлайн</span></span></a>
+    <nav class="dnav" aria-label="Разделы">
+      <a href="#why">Зачем</a>
+      <a href="#lots">Лоты</a>
+      <a href="#how">Как участвовать</a>
+      <a href="#prize">Главный приз</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <a class="btn btn-gold" href="#lots">Выбрать лот</a>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"><img src="../img/rainbow-hd.jpg" width="1400" height="1050" alt=""></div>
+  <div class="hero-in">
+    <div class="hero-text">
+      <span class="with"><i></i>Благотворительный сбор</span>
+      <h1>Лоты в&nbsp;поддержку <span class="grad">Ламрима</span></h1>
+      <p class="hand">каждый вклад — семя для&nbsp;учений</p>
+      <p class="lead">Помогите нам организовать учения «Медитация&nbsp;Pro» с&nbsp;Питером и&nbsp;Марией Мёртл&nbsp;— первые учения нового цикла Ламрима. Сделайте взнос, выберите лот и&nbsp;участвуйте в&nbsp;розыгрыше особых подарков от&nbsp;учителей.</p>
+      <div class="ctas">
+        <a class="btn btn-gold" href="#lots">Выбрать лот <span class="ar">→</span></a>
+        <a class="btn btn-ghost" href="#donate">Просто поддержать</a>
+      </div>
+    </div>
+    <aside class="goal" aria-label="Цель сбора">
+      <div class="sum"><small>Цель сбора</small><span class="grad">5&nbsp;000&nbsp;€</span></div>
+      <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="5000" aria-valuenow="0"><i id="bar"></i></div>
+      <div class="bar-l"><span id="raised-l">Сбор открыт</span><span>до&nbsp;учений 19–21&nbsp;декабря</span></div>
+      <ul>
+        <li><b>6 лотов</b><span>подарки, привезённые учителями</span></li>
+        <li><b>от 3&nbsp;€</b><span>взнос для&nbsp;участия в&nbsp;розыгрыше</span></li>
+        <li><b>Вена</b><span>розыгрыш вживую на&nbsp;учениях</span></li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<!-- WHY -->
+<div class="mega-wrap">
+<section class="mega cream sec" id="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">Зачем мы это делаем</p><h2>Чтобы учения <span class="grad">состоялись</span> для&nbsp;всех</h2></div>
+      <p>19–21 декабря Питер и&nbsp;Мария Мёртл открывают в&nbsp;Вене новый большой цикл учений по&nbsp;Ламриму. Учения проходят вживую и&nbsp;онлайн.</p>
+    </div>
+    <div class="why-grid">
+      <div class="card card-w prose">
+        <p>Организация таких учений&nbsp;— это аренда зала, организация онлайн-трансляции и&nbsp;множество разных задач, которые команда берёт на&nbsp;себя, чтобы эти учения прошли лучшим образом для&nbsp;всех.</p>
+        <p>Мы&nbsp;хотим, чтобы учения оставались доступными для&nbsp;каждого, кто стремится к&nbsp;мудрости Ламрима. Поэтому вместо повышения стоимости участия мы&nbsp;приглашаем всех, кому дорог этот путь, поддержать организацию встречи и&nbsp;стать её со-творцами.</p>
+        <ul class="dots">
+          <li>Собранные средства будут направлены на&nbsp;проведение учений Ламрима №&nbsp;1 в&nbsp;Вене 19–21&nbsp;декабря.</li>
+          <li>Каждое пожертвование&nbsp;— это вклад в&nbsp;то, чтобы учения Ламрима продолжались и&nbsp;становились доступными ещё большему числу людей.</li>
+        </ul>
+      </div>
+      <figure class="why-photo">
+        <img src="../img/live-hall.jpg" width="1400" height="1054" alt="Зал на учениях Академии Классической Мудрости" loading="lazy">
+        <figcaption>Поддерживая учения, мы&nbsp;создаём причины, чтобы и&nbsp;нас всегда окружали учителя и&nbsp;мудрость.</figcaption>
+      </figure>
+    </div>
+    <div class="env" id="envelope">
+      <figure class="env-ph">
+        <img class="env-people" src="img/teachers-env.webp" width="900" height="698" alt="Питер и Мария Мёртл" loading="lazy">
+        <div class="env-art" aria-hidden="true"><span class="env-flap"></span><span class="env-seal">10%</span></div>
+      </figure>
+      <div class="env-txt">
+        <p class="eyebrow">10% сбора</p>
+        <h3>Красный конверт&nbsp;— наша благодарность</h3>
+        <p>По&nbsp;древней традиции ученики выражают благодарность за&nbsp;учение подношением Учителю. 10% от&nbsp;всего, что мы&nbsp;соберём вместе, войдут в&nbsp;красный конверт для&nbsp;Питера и&nbsp;Марии Мёртл.</p>
+        <p>Учитель для&nbsp;нас&nbsp;— высочайший кармический объект. Даже небольшой вклад в&nbsp;это подношение сажает в&nbsp;уме невероятные семена изобилия. И&nbsp;это причина, чтобы Учителя и&nbsp;дальше оставались с&nbsp;нами, а&nbsp;их мудрость была рядом всегда.</p>
+        <p class="env-last">Участвуя в&nbsp;сборе, вы&nbsp;становитесь частью этого общего подношения.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- LOTS -->
+<div class="mega-wrap">
+<section class="mega cream sec" id="lots" style="background:var(--cream-2)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">Лоты</p><h2>Выберите лот и&nbsp;<span class="grad">участвуйте</span></h2></div>
+      <p>Это особые вещи, связанные с&nbsp;нашими учителями и&nbsp;местами учений. Каждый лот&nbsp;— в&nbsp;единственном экземпляре.</p>
+    </div>
+    <div class="lots" id="lots-grid"></div>
+    <p class="lots-note">Чем больше ваш взнос, тем больше шансов: каждая сумма, равная минимальному взносу, даёт ещё один билет в&nbsp;розыгрыше лота.</p>
+  </div>
+</section>
+</div>
+
+<!-- HOW -->
+<div class="mega-wrap">
+<section class="mega burgm sec" id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">Как принять участие</p><h2>Четыре простых <span class="grad">шага</span></h2></div>
+    </div>
+    <ol class="steps">
+      <li><b>Выберите лот</b><span>Тот, что откликается сердцу. Можно участвовать сразу в&nbsp;нескольких.</span></li>
+      <li><b>Сделайте взнос</b><span>Нажмите кнопку под лотом и&nbsp;оплатите любую сумму от&nbsp;минимальной.</span></li>
+      <li><b>Получите билеты</b><span>Ваше имя попадает в&nbsp;список участников розыгрыша этого лота.</span></li>
+      <li><b>Узнайте результат</b><span>Победителей объявим вживую на&nbsp;учениях в&nbsp;Вене и&nbsp;опубликуем в&nbsp;наших каналах.</span></li>
+    </ol>
+    <div class="callout-box">
+      <p class="callout">Все участники лотов автоматически участвуют в&nbsp;розыгрыше <span class="grad">главного приза</span>&nbsp;— если вместе мы&nbsp;соберём 5&nbsp;000&nbsp;€.</p>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- PRIZE -->
+<div class="mega-wrap">
+<section class="mega cream sec" id="prize">
+  <div class="wrap">
+    <div class="prize">
+      <div class="ticket">
+        <span class="perf"></span><span class="shine"></span>
+        <span class="t1">Главный приз</span>
+        <span class="t2">Билет на&nbsp;следующие учения Ламрима</span>
+        <span class="t3">с Питером и Марией Мёртл</span>
+      </div>
+      <div class="card card-w prose">
+        <p class="eyebrow">При достижении цели</p>
+        <h2 style="font-size:clamp(26px,3vw,42px)">Соберём 5&nbsp;000&nbsp;€&nbsp;— и&nbsp;разыграем <span class="grad">билет</span></h2>
+        <p>Если общая сумма сбора достигнет 5&nbsp;000&nbsp;€, среди всех участников лотов мы&nbsp;разыграем входной билет на&nbsp;следующие учения цикла Ламрима.</p>
+        <p>Каждый ваш билет в&nbsp;розыгрыше лотов&nbsp;— это и&nbsp;шанс на&nbsp;главный приз.</p>
+        <div class="ctas"><a class="btn btn-dark" href="#lots">Участвовать <span class="ar">→</span></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- DONATE -->
+<div class="mega-wrap">
+<section class="mega burgm sec" id="donate">
+  <div class="wrap donate">
+    <div class="prose">
+      <p class="eyebrow">Просто поддержать</p>
+      <h2>Без&nbsp;участия в&nbsp;розыгрыше</h2>
+      <p>Если вам не&nbsp;нужен лот, но&nbsp;хочется помочь учениям состояться&nbsp;— сделайте свободный взнос на&nbsp;любую сумму.</p>
+    </div>
+    <div class="ctas">
+      <a class="btn btn-gold" href="https://secure.wayforpay.com/button/b42f36d3e7d9f" target="_blank" rel="noopener">Сделать вклад</a>
+      <a class="btn btn-ghost" href="https://lp.acirussian.com/meditationpro-1" target="_blank" rel="noopener">Вклад из&nbsp;РФ</a>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- FAQ -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">Остались вопросы?</p><h2>Вопросы и&nbsp;ответы</h2></div>
+    </div>
+    <div class="faq-wrap"><div class="faq">
+      <details><summary>Куда пойдут собранные средства?</summary><div class="ans"><p>На&nbsp;проведение учений Ламрима №&nbsp;1 в&nbsp;Вене 19–21&nbsp;декабря. 10% от&nbsp;общей суммы войдут в&nbsp;<a href="#envelope" style="color:var(--gold-l);text-decoration:underline">красный конверт</a>&nbsp;— подношение Учителям в&nbsp;знак благодарности за&nbsp;учение.</p></div></details>
+      <details><summary>Как увеличить шансы?</summary><div class="ans"><p>Каждая сумма, равная минимальному взносу лота, даёт один билет. Например, взнос 15&nbsp;€ на&nbsp;лот «от&nbsp;5&nbsp;€»&nbsp;— это три билета. Можно участвовать в&nbsp;нескольких лотах.</p></div></details>
+      <details><summary>Когда и&nbsp;как пройдёт розыгрыш?</summary><div class="ans"><p>Вживую на&nbsp;учениях в&nbsp;Вене, 19–21&nbsp;декабря. Имена победителей объявим со&nbsp;сцены, а&nbsp;затем опубликуем в&nbsp;наших каналах.</p></div></details>
+      <details><summary>Обязательно ли быть на&nbsp;учениях?</summary><div class="ans"><p>Нет. Участвовать можно из&nbsp;любой страны и&nbsp;онлайн. Если вы&nbsp;выиграете, мы&nbsp;свяжемся с&nbsp;вами и&nbsp;договоримся, как передать лот.</p></div></details>
+      <details><summary>Что будет, если цель 5&nbsp;000&nbsp;€ не&nbsp;будет достигнута?</summary><div class="ans"><p>Все шесть лотов всё равно будут разыграны, а&nbsp;средства пойдут на&nbsp;учения. Главный приз&nbsp;— билет на&nbsp;следующий Ламрим&nbsp;— разыгрывается только при достижении цели.</p></div></details>
+      <details><summary>Можно ли поддержать без&nbsp;участия в&nbsp;розыгрыше?</summary><div class="ans"><p>Да, конечно. Воспользуйтесь кнопкой «<a href="#donate" style="color:var(--gold-l);text-decoration:underline">Сделать вклад</a>».</p></div></details>
+    </div></div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="sec final">
+  <div class="wrap">
+    <p class="eyebrow">Ламрим · 19–21 декабря · Вена + онлайн</p>
+    <h2>Поддержите учения <span class="grad">сейчас</span></h2>
+    <p>Поддержать учения. Создать причину. Продолжить путь.</p>
+    <p class="hand">Каждый вклад имеет значение</p>
+    <div class="ctas" style="justify-content:center">
+      <a class="btn btn-gold" href="#lots">Выбрать лот <span class="ar">→</span></a>
+      <a class="btn btn-ghost" href="/lamrim1/">О&nbsp;учениях</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ftr">
+  <img src="../img/logo-full.png" width="360" height="360" alt="Академия Классической Мудрости" loading="lazy">
+  <span>Отдел заботы: <a href="https://t.me/Mila_Mish" target="_blank" rel="noopener">Telegram</a> · <a href="mailto:info@classicwisdomacademy.com">info@classicwisdomacademy.com</a></span>
+  <span>ФОП Гащук Олена Валеріївна | ЄДРПОУ 3098605909 · <a href="/lamrim1/oferta/">Оферта</a></span>
+</footer>
+
+<script>
+/* ====== НАСТРОЙКИ ======
+   RAISED — сколько уже собрано (€), обновлять вручную.
+   pay — ссылка на оплату лота (WayForPay); rf — ссылка для РФ (если будет).
+   photos — пути к фото в папке img/ (lot1-1.webp и т.д.); пусто = заглушка. */
+var GOAL = 5000;
+var RAISED = 0;
+var LOTS = [
+  {n:1, title:'Шаль для медитации', origin:'Малайзия', min:5, btn:'Хочу шаль',
+   text:'Шаль, подаренная нашим учителям на&nbsp;учениях в&nbsp;Малайзии. В&nbsp;родной шёлковой сумочке-упаковке.',
+   pay:'', rf:'', photos:['img/lot1-1.webp','img/lot1-2.webp']},
+  {n:2, title:'Блокнот с&nbsp;ручкой и&nbsp;кошельком', origin:'Дрэгонсхед', min:5, btn:'Хочу блокнот',
+   text:'Блокнот с&nbsp;ручкой из&nbsp;Дрэгонсхед, а&nbsp;к&nbsp;нему&nbsp;— чёрный кошелёк-конверт.',
+   pay:'', rf:'', photos:['img/lot2-1.webp','img/lot2-2.webp','img/lot2-4.webp']},
+  {n:3, title:'Карточки с&nbsp;личным посланием от&nbsp;учителей', origin:'Дрэгонсхед', min:3, btn:'Хочу карточки',
+   text:'Набор открыток с&nbsp;видами Дрэгонсхед и&nbsp;личным посланием от&nbsp;учителей.',
+   pay:'', rf:'', photos:['img/lot3-1.webp']},
+  {n:4, title:'Святая земля', origin:'Дрэгонсхед', min:5, btn:'Хочу святую землю',
+   text:'Медальон-подвеска со&nbsp;святой землёй из&nbsp;Дрэгонсхед. С&nbsp;одной стороны&nbsp;— надпись, с&nbsp;другой&nbsp;— золотой дракон.',
+   pay:'', rf:'', photos:['img/lot4-1.webp','img/lot4-2.webp']},
+  {n:5, title:'Запонки', origin:'Дрэгонсхед', min:5, btn:'Хочу запонки',
+   text:'Запонки в&nbsp;фирменной упаковке Дрэгонсхед.',
+   pay:'', rf:'', photos:['img/lot2-3.webp']},
+  {n:6, title:'Титановый термос с&nbsp;Гуаньинь и&nbsp;каллиграфией Геше Майкла', origin:'Малайзия · лимитированный выпуск', min:10, btn:'Хочу термос',
+   text:'На&nbsp;лицевой стороне&nbsp;— Гуаньинь, на&nbsp;обратной&nbsp;— каллиграфия Геше Майкла Роуча «Шесть совершенств» на&nbsp;тибетском и&nbsp;его подпись красным. По&nbsp;всему термосу изображены 108&nbsp;Будд. Полностью из&nbsp;титана.',
+   pay:'', rf:'', photos:[]}
+];
+
+(function(){
+  var gift='<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="26" width="44" height="30" rx="4"/><rect x="6" y="18" width="52" height="10" rx="3"/><path d="M32 18v38"/><path d="M32 18c-4-10-16-12-16-4 0 4 8 4 16 4zM32 18c4-10 16-12 16-4 0 4-8 4-16 4z"/></svg>';
+  var g=document.getElementById('lots-grid'),h='';
+  LOTS.forEach(function(l){
+    var ph=l.photos.length
+      ? l.photos.map(function(p,i){return '<img src="'+p+'" alt="'+l.title.replace(/&nbsp;/g,' ')+(i?', фото '+(i+1):'')+'" loading="lazy"'+(i?' hidden':'')+'>';}).join('')
+        +(l.photos.length>1?'<div class="dots-nav">'+l.photos.map(function(_,i){return '<button type="button" aria-label="Фото '+(i+1)+'"'+(i?'':' class="on"')+'></button>';}).join('')+'</div>':'')
+      : '<div class="ph-empty"><div>'+gift+'Фото скоро</div></div>';
+    var href=l.pay||'#lots';
+    h+='<article class="lot" id="lot-'+l.n+'">'
+      +'<div class="lot-ph'+(l.photos.length>1?' multi':'')+'"><span class="tag t-burg lot-n">Лот '+l.n+'</span>'+ph+'</div>'
+      +'<div class="lot-b">'
+      +(l.origin?'<span class="origin">'+l.origin+'</span>':'')
+      +'<h3>'+l.title+'</h3><p>'+l.text+'</p>'
+      +'<div class="lot-price"><span>взнос от</span><b>'+l.min+'&nbsp;€</b><span>= 1 билет</span></div>'
+      +'<a class="btn btn-gold" href="'+href+'"'+(l.pay?' target="_blank" rel="noopener"':'')+'>'+l.btn+' <span class="ar">→</span></a>'
+      +(l.rf?'<a class="btn btn-dark" href="'+l.rf+'" target="_blank" rel="noopener">Взнос из РФ</a>':'')
+      +'</div></article>';
+  });
+  g.innerHTML=h;
+
+  /* photo switcher */
+  g.addEventListener('click',function(e){
+    var box=e.target.closest('.lot-ph.multi');if(!box)return;
+    var imgs=box.querySelectorAll('img'),bs=box.querySelectorAll('.dots-nav button');
+    var b=e.target.closest('.dots-nav button'),i;
+    if(b)i=[].indexOf.call(bs,b);
+    else if(e.target.tagName==='IMG'){var cur=[].findIndex.call(imgs,function(x){return !x.hidden;});i=(cur+1)%imgs.length;}
+    else return;
+    imgs.forEach(function(im,k){im.hidden=k!==i;});bs.forEach(function(x,k){x.classList.toggle('on',k===i);});
+  });
+
+  /* reveal */
+  var lots=document.querySelectorAll('.lot');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){var i=[].indexOf.call(lots,en.target);setTimeout(function(){en.target.classList.add('in');},(i%3)*120);io.unobserve(en.target);}});},{threshold:.15});
+    lots.forEach(function(l){io.observe(l);});
+  } else lots.forEach(function(l){l.classList.add('in');});
+
+  /* progress */
+  var pct=Math.min(100,RAISED/GOAL*100);
+  if(RAISED>0){
+    document.getElementById('raised-l').innerHTML='Собрано: <b>'+RAISED.toLocaleString('ru-RU')+'&nbsp;€</b>';
+    document.querySelector('[role=progressbar]').setAttribute('aria-valuenow',RAISED);
+  }
+  setTimeout(function(){document.getElementById('bar').style.width=Math.max(pct,RAISED>0?3:1.5)+'%';},400);
+
+  /* sparkles over goal card */
+  var goal=document.querySelector('.goal');goal.style.position='relative';
+  if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+    for(var i=0;i<10;i++){var s=document.createElement('span');s.className='spark';
+      s.style.left=(8+Math.random()*84)+'%';s.style.bottom='0';
+      s.style.setProperty('--d',(4+Math.random()*4)+'s');s.style.setProperty('--dl',(Math.random()*6)+'s');
+      goal.appendChild(s);}
+  }
+})();
+</script>
+</body>
+</html>
