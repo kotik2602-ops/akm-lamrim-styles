@@ -166,20 +166,21 @@ b,strong{font-weight:800}
 /* hero marquee */
 .hero{flex-direction:column;align-items:stretch}
 .hero-in{flex:1;align-content:center}
-.mq{position:relative;z-index:2;padding:0 0 calc(22px + env(safe-area-inset-bottom,0px));overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.mq{position:relative;z-index:2;padding:64px 0 calc(22px + env(safe-area-inset-bottom,0px));overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
 .mq-track{display:flex;gap:12px;width:max-content;animation:mq 48s linear infinite}
 .mq:hover .mq-track{animation-play-state:paused}
 @keyframes mq{to{transform:translateX(-50%)}}
-.mq a{display:flex;align-items:center;gap:14px;padding:8px 22px 8px 8px;border-radius:28px;background:rgba(26,16,18,.62);border:1px solid rgba(243,217,145,.3);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transition:border-color .3s,background .3s}
+.mq a{display:flex;align-items:flex-end;gap:16px;padding:10px 24px 14px 18px;border-radius:28px;background:rgba(26,16,18,.62);border:1px solid rgba(243,217,145,.3);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transition:border-color .3s,background .3s}
 .mq a:hover{border-color:var(--gold);background:rgba(105,35,45,.7)}
-.mq .th{width:92px;height:92px;border-radius:20px;background:linear-gradient(135deg,var(--gold-l),var(--gold));overflow:hidden;flex-shrink:0;display:grid;place-items:center;color:var(--burg);box-shadow:0 10px 24px -12px rgba(0,0,0,.6)}
-.mq .th img{width:100%;height:100%;object-fit:cover}
+.mq .th{height:72px;flex-shrink:0;display:flex;align-items:flex-end;justify-content:center;color:var(--gold);position:relative}
+.mq .th::before{content:"";position:absolute;left:50%;bottom:-6px;width:140%;aspect-ratio:1;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle,rgba(243,217,145,.45),rgba(221,174,53,.12) 45%,transparent 70%);pointer-events:none}
+.mq .th img{position:relative;height:132px;width:auto;max-width:170px;margin-bottom:-4px;object-fit:contain;filter:drop-shadow(0 8px 14px rgba(0,0,0,.5))}
 .mq .th svg{width:40px;height:40px}
 .mq span{display:grid;line-height:1.25;white-space:nowrap}
 .mq b{font-size:15px;color:var(--white)}
 .mq small{font-size:14px;font-weight:700;color:var(--gold-l)}
 @media (prefers-reduced-motion: reduce){.mq{overflow-x:auto}}
-@media (max-width:640px){.mq .th{width:72px;height:72px;border-radius:16px}.mq b{font-size:14px}}
+@media (max-width:640px){.mq .th{height:60px}.mq .th img{height:104px;max-width:130px}.mq b{font-size:14px}}
 
 /* red envelope */
 .env{margin-top:16px;display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);border-radius:var(--r-card);overflow:hidden;background:linear-gradient(150deg,#8e1f2b 0%,#69232d 55%,#3a1219 100%);box-shadow:0 40px 80px -40px rgba(105,35,45,.7);position:relative}
@@ -503,22 +504,22 @@ b,strong{font-weight:800}
 var GOAL = 5000;
 var RAISED = 0;
 var LOTS = [
-  {n:1, thumb:'img/thumb-lot1.webp', short:'Термос с Гуаньинь', title:'Титановый термос с&nbsp;Гуаньинь и&nbsp;каллиграфией Геше Майкла', origin:'Малайзия · лимитированный выпуск', min:10, btn:'Хочу термос',
+  {n:1, thumb:'img/cut-lot1.webp', short:'Термос с Гуаньинь', title:'Титановый термос с&nbsp;Гуаньинь и&nbsp;каллиграфией Геше Майкла', origin:'Малайзия · лимитированный выпуск', min:10, btn:'Хочу термос',
    text:'На&nbsp;лицевой стороне&nbsp;— Гуаньинь, на&nbsp;обратной&nbsp;— каллиграфия Геше Майкла Роуча «Шесть совершенств» на&nbsp;тибетском и&nbsp;его подпись красным. По&nbsp;всему термосу изображены 108&nbsp;Будд. Полностью из&nbsp;титана.',
    pay:'', rf:'', photos:['img/lot6-1.webp']},
-  {n:2, thumb:'img/thumb-lot2.webp', title:'Святая земля', origin:'Дрэгонсхед', min:5, btn:'Хочу святую землю',
+  {n:2, thumb:'img/cut-lot2.webp', title:'Святая земля', origin:'Дрэгонсхед', min:5, btn:'Хочу святую землю',
    text:'Медальон-подвеска со&nbsp;святой землёй из&nbsp;Дрэгонсхед. С&nbsp;одной стороны&nbsp;— надпись, с&nbsp;другой&nbsp;— золотой дракон.',
    pay:'', rf:'', photos:['img/lot4-1.webp','img/lot4-2.webp']},
-  {n:3, thumb:'img/thumb-lot3.webp', title:'Шаль для медитации', origin:'Малайзия', min:5, btn:'Хочу шаль',
+  {n:3, thumb:'img/cut-lot3.webp', title:'Шаль для медитации', origin:'Малайзия', min:5, btn:'Хочу шаль',
    text:'Шаль, подаренная нашим учителям на&nbsp;учениях в&nbsp;Малайзии. В&nbsp;родной шёлковой сумочке-упаковке.',
    pay:'', rf:'', photos:['img/lot1-1.webp','img/lot1-2.webp']},
-  {n:4, thumb:'img/thumb-lot4.webp', short:'Блокнот с ручкой', title:'Блокнот с&nbsp;ручкой и&nbsp;кошельком', origin:'Дрэгонсхед', min:5, btn:'Хочу блокнот',
+  {n:4, thumb:'img/cut-lot4.webp', short:'Блокнот с ручкой', title:'Блокнот с&nbsp;ручкой и&nbsp;кошельком', origin:'Дрэгонсхед', min:5, btn:'Хочу блокнот',
    text:'Блокнот с&nbsp;ручкой из&nbsp;Дрэгонсхед, а&nbsp;к&nbsp;нему&nbsp;— чёрный кошелёк-конверт.',
    pay:'', rf:'', photos:['img/lot2-2.webp','img/lot2-1.webp','img/lot2-4.webp']},
-  {n:5, thumb:'img/thumb-lot5.webp', short:'Карточки от учителей', title:'Карточки с&nbsp;личным посланием от&nbsp;учителей', origin:'Дрэгонсхед', min:3, btn:'Хочу карточки',
+  {n:5, thumb:'img/cut-lot5.webp', short:'Карточки от учителей', title:'Карточки с&nbsp;личным посланием от&nbsp;учителей', origin:'Дрэгонсхед', min:3, btn:'Хочу карточки',
    text:'Набор открыток с&nbsp;видами Дрэгонсхед и&nbsp;личным посланием от&nbsp;учителей.',
    pay:'', rf:'', photos:['img/lot3-1.webp']},
-  {n:6, thumb:'img/thumb-lot6.webp', title:'Запонки', origin:'Дрэгонсхед', min:5, btn:'Хочу запонки',
+  {n:6, thumb:'img/cut-lot6.webp', title:'Запонки', origin:'Дрэгонсхед', min:5, btn:'Хочу запонки',
    text:'Запонки в&nbsp;фирменной упаковке Дрэгонсхед.',
    pay:'', rf:'', photos:['img/lot2-3.webp']}
 ];
