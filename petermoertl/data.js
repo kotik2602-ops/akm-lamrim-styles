@@ -147,6 +147,7 @@ practices: [
   {id:'PLwVlt5LLJqlwi5FnIB_xeb_g7CrMt8inA',slug:'doors-to-the-diamond-path',title:'The Doors to the Diamond Path',sub:'Vienna · December 2025',thumb:'ybTqDl33Yf4'}
 ],
 other: [
+  {id:'PLdIfdkIsIje8',slug:'heart-sutra-2',title:'The Wisdom of the Heart Sutra – 2',sub:'With Peter Moertl, Constance O’Brien, John Brady and Maria Moertl',thumb:''},
   {id:'PLwVlt5LLJqlykKt06HUPMmTWL2kDnNSxO',slug:'bedtime-stories',title:'Je Tsongkapa’s bedtime stories',sub:'',thumb:'aOeud4adJF8'},
   {id:'PLwVlt5LLJqly4dxMPnk6FgMtTHzoJKqjj',slug:'power-of-fear',title:'The Power of Fear: What Did the Author Mean?',sub:'',thumb:'-1Y2CazgxRI'}
 ]
