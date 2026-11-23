@@ -807,6 +807,24 @@ body{font-weight:500}
 .refund-box p{color:var(--text-l);font-size:17px;line-height:1.6;margin:0}
 .refund-box p+p{margin-top:10px}
 .refund-box b{color:var(--gold-l)}
+/* ===== блок лотов ===== */
+.lotsb-box{position:relative;overflow:hidden;isolation:isolate;text-align:center;padding:clamp(36px,6vw,72px) clamp(18px,5vw,64px);border-radius:var(--r-mega);background:radial-gradient(120% 90% at 50% 0%,#8a3340 0%,#4a1820 55%,#2a1216 100%);border:1.5px solid rgba(243,217,145,.55);box-shadow:0 0 0 6px rgba(221,174,53,.08),0 30px 80px -30px rgba(221,174,53,.45)}
+.lotsb-glow{position:absolute;inset:-40%;z-index:-1;background:conic-gradient(from 0deg,transparent 0 70%,rgba(243,217,145,.18) 80%,transparent 90%);animation:lotsSpin 14s linear infinite}
+@keyframes lotsSpin{to{transform:rotate(360deg)}}
+.lotsb-eye{display:inline-flex;align-items:center;gap:10px;margin:0 0 18px;padding:8px 16px;border-radius:999px;background:rgba(221,174,53,.16);border:1px solid rgba(243,217,145,.45);color:var(--gold-l);font-weight:800;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.lotsb-eye .dot{width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 0 rgba(221,174,53,.7);animation:lotsDot 1.8s ease-out infinite}
+@keyframes lotsDot{to{box-shadow:0 0 0 10px rgba(221,174,53,0)}}
+.lotsb h2{max-width:20ch;margin:0 auto}
+.lotsb-row{display:flex;justify-content:center;align-items:flex-end;gap:clamp(4px,1.5vw,18px);margin:clamp(24px,4vw,40px) auto;max-width:900px}
+.lotsb-row img{height:clamp(84px,15vw,170px);width:auto;min-width:0;flex:0 1 auto;object-fit:contain;filter:drop-shadow(0 14px 18px rgba(0,0,0,.55));transform:rotate(var(--r));animation:lotsFloat 4s ease-in-out var(--d) infinite}
+@keyframes lotsFloat{0%,100%{translate:0 0}50%{translate:0 -10px}}
+.lotsb-lead{max-width:44rem;margin:0 auto 12px;font-size:clamp(17px,1.6vw,20px);font-weight:600;color:var(--text-l)}
+.lotsb-sub{max-width:40rem;margin:0 auto 22px;color:var(--text-lm)}
+.lotsb-goal{display:inline-block;max-width:40rem;margin:0 auto 28px;padding:14px 22px;border-radius:20px;border:1px dashed rgba(243,217,145,.55);color:var(--rose-l)}
+.lotsb-goal b{color:var(--gold-l)}
+.lotsb .ctas{justify-content:center}
+@media (max-width:640px){.lotsb-row{flex-wrap:wrap;max-width:340px}.lotsb-row img{height:96px}.lotsb .ctas .btn{width:100%}}
+@media (prefers-reduced-motion:reduce){.lotsb-glow,.lotsb-row img,.lotsb-eye .dot{animation:none}}
 </style>
 </head>
 <body>
@@ -1353,6 +1371,32 @@ body{font-weight:500}
           <li><b>169 €</b><span>Die nächsten 70 Plätze</span></li>
           <li><b>199 €</b><span>Danach</span></li>
         </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ЛОТЫ -->
+  <section class="sec dark lotsb" id="lots">
+    <div class="wrap">
+      <div class="lotsb-box">
+        <div class="lotsb-glow" aria-hidden="true"></div>
+        <p class="lotsb-eye"><span class="dot"></span>Verlosung · ab&nbsp;3&nbsp;€</p>
+        <h2>6 Geschenke der Lehrer&nbsp;– <span class="grad">eines davon kann Ihnen gehören</span></h2>
+        <div class="lotsb-row" aria-hidden="true">
+          <img src="/lamrim1/lots/img/cut-lot1.webp" alt="" style="--r:-6deg;--d:0s">
+          <img src="/lamrim1/lots/img/cut-lot3.webp" alt="" style="--r:4deg;--d:.4s">
+          <img src="/lamrim1/lots/img/cut-lot5.webp" alt="" style="--r:-3deg;--d:.8s">
+          <img src="/lamrim1/lots/img/cut-lot4.webp" alt="" style="--r:5deg;--d:1.2s">
+          <img src="/lamrim1/lots/img/cut-lot2.webp" alt="" style="--r:-5deg;--d:1.6s">
+          <img src="/lamrim1/lots/img/cut-lot6.webp" alt="" style="--r:3deg;--d:2s">
+        </div>
+        <p class="lotsb-lead">Eine Thermoskanne mit Guanyin, heilige Erde aus Dragonshead, ein Meditationsschal von Maria Mörtl, Karten mit einer persönlichen Botschaft der Lehrer… Jedes Los gibt es nur einmal.</p>
+        <p class="lotsb-sub">Leisten Sie einen Beitrag&nbsp;– und Sie sind bei&nbsp;der Verlosung dabei. Die Gewinner geben wir live bei&nbsp;den Belehrungen in&nbsp;Wien bekannt. Und Ihr Beitrag hilft, dass die Belehrungen stattfinden.</p>
+        <div class="lotsb-goal"><b>Ziel: 5.000&nbsp;€.</b> Erreichen wir es&nbsp;gemeinsam, verlosen wir zusätzlich ein Ticket für die nächsten Lamrim-Belehrungen.</div>
+        <div class="ctas">
+          <a class="btn btn-gold" href="/lamrim1/lots/de/#lots">Los wählen <span class="ar" aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="/lamrim1/lots/de/#donate">Einfach unterstützen</a>
+        </div>
       </div>
     </div>
   </section>
