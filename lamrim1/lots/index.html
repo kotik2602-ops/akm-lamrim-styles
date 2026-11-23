@@ -86,7 +86,12 @@ b,strong{font-weight:800}
 .dnav{display:flex;gap:20px;font-size:14px;font-weight:700;color:var(--text-lm);margin-left:auto;white-space:nowrap}
 .dnav a:hover{color:var(--gold-l)}
 .hdr .btn{min-height:42px;padding:0 20px;font-size:14px;flex-shrink:0;animation:none;box-shadow:0 6px 18px -8px rgba(221,174,53,.7)}
-@media (max-width:1000px){.dnav{display:none}.hdr .btn{margin-left:auto}}
+.langs{display:flex;gap:2px;font-size:12px;font-weight:800;margin-left:6px;flex-shrink:0}
+.langs a{padding:6px 8px;border-radius:999px;color:var(--text-lm)}
+.langs a:hover{color:var(--gold-l)}
+.langs a.on{background:var(--gold);color:var(--ink)}
+@media (max-width:1000px){.dnav{display:none}.langs{margin-left:auto}}
+@media (max-width:420px){.langs a{padding:6px 5px;font-size:11px}.hdr-in{gap:8px}}
 @media (max-width:560px){.brand-txt{display:none}}
 
 /* hero */
@@ -317,6 +322,7 @@ body.alt .pay-b{display:inline-flex!important}
       <a href="#prize">Главный приз</a>
       <a href="#faq">Вопросы</a>
     </nav>
+    <div class="langs" aria-label="Язык страницы"><a class="on" href="/lamrim1/lots/" hreflang="ru" aria-current="page">RU</a><a href="/lamrim1/lots/ua/" hreflang="uk">UA</a><a href="/lamrim1/lots/en/" hreflang="en">EN</a><a href="/lamrim1/lots/de/" hreflang="de">DE</a></div>
     <a class="btn btn-gold" href="#lots">Выбрать лот</a>
   </div>
 </header>
