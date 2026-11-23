@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Teachings with Peter Moertl — Tibetan philosophy library</title>
 <meta name="description" content="A free library of teachings on Tibetan philosophy with Peter Moertl: all 18 ACI courses, meditation courses and practices for daily life — full YouTube playlists.">
-<meta name="robots" content="noindex">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Teachings on Tibetan philosophy with Peter Moertl">
 <meta property="og:description" content="All 18 ACI courses, meditation courses and practices for daily life — a free library of full playlists.">
@@ -247,7 +246,7 @@ footer img{width:150px}
     <div class="fact"><b>20+ years</b><span>in international business — MBA, Vienna</span></div>
     <div class="fact"><b>18 / 18</b><span>ACI courses completed by 2014</span></div>
     <div class="fact"><b>2009</b><span>volunteer at Diamond Mountain, Arizona</span></div>
-    <div class="fact"><b>2012–2025</b><span>recorded teachings — Kyiv, Moscow, Vienna, Warsaw</span></div>
+    <div class="fact"><b>2012–2026</b><span>recorded teachings — Kyiv, Moscow, Vienna, Warsaw</span></div>
   </aside>
 </div></section>
 
@@ -336,7 +335,7 @@ function save(){try{localStorage.setItem(KEY,JSON.stringify(done))}catch(e){}}
 var recN=0,total=0;
 D.courses.forEach(function(c){c.rec.forEach(function(r){recN++;total+=L[r[0]].length})});
 ['meditation','practices','other'].forEach(function(k){D[k].forEach(function(p){recN++;total+=L[p.id].length})});
-$('#stats').innerHTML=[['18','ACI courses'],[recN,'full recordings'],[Math.floor(total/10)*10+'+','video classes'],['Free','for everyone']].map(function(s){return '<div class="stat"><b>'+s[0]+'</b><span>'+s[1]+'</span></div>'}).join('');
+$('#stats').innerHTML=[['18','ACI courses'],[recN,'full recordings'],[Math.floor(total/10)*10+'+','videos'],['Free','for everyone']].map(function(s){return '<div class="stat"><b>'+s[0]+'</b><span>'+s[1]+'</span></div>'}).join('');
 
 /* ---- steps ---- */
 $('#steps').innerHTML=D.courses.map(function(c,i){return '<button class="step" data-step="'+c.n+'" style="height:'+(26+i*(74/17))+'%" aria-label="ACI '+c.n+': '+esc(c.title)+'"><small>ACI</small>'+c.n+'</button>'}).join('');
