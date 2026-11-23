@@ -129,6 +129,7 @@ courses: [
   rec:[['PLwVlt5LLJqlwgN9uNvO-BTXkCW_okfW-C','Vienna 2022']] }
 ],
 meditation: [
+  {id:'PLwVlt5LLJqlyyuwhmMfpSilW0nl_hU8Uk',slug:'lamrim-step-by-step',title:'Lamrim: Step by Step to Happiness',sub:'Meditations on the steps of the path · live broadcasts',thumb:''},
   {id:'PLwVlt5LLJqlwnTlVug-u94tMC3qmG9iY7',slug:'lion-dance',title:'Lion Dance meditation course',sub:'',thumb:'mU3EdE0KB9g'},
   {id:'PLwVlt5LLJqlycYA38L90D9e6WAzkNPIdp',slug:'mahamudra',title:'Emptiness of the mind, in six different shades',sub:'Mahamudra course · Vienna 2022',thumb:'Ukj-nlA8Dsw'},
   {id:'PLwVlt5LLJqly3KAcLOnqg8hv-VWl55Sfq',slug:'tower-of-liberation',title:'Meditation “The Tower of Liberation”',sub:'Dharma Festival “How to Meet the Angel – 2”',thumb:'Wq1Tr6mvqu4'},
