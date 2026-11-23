@@ -124,11 +124,13 @@ h3{font-size:clamp(18px,1.6vw,22px);line-height:1.2}
 .path-top b{font-family:var(--display);font-weight:600;font-size:17px}
 .path-top span{font-size:14px;color:var(--text-lm)}
 .steps{display:grid;grid-template-columns:repeat(18,1fr);gap:5px;align-items:end;height:92px}
-.step{position:relative;border:0;cursor:pointer;border-radius:7px 7px 3px 3px;background:rgba(247,239,230,.09);transition:background .3s,transform .2s;display:flex;align-items:flex-start;justify-content:center;padding-top:5px;font-family:var(--tib);font-size:13px;color:var(--text-lm);min-height:24px}
+.step{position:relative;border:0;cursor:pointer;border-radius:7px 7px 3px 3px;background:rgba(247,239,230,.09);transition:background .3s,transform .2s;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:5px;font-family:var(--display);font-weight:600;font-size:13px;line-height:1.05;color:var(--text-lm);min-height:24px}
 .step:hover{transform:translateY(-3px);background:rgba(221,174,53,.3)}
 .step.done{background:linear-gradient(180deg,var(--gold-l),var(--gold));color:var(--ink)}
 .step.done::after{content:"";position:absolute;inset:-4px;border-radius:9px;box-shadow:0 0 18px rgba(221,174,53,.45);pointer-events:none}
-@media (max-width:560px){.steps{gap:3px;height:70px}.step{font-size:10px;padding-top:3px}}
+@media (max-width:560px){.steps{gap:3px;height:76px}.step{font-size:10px;padding-top:3px}.step small{font-size:6.5px}}
+.step small{font-family:var(--sans);font-weight:800;font-size:8.5px;letter-spacing:.04em;opacity:.8}
+.step{min-height:34px!important}
 .path-hint{font-size:13.5px;color:var(--text-lm)}
 
 .leaves{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,31rem),1fr));gap:18px}
@@ -140,7 +142,7 @@ h3{font-size:clamp(18px,1.6vw,22px);line-height:1.2}
 .leaf.done{box-shadow:0 0 0 2px var(--gold),0 20px 40px -24px rgba(0,0,0,.8)}
 .leaf-pic{position:relative;aspect-ratio:1;border:1px solid var(--paper-line);border-radius:6px;background:#fbf5e8;display:grid;place-items:center;overflow:hidden;cursor:pointer}
 .leaf-pic img{width:92%;height:92%;object-fit:contain;mix-blend-mode:multiply;filter:sepia(.35) contrast(1.05)}
-.leaf-pic .tn{position:absolute;right:5px;bottom:2px;font-family:var(--tib);font-size:20px;color:var(--red);line-height:1.4}
+.leaf-pic .tn{position:absolute;right:5px;bottom:2px;}
 .leaf-body{display:grid;gap:8px;align-content:start;min-width:0}
 .leaf-no{display:flex;align-items:center;gap:8px;font-weight:800;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
 .leaf h3{font-size:19px;color:var(--text-d)}
@@ -290,7 +292,7 @@ dialog::backdrop{background:rgba(12,6,8,.82);backdrop-filter:blur(6px);-webkit-b
   <div class="path reveal" aria-label="Your progress">
     <div class="path-top"><b id="pathTxt">Your path: 0 of 18 courses</b><span id="pathSub">Saved in this browser only</span></div>
     <div class="steps" id="steps"></div>
-    <div class="path-hint">Tap a step to jump to the course. The Tibetan numerals ༡–༡༨ mark each step of the path.</div>
+    <div class="path-hint">Tap a step — ACI 1 to ACI 18 — to jump to the course.</div>
   </div>
   <div class="leaves" id="leaves"></div>
 </div></section>
@@ -350,8 +352,6 @@ dialog::backdrop{background:rgba(12,6,8,.82);backdrop-filter:blur(6px);-webkit-b
 <script>
 (function(){
 var D=window.PM, $=function(s){return document.querySelector(s)};
-var TIB='༠༡༢༣༤༥༦༧༨༩';
-function tib(n){return String(n).split('').map(function(d){return TIB[d]}).join('')}
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 function lessons(n){return n? n+(n===1?' lesson':' lessons') : 'playlist'}
 var plUrl=function(id){return 'https://www.youtube.com/playlist?list='+id};
@@ -369,12 +369,12 @@ var total=all.reduce(function(a,b){return a+b},0);
 $('#stats').innerHTML=[['18','ACI courses'],[all.length,'full playlists'],[Math.floor(total/10)*10+'+','video lessons'],['Free','on YouTube']].map(function(s){return '<div class="stat"><b>'+s[0]+'</b><span>'+s[1]+'</span></div>'}).join('');
 
 /* ---- steps ---- */
-$('#steps').innerHTML=D.courses.map(function(c,i){return '<button class="step" data-step="'+c.n+'" style="height:'+(26+i*(74/17))+'%" aria-label="ACI '+c.n+': '+esc(c.title)+'">'+tib(c.n)+'</button>'}).join('');
+$('#steps').innerHTML=D.courses.map(function(c,i){return '<button class="step" data-step="'+c.n+'" style="height:'+(26+i*(74/17))+'%" aria-label="ACI '+c.n+': '+esc(c.title)+'">'+'<small>ACI</small>'+c.n+'</button>'}).join('');
 
 /* ---- leaves ---- */
 $('#leaves').innerHTML=D.courses.map(function(c){
   return '<article class="leaf reveal" id="aci'+c.n+'">'+
-   '<div class="leaf-pic" data-open-course="'+c.n+'" role="button" tabindex="0" aria-label="About ACI '+c.n+'"><img src="img/'+c.img+'" alt=""><span class="tn">'+tib(c.n)+'</span></div>'+
+   '<div class="leaf-pic" data-open-course="'+c.n+'" role="button" tabindex="0" aria-label="About ACI '+c.n+'"><img src="img/'+c.img+'" alt=""></div>'+
    '<div class="leaf-body"><div class="leaf-no">ACI '+c.n+'</div><h3>'+esc(c.title)+'</h3><div class="leaf-hook">'+esc(c.hook)+'</div>'+
    '<div class="recs">'+c.rec.map(function(r,j){return '<button class="rec" data-open-course="'+c.n+'" data-rec="'+j+'"><i></i>'+esc(r[1])+' <small>· '+lessons(r[2])+'</small></button>'}).join('')+'</div>'+
    '<div class="leaf-foot"><button class="more" data-open-course="'+c.n+'">About the course</button><label class="chk"><input type="checkbox" data-done="'+c.n+'"'+(done[c.n]?' checked':'')+'> Completed</label></div>'+
@@ -408,7 +408,7 @@ function setPlayer(r){
 function show(){ if(dlg.showModal){ if(!dlg.open) dlg.showModal(); } else dlg.setAttribute('open',''); document.body.style.overflow='hidden'; }
 function openCourse(n,j){
   var c=D.courses[n-1]; j=j||0;
-  $('#mEye').textContent='ACI '+n+' · '+tib(n);
+  $('#mEye').textContent='ACI '+n;
   $('#mTitle').textContent=c.title;
   $('#mTabs').innerHTML=c.rec.length>1?c.rec.map(function(r,i){return '<button class="m-tab" role="tab" aria-selected="'+(i===j)+'" data-tab="'+i+'">'+esc(r[1])+' · '+r[2]+'</button>'}).join(''):'';
   $('#mTabs').style.display=c.rec.length>1?'':'none';
