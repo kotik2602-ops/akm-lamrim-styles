@@ -135,6 +135,7 @@ meditation: [
   {id:'PLwVlt5LLJqly3KAcLOnqg8hv-VWl55Sfq',slug:'tower-of-liberation',title:'Meditation “The Tower of Liberation”',sub:'Dharma Festival “How to Meet the Angel – 2”',thumb:'Wq1Tr6mvqu4'},
   {id:'PLwVlt5LLJqlyurrLVUW2CXB6cRDxyjJW_',slug:'tower-of-liberation-explained',title:'Explanation of the meditation “The Tower of Liberation”',sub:'Dharma Festival “How to Meet the Angel – 2”',thumb:'4D-gmQf-trs'},
   {id:'PLwVlt5LLJqlz7I-fsC-CLwIQApSIcBBCy',slug:'khedrup-je-emptiness',title:'Meditation on Emptiness by Khedrup Je',sub:'Dharma Festival 2025',thumb:'lYYdwdgYlzA'}
+  {id:'PLwVlt5LLJqlxvGtRV7IAcVYRQgVwVFBtc',slug:'breakthrough-warsaw',title:'Breakthrough to Ultimate Reality: Khedrup Je’s emptiness meditation',sub:'Meditation retreat · Warsaw 2026',thumb:''},
 ],
 practices: [
   {id:'PLwVlt5LLJqlx8mVOBelW5Qd0banGDipOx',slug:'creating-peace',title:'Practices for creating peace',sub:'Live broadcasts with Peter Moertl',thumb:'EBFXWgl3XQM'},
