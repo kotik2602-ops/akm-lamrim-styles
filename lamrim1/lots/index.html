@@ -223,19 +223,9 @@ b,strong{font-weight:800}
 .lot-price span{font-size:14px;color:var(--text-dm)}
 .lot .btn{width:100%}
 .lot.feature{grid-column:span 1}
-.pay-rf{display:none!important}
-body.rf .pay-eu{display:none!important}
-body.rf .pay-rf{display:inline-flex!important}
-body.rf .pay-rf.note{display:block!important}
-.region{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px 14px;margin:0 0 28px;font-size:14px;color:var(--text-dm)}
-.region .seg{display:inline-flex;padding:4px;border-radius:999px;background:rgba(105,35,45,.08);border:1px solid var(--line-d)}
-.region button{font:inherit;font-weight:600;border:0;background:transparent;color:var(--burg);padding:8px 16px;border-radius:999px;cursor:pointer;transition:background .25s,color .25s}
-.region button.on{background:var(--burg);color:var(--gold-l);box-shadow:0 6px 16px -8px rgba(105,35,45,.7)}
-#donate .region{justify-content:flex-start;margin:18px 0 0;color:rgba(247,239,230,.7)}
-#donate .region .seg{background:rgba(247,239,230,.08);border-color:rgba(247,239,230,.2)}
-#donate .region button{color:var(--text-l)}
-#donate .region button.on{background:var(--gold);color:var(--ink)}
-.pay-rf.note{font-size:13px;color:var(--text-dm);text-align:center;margin-top:-2px}
+.pay-b{display:none!important}
+body.alt .pay-a{display:none!important}
+body.alt .pay-b{display:inline-flex!important}
 .lots-note{margin-top:22px;text-align:center;font-size:15px;color:var(--text-dm)}
 
 /* steps */
@@ -405,7 +395,6 @@ body.rf .pay-rf.note{display:block!important}
       <div><p class="eyebrow">Лоты</p><h2>Выберите лот и&nbsp;<span class="grad">участвуйте</span></h2></div>
       <p>Это особые вещи, связанные с&nbsp;нашими учителями и&nbsp;местами учений. Каждый лот&nbsp;— в&nbsp;единственном экземпляре.</p>
     </div>
-    <div class="region"><span>Оплата картой:</span><div class="seg" role="group" aria-label="Регион оплаты"><button type="button" data-r="eu">Европа и мир</button><button type="button" data-r="rf">Россия и&nbsp;Беларусь</button></div></div>
     <div class="lots" id="lots-grid"></div>
     <p class="lots-note">Хотите больше шансов? Сделайте взнос несколько раз&nbsp;— каждый платёж даёт ещё один билет в&nbsp;розыгрыше лота.</p>
   </div>
@@ -463,11 +452,10 @@ body.rf .pay-rf.note{display:block!important}
       <p class="eyebrow">Просто поддержать</p>
       <h2>Без&nbsp;участия в&nbsp;розыгрыше</h2>
       <p>Если вам не&nbsp;нужен лот, но&nbsp;хочется помочь учениям состояться&nbsp;— сделайте свободный взнос на&nbsp;любую сумму.</p>
-      <div class="region"><span>Оплата картой:</span><div class="seg" role="group" aria-label="Регион оплаты"><button type="button" data-r="eu">Европа и мир</button><button type="button" data-r="rf">Россия и&nbsp;Беларусь</button></div></div>
     </div>
     <div class="ctas">
-      <a class="btn btn-gold pay-eu" href="https://secure.wayforpay.com/button/b44baab44a026" target="_blank" rel="noopener">Сделать вклад <span class="ar">♥</span></a>
-      <a class="btn btn-gold pay-rf" href="https://web.tribute.tg/d/UyY" target="_blank" rel="noopener">Сделать вклад <span class="ar">♥</span></a>
+      <a class="btn btn-gold pay-a" href="https://secure.wayforpay.com/button/b44baab44a026" target="_blank" rel="noopener">Сделать вклад <span class="ar">♥</span></a>
+      <a class="btn btn-gold pay-b" href="https://web.tribute.tg/d/UyY" target="_blank" rel="noopener">Сделать вклад <span class="ar">♥</span></a>
     </div>
   </div>
 </section>
@@ -482,7 +470,6 @@ body.rf .pay-rf.note{display:block!important}
     <div class="faq-wrap"><div class="faq">
       <details><summary>Куда пойдут собранные средства?</summary><div class="ans"><p>На&nbsp;проведение учений Ламрима №&nbsp;1 в&nbsp;Вене 19–21&nbsp;декабря. 10% от&nbsp;общей суммы войдут в&nbsp;<a href="#envelope" style="color:var(--gold-l);text-decoration:underline">красный конверт</a>&nbsp;— подношение Учителям в&nbsp;знак благодарности за&nbsp;учение.</p></div></details>
       <details><summary>Как увеличить шансы?</summary><div class="ans"><p>Каждый взнос по&nbsp;лоту&nbsp;— это один билет. Например, три взноса по&nbsp;5&nbsp;€ на&nbsp;святую землю&nbsp;— три билета. Можно участвовать в&nbsp;нескольких лотах.</p></div></details>
-      <details><summary>Я&nbsp;из&nbsp;России или Беларуси&nbsp;— как участвовать?</summary><div class="ans"><p>Над&nbsp;лотами выберите «Россия и&nbsp;Беларусь»&nbsp;— кнопки поведут на&nbsp;оплату через Tribute, где принимаются карты этих стран. При&nbsp;оплате укажите имя и&nbsp;Telegram, не&nbsp;выбирайте «анонимно»&nbsp;— иначе мы&nbsp;не&nbsp;сможем внести вас в&nbsp;список участников.</p></div></details>
       <details><summary>Когда и&nbsp;как пройдёт розыгрыш?</summary><div class="ans"><p>Вживую на&nbsp;учениях в&nbsp;Вене, 19–21&nbsp;декабря. Имена победителей объявим со&nbsp;сцены, а&nbsp;затем опубликуем в&nbsp;наших каналах.</p></div></details>
       <details><summary>Обязательно ли быть на&nbsp;учениях?</summary><div class="ans"><p>Нет. Участвовать можно из&nbsp;любой страны и&nbsp;онлайн. Если вы&nbsp;выиграете, мы&nbsp;свяжемся с&nbsp;вами и&nbsp;договоримся, как передать лот.</p></div></details>
       <details><summary>Что будет, если цель 5&nbsp;000&nbsp;€ не&nbsp;будет достигнута?</summary><div class="ans"><p>Все шесть лотов всё равно будут разыграны, а&nbsp;средства пойдут на&nbsp;учения. Главный приз&nbsp;— билет на&nbsp;следующий Ламрим&nbsp;— разыгрывается только при достижении цели.</p></div></details>
@@ -515,7 +502,7 @@ body.rf .pay-rf.note{display:block!important}
 <script>
 /* ====== НАСТРОЙКИ ======
    RAISED — сколько уже собрано (€), обновлять вручную.
-   pay — ссылка на оплату лота (WayForPay, для всех стран); rf — Tribute (показывается только при регионе «Россия и Беларусь»).
+   pay — ссылка на оплату лота (WayForPay, для всех стран); rf — Tribute (показывается только по ссылке ?pay=2 или по стране, без упоминаний на странице).
    photos — пути к фото в папке img/ (lot1-1.webp и т.д.); пусто = заглушка. */
 var GOAL = 5000;
 var RAISED = 0;
@@ -555,8 +542,8 @@ var LOTS = [
       +(l.origin?'<span class="origin">'+l.origin+'</span>':'')
       +'<h3>'+l.title+'</h3><p>'+l.text+'</p>'
       +'<div class="lot-price"><span>взнос</span><b>'+l.min+'&nbsp;€</b><span>= 1 билет</span></div>'
-      +'<a class="btn btn-gold pay-eu" href="'+href+'"'+(l.pay?' target="_blank" rel="noopener"':'')+'>'+l.btn+' <span class="ar">→</span></a>'
-      +(l.rf?'<a class="btn btn-gold pay-rf" href="'+l.rf+'" target="_blank" rel="noopener">'+l.btn+' <span class="ar">→</span></a><p class="pay-rf note">Оплата через Tribute · укажите имя и&nbsp;Telegram</p>':'')
+      +'<a class="btn btn-gold pay-a" href="'+href+'"'+(l.pay?' target="_blank" rel="noopener"':'')+'>'+l.btn+' <span class="ar">→</span></a>'
+      +(l.rf?'<a class="btn btn-gold pay-b" href="'+l.rf+'" target="_blank" rel="noopener">'+l.btn+' <span class="ar">→</span></a>':'')
       +'</div></article>';
   });
   g.innerHTML=h;
@@ -568,19 +555,13 @@ var LOTS = [
   }).join('');
   document.getElementById('mq').innerHTML=mh+mh.replace(/<a /g,'<a tabindex="-1" aria-hidden="true" ');
 
-  /* region: WayForPay для всех, Tribute — только РФ/РБ */
-  function setRegion(r,save){
-    document.body.classList.toggle('rf',r==='rf');
-    document.querySelectorAll('.region button').forEach(function(b){b.classList.toggle('on',b.dataset.r===r);b.setAttribute('aria-pressed',b.dataset.r===r);});
-    if(save){try{localStorage.setItem('lotsRegion',r);}catch(e){}}
-  }
-  document.querySelectorAll('.region button').forEach(function(b){b.addEventListener('click',function(){setRegion(b.dataset.r,true);});});
-  var saved=null;try{saved=localStorage.getItem('lotsRegion');}catch(e){}
-  setRegion(saved||'eu');
-  if(!saved&&window.fetch){
-    fetch('/cdn-cgi/trace').then(function(r){return r.text();}).then(function(t){
-      var m=t.match(/loc=([A-Z]{2})/);if(m&&(m[1]==='RU'||m[1]==='BY'))setRegion('rf');
-    }).catch(function(){});
+  /* альтернативная оплата (Tribute): только по спец-ссылке ?pay=2 или автоматически по стране; на странице не упоминается */
+  function alt(on){document.body.classList.toggle('alt',!!on);}
+  var K='lotsPay',st=null;
+  try{if(/[?&]pay=2\b/.test(location.search))localStorage.setItem(K,'2');if(/[?&]pay=1\b/.test(location.search))localStorage.removeItem(K);st=localStorage.getItem(K);}catch(e){}
+  if(/[?&]pay=2\b/.test(location.search)||st==='2')alt(1);
+  else if(!/[?&]pay=1\b/.test(location.search)&&window.fetch){
+    fetch('/cdn-cgi/trace').then(function(r){return r.text();}).then(function(t){var m=t.match(/loc=([A-Z]{2})/);if(m&&/^(RU|BY)$/.test(m[1]))alt(1);}).catch(function(){});
   }
 
   /* photo switcher */
