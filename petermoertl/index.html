@@ -175,6 +175,13 @@ h3{font-size:clamp(18px,1.6vw,22px);line-height:1.2}
 .pl .play{width:58px;height:58px;margin:-29px 0 0 -29px;opacity:.92}
 .pl .play::before{border-left-width:17px;border-top-width:10px;border-bottom-width:10px}
 .pl:hover .pl-thumb .play{transform:scale(1.1)}
+.pl-thumb{display:grid;align-content:end;gap:6px;padding:16px 16px 44px;background:radial-gradient(90% 80% at 85% 10%,rgba(221,174,53,.28),transparent 60%),linear-gradient(150deg,var(--burg),#2a1116)}
+.pl-thumb::before{background:linear-gradient(180deg,transparent 30%,rgba(26,16,18,.55))}
+.pl-thumb .play{left:auto;right:16px;top:16px;margin:0}
+.pl-k,.pl-t{position:relative;z-index:1}
+.pl-k{font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-l)}
+.pl-t{font-family:var(--display);font-weight:600;font-size:17px;line-height:1.22;color:var(--white);text-wrap:balance}
+.leaf h3 a:hover{color:var(--burg)}
 .pl h3{font-size:16.5px;line-height:1.28;color:var(--white)}
 .pl p{font-size:14px;color:var(--text-lm);line-height:1.45;margin-top:-6px}
 .sec-alt{background:linear-gradient(180deg,var(--ink-2),var(--ink))}
@@ -195,33 +202,6 @@ footer{border-top:1px solid var(--line-l);padding:34px 0 calc(34px + env(safe-ar
 footer .wrap{display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;justify-content:space-between}
 footer a:hover{color:var(--gold-l)}
 footer img{width:150px}
-
-/* modal player */
-dialog{border:0;padding:0;background:transparent;color:var(--text-l);max-width:min(1100px,calc(100vw - 24px));width:100%;max-height:calc(100dvh - 24px);margin:auto}
-dialog::backdrop{background:rgba(12,6,8,.82);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
-.m{position:relative;background:var(--ink-2);border:1px solid var(--line-l);border-radius:26px;overflow:auto;max-height:calc(100dvh - 24px)}
-.m-x{position:absolute;right:12px;top:12px;z-index:3;width:42px;height:42px;border-radius:50%;border:1px solid var(--line-l);background:rgba(26,16,18,.85);cursor:pointer;font-size:22px;line-height:1}
-.m-x:hover{background:var(--gold);color:var(--ink)}
-.m-head{padding:22px 64px 14px 24px;display:grid;gap:6px}
-.m-head .eyebrow{font-size:12px}
-.m-head h3{font-size:clamp(19px,2vw,26px)}
-.m-tabs{display:flex;flex-wrap:wrap;gap:8px;padding:0 24px 14px}
-.m-tab{min-height:38px;padding:0 15px;border-radius:999px;border:1px solid var(--line-l);background:transparent;cursor:pointer;font-weight:700;font-size:14px;color:var(--text-lm)}
-.m-tab[aria-selected="true"]{background:var(--gold);border-color:var(--gold);color:var(--ink)}
-.m-player{position:relative;aspect-ratio:16/9;background:#000}
-.m-player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.m-bar{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between;padding:14px 24px;border-bottom:1px solid var(--line-l)}
-.m-bar span{font-size:14px;color:var(--text-lm)}
-.m-bar .btn{min-height:44px;font-size:14px;padding:0 20px}
-.m-desc{display:grid;gap:14px;padding:22px 24px 28px;color:var(--text-lm);max-width:52rem}
-.m-desc h4{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:800;margin-top:6px}
-.m-desc ul{list-style:none;display:grid;gap:6px}
-.m-desc li{padding-left:22px;position:relative}
-.m-desc li::before{content:"";position:absolute;left:3px;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--gold)}
-.m-fact{background:rgba(221,174,53,.1);border:1px solid rgba(221,174,53,.3);border-radius:16px;padding:14px 16px;color:var(--text-l)}
-.m-fact b{display:block;color:var(--gold-l);margin-bottom:4px}
-.m-base{font-size:15px;border-top:1px solid var(--line-l);padding-top:14px}
-.m-base b{color:var(--text-l)}
 
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
@@ -244,8 +224,8 @@ dialog::backdrop{background:rgba(12,6,8,.82);backdrop-filter:blur(6px);-webkit-b
     <div class="hero-txt">
       <div class="eyebrow">Free library of teachings</div>
       <h1>Teachings on <span class="grad">Tibetan philosophy</span><small>with Peter Moertl</small></h1>
-      <p class="hero-sub">2,500 years of practical knowledge that will change your life — all 18 ACI courses, meditation courses and practices for every day, as complete playlists.</p>
-      <div class="ctas"><a class="btn btn-gold" href="#aci">Start with ACI 1 <span aria-hidden="true">→</span></a><a class="btn btn-ghost" href="#peter">Who is Peter</a></div>
+      <p class="hero-sub">2,500 years of practical knowledge that will change your life — all 18 ACI courses, meditation courses and practices for every day, class by class.</p>
+      <div class="ctas"><a class="btn btn-gold" href="aci1/">Start with ACI 1 <span aria-hidden="true">→</span></a><a class="btn btn-ghost" href="#peter">Who is Peter</a></div>
       <div class="stats" id="stats"></div>
     </div>
     <div class="hero-pic"><img src="img/peter.webp" alt="Peter Moertl" width="900" height="900"></div>
@@ -287,7 +267,7 @@ dialog::backdrop{background:rgba(12,6,8,.82);backdrop-filter:blur(6px);-webkit-b
   <div class="sec-head reveal">
     <div class="eyebrow">The core · 18 courses</div>
     <h2>Your path through <span class="grad">18 ACI courses</span></h2>
-    <p>Each course is a full playlist of lessons with Peter Moertl. Press a recording to play the whole course — the lessons follow one after another, and the <b style="color:var(--gold-l)">☰</b> button in the player opens the full list of lessons. Mark the courses you finish and watch your path rise.</p>
+    <p>Every course has its own page: first what the course is about, then every class with Peter Moertl, in order — Class 1, Class 2 and so on. Mark the courses you finish and watch your path rise.</p>
   </div>
   <div class="path reveal" aria-label="Your progress">
     <div class="path-top"><b id="pathTxt">Your path: 0 of 18 courses</b><span id="pathSub">Saved in this browser only</span></div>
@@ -329,7 +309,7 @@ dialog::backdrop{background:rgba(12,6,8,.82);backdrop-filter:blur(6px);-webkit-b
   <div class="eyebrow">Begin today</div>
   <h2>Every step on this path<br><span class="grad">plants a seed</span></h2>
   <p>Start with the first course — The Principal Teachings of Buddhism — and go step by step. All the teachings are free.</p>
-  <div class="ctas" style="justify-content:center"><button class="btn btn-gold" data-open-course="1">Watch ACI 1 now <span aria-hidden="true">▶</span></button><a class="btn btn-ghost" href="https://www.youtube.com/@classicwisdomacademy/playlists" target="_blank" rel="noopener">All playlists on YouTube ↗</a></div>
+  <div class="ctas" style="justify-content:center"><a class="btn btn-gold" href="aci1/">Start with ACI 1 <span aria-hidden="true">▶</span></a><a class="btn btn-ghost" href="#aci">All 18 courses</a></div>
 </div></section>
 
 <footer><div class="wrap">
@@ -337,25 +317,15 @@ dialog::backdrop{background:rgba(12,6,8,.82);backdrop-filter:blur(6px);-webkit-b
   <div><a href="mailto:info@classicwisdomacademy.com">info@classicwisdomacademy.com</a></div>
 </div></footer>
 
-<dialog id="dlg" aria-labelledby="mTitle">
-  <div class="m">
-    <button class="m-x" aria-label="Close" data-close>×</button>
-    <div class="m-head"><div class="eyebrow" id="mEye"></div><h3 id="mTitle"></h3></div>
-    <div class="m-tabs" id="mTabs" role="tablist"></div>
-    <div class="m-player" id="mPlayer"></div>
-    <div class="m-bar"><span id="mInfo"></span><a class="btn btn-ghost" id="mYT" target="_blank" rel="noopener">Open the full playlist on YouTube ↗</a></div>
-    <div class="m-desc" id="mDesc"></div>
-  </div>
-</dialog>
 
-<script src="data.js"></script>
+<script src="data.js?v=2"></script>
+<script src="lessons.js?v=2"></script>
 <script>
 (function(){
-var D=window.PM, $=function(s){return document.querySelector(s)};
+var D=window.PM, L=window.PML, $=function(s){return document.querySelector(s)};
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
-function lessons(n){return n? n+(n===1?' lesson':' lessons') : 'playlist'}
-var plUrl=function(id){return 'https://www.youtube.com/playlist?list='+id};
-var embed=function(id){return 'https://www.youtube-nocookie.com/embed/videoseries?list='+id+'&rel=0&modestbranding=1&autoplay=1'};
+function vids(n){return n+(n===1?' video':' videos')}
+var GROUP={meditation:'Meditation',practices:'Practices',other:'Teachings'};
 
 /* ---- progress (localStorage, optional) ---- */
 var KEY='pm-path-v1', done={};
@@ -363,27 +333,28 @@ try{done=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(e){done={}}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(done))}catch(e){}}
 
 /* ---- stats ---- */
-var all=[];D.courses.forEach(function(c){c.rec.forEach(function(r){all.push(r[2])})});
-['meditation','practices','other'].forEach(function(k){D[k].forEach(function(p){all.push(p[3])})});
-var total=all.reduce(function(a,b){return a+b},0);
-$('#stats').innerHTML=[['18','ACI courses'],[all.length,'full recordings'],[Math.floor(total/10)*10+'+','video lessons'],['Free','on YouTube']].map(function(s){return '<div class="stat"><b>'+s[0]+'</b><span>'+s[1]+'</span></div>'}).join('');
+var recN=0,total=0;
+D.courses.forEach(function(c){c.rec.forEach(function(r){recN++;total+=L[r[0]].length})});
+['meditation','practices','other'].forEach(function(k){D[k].forEach(function(p){recN++;total+=L[p.id].length})});
+$('#stats').innerHTML=[['18','ACI courses'],[recN,'full recordings'],[Math.floor(total/10)*10+'+','video classes'],['Free','for everyone']].map(function(s){return '<div class="stat"><b>'+s[0]+'</b><span>'+s[1]+'</span></div>'}).join('');
 
 /* ---- steps ---- */
-$('#steps').innerHTML=D.courses.map(function(c,i){return '<button class="step" data-step="'+c.n+'" style="height:'+(26+i*(74/17))+'%" aria-label="ACI '+c.n+': '+esc(c.title)+'">'+'<small>ACI</small>'+c.n+'</button>'}).join('');
+$('#steps').innerHTML=D.courses.map(function(c,i){return '<button class="step" data-step="'+c.n+'" style="height:'+(26+i*(74/17))+'%" aria-label="ACI '+c.n+': '+esc(c.title)+'"><small>ACI</small>'+c.n+'</button>'}).join('');
 
 /* ---- leaves ---- */
 $('#leaves').innerHTML=D.courses.map(function(c){
+  var u='aci'+c.n+'/';
   return '<article class="leaf reveal" id="aci'+c.n+'">'+
-   '<div class="leaf-pic" data-open-course="'+c.n+'" role="button" tabindex="0" aria-label="About ACI '+c.n+'"><img src="img/'+c.img+'" alt=""></div>'+
-   '<div class="leaf-body"><div class="leaf-no">ACI '+c.n+'</div><h3>'+esc(c.title)+'</h3><div class="leaf-hook">'+esc(c.hook)+'</div>'+
-   '<div class="recs">'+c.rec.map(function(r,j){return '<button class="rec" data-open-course="'+c.n+'" data-rec="'+j+'"><i></i>'+esc(r[1])+' <small>· '+lessons(r[2])+'</small></button>'}).join('')+'</div>'+
-   '<div class="leaf-foot"><button class="more" data-open-course="'+c.n+'">About the course</button><label class="chk"><input type="checkbox" data-done="'+c.n+'"'+(done[c.n]?' checked':'')+'> Completed</label></div>'+
+   '<a class="leaf-pic" href="'+u+'" aria-label="ACI '+c.n+': '+esc(c.title)+'"><img src="img/'+c.img+'" alt=""></a>'+
+   '<div class="leaf-body"><div class="leaf-no">ACI '+c.n+'</div><h3><a href="'+u+'">'+esc(c.title)+'</a></h3><div class="leaf-hook">'+esc(c.hook)+'</div>'+
+   '<div class="recs">'+c.rec.map(function(r,j){return '<a class="rec" href="'+u+(c.rec.length>1?'#r'+(j+1):'#lessons')+'"><i></i>'+esc(r[1])+' <small>· '+vids(L[r[0]].length)+'</small></a>'}).join('')+'</div>'+
+   '<div class="leaf-foot"><a class="more" href="'+u+'">About the course</a><label class="chk"><input type="checkbox" data-done="'+c.n+'"'+(done[c.n]?' checked':'')+'> Completed</label></div>'+
    '</div></article>';
 }).join('');
 
 function paint(){
   var k=0;D.courses.forEach(function(c){var on=!!done[c.n];if(on)k++;
-    var s=document.querySelector('[data-step="'+c.n+'"]');s.classList.toggle('done',on);
+    document.querySelector('[data-step="'+c.n+'"]').classList.toggle('done',on);
     document.getElementById('aci'+c.n).classList.toggle('done',on)});
   $('#pathTxt').textContent='Your path: '+k+' of 18 courses'+(k===18?' — complete!':'');
 }
@@ -391,61 +362,22 @@ paint();
 document.addEventListener('change',function(e){var n=e.target.getAttribute('data-done');if(!n)return;
   if(e.target.checked)done[n]=1;else delete done[n];save();paint()});
 
-/* ---- playlist cards ---- */
+/* ---- teaching cards ---- */
 ['meditation','practices','other'].forEach(function(k){
-  document.getElementById('pl-'+k).innerHTML=D[k].map(function(p,i){
-    return '<button class="pl reveal" data-open-pl="'+k+':'+i+'"><div class="pl-stack"><div class="pl-thumb" style="background-image:url(https://i.ytimg.com/vi/'+p[4]+'/hqdefault.jpg)"><span class="play"></span><span class="pl-badge">'+lessons(p[3])+'</span></div></div><h3>'+esc(p[1])+'</h3>'+(p[2]?'<p>'+esc(p[2])+'</p>':'')+'</button>';
+  document.getElementById('pl-'+k).innerHTML=D[k].map(function(p){
+    var n=L[p.id].length;
+    return '<a class="pl reveal" href="t/'+p.slug+'/"><div class="pl-stack"><div class="pl-thumb"><span class="pl-k">'+GROUP[k]+'</span><span class="pl-t">'+esc(p.title)+'</span><span class="play"></span><span class="pl-badge">'+vids(n)+'</span></div></div>'+(p.sub?'<p>'+esc(p.sub)+'</p>':'')+'</a>';
   }).join('');
 });
 
-/* ---- modal ---- */
-var dlg=$('#dlg');
-function setPlayer(r){
-  var src=r[0]?embed(r[0]):'https://www.youtube-nocookie.com/embed/'+r[3][0]+'?playlist='+r[3].join(',')+'&rel=0&modestbranding=1&autoplay=1';
-  $('#mPlayer').innerHTML='<iframe src="'+src+'" title="Playlist player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
-  $('#mYT').href=r[0]?plUrl(r[0]):'https://www.youtube.com/watch_videos?video_ids='+r[3].join(',');
-  $('#mInfo').textContent=(r[2]?r[2]+' lessons in this playlist':'Full playlist')+' · use ☰ in the player to pick any lesson';
-}
-function show(){ if(dlg.showModal){ if(!dlg.open) dlg.showModal(); } else dlg.setAttribute('open',''); document.body.style.overflow='hidden'; }
-function openCourse(n,j){
-  var c=D.courses[n-1]; j=j||0;
-  $('#mEye').textContent='ACI '+n;
-  $('#mTitle').textContent=c.title;
-  $('#mTabs').innerHTML=c.rec.length>1?c.rec.map(function(r,i){return '<button class="m-tab" role="tab" aria-selected="'+(i===j)+'" data-tab="'+i+'">'+esc(r[1])+' · '+r[2]+'</button>'}).join(''):'';
-  $('#mTabs').style.display=c.rec.length>1?'':'none';
-  $('#mTabs').onclick=function(e){var t=e.target.closest('[data-tab]');if(!t)return;
-    [].forEach.call(this.children,function(b){b.setAttribute('aria-selected',b===t)});setPlayer(c.rec[+t.dataset.tab])};
-  setPlayer(c.rec[j]);
-  var h='<p class="leaf-hook" style="color:var(--gold-l);font-size:20px">'+esc(c.hook)+'</p>'+c.p.map(function(x){return '<p>'+esc(x)+'</p>'}).join('');
-  if(c.learn&&c.learn.length)h+='<h4>What you will learn</h4><ul>'+c.learn.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul>';
-  if(c.fact)h+='<div class="m-fact"><b>Did you know?</b>'+esc(c.fact)+'</div>';
-  if(c.base)h+='<div class="m-base"><b>Based on:</b> '+esc(c.base)+'</div>';
-  $('#mDesc').innerHTML=h;$('#mDesc').style.display='';
-  show();
-}
-function openPl(key){
-  var a=key.split(':'),p=D[a[0]][+a[1]];
-  $('#mEye').textContent={meditation:'Meditation course',practices:'Practices for daily life',other:'Other teachings'}[a[0]];
-  $('#mTitle').textContent=p[1];$('#mTabs').style.display='none';
-  setPlayer([p[0],'',p[3]]);
-  $('#mDesc').innerHTML=p[2]?'<p>'+esc(p[2])+'</p>':'';$('#mDesc').style.display=p[2]?'':'none';
-  show();
-}
-function close(){ $('#mPlayer').innerHTML=''; document.body.style.overflow=''; if(dlg.open&&dlg.close)dlg.close(); else dlg.removeAttribute('open'); }
-dlg.addEventListener('close',function(){$('#mPlayer').innerHTML='';document.body.style.overflow=''});
-dlg.addEventListener('click',function(e){if(e.target===dlg||e.target.closest('[data-close]'))close()});
-
 document.addEventListener('click',function(e){
-  var t=e.target.closest('[data-open-course],[data-open-pl],[data-step],.lite');if(!t)return;
+  var t=e.target.closest('[data-step],.lite');if(!t)return;
   if(t.hasAttribute('data-step')){document.getElementById('aci'+t.dataset.step).scrollIntoView({behavior:'smooth',block:'center'});return}
-  if(t.classList.contains('lite')){t.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+t.dataset.yt+'?autoplay=1&rel=0" title="Video" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';return}
-  if(t.hasAttribute('data-open-pl'))return openPl(t.dataset.openPl);
-  openCourse(+t.dataset.openCourse,+(t.dataset.rec||0));
+  t.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+t.dataset.yt+'?autoplay=1&rel=0" title="Video" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
 });
-document.addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&e.target.matches('.leaf-pic')){e.preventDefault();openCourse(+e.target.dataset.openCourse)}});
 
-/* deep link: #aci5 opens course 5 player */
-var m=location.hash.match(/^#aci(\d+)$/);if(m&&D.courses[m[1]-1])setTimeout(function(){openCourse(+m[1])},400);
+/* old deep links #aci5 -> course page */
+var m=location.hash.match(/^#aci(\d+)$/);if(m&&D.courses[m[1]-1])location.replace('aci'+m[1]+'/');
 
 /* menu */
 var mb=$('.menu-btn'),mn=$('#mnav');
