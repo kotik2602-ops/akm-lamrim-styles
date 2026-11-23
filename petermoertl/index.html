@@ -366,7 +366,7 @@ function save(){try{localStorage.setItem(KEY,JSON.stringify(done))}catch(e){}}
 var all=[];D.courses.forEach(function(c){c.rec.forEach(function(r){all.push(r[2])})});
 ['meditation','practices','other'].forEach(function(k){D[k].forEach(function(p){all.push(p[3])})});
 var total=all.reduce(function(a,b){return a+b},0);
-$('#stats').innerHTML=[['18','ACI courses'],[all.length,'full playlists'],[Math.floor(total/10)*10+'+','video lessons'],['Free','on YouTube']].map(function(s){return '<div class="stat"><b>'+s[0]+'</b><span>'+s[1]+'</span></div>'}).join('');
+$('#stats').innerHTML=[['18','ACI courses'],[all.length,'full recordings'],[Math.floor(total/10)*10+'+','video lessons'],['Free','on YouTube']].map(function(s){return '<div class="stat"><b>'+s[0]+'</b><span>'+s[1]+'</span></div>'}).join('');
 
 /* ---- steps ---- */
 $('#steps').innerHTML=D.courses.map(function(c,i){return '<button class="step" data-step="'+c.n+'" style="height:'+(26+i*(74/17))+'%" aria-label="ACI '+c.n+': '+esc(c.title)+'">'+'<small>ACI</small>'+c.n+'</button>'}).join('');
@@ -401,8 +401,9 @@ document.addEventListener('change',function(e){var n=e.target.getAttribute('data
 /* ---- modal ---- */
 var dlg=$('#dlg');
 function setPlayer(r){
-  $('#mPlayer').innerHTML='<iframe src="'+embed(r[0])+'" title="Playlist player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
-  $('#mYT').href=plUrl(r[0]);
+  var src=r[0]?embed(r[0]):'https://www.youtube-nocookie.com/embed/'+r[3][0]+'?playlist='+r[3].slice(1).join(',')+'&rel=0&modestbranding=1&autoplay=1';
+  $('#mPlayer').innerHTML='<iframe src="'+src+'" title="Playlist player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+  $('#mYT').href=r[0]?plUrl(r[0]):'https://www.youtube.com/watch_videos?video_ids='+r[3].join(',');
   $('#mInfo').textContent=(r[2]?r[2]+' lessons in this playlist':'Full playlist')+' · use ☰ in the player to pick any lesson';
 }
 function show(){ if(dlg.showModal){ if(!dlg.open) dlg.showModal(); } else dlg.setAttribute('open',''); document.body.style.overflow='hidden'; }

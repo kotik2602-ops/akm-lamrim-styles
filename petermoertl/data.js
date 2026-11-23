@@ -1,5 +1,5 @@
 /* Peter Moertl teachings — content data.
-   Every recording is a YouTube PLAYLIST id (list=...). n = number of videos in the playlist. */
+   Every recording is a YouTube PLAYLIST id (list=...) — or, if there is no playlist, an empty id plus an ordered array of video ids (taken from classicwisdomacademy.com/kursy-aci/). n = number of videos. */
 window.PM = {
 courses: [
 { n:1, img:'prints/1.png', title:'The Principal Teachings of Buddhism',
@@ -31,14 +31,14 @@ courses: [
   learn:['what valid perception is and its three levels','how to know what lies beyond direct perception','where consciousness comes from','proofs of past and future lives','how desire leads to a new birth','the nature of omniscience','how to develop great compassion'],
   fact:'Geshe Michael Roach helped edit one of the main texts of the course — “The Jewel of True Thought” by Geshe Yeshe Wangchuk, the root lama of one of his own teachers.',
   base:'“Commentary on Valid Perception” by Master Dharmakirti and “The Jewel of True Thought” by Geshe Yeshe Wangchuk (1928–1999); also works by Master Dignaga and Gyaltsab Je.',
-  rec:[['PLwVlt5LLJqlzd19TBDhq_gxSDU7hcHm4y','2020',10]] },
+  rec:[['','2014',14,['lsIWqBFj_RU', 'sE_e7oEwvh8', 'wgOVX9ffz-o', 'R3PJ6cFK6XQ', 'hG-5ssbUfVM', '2BOTwFYRzWE', 'Cnx4O3hyQpw', 'HXTcdu-Ji9A', 'VqtWN5M_DQA', 't0NZ_hubYJw', 'qUPROSSHZxQ', 'tAm2WwjK03Y', 'E_oc_Ac1x4U', 'Ns2fqW3RqSw']],['PLwVlt5LLJqlzd19TBDhq_gxSDU7hcHm4y','2020',10]] },
 { n:5, img:'prints/5.png', title:'How Karma Works',
   hook:'If karma created our world and ourselves — how exactly does it do it?',
   p:['You cannot change your life blindfolded — you need to know precisely the laws by which it unfolds. This matters equally to people raised in a culture that never believed in karma, and to those who believed but never got a clear explanation.',
      'The course is an inspiring, practical summary of the classical teachings on every major aspect of karma: how it creates our reality and how we can consciously steer that process. You will also see how karma and emptiness work together.'],
   learn:['what karma is, and its kinds: black, white, neutral','karma of body, speech and mind','karmic sequences','how karma is carried forward','how to make a karmic result stronger','purifying karma','how karma works because of emptiness'],
   base:'“The Treasure House of Higher Knowledge” by Master Vasubandhu with the commentary “Light on the Path to Freedom” by Gyalwa Gendun Drup (1391–1474), a direct disciple of Je Tsongkapa.',
-  rec:[['PLwVlt5LLJqlyxeglH3edkEikbMNil2cAX','Kyiv 2014',17]] },
+  rec:[['PLwVlt5LLJqlyxeglH3edkEikbMNil2cAX','Kyiv 2014',17],['','2021',10,['tSx3_PrutPw', '0Qunck7VJVI', 'pBGacaNDD3U', 'nXHmbK--uo0', 'kqLnVyCZ4eo', 'jA2Qf22eNQw', 'dvfn4BdLy9k', 'aPNJtghR1VU', 'ozvl6YrQZFQ', 'dZH8k-9N3vk']]] },
 { n:6, img:'prints/6.png', title:'The Diamond Cutter Sutra',
   hook:'The first printed book in history — and it is about emptiness.',
   p:['Before going deeper into the ACI courses, it is important to get a good “push” towards understanding emptiness. According to the Buddha, understanding emptiness is the only way to help ourselves and every living being out of suffering.',
@@ -52,7 +52,7 @@ courses: [
      'We study both the vows themselves and the ancient sources they come from: the Buddha himself, Master Chandragomi, Arya Asanga and Master Shantideva.'],
   learn:['what bodhichitta is and its kinds','how the bodhisattva vows are taken','the 18 root and 46 secondary vows','how vows are broken and lost','how to keep your vows and how to restore them','the benefits of keeping the vows'],
   base:'“The Path for Bodhisattvas” by Je Tsongkapa and “A String of Shining Jewels” by Geshe Tsewang Samdrup (Drepung Monastery, 19th century).',
-  rec:[['PLwVlt5LLJqlwI8pZc5W8XlFwYoF2diWYt','Kyiv 2017',16],['PLwVlt5LLJqlxsi16fQA8q3txoJyJGaPxi','Vienna 2022',10]] },
+  rec:[['PLwVlt5LLJqlwI8pZc5W8XlFwYoF2diWYt','Kyiv 2015',16],['PLwVlt5LLJqlxsi16fQA8q3txoJyJGaPxi','Vienna 2022',10]] },
 { n:8, img:'prints/8.png', title:'Death and the Realms of Existence',
   hook:'What happens to us when we die — and where can we go next?',
   p:['If future lives exist, a question arises: which worlds exist in the universe, and where can we go after death? And what really happens at the moment of death?',
@@ -60,7 +60,7 @@ courses: [
   learn:['the realms of existence and the ways of being born','the lives of humans, animals and other beings','all about the in-between state (bardo) and how beings find their next birth','time and space: what an eon (kalpa) is','meditation on death: three principles of death and three decisions'],
   fact:'One of the texts of the course, the 12th-century “Great Book on the Steps of the Teaching”, was believed lost in Je Tsongkapa’s time — he rediscovered the manuscript himself.',
   base:'“The Treasure House of Higher Knowledge” by Master Vasubandhu with the commentary of Gyalwa Gendun Drup, and “The Great Book on the Steps of the Teaching” by Geshe Drolungpa (12th century).',
-  rec:[['PLwVlt5LLJqlwcuwPSnZAvgyYp02J169iK','Kyiv 2018',11],['PLwVlt5LLJqlwW3EjufxkRm0rWbWmUX7IO','Moscow 2022',12]] },
+  rec:[['PLwVlt5LLJqlwcuwPSnZAvgyYp02J169iK','Kyiv 2016',11],['PLwVlt5LLJqlwW3EjufxkRm0rWbWmUX7IO','Moscow 2022',12]] },
 { n:9, img:'prints/9.png', title:'The Ethical Life',
   hook:'Which seeds shape our life most powerfully — and the next one too?',
   p:['The basis of all karma is the seeds we plant every day through our kind or unkind attitude to the people around us. The Buddha spent much of his life explaining which of these seeds are the most important and powerful — which is why these details are worth studying.',
