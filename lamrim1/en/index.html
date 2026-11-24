@@ -824,6 +824,17 @@ body{font-weight:500}
 .lotsb-goal b{color:var(--gold-l)}
 .lotsb .ctas{justify-content:center}
 @media (max-width:640px){.lotsb-row{flex-wrap:wrap;max-width:340px}.lotsb-row img{height:96px}.lotsb .ctas .btn{width:100%}}
+/* ===== книга в VIP ===== */
+.tc.vip li.tc-gift{color:var(--gold-l);font-weight:800}
+.tc li.tc-gift::before{content:"🎁";width:auto;height:auto;background:none;margin-top:0;font-size:15px}
+.vip-book{display:grid;grid-template-columns:84px 1fr;gap:16px;align-items:center;margin:4px 0 18px;padding:14px;border-radius:20px;background:linear-gradient(135deg,rgba(221,174,53,.16),rgba(105,35,45,.28));border:1px solid rgba(243,217,145,.4);text-align:left}
+.vip-book img{width:84px;height:auto;border-radius:6px;box-shadow:0 12px 24px -8px rgba(0,0,0,.7),0 0 0 1px rgba(243,217,145,.3);transform:rotate(-4deg)}
+.vb-eye{margin:0;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.vb-t{margin:2px 0 4px;font-family:var(--display);font-weight:700;font-size:16px;color:var(--gold-l)}
+.vb-d{margin:0;font-size:13px;line-height:1.45;color:var(--text-lm)}
+.tc li.tc-star{display:block;padding:12px 16px;border-radius:16px;background:linear-gradient(120deg,var(--gold-l),var(--gold));color:var(--ink)!important;font-weight:800;font-size:16px;box-shadow:0 10px 24px -10px rgba(221,174,53,.7)}
+.tc li.tc-star::before{display:none}
+.tc li.tc-star small{display:block;margin-top:2px;font-weight:600;font-size:13px;color:#4a2a1c}
 @media (prefers-reduced-motion:reduce){.lotsb-glow,.lotsb-row img,.lotsb-eye .dot{animation:none}}
 </style>
 </head>
@@ -1351,7 +1362,11 @@ body{font-weight:500}
           </div>
           <h3>In person VIP</h3>
           <div class="price">600&nbsp;<small>€</small></div>
-          <ul><li>The full main program</li><li>VIP seating in the hall</li><li>Personal assistant</li><li>Lunch with the teachers</li></ul>
+          <ul><li class="tc-star">🍽 Lunch with the teachers<small>Peter and Maria Moertl at&nbsp;the same table with you</small></li><li>The full main program</li><li>VIP seating in the hall</li><li>Personal assistant</li><li class="tc-gift">The book “I&nbsp;Am Loved” as a&nbsp;gift</li></ul>
+          <div class="vip-book">
+            <img src="/lamrim1/img/book-i-am-loved-en.webp" width="360" height="509" alt="Cover of the book “I Am Loved” by Maria and Peter Moertl" loading="lazy">
+            <div><p class="vb-eye">VIP gift</p><p class="vb-t">“I&nbsp;Am Loved”</p><p class="vb-d">A&nbsp;book by Maria and Peter Moertl: meditations and other practices to&nbsp;create perfect relationships. Freshly printed in&nbsp;English&nbsp;— every VIP participant receives a&nbsp;copy as&nbsp;a&nbsp;gift.</p></div>
+          </div>
           <p class="seats">Places are limited.</p>
           <a class="btn btn-gold" href="https://secure.wayforpay.com/button/b305aadd75ff7" target="_blank" rel="noopener">Book a VIP place</a>
         </article>
