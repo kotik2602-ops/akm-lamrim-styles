@@ -828,6 +828,17 @@ body{font-weight:500}
 .lotsb .ctas{justify-content:center}
 @media (max-width:640px){.lotsb-row{flex-wrap:wrap;max-width:340px}.lotsb-row img{height:96px}.lotsb .ctas .btn{width:100%}}
 @media (prefers-reduced-motion:reduce){.lotsb-glow,.lotsb-row img,.lotsb-eye .dot{animation:none}}
+/* ===== книга в VIP ===== */
+.tc.vip li.tc-gift{color:var(--gold-l);font-weight:800}
+.tc li.tc-gift::before{content:"🎁";width:auto;height:auto;background:none;margin-top:0;font-size:15px}
+.vip-book{display:grid;grid-template-columns:84px 1fr;gap:16px;align-items:center;margin:4px 0 18px;padding:14px;border-radius:20px;background:linear-gradient(135deg,rgba(221,174,53,.16),rgba(105,35,45,.28));border:1px solid rgba(243,217,145,.4);text-align:left}
+.vip-book img{width:84px;height:auto;border-radius:6px;box-shadow:0 12px 24px -8px rgba(0,0,0,.7),0 0 0 1px rgba(243,217,145,.3);transform:rotate(-4deg)}
+.vb-eye{margin:0;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.vb-t{margin:2px 0 4px;font-family:var(--display);font-weight:700;font-size:16px;color:var(--gold-l)}
+.vb-d{margin:0;font-size:13px;line-height:1.45;color:var(--text-lm)}
+.tc li.tc-star{display:block;padding:12px 16px;border-radius:16px;background:linear-gradient(120deg,var(--gold-l),var(--gold));color:var(--ink)!important;font-weight:800;font-size:16px;box-shadow:0 10px 24px -10px rgba(221,174,53,.7)}
+.tc li.tc-star::before{display:none}
+.tc li.tc-star small{display:block;margin-top:2px;font-weight:600;font-size:13px;color:#4a2a1c}
 </style>
 </head>
 <body>
@@ -1354,7 +1365,11 @@ body{font-weight:500}
           </div>
           <h3>Вживую VIP</h3>
           <div class="price">600&nbsp;<small>€</small></div>
-          <ul><li>Вся основная программа</li><li>VIP-места в&nbsp;зале</li><li>Личный ассистент</li><li>Обед с&nbsp;учителями</li></ul>
+          <ul><li class="tc-star">🍽 Обед с&nbsp;учителями<small>Питер и&nbsp;Мария Мёртл за&nbsp;одним столом с&nbsp;вами</small></li><li>Вся основная программа</li><li>VIP-места в&nbsp;зале</li><li>Личный ассистент</li><li class="tc-gift">Новая книга Питера Мёртла с&nbsp;автографом автора</li></ul>
+          <div class="vip-book">
+            <img src="/lamrim1/img/book-sila-zhelaniya-ru.webp" width="360" height="509" alt="Обложка книги Питера Мёртла «Сила желания»" loading="lazy">
+            <div><p class="vb-eye">Новинка · подарок VIP</p><p class="vb-t">«Сила желания»</p><p class="vb-d">Продолжение «Силы страха». Роман о&nbsp;стремлении, сострадании и&nbsp;о&nbsp;том, как мы сами создаём свою реальность. Презентация&nbsp;— 19&nbsp;декабря на&nbsp;учениях, а&nbsp;VIP-участники получат книгу в&nbsp;подарок с&nbsp;автографом автора.</p></div>
+          </div>
           <p class="seats">Количество мест ограничено.</p>
           <a class="btn btn-gold" href="https://secure.wayforpay.com/button/bc78e3106b571" target="_blank" rel="noopener">Забронировать VIP-место</a>
         </article>
